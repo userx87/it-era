@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" fill="#f0f0f0" rx="4"/>
+  <rect x="10" y="10" width="40" height="40" fill="#00BCF2"/>
+  <rect x="10" y="10" width="20" height="20" fill="#F25022"/>
+  <rect x="30" y="10" width="20" height="20" fill="#7FBA00"/>
+  <rect x="10" y="30" width="20" height="20" fill="#00BCF2"/>
+  <rect x="30" y="30" width="20" height="20" fill="#FFB900"/>
+  <text x="60" y="25" font-family="Segoe UI, Arial" font-size="14" fill="#5E5E5E">Microsoft</text>
+  <text x="60" y="42" font-family="Segoe UI, Arial" font-size="12" fill="#FFB900" font-weight="bold">GOLD PARTNER</text>
+</svg>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}" />
+  <meta name="keywords" content="{{meta.keywords}}" />
+  <link rel="canonical" href="{{canonical}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{meta.title}}" />
+  <meta property="og:description" content="{{meta.description}}" />
+  <meta property="og:url" content="{{canonical}}" />
+  <meta property="og:image" content="{{cover.url}}" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{meta.title}}" />
+  <meta name="twitter:description" content="{{meta.description}}" />
+  <meta name="twitter:image" content="{{cover.url}}" />
+
+  <!-- Performance preconnects -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- GA4 placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{GA_MEASUREMENT_ID}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', '{{GA_MEASUREMENT_ID}}', { 'anonymize_ip': true });
+  </script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">{{schema_jsonld}}</script>
+
+  <!-- Tracking & extras -->
+  <script defer src="/static/js/tracking.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; color: #0f172a; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    article img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <main id="content" class="container">
+    <!-- Se content_html include già <article> viene reso così com'è -->
+    {{content_html}}
+  </main>
+</body>
+</html>
+

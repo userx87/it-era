@@ -1,0 +1,19 @@
+{
+  "Monza": {
+    "problemi_it": [
+      "Picchi di assistenza a inizio settimana per uffici amministrativi e studi professionali di Monza e Brianza",
+      "Interferenze Wi‑Fi in capannoni artigianali di Monza Nord (impianti vicini, reti sovrapposte)",
+      "Workstation legacy per software contabile con blocchi e rallentamenti"
+    ],
+    "copertura": "Interventi in sede su Monza (Centro, San Fruttuoso, Cazzaniga, Triante) e comuni limitrofi in Brianza"
+  },
+  "Arcore": {
+    "problemi_it": [
+      "Interruzioni connettività FTTC nelle zone residenziali convertite ad uso ufficio",
+      "NAS domestici usati come storage aziendale senza versioning né snapshot",
+      "PC condivisi in piccoli studi con profili non separati e sicurezza ridotta"
+    ],
+    "copertura": "Uscite rapide su Arcore, Lesmo, Villasanta e Vimercate; remoto immediato per urgenze fuori orario"
+  }
+}
+

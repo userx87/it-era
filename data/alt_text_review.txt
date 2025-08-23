@@ -1,0 +1,27 @@
+# Alt text proposti (anteprima) — NON ANCORA IN PRODUZIONE
+# Sostituire {{CITTA}} dinamicamente in fase di generazione
+
+Monza
+- hero_stat_4h: "SLA emergenze 4h per PMI a Monza"
+- hero_cta_phone: "Contatto tecnico IT a Monza"
+- card_helpdesk_icon: "Icona help desk per PMI a Monza"
+- card_tools_icon: "Strumenti manutenzione IT a Monza"
+- card_server_icon: "Gestione server e rete a Monza"
+- card_desktop_icon: "Supporto workstation a Monza"
+- card_security_icon: "Sicurezza informatica PMI a Monza"
+- card_monitoring_icon: "Monitoraggio IT Zabbix a Monza"
+- case_industry_icon: "Caso studio azienda manifatturiera a Monza"
+- case_studio_icon: "Caso studio studio commercialisti a Monza"
+
+Arcore
+- hero_stat_4h: "SLA emergenze 4h per PMI ad Arcore"
+- hero_cta_phone: "Contatto tecnico IT ad Arcore"
+- card_helpdesk_icon: "Icona help desk per PMI ad Arcore"
+- card_tools_icon: "Strumenti manutenzione IT ad Arcore"
+- card_server_icon: "Gestione server e rete ad Arcore"
+- card_desktop_icon: "Supporto workstation ad Arcore"
+- card_security_icon: "Sicurezza informatica PMI ad Arcore"
+- card_monitoring_icon: "Monitoraggio IT Zabbix ad Arcore"
+- case_industry_icon: "Caso studio azienda manifatturiera ad Arcore"
+- case_studio_icon: "Caso studio studio commercialisti ad Arcore"
+

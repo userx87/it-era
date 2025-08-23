@@ -1,0 +1,41 @@
+# Keyword per landing page (local intent + service intent)
+
+[Core service]
+assistenza it {{CITTA}}
+assistenza informatica {{CITTA}}
+supporto sistemistico {{CITTA}}
+help desk informatico {{CITTA}}
+servizi it per pmi {{CITTA}}
+contratto assistenza informatica {{CITTA}}
+assistenza pc aziendali {{CITTA}}
+assistenza server {{CITTA}}
+assistenza rete aziendale {{CITTA}}
+monitoraggio it {{CITTA}}
+
+[Commercial intent]
+assistenza informatica prezzi {{CITTA}}
+assistenza it canone mensile {{CITTA}}
+help desk costo {{CITTA}}
+assistenza sistemistica pmi {{CITTA}}
+
+[SLA e urgenze]
+assistenza informatica urgente {{CITTA}}
+assistenza it h24 {{CITTA}}
+help desk 24/7 {{CITTA}}
+intervento it in sede {{CITTA}}
+
+[Verticali]
+assistenza it industria {{CITTA}}
+assistenza it studi professionali {{CITTA}}
+assistenza it education {{CITTA}}
+
+[Brand + local]
+it-era assistenza it {{CITTA}}
+bulltech informatica {{CITTA}}
+
+[Varianti long-tail]
+contratto assistenza it pmi {{CITTA}}
+assistenza microsoft 365 {{CITTA}}
+backup veeam gestione {{CITTA}}
+monitoraggio zabbix aziendale {{CITTA}}
+

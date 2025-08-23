@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Sistema API completo per il sito IT-ERA Bulltech basato su Cloudflare Workers, che include:",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "create-kv": "npm run kv:contact && npm run kv:analytics && npm run kv:quotes",
+    "kv:contact": "wrangler kv:namespace create CONTACT_KV && wrangler kv:namespace create CONTACT_KV --preview",
+    "kv:analytics": "wrangler kv:namespace create ANALYTICS_KV && wrangler kv:namespace create ANALYTICS_KV --preview",
+    "kv:quotes": "wrangler kv:namespace create QUOTES_KV && wrangler kv:namespace create QUOTES_KV --preview",
+    "db:create": "wrangler d1 create it-era-contacts && wrangler d1 create it-era-analytics",
+    "db:init": "wrangler d1 execute it-era-contacts --file=./schema.sql && wrangler d1 execute it-era-analytics --file=./schema.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "wrangler": "^4.32.0"
+  }
+}

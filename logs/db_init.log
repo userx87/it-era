@@ -1,0 +1,13 @@
+2025-08-22 15:30:49,580 - INFO - === Inizializzazione Database IT-ERA ===
+2025-08-22 15:30:49,581 - INFO - Connesso al database: /Users/andreapanzeri/progetti/IT-ERA/database/it_era.db
+2025-08-22 15:30:49,590 - INFO - Schema database creato con successo
+2025-08-22 15:30:49,590 - INFO - Dati di esempio inseriti
+2025-08-22 15:30:49,590 - INFO - Database inizializzato con successo
+2025-08-22 15:30:49,590 - INFO - Tabelle create: ['clienti', 'sqlite_sequence', 'ticket', 'ore_lavorate', 'automazioni', 'log_sistema', 'configurazioni_api', 'backup_jobs', 'contratti']
+2025-08-22 15:30:49,590 - INFO - Inizializzazione completata con successo
+2025-08-22 15:30:49,590 - INFO - Database integro
+2025-08-22 15:30:49,590 - INFO - Tabella clienti: 1 record
+2025-08-22 15:30:49,590 - INFO - Tabella ticket: 0 record
+2025-08-22 15:30:49,590 - INFO - Tabella ore_lavorate: 0 record
+2025-08-22 15:30:49,590 - INFO - Tabella automazioni: 1 record
+2025-08-22 15:30:49,590 - INFO - Database pronto per l'uso

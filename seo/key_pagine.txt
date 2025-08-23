@@ -1,0 +1,12 @@
+# Keyword per landing page (città/provincia)
+# Formato: keyword principale | varianti | intent
+assistenza informatica {{CITTA}} | assistenza IT {{CITTA}}, supporto sistemistico {{CITTA}}, help desk {{CITTA}} | commerciale/lead
+assistenza IT aziendale {{CITTA}} | assistenza reti {{CITTA}}, gestione server {{CITTA}} | commerciale/lead
+cybersecurity {{CITTA}} | firewall watchguard {{CITTA}}, antivirus aziendale {{CITTA}} | informativa/commerciale
+backup aziendale {{CITTA}} | veeam {{CITTA}}, disaster recovery {{CITTA}} | informativa/commerciale
+microsoft 365 {{CITTA}} | office 365 {{CITTA}}, migrazione email {{CITTA}} | transazionale
+monitoraggio rete {{CITTA}} | zabbix {{CITTA}}, monitoraggio server {{CITTA}} | informativa
+contratto assistenza IT {{CITTA}} | SLA IT {{CITTA}}, help desk prezzi {{CITTA}} | transazionale
+assistenza informatica urgente {{CITTA}} | tecnico informatico {{CITTA}}, intervento in sede {{CITTA}} | transazionale
+assistenza IT pmi {{CITTA}} | assistenza srl {{CITTA}}, supporto aziendale {{CITTA}} | commerciale/lead
+

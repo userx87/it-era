@@ -1,0 +1,58 @@
+name = "it-era-api"
+main = "src/index.js"
+compatibility_date = "2024-01-23"
+
+# Account ID Bulltech
+account_id = "2842eac6595a0ac8086c76cee3409a24"
+
+# Workers KV Namespaces
+[[kv_namespaces]]
+binding = "CONTACT_KV"
+id = "e8bd03a1105a46208000adfc1cc84487"
+
+[[kv_namespaces]]
+binding = "ANALYTICS_KV" 
+id = "ad59b007da2043f5be9d8a4140d73f2b"
+
+[[kv_namespaces]]
+binding = "QUOTES_KV"
+id = "e7d0addb40e44d3ea665385819689431"
+
+# D1 Database bindings
+[[d1_databases]]
+binding = "CONTACT_DB"
+database_name = "it-era-contacts"
+database_id = "3e79669f-6644-47f6-90ba-19c0f79d37b8"
+
+[[d1_databases]]
+binding = "ANALYTICS_DB"
+database_name = "it-era-analytics"
+database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
+
+# Workers dev
+workers_dev = true
+
+# Routes
+[[routes]]
+pattern = "api.bulltech.it/*"
+zone_name = "bulltech.it"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "production"
+
+# Development environment
+[env.development]
+name = "it-era-api-dev"
+vars = { ENVIRONMENT = "development" }
+
+# Staging environment  
+[env.staging]
+name = "it-era-api-staging"
+vars = { ENVIRONMENT = "staging" }
+
+# Production secrets (usa wrangler secret put)
+# SENDGRID_API_KEY
+# TELEGRAM_BOT_TOKEN
+# TELEGRAM_CHAT_ID
+# MAILGUN_API_KEY

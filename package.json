@@ -1,0 +1,22 @@
+{
+  "name": "it-era",
+  "version": "1.0.0",
+  "description": "**IT-ERA** è un sistema completo di automazione e assistenza IT sviluppato per Bulltech Informatica. Fornisce un ecosistema integrato per la gestione di clienti, ticket, backup automatici, integrazioni API e monitoraggio sicurezza.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "wrangler pages deploy web",
+    "preview": "wrangler pages dev web",
+    "dev": "wrangler pages dev web --local"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "wrangler": "^4.32.0"
+  }
+}

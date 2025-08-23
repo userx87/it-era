@@ -1,0 +1,13 @@
+[
+  { "city": "Monza", "sector": "office" },
+  { "city": "Arcore", "sector": "office" },
+  { "city": "Lecco", "sector": "industria" },
+  { "city": "Merate", "sector": "studi" },
+  { "city": "Calolziocorte", "sector": "industria" },
+  { "city": "Oggiono", "sector": "studi" },
+  { "city": "Valmadrera", "sector": "industria" },
+  { "city": "Como", "sector": "studi" },
+  { "city": "Milano", "sector": "office" },
+  { "city": "Bergamo", "sector": "industria" }
+]
+

@@ -1,0 +1,3 @@
+2025-08-22 15:31:34,107 - IT-ERA.test - INFO - Test sistema di logging IT-ERA
+2025-08-22 15:31:34,108 - IT-ERA.test - WARNING - Test warning con dettagli
+2025-08-22 15:31:34,108 - IT-ERA.test - ERROR - Test error log

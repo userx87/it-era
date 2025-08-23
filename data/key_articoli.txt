@@ -1,0 +1,30 @@
+# Keyword per articoli blog (informational + problem/solution)
+
+[Produttività e Office 365]
+"come velocizzare outlook" {{CITTA}}
+"guida migrazione office 365" {{CITTA}}
+"gestione licenze microsoft 365 pmi" {{CITTA}}
+
+[Sicurezza]
+"antivirus aziendale migliore" {{CITTA}}
+"come evitare phishing in azienda" {{CITTA}}
+"policy password aziendali" {{CITTA}}
+
+[Backup & DR]
+"backup aziendale veeam best practice" {{CITTA}}
+"ripristino bare metal guida" {{CITTA}}
+"strategia 3-2-1 backup" {{CITTA}}
+
+[Rete e Wi-Fi]
+"come segmentare rete vlan pmi" {{CITTA}}
+"ottimizzare wifi ufficio" {{CITTA}}
+"sd-wan vs doppia wan" {{CITTA}}
+
+[Monitoraggio]
+"monitoraggio zabbix per pmi" {{CITTA}}
+"kpi it da monitorare" {{CITTA}}
+
+[Help desk]
+"come impostare ticketing it" {{CITTA}}
+"sla help desk esempi" {{CITTA}}
+

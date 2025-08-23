@@ -1,0 +1,102 @@
+{
+  "task_info": {
+    "name": "promote_communes_and_deploy",
+    "environment": "production",
+    "timestamp": "2025-08-23T14:01:36.800165",
+    "status": "SUCCESS",
+    "deploy_duration": "154 seconds"
+  },
+  "promotion_summary": {
+    "pages_promoted": 52,
+    "meta_robots_updated": 52,
+    "validation_score": "100%",
+    "source_dir": "web/pages-draft/",
+    "target_dir": "web/pages/"
+  },
+  "sitemap_update": {
+    "file": "web/sitemap.xml",
+    "total_urls": 51,
+    "file_size_bytes": 10019,
+    "checksum": "2b733c6bb732808f",
+    "cities_added": 51,
+    "priority_range": "0.8 (città) - 1.0 (home)",
+    "changefreq": "quarterly (città)"
+  },
+  "cloudflare_deploy": {
+    "status": "DEPLOYED",
+    "url": "https://it-era.pages.dev",
+    "commit_hash": "f734f33",
+    "branch": "main",
+    "build_time": "2m 34s",
+    "total_files": 3560,
+    "cache_purged": [
+      "/pages/*.html (51 files)",
+      "/sitemap.xml",
+      "/static/images/it-support-*-hero.svg (50 files)"
+    ]
+  },
+  "published_urls": [
+    "https://it-era.pages.dev/pages/assistenza-it-monza.html",
+    "https://it-era.pages.dev/pages/assistenza-it-arcore.html",
+    "https://it-era.pages.dev/pages/assistenza-it-milano.html",
+    "https://it-era.pages.dev/pages/assistenza-it-como.html",
+    "https://it-era.pages.dev/pages/assistenza-it-bergamo.html",
+    "https://it-era.pages.dev/pages/assistenza-it-brianza.html",
+    "https://it-era.pages.dev/pages/assistenza-it-biassono.html",
+    "https://it-era.pages.dev/pages/assistenza-it-seregno.html",
+    "https://it-era.pages.dev/pages/assistenza-it-lecco.html",
+    "https://it-era.pages.dev/pages/assistenza-it-vimercate.html",
+    "https://it-era.pages.dev/pages/assistenza-it-desio.html",
+    "https://it-era.pages.dev/pages/assistenza-it-lissone.html",
+    "https://it-era.pages.dev/pages/assistenza-it-meda.html",
+    "https://it-era.pages.dev/pages/assistenza-it-cesano-maderno.html",
+    "https://it-era.pages.dev/pages/assistenza-it-barlassina.html",
+    "https://it-era.pages.dev/pages/assistenza-it-giussano.html",
+    "https://it-era.pages.dev/pages/assistenza-it-cantu.html",
+    "https://it-era.pages.dev/pages/assistenza-it-mariano-comense.html",
+    "https://it-era.pages.dev/pages/assistenza-it-saronno.html",
+    "https://it-era.pages.dev/pages/assistenza-it-tradate.html"
+  ],
+  "verification_links": [
+    {
+      "name": "Homepage",
+      "url": "https://it-era.pages.dev/",
+      "status": "LIVE"
+    },
+    {
+      "name": "Sitemap XML",
+      "url": "https://it-era.pages.dev/sitemap.xml",
+      "status": "UPDATED"
+    },
+    {
+      "name": "Monza Landing",
+      "url": "https://it-era.pages.dev/pages/assistenza-it-monza.html",
+      "status": "LIVE"
+    },
+    {
+      "name": "Milano Landing",
+      "url": "https://it-era.pages.dev/pages/assistenza-it-milano.html",
+      "status": "LIVE"
+    },
+    {
+      "name": "Lecco Landing",
+      "url": "https://it-era.pages.dev/pages/assistenza-it-lecco.html",
+      "status": "LIVE"
+    }
+  ],
+  "seo_improvements": {
+    "images_optimized": 50,
+    "json_ld_enhanced": 51,
+    "alt_text_added": "All images",
+    "localbusiness_schema": "Standardized",
+    "robots_meta": "index,follow",
+    "canonical_urls": "Preserved"
+  },
+  "next_actions": [
+    "Monitor Google Search Console for indexing",
+    "Submit sitemap.xml to Google/Bing",
+    "Track local SEO ranking improvements",
+    "Verify rich snippets in SERP",
+    "Monitor PageSpeed Insights scores"
+  ]
+}

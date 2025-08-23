@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-oggiono">
+  <title id="title-oggiono">Assistenza IT Oggiono - Supporto informatico professionale per PMI</title> viewBox="0 0 600 400" width="600" height="400">
   <rect width="600" height="400" fill="#f8f9fa"/>
   <rect x="50" y="100" width="200" height="120" fill="#0066cc" rx="8"/>
   <rect x="60" y="110" width="180" height="90" fill="#003d7a"/>
@@ -7,5 +8,5 @@
   <circle cx="400" cy="200" r="80" fill="#28a745" opacity="0.2"/>
   <path d="M370 200 L390 180 L430 220 L410 240 Z" fill="#28a745"/>
   <text x="300" y="320" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">Assistenza IT Professionale</text>
-  <text x="300" y="350" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">Supporto Tecnico per PMI Lecco</text>
+  <text x="300" y="350" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">Supporto Tecnico per PMI Oggiono</text>
 </svg>

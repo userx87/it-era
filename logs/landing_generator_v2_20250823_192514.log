@@ -1,0 +1,1819 @@
+2025-08-23 19:25:14,892 - LandingGenerator - INFO - Loaded 816 records from CSV
+2025-08-23 19:25:14,892 - LandingGenerator - INFO - Starting generation for all services
+2025-08-23 19:25:14,892 - LandingGenerator - INFO - Processing service: assistenza-it
+2025-08-23 19:25:14,892 - LandingGenerator - INFO - Starting generation for assistenza-it: 272 pages
+2025-08-23 19:25:14,892 - LandingGenerator - INFO - Generating pages in: /Users/andreapanzeri/progetti/IT-ERA/web/pages
+2025-08-23 19:25:14,894 - LandingGenerator - DEBUG - Generated: assistenza-it-albino.html
+2025-08-23 19:25:14,894 - LandingGenerator - DEBUG - Generated: assistenza-it-alzano-lombardo.html
+2025-08-23 19:25:14,894 - LandingGenerator - DEBUG - Generated: assistenza-it-almenno-san-bartolomeo.html
+2025-08-23 19:25:14,895 - LandingGenerator - DEBUG - Generated: assistenza-it-bergamo.html
+2025-08-23 19:25:14,896 - LandingGenerator - DEBUG - Generated: assistenza-it-caravaggio.html
+2025-08-23 19:25:14,896 - LandingGenerator - DEBUG - Generated: assistenza-it-castione-della-presolana.html
+2025-08-23 19:25:14,896 - LandingGenerator - DEBUG - Generated: assistenza-it-cazzano-sant-andrea.html
+2025-08-23 19:25:14,896 - LandingGenerator - DEBUG - Generated: assistenza-it-casnigo.html
+2025-08-23 19:25:14,897 - LandingGenerator - DEBUG - Generated: assistenza-it-clusone.html
+2025-08-23 19:25:14,897 - LandingGenerator - DEBUG - Generated: assistenza-it-curno.html
+2025-08-23 19:25:14,897 - LandingGenerator - DEBUG - Generated: assistenza-it-dalmine.html
+2025-08-23 19:25:14,897 - LandingGenerator - DEBUG - Generated: assistenza-it-colzate.html
+2025-08-23 19:25:14,897 - LandingGenerator - INFO - Progress: 10/272 (3.68%) - Success: 10, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,898 - LandingGenerator - DEBUG - Generated: assistenza-it-fiorano-al-serio.html
+2025-08-23 19:25:14,898 - LandingGenerator - DEBUG - Generated: assistenza-it-gazzaniga.html
+2025-08-23 19:25:14,898 - LandingGenerator - DEBUG - Generated: assistenza-it-gorle.html
+2025-08-23 19:25:14,898 - LandingGenerator - DEBUG - Generated: assistenza-it-gandino.html
+2025-08-23 19:25:14,899 - LandingGenerator - DEBUG - Generated: assistenza-it-grassobbio.html
+2025-08-23 19:25:14,899 - LandingGenerator - DEBUG - Generated: assistenza-it-nembro.html
+2025-08-23 19:25:14,899 - LandingGenerator - DEBUG - Generated: assistenza-it-mozzo.html
+2025-08-23 19:25:14,899 - LandingGenerator - DEBUG - Generated: assistenza-it-leffe.html
+2025-08-23 19:25:14,899 - LandingGenerator - INFO - Progress: 20/272 (7.35%) - Success: 20, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-orio-al-serio.html
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-paladina.html
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-osio-sotto.html
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-parre.html
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-ponte-nossa.html
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-ponte-san-pietro.html
+2025-08-23 19:25:14,900 - LandingGenerator - DEBUG - Generated: assistenza-it-pedrengo.html
+2025-08-23 19:25:14,901 - LandingGenerator - DEBUG - Generated: assistenza-it-pradalunga.html
+2025-08-23 19:25:14,901 - LandingGenerator - DEBUG - Generated: assistenza-it-romano-di-lombardia.html
+2025-08-23 19:25:14,901 - LandingGenerator - DEBUG - Generated: assistenza-it-premolo.html
+2025-08-23 19:25:14,901 - LandingGenerator - DEBUG - Generated: assistenza-it-ranica.html
+2025-08-23 19:25:14,902 - LandingGenerator - INFO - Progress: 30/272 (11.03%) - Success: 30, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,902 - LandingGenerator - DEBUG - Generated: assistenza-it-san-pellegrino-terme.html
+2025-08-23 19:25:14,902 - LandingGenerator - DEBUG - Generated: assistenza-it-scanzorosciate.html
+2025-08-23 19:25:14,902 - LandingGenerator - DEBUG - Generated: assistenza-it-sant-omobono-terme.html
+2025-08-23 19:25:14,903 - LandingGenerator - DEBUG - Generated: assistenza-it-seriate.html
+2025-08-23 19:25:14,903 - LandingGenerator - DEBUG - Generated: assistenza-it-stezzano.html
+2025-08-23 19:25:14,903 - LandingGenerator - DEBUG - Generated: assistenza-it-torre-boldone.html
+2025-08-23 19:25:14,904 - LandingGenerator - DEBUG - Generated: assistenza-it-verdellino.html
+2025-08-23 19:25:14,904 - LandingGenerator - DEBUG - Generated: assistenza-it-vertova.html
+2025-08-23 19:25:14,904 - LandingGenerator - DEBUG - Generated: assistenza-it-treviglio.html
+2025-08-23 19:25:14,904 - LandingGenerator - INFO - Progress: 40/272 (14.71%) - Success: 40, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,904 - LandingGenerator - DEBUG - Generated: assistenza-it-villa-d-alme.html
+2025-08-23 19:25:14,904 - LandingGenerator - DEBUG - Generated: assistenza-it-villa-di-serio.html
+2025-08-23 19:25:14,905 - LandingGenerator - DEBUG - Generated: assistenza-it-zogno.html
+2025-08-23 19:25:14,905 - LandingGenerator - DEBUG - Generated: assistenza-it-zanica.html
+2025-08-23 19:25:14,905 - LandingGenerator - DEBUG - Generated: assistenza-it-anzano-del-parco.html
+2025-08-23 19:25:14,905 - LandingGenerator - DEBUG - Generated: assistenza-it-appiano-gentile.html
+2025-08-23 19:25:14,909 - LandingGenerator - DEBUG - Generated: assistenza-it-arosio.html
+2025-08-23 19:25:14,909 - LandingGenerator - DEBUG - Generated: assistenza-it-barlassina.html
+2025-08-23 19:25:14,910 - LandingGenerator - DEBUG - Generated: assistenza-it-bregnano.html
+2025-08-23 19:25:14,910 - LandingGenerator - DEBUG - Generated: assistenza-it-brenna.html
+2025-08-23 19:25:14,911 - LandingGenerator - DEBUG - Generated: assistenza-it-bulgarograsso.html
+2025-08-23 19:25:14,911 - LandingGenerator - DEBUG - Generated: assistenza-it-cabiate.html
+2025-08-23 19:25:14,911 - LandingGenerator - DEBUG - Generated: assistenza-it-cadorago.html
+2025-08-23 19:25:14,911 - LandingGenerator - INFO - Progress: 50/272 (18.38%) - Success: 50, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,911 - LandingGenerator - DEBUG - Generated: assistenza-it-cantu.html
+2025-08-23 19:25:14,912 - LandingGenerator - DEBUG - Generated: assistenza-it-capiago-intimiano.html
+2025-08-23 19:25:14,912 - LandingGenerator - DEBUG - Generated: assistenza-it-carbonate.html
+2025-08-23 19:25:14,912 - LandingGenerator - DEBUG - Generated: assistenza-it-carimate.html
+2025-08-23 19:25:14,913 - LandingGenerator - DEBUG - Generated: assistenza-it-caronno-pertusella.html
+2025-08-23 19:25:14,913 - LandingGenerator - DEBUG - Generated: assistenza-it-carugo.html
+2025-08-23 19:25:14,913 - LandingGenerator - DEBUG - Generated: assistenza-it-cermenate.html
+2025-08-23 19:25:14,914 - LandingGenerator - DEBUG - Generated: assistenza-it-cirimido.html
+2025-08-23 19:25:14,916 - LandingGenerator - INFO - Progress: 60/272 (22.06%) - Success: 60, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,916 - LandingGenerator - DEBUG - Generated: assistenza-it-cislago.html
+2025-08-23 19:25:14,916 - LandingGenerator - DEBUG - Generated: assistenza-it-como.html
+2025-08-23 19:25:14,916 - LandingGenerator - DEBUG - Generated: assistenza-it-cogliate.html
+2025-08-23 19:25:14,916 - LandingGenerator - DEBUG - Generated: assistenza-it-fenegro.html
+2025-08-23 19:25:14,919 - LandingGenerator - DEBUG - Generated: assistenza-it-gerenzano.html
+2025-08-23 19:25:14,919 - LandingGenerator - DEBUG - Generated: assistenza-it-fino-mornasco.html
+2025-08-23 19:25:14,920 - LandingGenerator - DEBUG - Generated: assistenza-it-figino-serenza.html
+2025-08-23 19:25:14,920 - LandingGenerator - DEBUG - Generated: assistenza-it-giussano.html
+2025-08-23 19:25:14,920 - LandingGenerator - DEBUG - Generated: assistenza-it-inverigo.html
+2025-08-23 19:25:14,921 - LandingGenerator - DEBUG - Generated: assistenza-it-lazzate.html
+2025-08-23 19:25:14,921 - LandingGenerator - DEBUG - Generated: assistenza-it-lentate-sul-seveso.html
+2025-08-23 19:25:14,921 - LandingGenerator - INFO - Progress: 70/272 (25.74%) - Success: 70, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,921 - LandingGenerator - DEBUG - Generated: assistenza-it-limido-comasco.html
+2025-08-23 19:25:14,921 - LandingGenerator - DEBUG - Generated: assistenza-it-locate-varesino.html
+2025-08-23 19:25:14,922 - LandingGenerator - DEBUG - Generated: assistenza-it-lomazzo.html
+2025-08-23 19:25:14,922 - LandingGenerator - DEBUG - Generated: assistenza-it-lurate-caccivio.html
+2025-08-23 19:25:14,922 - LandingGenerator - DEBUG - Generated: assistenza-it-mariano-comense.html
+2025-08-23 19:25:14,923 - LandingGenerator - DEBUG - Generated: assistenza-it-meda.html
+2025-08-23 19:25:14,923 - LandingGenerator - DEBUG - Generated: assistenza-it-misinto.html
+2025-08-23 19:25:14,923 - LandingGenerator - DEBUG - Generated: assistenza-it-montorfano.html
+2025-08-23 19:25:14,924 - LandingGenerator - DEBUG - Generated: assistenza-it-mozzate.html
+2025-08-23 19:25:14,924 - LandingGenerator - DEBUG - Generated: assistenza-it-novedrate.html
+2025-08-23 19:25:14,924 - LandingGenerator - INFO - Progress: 80/272 (29.41%) - Success: 80, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,924 - LandingGenerator - DEBUG - Generated: assistenza-it-olgiate-comasco.html
+2025-08-23 19:25:14,925 - LandingGenerator - DEBUG - Generated: assistenza-it-origgio.html
+2025-08-23 19:25:14,925 - LandingGenerator - DEBUG - Generated: assistenza-it-rovellasca.html
+2025-08-23 19:25:14,925 - LandingGenerator - DEBUG - Generated: assistenza-it-rovello-porro.html
+2025-08-23 19:25:14,926 - LandingGenerator - DEBUG - Generated: assistenza-it-saronno.html
+2025-08-23 19:25:14,926 - LandingGenerator - DEBUG - Generated: assistenza-it-senna-comasco.html
+2025-08-23 19:25:14,926 - LandingGenerator - DEBUG - Generated: assistenza-it-seveso.html
+2025-08-23 19:25:14,927 - LandingGenerator - DEBUG - Generated: assistenza-it-turate.html
+2025-08-23 19:25:14,927 - LandingGenerator - DEBUG - Generated: assistenza-it-veniano.html
+2025-08-23 19:25:14,928 - LandingGenerator - DEBUG - Generated: assistenza-it-abbadia-lariana.html
+2025-08-23 19:25:14,928 - LandingGenerator - DEBUG - Generated: assistenza-it-airuno.html
+2025-08-23 19:25:14,928 - LandingGenerator - INFO - Progress: 90/272 (33.09%) - Success: 90, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,928 - LandingGenerator - DEBUG - Generated: assistenza-it-annone-di-brianza.html
+2025-08-23 19:25:14,929 - LandingGenerator - DEBUG - Generated: assistenza-it-ballabio.html
+2025-08-23 19:25:14,929 - LandingGenerator - DEBUG - Generated: assistenza-it-barzago.html
+2025-08-23 19:25:14,929 - LandingGenerator - DEBUG - Generated: assistenza-it-barzio.html
+2025-08-23 19:25:14,930 - LandingGenerator - DEBUG - Generated: assistenza-it-bellano.html
+2025-08-23 19:25:14,930 - LandingGenerator - DEBUG - Generated: assistenza-it-calolziocorte.html
+2025-08-23 19:25:14,930 - LandingGenerator - DEBUG - Generated: assistenza-it-casatenovo.html
+2025-08-23 19:25:14,930 - LandingGenerator - DEBUG - Generated: assistenza-it-cassina-valsassina.html
+2025-08-23 19:25:14,931 - LandingGenerator - DEBUG - Generated: assistenza-it-cernusco-lombardone.html
+2025-08-23 19:25:14,931 - LandingGenerator - INFO - Progress: 100/272 (36.76%) - Success: 100, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,931 - LandingGenerator - DEBUG - Generated: assistenza-it-colico.html
+2025-08-23 19:25:14,932 - LandingGenerator - DEBUG - Generated: assistenza-it-cortenova.html
+2025-08-23 19:25:14,932 - LandingGenerator - DEBUG - Generated: assistenza-it-costa-masnaga.html
+2025-08-23 19:25:14,932 - LandingGenerator - DEBUG - Generated: assistenza-it-cremeno.html
+2025-08-23 19:25:14,932 - LandingGenerator - DEBUG - Generated: assistenza-it-dervio.html
+2025-08-23 19:25:14,933 - LandingGenerator - DEBUG - Generated: assistenza-it-dolzago.html
+2025-08-23 19:25:14,933 - LandingGenerator - DEBUG - Generated: assistenza-it-ello.html
+2025-08-23 19:25:14,933 - LandingGenerator - DEBUG - Generated: assistenza-it-garlate.html
+2025-08-23 19:25:14,934 - LandingGenerator - DEBUG - Generated: assistenza-it-introbio.html
+2025-08-23 19:25:14,934 - LandingGenerator - DEBUG - Generated: assistenza-it-la-valletta-brianza.html
+2025-08-23 19:25:14,934 - LandingGenerator - INFO - Progress: 110/272 (40.44%) - Success: 110, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,934 - LandingGenerator - DEBUG - Generated: assistenza-it-lecco.html
+2025-08-23 19:25:14,935 - LandingGenerator - DEBUG - Generated: assistenza-it-lierna.html
+2025-08-23 19:25:14,935 - LandingGenerator - DEBUG - Generated: assistenza-it-malgrate.html
+2025-08-23 19:25:14,935 - LandingGenerator - DEBUG - Generated: assistenza-it-mandello-del-lario.html
+2025-08-23 19:25:14,936 - LandingGenerator - DEBUG - Generated: assistenza-it-merate.html
+2025-08-23 19:25:14,936 - LandingGenerator - DEBUG - Generated: assistenza-it-moggio.html
+2025-08-23 19:25:14,936 - LandingGenerator - DEBUG - Generated: assistenza-it-montevecchia.html
+2025-08-23 19:25:14,937 - LandingGenerator - DEBUG - Generated: assistenza-it-morterone.html
+2025-08-23 19:25:14,937 - LandingGenerator - DEBUG - Generated: assistenza-it-nibionno.html
+2025-08-23 19:25:14,937 - LandingGenerator - DEBUG - Generated: assistenza-it-oggiono.html
+2025-08-23 19:25:14,937 - LandingGenerator - INFO - Progress: 120/272 (44.12%) - Success: 120, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,937 - LandingGenerator - DEBUG - Generated: assistenza-it-olginate.html
+2025-08-23 19:25:14,938 - LandingGenerator - DEBUG - Generated: assistenza-it-osnago.html
+2025-08-23 19:25:14,938 - LandingGenerator - DEBUG - Generated: assistenza-it-pasturo.html
+2025-08-23 19:25:14,938 - LandingGenerator - DEBUG - Generated: assistenza-it-perledo.html
+2025-08-23 19:25:14,939 - LandingGenerator - DEBUG - Generated: assistenza-it-premana.html
+2025-08-23 19:25:14,939 - LandingGenerator - DEBUG - Generated: assistenza-it-primaluna.html
+2025-08-23 19:25:14,939 - LandingGenerator - DEBUG - Generated: assistenza-it-rogeno.html
+2025-08-23 19:25:14,940 - LandingGenerator - DEBUG - Generated: assistenza-it-taceno.html
+2025-08-23 19:25:14,940 - LandingGenerator - DEBUG - Generated: assistenza-it-valmadrera.html
+2025-08-23 19:25:14,940 - LandingGenerator - DEBUG - Generated: assistenza-it-varenna.html
+2025-08-23 19:25:14,940 - LandingGenerator - INFO - Progress: 130/272 (47.79%) - Success: 130, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,941 - LandingGenerator - DEBUG - Generated: assistenza-it-agnadello.html
+2025-08-23 19:25:14,941 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,941 - LandingGenerator - DEBUG - Generated: assistenza-it-bariano.html
+2025-08-23 19:25:14,941 - LandingGenerator - DEBUG - Generated: assistenza-it-borghetto-lodigiano.html
+2025-08-23 19:25:14,942 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,942 - LandingGenerator - DEBUG - Generated: assistenza-it-calvenzano.html
+2025-08-23 19:25:14,943 - LandingGenerator - DEBUG - Generated: assistenza-it-caravaggio.html
+2025-08-23 19:25:14,943 - LandingGenerator - DEBUG - Generated: assistenza-it-casalpusterlengo.html
+2025-08-23 19:25:14,943 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,943 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,944 - LandingGenerator - INFO - Progress: 140/272 (51.47%) - Success: 140, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,944 - LandingGenerator - DEBUG - Generated: assistenza-it-codogno.html
+2025-08-23 19:25:14,944 - LandingGenerator - DEBUG - Generated: assistenza-it-covo.html
+2025-08-23 19:25:14,945 - LandingGenerator - DEBUG - Generated: assistenza-it-crema.html
+2025-08-23 19:25:14,945 - LandingGenerator - DEBUG - Generated: assistenza-it-dovera.html
+2025-08-23 19:25:14,945 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,945 - LandingGenerator - DEBUG - Generated: assistenza-it-fombio.html
+2025-08-23 19:25:14,946 - LandingGenerator - DEBUG - Generated: assistenza-it-formigara.html
+2025-08-23 19:25:14,946 - LandingGenerator - DEBUG - Generated: assistenza-it-lodi.html
+2025-08-23 19:25:14,947 - LandingGenerator - DEBUG - Generated: assistenza-it-lodi-vecchio.html
+2025-08-23 19:25:14,947 - LandingGenerator - DEBUG - Generated: assistenza-it-lurano.html
+2025-08-23 19:25:14,947 - LandingGenerator - INFO - Progress: 150/272 (55.15%) - Success: 150, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,947 - LandingGenerator - DEBUG - Generated: assistenza-it-maleo.html
+2025-08-23 19:25:14,947 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,948 - LandingGenerator - DEBUG - Generated: assistenza-it-montanaso-lombardo.html
+2025-08-23 19:25:14,948 - LandingGenerator - DEBUG - Generated: assistenza-it-offanengo.html
+2025-08-23 19:25:14,948 - LandingGenerator - DEBUG - Generated: assistenza-it-ossago-lodigiano.html
+2025-08-23 19:25:14,949 - LandingGenerator - DEBUG - Generated: assistenza-it-pagazzano.html
+2025-08-23 19:25:14,949 - LandingGenerator - DEBUG - Generated: assistenza-it-pandino.html
+2025-08-23 19:25:14,950 - LandingGenerator - DEBUG - Generated: assistenza-it-pizzighettone.html
+2025-08-23 19:25:14,950 - LandingGenerator - DEBUG - Generated: assistenza-it-pieve-fissiraga.html
+2025-08-23 19:25:14,950 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,950 - LandingGenerator - INFO - Progress: 160/272 (58.82%) - Success: 160, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,951 - LandingGenerator - DEBUG - Generated: assistenza-it-romano-di-lombardia.html
+2025-08-23 19:25:14,951 - LandingGenerator - DEBUG - Generated: assistenza-it-san-fiorano.html
+2025-08-23 19:25:14,951 - LandingGenerator - DEBUG - Generated: assistenza-it-somaglia.html
+2025-08-23 19:25:14,951 - LandingGenerator - DEBUG - Generated: assistenza-it-sant-angelo-lodigiano.html
+2025-08-23 19:25:14,952 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,952 - LandingGenerator - DEBUG - Generated: assistenza-it-spirano.html
+2025-08-23 19:25:14,953 - LandingGenerator - DEBUG - Generated: assistenza-it-tavazzano-con-villavesco.html
+2025-08-23 19:25:14,953 - LandingGenerator - DEBUG - Generated: assistenza-it-torlasco.html
+2025-08-23 19:25:14,953 - LandingGenerator - DEBUG - Generated: assistenza-it-trescore-cremasco.html
+2025-08-23 19:25:14,954 - LandingGenerator - DEBUG - Generated: assistenza-it-vaiano-cremasco.html
+2025-08-23 19:25:14,954 - LandingGenerator - INFO - Progress: 170/272 (62.5%) - Success: 170, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,954 - LandingGenerator - DEBUG - Generated: assistenza-it-zelo-buon-persico.html
+2025-08-23 19:25:14,954 - LandingGenerator - DEBUG - Generated: assistenza-it-abbiategrasso.html
+2025-08-23 19:25:14,955 - LandingGenerator - DEBUG - Generated: assistenza-it-assago.html
+2025-08-23 19:25:14,955 - LandingGenerator - DEBUG - Generated: assistenza-it-basiglio.html
+2025-08-23 19:25:14,955 - LandingGenerator - DEBUG - Generated: assistenza-it-besate.html
+2025-08-23 19:25:14,956 - LandingGenerator - DEBUG - Generated: assistenza-it-binasco.html
+2025-08-23 19:25:14,956 - LandingGenerator - DEBUG - Generated: assistenza-it-bollate.html
+2025-08-23 19:25:14,956 - LandingGenerator - DEBUG - Generated: assistenza-it-bovisio-masciago.html
+2025-08-23 19:25:14,956 - LandingGenerator - DEBUG - Generated: assistenza-it-bresso.html
+2025-08-23 19:25:14,957 - LandingGenerator - INFO - Progress: 180/272 (66.18%) - Success: 180, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,957 - LandingGenerator - DEBUG - Generated: assistenza-it-buccinasco.html
+2025-08-23 19:25:14,957 - LandingGenerator - DEBUG - Generated: assistenza-it-bubbiano.html
+2025-08-23 19:25:14,957 - LandingGenerator - DEBUG - Generated: assistenza-it-calvignasco.html
+2025-08-23 19:25:14,958 - LandingGenerator - DEBUG - Generated: assistenza-it-carbonate.html
+2025-08-23 19:25:14,958 - LandingGenerator - DEBUG - Generated: assistenza-it-caronno-pertusella.html
+2025-08-23 19:25:14,959 - LandingGenerator - DEBUG - Generated: assistenza-it-cesano-boscone.html
+2025-08-23 19:25:14,959 - LandingGenerator - DEBUG - Generated: assistenza-it-cesate.html
+2025-08-23 19:25:14,959 - LandingGenerator - DEBUG - Generated: assistenza-it-cinisello-balsamo.html
+2025-08-23 19:25:14,960 - LandingGenerator - DEBUG - Generated: assistenza-it-cislago.html
+2025-08-23 19:25:14,960 - LandingGenerator - DEBUG - Generated: assistenza-it-cologno-monzese.html
+2025-08-23 19:25:14,960 - LandingGenerator - DEBUG - Generated: assistenza-it-cormano.html
+2025-08-23 19:25:14,961 - LandingGenerator - INFO - Progress: 190/272 (69.85%) - Success: 190, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,961 - LandingGenerator - DEBUG - Generated: assistenza-it-corsico.html
+2025-08-23 19:25:14,961 - LandingGenerator - DEBUG - Generated: assistenza-it-cusano-milanino.html
+2025-08-23 19:25:14,961 - LandingGenerator - DEBUG - Generated: assistenza-it-garbagnate-milanese.html
+2025-08-23 19:25:14,962 - LandingGenerator - DEBUG - Generated: assistenza-it-gerenzano.html
+2025-08-23 19:25:14,962 - LandingGenerator - DEBUG - Generated: assistenza-it-lacchiarella.html
+2025-08-23 19:25:14,962 - LandingGenerator - DEBUG - Generated: assistenza-it-limbiate.html
+2025-08-23 19:25:14,963 - LandingGenerator - DEBUG - Generated: assistenza-it-locate-di-triulzi.html
+2025-08-23 19:25:14,963 - LandingGenerator - DEBUG - Generated: assistenza-it-milano.html
+2025-08-23 19:25:14,963 - LandingGenerator - DEBUG - Generated: assistenza-it-morimondo.html
+2025-08-23 19:25:14,964 - LandingGenerator - DEBUG - Generated: assistenza-it-muggio.html
+2025-08-23 19:25:14,964 - LandingGenerator - DEBUG - Generated: assistenza-it-mozzate.html
+2025-08-23 19:25:14,964 - LandingGenerator - INFO - Progress: 200/272 (73.53%) - Success: 200, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,964 - LandingGenerator - DEBUG - Generated: assistenza-it-nova-milanese.html
+2025-08-23 19:25:14,964 - LandingGenerator - DEBUG - Generated: assistenza-it-noviglio.html
+2025-08-23 19:25:14,965 - LandingGenerator - DEBUG - Generated: assistenza-it-opera.html
+2025-08-23 19:25:14,965 - LandingGenerator - DEBUG - Generated: assistenza-it-origgio.html
+2025-08-23 19:25:14,966 - LandingGenerator - DEBUG - Generated: assistenza-it-paderno-dugnano.html
+2025-08-23 19:25:14,966 - LandingGenerator - DEBUG - Generated: assistenza-it-pieve-emanuele.html
+2025-08-23 19:25:14,966 - LandingGenerator - DEBUG - Generated: assistenza-it-rho.html
+2025-08-23 19:25:14,967 - LandingGenerator - DEBUG - Generated: assistenza-it-rovellasca.html
+2025-08-23 19:25:14,967 - LandingGenerator - DEBUG - Generated: assistenza-it-rosate.html
+2025-08-23 19:25:14,967 - LandingGenerator - INFO - Progress: 210/272 (77.21%) - Success: 210, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,967 - LandingGenerator - DEBUG - Generated: assistenza-it-rovello-porro.html
+2025-08-23 19:25:14,968 - LandingGenerator - DEBUG - Generated: assistenza-it-rozzano.html
+2025-08-23 19:25:14,968 - LandingGenerator - DEBUG - Generated: assistenza-it-saronno.html
+2025-08-23 19:25:14,968 - LandingGenerator - DEBUG - Generated: assistenza-it-senago.html
+2025-08-23 19:25:14,969 - LandingGenerator - DEBUG - Generated: assistenza-it-sesto-san-giovanni.html
+2025-08-23 19:25:14,969 - LandingGenerator - DEBUG - Generated: assistenza-it-solaro.html
+2025-08-23 19:25:14,970 - LandingGenerator - DEBUG - Generated: assistenza-it-trezzano-sul-naviglio.html
+2025-08-23 19:25:14,970 - LandingGenerator - DEBUG - Generated: assistenza-it-turate.html
+2025-08-23 19:25:14,970 - LandingGenerator - DEBUG - Generated: assistenza-it-uboldo.html
+2025-08-23 19:25:14,970 - LandingGenerator - DEBUG - Generated: assistenza-it-varedo.html
+2025-08-23 19:25:14,970 - LandingGenerator - INFO - Progress: 220/272 (80.88%) - Success: 220, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,971 - LandingGenerator - DEBUG - Generated: assistenza-it-zibido-san-giacomo.html
+2025-08-23 19:25:14,971 - LandingGenerator - DEBUG - Generated: assistenza-it-agrate-brianza.html
+2025-08-23 19:25:14,971 - LandingGenerator - DEBUG - Generated: assistenza-it-aicurzio.html
+2025-08-23 19:25:14,972 - LandingGenerator - DEBUG - Generated: assistenza-it-albiate.html
+2025-08-23 19:25:14,972 - LandingGenerator - DEBUG - Generated: assistenza-it-arcore.html
+2025-08-23 19:25:14,972 - LandingGenerator - DEBUG - Generated: assistenza-it-basiano.html
+2025-08-23 19:25:14,973 - LandingGenerator - DEBUG - Generated: assistenza-it-barlassina.html
+2025-08-23 19:25:14,973 - LandingGenerator - DEBUG - Generated: assistenza-it-bellusco.html
+2025-08-23 19:25:14,973 - LandingGenerator - DEBUG - Generated: assistenza-it-bernareggio.html
+2025-08-23 19:25:14,974 - LandingGenerator - DEBUG - Generated: assistenza-it-besana-in-brianza.html
+2025-08-23 19:25:14,974 - LandingGenerator - DEBUG - Generated: assistenza-it-biassono.html
+2025-08-23 19:25:14,974 - LandingGenerator - INFO - Progress: 230/272 (84.56%) - Success: 230, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,974 - LandingGenerator - DEBUG - Generated: assistenza-it-brugherio.html
+2025-08-23 19:25:14,975 - LandingGenerator - DEBUG - Generated: assistenza-it-burago-di-molgora.html
+2025-08-23 19:25:14,975 - LandingGenerator - DEBUG - Generated: assistenza-it-busnago.html
+2025-08-23 19:25:14,975 - LandingGenerator - DEBUG - Generated: assistenza-it-cambiago.html
+2025-08-23 19:25:14,976 - LandingGenerator - DEBUG - Generated: assistenza-it-camparada.html
+2025-08-23 19:25:14,976 - LandingGenerator - DEBUG - Generated: assistenza-it-carate-brianza.html
+2025-08-23 19:25:14,976 - LandingGenerator - DEBUG - Generated: assistenza-it-carnate.html
+2025-08-23 19:25:14,977 - LandingGenerator - DEBUG - Generated: assistenza-it-cesano-maderno.html
+2025-08-23 19:25:14,977 - LandingGenerator - DEBUG - Generated: assistenza-it-cavenago-di-brianza.html
+2025-08-23 19:25:14,977 - LandingGenerator - INFO - Progress: 240/272 (88.24%) - Success: 240, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,977 - LandingGenerator - DEBUG - Generated: assistenza-it-concorezzo.html
+2025-08-23 19:25:14,978 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:14,978 - LandingGenerator - DEBUG - Generated: assistenza-it-correzzana.html
+2025-08-23 19:25:14,978 - LandingGenerator - DEBUG - Generated: assistenza-it-desio.html
+2025-08-23 19:25:14,979 - LandingGenerator - DEBUG - Generated: assistenza-it-giussano.html
+2025-08-23 19:25:14,979 - LandingGenerator - DEBUG - Generated: assistenza-it-inverigo.html
+2025-08-23 19:25:14,979 - LandingGenerator - DEBUG - Generated: assistenza-it-lambrugo.html
+2025-08-23 19:25:14,980 - LandingGenerator - DEBUG - Generated: assistenza-it-lentate-sul-seveso.html
+2025-08-23 19:25:14,980 - LandingGenerator - DEBUG - Generated: assistenza-it-lesmo.html
+2025-08-23 19:25:14,981 - LandingGenerator - DEBUG - Generated: assistenza-it-lissone.html
+2025-08-23 19:25:14,981 - LandingGenerator - DEBUG - Generated: assistenza-it-masate.html
+2025-08-23 19:25:14,981 - LandingGenerator - INFO - Progress: 250/272 (91.91%) - Success: 250, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,981 - LandingGenerator - DEBUG - Generated: assistenza-it-meda.html
+2025-08-23 19:25:14,981 - LandingGenerator - DEBUG - Generated: assistenza-it-mezzago.html
+2025-08-23 19:25:14,982 - LandingGenerator - DEBUG - Generated: assistenza-it-misinto.html
+2025-08-23 19:25:14,982 - LandingGenerator - DEBUG - Generated: assistenza-it-monza.html
+2025-08-23 19:25:14,983 - LandingGenerator - DEBUG - Generated: assistenza-it-ornago.html
+2025-08-23 19:25:14,983 - LandingGenerator - DEBUG - Generated: assistenza-it-novate-brianza.html
+2025-08-23 19:25:14,983 - LandingGenerator - DEBUG - Generated: assistenza-it-renate.html
+2025-08-23 19:25:14,983 - LandingGenerator - DEBUG - Generated: assistenza-it-roncello.html
+2025-08-23 19:25:14,984 - LandingGenerator - DEBUG - Generated: assistenza-it-ronco-briantino.html
+2025-08-23 19:25:14,984 - LandingGenerator - INFO - Progress: 260/272 (95.59%) - Success: 260, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,984 - LandingGenerator - DEBUG - Generated: assistenza-it-seregno.html
+2025-08-23 19:25:14,985 - LandingGenerator - DEBUG - Generated: assistenza-it-seveso.html
+2025-08-23 19:25:14,985 - LandingGenerator - DEBUG - Generated: assistenza-it-sovico.html
+2025-08-23 19:25:14,985 - LandingGenerator - DEBUG - Generated: assistenza-it-sulbiate.html
+2025-08-23 19:25:14,985 - LandingGenerator - DEBUG - Generated: assistenza-it-triuggio.html
+2025-08-23 19:25:14,986 - LandingGenerator - DEBUG - Generated: assistenza-it-usmate-velate.html
+2025-08-23 19:25:14,986 - LandingGenerator - DEBUG - Generated: assistenza-it-vedano-al-lambro.html
+2025-08-23 19:25:14,986 - LandingGenerator - DEBUG - Generated: assistenza-it-verano-brianza.html
+2025-08-23 19:25:14,987 - LandingGenerator - DEBUG - Generated: assistenza-it-villasanta.html
+2025-08-23 19:25:14,987 - LandingGenerator - DEBUG - Generated: assistenza-it-vimercate.html
+2025-08-23 19:25:14,987 - LandingGenerator - INFO - Progress: 270/272 (99.26%) - Success: 270, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,987 - LandingGenerator - INFO - Progress: 272/272 (100.0%) - Success: 272, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,987 - LandingGenerator - INFO - Generating pages in: /Users/andreapanzeri/progetti/IT-ERA/web/pages-draft
+2025-08-23 19:25:14,990 - LandingGenerator - DEBUG - Generated: assistenza-it-albino.html
+2025-08-23 19:25:14,990 - LandingGenerator - DEBUG - Generated: assistenza-it-alzano-lombardo.html
+2025-08-23 19:25:14,990 - LandingGenerator - DEBUG - Generated: assistenza-it-almenno-san-bartolomeo.html
+2025-08-23 19:25:14,990 - LandingGenerator - DEBUG - Generated: assistenza-it-bergamo.html
+2025-08-23 19:25:14,992 - LandingGenerator - DEBUG - Generated: assistenza-it-caravaggio.html
+2025-08-23 19:25:14,992 - LandingGenerator - DEBUG - Generated: assistenza-it-cazzano-sant-andrea.html
+2025-08-23 19:25:14,992 - LandingGenerator - DEBUG - Generated: assistenza-it-casnigo.html
+2025-08-23 19:25:14,992 - LandingGenerator - DEBUG - Generated: assistenza-it-castione-della-presolana.html
+2025-08-23 19:25:14,992 - LandingGenerator - DEBUG - Generated: assistenza-it-clusone.html
+2025-08-23 19:25:14,993 - LandingGenerator - INFO - Progress: 280/272 (102.94%) - Success: 280, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:14,995 - LandingGenerator - DEBUG - Generated: assistenza-it-curno.html
+2025-08-23 19:25:14,995 - LandingGenerator - DEBUG - Generated: assistenza-it-dalmine.html
+2025-08-23 19:25:14,995 - LandingGenerator - DEBUG - Generated: assistenza-it-colzate.html
+2025-08-23 19:25:14,995 - LandingGenerator - DEBUG - Generated: assistenza-it-fiorano-al-serio.html
+2025-08-23 19:25:14,999 - LandingGenerator - DEBUG - Generated: assistenza-it-gandino.html
+2025-08-23 19:25:14,999 - LandingGenerator - DEBUG - Generated: assistenza-it-gazzaniga.html
+2025-08-23 19:25:14,999 - LandingGenerator - DEBUG - Generated: assistenza-it-grassobbio.html
+2025-08-23 19:25:14,999 - LandingGenerator - DEBUG - Generated: assistenza-it-gorle.html
+2025-08-23 19:25:15,001 - LandingGenerator - DEBUG - Generated: assistenza-it-leffe.html
+2025-08-23 19:25:15,001 - LandingGenerator - DEBUG - Generated: assistenza-it-orio-al-serio.html
+2025-08-23 19:25:15,001 - LandingGenerator - DEBUG - Generated: assistenza-it-mozzo.html
+2025-08-23 19:25:15,002 - LandingGenerator - INFO - Progress: 290/272 (106.62%) - Success: 290, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,006 - LandingGenerator - DEBUG - Generated: assistenza-it-nembro.html
+2025-08-23 19:25:15,006 - LandingGenerator - DEBUG - Generated: assistenza-it-parre.html
+2025-08-23 19:25:15,006 - LandingGenerator - DEBUG - Generated: assistenza-it-osio-sotto.html
+2025-08-23 19:25:15,006 - LandingGenerator - DEBUG - Generated: assistenza-it-paladina.html
+2025-08-23 19:25:15,007 - LandingGenerator - DEBUG - Generated: assistenza-it-pedrengo.html
+2025-08-23 19:25:15,007 - LandingGenerator - DEBUG - Generated: assistenza-it-ponte-nossa.html
+2025-08-23 19:25:15,007 - LandingGenerator - DEBUG - Generated: assistenza-it-ponte-san-pietro.html
+2025-08-23 19:25:15,008 - LandingGenerator - DEBUG - Generated: assistenza-it-pradalunga.html
+2025-08-23 19:25:15,008 - LandingGenerator - DEBUG - Generated: assistenza-it-premolo.html
+2025-08-23 19:25:15,008 - LandingGenerator - DEBUG - Generated: assistenza-it-ranica.html
+2025-08-23 19:25:15,008 - LandingGenerator - INFO - Progress: 300/272 (110.29%) - Success: 300, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,009 - LandingGenerator - DEBUG - Generated: assistenza-it-romano-di-lombardia.html
+2025-08-23 19:25:15,009 - LandingGenerator - DEBUG - Generated: assistenza-it-san-pellegrino-terme.html
+2025-08-23 19:25:15,009 - LandingGenerator - DEBUG - Generated: assistenza-it-sant-omobono-terme.html
+2025-08-23 19:25:15,009 - LandingGenerator - DEBUG - Generated: assistenza-it-scanzorosciate.html
+2025-08-23 19:25:15,010 - LandingGenerator - DEBUG - Generated: assistenza-it-seriate.html
+2025-08-23 19:25:15,010 - LandingGenerator - DEBUG - Generated: assistenza-it-stezzano.html
+2025-08-23 19:25:15,010 - LandingGenerator - DEBUG - Generated: assistenza-it-torre-boldone.html
+2025-08-23 19:25:15,011 - LandingGenerator - DEBUG - Generated: assistenza-it-treviglio.html
+2025-08-23 19:25:15,011 - LandingGenerator - DEBUG - Generated: assistenza-it-verdellino.html
+2025-08-23 19:25:15,012 - LandingGenerator - DEBUG - Generated: assistenza-it-vertova.html
+2025-08-23 19:25:15,012 - LandingGenerator - DEBUG - Generated: assistenza-it-villa-d-alme.html
+2025-08-23 19:25:15,012 - LandingGenerator - INFO - Progress: 310/272 (113.97%) - Success: 310, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,012 - LandingGenerator - DEBUG - Generated: assistenza-it-villa-di-serio.html
+2025-08-23 19:25:15,012 - LandingGenerator - DEBUG - Generated: assistenza-it-zanica.html
+2025-08-23 19:25:15,013 - LandingGenerator - DEBUG - Generated: assistenza-it-zogno.html
+2025-08-23 19:25:15,013 - LandingGenerator - DEBUG - Generated: assistenza-it-anzano-del-parco.html
+2025-08-23 19:25:15,014 - LandingGenerator - DEBUG - Generated: assistenza-it-appiano-gentile.html
+2025-08-23 19:25:15,014 - LandingGenerator - DEBUG - Generated: assistenza-it-arosio.html
+2025-08-23 19:25:15,014 - LandingGenerator - DEBUG - Generated: assistenza-it-bregnano.html
+2025-08-23 19:25:15,014 - LandingGenerator - DEBUG - Generated: assistenza-it-barlassina.html
+2025-08-23 19:25:15,015 - LandingGenerator - DEBUG - Generated: assistenza-it-brenna.html
+2025-08-23 19:25:15,015 - LandingGenerator - INFO - Progress: 320/272 (117.65%) - Success: 320, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,015 - LandingGenerator - DEBUG - Generated: assistenza-it-bulgarograsso.html
+2025-08-23 19:25:15,015 - LandingGenerator - DEBUG - Generated: assistenza-it-cabiate.html
+2025-08-23 19:25:15,016 - LandingGenerator - DEBUG - Generated: assistenza-it-cadorago.html
+2025-08-23 19:25:15,016 - LandingGenerator - DEBUG - Generated: assistenza-it-cantu.html
+2025-08-23 19:25:15,016 - LandingGenerator - DEBUG - Generated: assistenza-it-capiago-intimiano.html
+2025-08-23 19:25:15,017 - LandingGenerator - DEBUG - Generated: assistenza-it-carbonate.html
+2025-08-23 19:25:15,017 - LandingGenerator - DEBUG - Generated: assistenza-it-carimate.html
+2025-08-23 19:25:15,018 - LandingGenerator - DEBUG - Generated: assistenza-it-carugo.html
+2025-08-23 19:25:15,018 - LandingGenerator - DEBUG - Generated: assistenza-it-caronno-pertusella.html
+2025-08-23 19:25:15,018 - LandingGenerator - DEBUG - Generated: assistenza-it-cermenate.html
+2025-08-23 19:25:15,018 - LandingGenerator - INFO - Progress: 330/272 (121.32%) - Success: 330, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,018 - LandingGenerator - DEBUG - Generated: assistenza-it-cirimido.html
+2025-08-23 19:25:15,018 - LandingGenerator - DEBUG - Generated: assistenza-it-cislago.html
+2025-08-23 19:25:15,019 - LandingGenerator - DEBUG - Generated: assistenza-it-cogliate.html
+2025-08-23 19:25:15,019 - LandingGenerator - DEBUG - Generated: assistenza-it-como.html
+2025-08-23 19:25:15,020 - LandingGenerator - DEBUG - Generated: assistenza-it-fenegro.html
+2025-08-23 19:25:15,020 - LandingGenerator - DEBUG - Generated: assistenza-it-figino-serenza.html
+2025-08-23 19:25:15,020 - LandingGenerator - DEBUG - Generated: assistenza-it-fino-mornasco.html
+2025-08-23 19:25:15,021 - LandingGenerator - DEBUG - Generated: assistenza-it-gerenzano.html
+2025-08-23 19:25:15,021 - LandingGenerator - DEBUG - Generated: assistenza-it-giussano.html
+2025-08-23 19:25:15,021 - LandingGenerator - DEBUG - Generated: assistenza-it-inverigo.html
+2025-08-23 19:25:15,021 - LandingGenerator - INFO - Progress: 340/272 (125.0%) - Success: 340, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,021 - LandingGenerator - DEBUG - Generated: assistenza-it-lazzate.html
+2025-08-23 19:25:15,022 - LandingGenerator - DEBUG - Generated: assistenza-it-lentate-sul-seveso.html
+2025-08-23 19:25:15,022 - LandingGenerator - DEBUG - Generated: assistenza-it-limido-comasco.html
+2025-08-23 19:25:15,023 - LandingGenerator - DEBUG - Generated: assistenza-it-locate-varesino.html
+2025-08-23 19:25:15,023 - LandingGenerator - DEBUG - Generated: assistenza-it-lomazzo.html
+2025-08-23 19:25:15,023 - LandingGenerator - DEBUG - Generated: assistenza-it-lurate-caccivio.html
+2025-08-23 19:25:15,023 - LandingGenerator - DEBUG - Generated: assistenza-it-mariano-comense.html
+2025-08-23 19:25:15,024 - LandingGenerator - DEBUG - Generated: assistenza-it-meda.html
+2025-08-23 19:25:15,024 - LandingGenerator - DEBUG - Generated: assistenza-it-misinto.html
+2025-08-23 19:25:15,025 - LandingGenerator - DEBUG - Generated: assistenza-it-montorfano.html
+2025-08-23 19:25:15,025 - LandingGenerator - INFO - Progress: 350/272 (128.68%) - Success: 350, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,025 - LandingGenerator - DEBUG - Generated: assistenza-it-novedrate.html
+2025-08-23 19:25:15,025 - LandingGenerator - DEBUG - Generated: assistenza-it-mozzate.html
+2025-08-23 19:25:15,025 - LandingGenerator - DEBUG - Generated: assistenza-it-olgiate-comasco.html
+2025-08-23 19:25:15,026 - LandingGenerator - DEBUG - Generated: assistenza-it-origgio.html
+2025-08-23 19:25:15,026 - LandingGenerator - DEBUG - Generated: assistenza-it-rovellasca.html
+2025-08-23 19:25:15,026 - LandingGenerator - DEBUG - Generated: assistenza-it-rovello-porro.html
+2025-08-23 19:25:15,027 - LandingGenerator - DEBUG - Generated: assistenza-it-saronno.html
+2025-08-23 19:25:15,027 - LandingGenerator - DEBUG - Generated: assistenza-it-senna-comasco.html
+2025-08-23 19:25:15,027 - LandingGenerator - DEBUG - Generated: assistenza-it-seveso.html
+2025-08-23 19:25:15,028 - LandingGenerator - INFO - Progress: 360/272 (132.35%) - Success: 360, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,028 - LandingGenerator - DEBUG - Generated: assistenza-it-turate.html
+2025-08-23 19:25:15,028 - LandingGenerator - DEBUG - Generated: assistenza-it-veniano.html
+2025-08-23 19:25:15,028 - LandingGenerator - DEBUG - Generated: assistenza-it-abbadia-lariana.html
+2025-08-23 19:25:15,029 - LandingGenerator - DEBUG - Generated: assistenza-it-airuno.html
+2025-08-23 19:25:15,029 - LandingGenerator - DEBUG - Generated: assistenza-it-annone-di-brianza.html
+2025-08-23 19:25:15,029 - LandingGenerator - DEBUG - Generated: assistenza-it-ballabio.html
+2025-08-23 19:25:15,029 - LandingGenerator - DEBUG - Generated: assistenza-it-barzago.html
+2025-08-23 19:25:15,030 - LandingGenerator - DEBUG - Generated: assistenza-it-barzio.html
+2025-08-23 19:25:15,030 - LandingGenerator - DEBUG - Generated: assistenza-it-bellano.html
+2025-08-23 19:25:15,030 - LandingGenerator - DEBUG - Generated: assistenza-it-calolziocorte.html
+2025-08-23 19:25:15,031 - LandingGenerator - DEBUG - Generated: assistenza-it-casatenovo.html
+2025-08-23 19:25:15,031 - LandingGenerator - INFO - Progress: 370/272 (136.03%) - Success: 370, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,031 - LandingGenerator - DEBUG - Generated: assistenza-it-cassina-valsassina.html
+2025-08-23 19:25:15,031 - LandingGenerator - DEBUG - Generated: assistenza-it-cernusco-lombardone.html
+2025-08-23 19:25:15,032 - LandingGenerator - DEBUG - Generated: assistenza-it-colico.html
+2025-08-23 19:25:15,032 - LandingGenerator - DEBUG - Generated: assistenza-it-cortenova.html
+2025-08-23 19:25:15,032 - LandingGenerator - DEBUG - Generated: assistenza-it-costa-masnaga.html
+2025-08-23 19:25:15,033 - LandingGenerator - DEBUG - Generated: assistenza-it-cremeno.html
+2025-08-23 19:25:15,033 - LandingGenerator - DEBUG - Generated: assistenza-it-dervio.html
+2025-08-23 19:25:15,033 - LandingGenerator - DEBUG - Generated: assistenza-it-dolzago.html
+2025-08-23 19:25:15,034 - LandingGenerator - DEBUG - Generated: assistenza-it-ello.html
+2025-08-23 19:25:15,034 - LandingGenerator - DEBUG - Generated: assistenza-it-garlate.html
+2025-08-23 19:25:15,034 - LandingGenerator - INFO - Progress: 380/272 (139.71%) - Success: 380, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,034 - LandingGenerator - DEBUG - Generated: assistenza-it-introbio.html
+2025-08-23 19:25:15,035 - LandingGenerator - DEBUG - Generated: assistenza-it-la-valletta-brianza.html
+2025-08-23 19:25:15,035 - LandingGenerator - DEBUG - Generated: assistenza-it-lecco.html
+2025-08-23 19:25:15,035 - LandingGenerator - DEBUG - Generated: assistenza-it-lierna.html
+2025-08-23 19:25:15,035 - LandingGenerator - DEBUG - Generated: assistenza-it-malgrate.html
+2025-08-23 19:25:15,036 - LandingGenerator - DEBUG - Generated: assistenza-it-mandello-del-lario.html
+2025-08-23 19:25:15,036 - LandingGenerator - DEBUG - Generated: assistenza-it-merate.html
+2025-08-23 19:25:15,036 - LandingGenerator - DEBUG - Generated: assistenza-it-moggio.html
+2025-08-23 19:25:15,037 - LandingGenerator - DEBUG - Generated: assistenza-it-montevecchia.html
+2025-08-23 19:25:15,037 - LandingGenerator - DEBUG - Generated: assistenza-it-morterone.html
+2025-08-23 19:25:15,037 - LandingGenerator - INFO - Progress: 390/272 (143.38%) - Success: 390, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,037 - LandingGenerator - DEBUG - Generated: assistenza-it-nibionno.html
+2025-08-23 19:25:15,038 - LandingGenerator - DEBUG - Generated: assistenza-it-oggiono.html
+2025-08-23 19:25:15,038 - LandingGenerator - DEBUG - Generated: assistenza-it-olginate.html
+2025-08-23 19:25:15,038 - LandingGenerator - DEBUG - Generated: assistenza-it-osnago.html
+2025-08-23 19:25:15,039 - LandingGenerator - DEBUG - Generated: assistenza-it-pasturo.html
+2025-08-23 19:25:15,039 - LandingGenerator - DEBUG - Generated: assistenza-it-perledo.html
+2025-08-23 19:25:15,039 - LandingGenerator - DEBUG - Generated: assistenza-it-premana.html
+2025-08-23 19:25:15,040 - LandingGenerator - DEBUG - Generated: assistenza-it-primaluna.html
+2025-08-23 19:25:15,040 - LandingGenerator - DEBUG - Generated: assistenza-it-rogeno.html
+2025-08-23 19:25:15,040 - LandingGenerator - DEBUG - Generated: assistenza-it-taceno.html
+2025-08-23 19:25:15,040 - LandingGenerator - INFO - Progress: 400/272 (147.06%) - Success: 400, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,040 - LandingGenerator - DEBUG - Generated: assistenza-it-valmadrera.html
+2025-08-23 19:25:15,041 - LandingGenerator - DEBUG - Generated: assistenza-it-varenna.html
+2025-08-23 19:25:15,041 - LandingGenerator - DEBUG - Generated: assistenza-it-agnadello.html
+2025-08-23 19:25:15,042 - LandingGenerator - DEBUG - Generated: assistenza-it-bariano.html
+2025-08-23 19:25:15,042 - LandingGenerator - DEBUG - Generated: assistenza-it-borghetto-lodigiano.html
+2025-08-23 19:25:15,042 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,042 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,043 - LandingGenerator - DEBUG - Generated: assistenza-it-calvenzano.html
+2025-08-23 19:25:15,043 - LandingGenerator - DEBUG - Generated: assistenza-it-caravaggio.html
+2025-08-23 19:25:15,043 - LandingGenerator - DEBUG - Generated: assistenza-it-casalpusterlengo.html
+2025-08-23 19:25:15,044 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,044 - LandingGenerator - INFO - Progress: 410/272 (150.74%) - Success: 410, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,044 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,044 - LandingGenerator - DEBUG - Generated: assistenza-it-codogno.html
+2025-08-23 19:25:15,045 - LandingGenerator - DEBUG - Generated: assistenza-it-covo.html
+2025-08-23 19:25:15,045 - LandingGenerator - DEBUG - Generated: assistenza-it-crema.html
+2025-08-23 19:25:15,045 - LandingGenerator - DEBUG - Generated: assistenza-it-dovera.html
+2025-08-23 19:25:15,045 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,046 - LandingGenerator - DEBUG - Generated: assistenza-it-fombio.html
+2025-08-23 19:25:15,046 - LandingGenerator - DEBUG - Generated: assistenza-it-formigara.html
+2025-08-23 19:25:15,046 - LandingGenerator - DEBUG - Generated: assistenza-it-lodi.html
+2025-08-23 19:25:15,047 - LandingGenerator - INFO - Progress: 420/272 (154.41%) - Success: 420, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,047 - LandingGenerator - DEBUG - Generated: assistenza-it-lodi-vecchio.html
+2025-08-23 19:25:15,047 - LandingGenerator - DEBUG - Generated: assistenza-it-lurano.html
+2025-08-23 19:25:15,047 - LandingGenerator - DEBUG - Generated: assistenza-it-maleo.html
+2025-08-23 19:25:15,048 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,048 - LandingGenerator - DEBUG - Generated: assistenza-it-montanaso-lombardo.html
+2025-08-23 19:25:15,049 - LandingGenerator - DEBUG - Generated: assistenza-it-offanengo.html
+2025-08-23 19:25:15,049 - LandingGenerator - DEBUG - Generated: assistenza-it-ossago-lodigiano.html
+2025-08-23 19:25:15,049 - LandingGenerator - DEBUG - Generated: assistenza-it-pagazzano.html
+2025-08-23 19:25:15,049 - LandingGenerator - DEBUG - Generated: assistenza-it-pandino.html
+2025-08-23 19:25:15,050 - LandingGenerator - DEBUG - Generated: assistenza-it-pieve-fissiraga.html
+2025-08-23 19:25:15,050 - LandingGenerator - INFO - Progress: 430/272 (158.09%) - Success: 430, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,050 - LandingGenerator - DEBUG - Generated: assistenza-it-pizzighettone.html
+2025-08-23 19:25:15,050 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,051 - LandingGenerator - DEBUG - Generated: assistenza-it-romano-di-lombardia.html
+2025-08-23 19:25:15,051 - LandingGenerator - DEBUG - Generated: assistenza-it-san-fiorano.html
+2025-08-23 19:25:15,051 - LandingGenerator - DEBUG - Generated: assistenza-it-sant-angelo-lodigiano.html
+2025-08-23 19:25:15,052 - LandingGenerator - DEBUG - Generated: assistenza-it-somaglia.html
+2025-08-23 19:25:15,052 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,052 - LandingGenerator - DEBUG - Generated: assistenza-it-spirano.html
+2025-08-23 19:25:15,053 - LandingGenerator - DEBUG - Generated: assistenza-it-tavazzano-con-villavesco.html
+2025-08-23 19:25:15,053 - LandingGenerator - DEBUG - Generated: assistenza-it-torlasco.html
+2025-08-23 19:25:15,053 - LandingGenerator - INFO - Progress: 440/272 (161.76%) - Success: 440, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,054 - LandingGenerator - DEBUG - Generated: assistenza-it-vaiano-cremasco.html
+2025-08-23 19:25:15,054 - LandingGenerator - DEBUG - Generated: assistenza-it-trescore-cremasco.html
+2025-08-23 19:25:15,054 - LandingGenerator - DEBUG - Generated: assistenza-it-zelo-buon-persico.html
+2025-08-23 19:25:15,054 - LandingGenerator - DEBUG - Generated: assistenza-it-abbiategrasso.html
+2025-08-23 19:25:15,055 - LandingGenerator - DEBUG - Generated: assistenza-it-assago.html
+2025-08-23 19:25:15,055 - LandingGenerator - DEBUG - Generated: assistenza-it-basiglio.html
+2025-08-23 19:25:15,055 - LandingGenerator - DEBUG - Generated: assistenza-it-besate.html
+2025-08-23 19:25:15,056 - LandingGenerator - DEBUG - Generated: assistenza-it-binasco.html
+2025-08-23 19:25:15,056 - LandingGenerator - DEBUG - Generated: assistenza-it-bollate.html
+2025-08-23 19:25:15,056 - LandingGenerator - DEBUG - Generated: assistenza-it-bovisio-masciago.html
+2025-08-23 19:25:15,056 - LandingGenerator - INFO - Progress: 450/272 (165.44%) - Success: 450, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,056 - LandingGenerator - DEBUG - Generated: assistenza-it-bresso.html
+2025-08-23 19:25:15,057 - LandingGenerator - DEBUG - Generated: assistenza-it-bubbiano.html
+2025-08-23 19:25:15,057 - LandingGenerator - DEBUG - Generated: assistenza-it-buccinasco.html
+2025-08-23 19:25:15,057 - LandingGenerator - DEBUG - Generated: assistenza-it-calvignasco.html
+2025-08-23 19:25:15,058 - LandingGenerator - DEBUG - Generated: assistenza-it-carbonate.html
+2025-08-23 19:25:15,058 - LandingGenerator - DEBUG - Generated: assistenza-it-caronno-pertusella.html
+2025-08-23 19:25:15,059 - LandingGenerator - DEBUG - Generated: assistenza-it-cesano-boscone.html
+2025-08-23 19:25:15,059 - LandingGenerator - DEBUG - Generated: assistenza-it-cesate.html
+2025-08-23 19:25:15,059 - LandingGenerator - DEBUG - Generated: assistenza-it-cinisello-balsamo.html
+2025-08-23 19:25:15,059 - LandingGenerator - DEBUG - Generated: assistenza-it-cislago.html
+2025-08-23 19:25:15,059 - LandingGenerator - INFO - Progress: 460/272 (169.12%) - Success: 460, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,060 - LandingGenerator - DEBUG - Generated: assistenza-it-cologno-monzese.html
+2025-08-23 19:25:15,060 - LandingGenerator - DEBUG - Generated: assistenza-it-cormano.html
+2025-08-23 19:25:15,060 - LandingGenerator - DEBUG - Generated: assistenza-it-corsico.html
+2025-08-23 19:25:15,060 - LandingGenerator - DEBUG - Generated: assistenza-it-cusano-milanino.html
+2025-08-23 19:25:15,061 - LandingGenerator - DEBUG - Generated: assistenza-it-garbagnate-milanese.html
+2025-08-23 19:25:15,061 - LandingGenerator - DEBUG - Generated: assistenza-it-gerenzano.html
+2025-08-23 19:25:15,062 - LandingGenerator - DEBUG - Generated: assistenza-it-lacchiarella.html
+2025-08-23 19:25:15,062 - LandingGenerator - DEBUG - Generated: assistenza-it-limbiate.html
+2025-08-23 19:25:15,062 - LandingGenerator - DEBUG - Generated: assistenza-it-locate-di-triulzi.html
+2025-08-23 19:25:15,062 - LandingGenerator - DEBUG - Generated: assistenza-it-milano.html
+2025-08-23 19:25:15,063 - LandingGenerator - INFO - Progress: 470/272 (172.79%) - Success: 470, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,063 - LandingGenerator - DEBUG - Generated: assistenza-it-morimondo.html
+2025-08-23 19:25:15,063 - LandingGenerator - DEBUG - Generated: assistenza-it-mozzate.html
+2025-08-23 19:25:15,064 - LandingGenerator - DEBUG - Generated: assistenza-it-muggio.html
+2025-08-23 19:25:15,064 - LandingGenerator - DEBUG - Generated: assistenza-it-nova-milanese.html
+2025-08-23 19:25:15,064 - LandingGenerator - DEBUG - Generated: assistenza-it-noviglio.html
+2025-08-23 19:25:15,065 - LandingGenerator - DEBUG - Generated: assistenza-it-opera.html
+2025-08-23 19:25:15,065 - LandingGenerator - DEBUG - Generated: assistenza-it-origgio.html
+2025-08-23 19:25:15,065 - LandingGenerator - DEBUG - Generated: assistenza-it-paderno-dugnano.html
+2025-08-23 19:25:15,066 - LandingGenerator - DEBUG - Generated: assistenza-it-pieve-emanuele.html
+2025-08-23 19:25:15,066 - LandingGenerator - DEBUG - Generated: assistenza-it-rho.html
+2025-08-23 19:25:15,066 - LandingGenerator - INFO - Progress: 480/272 (176.47%) - Success: 480, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,066 - LandingGenerator - DEBUG - Generated: assistenza-it-rosate.html
+2025-08-23 19:25:15,067 - LandingGenerator - DEBUG - Generated: assistenza-it-rovellasca.html
+2025-08-23 19:25:15,067 - LandingGenerator - DEBUG - Generated: assistenza-it-rovello-porro.html
+2025-08-23 19:25:15,067 - LandingGenerator - DEBUG - Generated: assistenza-it-rozzano.html
+2025-08-23 19:25:15,068 - LandingGenerator - DEBUG - Generated: assistenza-it-saronno.html
+2025-08-23 19:25:15,068 - LandingGenerator - DEBUG - Generated: assistenza-it-senago.html
+2025-08-23 19:25:15,068 - LandingGenerator - DEBUG - Generated: assistenza-it-sesto-san-giovanni.html
+2025-08-23 19:25:15,068 - LandingGenerator - DEBUG - Generated: assistenza-it-solaro.html
+2025-08-23 19:25:15,069 - LandingGenerator - DEBUG - Generated: assistenza-it-trezzano-sul-naviglio.html
+2025-08-23 19:25:15,069 - LandingGenerator - DEBUG - Generated: assistenza-it-turate.html
+2025-08-23 19:25:15,069 - LandingGenerator - DEBUG - Generated: assistenza-it-uboldo.html
+2025-08-23 19:25:15,069 - LandingGenerator - INFO - Progress: 490/272 (180.15%) - Success: 490, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,070 - LandingGenerator - DEBUG - Generated: assistenza-it-varedo.html
+2025-08-23 19:25:15,070 - LandingGenerator - DEBUG - Generated: assistenza-it-zibido-san-giacomo.html
+2025-08-23 19:25:15,070 - LandingGenerator - DEBUG - Generated: assistenza-it-aicurzio.html
+2025-08-23 19:25:15,070 - LandingGenerator - DEBUG - Generated: assistenza-it-agrate-brianza.html
+2025-08-23 19:25:15,071 - LandingGenerator - DEBUG - Generated: assistenza-it-albiate.html
+2025-08-23 19:25:15,071 - LandingGenerator - DEBUG - Generated: assistenza-it-arcore.html
+2025-08-23 19:25:15,072 - LandingGenerator - DEBUG - Generated: assistenza-it-barlassina.html
+2025-08-23 19:25:15,072 - LandingGenerator - DEBUG - Generated: assistenza-it-basiano.html
+2025-08-23 19:25:15,072 - LandingGenerator - DEBUG - Generated: assistenza-it-bellusco.html
+2025-08-23 19:25:15,072 - LandingGenerator - INFO - Progress: 500/272 (183.82%) - Success: 500, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,072 - LandingGenerator - DEBUG - Generated: assistenza-it-bernareggio.html
+2025-08-23 19:25:15,073 - LandingGenerator - DEBUG - Generated: assistenza-it-besana-in-brianza.html
+2025-08-23 19:25:15,073 - LandingGenerator - DEBUG - Generated: assistenza-it-biassono.html
+2025-08-23 19:25:15,073 - LandingGenerator - DEBUG - Generated: assistenza-it-brugherio.html
+2025-08-23 19:25:15,074 - LandingGenerator - DEBUG - Generated: assistenza-it-burago-di-molgora.html
+2025-08-23 19:25:15,074 - LandingGenerator - DEBUG - Generated: assistenza-it-busnago.html
+2025-08-23 19:25:15,075 - LandingGenerator - DEBUG - Generated: assistenza-it-cambiago.html
+2025-08-23 19:25:15,075 - LandingGenerator - DEBUG - Generated: assistenza-it-camparada.html
+2025-08-23 19:25:15,075 - LandingGenerator - DEBUG - Generated: assistenza-it-carate-brianza.html
+2025-08-23 19:25:15,075 - LandingGenerator - DEBUG - Generated: assistenza-it-carnate.html
+2025-08-23 19:25:15,076 - LandingGenerator - INFO - Progress: 510/272 (187.5%) - Success: 510, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,076 - LandingGenerator - DEBUG - Generated: assistenza-it-cavenago-di-brianza.html
+2025-08-23 19:25:15,076 - LandingGenerator - DEBUG - Generated: assistenza-it-cesano-maderno.html
+2025-08-23 19:25:15,076 - LandingGenerator - DEBUG - Generated: assistenza-it-concorezzo.html
+2025-08-23 19:25:15,077 - LandingGenerator - DEBUG - Generated: assistenza-it-d-adda.html
+2025-08-23 19:25:15,077 - LandingGenerator - DEBUG - Generated: assistenza-it-correzzana.html
+2025-08-23 19:25:15,077 - LandingGenerator - DEBUG - Generated: assistenza-it-desio.html
+2025-08-23 19:25:15,078 - LandingGenerator - DEBUG - Generated: assistenza-it-giussano.html
+2025-08-23 19:25:15,078 - LandingGenerator - DEBUG - Generated: assistenza-it-inverigo.html
+2025-08-23 19:25:15,078 - LandingGenerator - DEBUG - Generated: assistenza-it-lambrugo.html
+2025-08-23 19:25:15,078 - LandingGenerator - DEBUG - Generated: assistenza-it-lentate-sul-seveso.html
+2025-08-23 19:25:15,079 - LandingGenerator - INFO - Progress: 520/272 (191.18%) - Success: 520, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,079 - LandingGenerator - DEBUG - Generated: assistenza-it-lesmo.html
+2025-08-23 19:25:15,079 - LandingGenerator - DEBUG - Generated: assistenza-it-lissone.html
+2025-08-23 19:25:15,079 - LandingGenerator - DEBUG - Generated: assistenza-it-masate.html
+2025-08-23 19:25:15,080 - LandingGenerator - DEBUG - Generated: assistenza-it-meda.html
+2025-08-23 19:25:15,080 - LandingGenerator - DEBUG - Generated: assistenza-it-mezzago.html
+2025-08-23 19:25:15,080 - LandingGenerator - DEBUG - Generated: assistenza-it-misinto.html
+2025-08-23 19:25:15,081 - LandingGenerator - DEBUG - Generated: assistenza-it-monza.html
+2025-08-23 19:25:15,081 - LandingGenerator - DEBUG - Generated: assistenza-it-novate-brianza.html
+2025-08-23 19:25:15,081 - LandingGenerator - DEBUG - Generated: assistenza-it-ornago.html
+2025-08-23 19:25:15,082 - LandingGenerator - DEBUG - Generated: assistenza-it-renate.html
+2025-08-23 19:25:15,082 - LandingGenerator - INFO - Progress: 530/272 (194.85%) - Success: 530, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,082 - LandingGenerator - DEBUG - Generated: assistenza-it-roncello.html
+2025-08-23 19:25:15,082 - LandingGenerator - DEBUG - Generated: assistenza-it-ronco-briantino.html
+2025-08-23 19:25:15,083 - LandingGenerator - DEBUG - Generated: assistenza-it-seregno.html
+2025-08-23 19:25:15,083 - LandingGenerator - DEBUG - Generated: assistenza-it-seveso.html
+2025-08-23 19:25:15,083 - LandingGenerator - DEBUG - Generated: assistenza-it-sovico.html
+2025-08-23 19:25:15,084 - LandingGenerator - DEBUG - Generated: assistenza-it-sulbiate.html
+2025-08-23 19:25:15,084 - LandingGenerator - DEBUG - Generated: assistenza-it-triuggio.html
+2025-08-23 19:25:15,084 - LandingGenerator - DEBUG - Generated: assistenza-it-usmate-velate.html
+2025-08-23 19:25:15,085 - LandingGenerator - DEBUG - Generated: assistenza-it-vedano-al-lambro.html
+2025-08-23 19:25:15,085 - LandingGenerator - DEBUG - Generated: assistenza-it-verano-brianza.html
+2025-08-23 19:25:15,085 - LandingGenerator - INFO - Progress: 540/272 (198.53%) - Success: 540, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,085 - LandingGenerator - DEBUG - Generated: assistenza-it-villasanta.html
+2025-08-23 19:25:15,085 - LandingGenerator - DEBUG - Generated: assistenza-it-vimercate.html
+2025-08-23 19:25:15,086 - LandingGenerator - INFO - Progress: 544/272 (200.0%) - Success: 544, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,098 - LandingGenerator - INFO - Sitemap updated: 1 new URLs added
+2025-08-23 19:25:15,098 - LandingGenerator - INFO - Processing service: cloud-storage
+2025-08-23 19:25:15,099 - LandingGenerator - INFO - Starting generation for cloud-storage: 272 pages
+2025-08-23 19:25:15,099 - LandingGenerator - INFO - Generating pages in: /Users/andreapanzeri/progetti/IT-ERA/web/pages
+2025-08-23 19:25:15,100 - LandingGenerator - DEBUG - Generated: cloud-storage-alzano-lombardo.html
+2025-08-23 19:25:15,100 - LandingGenerator - DEBUG - Generated: cloud-storage-almenno-san-bartolomeo.html
+2025-08-23 19:25:15,100 - LandingGenerator - DEBUG - Generated: cloud-storage-albino.html
+2025-08-23 19:25:15,101 - LandingGenerator - DEBUG - Generated: cloud-storage-bergamo.html
+2025-08-23 19:25:15,101 - LandingGenerator - DEBUG - Generated: cloud-storage-caravaggio.html
+2025-08-23 19:25:15,101 - LandingGenerator - DEBUG - Generated: cloud-storage-casnigo.html
+2025-08-23 19:25:15,102 - LandingGenerator - DEBUG - Generated: cloud-storage-castione-della-presolana.html
+2025-08-23 19:25:15,102 - LandingGenerator - DEBUG - Generated: cloud-storage-cazzano-sant-andrea.html
+2025-08-23 19:25:15,102 - LandingGenerator - DEBUG - Generated: cloud-storage-clusone.html
+2025-08-23 19:25:15,103 - LandingGenerator - DEBUG - Generated: cloud-storage-colzate.html
+2025-08-23 19:25:15,103 - LandingGenerator - DEBUG - Generated: cloud-storage-curno.html
+2025-08-23 19:25:15,103 - LandingGenerator - DEBUG - Generated: cloud-storage-dalmine.html
+2025-08-23 19:25:15,103 - LandingGenerator - INFO - Progress: 10/272 (3.68%) - Success: 10, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,103 - LandingGenerator - DEBUG - Generated: cloud-storage-fiorano-al-serio.html
+2025-08-23 19:25:15,104 - LandingGenerator - DEBUG - Generated: cloud-storage-gandino.html
+2025-08-23 19:25:15,104 - LandingGenerator - DEBUG - Generated: cloud-storage-gazzaniga.html
+2025-08-23 19:25:15,104 - LandingGenerator - DEBUG - Generated: cloud-storage-gorle.html
+2025-08-23 19:25:15,105 - LandingGenerator - DEBUG - Generated: cloud-storage-grassobbio.html
+2025-08-23 19:25:15,105 - LandingGenerator - DEBUG - Generated: cloud-storage-leffe.html
+2025-08-23 19:25:15,105 - LandingGenerator - DEBUG - Generated: cloud-storage-mozzo.html
+2025-08-23 19:25:15,106 - LandingGenerator - DEBUG - Generated: cloud-storage-nembro.html
+2025-08-23 19:25:15,106 - LandingGenerator - DEBUG - Generated: cloud-storage-orio-al-serio.html
+2025-08-23 19:25:15,106 - LandingGenerator - DEBUG - Generated: cloud-storage-osio-sotto.html
+2025-08-23 19:25:15,106 - LandingGenerator - INFO - Progress: 20/272 (7.35%) - Success: 20, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,106 - LandingGenerator - DEBUG - Generated: cloud-storage-paladina.html
+2025-08-23 19:25:15,107 - LandingGenerator - DEBUG - Generated: cloud-storage-parre.html
+2025-08-23 19:25:15,107 - LandingGenerator - DEBUG - Generated: cloud-storage-pedrengo.html
+2025-08-23 19:25:15,107 - LandingGenerator - DEBUG - Generated: cloud-storage-ponte-nossa.html
+2025-08-23 19:25:15,108 - LandingGenerator - DEBUG - Generated: cloud-storage-ponte-san-pietro.html
+2025-08-23 19:25:15,108 - LandingGenerator - DEBUG - Generated: cloud-storage-pradalunga.html
+2025-08-23 19:25:15,109 - LandingGenerator - DEBUG - Generated: cloud-storage-premolo.html
+2025-08-23 19:25:15,109 - LandingGenerator - DEBUG - Generated: cloud-storage-ranica.html
+2025-08-23 19:25:15,109 - LandingGenerator - DEBUG - Generated: cloud-storage-romano-di-lombardia.html
+2025-08-23 19:25:15,109 - LandingGenerator - DEBUG - Generated: cloud-storage-san-pellegrino-terme.html
+2025-08-23 19:25:15,109 - LandingGenerator - DEBUG - Generated: cloud-storage-sant-omobono-terme.html
+2025-08-23 19:25:15,109 - LandingGenerator - INFO - Progress: 30/272 (11.03%) - Success: 30, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,110 - LandingGenerator - DEBUG - Generated: cloud-storage-scanzorosciate.html
+2025-08-23 19:25:15,110 - LandingGenerator - DEBUG - Generated: cloud-storage-seriate.html
+2025-08-23 19:25:15,110 - LandingGenerator - DEBUG - Generated: cloud-storage-stezzano.html
+2025-08-23 19:25:15,111 - LandingGenerator - DEBUG - Generated: cloud-storage-torre-boldone.html
+2025-08-23 19:25:15,111 - LandingGenerator - DEBUG - Generated: cloud-storage-treviglio.html
+2025-08-23 19:25:15,112 - LandingGenerator - DEBUG - Generated: cloud-storage-verdellino.html
+2025-08-23 19:25:15,112 - LandingGenerator - DEBUG - Generated: cloud-storage-vertova.html
+2025-08-23 19:25:15,112 - LandingGenerator - DEBUG - Generated: cloud-storage-villa-d-alme.html
+2025-08-23 19:25:15,112 - LandingGenerator - DEBUG - Generated: cloud-storage-villa-di-serio.html
+2025-08-23 19:25:15,112 - LandingGenerator - INFO - Progress: 40/272 (14.71%) - Success: 40, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,113 - LandingGenerator - DEBUG - Generated: cloud-storage-zanica.html
+2025-08-23 19:25:15,113 - LandingGenerator - DEBUG - Generated: cloud-storage-zogno.html
+2025-08-23 19:25:15,113 - LandingGenerator - DEBUG - Generated: cloud-storage-anzano-del-parco.html
+2025-08-23 19:25:15,114 - LandingGenerator - DEBUG - Generated: cloud-storage-appiano-gentile.html
+2025-08-23 19:25:15,114 - LandingGenerator - DEBUG - Generated: cloud-storage-arosio.html
+2025-08-23 19:25:15,114 - LandingGenerator - DEBUG - Generated: cloud-storage-barlassina.html
+2025-08-23 19:25:15,115 - LandingGenerator - DEBUG - Generated: cloud-storage-bregnano.html
+2025-08-23 19:25:15,115 - LandingGenerator - DEBUG - Generated: cloud-storage-brenna.html
+2025-08-23 19:25:15,115 - LandingGenerator - DEBUG - Generated: cloud-storage-bulgarograsso.html
+2025-08-23 19:25:15,115 - LandingGenerator - DEBUG - Generated: cloud-storage-cabiate.html
+2025-08-23 19:25:15,116 - LandingGenerator - INFO - Progress: 50/272 (18.38%) - Success: 50, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,116 - LandingGenerator - DEBUG - Generated: cloud-storage-cadorago.html
+2025-08-23 19:25:15,116 - LandingGenerator - DEBUG - Generated: cloud-storage-cantu.html
+2025-08-23 19:25:15,116 - LandingGenerator - DEBUG - Generated: cloud-storage-capiago-intimiano.html
+2025-08-23 19:25:15,116 - LandingGenerator - DEBUG - Generated: cloud-storage-carbonate.html
+2025-08-23 19:25:15,117 - LandingGenerator - DEBUG - Generated: cloud-storage-carimate.html
+2025-08-23 19:25:15,117 - LandingGenerator - DEBUG - Generated: cloud-storage-caronno-pertusella.html
+2025-08-23 19:25:15,117 - LandingGenerator - DEBUG - Generated: cloud-storage-carugo.html
+2025-08-23 19:25:15,118 - LandingGenerator - DEBUG - Generated: cloud-storage-cermenate.html
+2025-08-23 19:25:15,118 - LandingGenerator - DEBUG - Generated: cloud-storage-cirimido.html
+2025-08-23 19:25:15,119 - LandingGenerator - DEBUG - Generated: cloud-storage-cislago.html
+2025-08-23 19:25:15,119 - LandingGenerator - INFO - Progress: 60/272 (22.06%) - Success: 60, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,119 - LandingGenerator - DEBUG - Generated: cloud-storage-cogliate.html
+2025-08-23 19:25:15,119 - LandingGenerator - DEBUG - Generated: cloud-storage-como.html
+2025-08-23 19:25:15,119 - LandingGenerator - DEBUG - Generated: cloud-storage-fenegro.html
+2025-08-23 19:25:15,120 - LandingGenerator - DEBUG - Generated: cloud-storage-figino-serenza.html
+2025-08-23 19:25:15,120 - LandingGenerator - DEBUG - Generated: cloud-storage-fino-mornasco.html
+2025-08-23 19:25:15,120 - LandingGenerator - DEBUG - Generated: cloud-storage-gerenzano.html
+2025-08-23 19:25:15,120 - LandingGenerator - DEBUG - Generated: cloud-storage-giussano.html
+2025-08-23 19:25:15,121 - LandingGenerator - DEBUG - Generated: cloud-storage-inverigo.html
+2025-08-23 19:25:15,121 - LandingGenerator - DEBUG - Generated: cloud-storage-lazzate.html
+2025-08-23 19:25:15,121 - LandingGenerator - DEBUG - Generated: cloud-storage-lentate-sul-seveso.html
+2025-08-23 19:25:15,122 - LandingGenerator - INFO - Progress: 70/272 (25.74%) - Success: 70, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,122 - LandingGenerator - DEBUG - Generated: cloud-storage-limido-comasco.html
+2025-08-23 19:25:15,122 - LandingGenerator - DEBUG - Generated: cloud-storage-locate-varesino.html
+2025-08-23 19:25:15,122 - LandingGenerator - DEBUG - Generated: cloud-storage-lomazzo.html
+2025-08-23 19:25:15,123 - LandingGenerator - DEBUG - Generated: cloud-storage-lurate-caccivio.html
+2025-08-23 19:25:15,123 - LandingGenerator - DEBUG - Generated: cloud-storage-mariano-comense.html
+2025-08-23 19:25:15,124 - LandingGenerator - DEBUG - Generated: cloud-storage-meda.html
+2025-08-23 19:25:15,124 - LandingGenerator - DEBUG - Generated: cloud-storage-misinto.html
+2025-08-23 19:25:15,124 - LandingGenerator - DEBUG - Generated: cloud-storage-montorfano.html
+2025-08-23 19:25:15,124 - LandingGenerator - DEBUG - Generated: cloud-storage-mozzate.html
+2025-08-23 19:25:15,125 - LandingGenerator - DEBUG - Generated: cloud-storage-novedrate.html
+2025-08-23 19:25:15,125 - LandingGenerator - INFO - Progress: 80/272 (29.41%) - Success: 80, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,125 - LandingGenerator - DEBUG - Generated: cloud-storage-olgiate-comasco.html
+2025-08-23 19:25:15,125 - LandingGenerator - DEBUG - Generated: cloud-storage-origgio.html
+2025-08-23 19:25:15,126 - LandingGenerator - DEBUG - Generated: cloud-storage-rovello-porro.html
+2025-08-23 19:25:15,126 - LandingGenerator - DEBUG - Generated: cloud-storage-rovellasca.html
+2025-08-23 19:25:15,126 - LandingGenerator - DEBUG - Generated: cloud-storage-saronno.html
+2025-08-23 19:25:15,126 - LandingGenerator - DEBUG - Generated: cloud-storage-senna-comasco.html
+2025-08-23 19:25:15,127 - LandingGenerator - DEBUG - Generated: cloud-storage-seveso.html
+2025-08-23 19:25:15,127 - LandingGenerator - DEBUG - Generated: cloud-storage-turate.html
+2025-08-23 19:25:15,127 - LandingGenerator - DEBUG - Generated: cloud-storage-veniano.html
+2025-08-23 19:25:15,128 - LandingGenerator - DEBUG - Generated: cloud-storage-abbadia-lariana.html
+2025-08-23 19:25:15,128 - LandingGenerator - INFO - Progress: 90/272 (33.09%) - Success: 90, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,128 - LandingGenerator - DEBUG - Generated: cloud-storage-airuno.html
+2025-08-23 19:25:15,128 - LandingGenerator - DEBUG - Generated: cloud-storage-annone-di-brianza.html
+2025-08-23 19:25:15,129 - LandingGenerator - DEBUG - Generated: cloud-storage-ballabio.html
+2025-08-23 19:25:15,129 - LandingGenerator - DEBUG - Generated: cloud-storage-barzago.html
+2025-08-23 19:25:15,129 - LandingGenerator - DEBUG - Generated: cloud-storage-barzio.html
+2025-08-23 19:25:15,129 - LandingGenerator - DEBUG - Generated: cloud-storage-bellano.html
+2025-08-23 19:25:15,130 - LandingGenerator - DEBUG - Generated: cloud-storage-calolziocorte.html
+2025-08-23 19:25:15,130 - LandingGenerator - DEBUG - Generated: cloud-storage-casatenovo.html
+2025-08-23 19:25:15,130 - LandingGenerator - DEBUG - Generated: cloud-storage-cassina-valsassina.html
+2025-08-23 19:25:15,131 - LandingGenerator - DEBUG - Generated: cloud-storage-cernusco-lombardone.html
+2025-08-23 19:25:15,131 - LandingGenerator - INFO - Progress: 100/272 (36.76%) - Success: 100, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,131 - LandingGenerator - DEBUG - Generated: cloud-storage-colico.html
+2025-08-23 19:25:15,131 - LandingGenerator - DEBUG - Generated: cloud-storage-cortenova.html
+2025-08-23 19:25:15,132 - LandingGenerator - DEBUG - Generated: cloud-storage-costa-masnaga.html
+2025-08-23 19:25:15,132 - LandingGenerator - DEBUG - Generated: cloud-storage-cremeno.html
+2025-08-23 19:25:15,132 - LandingGenerator - DEBUG - Generated: cloud-storage-dervio.html
+2025-08-23 19:25:15,132 - LandingGenerator - DEBUG - Generated: cloud-storage-dolzago.html
+2025-08-23 19:25:15,133 - LandingGenerator - DEBUG - Generated: cloud-storage-ello.html
+2025-08-23 19:25:15,133 - LandingGenerator - DEBUG - Generated: cloud-storage-garlate.html
+2025-08-23 19:25:15,133 - LandingGenerator - DEBUG - Generated: cloud-storage-introbio.html
+2025-08-23 19:25:15,134 - LandingGenerator - DEBUG - Generated: cloud-storage-la-valletta-brianza.html
+2025-08-23 19:25:15,134 - LandingGenerator - INFO - Progress: 110/272 (40.44%) - Success: 110, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,134 - LandingGenerator - DEBUG - Generated: cloud-storage-lecco.html
+2025-08-23 19:25:15,134 - LandingGenerator - DEBUG - Generated: cloud-storage-lierna.html
+2025-08-23 19:25:15,135 - LandingGenerator - DEBUG - Generated: cloud-storage-malgrate.html
+2025-08-23 19:25:15,135 - LandingGenerator - DEBUG - Generated: cloud-storage-mandello-del-lario.html
+2025-08-23 19:25:15,135 - LandingGenerator - DEBUG - Generated: cloud-storage-merate.html
+2025-08-23 19:25:15,135 - LandingGenerator - DEBUG - Generated: cloud-storage-moggio.html
+2025-08-23 19:25:15,136 - LandingGenerator - DEBUG - Generated: cloud-storage-montevecchia.html
+2025-08-23 19:25:15,136 - LandingGenerator - DEBUG - Generated: cloud-storage-morterone.html
+2025-08-23 19:25:15,136 - LandingGenerator - DEBUG - Generated: cloud-storage-nibionno.html
+2025-08-23 19:25:15,137 - LandingGenerator - DEBUG - Generated: cloud-storage-oggiono.html
+2025-08-23 19:25:15,137 - LandingGenerator - INFO - Progress: 120/272 (44.12%) - Success: 120, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,137 - LandingGenerator - DEBUG - Generated: cloud-storage-olginate.html
+2025-08-23 19:25:15,137 - LandingGenerator - DEBUG - Generated: cloud-storage-osnago.html
+2025-08-23 19:25:15,138 - LandingGenerator - DEBUG - Generated: cloud-storage-pasturo.html
+2025-08-23 19:25:15,138 - LandingGenerator - DEBUG - Generated: cloud-storage-perledo.html
+2025-08-23 19:25:15,138 - LandingGenerator - DEBUG - Generated: cloud-storage-premana.html
+2025-08-23 19:25:15,139 - LandingGenerator - DEBUG - Generated: cloud-storage-primaluna.html
+2025-08-23 19:25:15,139 - LandingGenerator - DEBUG - Generated: cloud-storage-rogeno.html
+2025-08-23 19:25:15,139 - LandingGenerator - DEBUG - Generated: cloud-storage-taceno.html
+2025-08-23 19:25:15,139 - LandingGenerator - DEBUG - Generated: cloud-storage-valmadrera.html
+2025-08-23 19:25:15,140 - LandingGenerator - DEBUG - Generated: cloud-storage-varenna.html
+2025-08-23 19:25:15,140 - LandingGenerator - INFO - Progress: 130/272 (47.79%) - Success: 130, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,140 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,140 - LandingGenerator - DEBUG - Generated: cloud-storage-agnadello.html
+2025-08-23 19:25:15,141 - LandingGenerator - DEBUG - Generated: cloud-storage-bariano.html
+2025-08-23 19:25:15,141 - LandingGenerator - DEBUG - Generated: cloud-storage-borghetto-lodigiano.html
+2025-08-23 19:25:15,141 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,141 - LandingGenerator - DEBUG - Generated: cloud-storage-calvenzano.html
+2025-08-23 19:25:15,142 - LandingGenerator - DEBUG - Generated: cloud-storage-caravaggio.html
+2025-08-23 19:25:15,142 - LandingGenerator - DEBUG - Generated: cloud-storage-casalpusterlengo.html
+2025-08-23 19:25:15,142 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,143 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,143 - LandingGenerator - DEBUG - Generated: cloud-storage-codogno.html
+2025-08-23 19:25:15,143 - LandingGenerator - INFO - Progress: 140/272 (51.47%) - Success: 140, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,143 - LandingGenerator - DEBUG - Generated: cloud-storage-covo.html
+2025-08-23 19:25:15,143 - LandingGenerator - DEBUG - Generated: cloud-storage-crema.html
+2025-08-23 19:25:15,144 - LandingGenerator - DEBUG - Generated: cloud-storage-dovera.html
+2025-08-23 19:25:15,144 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,144 - LandingGenerator - DEBUG - Generated: cloud-storage-fombio.html
+2025-08-23 19:25:15,145 - LandingGenerator - DEBUG - Generated: cloud-storage-formigara.html
+2025-08-23 19:25:15,145 - LandingGenerator - DEBUG - Generated: cloud-storage-lodi.html
+2025-08-23 19:25:15,145 - LandingGenerator - DEBUG - Generated: cloud-storage-lodi-vecchio.html
+2025-08-23 19:25:15,145 - LandingGenerator - DEBUG - Generated: cloud-storage-lurano.html
+2025-08-23 19:25:15,146 - LandingGenerator - INFO - Progress: 150/272 (55.15%) - Success: 150, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,146 - LandingGenerator - DEBUG - Generated: cloud-storage-maleo.html
+2025-08-23 19:25:15,146 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,146 - LandingGenerator - DEBUG - Generated: cloud-storage-montanaso-lombardo.html
+2025-08-23 19:25:15,147 - LandingGenerator - DEBUG - Generated: cloud-storage-offanengo.html
+2025-08-23 19:25:15,147 - LandingGenerator - DEBUG - Generated: cloud-storage-ossago-lodigiano.html
+2025-08-23 19:25:15,147 - LandingGenerator - DEBUG - Generated: cloud-storage-pagazzano.html
+2025-08-23 19:25:15,147 - LandingGenerator - DEBUG - Generated: cloud-storage-pandino.html
+2025-08-23 19:25:15,148 - LandingGenerator - DEBUG - Generated: cloud-storage-pieve-fissiraga.html
+2025-08-23 19:25:15,148 - LandingGenerator - DEBUG - Generated: cloud-storage-pizzighettone.html
+2025-08-23 19:25:15,148 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,149 - LandingGenerator - INFO - Progress: 160/272 (58.82%) - Success: 160, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,149 - LandingGenerator - DEBUG - Generated: cloud-storage-romano-di-lombardia.html
+2025-08-23 19:25:15,149 - LandingGenerator - DEBUG - Generated: cloud-storage-san-fiorano.html
+2025-08-23 19:25:15,149 - LandingGenerator - DEBUG - Generated: cloud-storage-sant-angelo-lodigiano.html
+2025-08-23 19:25:15,150 - LandingGenerator - DEBUG - Generated: cloud-storage-somaglia.html
+2025-08-23 19:25:15,150 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,150 - LandingGenerator - DEBUG - Generated: cloud-storage-tavazzano-con-villavesco.html
+2025-08-23 19:25:15,151 - LandingGenerator - DEBUG - Generated: cloud-storage-spirano.html
+2025-08-23 19:25:15,151 - LandingGenerator - DEBUG - Generated: cloud-storage-torlasco.html
+2025-08-23 19:25:15,151 - LandingGenerator - DEBUG - Generated: cloud-storage-trescore-cremasco.html
+2025-08-23 19:25:15,152 - LandingGenerator - DEBUG - Generated: cloud-storage-vaiano-cremasco.html
+2025-08-23 19:25:15,152 - LandingGenerator - DEBUG - Generated: cloud-storage-zelo-buon-persico.html
+2025-08-23 19:25:15,152 - LandingGenerator - INFO - Progress: 170/272 (62.5%) - Success: 170, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,152 - LandingGenerator - DEBUG - Generated: cloud-storage-abbiategrasso.html
+2025-08-23 19:25:15,152 - LandingGenerator - DEBUG - Generated: cloud-storage-assago.html
+2025-08-23 19:25:15,153 - LandingGenerator - DEBUG - Generated: cloud-storage-basiglio.html
+2025-08-23 19:25:15,153 - LandingGenerator - DEBUG - Generated: cloud-storage-besate.html
+2025-08-23 19:25:15,153 - LandingGenerator - DEBUG - Generated: cloud-storage-binasco.html
+2025-08-23 19:25:15,154 - LandingGenerator - DEBUG - Generated: cloud-storage-bollate.html
+2025-08-23 19:25:15,154 - LandingGenerator - DEBUG - Generated: cloud-storage-bovisio-masciago.html
+2025-08-23 19:25:15,154 - LandingGenerator - DEBUG - Generated: cloud-storage-bresso.html
+2025-08-23 19:25:15,154 - LandingGenerator - DEBUG - Generated: cloud-storage-bubbiano.html
+2025-08-23 19:25:15,155 - LandingGenerator - INFO - Progress: 180/272 (66.18%) - Success: 180, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,155 - LandingGenerator - DEBUG - Generated: cloud-storage-buccinasco.html
+2025-08-23 19:25:15,155 - LandingGenerator - DEBUG - Generated: cloud-storage-calvignasco.html
+2025-08-23 19:25:15,155 - LandingGenerator - DEBUG - Generated: cloud-storage-carbonate.html
+2025-08-23 19:25:15,156 - LandingGenerator - DEBUG - Generated: cloud-storage-caronno-pertusella.html
+2025-08-23 19:25:15,156 - LandingGenerator - DEBUG - Generated: cloud-storage-cesano-boscone.html
+2025-08-23 19:25:15,157 - LandingGenerator - DEBUG - Generated: cloud-storage-cinisello-balsamo.html
+2025-08-23 19:25:15,157 - LandingGenerator - DEBUG - Generated: cloud-storage-cesate.html
+2025-08-23 19:25:15,157 - LandingGenerator - DEBUG - Generated: cloud-storage-cislago.html
+2025-08-23 19:25:15,157 - LandingGenerator - DEBUG - Generated: cloud-storage-cologno-monzese.html
+2025-08-23 19:25:15,157 - LandingGenerator - DEBUG - Generated: cloud-storage-cormano.html
+2025-08-23 19:25:15,158 - LandingGenerator - INFO - Progress: 190/272 (69.85%) - Success: 190, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,158 - LandingGenerator - DEBUG - Generated: cloud-storage-corsico.html
+2025-08-23 19:25:15,158 - LandingGenerator - DEBUG - Generated: cloud-storage-cusano-milanino.html
+2025-08-23 19:25:15,158 - LandingGenerator - DEBUG - Generated: cloud-storage-garbagnate-milanese.html
+2025-08-23 19:25:15,159 - LandingGenerator - DEBUG - Generated: cloud-storage-gerenzano.html
+2025-08-23 19:25:15,159 - LandingGenerator - DEBUG - Generated: cloud-storage-lacchiarella.html
+2025-08-23 19:25:15,159 - LandingGenerator - DEBUG - Generated: cloud-storage-limbiate.html
+2025-08-23 19:25:15,160 - LandingGenerator - DEBUG - Generated: cloud-storage-locate-di-triulzi.html
+2025-08-23 19:25:15,160 - LandingGenerator - DEBUG - Generated: cloud-storage-milano.html
+2025-08-23 19:25:15,160 - LandingGenerator - DEBUG - Generated: cloud-storage-morimondo.html
+2025-08-23 19:25:15,161 - LandingGenerator - DEBUG - Generated: cloud-storage-mozzate.html
+2025-08-23 19:25:15,161 - LandingGenerator - DEBUG - Generated: cloud-storage-muggio.html
+2025-08-23 19:25:15,161 - LandingGenerator - INFO - Progress: 200/272 (73.53%) - Success: 200, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,161 - LandingGenerator - DEBUG - Generated: cloud-storage-nova-milanese.html
+2025-08-23 19:25:15,161 - LandingGenerator - DEBUG - Generated: cloud-storage-noviglio.html
+2025-08-23 19:25:15,162 - LandingGenerator - DEBUG - Generated: cloud-storage-opera.html
+2025-08-23 19:25:15,162 - LandingGenerator - DEBUG - Generated: cloud-storage-origgio.html
+2025-08-23 19:25:15,163 - LandingGenerator - DEBUG - Generated: cloud-storage-paderno-dugnano.html
+2025-08-23 19:25:15,163 - LandingGenerator - DEBUG - Generated: cloud-storage-pieve-emanuele.html
+2025-08-23 19:25:15,163 - LandingGenerator - DEBUG - Generated: cloud-storage-rho.html
+2025-08-23 19:25:15,163 - LandingGenerator - DEBUG - Generated: cloud-storage-rosate.html
+2025-08-23 19:25:15,164 - LandingGenerator - DEBUG - Generated: cloud-storage-rovellasca.html
+2025-08-23 19:25:15,164 - LandingGenerator - INFO - Progress: 210/272 (77.21%) - Success: 210, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,164 - LandingGenerator - DEBUG - Generated: cloud-storage-rovello-porro.html
+2025-08-23 19:25:15,164 - LandingGenerator - DEBUG - Generated: cloud-storage-rozzano.html
+2025-08-23 19:25:15,165 - LandingGenerator - DEBUG - Generated: cloud-storage-saronno.html
+2025-08-23 19:25:15,165 - LandingGenerator - DEBUG - Generated: cloud-storage-senago.html
+2025-08-23 19:25:15,165 - LandingGenerator - DEBUG - Generated: cloud-storage-sesto-san-giovanni.html
+2025-08-23 19:25:15,165 - LandingGenerator - DEBUG - Generated: cloud-storage-solaro.html
+2025-08-23 19:25:15,166 - LandingGenerator - DEBUG - Generated: cloud-storage-trezzano-sul-naviglio.html
+2025-08-23 19:25:15,166 - LandingGenerator - DEBUG - Generated: cloud-storage-turate.html
+2025-08-23 19:25:15,166 - LandingGenerator - DEBUG - Generated: cloud-storage-uboldo.html
+2025-08-23 19:25:15,167 - LandingGenerator - DEBUG - Generated: cloud-storage-varedo.html
+2025-08-23 19:25:15,167 - LandingGenerator - INFO - Progress: 220/272 (80.88%) - Success: 220, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,167 - LandingGenerator - DEBUG - Generated: cloud-storage-zibido-san-giacomo.html
+2025-08-23 19:25:15,167 - LandingGenerator - DEBUG - Generated: cloud-storage-agrate-brianza.html
+2025-08-23 19:25:15,168 - LandingGenerator - DEBUG - Generated: cloud-storage-aicurzio.html
+2025-08-23 19:25:15,168 - LandingGenerator - DEBUG - Generated: cloud-storage-albiate.html
+2025-08-23 19:25:15,168 - LandingGenerator - DEBUG - Generated: cloud-storage-arcore.html
+2025-08-23 19:25:15,168 - LandingGenerator - DEBUG - Generated: cloud-storage-barlassina.html
+2025-08-23 19:25:15,169 - LandingGenerator - DEBUG - Generated: cloud-storage-basiano.html
+2025-08-23 19:25:15,169 - LandingGenerator - DEBUG - Generated: cloud-storage-bellusco.html
+2025-08-23 19:25:15,169 - LandingGenerator - DEBUG - Generated: cloud-storage-bernareggio.html
+2025-08-23 19:25:15,170 - LandingGenerator - DEBUG - Generated: cloud-storage-besana-in-brianza.html
+2025-08-23 19:25:15,170 - LandingGenerator - INFO - Progress: 230/272 (84.56%) - Success: 230, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,170 - LandingGenerator - DEBUG - Generated: cloud-storage-biassono.html
+2025-08-23 19:25:15,171 - LandingGenerator - DEBUG - Generated: cloud-storage-burago-di-molgora.html
+2025-08-23 19:25:15,171 - LandingGenerator - DEBUG - Generated: cloud-storage-brugherio.html
+2025-08-23 19:25:15,171 - LandingGenerator - DEBUG - Generated: cloud-storage-busnago.html
+2025-08-23 19:25:15,171 - LandingGenerator - DEBUG - Generated: cloud-storage-cambiago.html
+2025-08-23 19:25:15,172 - LandingGenerator - DEBUG - Generated: cloud-storage-camparada.html
+2025-08-23 19:25:15,172 - LandingGenerator - DEBUG - Generated: cloud-storage-carate-brianza.html
+2025-08-23 19:25:15,172 - LandingGenerator - DEBUG - Generated: cloud-storage-carnate.html
+2025-08-23 19:25:15,172 - LandingGenerator - DEBUG - Generated: cloud-storage-cavenago-di-brianza.html
+2025-08-23 19:25:15,173 - LandingGenerator - DEBUG - Generated: cloud-storage-cesano-maderno.html
+2025-08-23 19:25:15,173 - LandingGenerator - DEBUG - Generated: cloud-storage-concorezzo.html
+2025-08-23 19:25:15,173 - LandingGenerator - INFO - Progress: 240/272 (88.24%) - Success: 240, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,173 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,174 - LandingGenerator - DEBUG - Generated: cloud-storage-correzzana.html
+2025-08-23 19:25:15,174 - LandingGenerator - DEBUG - Generated: cloud-storage-desio.html
+2025-08-23 19:25:15,174 - LandingGenerator - DEBUG - Generated: cloud-storage-giussano.html
+2025-08-23 19:25:15,175 - LandingGenerator - DEBUG - Generated: cloud-storage-inverigo.html
+2025-08-23 19:25:15,175 - LandingGenerator - DEBUG - Generated: cloud-storage-lambrugo.html
+2025-08-23 19:25:15,175 - LandingGenerator - DEBUG - Generated: cloud-storage-lentate-sul-seveso.html
+2025-08-23 19:25:15,175 - LandingGenerator - DEBUG - Generated: cloud-storage-lesmo.html
+2025-08-23 19:25:15,176 - LandingGenerator - DEBUG - Generated: cloud-storage-lissone.html
+2025-08-23 19:25:15,176 - LandingGenerator - INFO - Progress: 250/272 (91.91%) - Success: 250, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,176 - LandingGenerator - DEBUG - Generated: cloud-storage-masate.html
+2025-08-23 19:25:15,176 - LandingGenerator - DEBUG - Generated: cloud-storage-meda.html
+2025-08-23 19:25:15,177 - LandingGenerator - DEBUG - Generated: cloud-storage-mezzago.html
+2025-08-23 19:25:15,177 - LandingGenerator - DEBUG - Generated: cloud-storage-misinto.html
+2025-08-23 19:25:15,177 - LandingGenerator - DEBUG - Generated: cloud-storage-monza.html
+2025-08-23 19:25:15,177 - LandingGenerator - DEBUG - Generated: cloud-storage-novate-brianza.html
+2025-08-23 19:25:15,178 - LandingGenerator - DEBUG - Generated: cloud-storage-ornago.html
+2025-08-23 19:25:15,178 - LandingGenerator - DEBUG - Generated: cloud-storage-renate.html
+2025-08-23 19:25:15,178 - LandingGenerator - DEBUG - Generated: cloud-storage-roncello.html
+2025-08-23 19:25:15,179 - LandingGenerator - DEBUG - Generated: cloud-storage-ronco-briantino.html
+2025-08-23 19:25:15,179 - LandingGenerator - INFO - Progress: 260/272 (95.59%) - Success: 260, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,179 - LandingGenerator - DEBUG - Generated: cloud-storage-seregno.html
+2025-08-23 19:25:15,179 - LandingGenerator - DEBUG - Generated: cloud-storage-seveso.html
+2025-08-23 19:25:15,179 - LandingGenerator - DEBUG - Generated: cloud-storage-sovico.html
+2025-08-23 19:25:15,180 - LandingGenerator - DEBUG - Generated: cloud-storage-sulbiate.html
+2025-08-23 19:25:15,180 - LandingGenerator - DEBUG - Generated: cloud-storage-triuggio.html
+2025-08-23 19:25:15,180 - LandingGenerator - DEBUG - Generated: cloud-storage-usmate-velate.html
+2025-08-23 19:25:15,181 - LandingGenerator - DEBUG - Generated: cloud-storage-vedano-al-lambro.html
+2025-08-23 19:25:15,181 - LandingGenerator - DEBUG - Generated: cloud-storage-verano-brianza.html
+2025-08-23 19:25:15,181 - LandingGenerator - DEBUG - Generated: cloud-storage-villasanta.html
+2025-08-23 19:25:15,182 - LandingGenerator - DEBUG - Generated: cloud-storage-vimercate.html
+2025-08-23 19:25:15,182 - LandingGenerator - INFO - Progress: 270/272 (99.26%) - Success: 270, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,182 - LandingGenerator - INFO - Progress: 272/272 (100.0%) - Success: 272, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,182 - LandingGenerator - INFO - Generating pages in: /Users/andreapanzeri/progetti/IT-ERA/web/pages-draft
+2025-08-23 19:25:15,184 - LandingGenerator - DEBUG - Generated: cloud-storage-albino.html
+2025-08-23 19:25:15,184 - LandingGenerator - DEBUG - Generated: cloud-storage-alzano-lombardo.html
+2025-08-23 19:25:15,184 - LandingGenerator - DEBUG - Generated: cloud-storage-almenno-san-bartolomeo.html
+2025-08-23 19:25:15,184 - LandingGenerator - DEBUG - Generated: cloud-storage-bergamo.html
+2025-08-23 19:25:15,184 - LandingGenerator - DEBUG - Generated: cloud-storage-caravaggio.html
+2025-08-23 19:25:15,185 - LandingGenerator - DEBUG - Generated: cloud-storage-casnigo.html
+2025-08-23 19:25:15,185 - LandingGenerator - DEBUG - Generated: cloud-storage-castione-della-presolana.html
+2025-08-23 19:25:15,185 - LandingGenerator - DEBUG - Generated: cloud-storage-cazzano-sant-andrea.html
+2025-08-23 19:25:15,185 - LandingGenerator - DEBUG - Generated: cloud-storage-clusone.html
+2025-08-23 19:25:15,186 - LandingGenerator - DEBUG - Generated: cloud-storage-colzate.html
+2025-08-23 19:25:15,186 - LandingGenerator - INFO - Progress: 280/272 (102.94%) - Success: 280, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,186 - LandingGenerator - DEBUG - Generated: cloud-storage-curno.html
+2025-08-23 19:25:15,186 - LandingGenerator - DEBUG - Generated: cloud-storage-dalmine.html
+2025-08-23 19:25:15,187 - LandingGenerator - DEBUG - Generated: cloud-storage-fiorano-al-serio.html
+2025-08-23 19:25:15,187 - LandingGenerator - DEBUG - Generated: cloud-storage-gandino.html
+2025-08-23 19:25:15,187 - LandingGenerator - DEBUG - Generated: cloud-storage-gazzaniga.html
+2025-08-23 19:25:15,188 - LandingGenerator - DEBUG - Generated: cloud-storage-gorle.html
+2025-08-23 19:25:15,188 - LandingGenerator - DEBUG - Generated: cloud-storage-grassobbio.html
+2025-08-23 19:25:15,188 - LandingGenerator - DEBUG - Generated: cloud-storage-leffe.html
+2025-08-23 19:25:15,189 - LandingGenerator - DEBUG - Generated: cloud-storage-mozzo.html
+2025-08-23 19:25:15,189 - LandingGenerator - DEBUG - Generated: cloud-storage-nembro.html
+2025-08-23 19:25:15,189 - LandingGenerator - INFO - Progress: 290/272 (106.62%) - Success: 290, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,189 - LandingGenerator - DEBUG - Generated: cloud-storage-orio-al-serio.html
+2025-08-23 19:25:15,189 - LandingGenerator - DEBUG - Generated: cloud-storage-osio-sotto.html
+2025-08-23 19:25:15,190 - LandingGenerator - DEBUG - Generated: cloud-storage-paladina.html
+2025-08-23 19:25:15,190 - LandingGenerator - DEBUG - Generated: cloud-storage-parre.html
+2025-08-23 19:25:15,190 - LandingGenerator - DEBUG - Generated: cloud-storage-pedrengo.html
+2025-08-23 19:25:15,191 - LandingGenerator - DEBUG - Generated: cloud-storage-ponte-nossa.html
+2025-08-23 19:25:15,191 - LandingGenerator - DEBUG - Generated: cloud-storage-ponte-san-pietro.html
+2025-08-23 19:25:15,191 - LandingGenerator - DEBUG - Generated: cloud-storage-pradalunga.html
+2025-08-23 19:25:15,192 - LandingGenerator - DEBUG - Generated: cloud-storage-premolo.html
+2025-08-23 19:25:15,192 - LandingGenerator - DEBUG - Generated: cloud-storage-ranica.html
+2025-08-23 19:25:15,192 - LandingGenerator - DEBUG - Generated: cloud-storage-romano-di-lombardia.html
+2025-08-23 19:25:15,192 - LandingGenerator - INFO - Progress: 300/272 (110.29%) - Success: 300, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,193 - LandingGenerator - DEBUG - Generated: cloud-storage-san-pellegrino-terme.html
+2025-08-23 19:25:15,193 - LandingGenerator - DEBUG - Generated: cloud-storage-sant-omobono-terme.html
+2025-08-23 19:25:15,193 - LandingGenerator - DEBUG - Generated: cloud-storage-scanzorosciate.html
+2025-08-23 19:25:15,193 - LandingGenerator - DEBUG - Generated: cloud-storage-seriate.html
+2025-08-23 19:25:15,194 - LandingGenerator - DEBUG - Generated: cloud-storage-stezzano.html
+2025-08-23 19:25:15,194 - LandingGenerator - DEBUG - Generated: cloud-storage-torre-boldone.html
+2025-08-23 19:25:15,194 - LandingGenerator - DEBUG - Generated: cloud-storage-treviglio.html
+2025-08-23 19:25:15,194 - LandingGenerator - DEBUG - Generated: cloud-storage-verdellino.html
+2025-08-23 19:25:15,195 - LandingGenerator - DEBUG - Generated: cloud-storage-vertova.html
+2025-08-23 19:25:15,195 - LandingGenerator - INFO - Progress: 310/272 (113.97%) - Success: 310, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,195 - LandingGenerator - DEBUG - Generated: cloud-storage-villa-d-alme.html
+2025-08-23 19:25:15,195 - LandingGenerator - DEBUG - Generated: cloud-storage-villa-di-serio.html
+2025-08-23 19:25:15,196 - LandingGenerator - DEBUG - Generated: cloud-storage-zanica.html
+2025-08-23 19:25:15,196 - LandingGenerator - DEBUG - Generated: cloud-storage-zogno.html
+2025-08-23 19:25:15,196 - LandingGenerator - DEBUG - Generated: cloud-storage-anzano-del-parco.html
+2025-08-23 19:25:15,197 - LandingGenerator - DEBUG - Generated: cloud-storage-appiano-gentile.html
+2025-08-23 19:25:15,197 - LandingGenerator - DEBUG - Generated: cloud-storage-arosio.html
+2025-08-23 19:25:15,197 - LandingGenerator - DEBUG - Generated: cloud-storage-barlassina.html
+2025-08-23 19:25:15,197 - LandingGenerator - DEBUG - Generated: cloud-storage-bregnano.html
+2025-08-23 19:25:15,198 - LandingGenerator - DEBUG - Generated: cloud-storage-brenna.html
+2025-08-23 19:25:15,198 - LandingGenerator - INFO - Progress: 320/272 (117.65%) - Success: 320, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,198 - LandingGenerator - DEBUG - Generated: cloud-storage-bulgarograsso.html
+2025-08-23 19:25:15,198 - LandingGenerator - DEBUG - Generated: cloud-storage-cabiate.html
+2025-08-23 19:25:15,199 - LandingGenerator - DEBUG - Generated: cloud-storage-cadorago.html
+2025-08-23 19:25:15,199 - LandingGenerator - DEBUG - Generated: cloud-storage-cantu.html
+2025-08-23 19:25:15,199 - LandingGenerator - DEBUG - Generated: cloud-storage-capiago-intimiano.html
+2025-08-23 19:25:15,200 - LandingGenerator - DEBUG - Generated: cloud-storage-carbonate.html
+2025-08-23 19:25:15,200 - LandingGenerator - DEBUG - Generated: cloud-storage-carimate.html
+2025-08-23 19:25:15,200 - LandingGenerator - DEBUG - Generated: cloud-storage-caronno-pertusella.html
+2025-08-23 19:25:15,201 - LandingGenerator - DEBUG - Generated: cloud-storage-carugo.html
+2025-08-23 19:25:15,201 - LandingGenerator - DEBUG - Generated: cloud-storage-cermenate.html
+2025-08-23 19:25:15,201 - LandingGenerator - INFO - Progress: 330/272 (121.32%) - Success: 330, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,201 - LandingGenerator - DEBUG - Generated: cloud-storage-cirimido.html
+2025-08-23 19:25:15,201 - LandingGenerator - DEBUG - Generated: cloud-storage-cislago.html
+2025-08-23 19:25:15,202 - LandingGenerator - DEBUG - Generated: cloud-storage-cogliate.html
+2025-08-23 19:25:15,202 - LandingGenerator - DEBUG - Generated: cloud-storage-como.html
+2025-08-23 19:25:15,203 - LandingGenerator - DEBUG - Generated: cloud-storage-fenegro.html
+2025-08-23 19:25:15,203 - LandingGenerator - DEBUG - Generated: cloud-storage-figino-serenza.html
+2025-08-23 19:25:15,203 - LandingGenerator - DEBUG - Generated: cloud-storage-fino-mornasco.html
+2025-08-23 19:25:15,203 - LandingGenerator - DEBUG - Generated: cloud-storage-gerenzano.html
+2025-08-23 19:25:15,204 - LandingGenerator - DEBUG - Generated: cloud-storage-giussano.html
+2025-08-23 19:25:15,204 - LandingGenerator - DEBUG - Generated: cloud-storage-inverigo.html
+2025-08-23 19:25:15,204 - LandingGenerator - DEBUG - Generated: cloud-storage-lazzate.html
+2025-08-23 19:25:15,204 - LandingGenerator - INFO - Progress: 340/272 (125.0%) - Success: 340, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,204 - LandingGenerator - DEBUG - Generated: cloud-storage-lentate-sul-seveso.html
+2025-08-23 19:25:15,205 - LandingGenerator - DEBUG - Generated: cloud-storage-limido-comasco.html
+2025-08-23 19:25:15,205 - LandingGenerator - DEBUG - Generated: cloud-storage-locate-varesino.html
+2025-08-23 19:25:15,205 - LandingGenerator - DEBUG - Generated: cloud-storage-lomazzo.html
+2025-08-23 19:25:15,206 - LandingGenerator - DEBUG - Generated: cloud-storage-lurate-caccivio.html
+2025-08-23 19:25:15,206 - LandingGenerator - DEBUG - Generated: cloud-storage-mariano-comense.html
+2025-08-23 19:25:15,206 - LandingGenerator - DEBUG - Generated: cloud-storage-meda.html
+2025-08-23 19:25:15,207 - LandingGenerator - INFO - Progress: 350/272 (128.68%) - Success: 350, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,207 - LandingGenerator - DEBUG - Generated: cloud-storage-misinto.html
+2025-08-23 19:25:15,207 - LandingGenerator - DEBUG - Generated: cloud-storage-montorfano.html
+2025-08-23 19:25:15,207 - LandingGenerator - DEBUG - Generated: cloud-storage-mozzate.html
+2025-08-23 19:25:15,207 - LandingGenerator - DEBUG - Generated: cloud-storage-novedrate.html
+2025-08-23 19:25:15,208 - LandingGenerator - DEBUG - Generated: cloud-storage-olgiate-comasco.html
+2025-08-23 19:25:15,208 - LandingGenerator - DEBUG - Generated: cloud-storage-origgio.html
+2025-08-23 19:25:15,209 - LandingGenerator - DEBUG - Generated: cloud-storage-rovellasca.html
+2025-08-23 19:25:15,209 - LandingGenerator - DEBUG - Generated: cloud-storage-rovello-porro.html
+2025-08-23 19:25:15,209 - LandingGenerator - DEBUG - Generated: cloud-storage-saronno.html
+2025-08-23 19:25:15,209 - LandingGenerator - DEBUG - Generated: cloud-storage-senna-comasco.html
+2025-08-23 19:25:15,210 - LandingGenerator - DEBUG - Generated: cloud-storage-seveso.html
+2025-08-23 19:25:15,210 - LandingGenerator - DEBUG - Generated: cloud-storage-turate.html
+2025-08-23 19:25:15,210 - LandingGenerator - INFO - Progress: 360/272 (132.35%) - Success: 360, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,210 - LandingGenerator - DEBUG - Generated: cloud-storage-veniano.html
+2025-08-23 19:25:15,211 - LandingGenerator - DEBUG - Generated: cloud-storage-abbadia-lariana.html
+2025-08-23 19:25:15,211 - LandingGenerator - DEBUG - Generated: cloud-storage-airuno.html
+2025-08-23 19:25:15,211 - LandingGenerator - DEBUG - Generated: cloud-storage-annone-di-brianza.html
+2025-08-23 19:25:15,212 - LandingGenerator - DEBUG - Generated: cloud-storage-ballabio.html
+2025-08-23 19:25:15,212 - LandingGenerator - DEBUG - Generated: cloud-storage-barzago.html
+2025-08-23 19:25:15,212 - LandingGenerator - DEBUG - Generated: cloud-storage-barzio.html
+2025-08-23 19:25:15,213 - LandingGenerator - DEBUG - Generated: cloud-storage-bellano.html
+2025-08-23 19:25:15,213 - LandingGenerator - DEBUG - Generated: cloud-storage-calolziocorte.html
+2025-08-23 19:25:15,213 - LandingGenerator - DEBUG - Generated: cloud-storage-casatenovo.html
+2025-08-23 19:25:15,213 - LandingGenerator - INFO - Progress: 370/272 (136.03%) - Success: 370, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,213 - LandingGenerator - DEBUG - Generated: cloud-storage-cassina-valsassina.html
+2025-08-23 19:25:15,214 - LandingGenerator - DEBUG - Generated: cloud-storage-cernusco-lombardone.html
+2025-08-23 19:25:15,214 - LandingGenerator - DEBUG - Generated: cloud-storage-colico.html
+2025-08-23 19:25:15,214 - LandingGenerator - DEBUG - Generated: cloud-storage-cortenova.html
+2025-08-23 19:25:15,215 - LandingGenerator - DEBUG - Generated: cloud-storage-costa-masnaga.html
+2025-08-23 19:25:15,215 - LandingGenerator - DEBUG - Generated: cloud-storage-cremeno.html
+2025-08-23 19:25:15,215 - LandingGenerator - DEBUG - Generated: cloud-storage-dervio.html
+2025-08-23 19:25:15,215 - LandingGenerator - DEBUG - Generated: cloud-storage-dolzago.html
+2025-08-23 19:25:15,216 - LandingGenerator - DEBUG - Generated: cloud-storage-ello.html
+2025-08-23 19:25:15,216 - LandingGenerator - DEBUG - Generated: cloud-storage-garlate.html
+2025-08-23 19:25:15,216 - LandingGenerator - INFO - Progress: 380/272 (139.71%) - Success: 380, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,216 - LandingGenerator - DEBUG - Generated: cloud-storage-introbio.html
+2025-08-23 19:25:15,217 - LandingGenerator - DEBUG - Generated: cloud-storage-la-valletta-brianza.html
+2025-08-23 19:25:15,217 - LandingGenerator - DEBUG - Generated: cloud-storage-lecco.html
+2025-08-23 19:25:15,217 - LandingGenerator - DEBUG - Generated: cloud-storage-lierna.html
+2025-08-23 19:25:15,218 - LandingGenerator - DEBUG - Generated: cloud-storage-malgrate.html
+2025-08-23 19:25:15,218 - LandingGenerator - DEBUG - Generated: cloud-storage-mandello-del-lario.html
+2025-08-23 19:25:15,218 - LandingGenerator - DEBUG - Generated: cloud-storage-merate.html
+2025-08-23 19:25:15,219 - LandingGenerator - DEBUG - Generated: cloud-storage-moggio.html
+2025-08-23 19:25:15,219 - LandingGenerator - DEBUG - Generated: cloud-storage-montevecchia.html
+2025-08-23 19:25:15,219 - LandingGenerator - DEBUG - Generated: cloud-storage-morterone.html
+2025-08-23 19:25:15,219 - LandingGenerator - INFO - Progress: 390/272 (143.38%) - Success: 390, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,219 - LandingGenerator - DEBUG - Generated: cloud-storage-nibionno.html
+2025-08-23 19:25:15,220 - LandingGenerator - DEBUG - Generated: cloud-storage-oggiono.html
+2025-08-23 19:25:15,220 - LandingGenerator - DEBUG - Generated: cloud-storage-olginate.html
+2025-08-23 19:25:15,220 - LandingGenerator - DEBUG - Generated: cloud-storage-osnago.html
+2025-08-23 19:25:15,221 - LandingGenerator - DEBUG - Generated: cloud-storage-pasturo.html
+2025-08-23 19:25:15,221 - LandingGenerator - DEBUG - Generated: cloud-storage-perledo.html
+2025-08-23 19:25:15,221 - LandingGenerator - DEBUG - Generated: cloud-storage-premana.html
+2025-08-23 19:25:15,221 - LandingGenerator - DEBUG - Generated: cloud-storage-primaluna.html
+2025-08-23 19:25:15,222 - LandingGenerator - DEBUG - Generated: cloud-storage-rogeno.html
+2025-08-23 19:25:15,222 - LandingGenerator - DEBUG - Generated: cloud-storage-taceno.html
+2025-08-23 19:25:15,222 - LandingGenerator - INFO - Progress: 400/272 (147.06%) - Success: 400, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,222 - LandingGenerator - DEBUG - Generated: cloud-storage-valmadrera.html
+2025-08-23 19:25:15,223 - LandingGenerator - DEBUG - Generated: cloud-storage-varenna.html
+2025-08-23 19:25:15,223 - LandingGenerator - DEBUG - Generated: cloud-storage-agnadello.html
+2025-08-23 19:25:15,223 - LandingGenerator - DEBUG - Generated: cloud-storage-bariano.html
+2025-08-23 19:25:15,223 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,224 - LandingGenerator - DEBUG - Generated: cloud-storage-borghetto-lodigiano.html
+2025-08-23 19:25:15,224 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,224 - LandingGenerator - DEBUG - Generated: cloud-storage-calvenzano.html
+2025-08-23 19:25:15,225 - LandingGenerator - DEBUG - Generated: cloud-storage-caravaggio.html
+2025-08-23 19:25:15,225 - LandingGenerator - DEBUG - Generated: cloud-storage-casalpusterlengo.html
+2025-08-23 19:25:15,225 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,225 - LandingGenerator - INFO - Progress: 410/272 (150.74%) - Success: 410, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,226 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,226 - LandingGenerator - DEBUG - Generated: cloud-storage-codogno.html
+2025-08-23 19:25:15,226 - LandingGenerator - DEBUG - Generated: cloud-storage-covo.html
+2025-08-23 19:25:15,227 - LandingGenerator - DEBUG - Generated: cloud-storage-crema.html
+2025-08-23 19:25:15,227 - LandingGenerator - DEBUG - Generated: cloud-storage-dovera.html
+2025-08-23 19:25:15,227 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,227 - LandingGenerator - DEBUG - Generated: cloud-storage-fombio.html
+2025-08-23 19:25:15,227 - LandingGenerator - DEBUG - Generated: cloud-storage-formigara.html
+2025-08-23 19:25:15,228 - LandingGenerator - DEBUG - Generated: cloud-storage-lodi.html
+2025-08-23 19:25:15,228 - LandingGenerator - INFO - Progress: 420/272 (154.41%) - Success: 420, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,228 - LandingGenerator - DEBUG - Generated: cloud-storage-lodi-vecchio.html
+2025-08-23 19:25:15,228 - LandingGenerator - DEBUG - Generated: cloud-storage-lurano.html
+2025-08-23 19:25:15,229 - LandingGenerator - DEBUG - Generated: cloud-storage-maleo.html
+2025-08-23 19:25:15,229 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,230 - LandingGenerator - DEBUG - Generated: cloud-storage-montanaso-lombardo.html
+2025-08-23 19:25:15,230 - LandingGenerator - DEBUG - Generated: cloud-storage-offanengo.html
+2025-08-23 19:25:15,230 - LandingGenerator - DEBUG - Generated: cloud-storage-ossago-lodigiano.html
+2025-08-23 19:25:15,230 - LandingGenerator - DEBUG - Generated: cloud-storage-pagazzano.html
+2025-08-23 19:25:15,230 - LandingGenerator - DEBUG - Generated: cloud-storage-pandino.html
+2025-08-23 19:25:15,231 - LandingGenerator - DEBUG - Generated: cloud-storage-pieve-fissiraga.html
+2025-08-23 19:25:15,231 - LandingGenerator - INFO - Progress: 430/272 (158.09%) - Success: 430, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,231 - LandingGenerator - DEBUG - Generated: cloud-storage-pizzighettone.html
+2025-08-23 19:25:15,231 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,232 - LandingGenerator - DEBUG - Generated: cloud-storage-romano-di-lombardia.html
+2025-08-23 19:25:15,232 - LandingGenerator - DEBUG - Generated: cloud-storage-san-fiorano.html
+2025-08-23 19:25:15,232 - LandingGenerator - DEBUG - Generated: cloud-storage-sant-angelo-lodigiano.html
+2025-08-23 19:25:15,233 - LandingGenerator - DEBUG - Generated: cloud-storage-somaglia.html
+2025-08-23 19:25:15,233 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,233 - LandingGenerator - DEBUG - Generated: cloud-storage-spirano.html
+2025-08-23 19:25:15,234 - LandingGenerator - DEBUG - Generated: cloud-storage-torlasco.html
+2025-08-23 19:25:15,234 - LandingGenerator - DEBUG - Generated: cloud-storage-tavazzano-con-villavesco.html
+2025-08-23 19:25:15,234 - LandingGenerator - INFO - Progress: 440/272 (161.76%) - Success: 440, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,234 - LandingGenerator - DEBUG - Generated: cloud-storage-trescore-cremasco.html
+2025-08-23 19:25:15,235 - LandingGenerator - DEBUG - Generated: cloud-storage-vaiano-cremasco.html
+2025-08-23 19:25:15,235 - LandingGenerator - DEBUG - Generated: cloud-storage-zelo-buon-persico.html
+2025-08-23 19:25:15,235 - LandingGenerator - DEBUG - Generated: cloud-storage-abbiategrasso.html
+2025-08-23 19:25:15,235 - LandingGenerator - DEBUG - Generated: cloud-storage-assago.html
+2025-08-23 19:25:15,236 - LandingGenerator - DEBUG - Generated: cloud-storage-basiglio.html
+2025-08-23 19:25:15,236 - LandingGenerator - DEBUG - Generated: cloud-storage-besate.html
+2025-08-23 19:25:15,236 - LandingGenerator - DEBUG - Generated: cloud-storage-binasco.html
+2025-08-23 19:25:15,237 - LandingGenerator - DEBUG - Generated: cloud-storage-bollate.html
+2025-08-23 19:25:15,237 - LandingGenerator - DEBUG - Generated: cloud-storage-bovisio-masciago.html
+2025-08-23 19:25:15,237 - LandingGenerator - INFO - Progress: 450/272 (165.44%) - Success: 450, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,237 - LandingGenerator - DEBUG - Generated: cloud-storage-bresso.html
+2025-08-23 19:25:15,237 - LandingGenerator - DEBUG - Generated: cloud-storage-bubbiano.html
+2025-08-23 19:25:15,238 - LandingGenerator - DEBUG - Generated: cloud-storage-buccinasco.html
+2025-08-23 19:25:15,238 - LandingGenerator - DEBUG - Generated: cloud-storage-calvignasco.html
+2025-08-23 19:25:15,239 - LandingGenerator - DEBUG - Generated: cloud-storage-carbonate.html
+2025-08-23 19:25:15,239 - LandingGenerator - DEBUG - Generated: cloud-storage-caronno-pertusella.html
+2025-08-23 19:25:15,239 - LandingGenerator - DEBUG - Generated: cloud-storage-cesano-boscone.html
+2025-08-23 19:25:15,239 - LandingGenerator - DEBUG - Generated: cloud-storage-cesate.html
+2025-08-23 19:25:15,240 - LandingGenerator - DEBUG - Generated: cloud-storage-cinisello-balsamo.html
+2025-08-23 19:25:15,240 - LandingGenerator - DEBUG - Generated: cloud-storage-cislago.html
+2025-08-23 19:25:15,240 - LandingGenerator - INFO - Progress: 460/272 (169.12%) - Success: 460, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,240 - LandingGenerator - DEBUG - Generated: cloud-storage-cologno-monzese.html
+2025-08-23 19:25:15,241 - LandingGenerator - DEBUG - Generated: cloud-storage-cormano.html
+2025-08-23 19:25:15,241 - LandingGenerator - DEBUG - Generated: cloud-storage-corsico.html
+2025-08-23 19:25:15,241 - LandingGenerator - DEBUG - Generated: cloud-storage-cusano-milanino.html
+2025-08-23 19:25:15,241 - LandingGenerator - DEBUG - Generated: cloud-storage-garbagnate-milanese.html
+2025-08-23 19:25:15,242 - LandingGenerator - DEBUG - Generated: cloud-storage-gerenzano.html
+2025-08-23 19:25:15,242 - LandingGenerator - DEBUG - Generated: cloud-storage-lacchiarella.html
+2025-08-23 19:25:15,242 - LandingGenerator - DEBUG - Generated: cloud-storage-limbiate.html
+2025-08-23 19:25:15,242 - LandingGenerator - DEBUG - Generated: cloud-storage-locate-di-triulzi.html
+2025-08-23 19:25:15,243 - LandingGenerator - DEBUG - Generated: cloud-storage-milano.html
+2025-08-23 19:25:15,243 - LandingGenerator - INFO - Progress: 470/272 (172.79%) - Success: 470, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,243 - LandingGenerator - DEBUG - Generated: cloud-storage-morimondo.html
+2025-08-23 19:25:15,243 - LandingGenerator - DEBUG - Generated: cloud-storage-mozzate.html
+2025-08-23 19:25:15,244 - LandingGenerator - DEBUG - Generated: cloud-storage-muggio.html
+2025-08-23 19:25:15,244 - LandingGenerator - DEBUG - Generated: cloud-storage-nova-milanese.html
+2025-08-23 19:25:15,244 - LandingGenerator - DEBUG - Generated: cloud-storage-noviglio.html
+2025-08-23 19:25:15,245 - LandingGenerator - DEBUG - Generated: cloud-storage-opera.html
+2025-08-23 19:25:15,245 - LandingGenerator - DEBUG - Generated: cloud-storage-origgio.html
+2025-08-23 19:25:15,245 - LandingGenerator - DEBUG - Generated: cloud-storage-paderno-dugnano.html
+2025-08-23 19:25:15,246 - LandingGenerator - DEBUG - Generated: cloud-storage-pieve-emanuele.html
+2025-08-23 19:25:15,246 - LandingGenerator - DEBUG - Generated: cloud-storage-rho.html
+2025-08-23 19:25:15,246 - LandingGenerator - INFO - Progress: 480/272 (176.47%) - Success: 480, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,246 - LandingGenerator - DEBUG - Generated: cloud-storage-rosate.html
+2025-08-23 19:25:15,246 - LandingGenerator - DEBUG - Generated: cloud-storage-rovellasca.html
+2025-08-23 19:25:15,247 - LandingGenerator - DEBUG - Generated: cloud-storage-rovello-porro.html
+2025-08-23 19:25:15,247 - LandingGenerator - DEBUG - Generated: cloud-storage-rozzano.html
+2025-08-23 19:25:15,248 - LandingGenerator - DEBUG - Generated: cloud-storage-saronno.html
+2025-08-23 19:25:15,248 - LandingGenerator - DEBUG - Generated: cloud-storage-senago.html
+2025-08-23 19:25:15,248 - LandingGenerator - DEBUG - Generated: cloud-storage-sesto-san-giovanni.html
+2025-08-23 19:25:15,248 - LandingGenerator - DEBUG - Generated: cloud-storage-solaro.html
+2025-08-23 19:25:15,249 - LandingGenerator - DEBUG - Generated: cloud-storage-trezzano-sul-naviglio.html
+2025-08-23 19:25:15,249 - LandingGenerator - DEBUG - Generated: cloud-storage-turate.html
+2025-08-23 19:25:15,249 - LandingGenerator - INFO - Progress: 490/272 (180.15%) - Success: 490, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,250 - LandingGenerator - DEBUG - Generated: cloud-storage-varedo.html
+2025-08-23 19:25:15,250 - LandingGenerator - DEBUG - Generated: cloud-storage-uboldo.html
+2025-08-23 19:25:15,250 - LandingGenerator - DEBUG - Generated: cloud-storage-zibido-san-giacomo.html
+2025-08-23 19:25:15,250 - LandingGenerator - DEBUG - Generated: cloud-storage-agrate-brianza.html
+2025-08-23 19:25:15,251 - LandingGenerator - DEBUG - Generated: cloud-storage-aicurzio.html
+2025-08-23 19:25:15,251 - LandingGenerator - DEBUG - Generated: cloud-storage-albiate.html
+2025-08-23 19:25:15,251 - LandingGenerator - DEBUG - Generated: cloud-storage-arcore.html
+2025-08-23 19:25:15,252 - LandingGenerator - DEBUG - Generated: cloud-storage-barlassina.html
+2025-08-23 19:25:15,252 - LandingGenerator - DEBUG - Generated: cloud-storage-basiano.html
+2025-08-23 19:25:15,252 - LandingGenerator - DEBUG - Generated: cloud-storage-bellusco.html
+2025-08-23 19:25:15,252 - LandingGenerator - INFO - Progress: 500/272 (183.82%) - Success: 500, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,252 - LandingGenerator - DEBUG - Generated: cloud-storage-bernareggio.html
+2025-08-23 19:25:15,253 - LandingGenerator - DEBUG - Generated: cloud-storage-besana-in-brianza.html
+2025-08-23 19:25:15,253 - LandingGenerator - DEBUG - Generated: cloud-storage-biassono.html
+2025-08-23 19:25:15,253 - LandingGenerator - DEBUG - Generated: cloud-storage-brugherio.html
+2025-08-23 19:25:15,254 - LandingGenerator - DEBUG - Generated: cloud-storage-burago-di-molgora.html
+2025-08-23 19:25:15,254 - LandingGenerator - DEBUG - Generated: cloud-storage-busnago.html
+2025-08-23 19:25:15,254 - LandingGenerator - DEBUG - Generated: cloud-storage-cambiago.html
+2025-08-23 19:25:15,254 - LandingGenerator - DEBUG - Generated: cloud-storage-camparada.html
+2025-08-23 19:25:15,255 - LandingGenerator - DEBUG - Generated: cloud-storage-carate-brianza.html
+2025-08-23 19:25:15,255 - LandingGenerator - DEBUG - Generated: cloud-storage-carnate.html
+2025-08-23 19:25:15,255 - LandingGenerator - DEBUG - Generated: cloud-storage-cavenago-di-brianza.html
+2025-08-23 19:25:15,255 - LandingGenerator - INFO - Progress: 510/272 (187.5%) - Success: 510, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,256 - LandingGenerator - DEBUG - Generated: cloud-storage-cesano-maderno.html
+2025-08-23 19:25:15,256 - LandingGenerator - DEBUG - Generated: cloud-storage-concorezzo.html
+2025-08-23 19:25:15,256 - LandingGenerator - DEBUG - Generated: cloud-storage-d-adda.html
+2025-08-23 19:25:15,256 - LandingGenerator - DEBUG - Generated: cloud-storage-correzzana.html
+2025-08-23 19:25:15,257 - LandingGenerator - DEBUG - Generated: cloud-storage-desio.html
+2025-08-23 19:25:15,257 - LandingGenerator - DEBUG - Generated: cloud-storage-giussano.html
+2025-08-23 19:25:15,257 - LandingGenerator - DEBUG - Generated: cloud-storage-inverigo.html
+2025-08-23 19:25:15,258 - LandingGenerator - DEBUG - Generated: cloud-storage-lambrugo.html
+2025-08-23 19:25:15,258 - LandingGenerator - DEBUG - Generated: cloud-storage-lentate-sul-seveso.html
+2025-08-23 19:25:15,258 - LandingGenerator - DEBUG - Generated: cloud-storage-lesmo.html
+2025-08-23 19:25:15,258 - LandingGenerator - INFO - Progress: 520/272 (191.18%) - Success: 520, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,259 - LandingGenerator - DEBUG - Generated: cloud-storage-lissone.html
+2025-08-23 19:25:15,259 - LandingGenerator - DEBUG - Generated: cloud-storage-masate.html
+2025-08-23 19:25:15,259 - LandingGenerator - DEBUG - Generated: cloud-storage-meda.html
+2025-08-23 19:25:15,260 - LandingGenerator - DEBUG - Generated: cloud-storage-mezzago.html
+2025-08-23 19:25:15,260 - LandingGenerator - DEBUG - Generated: cloud-storage-misinto.html
+2025-08-23 19:25:15,260 - LandingGenerator - DEBUG - Generated: cloud-storage-novate-brianza.html
+2025-08-23 19:25:15,261 - LandingGenerator - DEBUG - Generated: cloud-storage-monza.html
+2025-08-23 19:25:15,261 - LandingGenerator - DEBUG - Generated: cloud-storage-ornago.html
+2025-08-23 19:25:15,261 - LandingGenerator - DEBUG - Generated: cloud-storage-renate.html
+2025-08-23 19:25:15,261 - LandingGenerator - INFO - Progress: 530/272 (194.85%) - Success: 530, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,261 - LandingGenerator - DEBUG - Generated: cloud-storage-roncello.html
+2025-08-23 19:25:15,262 - LandingGenerator - DEBUG - Generated: cloud-storage-ronco-briantino.html
+2025-08-23 19:25:15,262 - LandingGenerator - DEBUG - Generated: cloud-storage-seregno.html
+2025-08-23 19:25:15,262 - LandingGenerator - DEBUG - Generated: cloud-storage-seveso.html
+2025-08-23 19:25:15,263 - LandingGenerator - DEBUG - Generated: cloud-storage-sovico.html
+2025-08-23 19:25:15,263 - LandingGenerator - DEBUG - Generated: cloud-storage-sulbiate.html
+2025-08-23 19:25:15,263 - LandingGenerator - DEBUG - Generated: cloud-storage-triuggio.html
+2025-08-23 19:25:15,264 - LandingGenerator - DEBUG - Generated: cloud-storage-usmate-velate.html
+2025-08-23 19:25:15,264 - LandingGenerator - DEBUG - Generated: cloud-storage-vedano-al-lambro.html
+2025-08-23 19:25:15,264 - LandingGenerator - INFO - Progress: 540/272 (198.53%) - Success: 540, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,264 - LandingGenerator - DEBUG - Generated: cloud-storage-verano-brianza.html
+2025-08-23 19:25:15,265 - LandingGenerator - DEBUG - Generated: cloud-storage-villasanta.html
+2025-08-23 19:25:15,265 - LandingGenerator - DEBUG - Generated: cloud-storage-vimercate.html
+2025-08-23 19:25:15,265 - LandingGenerator - INFO - Progress: 544/272 (200.0%) - Success: 544, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,276 - LandingGenerator - INFO - Sitemap updated: 1 new URLs added
+2025-08-23 19:25:15,276 - LandingGenerator - INFO - Processing service: sicurezza-informatica
+2025-08-23 19:25:15,276 - LandingGenerator - INFO - Starting generation for sicurezza-informatica: 272 pages
+2025-08-23 19:25:15,277 - LandingGenerator - INFO - Generating pages in: /Users/andreapanzeri/progetti/IT-ERA/web/pages
+2025-08-23 19:25:15,278 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-albino.html
+2025-08-23 19:25:15,278 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bergamo.html
+2025-08-23 19:25:15,278 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-almenno-san-bartolomeo.html
+2025-08-23 19:25:15,278 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-alzano-lombardo.html
+2025-08-23 19:25:15,279 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caravaggio.html
+2025-08-23 19:25:15,279 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-castione-della-presolana.html
+2025-08-23 19:25:15,279 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-casnigo.html
+2025-08-23 19:25:15,280 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cazzano-sant-andrea.html
+2025-08-23 19:25:15,281 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-clusone.html
+2025-08-23 19:25:15,281 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-colzate.html
+2025-08-23 19:25:15,281 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-curno.html
+2025-08-23 19:25:15,281 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dalmine.html
+2025-08-23 19:25:15,281 - LandingGenerator - INFO - Progress: 10/272 (3.68%) - Success: 10, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,281 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fiorano-al-serio.html
+2025-08-23 19:25:15,282 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gandino.html
+2025-08-23 19:25:15,282 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gazzaniga.html
+2025-08-23 19:25:15,282 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gorle.html
+2025-08-23 19:25:15,283 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-grassobbio.html
+2025-08-23 19:25:15,283 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-leffe.html
+2025-08-23 19:25:15,283 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mozzo.html
+2025-08-23 19:25:15,284 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-nembro.html
+2025-08-23 19:25:15,284 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-orio-al-serio.html
+2025-08-23 19:25:15,284 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-osio-sotto.html
+2025-08-23 19:25:15,284 - LandingGenerator - INFO - Progress: 20/272 (7.35%) - Success: 20, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,285 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-paladina.html
+2025-08-23 19:25:15,285 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-parre.html
+2025-08-23 19:25:15,285 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pedrengo.html
+2025-08-23 19:25:15,285 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ponte-nossa.html
+2025-08-23 19:25:15,286 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ponte-san-pietro.html
+2025-08-23 19:25:15,286 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pradalunga.html
+2025-08-23 19:25:15,286 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-premolo.html
+2025-08-23 19:25:15,287 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ranica.html
+2025-08-23 19:25:15,287 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-romano-di-lombardia.html
+2025-08-23 19:25:15,287 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-san-pellegrino-terme.html
+2025-08-23 19:25:15,287 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sant-omobono-terme.html
+2025-08-23 19:25:15,287 - LandingGenerator - INFO - Progress: 30/272 (11.03%) - Success: 30, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,288 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-scanzorosciate.html
+2025-08-23 19:25:15,288 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seriate.html
+2025-08-23 19:25:15,289 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-stezzano.html
+2025-08-23 19:25:15,289 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-torre-boldone.html
+2025-08-23 19:25:15,289 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-treviglio.html
+2025-08-23 19:25:15,290 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-verdellino.html
+2025-08-23 19:25:15,290 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vertova.html
+2025-08-23 19:25:15,290 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-villa-d-alme.html
+2025-08-23 19:25:15,290 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-villa-di-serio.html
+2025-08-23 19:25:15,291 - LandingGenerator - INFO - Progress: 40/272 (14.71%) - Success: 40, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,291 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zanica.html
+2025-08-23 19:25:15,291 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-anzano-del-parco.html
+2025-08-23 19:25:15,291 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zogno.html
+2025-08-23 19:25:15,292 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-appiano-gentile.html
+2025-08-23 19:25:15,292 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-arosio.html
+2025-08-23 19:25:15,292 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barlassina.html
+2025-08-23 19:25:15,292 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bregnano.html
+2025-08-23 19:25:15,293 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-brenna.html
+2025-08-23 19:25:15,293 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bulgarograsso.html
+2025-08-23 19:25:15,293 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cabiate.html
+2025-08-23 19:25:15,294 - LandingGenerator - INFO - Progress: 50/272 (18.38%) - Success: 50, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,294 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cadorago.html
+2025-08-23 19:25:15,294 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cantu.html
+2025-08-23 19:25:15,295 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-capiago-intimiano.html
+2025-08-23 19:25:15,295 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carbonate.html
+2025-08-23 19:25:15,295 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carimate.html
+2025-08-23 19:25:15,296 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caronno-pertusella.html
+2025-08-23 19:25:15,296 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carugo.html
+2025-08-23 19:25:15,296 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cermenate.html
+2025-08-23 19:25:15,296 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cirimido.html
+2025-08-23 19:25:15,296 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cislago.html
+2025-08-23 19:25:15,297 - LandingGenerator - INFO - Progress: 60/272 (22.06%) - Success: 60, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,297 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cogliate.html
+2025-08-23 19:25:15,297 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-como.html
+2025-08-23 19:25:15,297 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fenegro.html
+2025-08-23 19:25:15,298 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-figino-serenza.html
+2025-08-23 19:25:15,298 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fino-mornasco.html
+2025-08-23 19:25:15,298 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gerenzano.html
+2025-08-23 19:25:15,299 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-giussano.html
+2025-08-23 19:25:15,299 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-inverigo.html
+2025-08-23 19:25:15,299 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lazzate.html
+2025-08-23 19:25:15,300 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lentate-sul-seveso.html
+2025-08-23 19:25:15,300 - LandingGenerator - INFO - Progress: 70/272 (25.74%) - Success: 70, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,300 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-limido-comasco.html
+2025-08-23 19:25:15,300 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-locate-varesino.html
+2025-08-23 19:25:15,301 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lomazzo.html
+2025-08-23 19:25:15,301 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lurate-caccivio.html
+2025-08-23 19:25:15,301 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mariano-comense.html
+2025-08-23 19:25:15,302 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-meda.html
+2025-08-23 19:25:15,302 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-misinto.html
+2025-08-23 19:25:15,302 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-montorfano.html
+2025-08-23 19:25:15,303 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mozzate.html
+2025-08-23 19:25:15,303 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-novedrate.html
+2025-08-23 19:25:15,303 - LandingGenerator - INFO - Progress: 80/272 (29.41%) - Success: 80, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,303 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-olgiate-comasco.html
+2025-08-23 19:25:15,304 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-origgio.html
+2025-08-23 19:25:15,304 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovellasca.html
+2025-08-23 19:25:15,304 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovello-porro.html
+2025-08-23 19:25:15,305 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-saronno.html
+2025-08-23 19:25:15,305 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-senna-comasco.html
+2025-08-23 19:25:15,305 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seveso.html
+2025-08-23 19:25:15,306 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-veniano.html
+2025-08-23 19:25:15,306 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-turate.html
+2025-08-23 19:25:15,306 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-abbadia-lariana.html
+2025-08-23 19:25:15,306 - LandingGenerator - INFO - Progress: 90/272 (33.09%) - Success: 90, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,306 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-airuno.html
+2025-08-23 19:25:15,307 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-annone-di-brianza.html
+2025-08-23 19:25:15,307 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ballabio.html
+2025-08-23 19:25:15,307 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barzago.html
+2025-08-23 19:25:15,308 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barzio.html
+2025-08-23 19:25:15,308 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bellano.html
+2025-08-23 19:25:15,308 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-calolziocorte.html
+2025-08-23 19:25:15,308 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-casatenovo.html
+2025-08-23 19:25:15,309 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cassina-valsassina.html
+2025-08-23 19:25:15,309 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cernusco-lombardone.html
+2025-08-23 19:25:15,309 - LandingGenerator - INFO - Progress: 100/272 (36.76%) - Success: 100, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,309 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-colico.html
+2025-08-23 19:25:15,310 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cortenova.html
+2025-08-23 19:25:15,310 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-costa-masnaga.html
+2025-08-23 19:25:15,310 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cremeno.html
+2025-08-23 19:25:15,311 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dervio.html
+2025-08-23 19:25:15,311 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dolzago.html
+2025-08-23 19:25:15,311 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ello.html
+2025-08-23 19:25:15,311 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-garlate.html
+2025-08-23 19:25:15,312 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-introbio.html
+2025-08-23 19:25:15,312 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-la-valletta-brianza.html
+2025-08-23 19:25:15,312 - LandingGenerator - INFO - Progress: 110/272 (40.44%) - Success: 110, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,313 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lecco.html
+2025-08-23 19:25:15,313 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lierna.html
+2025-08-23 19:25:15,313 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-malgrate.html
+2025-08-23 19:25:15,313 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mandello-del-lario.html
+2025-08-23 19:25:15,314 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-merate.html
+2025-08-23 19:25:15,314 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-moggio.html
+2025-08-23 19:25:15,314 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-montevecchia.html
+2025-08-23 19:25:15,315 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-morterone.html
+2025-08-23 19:25:15,315 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-nibionno.html
+2025-08-23 19:25:15,315 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-oggiono.html
+2025-08-23 19:25:15,315 - LandingGenerator - INFO - Progress: 120/272 (44.12%) - Success: 120, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,315 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-olginate.html
+2025-08-23 19:25:15,316 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-osnago.html
+2025-08-23 19:25:15,316 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pasturo.html
+2025-08-23 19:25:15,316 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-perledo.html
+2025-08-23 19:25:15,317 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-premana.html
+2025-08-23 19:25:15,317 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-primaluna.html
+2025-08-23 19:25:15,317 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rogeno.html
+2025-08-23 19:25:15,318 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-taceno.html
+2025-08-23 19:25:15,318 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-valmadrera.html
+2025-08-23 19:25:15,318 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-varenna.html
+2025-08-23 19:25:15,318 - LandingGenerator - INFO - Progress: 130/272 (47.79%) - Success: 130, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,318 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-agnadello.html
+2025-08-23 19:25:15,319 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,319 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bariano.html
+2025-08-23 19:25:15,319 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-borghetto-lodigiano.html
+2025-08-23 19:25:15,320 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,320 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-calvenzano.html
+2025-08-23 19:25:15,320 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caravaggio.html
+2025-08-23 19:25:15,321 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-casalpusterlengo.html
+2025-08-23 19:25:15,321 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,321 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,321 - LandingGenerator - INFO - Progress: 140/272 (51.47%) - Success: 140, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,322 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-codogno.html
+2025-08-23 19:25:15,322 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-covo.html
+2025-08-23 19:25:15,322 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-crema.html
+2025-08-23 19:25:15,322 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dovera.html
+2025-08-23 19:25:15,323 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,323 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fombio.html
+2025-08-23 19:25:15,323 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-formigara.html
+2025-08-23 19:25:15,324 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lodi.html
+2025-08-23 19:25:15,324 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lodi-vecchio.html
+2025-08-23 19:25:15,324 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lurano.html
+2025-08-23 19:25:15,324 - LandingGenerator - INFO - Progress: 150/272 (55.15%) - Success: 150, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,324 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-maleo.html
+2025-08-23 19:25:15,325 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,325 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-montanaso-lombardo.html
+2025-08-23 19:25:15,325 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-offanengo.html
+2025-08-23 19:25:15,326 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ossago-lodigiano.html
+2025-08-23 19:25:15,326 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pagazzano.html
+2025-08-23 19:25:15,326 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pandino.html
+2025-08-23 19:25:15,327 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pieve-fissiraga.html
+2025-08-23 19:25:15,327 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pizzighettone.html
+2025-08-23 19:25:15,327 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,327 - LandingGenerator - INFO - Progress: 160/272 (58.82%) - Success: 160, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,327 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-romano-di-lombardia.html
+2025-08-23 19:25:15,328 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-san-fiorano.html
+2025-08-23 19:25:15,328 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sant-angelo-lodigiano.html
+2025-08-23 19:25:15,329 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-somaglia.html
+2025-08-23 19:25:15,329 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,329 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-spirano.html
+2025-08-23 19:25:15,329 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-tavazzano-con-villavesco.html
+2025-08-23 19:25:15,330 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-torlasco.html
+2025-08-23 19:25:15,330 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-trescore-cremasco.html
+2025-08-23 19:25:15,330 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vaiano-cremasco.html
+2025-08-23 19:25:15,330 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zelo-buon-persico.html
+2025-08-23 19:25:15,330 - LandingGenerator - INFO - Progress: 170/272 (62.5%) - Success: 170, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,331 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-abbiategrasso.html
+2025-08-23 19:25:15,331 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-assago.html
+2025-08-23 19:25:15,331 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-basiglio.html
+2025-08-23 19:25:15,332 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-besate.html
+2025-08-23 19:25:15,332 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-binasco.html
+2025-08-23 19:25:15,332 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bollate.html
+2025-08-23 19:25:15,333 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bovisio-masciago.html
+2025-08-23 19:25:15,333 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bresso.html
+2025-08-23 19:25:15,333 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bubbiano.html
+2025-08-23 19:25:15,333 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-buccinasco.html
+2025-08-23 19:25:15,333 - LandingGenerator - INFO - Progress: 180/272 (66.18%) - Success: 180, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,334 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-calvignasco.html
+2025-08-23 19:25:15,334 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carbonate.html
+2025-08-23 19:25:15,335 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caronno-pertusella.html
+2025-08-23 19:25:15,335 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cesano-boscone.html
+2025-08-23 19:25:15,335 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cesate.html
+2025-08-23 19:25:15,336 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cinisello-balsamo.html
+2025-08-23 19:25:15,336 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cislago.html
+2025-08-23 19:25:15,336 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cologno-monzese.html
+2025-08-23 19:25:15,336 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cormano.html
+2025-08-23 19:25:15,336 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-corsico.html
+2025-08-23 19:25:15,336 - LandingGenerator - INFO - Progress: 190/272 (69.85%) - Success: 190, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,337 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cusano-milanino.html
+2025-08-23 19:25:15,337 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-garbagnate-milanese.html
+2025-08-23 19:25:15,337 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gerenzano.html
+2025-08-23 19:25:15,338 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lacchiarella.html
+2025-08-23 19:25:15,338 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-limbiate.html
+2025-08-23 19:25:15,338 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-locate-di-triulzi.html
+2025-08-23 19:25:15,339 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-milano.html
+2025-08-23 19:25:15,339 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-morimondo.html
+2025-08-23 19:25:15,339 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mozzate.html
+2025-08-23 19:25:15,340 - LandingGenerator - INFO - Progress: 200/272 (73.53%) - Success: 200, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,340 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-muggio.html
+2025-08-23 19:25:15,340 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-nova-milanese.html
+2025-08-23 19:25:15,340 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-noviglio.html
+2025-08-23 19:25:15,340 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-opera.html
+2025-08-23 19:25:15,341 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-origgio.html
+2025-08-23 19:25:15,341 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-paderno-dugnano.html
+2025-08-23 19:25:15,341 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pieve-emanuele.html
+2025-08-23 19:25:15,342 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rho.html
+2025-08-23 19:25:15,342 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rosate.html
+2025-08-23 19:25:15,342 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovellasca.html
+2025-08-23 19:25:15,343 - LandingGenerator - INFO - Progress: 210/272 (77.21%) - Success: 210, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,343 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovello-porro.html
+2025-08-23 19:25:15,343 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rozzano.html
+2025-08-23 19:25:15,343 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-saronno.html
+2025-08-23 19:25:15,344 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-senago.html
+2025-08-23 19:25:15,344 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sesto-san-giovanni.html
+2025-08-23 19:25:15,344 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-solaro.html
+2025-08-23 19:25:15,345 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-trezzano-sul-naviglio.html
+2025-08-23 19:25:15,345 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-turate.html
+2025-08-23 19:25:15,345 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-uboldo.html
+2025-08-23 19:25:15,346 - LandingGenerator - INFO - Progress: 220/272 (80.88%) - Success: 220, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,346 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-varedo.html
+2025-08-23 19:25:15,346 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zibido-san-giacomo.html
+2025-08-23 19:25:15,346 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-agrate-brianza.html
+2025-08-23 19:25:15,346 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-aicurzio.html
+2025-08-23 19:25:15,347 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-albiate.html
+2025-08-23 19:25:15,347 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-arcore.html
+2025-08-23 19:25:15,347 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barlassina.html
+2025-08-23 19:25:15,348 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-basiano.html
+2025-08-23 19:25:15,348 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bellusco.html
+2025-08-23 19:25:15,348 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bernareggio.html
+2025-08-23 19:25:15,348 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-besana-in-brianza.html
+2025-08-23 19:25:15,349 - LandingGenerator - INFO - Progress: 230/272 (84.56%) - Success: 230, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,349 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-biassono.html
+2025-08-23 19:25:15,349 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-brugherio.html
+2025-08-23 19:25:15,349 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-burago-di-molgora.html
+2025-08-23 19:25:15,350 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-busnago.html
+2025-08-23 19:25:15,350 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cambiago.html
+2025-08-23 19:25:15,351 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-camparada.html
+2025-08-23 19:25:15,351 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carate-brianza.html
+2025-08-23 19:25:15,351 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carnate.html
+2025-08-23 19:25:15,351 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cavenago-di-brianza.html
+2025-08-23 19:25:15,351 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cesano-maderno.html
+2025-08-23 19:25:15,352 - LandingGenerator - INFO - Progress: 240/272 (88.24%) - Success: 240, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,352 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-concorezzo.html
+2025-08-23 19:25:15,352 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,352 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-correzzana.html
+2025-08-23 19:25:15,353 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-desio.html
+2025-08-23 19:25:15,353 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-giussano.html
+2025-08-23 19:25:15,354 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-inverigo.html
+2025-08-23 19:25:15,354 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lambrugo.html
+2025-08-23 19:25:15,354 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lentate-sul-seveso.html
+2025-08-23 19:25:15,354 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lesmo.html
+2025-08-23 19:25:15,355 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lissone.html
+2025-08-23 19:25:15,355 - LandingGenerator - INFO - Progress: 250/272 (91.91%) - Success: 250, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,355 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-masate.html
+2025-08-23 19:25:15,355 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-meda.html
+2025-08-23 19:25:15,355 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mezzago.html
+2025-08-23 19:25:15,356 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-misinto.html
+2025-08-23 19:25:15,356 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-monza.html
+2025-08-23 19:25:15,356 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-novate-brianza.html
+2025-08-23 19:25:15,357 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ornago.html
+2025-08-23 19:25:15,357 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-renate.html
+2025-08-23 19:25:15,357 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-roncello.html
+2025-08-23 19:25:15,358 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ronco-briantino.html
+2025-08-23 19:25:15,358 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seregno.html
+2025-08-23 19:25:15,358 - LandingGenerator - INFO - Progress: 260/272 (95.59%) - Success: 260, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,358 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seveso.html
+2025-08-23 19:25:15,358 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sovico.html
+2025-08-23 19:25:15,359 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sulbiate.html
+2025-08-23 19:25:15,359 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-triuggio.html
+2025-08-23 19:25:15,360 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-usmate-velate.html
+2025-08-23 19:25:15,360 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vedano-al-lambro.html
+2025-08-23 19:25:15,360 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-verano-brianza.html
+2025-08-23 19:25:15,360 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-villasanta.html
+2025-08-23 19:25:15,361 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vimercate.html
+2025-08-23 19:25:15,361 - LandingGenerator - INFO - Progress: 270/272 (99.26%) - Success: 270, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,361 - LandingGenerator - INFO - Progress: 272/272 (100.0%) - Success: 272, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,361 - LandingGenerator - INFO - Generating pages in: /Users/andreapanzeri/progetti/IT-ERA/web/pages-draft
+2025-08-23 19:25:15,363 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-albino.html
+2025-08-23 19:25:15,363 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-alzano-lombardo.html
+2025-08-23 19:25:15,363 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-almenno-san-bartolomeo.html
+2025-08-23 19:25:15,363 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bergamo.html
+2025-08-23 19:25:15,364 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caravaggio.html
+2025-08-23 19:25:15,364 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-casnigo.html
+2025-08-23 19:25:15,365 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-castione-della-presolana.html
+2025-08-23 19:25:15,365 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cazzano-sant-andrea.html
+2025-08-23 19:25:15,365 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-clusone.html
+2025-08-23 19:25:15,365 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-colzate.html
+2025-08-23 19:25:15,366 - LandingGenerator - INFO - Progress: 280/272 (102.94%) - Success: 280, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,366 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-curno.html
+2025-08-23 19:25:15,366 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dalmine.html
+2025-08-23 19:25:15,366 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fiorano-al-serio.html
+2025-08-23 19:25:15,366 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gandino.html
+2025-08-23 19:25:15,367 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gazzaniga.html
+2025-08-23 19:25:15,367 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gorle.html
+2025-08-23 19:25:15,367 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-grassobbio.html
+2025-08-23 19:25:15,368 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-leffe.html
+2025-08-23 19:25:15,368 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mozzo.html
+2025-08-23 19:25:15,368 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-nembro.html
+2025-08-23 19:25:15,369 - LandingGenerator - INFO - Progress: 290/272 (106.62%) - Success: 290, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,369 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-orio-al-serio.html
+2025-08-23 19:25:15,369 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-osio-sotto.html
+2025-08-23 19:25:15,370 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-paladina.html
+2025-08-23 19:25:15,370 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-parre.html
+2025-08-23 19:25:15,370 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pedrengo.html
+2025-08-23 19:25:15,370 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ponte-nossa.html
+2025-08-23 19:25:15,371 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ponte-san-pietro.html
+2025-08-23 19:25:15,371 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pradalunga.html
+2025-08-23 19:25:15,371 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-premolo.html
+2025-08-23 19:25:15,371 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ranica.html
+2025-08-23 19:25:15,372 - LandingGenerator - INFO - Progress: 300/272 (110.29%) - Success: 300, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,372 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-romano-di-lombardia.html
+2025-08-23 19:25:15,372 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-san-pellegrino-terme.html
+2025-08-23 19:25:15,372 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sant-omobono-terme.html
+2025-08-23 19:25:15,373 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-scanzorosciate.html
+2025-08-23 19:25:15,373 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seriate.html
+2025-08-23 19:25:15,373 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-stezzano.html
+2025-08-23 19:25:15,374 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-torre-boldone.html
+2025-08-23 19:25:15,374 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-treviglio.html
+2025-08-23 19:25:15,374 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-verdellino.html
+2025-08-23 19:25:15,374 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vertova.html
+2025-08-23 19:25:15,375 - LandingGenerator - INFO - Progress: 310/272 (113.97%) - Success: 310, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,375 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-villa-d-alme.html
+2025-08-23 19:25:15,375 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-villa-di-serio.html
+2025-08-23 19:25:15,375 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zanica.html
+2025-08-23 19:25:15,376 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zogno.html
+2025-08-23 19:25:15,376 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-anzano-del-parco.html
+2025-08-23 19:25:15,376 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-appiano-gentile.html
+2025-08-23 19:25:15,377 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-arosio.html
+2025-08-23 19:25:15,377 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barlassina.html
+2025-08-23 19:25:15,377 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bregnano.html
+2025-08-23 19:25:15,378 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-brenna.html
+2025-08-23 19:25:15,378 - LandingGenerator - INFO - Progress: 320/272 (117.65%) - Success: 320, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,378 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bulgarograsso.html
+2025-08-23 19:25:15,378 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cabiate.html
+2025-08-23 19:25:15,378 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cadorago.html
+2025-08-23 19:25:15,379 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cantu.html
+2025-08-23 19:25:15,379 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-capiago-intimiano.html
+2025-08-23 19:25:15,379 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carbonate.html
+2025-08-23 19:25:15,380 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carimate.html
+2025-08-23 19:25:15,380 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caronno-pertusella.html
+2025-08-23 19:25:15,380 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carugo.html
+2025-08-23 19:25:15,381 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cermenate.html
+2025-08-23 19:25:15,381 - LandingGenerator - INFO - Progress: 330/272 (121.32%) - Success: 330, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,381 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cirimido.html
+2025-08-23 19:25:15,381 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cislago.html
+2025-08-23 19:25:15,381 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cogliate.html
+2025-08-23 19:25:15,382 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-como.html
+2025-08-23 19:25:15,382 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fenegro.html
+2025-08-23 19:25:15,383 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-figino-serenza.html
+2025-08-23 19:25:15,383 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fino-mornasco.html
+2025-08-23 19:25:15,383 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gerenzano.html
+2025-08-23 19:25:15,383 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-giussano.html
+2025-08-23 19:25:15,384 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-inverigo.html
+2025-08-23 19:25:15,384 - LandingGenerator - INFO - Progress: 340/272 (125.0%) - Success: 340, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,384 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lazzate.html
+2025-08-23 19:25:15,384 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lentate-sul-seveso.html
+2025-08-23 19:25:15,385 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-limido-comasco.html
+2025-08-23 19:25:15,385 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-locate-varesino.html
+2025-08-23 19:25:15,385 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lomazzo.html
+2025-08-23 19:25:15,386 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lurate-caccivio.html
+2025-08-23 19:25:15,386 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mariano-comense.html
+2025-08-23 19:25:15,386 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-meda.html
+2025-08-23 19:25:15,387 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-misinto.html
+2025-08-23 19:25:15,387 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-montorfano.html
+2025-08-23 19:25:15,387 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mozzate.html
+2025-08-23 19:25:15,387 - LandingGenerator - INFO - Progress: 350/272 (128.68%) - Success: 350, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,388 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-novedrate.html
+2025-08-23 19:25:15,388 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-olgiate-comasco.html
+2025-08-23 19:25:15,388 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-origgio.html
+2025-08-23 19:25:15,388 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovellasca.html
+2025-08-23 19:25:15,389 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-saronno.html
+2025-08-23 19:25:15,389 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovello-porro.html
+2025-08-23 19:25:15,389 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-senna-comasco.html
+2025-08-23 19:25:15,390 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seveso.html
+2025-08-23 19:25:15,390 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-turate.html
+2025-08-23 19:25:15,390 - LandingGenerator - INFO - Progress: 360/272 (132.35%) - Success: 360, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,390 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-veniano.html
+2025-08-23 19:25:15,391 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-abbadia-lariana.html
+2025-08-23 19:25:15,391 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-airuno.html
+2025-08-23 19:25:15,391 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-annone-di-brianza.html
+2025-08-23 19:25:15,392 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ballabio.html
+2025-08-23 19:25:15,392 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barzago.html
+2025-08-23 19:25:15,392 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barzio.html
+2025-08-23 19:25:15,392 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bellano.html
+2025-08-23 19:25:15,393 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-calolziocorte.html
+2025-08-23 19:25:15,393 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-casatenovo.html
+2025-08-23 19:25:15,393 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cassina-valsassina.html
+2025-08-23 19:25:15,393 - LandingGenerator - INFO - Progress: 370/272 (136.03%) - Success: 370, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,394 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cernusco-lombardone.html
+2025-08-23 19:25:15,394 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-colico.html
+2025-08-23 19:25:15,394 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cortenova.html
+2025-08-23 19:25:15,394 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-costa-masnaga.html
+2025-08-23 19:25:15,395 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cremeno.html
+2025-08-23 19:25:15,395 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dervio.html
+2025-08-23 19:25:15,395 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dolzago.html
+2025-08-23 19:25:15,396 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ello.html
+2025-08-23 19:25:15,396 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-garlate.html
+2025-08-23 19:25:15,396 - LandingGenerator - INFO - Progress: 380/272 (139.71%) - Success: 380, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,396 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-introbio.html
+2025-08-23 19:25:15,397 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-la-valletta-brianza.html
+2025-08-23 19:25:15,397 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lecco.html
+2025-08-23 19:25:15,397 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lierna.html
+2025-08-23 19:25:15,398 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-malgrate.html
+2025-08-23 19:25:15,398 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mandello-del-lario.html
+2025-08-23 19:25:15,398 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-merate.html
+2025-08-23 19:25:15,398 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-moggio.html
+2025-08-23 19:25:15,399 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-montevecchia.html
+2025-08-23 19:25:15,399 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-morterone.html
+2025-08-23 19:25:15,399 - LandingGenerator - INFO - Progress: 390/272 (143.38%) - Success: 390, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,399 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-nibionno.html
+2025-08-23 19:25:15,400 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-oggiono.html
+2025-08-23 19:25:15,400 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-olginate.html
+2025-08-23 19:25:15,400 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-osnago.html
+2025-08-23 19:25:15,401 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pasturo.html
+2025-08-23 19:25:15,401 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-perledo.html
+2025-08-23 19:25:15,401 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-premana.html
+2025-08-23 19:25:15,401 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-primaluna.html
+2025-08-23 19:25:15,402 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rogeno.html
+2025-08-23 19:25:15,402 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-taceno.html
+2025-08-23 19:25:15,402 - LandingGenerator - INFO - Progress: 400/272 (147.06%) - Success: 400, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,402 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-valmadrera.html
+2025-08-23 19:25:15,403 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-varenna.html
+2025-08-23 19:25:15,403 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-agnadello.html
+2025-08-23 19:25:15,403 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,404 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bariano.html
+2025-08-23 19:25:15,404 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-borghetto-lodigiano.html
+2025-08-23 19:25:15,404 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,405 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-calvenzano.html
+2025-08-23 19:25:15,405 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caravaggio.html
+2025-08-23 19:25:15,405 - LandingGenerator - INFO - Progress: 410/272 (150.74%) - Success: 410, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,405 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-casalpusterlengo.html
+2025-08-23 19:25:15,405 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,406 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,406 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-codogno.html
+2025-08-23 19:25:15,406 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-covo.html
+2025-08-23 19:25:15,406 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-crema.html
+2025-08-23 19:25:15,407 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-dovera.html
+2025-08-23 19:25:15,407 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,407 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-fombio.html
+2025-08-23 19:25:15,408 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-formigara.html
+2025-08-23 19:25:15,408 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lodi.html
+2025-08-23 19:25:15,408 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lodi-vecchio.html
+2025-08-23 19:25:15,408 - LandingGenerator - INFO - Progress: 420/272 (154.41%) - Success: 420, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,409 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lurano.html
+2025-08-23 19:25:15,409 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-maleo.html
+2025-08-23 19:25:15,409 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,409 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-montanaso-lombardo.html
+2025-08-23 19:25:15,410 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-offanengo.html
+2025-08-23 19:25:15,410 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ossago-lodigiano.html
+2025-08-23 19:25:15,410 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pagazzano.html
+2025-08-23 19:25:15,411 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pandino.html
+2025-08-23 19:25:15,411 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pieve-fissiraga.html
+2025-08-23 19:25:15,411 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pizzighettone.html
+2025-08-23 19:25:15,411 - LandingGenerator - INFO - Progress: 430/272 (158.09%) - Success: 430, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,412 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,412 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-romano-di-lombardia.html
+2025-08-23 19:25:15,412 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-san-fiorano.html
+2025-08-23 19:25:15,412 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sant-angelo-lodigiano.html
+2025-08-23 19:25:15,413 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-somaglia.html
+2025-08-23 19:25:15,413 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,413 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-spirano.html
+2025-08-23 19:25:15,414 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-tavazzano-con-villavesco.html
+2025-08-23 19:25:15,414 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-torlasco.html
+2025-08-23 19:25:15,414 - LandingGenerator - INFO - Progress: 440/272 (161.76%) - Success: 440, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,414 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-trescore-cremasco.html
+2025-08-23 19:25:15,414 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vaiano-cremasco.html
+2025-08-23 19:25:15,415 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zelo-buon-persico.html
+2025-08-23 19:25:15,415 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-abbiategrasso.html
+2025-08-23 19:25:15,416 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-assago.html
+2025-08-23 19:25:15,416 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-basiglio.html
+2025-08-23 19:25:15,416 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-besate.html
+2025-08-23 19:25:15,416 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-binasco.html
+2025-08-23 19:25:15,417 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bollate.html
+2025-08-23 19:25:15,417 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bovisio-masciago.html
+2025-08-23 19:25:15,417 - LandingGenerator - INFO - Progress: 450/272 (165.44%) - Success: 450, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,417 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bresso.html
+2025-08-23 19:25:15,418 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bubbiano.html
+2025-08-23 19:25:15,418 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-buccinasco.html
+2025-08-23 19:25:15,419 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-calvignasco.html
+2025-08-23 19:25:15,419 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carbonate.html
+2025-08-23 19:25:15,419 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-caronno-pertusella.html
+2025-08-23 19:25:15,419 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cesano-boscone.html
+2025-08-23 19:25:15,420 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cesate.html
+2025-08-23 19:25:15,420 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cinisello-balsamo.html
+2025-08-23 19:25:15,420 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cislago.html
+2025-08-23 19:25:15,420 - LandingGenerator - INFO - Progress: 460/272 (169.12%) - Success: 460, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,420 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cologno-monzese.html
+2025-08-23 19:25:15,421 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cormano.html
+2025-08-23 19:25:15,421 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-corsico.html
+2025-08-23 19:25:15,421 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cusano-milanino.html
+2025-08-23 19:25:15,422 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-garbagnate-milanese.html
+2025-08-23 19:25:15,422 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-gerenzano.html
+2025-08-23 19:25:15,422 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lacchiarella.html
+2025-08-23 19:25:15,422 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-limbiate.html
+2025-08-23 19:25:15,423 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-locate-di-triulzi.html
+2025-08-23 19:25:15,423 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-milano.html
+2025-08-23 19:25:15,423 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-morimondo.html
+2025-08-23 19:25:15,423 - LandingGenerator - INFO - Progress: 470/272 (172.79%) - Success: 470, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,424 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mozzate.html
+2025-08-23 19:25:15,424 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-muggio.html
+2025-08-23 19:25:15,424 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-nova-milanese.html
+2025-08-23 19:25:15,425 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-noviglio.html
+2025-08-23 19:25:15,425 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-opera.html
+2025-08-23 19:25:15,425 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-origgio.html
+2025-08-23 19:25:15,425 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-paderno-dugnano.html
+2025-08-23 19:25:15,426 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-pieve-emanuele.html
+2025-08-23 19:25:15,426 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rho.html
+2025-08-23 19:25:15,426 - LandingGenerator - INFO - Progress: 480/272 (176.47%) - Success: 480, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,427 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rosate.html
+2025-08-23 19:25:15,427 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovellasca.html
+2025-08-23 19:25:15,427 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rovello-porro.html
+2025-08-23 19:25:15,427 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-rozzano.html
+2025-08-23 19:25:15,428 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-saronno.html
+2025-08-23 19:25:15,428 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-senago.html
+2025-08-23 19:25:15,428 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sesto-san-giovanni.html
+2025-08-23 19:25:15,429 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-solaro.html
+2025-08-23 19:25:15,429 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-trezzano-sul-naviglio.html
+2025-08-23 19:25:15,429 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-turate.html
+2025-08-23 19:25:15,429 - LandingGenerator - INFO - Progress: 490/272 (180.15%) - Success: 490, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,429 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-uboldo.html
+2025-08-23 19:25:15,430 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-varedo.html
+2025-08-23 19:25:15,431 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-zibido-san-giacomo.html
+2025-08-23 19:25:15,431 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-agrate-brianza.html
+2025-08-23 19:25:15,431 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-aicurzio.html
+2025-08-23 19:25:15,431 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-albiate.html
+2025-08-23 19:25:15,431 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-arcore.html
+2025-08-23 19:25:15,432 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-barlassina.html
+2025-08-23 19:25:15,432 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-basiano.html
+2025-08-23 19:25:15,432 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bellusco.html
+2025-08-23 19:25:15,432 - LandingGenerator - INFO - Progress: 500/272 (183.82%) - Success: 500, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,432 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-bernareggio.html
+2025-08-23 19:25:15,433 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-besana-in-brianza.html
+2025-08-23 19:25:15,433 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-biassono.html
+2025-08-23 19:25:15,433 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-brugherio.html
+2025-08-23 19:25:15,434 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-burago-di-molgora.html
+2025-08-23 19:25:15,434 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-busnago.html
+2025-08-23 19:25:15,434 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cambiago.html
+2025-08-23 19:25:15,435 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-camparada.html
+2025-08-23 19:25:15,435 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carate-brianza.html
+2025-08-23 19:25:15,435 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-carnate.html
+2025-08-23 19:25:15,435 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cavenago-di-brianza.html
+2025-08-23 19:25:15,435 - LandingGenerator - INFO - Progress: 510/272 (187.5%) - Success: 510, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,436 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-cesano-maderno.html
+2025-08-23 19:25:15,436 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-concorezzo.html
+2025-08-23 19:25:15,436 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-d-adda.html
+2025-08-23 19:25:15,437 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-correzzana.html
+2025-08-23 19:25:15,437 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-desio.html
+2025-08-23 19:25:15,437 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-giussano.html
+2025-08-23 19:25:15,438 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-inverigo.html
+2025-08-23 19:25:15,438 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lambrugo.html
+2025-08-23 19:25:15,438 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lentate-sul-seveso.html
+2025-08-23 19:25:15,438 - LandingGenerator - INFO - Progress: 520/272 (191.18%) - Success: 520, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,438 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lesmo.html
+2025-08-23 19:25:15,439 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-lissone.html
+2025-08-23 19:25:15,439 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-masate.html
+2025-08-23 19:25:15,439 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-meda.html
+2025-08-23 19:25:15,440 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-mezzago.html
+2025-08-23 19:25:15,440 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-misinto.html
+2025-08-23 19:25:15,441 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-monza.html
+2025-08-23 19:25:15,441 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-novate-brianza.html
+2025-08-23 19:25:15,441 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ornago.html
+2025-08-23 19:25:15,441 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-renate.html
+2025-08-23 19:25:15,441 - LandingGenerator - INFO - Progress: 530/272 (194.85%) - Success: 530, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,442 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-roncello.html
+2025-08-23 19:25:15,442 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-ronco-briantino.html
+2025-08-23 19:25:15,442 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seregno.html
+2025-08-23 19:25:15,442 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-seveso.html
+2025-08-23 19:25:15,443 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sovico.html
+2025-08-23 19:25:15,443 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-sulbiate.html
+2025-08-23 19:25:15,443 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-triuggio.html
+2025-08-23 19:25:15,444 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-usmate-velate.html
+2025-08-23 19:25:15,444 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vedano-al-lambro.html
+2025-08-23 19:25:15,444 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-verano-brianza.html
+2025-08-23 19:25:15,444 - LandingGenerator - INFO - Progress: 540/272 (198.53%) - Success: 540, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,445 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-villasanta.html
+2025-08-23 19:25:15,445 - LandingGenerator - DEBUG - Generated: sicurezza-informatica-vimercate.html
+2025-08-23 19:25:15,445 - LandingGenerator - INFO - Progress: 544/272 (200.0%) - Success: 544, Failed: 0, Elapsed: 0:00:00
+2025-08-23 19:25:15,456 - LandingGenerator - INFO - Sitemap updated: 1 new URLs added
+2025-08-23 19:25:15,456 - LandingGenerator - INFO - All services completed. Total stats: {'total_pages': 816, 'successful_pages': 1632, 'failed_pages': 0, 'total_urls': 735}
+2025-08-23 19:25:15,456 - LandingGenerator - INFO - Generation completed successfully!

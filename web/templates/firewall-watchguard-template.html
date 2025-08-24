@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchGuard Firewall as a Service - Da €39/mese | IT-ERA</title>
+    <meta name="description" content="Firewall WatchGuard gestito da €39/mese. Zero CAPEX, protezione UTM completa, supporto locale certificato. Prova gratuita 30 giorni.">
+    <meta name="keywords" content="WatchGuard Firewall, Firewall as a Service, Firebox T45, UTM, ATP, Zero Trust, sicurezza gestita">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="WatchGuard Firewall as a Service - Da €39/mese | IT-ERA">
+    <meta property="og:description" content="Protezione firewall gestita per PMI. WatchGuard Firebox con UTM, ATP e Zero Trust. Canone mensile, zero investimenti iniziali.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://it-era.it/firewall-watchguard-service">
+    <meta property="og:image" content="https://it-era.it/images/watchguard-firewall-hero.jpg">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "WatchGuard Firewall as a Service",
+        "description": "Servizio firewall gestito WatchGuard per PMI italiane",
+        "brand": {
+            "@type": "Brand",
+            "name": "WatchGuard"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "39",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2024-12-31"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA",
+            "url": "https://it-era.it"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #e30613;
+        }
+        
+        .header-cta {
+            background: #e30613;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .header-cta:hover {
+            background: #c50511;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23e30613" opacity="0.1"/><circle cx="20" cy="20" r="1" fill="%23e30613" opacity="0.15"/><circle cx="80" cy="30" r="1.5" fill="%23e30613" opacity="0.1"/></svg>') repeat;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-price {
+            color: #ff6b6b;
+            font-size: 2.2rem;
+            font-weight: 800;
+            display: block;
+            margin: 1rem 0;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-features li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .hero-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: #e30613;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #c50511;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .firebox-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Product Showcase */
+        .product-showcase {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-icon {
+            width: 60px;
+            height: 60px;
+            background: #e30613;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .product-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .product-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .feature-list li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #e30613;
+            font-size: 0.8rem;
+        }
+        
+        /* Pricing Table */
+        .pricing {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            border-color: #e30613;
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(227, 6, 19, 0.15);
+        }
+        
+        .pricing-card.featured {
+            border-color: #e30613;
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(227, 6, 19, 0.2);
+        }
+        
+        .pricing-badge {
+            background: #e30613;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #e30613;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-period {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            padding: 0.75rem 0;
+            color: #555;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+        
+        .pricing-features li.unavailable {
+            opacity: 0.5;
+        }
+        
+        .pricing-features li.unavailable::before {
+            content: '✗';
+            color: #ef4444;
+        }
+        
+        /* Security Features */
+        .security-features {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
+            color: white;
+        }
+        
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .security-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .security-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .security-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(227, 6, 19, 0.8);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        .security-card h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .security-card p {
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        /* Dashboard Preview */
+        .dashboard-preview {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .dashboard-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .dashboard-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+        
+        .dashboard-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .dashboard-features li {
+            padding: 1rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 3rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .dashboard-features li::before {
+            content: '📊';
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .dashboard-image {
+            position: relative;
+        }
+        
+        .dashboard-screenshot {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        /* Problems We Solve */
+        .problems-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .problem-card {
+            background: #fff5f5;
+            border-left: 4px solid #e30613;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .problem-card h3 {
+            color: #e30613;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .problem-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .solution {
+            background: #f0fdf4;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+        
+        .solution strong {
+            color: #059669;
+        }
+        
+        /* Support Section */
+        .support-section {
+            padding: 80px 0;
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .support-card {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .support-icon {
+            width: 80px;
+            height: 80px;
+            background: #e30613;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .certification-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #1a1a1a;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #e30613 0%, #c50511 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-benefit {
+            text-align: center;
+        }
+        
+        .cta-benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #e30613;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .dashboard-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">IT-ERA</div>
+                <a href="tel:+390312281003" class="header-cta">📞 031 2281003</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>WatchGuard Firewall<br>as a Service</h1>
+                    <span class="hero-price">Da €39/mese</span>
+                    <p class="hero-subtitle">Protezione firewall gestita per PMI. Zero CAPEX, sicurezza enterprise, supporto locale certificato.</p>
+                    
+                    <ul class="hero-features">
+                        <li>WatchGuard Firebox incluso nel canone</li>
+                        <li>Gestione e monitoraggio 24/7</li>
+                        <li>UTM, ATP e Zero Trust integrati</li>
+                        <li>Installazione e configurazione inclusa</li>
+                        <li>Supporto tecnico certificato WatchGuard</li>
+                        <li>SLA 99.9% garantito</li>
+                    </ul>
+                    
+                    <div class="cta-group">
+                        <a href="#demo" class="btn btn-primary">Prova Gratuita 30 Giorni</a>
+                        <a href="#pricing" class="btn btn-secondary">Vedi Prezzi</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/500x400/1a1a1a/e30613?text=WatchGuard+Firebox+T45" alt="WatchGuard Firebox T45" class="firebox-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">WatchGuard Firebox T45</h2>
+                <p class="section-subtitle">Il firewall perfetto per PMI fino a 50 utenti. Prestazioni enterprise, semplicità di gestione.</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🔥</div>
+                    <h3>Throughput Firewall</h3>
+                    <p>Fino a 940 Mbps di throughput con deep packet inspection completa</p>
+                    <ul class="feature-list">
+                        <li>Ispezione stateful avanzata</li>
+                        <li>Application control granulare</li>
+                        <li>Bandwidth management</li>
+                        <li>Quality of Service (QoS)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">🛡️</div>
+                    <h3>Sicurezza UTM</h3>
+                    <p>Unified Threat Management con protezioni multi-layer integrate</p>
+                    <ul class="feature-list">
+                        <li>Antivirus gateway real-time</li>
+                        <li>Anti-spyware e anti-malware</li>
+                        <li>Intrusion Prevention System</li>
+                        <li>Content filtering avanzato</li>
+                    </ul>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">🌐</div>
+                    <h3>VPN Sicura</h3>
+                    <p>Connettività remota sicura con tunnel IPsec e SSL VPN</p>
+                    <ul class="feature-list">
+                        <li>Branch office connectivity</li>
+                        <li>Mobile device support</li>
+                        <li>Split tunneling</li>
+                        <li>Two-factor authentication</li>
+                    </ul>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">📊</div>
+                    <h3>Reporting Avanzato</h3>
+                    <p>Visibilità completa del traffico di rete e threat intelligence</p>
+                    <ul class="feature-list">
+                        <li>Dashboard real-time</li>
+                        <li>Report automatici</li>
+                        <li>Log centralized</li>
+                        <li>Compliance reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Piani Firewall as a Service</h2>
+                <p class="section-subtitle">Scegli il piano WatchGuard più adatto alle esigenze della tua azienda</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Firebox T25</h3>
+                    <div class="pricing-price">€39</div>
+                    <div class="pricing-period">al mese + IVA</div>
+                    <ul class="pricing-features">
+                        <li>Fino a 10 utenti</li>
+                        <li>350 Mbps throughput</li>
+                        <li>3 porte Gigabit</li>
+                        <li>UTM completo</li>
+                        <li>VPN IPsec (10 tunnel)</li>
+                        <li>SSL VPN (5 utenti)</li>
+                        <li>Supporto 8x5</li>
+                        <li class="unavailable">ATP Advanced</li>
+                        <li class="unavailable">Zero Trust</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-primary">Inizia Prova</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">PIÙ RICHIESTO</div>
+                    <h3>Firebox T45</h3>
+                    <div class="pricing-price">€69</div>
+                    <div class="pricing-period">al mese + IVA</div>
+                    <ul class="pricing-features">
+                        <li>Fino a 50 utenti</li>
+                        <li>940 Mbps throughput</li>
+                        <li>8 porte Gigabit</li>
+                        <li>UTM completo</li>
+                        <li>VPN IPsec (50 tunnel)</li>
+                        <li>SSL VPN (25 utenti)</li>
+                        <li>ATP Advanced incluso</li>
+                        <li>Zero Trust ready</li>
+                        <li>Supporto 24x7</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-primary">Inizia Prova</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Firebox T55</h3>
+                    <div class="pricing-price">€129</div>
+                    <div class="pricing-period">al mese + IVA</div>
+                    <ul class="pricing-features">
+                        <li>Fino a 100 utenti</li>
+                        <li>1.3 Gbps throughput</li>
+                        <li>8 porte + 2 SFP+</li>
+                        <li>UTM completo</li>
+                        <li>VPN IPsec (100 tunnel)</li>
+                        <li>SSL VPN (50 utenti)</li>
+                        <li>ATP Advanced incluso</li>
+                        <li>Zero Trust completo</li>
+                        <li>Supporto 24x7</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-primary">Inizia Prova</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Firebox T85</h3>
+                    <div class="pricing-price">€199</div>
+                    <div class="pricing-period">al mese + IVA</div>
+                    <ul class="pricing-features">
+                        <li>Fino a 200 utenti</li>
+                        <li>2.1 Gbps throughput</li>
+                        <li>8 porte + 4 SFP+</li>
+                        <li>UTM enterprise</li>
+                        <li>VPN illimitati</li>
+                        <li>SSL VPN (100 utenti)</li>
+                        <li>ATP Advanced incluso</li>
+                        <li>Zero Trust completo</li>
+                        <li>Supporto dedicato 24x7</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-primary">Inizia Prova</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features -->
+    <section class="security-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sicurezza Multi-Layer</h2>
+                <p class="section-subtitle">Protezione completa con le tecnologie più avanzate integrate</p>
+            </div>
+            
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">🔒</div>
+                    <h3>UTM - Unified Threat Management</h3>
+                    <p>Protezione completa con antivirus gateway, anti-spyware, IPS e application control in un'unica soluzione gestita.</p>
+                    <ul class="feature-list">
+                        <li>Scansione real-time del traffico</li>
+                        <li>Database malware aggiornato ogni ora</li>
+                        <li>Blocco automatico minacce zero-day</li>
+                    </ul>
+                </div>
+                
+                <div class="security-card">
+                    <div class="security-icon">🎯</div>
+                    <h3>ATP - Advanced Threat Protection</h3>
+                    <p>Intelligenza artificiale e machine learning per identificare e bloccare minacce avanzate e attacchi targeted.</p>
+                    <ul class="feature-list">
+                        <li>Sandbox analysis automatica</li>
+                        <li>Threat intelligence feed</li>
+                        <li>Comportamental analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="security-card">
+                    <div class="security-icon">🌟</div>
+                    <h3>Zero Trust Architecture</h3>
+                    <p>Modello di sicurezza "mai fidarsi, sempre verificare" con autenticazione continua e accesso granulare.</p>
+                    <ul class="feature-list">
+                        <li>Multi-factor authentication</li>
+                        <li>Network segmentation</li>
+                        <li>Identity-based access control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview">
+        <div class="container">
+            <div class="dashboard-content">
+                <div class="dashboard-text">
+                    <h2>Dashboard di Gestione WatchGuard</h2>
+                    <p>Controlla tutto da un'unica interfaccia web. Monitoraggio real-time, configurazione semplificata, report automatici.</p>
+                    
+                    <ul class="dashboard-features">
+                        <li>Monitoraggio traffico e minacce in tempo reale</li>
+                        <li>Configurazione policy centralizzata</li>
+                        <li>Alert automatici via email/SMS</li>
+                        <li>Report schedulati per compliance</li>
+                        <li>Gestione remota completa</li>
+                        <li>App mobile WatchGuard Mobile VPN</li>
+                    </ul>
+                    
+                    <a href="#demo" class="btn btn-primary">Richiedi Demo Live</a>
+                </div>
+                
+                <div class="dashboard-image">
+                    <img src="https://via.placeholder.com/600x400/f8fafc/333?text=WatchGuard+Dashboard+Preview" alt="Dashboard WatchGuard" class="dashboard-screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems We Solve -->
+    <section class="problems-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Problemi che Risolviamo</h2>
+                <p class="section-subtitle">Soluzioni concrete ai principali problemi di sicurezza delle PMI italiane</p>
+            </div>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>❌ Firewall Obsoleto o Mancante</h3>
+                    <p>Router SOHO inadeguato per aziende, configurazioni di base, nessuna protezione avanzata contro malware.</p>
+                    <div class="solution">
+                        <strong>✅ Soluzione:</strong> WatchGuard Firebox enterprise con UTM completo, sempre aggiornato e gestito remotamente.
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>❌ Costi CAPEX Elevati</h3>
+                    <p>Investimento iniziale di €3000-8000 per firewall enterprise + licenze annuali + competenze interne.</p>
+                    <div class="solution">
+                        <strong>✅ Soluzione:</strong> Canone mensile da €39, zero investimenti iniziali, tutto incluso nel servizio.
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>❌ Mancanza di Competenze</h3>
+                    <p>Configurazione complessa, aggiornamenti manuali, interpretazione log, gestione policy di sicurezza.</p>
+                    <div class="solution">
+                        <strong>✅ Soluzione:</strong> Team certificato WatchGuard gestisce tutto: installazione, configurazione, monitoraggio 24/7.
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>❌ Downtime per Attacchi</h3>
+                    <p>Ransomware, phishing, malware causano blocchi produzione con perdite economiche significative.</p>
+                    <div class="solution">
+                        <strong>✅ Soluzione:</strong> Protezione proattiva ATP, threat intelligence, blocco automatico minacce zero-day.
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>❌ Compliance e Audit</h3>
+                    <p>GDPR, normative settoriali richiedono log dettagliati e report che i router consumer non forniscono.</p>
+                    <div class="solution">
+                        <strong>✅ Soluzione:</strong> Log centralized, report automatici, documentazione compliance pronta per audit.
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>❌ Lavoro Remoto Insicuro</h3>
+                    <p>VPN consumer, accessi non controllati, dispositivi personali connessi senza protezione aziendale.</p>
+                    <div class="solution">
+                        <strong>✅ Soluzione:</strong> SSL VPN aziendale, two-factor auth, policy granulari per dispositivi mobili.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Supporto Locale Certificato</h2>
+                <p class="section-subtitle">Partner WatchGuard autorizzato con certificazioni tecniche e supporto in italiano</p>
+            </div>
+            
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">🎓</div>
+                    <h3>Certificazioni WatchGuard</h3>
+                    <p>Tecnici certificati WatchGuard Certified Professional e Security Professional per garantire competenza e qualità.</p>
+                    <div class="certification-badge">WatchGuard Authorized Partner</div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">🏢</div>
+                    <h3>Presenza Locale</h3>
+                    <p>Sede operativa in Lombardia, intervento on-site entro 4h, conoscenza territorio e normative italiane.</p>
+                    <div class="certification-badge">Lombardia • Milano • Bergamo</div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">⚡</div>
+                    <h3>SLA Garantito</h3>
+                    <p>Uptime 99.9% garantito, monitoraggio proattivo 24x7, escalation automatica per incident critici.</p>
+                    <div class="certification-badge">SLA 99.9% • 24x7 • 4h Response</div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">🛠️</div>
+                    <h3>Servizio Completo</h3>
+                    <p>Installazione, configurazione, training utenti, documentazione tecnica, backup configurazioni.</p>
+                    <div class="certification-badge">Full-Service • Training Incluso</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="demo" class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Inizia Subito la Prova Gratuita</h2>
+                <p>30 giorni di WatchGuard Firewall gestito gratuitamente. Nessun impegno, installazione inclusa.</p>
+                
+                <div class="cta-benefits">
+                    <div class="cta-benefit">
+                        <div class="cta-benefit-icon">📦</div>
+                        <h3>Installazione Inclusa</h3>
+                        <p>Configurazione completa</p>
+                    </div>
+                    <div class="cta-benefit">
+                        <div class="cta-benefit-icon">🎯</div>
+                        <h3>Nessun Impegno</h3>
+                        <p>Cancellazione gratuita</p>
+                    </div>
+                    <div class="cta-benefit">
+                        <div class="cta-benefit-icon">⚡</div>
+                        <h3>Attivazione Rapida</h3>
+                        <p>Online in 48h</p>
+                    </div>
+                    <div class="cta-benefit">
+                        <div class="cta-benefit-icon">🛡️</div>
+                        <h3>Protezione Completa</h3>
+                        <p>UTM + ATP inclusi</p>
+                    </div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="tel:+390312281003" class="btn btn-secondary">📞 Chiama Ora: 031 2281003</a>
+                    <a href="mailto:info@it-era.it?subject=Prova WatchGuard Firewall&body=Richiedo informazioni per prova gratuita 30 giorni WatchGuard Firewall as a Service" class="btn btn-primary">✉️ Richiedi Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IT-ERA</h3>
+                    <p>Partner WatchGuard autorizzato per soluzioni firewall gestite in Lombardia</p>
+                    <div class="certification-badge">WatchGuard Authorized Partner</div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <a href="tel:+390312281003">📞 031 2281003</a>
+                    <a href="mailto:info@it-era.it">✉️ info@it-era.it</a>
+                    <a href="https://wa.me/390312281003">💬 WhatsApp Business</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Servizi</h3>
+                    <a href="#pricing">WatchGuard Firewall</a>
+                    <a href="#">Sicurezza Gestita</a>
+                    <a href="#">Backup & Disaster Recovery</a>
+                    <a href="#">Assistenza IT</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Informazioni</h3>
+                    <a href="#">Chi Siamo</a>
+                    <a href="#">Certificazioni</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Termini di Servizio</a>
+                </div>
+            </div>
+            
+            <hr style="border-color: #333; margin: 2rem 0;">
+            <p>&copy; 2024 IT-ERA. Tutti i diritti riservati. WatchGuard e Firebox sono marchi registrati di WatchGuard Technologies, Inc.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation classes when elements come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all cards
+        document.querySelectorAll('.product-card, .pricing-card, .security-card, .problem-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+        
+        // Phone number tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(tel => {
+            tel.addEventListener('click', () => {
+                // Track phone clicks
+                console.log('Phone number clicked:', tel.href);
+            });
+        });
+        
+        // Email tracking
+        document.querySelectorAll('a[href^="mailto:"]').forEach(email => {
+            email.addEventListener('click', () => {
+                // Track email clicks
+                console.log('Email clicked:', email.href);
+            });
+        });
+    </script>
+</body>
+</html>

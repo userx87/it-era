@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoIP e Telefonia Cloud Aziendale | Risparmia fino al 60% | IT-ERA</title>
+    <meta name="description" content="Telefonia cloud professionale con VoIP HD. Risparmia fino al 60% sui costi telefonici. Funzionalità avanzate, integrazione CRM, mobilità totale.">
+    
+    <!-- Performance & SEO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="styles/voip-cloud.css" as="style">
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/voip-cloud.css">
+    
+    <!-- Schema.org for VoIP Services -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "VoIP e Telefonia Cloud",
+        "description": "Servizi di telefonia cloud professionale per aziende",
+        "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceRange": "€15-89",
+            "priceCurrency": "EUR"
+        }
+    }
+    </script>
+</head>
+
+<body class="voip-cloud-page">
+    <!-- Connectivity Status Header -->
+    <div class="connectivity-bar" role="banner" aria-label="Stato connettività">
+        <div class="container">
+            <div class="signal-strength">
+                <div class="signal-bars">
+                    <div class="bar active"></div>
+                    <div class="bar active"></div>
+                    <div class="bar active"></div>
+                    <div class="bar active"></div>
+                    <div class="bar active"></div>
+                </div>
+                <span>Connessione Ottimale</span>
+            </div>
+            <div class="live-stats">
+                <span class="stat">
+                    <span class="value" id="liveUsers">2,847</span>
+                    <span class="label">Utenti Online</span>
+                </span>
+                <span class="stat">
+                    <span class="value" id="callQuality">HD+</span>
+                    <span class="label">Qualità Audio</span>
+                </span>
+                <span class="stat">
+                    <span class="value" id="uptime">99.9%</span>
+                    <span class="label">Uptime</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Interactive Phone System -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Telefonia <span class="gradient-text">Cloud Intelligente</span>
+                        per la Tua Azienda
+                    </h1>
+                    <p class="hero-description">
+                        Trasforma la comunicazione aziendale con VoIP professionale. 
+                        Risparmia fino al 60%, scala dinamicamente, integra tutto.
+                    </p>
+                    
+                    <!-- Savings Calculator Teaser -->
+                    <div class="savings-preview">
+                        <div class="saving-stat">
+                            <span class="old-cost">€480/mese</span>
+                            <span class="arrow">→</span>
+                            <span class="new-cost">€180/mese</span>
+                        </div>
+                        <p class="saving-description">Risparmio medio per azienda da 25 dipendenti</p>
+                    </div>
+
+                    <div class="cta-group">
+                        <button class="btn btn-primary" onclick="openCostCalculator()" aria-describedby="calculator-desc">
+                            <span>Calcola Risparmio</span>
+                            <span class="btn-icon" aria-hidden="true">🧮</span>
+                        </button>
+                        <button class="btn btn-secondary" onclick="startDemo()" aria-describedby="demo-desc">
+                            <span>Demo Interattiva</span>
+                            <span class="btn-icon" aria-hidden="true">📞</span>
+                        </button>
+                    </div>
+
+                    <!-- Hidden descriptions for accessibility -->
+                    <div id="calculator-desc" class="sr-only">Calcola quanto puoi risparmiare con la telefonia cloud</div>
+                    <div id="demo-desc" class="sr-only">Prova una demo interattiva del sistema telefonico</div>
+                </div>
+
+                <!-- Interactive Phone System Visualization -->
+                <div class="hero-visual">
+                    <div class="phone-system-demo" role="img" aria-label="Sistema telefonico interattivo">
+                        <!-- Central Hub -->
+                        <div class="central-hub">
+                            <div class="hub-icon">☁️</div>
+                            <div class="hub-label">VoIP Cloud</div>
+                            <div class="connection-pulse"></div>
+                        </div>
+
+                        <!-- Connected Devices -->
+                        <div class="device-network">
+                            <div class="device-node desktop" data-device="Desktop">
+                                <div class="device-icon">🖥️</div>
+                                <div class="connection-line"></div>
+                                <div class="call-indicator" data-status="active"></div>
+                            </div>
+                            
+                            <div class="device-node mobile" data-device="Mobile">
+                                <div class="device-icon">📱</div>
+                                <div class="connection-line"></div>
+                                <div class="call-indicator" data-status="incoming"></div>
+                            </div>
+                            
+                            <div class="device-node tablet" data-device="Tablet">
+                                <div class="device-icon">📟</div>
+                                <div class="connection-line"></div>
+                                <div class="call-indicator" data-status="idle"></div>
+                            </div>
+
+                            <div class="device-node conference" data-device="Sala Riunioni">
+                                <div class="device-icon">🎤</div>
+                                <div class="connection-line"></div>
+                                <div class="call-indicator" data-status="conference"></div>
+                            </div>
+                        </div>
+
+                        <!-- Live Call Information -->
+                        <div class="call-info-panel">
+                            <div class="active-calls">
+                                <h4>Chiamate Attive</h4>
+                                <div class="call-item">
+                                    <span class="caller">Mario Rossi</span>
+                                    <span class="duration">02:34</span>
+                                </div>
+                                <div class="call-item">
+                                    <span class="caller">Sala Conferenze</span>
+                                    <span class="duration">15:22</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cost Savings Calculator -->
+    <section class="calculator-section" aria-labelledby="calculator-title">
+        <div class="container">
+            <h2 id="calculator-title" class="section-title">Calcola il Tuo Risparmio</h2>
+            <p class="section-subtitle">Scopri quanto puoi risparmiare passando alla telefonia cloud</p>
+            
+            <div class="calculator-container">
+                <div class="calculator-input">
+                    <form class="savings-form" id="savingsCalculator" aria-label="Calcolatore risparmio telefonico">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="currentCost">Costo Mensile Attuale</label>
+                                <div class="input-group">
+                                    <span class="input-prefix">€</span>
+                                    <input type="number" id="currentCost" name="currentCost" placeholder="500" min="0" required>
+                                    <span class="input-suffix">/mese</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="employees">Numero Dipendenti</label>
+                                <input type="number" id="employees" name="employees" placeholder="25" min="1" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="callVolume">Volume Chiamate</label>
+                                <select id="callVolume" name="callVolume" required>
+                                    <option value="">Seleziona volume...</option>
+                                    <option value="low">Basso (< 1000 min/mese)</option>
+                                    <option value="medium">Medio (1000-5000 min/mese)</option>
+                                    <option value="high">Alto (5000-15000 min/mese)</option>
+                                    <option value="very-high">Molto Alto (> 15000 min/mese)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="features">Funzionalità Richieste</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="features" value="crm">
+                                        <span class="checkmark"></span>
+                                        Integrazione CRM
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="features" value="mobile">
+                                        <span class="checkmark"></span>
+                                        App Mobile
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="features" value="conference">
+                                        <span class="checkmark"></span>
+                                        Videoconferenze
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            Calcola Risparmio
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="calculator-results" id="savingsResults" aria-live="polite">
+                    <!-- Results will be populated by JavaScript -->
+                    <div class="results-placeholder">
+                        <div class="placeholder-icon">💰</div>
+                        <p>Compila i campi per vedere il tuo risparmio potenziale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Comparison Matrix -->
+    <section class="features-section" aria-labelledby="features-title">
+        <div class="container">
+            <h2 id="features-title" class="section-title">Funzionalità Avanzate Incluse</h2>
+            
+            <!-- Feature Categories Tabs -->
+            <div class="features-tabs" role="tablist" aria-label="Categorie funzionalità">
+                <button class="tab-button active" role="tab" aria-selected="true" aria-controls="communication-panel" id="communication-tab">
+                    Comunicazione
+                </button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="management-panel" id="management-tab">
+                    Gestione
+                </button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="integration-panel" id="integration-tab">
+                    Integrazione
+                </button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="mobility-panel" id="mobility-tab">
+                    Mobilità
+                </button>
+            </div>
+
+            <!-- Communication Features -->
+            <div class="features-panel active" id="communication-panel" role="tabpanel" aria-labelledby="communication-tab">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎧</div>
+                        <h3>Audio HD Crystal Clear</h3>
+                        <p>Codec G.722 per qualità audio superiore</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📹</div>
+                        <h3>Videoconferenze 4K</h3>
+                        <p>Fino a 100 partecipanti simultanei</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📞</div>
+                        <h3>Chiamate Multiple</h3>
+                        <p>Gestione simultanea di più linee</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Transfer Intelligente</h3>
+                        <p>Trasferimento chiamate con contesto</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other panels would be here -->
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-section" aria-labelledby="pricing-title">
+        <div class="container">
+            <h2 id="pricing-title" class="section-title">Piani Flessibili per Ogni Esigenza</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card starter">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">15</span>
+                            <span class="period">/utente/mese</span>
+                        </div>
+                        <p class="plan-description">Perfetto per piccole aziende</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature-category">
+                            <h4>Chiamate</h4>
+                            <ul>
+                                <li><span class="check">✓</span> 1000 minuti inclusi</li>
+                                <li><span class="check">✓</span> Audio HD</li>
+                                <li><span class="check">✓</span> Segreteria vocale</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4>Funzionalità</h4>
+                            <ul>
+                                <li><span class="check">✓</span> App mobile</li>
+                                <li><span class="check">✓</span> Chat interno</li>
+                                <li class="unavailable"><span class="cross">✗</span> Integrazione CRM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-outline">Inizia Gratis</button>
+                </div>
+                
+                <div class="pricing-card business featured">
+                    <div class="featured-badge">Più Popolare</div>
+                    <div class="plan-header">
+                        <h3>Business</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">29</span>
+                            <span class="period">/utente/mese</span>
+                        </div>
+                        <p class="plan-description">Ideale per aziende in crescita</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature-category">
+                            <h4>Chiamate</h4>
+                            <ul>
+                                <li><span class="check">✓</span> Minuti illimitati</li>
+                                <li><span class="check">✓</span> Audio HD+</li>
+                                <li><span class="check">✓</span> Videoconferenze</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4>Funzionalità</h4>
+                            <ul>
+                                <li><span class="check">✓</span> Tutte le app</li>
+                                <li><span class="check">✓</span> Integrazione CRM</li>
+                                <li><span class="check">✓</span> Analytics avanzati</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary">Scegli Business</button>
+                </div>
+                
+                <div class="pricing-card enterprise">
+                    <div class="plan-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">89</span>
+                            <span class="period">/utente/mese</span>
+                        </div>
+                        <p class="plan-description">Per aziende enterprise</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature-category">
+                            <h4>Tutto Incluso</h4>
+                            <ul>
+                                <li><span class="check">✓</span> Unlimited tutto</li>
+                                <li><span class="check">✓</span> SLA 99.9%</li>
+                                <li><span class="check">✓</span> Support dedicato</li>
+                                <li><span class="check">✓</span> White labeling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-outline">Contatta Sales</button>
+                </div>
+            </div>
+
+            <!-- ROI Visualization -->
+            <div class="roi-visualization">
+                <h3>Ritorno Investimento in 3 Mesi</h3>
+                <div class="roi-chart" role="img" aria-label="Grafico ritorno investimento">
+                    <div class="chart-bars">
+                        <div class="bar traditional" style="height: 100%;">
+                            <span class="bar-label">Sistema Tradizionale</span>
+                            <span class="bar-value">€1,200/mese</span>
+                        </div>
+                        <div class="bar cloud" style="height: 45%;">
+                            <span class="bar-label">VoIP Cloud</span>
+                            <span class="bar-value">€540/mese</span>
+                        </div>
+                    </div>
+                    <div class="savings-highlight">
+                        <span class="savings-amount">€660/mese</span>
+                        <span class="savings-label">Risparmio medio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Testimonials -->
+    <section class="social-proof-section">
+        <div class="container">
+            <h2 class="section-title">Oltre 2,500 Aziende ci Hanno Scelto</h2>
+            
+            <div class="testimonials-carousel" role="region" aria-label="Testimonianze clienti">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <blockquote>
+                            "Abbiamo ridotto i costi telefonici del 55% e migliorato la produttività dei nostri commerciali grazie all'integrazione CRM automatica."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="assets/testimonials/giulia-ferrari.jpg" alt="Giulia Ferrari" loading="lazy">
+                            <div class="author-info">
+                                <strong>Giulia Ferrari</strong>
+                                <span>Sales Director, TechSolutions SPA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stats">
+                        <div class="stat">
+                            <strong>55%</strong>
+                            <span>Risparmio Costi</span>
+                        </div>
+                        <div class="stat">
+                            <strong>2.5x</strong>
+                            <span>Produttività</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Logos -->
+            <div class="client-logos">
+                <img src="assets/clients/logo1.svg" alt="Cliente 1" loading="lazy">
+                <img src="assets/clients/logo2.svg" alt="Cliente 2" loading="lazy">
+                <img src="assets/clients/logo3.svg" alt="Cliente 3" loading="lazy">
+                <img src="assets/clients/logo4.svg" alt="Cliente 4" loading="lazy">
+                <img src="assets/clients/logo5.svg" alt="Cliente 5" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <footer class="cta-footer">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Inizia la Tua Trasformazione Digitale</h2>
+                <p>Prova gratuita per 30 giorni. Setup in 24 ore. Supporto dedicato.</p>
+                
+                <div class="cta-actions">
+                    <button class="btn btn-primary large" onclick="startTrial()">
+                        Prova Gratuita 30 Giorni
+                    </button>
+                    <button class="btn btn-secondary large" onclick="scheduleCall()">
+                        Chiama Esperto
+                    </button>
+                </div>
+
+                <div class="guarantee">
+                    <span class="guarantee-icon">🛡️</span>
+                    <span>Garanzia soddisfatti o rimborsati 100%</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="calculatorModal" role="dialog" aria-labelledby="calculator-modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="calculator-modal-title">Calcolatore Risparmio Avanzato</h3>
+                <button class="modal-close" onclick="closeCalculator()" aria-label="Chiudi modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Advanced calculator form -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="components/phone-system-demo.js" defer></script>
+    <script src="components/savings-calculator.js" defer></script>
+    <script src="components/features-tabs.js" defer></script>
+    <script src="components/testimonials-carousel.js" defer></script>
+    
+    <!-- Live Statistics Update -->
+    <script>
+        // Update live statistics
+        function updateLiveStats() {
+            const usersElement = document.getElementById('liveUsers');
+            if (usersElement) {
+                const currentUsers = parseInt(usersElement.textContent.replace(',', ''));
+                const newUsers = currentUsers + Math.floor(Math.random() * 20) - 10;
+                usersElement.textContent = newUsers.toLocaleString();
+            }
+        }
+        
+        setInterval(updateLiveStats, 30000); // Update every 30 seconds
+    </script>
+</body>
+</html>

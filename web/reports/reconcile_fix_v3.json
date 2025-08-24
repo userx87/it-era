@@ -1,0 +1,72 @@
+{
+  "created": 0,
+  "updated": 759,
+  "unchanged": 0,
+  "missing_after": 0,
+  "media_generated": 0,
+  "warnings": [],
+  "expected_total": 759,
+  "draft_count_now": 759,
+  "modified_examples": [
+    {
+      "file": "web/pages-draft/assistenza-it-albino.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/sicurezza-informatica-albino.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/cloud-storage-albino.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/assistenza-it-almenno-san-bartolomeo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/sicurezza-informatica-almenno-san-bartolomeo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/cloud-storage-almenno-san-bartolomeo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/assistenza-it-alzano-lombardo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/sicurezza-informatica-alzano-lombardo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/cloud-storage-alzano-lombardo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    },
+    {
+      "file": "web/pages-draft/assistenza-it-bergamo.v3.html",
+      "changes": [
+        "breadcrumb_fixed"
+      ]
+    }
+  ]
+}

@@ -1,102 +1,175 @@
 {
-  "task_info": {
-    "name": "promote_communes_and_deploy",
-    "environment": "production",
-    "timestamp": "2025-08-23T14:01:36.800165",
-    "status": "SUCCESS",
-    "deploy_duration": "154 seconds"
+  "promozione_timestamp": "2025-08-23T14:11:37.649588",
+  "deploy_timestamp": "2025-08-23T12:11:05Z",
+  "status": "production",
+  "commit_sha": "ec58398a318a91ab85eedd4ade0c2cb66b018415",
+  "statistiche_promozione": {
+    "pagine_promosse": 257,
+    "validation_warnings": 0,
+    "seo_checks_passed": {
+      "title": 257,
+      "h1": 257,
+      "meta_description": 257,
+      "json_ld_localbusiness": 257,
+      "json_ld_service": 257,
+      "json_ld_faq": 257,
+      "canonical": 257,
+      "hero_image": 257
+    },
+    "robots_meta_updated": true
   },
-  "promotion_summary": {
-    "pages_promoted": 52,
-    "meta_robots_updated": 52,
-    "validation_score": "100%",
-    "source_dir": "web/pages-draft/",
-    "target_dir": "web/pages/"
+  "sitemap_data": {
+    "urls_totali": 258,
+    "checksum_sha1": "76f1341954208677033655eb8e241d70988a7cbf",
+    "dimensione_bytes": 51970,
+    "validation_errors": 0
   },
-  "sitemap_update": {
-    "file": "web/sitemap.xml",
-    "total_urls": 51,
-    "file_size_bytes": 10019,
-    "checksum": "2b733c6bb732808f",
-    "cities_added": 51,
-    "priority_range": "0.8 (città) - 1.0 (home)",
-    "changefreq": "quarterly (città)"
-  },
-  "cloudflare_deploy": {
-    "status": "DEPLOYED",
-    "url": "https://it-era.pages.dev",
-    "commit_hash": "f734f33",
-    "branch": "main",
-    "build_time": "2m 34s",
-    "total_files": 3560,
-    "cache_purged": [
-      "/pages/*.html (51 files)",
-      "/sitemap.xml",
-      "/static/images/it-support-*-hero.svg (50 files)"
+  "deploy_data": {
+    "status": "success",
+    "domain": "it-era.pages.dev",
+    "commit_sha": "ec58398a318a91ab85eedd4ade0c2cb66b018415",
+    "cache_invalidated": [
+      "/pages/*",
+      "/sitemap.xml"
     ]
   },
-  "published_urls": [
-    "https://it-era.pages.dev/pages/assistenza-it-monza.html",
-    "https://it-era.pages.dev/pages/assistenza-it-arcore.html",
-    "https://it-era.pages.dev/pages/assistenza-it-milano.html",
-    "https://it-era.pages.dev/pages/assistenza-it-como.html",
-    "https://it-era.pages.dev/pages/assistenza-it-bergamo.html",
-    "https://it-era.pages.dev/pages/assistenza-it-brianza.html",
-    "https://it-era.pages.dev/pages/assistenza-it-biassono.html",
-    "https://it-era.pages.dev/pages/assistenza-it-seregno.html",
-    "https://it-era.pages.dev/pages/assistenza-it-lecco.html",
-    "https://it-era.pages.dev/pages/assistenza-it-vimercate.html",
-    "https://it-era.pages.dev/pages/assistenza-it-desio.html",
-    "https://it-era.pages.dev/pages/assistenza-it-lissone.html",
-    "https://it-era.pages.dev/pages/assistenza-it-meda.html",
-    "https://it-era.pages.dev/pages/assistenza-it-cesano-maderno.html",
-    "https://it-era.pages.dev/pages/assistenza-it-barlassina.html",
-    "https://it-era.pages.dev/pages/assistenza-it-giussano.html",
-    "https://it-era.pages.dev/pages/assistenza-it-cantu.html",
-    "https://it-era.pages.dev/pages/assistenza-it-mariano-comense.html",
-    "https://it-era.pages.dev/pages/assistenza-it-saronno.html",
-    "https://it-era.pages.dev/pages/assistenza-it-tradate.html"
-  ],
-  "verification_links": [
+  "sample_urls_production": [
     {
-      "name": "Homepage",
-      "url": "https://it-era.pages.dev/",
-      "status": "LIVE"
+      "comune": "Albino",
+      "provincia": "Bergamo",
+      "slug": "albino",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-albino.html"
     },
     {
-      "name": "Sitemap XML",
-      "url": "https://it-era.pages.dev/sitemap.xml",
-      "status": "UPDATED"
+      "comune": "Almenno San Bartolomeo",
+      "provincia": "Bergamo",
+      "slug": "almenno-san-bartolomeo",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-almenno-san-bartolomeo.html"
     },
     {
-      "name": "Monza Landing",
-      "url": "https://it-era.pages.dev/pages/assistenza-it-monza.html",
-      "status": "LIVE"
+      "comune": "Alzano Lombardo",
+      "provincia": "Bergamo",
+      "slug": "alzano-lombardo",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-alzano-lombardo.html"
     },
     {
-      "name": "Milano Landing",
-      "url": "https://it-era.pages.dev/pages/assistenza-it-milano.html",
-      "status": "LIVE"
+      "comune": "Bergamo",
+      "provincia": "Bergamo",
+      "slug": "bergamo",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-bergamo.html"
     },
     {
-      "name": "Lecco Landing",
-      "url": "https://it-era.pages.dev/pages/assistenza-it-lecco.html",
-      "status": "LIVE"
+      "comune": "Caravaggio",
+      "provincia": "Bergamo",
+      "slug": "caravaggio",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-caravaggio.html"
+    },
+    {
+      "comune": "Casnigo",
+      "provincia": "Bergamo",
+      "slug": "casnigo",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-casnigo.html"
+    },
+    {
+      "comune": "Castione Della Presolana",
+      "provincia": "Bergamo",
+      "slug": "castione-della-presolana",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-castione-della-presolana.html"
+    },
+    {
+      "comune": "Cazzano Sant'Andrea",
+      "provincia": "Bergamo",
+      "slug": "cazzano-sant-andrea",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-cazzano-sant-andrea.html"
+    },
+    {
+      "comune": "Clusone",
+      "provincia": "Bergamo",
+      "slug": "clusone",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-clusone.html"
+    },
+    {
+      "comune": "Colzate",
+      "provincia": "Bergamo",
+      "slug": "colzate",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-colzate.html"
+    },
+    {
+      "comune": "Curno",
+      "provincia": "Bergamo",
+      "slug": "curno",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-curno.html"
+    },
+    {
+      "comune": "Dalmine",
+      "provincia": "Bergamo",
+      "slug": "dalmine",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-dalmine.html"
+    },
+    {
+      "comune": "Fiorano Al Serio",
+      "provincia": "Bergamo",
+      "slug": "fiorano-al-serio",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-fiorano-al-serio.html"
+    },
+    {
+      "comune": "Gandino",
+      "provincia": "Bergamo",
+      "slug": "gandino",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-gandino.html"
+    },
+    {
+      "comune": "Gazzaniga",
+      "provincia": "Bergamo",
+      "slug": "gazzaniga",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-gazzaniga.html"
+    },
+    {
+      "comune": "Gorle",
+      "provincia": "Bergamo",
+      "slug": "gorle",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-gorle.html"
+    },
+    {
+      "comune": "Grassobbio",
+      "provincia": "Bergamo",
+      "slug": "grassobbio",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-grassobbio.html"
+    },
+    {
+      "comune": "Leffe",
+      "provincia": "Bergamo",
+      "slug": "leffe",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-leffe.html"
+    },
+    {
+      "comune": "Mozzo",
+      "provincia": "Bergamo",
+      "slug": "mozzo",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-mozzo.html"
+    },
+    {
+      "comune": "Nembro",
+      "provincia": "Bergamo",
+      "slug": "nembro",
+      "url_production": "https://it-era.pages.dev/pages/assistenza-it-nembro.html"
     }
   ],
-  "seo_improvements": {
-    "images_optimized": 50,
-    "json_ld_enhanced": 51,
-    "alt_text_added": "All images",
-    "localbusiness_schema": "Standardized",
-    "robots_meta": "index,follow",
-    "canonical_urls": "Preserved"
+  "test_urls": {
+    "homepage": "https://it-era.pages.dev/",
+    "sitemap": "https://it-era.pages.dev/sitemap.xml",
+    "sample_pages": [
+      "https://it-era.pages.dev/pages/assistenza-it-lecco.html",
+      "https://it-era.pages.dev/pages/assistenza-it-milano.html",
+      "https://it-era.pages.dev/pages/assistenza-it-monza.html",
+      "https://it-era.pages.dev/pages/assistenza-it-bergamo.html",
+      "https://it-era.pages.dev/pages/assistenza-it-como.html"
+    ]
   },
-  "next_actions": [
-    "Monitor Google Search Console for indexing",
-    "Submit sitemap.xml to Google/Bing",
-    "Track local SEO ranking improvements",
-    "Verify rich snippets in SERP",
-    "Monitor PageSpeed Insights scores"
+  "next_steps": [
+    "Test manuale URL principali",
+    "Verifica indicizzazione Google Search Console",
+    "Monitoraggio performance SEO",
+    "Analisi traffico organico primo mese"
   ]
 }

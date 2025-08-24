@@ -1,0 +1,735 @@
+<!-- IMPROVED ROI Calculator - "Risparmia vs Server Fisico" Focus -->
+<section class="roi-server-replacement">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">💰 Risparmia vs Server Fisico</h2>
+                <p class="section-subtitle">Calcola esattamente quanto risparmi sostituendo i tuoi server fisici con il nostro Cloud Storage</p>
+            </div>
+        </div>
+        
+        <div class="roi-calculator-container">
+            <div class="row">
+                <!-- Current Server Costs Input -->
+                <div class="col-lg-6">
+                    <div class="current-costs-card">
+                        <h4 class="card-title">
+                            <i class="fas fa-server text-danger"></i>
+                            I Tuoi Costi Server Attuali
+                        </h4>
+                        
+                        <div class="cost-input-section">
+                            <h5>💸 Costi Hardware</h5>
+                            <div class="input-group">
+                                <label for="server-purchase">Costo acquisto server (€)</label>
+                                <input type="number" id="server-purchase" class="cost-input" value="8000" placeholder="es. 8000">
+                                <small>Server + storage + UPS + networking</small>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="server-lifespan">Durata utilizzo (anni)</label>
+                                <input type="number" id="server-lifespan" class="cost-input" value="4" min="1" max="10">
+                                <small>Tempo prima del prossimo upgrade</small>
+                            </div>
+                        </div>
+                        
+                        <div class="cost-input-section">
+                            <h5>⚡ Costi Operativi Annuali</h5>
+                            <div class="input-group">
+                                <label for="electricity-cost">Energia elettrica (€/anno)</label>
+                                <input type="number" id="electricity-cost" class="cost-input" value="2400" placeholder="es. 2400">
+                                <small>Server sempre acceso 24/7</small>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="maintenance-cost">Manutenzione & Supporto (€/anno)</label>
+                                <input type="number" id="maintenance-cost" class="cost-input" value="1800" placeholder="es. 1800">
+                                <small>Contratto assistenza + ricambi</small>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="it-hours">Ore IT dedicate/mese</label>
+                                <input type="number" id="it-hours" class="cost-input" value="12" placeholder="es. 12">
+                                <small>Gestione, backup, aggiornamenti @ €50/h</small>
+                            </div>
+                        </div>
+                        
+                        <div class="cost-input-section">
+                            <h5>🏢 Altri Costi</h5>
+                            <div class="input-group">
+                                <label for="space-cost">Costo spazio server room (€/anno)</label>
+                                <input type="number" id="space-cost" class="cost-input" value="1200" placeholder="es. 1200">
+                                <small>Affitto, condizionamento, sicurezza</small>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="backup-storage">Storage backup esterno (€/anno)</label>
+                                <input type="number" id="backup-storage" class="cost-input" value="800" placeholder="es. 800">
+                                <small>Nastri, cloud backup, storage remoto</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Current Total Preview -->
+                        <div class="current-total-preview">
+                            <div class="total-item">
+                                <span>Costo ammortamento hardware/anno:</span>
+                                <span class="amount" id="hardware-annual">€2,000</span>
+                            </div>
+                            <div class="total-item">
+                                <span>Costi operativi/anno:</span>
+                                <span class="amount" id="operational-annual">€7,800</span>
+                            </div>
+                            <div class="total-separator"></div>
+                            <div class="total-final">
+                                <span>TOTALE Server Fisico/Anno:</span>
+                                <span class="amount-big" id="total-current">€9,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cloud Savings Results -->
+                <div class="col-lg-6">
+                    <div class="cloud-costs-card">
+                        <h4 class="card-title">
+                            <i class="fas fa-cloud text-success"></i>
+                            I Tuoi Costi con IT-ERA Cloud
+                        </h4>
+                        
+                        <!-- Cloud Configuration Summary -->
+                        <div class="cloud-config">
+                            <h5>📊 La Tua Configurazione Cloud</h5>
+                            <div class="config-item">
+                                <span>Storage stimato necessario:</span>
+                                <span id="estimated-storage">2TB</span>
+                            </div>
+                            <div class="config-item">
+                                <span>Piano consigliato:</span>
+                                <span id="recommended-plan">Business Standard</span>
+                            </div>
+                            <div class="config-breakdown">
+                                <div class="breakdown-item">
+                                    <span>Hot Storage (500GB):</span>
+                                    <span>€60/mese</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span>Warm Storage (1TB):</span>
+                                    <span>€60/mese</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span>Cold Storage (500GB):</span>
+                                    <span>€10/mese</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span>Backup Veeam gestito:</span>
+                                    <span>€89/mese</span>
+                                </div>
+                                <div class="breakdown-separator"></div>
+                                <div class="breakdown-total">
+                                    <span>Totale mensile cloud:</span>
+                                    <span class="cloud-monthly">€219/mese</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- ROI Results -->
+                        <div class="roi-results-display">
+                            <div class="result-card savings-card">
+                                <div class="result-icon">💰</div>
+                                <div class="result-content">
+                                    <div class="result-value" id="annual-savings">€7,172</div>
+                                    <div class="result-label">Risparmio Annuale</div>
+                                    <div class="result-sublabel">vs server fisico</div>
+                                </div>
+                            </div>
+                            
+                            <div class="result-card roi-card">
+                                <div class="result-icon">📈</div>
+                                <div class="result-content">
+                                    <div class="result-value" id="roi-percentage">273%</div>
+                                    <div class="result-label">ROI in 3 Anni</div>
+                                    <div class="result-sublabel">ritorno investimento</div>
+                                </div>
+                            </div>
+                            
+                            <div class="result-card payback-card">
+                                <div class="result-icon">⏱️</div>
+                                <div class="result-content">
+                                    <div class="result-value" id="payback-months">4</div>
+                                    <div class="result-label">Mesi Payback</div>
+                                    <div class="result-sublabel">per recuperare investimento</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 5-Year Projection -->
+                        <div class="projection-chart">
+                            <h5>📊 Proiezione 5 Anni: Cloud vs Server</h5>
+                            <div class="chart-visual">
+                                <div class="chart-bars">
+                                    <div class="chart-bar">
+                                        <div class="bar server-bar" data-amount="49000">
+                                            <span class="bar-label">Server Fisico</span>
+                                            <span class="bar-amount">€49,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart-bar">
+                                        <div class="bar cloud-bar" data-amount="13140">
+                                            <span class="bar-label">IT-ERA Cloud</span>
+                                            <span class="bar-amount">€13,140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-savings">
+                                    <div class="savings-highlight">
+                                        <strong>Risparmio 5 anni: €<span id="five-year-savings">35,860</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Benefits -->
+                        <div class="additional-benefits">
+                            <h5>🎁 Benefici Extra (Non Quantificabili)</h5>
+                            <div class="benefit-list">
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Zero stress per guasti hardware</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Accesso dati da qualsiasi luogo</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Scalabilità istantanea</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Supporto 24/7 in italiano</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Backup automatico Veeam</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Conformità GDPR automatica</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="cta-section">
+                        <h4 class="cta-title">Inizia a Risparmiare Subito!</h4>
+                        <p class="cta-subtitle">Migrazione gratuita + 30 giorni di prova senza impegno</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-success btn-lg me-3" onclick="requestMigrationPlan()">
+                                <i class="fas fa-rocket me-2"></i>
+                                Richiedi Piano Migrazione Gratuito
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg" onclick="downloadROIReport()">
+                                <i class="fas fa-download me-2"></i>
+                                Scarica Report ROI Dettagliato
+                            </button>
+                        </div>
+                        <div class="guarantee-notice">
+                            <i class="fas fa-shield-alt text-success"></i>
+                            <span>Garanzia soddisfatti o rimborsati 30 giorni</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.roi-server-replacement {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+
+.roi-calculator-container {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.current-costs-card,
+.cloud-costs-card {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card-title i {
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.cost-input-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ef4444;
+}
+
+.cost-input-section h5 {
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.cost-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: border-color 0.3s ease;
+}
+
+.cost-input:focus {
+    outline: none;
+    border-color: #0ea5e9;
+}
+
+.input-group small {
+    display: block;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.current-total-preview {
+    background: #fee2e2;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.total-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.total-separator {
+    height: 1px;
+    background: #dc2626;
+    margin: 15px 0;
+}
+
+.total-final {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #dc2626;
+}
+
+.amount,
+.amount-big {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.amount-big {
+    font-size: 1.3rem;
+}
+
+.cloud-config {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid #22c55e;
+}
+
+.cloud-config h5 {
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.config-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.config-breakdown {
+    background: #f0fdf4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.breakdown-separator {
+    height: 1px;
+    background: #22c55e;
+    margin: 10px 0;
+}
+
+.breakdown-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+.cloud-monthly {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.roi-results-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.result-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.savings-card {
+    border-left: 4px solid #22c55e;
+}
+
+.roi-card {
+    border-left: 4px solid #0ea5e9;
+}
+
+.payback-card {
+    border-left: 4px solid #f97316;
+}
+
+.result-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.result-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.result-label {
+    font-weight: 600;
+    color: #374151;
+    margin-top: 5px;
+}
+
+.result-sublabel {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 3px;
+}
+
+.projection-chart {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.projection-chart h5 {
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.chart-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chart-bar {
+    position: relative;
+}
+
+.bar {
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+
+.server-bar {
+    background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+    width: 100%;
+}
+
+.cloud-bar {
+    background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+    width: 27%; /* 13140/49000 ≈ 27% */
+}
+
+.bar-label {
+    font-size: 0.9rem;
+}
+
+.bar-amount {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.chart-savings {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.savings-highlight {
+    background: #22c55e;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.additional-benefits {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.additional-benefits h5 {
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.benefit-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    color: #374151;
+    font-weight: 500;
+}
+
+.benefit-item i {
+    color: #22c55e;
+    margin-right: 12px;
+    font-size: 0.9rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.cta-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cta-subtitle {
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    margin-bottom: 20px;
+}
+
+.guarantee-notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.guarantee-notice i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .roi-calculator-container {
+        padding: 20px;
+    }
+    
+    .current-costs-card,
+    .cloud-costs-card {
+        margin-bottom: 30px;
+    }
+    
+    .chart-bar {
+        margin-bottom: 20px;
+    }
+    
+    .bar {
+        height: 50px;
+        padding: 0 15px;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        margin: 0;
+    }
+}
+</style>
+
+<script>
+// ROI Calculator Logic
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize calculator with default values
+    calculateROI();
+    
+    // Add event listeners to all inputs
+    document.querySelectorAll('.cost-input').forEach(input => {
+        input.addEventListener('input', calculateROI);
+    });
+});
+
+function calculateROI() {
+    // Get input values
+    const serverPurchase = parseFloat(document.getElementById('server-purchase').value) || 0;
+    const serverLifespan = parseFloat(document.getElementById('server-lifespan').value) || 4;
+    const electricityCost = parseFloat(document.getElementById('electricity-cost').value) || 0;
+    const maintenanceCost = parseFloat(document.getElementById('maintenance-cost').value) || 0;
+    const itHours = parseFloat(document.getElementById('it-hours').value) || 0;
+    const spaceCost = parseFloat(document.getElementById('space-cost').value) || 0;
+    const backupStorage = parseFloat(document.getElementById('backup-storage').value) || 0;
+    
+    // Calculate annual costs
+    const hardwareAnnual = serverPurchase / serverLifespan;
+    const itCostAnnual = itHours * 12 * 50; // €50/hour
+    const operationalAnnual = electricityCost + maintenanceCost + itCostAnnual + spaceCost + backupStorage;
+    const totalCurrentAnnual = hardwareAnnual + operationalAnnual;
+    
+    // Update current costs display
+    document.getElementById('hardware-annual').textContent = `€${Math.round(hardwareAnnual).toLocaleString()}`;
+    document.getElementById('operational-annual').textContent = `€${Math.round(operationalAnnual).toLocaleString()}`;
+    document.getElementById('total-current').textContent = `€${Math.round(totalCurrentAnnual).toLocaleString()}`;
+    
+    // Cloud costs (fixed for this example - in real implementation would be dynamic)
+    const cloudMonthly = 219; // From the pricing calculator
+    const cloudAnnual = cloudMonthly * 12;
+    
+    // Calculate savings and ROI
+    const annualSavings = Math.max(0, totalCurrentAnnual - cloudAnnual);
+    const threeYearSavings = annualSavings * 3;
+    const threeYearCloudCost = cloudAnnual * 3;
+    const roi = threeYearCloudCost > 0 ? Math.round((threeYearSavings / threeYearCloudCost) * 100) : 0;
+    const paybackMonths = annualSavings > 0 ? Math.round((cloudMonthly * 3) / (annualSavings / 12)) : 0; // Rough estimate
+    
+    // Calculate 5-year projection
+    const fiveYearServer = totalCurrentAnnual * 5 + serverPurchase; // Include one additional server purchase
+    const fiveYearCloud = cloudAnnual * 5;
+    const fiveYearSavings = Math.max(0, fiveYearServer - fiveYearCloud);
+    
+    // Update results display
+    document.getElementById('annual-savings').textContent = `€${Math.round(annualSavings).toLocaleString()}`;
+    document.getElementById('roi-percentage').textContent = `${roi}%`;
+    document.getElementById('payback-months').textContent = Math.min(paybackMonths, 60); // Cap at 5 years
+    document.getElementById('five-year-savings').textContent = Math.round(fiveYearSavings).toLocaleString();
+    
+    // Update chart bar widths
+    const serverBar = document.querySelector('.server-bar');
+    const cloudBar = document.querySelector('.cloud-bar');
+    
+    if (fiveYearServer > 0) {
+        const cloudPercentage = (fiveYearCloud / fiveYearServer) * 100;
+        cloudBar.style.width = `${Math.max(15, Math.min(cloudPercentage, 100))}%`; // Min 15% for visibility
+    }
+    
+    // Update chart amounts
+    serverBar.querySelector('.bar-amount').textContent = `€${Math.round(fiveYearServer).toLocaleString()}`;
+    cloudBar.querySelector('.bar-amount').textContent = `€${Math.round(fiveYearCloud).toLocaleString()}`;
+}
+
+function requestMigrationPlan() {
+    // In real implementation, would open form or contact page
+    alert('Verrai reindirizzato al form per richiedere il piano di migrazione gratuito');
+}
+
+function downloadROIReport() {
+    // In real implementation, would generate and download PDF report
+    alert('Il report ROI dettagliato verrà scaricato (feature da implementare)');
+}
+</script>

@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralino VoIP {{CITY}} | Telefonia Cloud Aziendale | IT-ERA</title>
+    <meta name="description" content="Centralino VoIP professionale a {{CITY}}. Telefonia cloud aziendale con numero geografico incluso, portabilità gratuita e chiamate illimitate. Da €9.90/mese.">
+    <meta name="keywords" content="VoIP aziendale {{CITY}}, centralino cloud {{CITY}}, telefonia IP {{REGION}}, numero virtuale {{CITY}}, centralino telefonico {{CITY}}">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Centralino VoIP {{CITY}} | Telefonia Cloud Aziendale">
+    <meta property="og:description" content="Sistema VoIP professionale per aziende a {{CITY}}. Numero geografico incluso, portabilità gratuita, chiamate illimitate.">
+    <meta property="og:url" content="https://www.it-era.it/voip-telefonia-cloud-{{CITY_SLUG}}">
+    <meta property="og:site_name" content="IT-ERA">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image" content="https://www.it-era.it/images/voip-telefonia-cloud-{{CITY_SLUG}}.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Centralino VoIP {{CITY}} | Telefonia Cloud Aziendale">
+    <meta name="twitter:description" content="Sistema VoIP professionale per aziende a {{CITY}}. Numero geografico incluso, portabilità gratuita, chiamate illimitate.">
+    <meta name="twitter:image" content="https://www.it-era.it/images/voip-telefonia-cloud-{{CITY_SLUG}}.jpg">
+    <meta property="og:type" content="website">
+    <meta name="geo.region" content="IT-{{REGION_CODE}}">
+    <meta name="geo.placename" content="{{CITY}}">
+    <link rel="canonical" href="https://www.it-era.it/voip-telefonia-cloud-{{CITY_SLUG}}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        :root {
+            --wildix-orange: #FF6600;
+            --wildix-blue: #0066CC;
+            --wildix-dark-orange: #E55A00;
+            --wildix-light-blue: #3385FF;
+            --primary-blue: #FF6600;
+            --secondary-teal: #0066CC;
+            --accent-blue: #FF6600;
+            --dark-blue: #E55A00;
+            --light-teal: #fff3e6;
+            --gradient-bg: linear-gradient(135deg, #FF6600 0%, #0066CC 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 76px; /* Compensate for fixed navbar */
+        }
+
+        /* Navbar enhancements */
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            z-index: 1030;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px; /* Smaller padding on mobile */
+            }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--gradient-bg);
+            color: white;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M54 10a4 4 0 0 1-4 4H14a4 4 0 1 1 0-8h36a4 4 0 0 1 4 4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Call Flow Diagram */
+        .call-flow-container {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .call-node {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+            margin: 0 auto 15px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .call-node.active {
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 20px rgba(0,102,204,0.5);
+        }
+
+        .call-node.incoming { background: var(--primary-blue); }
+        .call-node.pbx { background: var(--secondary-teal); }
+        .call-node.routing { background: var(--accent-blue); }
+        .call-node.extension { background: var(--dark-blue); }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .flow-arrow {
+            font-size: 2em;
+            color: var(--primary-blue);
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeInOut 3s infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Metrics Dashboard */
+        .metrics-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            border: none;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .metrics-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .metric-good { color: var(--secondary-teal); }
+        .metric-warning { color: #ffc107; }
+        .metric-critical { color: #dc3545; }
+
+        .metric-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .metric-progress {
+            height: 100%;
+            background: var(--secondary-teal);
+            transition: width 0.5s ease;
+            border-radius: 4px;
+        }
+
+        /* PBX Interface */
+        .pbx-interface {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #e9ecef;
+        }
+
+        .extension-row {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .extension-row:hover {
+            border-color: var(--primary-blue);
+            box-shadow: 0 5px 15px rgba(0,102,204,0.1);
+        }
+
+        .extension-status {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .status-online { background: #28a745; }
+        .status-busy { background: #dc3545; }
+        .status-away { background: #ffc107; }
+        .status-offline { background: #6c757d; }
+
+        /* Cost Calculator */
+        .calculator-container {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .cost-comparison {
+            background: var(--light-teal);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .savings-highlight {
+            background: linear-gradient(135deg, var(--secondary-teal), #17a2b8);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Pricing Cards */
+        .pricing-card {
+            border: 2px solid #e9ecef;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,102,204,0.15);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary-blue);
+            box-shadow: 0 15px 35px rgba(0,102,204,0.2);
+        }
+
+        .pricing-card.featured::before {
+            content: 'PIÙ POPOLARE';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 5px 40px;
+            font-size: 0.8em;
+            font-weight: bold;
+            transform: rotate(45deg);
+        }
+
+        .price-value {
+            font-size: 3em;
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin: 20px 0;
+        }
+
+        /* Features Section */
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-bg);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-icon:hover {
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        /* Partner Badges */
+        .partner-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .partner-badge {
+            background: white;
+            border-radius: 15px;
+            padding: 20px 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .partner-badge:hover {
+            transform: translateY(-5px);
+        }
+
+        .partner-logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+        }
+
+        /* CTA Buttons */
+        .btn-primary-custom {
+            background: var(--gradient-bg);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,102,204,0.3);
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,102,204,0.4);
+        }
+
+        /* Number Portability Checker */
+        .portability-checker {
+            background: linear-gradient(135deg, #ffffff 0%, var(--light-teal) 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .number-input {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 1.2em;
+            width: 100%;
+            transition: border-color 0.3s ease;
+        }
+
+        .number-input:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 0.25rem rgba(0,102,204,0.25);
+        }
+
+        .check-result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .result-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .result-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section { padding: 60px 0 40px; }
+            .call-node { width: 60px; height: 60px; font-size: 1.2em; }
+            .price-value { font-size: 2.2em; }
+            .partner-badges { gap: 15px; }
+            .partner-badge { min-width: 120px; padding: 15px 20px; }
+        }
+        
+        /* Accessibility Styles */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+        
+        /* Enhanced focus indicators */
+        button:focus, .btn:focus, a:focus, input:focus, textarea:focus, select:focus {
+            outline: 2px solid #007bff !important;
+            outline-offset: 2px !important;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation" aria-label="Menu principale">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-cogs me-2"></i>IT-ERA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Apri menu di navigazione">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviziDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="serviziDropdown">
+                            <li><a class="dropdown-item" href="/assistenza-it">Assistenza IT</a></li>
+                            <li><a class="dropdown-item" href="/cloud-storage">Cloud Storage</a></li>
+                            <li><a class="dropdown-item" href="/sicurezza-informatica">Sicurezza Informatica</a></li>
+                            <li><a class="dropdown-item" href="/backup-disaster-recovery">Backup & DR</a></li>
+                            <li><a class="dropdown-item" href="#servizi">VoIP & Telefonia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3 ms-2" href="tel:+390398882041">
+                            <i class="fas fa-phone me-1"></i>039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <div class="mb-4">
+                        <div class="d-inline-flex align-items-center bg-white bg-opacity-15 rounded-pill px-3 py-2 mb-3">
+                            <img src="https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white" alt="Wildix Gold Partner" style="height: 30px; margin-right: 10px;">
+                            <span class="fw-bold">Gold Partner Certificato</span>
+                        </div>
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4">Centralino VoIP Wildix {{CITY}}<br>WebRTC e Collaboration Suite</h1>
+                    <p class="lead mb-4">Rivoluziona la comunicazione aziendale con il nostro sistema VoIP avanzato. Numero geografico incluso, portabilità gratuita e chiamate illimitate in Italia.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <span class="badge bg-light text-dark fs-6 px-3 py-2">
+                            <i class="fas fa-check text-success me-2"></i>Da €9.90/interno/mese
+                        </span>
+                        <span class="badge bg-light text-dark fs-6 px-3 py-2">
+                            <i class="fas fa-check text-success me-2"></i>Portabilità Gratuita
+                        </span>
+                        <span class="badge bg-light text-dark fs-6 px-3 py-2">
+                            <i class="fas fa-check text-success me-2"></i>Chiamate Illimitate
+                        </span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-primary-custom btn-lg" onclick="scrollToSection('prezzi')">
+                            <i class="fas fa-rocket me-2"></i>Inizia Ora
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" onclick="scrollToSection('demo')">
+                            <i class="fas fa-play me-2"></i>Demo Wildix Live
+                        </button>
+                        <a href="/brochure-voip-wildix.pdf" class="btn btn-light btn-lg" target="_blank">
+                            <i class="fas fa-download me-2"></i>Scarica Brochure
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Interactive Call Flow Diagram -->
+                    <div class="call-flow-container" id="demo">
+                        <h4 class="text-center text-dark mb-4">Sistema di Chiamata in Tempo Reale</h4>
+                        <div class="row text-center">
+                            <div class="col-6 col-md-3">
+                                <div class="call-node incoming active" data-step="1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <small class="text-dark">Chiamata in Arrivo</small>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="call-node pbx" data-step="2">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <small class="text-dark">PBX Cloud</small>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="call-node routing" data-step="3">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <small class="text-dark">Routing Intelligente</small>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="call-node extension" data-step="4">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <small class="text-dark">Interno</small>
+                            </div>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="startCallDemo()">
+                                <i class="fas fa-play me-2"></i>Simula Chiamata
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-time Quality Metrics -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Qualità della Rete in Tempo Reale</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="metrics-card">
+                        <i class="fas fa-tachometer-alt fa-3x text-primary mb-3"></i>
+                        <h5>Latenza</h5>
+                        <div class="metric-value metric-good" id="latency">12ms</div>
+                        <div class="metric-bar">
+                            <div class="metric-progress" style="width: 85%"></div>
+                        </div>
+                        <small class="text-muted">Ottima qualità</small>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="metrics-card">
+                        <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                        <h5>Jitter</h5>
+                        <div class="metric-value metric-good" id="jitter">2.1ms</div>
+                        <div class="metric-bar">
+                            <div class="metric-progress" style="width: 92%"></div>
+                        </div>
+                        <small class="text-muted">Eccellente</small>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="metrics-card">
+                        <i class="fas fa-chart-bar fa-3x text-info mb-3"></i>
+                        <h5>Packet Loss</h5>
+                        <div class="metric-value metric-good" id="packet-loss">0.02%</div>
+                        <div class="metric-bar">
+                            <div class="metric-progress" style="width: 98%"></div>
+                        </div>
+                        <small class="text-muted">Perfetto</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quality Chart -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitoraggio Qualità Chiamate (24h)</h5>
+                            <canvas id="qualityChart" height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual PBX Interface -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Interfaccia Centralino Virtuale</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="pbx-interface">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4 class="mb-0">Gestione Interni</h4>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus me-2"></i>Aggiungi Interno
+                            </button>
+                        </div>
+                        
+                        <div class="extension-row">
+                            <div class="d-flex align-items-center">
+                                <div class="extension-status status-online"></div>
+                                <div>
+                                    <strong>101 - Receptionist</strong><br>
+                                    <small class="text-muted">Maria Rossi</small>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-success">In linea</span>
+                                <button class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="extension-row">
+                            <div class="d-flex align-items-center">
+                                <div class="extension-status status-busy"></div>
+                                <div>
+                                    <strong>102 - Vendite</strong><br>
+                                    <small class="text-muted">Luca Bianchi</small>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-danger">Occupato</span>
+                                <button class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="extension-row">
+                            <div class="d-flex align-items-center">
+                                <div class="extension-status status-away"></div>
+                                <div>
+                                    <strong>103 - Supporto</strong><br>
+                                    <small class="text-muted">Anna Verdi</small>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-warning">Assente</span>
+                                <button class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="extension-row">
+                            <div class="d-flex align-items-center">
+                                <div class="extension-status status-offline"></div>
+                                <div>
+                                    <strong>104 - Amministrazione</strong><br>
+                                    <small class="text-muted">Paolo Neri</small>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-secondary">Offline</span>
+                                <button class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <section class="py-5 bg-light" id="calcolatore">
+        <div class="container">
+            <h2 class="text-center mb-5">Calcolatore Risparmio VoIP</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="calculator-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Configurazione Attuale</h5>
+                                <div class="mb-3">
+                                    <label class="form-label">Numero di interni</label>
+                                    <input type="number" class="form-control" id="numExtensions" value="10" onchange="calculateSavings()">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Costo mensile attuale (€)</label>
+                                    <input type="number" class="form-control" id="currentCost" value="300" onchange="calculateSavings()">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Minuti al mese</label>
+                                    <input type="number" class="form-control" id="monthlyMinutes" value="2000" onchange="calculateSavings()">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Sistema VoIP IT-ERA</h5>
+                                <div class="cost-comparison">
+                                    <div class="row">
+                                        <div class="col-6 text-center">
+                                            <h6>Costo Attuale</h6>
+                                            <div class="h4 text-danger" id="currentTotal">€300</div>
+                                        </div>
+                                        <div class="col-6 text-center">
+                                            <h6>Con VoIP</h6>
+                                            <div class="h4 text-success" id="voipTotal">€199</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="savings-highlight">
+                                    <i class="fas fa-piggy-bank me-2"></i>
+                                    Risparmi <span id="monthlySavings">€101</span> al mese<br>
+                                    <small>€<span id="yearlySavings">1,212</span> all'anno</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button class="btn btn-primary btn-lg" onclick="scrollToSection('prezzi')">
+                                <i class="fas fa-calculator me-2"></i>Configura il Tuo Sistema
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Number Portability Checker -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Verifica Portabilità Numero</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="portability-checker">
+                        <h5 class="text-center mb-4">Mantieni il Tuo Numero Esistente</h5>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <input type="tel" class="number-input" id="phoneNumber" placeholder="Inserisci il tuo numero (es. 02 1234567)">
+                            <button class="btn btn-primary" onclick="checkPortability()">
+                                <i class="fas fa-search me-2"></i>Verifica
+                            </button>
+                        </div>
+                        <div id="portabilityResult"></div>
+                        <div class="text-center mt-3">
+                            <small class="text-muted">
+                                <i class="fas fa-shield-alt me-1"></i>
+                                Verifica gratuita e senza impegno
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-light" id="prezzi">
+        <div class="container">
+            <h2 class="text-center mb-5">Piani Tariffari Trasparenti</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card">
+                        <h3>Starter</h3>
+                        <div class="price-value">€9.90</div>
+                        <p class="text-muted">per interno/mese</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Numero geografico incluso</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Chiamate illimitate Italia</li>
+                            <li><i class="fas fa-check text-success me-2"></i>App mobile</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Segreteria telefonica</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Deviazione chiamate</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg w-100">Scegli Starter</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card featured">
+                        <h3>Professional</h3>
+                        <div class="price-value">€19.90</div>
+                        <p class="text-muted">per interno/mese</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Tutto di Starter +</li>
+                            <li><i class="fas fa-check text-success me-2"></i>IVR avanzato</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Registrazione chiamate</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Code di attesa</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Statistiche avanzate</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Integrazione CRM</li>
+                        </ul>
+                        <button class="btn btn-primary-custom btn-lg w-100">Scegli Professional</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card">
+                        <h3>Call Center</h3>
+                        <div class="price-value">€29.90</div>
+                        <p class="text-muted">per interno/mese</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Tutto di Professional +</li>
+                            <li><i class="fas fa-check text-success me-2"></i>ACD Automatico</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Supervisor dashboard</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Coaching live</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Analytics AI</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Supporto prioritario</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg w-100">Scegli Call Center</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5" id="caratteristiche">
+        <div class="container">
+            <h2 class="text-center mb-5">Caratteristiche Avanzate</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h5>App Mobile Nativa</h5>
+                    <p>Ricevi e gestisci chiamate aziendali dal tuo smartphone con la nostra app dedicata per iOS e Android.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h5>Portabilità Gratuita</h5>
+                    <p>Mantieni tutti i tuoi numeri esistenti senza costi aggiuntivi. Migrazione completa in 24-48 ore.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h5>Chiamate Illimitate</h5>
+                    <p>Chiamate illimitate verso fissi e mobili italiani incluse in tutti i piani tariffari.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h5>Analytics Avanzate</h5>
+                    <p>Dashboard dettagliate con statistiche in tempo reale su chiamate, code e performance degli operatori.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Sicurezza Enterprise</h5>
+                    <p>Crittografia end-to-end, certificazioni ISO 27001 e backup automatici per garantire massima sicurezza.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h5>Supporto 24/7</h5>
+                    <p>Assistenza tecnica dedicata disponibile 24 ore su 24, 7 giorni su 7 via telefono, email e chat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems We Solve -->
+    <section class="py-5 bg-light" id="soluzioni">
+        <div class="container">
+            <h2 class="text-center mb-5">Problemi che Risolviamo</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-euro-sign fa-3x text-danger mb-3"></i>
+                            <h5>Costi Elevati Telefonia</h5>
+                            <p>I sistemi tradizionali comportano costi fissi elevati, canoni di noleggio e tariffe per chiamate. Il VoIP riduce i costi fino al 70%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-lock fa-3x text-warning mb-3"></i>
+                            <h5>Mobilità Limitata</h5>
+                            <p>Essere legati alla scrivania limita la produttività. Con il VoIP lavori ovunque ci sia internet, mantenendo lo stesso numero aziendale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-expand-arrows-alt fa-3x text-info mb-3"></i>
+                            <h5>Scalabilità</h5>
+                            <p>Aggiungere nuove linee con sistemi tradizionali richiede interventi tecnici costosi. Il VoIP si espande istantaneamente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wildix Gold Partnership -->
+    <section class="py-5" style="background: var(--gradient-bg); color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">
+                        <i class="fas fa-award me-3"></i>Wildix Gold Partner Certificato
+                    </h2>
+                    <p class="lead mb-4">
+                        IT-ERA è partner Gold Wildix dal 2014 con oltre 10 anni di esperienza nella telefonia cloud. 
+                        Implementazioni certificate per aziende di ogni dimensione con supporto tecnico specializzato Wildix.
+                    </p>
+                    <div class="row text-white">
+                        <div class="col-md-4 mb-3">
+                            <h4>500+</h4>
+                            <small>Aziende migrate a Wildix</small>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h4>15.000+</h4>
+                            <small>Utenti Wildix gestiti</small>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h4>99.9%</h4>
+                            <small>Uptime Wildix garantito</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="bg-white rounded-4 p-4">
+                        <img src="https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white" alt="Wildix Gold Partner" class="img-fluid mb-3" style="max-height: 120px;">
+                        <h5 class="text-primary mb-2">Gold Partner</h5>
+                        <p class="text-muted mb-0">Certificato dal 2014</p>
+                        <div class="mt-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5" style="background: var(--gradient-bg); color: white;" id="contatti">
+        <div class="container text-center">
+            <h2 class="mb-4">Pronto per il Futuro della Telefonia?</h2>
+            <p class="lead mb-4">Configura il tuo centralino VoIP in {{CITY}} oggi stesso. Consulenza gratuita e migrazione senza interruzioni.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <i class="fas fa-phone-alt fa-2x mb-2"></i>
+                                <div>
+                                    <strong>Chiamaci</strong><br>
+                                    <a href="tel:+390398882041" class="text-white">039 888 2041</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <i class="fas fa-envelope fa-2x mb-2"></i>
+                                <div>
+                                    <strong>Scrivici</strong><br>
+                                    <a href="mailto:info@it-era.it" class="text-white">info@it-era.it</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <i class="fas fa-calendar-alt fa-2x mb-2"></i>
+                                <div>
+                                    <strong>Prenota</strong><br>
+                                    <a href="#" class="text-white">Demo Gratuita</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-play me-2"></i>Demo Gratuita
+                        </button>
+                        <button class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-download me-2"></i>Scarica Brochure
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+                    <p>Soluzioni IT professionali per {{CITY}} e provincia. Assistenza tecnica, cloud, sicurezza e telefonia aziendale con supporto 24/7.</p>
+                    <div class="d-flex gap-3">
+                        <a href="tel:+390398882041" class="text-white" title="Chiamaci">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:info@it-era.it" class="text-white" title="Inviaci una email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/it-era" class="text-white" title="Seguici su LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://facebook.com/itera.informatica" class="text-white" title="Seguici su Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Servizi</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/assistenza-it" class="text-light text-decoration-none">Assistenza IT</a></li>
+                        <li><a href="/cloud-storage" class="text-light text-decoration-none">Cloud Storage</a></li>
+                        <li><a href="/sicurezza-informatica" class="text-light text-decoration-none">Sicurezza Informatica</a></li>
+                        <li><a href="/backup-disaster-recovery" class="text-light text-decoration-none">Backup & DR</a></li>
+                        <li><a href="/voip-telefonia-cloud" class="text-light text-decoration-none">VoIP & Telefonia</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Supporto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/documentazione" class="text-light text-decoration-none">Documentazione</a></li>
+                        <li><a href="/faq" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="/ticket" class="text-light text-decoration-none">Sistema Ticket</a></li>
+                        <li><a href="/training" class="text-light text-decoration-none">Formazione</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contatti</h6>
+                    <div class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <strong>Viale Risorgimento 32</strong><br>
+                        <span class="ms-4">20871 Vimercate (MB)</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <strong>039 888 2041</strong>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <strong>info@it-era.it</strong>
+                    </div>
+                    <div class="mb-0">
+                        <i class="fas fa-clock me-2"></i>
+                        <strong>24/7</strong> - Sempre disponibili
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <small>&copy; 2025 IT-ERA - Brand of Bulltech Informatica Srl - P.IVA 03917760138 - Tutti i diritti riservati</small>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <small>
+                        <a href="/privacy" class="text-light text-decoration-none me-3">Privacy</a>
+                        <a href="/cookie" class="text-light text-decoration-none">Cookie</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Centralino VoIP {{CITY}} - IT-ERA",
+        "description": "Servizio di centralino VoIP professionale per aziende a {{CITY}}. Telefonia cloud con numero geografico incluso e chiamate illimitate.",
+        "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA",
+            "url": "https://www.it-era.it"
+        },
+        "serviceType": "VoIP Business Phone System",
+        "areaServed": {
+            "@type": "City",
+            "name": "{{CITY}}",
+            "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "{{REGION}}"
+            }
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Piano Starter",
+                "price": "9.90",
+                "priceCurrency": "EUR",
+                "billingIncrement": "P1M"
+            },
+            {
+                "@type": "Offer",
+                "name": "Piano Professional",
+                "price": "19.90",
+                "priceCurrency": "EUR",
+                "billingIncrement": "P1M"
+            },
+            {
+                "@type": "Offer",
+                "name": "Piano Call Center",
+                "price": "29.90",
+                "priceCurrency": "EUR",
+                "billingIncrement": "P1M"
+            }
+        ],
+        "telephone": "+390398882041",
+        "email": "info@it-era.it"
+    }
+    </script>
+
+    <script>
+        // Interactive Call Flow Demo
+        function startCallDemo() {
+            const nodes = document.querySelectorAll('.call-node');
+            nodes.forEach(node => node.classList.remove('active'));
+            
+            let step = 0;
+            const interval = setInterval(() => {
+                if (step > 0) {
+                    nodes[step - 1].classList.remove('active');
+                }
+                if (step < nodes.length) {
+                    nodes[step].classList.add('active');
+                    step++;
+                } else {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        nodes.forEach(node => node.classList.remove('active'));
+                        nodes[0].classList.add('active');
+                    }, 1000);
+                }
+            }, 1500);
+        }
+
+        // Real-time Metrics Update
+        function updateMetrics() {
+            const latency = document.getElementById('latency');
+            const jitter = document.getElementById('jitter');
+            const packetLoss = document.getElementById('packet-loss');
+            
+            // Simulate real-time updates
+            latency.textContent = (10 + Math.random() * 10).toFixed(0) + 'ms';
+            jitter.textContent = (1 + Math.random() * 3).toFixed(1) + 'ms';
+            packetLoss.textContent = (Math.random() * 0.1).toFixed(3) + '%';
+        }
+
+        // Update metrics every 3 seconds
+        setInterval(updateMetrics, 3000);
+
+        // Cost Calculator
+        function calculateSavings() {
+            const extensions = parseInt(document.getElementById('numExtensions').value) || 0;
+            const currentCost = parseFloat(document.getElementById('currentCost').value) || 0;
+            const minutes = parseInt(document.getElementById('monthlyMinutes').value) || 0;
+            
+            // VoIP cost calculation (simplified)
+            const voipBaseCost = extensions * 19.90; // Professional plan
+            const voipMinuteCost = Math.max(0, (minutes - 2000) * 0.05); // Extra minutes
+            const voipTotal = voipBaseCost + voipMinuteCost;
+            
+            const savings = currentCost - voipTotal;
+            const yearlySavings = savings * 12;
+            
+            document.getElementById('currentTotal').textContent = '€' + currentCost;
+            document.getElementById('voipTotal').textContent = '€' + voipTotal.toFixed(0);
+            document.getElementById('monthlySavings').textContent = '€' + Math.max(0, savings).toFixed(0);
+            document.getElementById('yearlySavings').textContent = (Math.max(0, yearlySavings)).toFixed(0);
+        }
+
+        // Number Portability Checker
+        function checkPortability() {
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const resultDiv = document.getElementById('portabilityResult');
+            
+            if (!phoneNumber || phoneNumber.length < 8) {
+                resultDiv.innerHTML = '<div class="check-result result-error">Inserisci un numero valido</div>';
+                return;
+            }
+            
+            // Simulate API call
+            setTimeout(() => {
+                const isPortable = Math.random() > 0.2; // 80% success rate
+                
+                if (isPortable) {
+                    resultDiv.innerHTML = `
+                        <div class="check-result result-success">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Ottimo! Il numero ${phoneNumber} è portabile gratuitamente.
+                            <br><small>Tempo stimato: 24-48 ore lavorative</small>
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="check-result result-error">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Il numero potrebbe richiedere verifiche aggiuntive.
+                            <br><small>Ti contatteremo per maggiori dettagli</small>
+                        </div>
+                    `;
+                }
+            }, 1500);
+            
+            // Show loading
+            resultDiv.innerHTML = '<div class="text-center"><i class="fas fa-spinner fa-spin"></i> Verifica in corso...</div>';
+        }
+
+        // Quality Chart
+        const ctx = document.getElementById('qualityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00', '24:00'],
+                datasets: [{
+                    label: 'Qualità Chiamate (%)',
+                    data: [98, 97, 99, 98, 99, 97, 98],
+                    borderColor: '#20c997',
+                    backgroundColor: 'rgba(32, 201, 151, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        min: 95,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Auto-start demo on page load
+        window.addEventListener('load', function() {
+            setTimeout(startCallDemo, 2000);
+            calculateSavings();
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white', 'shadow');
+            } else {
+                navbar.classList.remove('shadow');
+            }
+        });
+    </script>
+</body>
+</html>

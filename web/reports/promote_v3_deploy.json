@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-08-23 15:59:37",
+  "published_pages": 759,
+  "sample_first_25_urls": [
+    "https://it-era.pages.dev/pages/assistenza-it-abbadia-lariana.html",
+    "https://it-era.pages.dev/pages/assistenza-it-abbiategrasso.html",
+    "https://it-era.pages.dev/pages/assistenza-it-agnadello.html",
+    "https://it-era.pages.dev/pages/assistenza-it-agrate-brianza.html",
+    "https://it-era.pages.dev/pages/assistenza-it-aicurzio.html",
+    "https://it-era.pages.dev/pages/assistenza-it-airuno.html",
+    "https://it-era.pages.dev/pages/assistenza-it-albiate.html",
+    "https://it-era.pages.dev/pages/assistenza-it-albino.html",
+    "https://it-era.pages.dev/pages/assistenza-it-almenno-san-bartolomeo.html",
+    "https://it-era.pages.dev/pages/assistenza-it-alzano-lombardo.html",
+    "https://it-era.pages.dev/pages/assistenza-it-annone-di-brianza.html",
+    "https://it-era.pages.dev/pages/assistenza-it-anzano-del-parco.html",
+    "https://it-era.pages.dev/pages/assistenza-it-appiano-gentile.html",
+    "https://it-era.pages.dev/pages/assistenza-it-arcore.html",
+    "https://it-era.pages.dev/pages/assistenza-it-arosio.html",
+    "https://it-era.pages.dev/pages/assistenza-it-arzago-d-adda.html",
+    "https://it-era.pages.dev/pages/assistenza-it-assago.html",
+    "https://it-era.pages.dev/pages/assistenza-it-ballabio.html",
+    "https://it-era.pages.dev/pages/assistenza-it-bariano.html",
+    "https://it-era.pages.dev/pages/assistenza-it-barlassina.html",
+    "https://it-era.pages.dev/pages/assistenza-it-barzago.html",
+    "https://it-era.pages.dev/pages/assistenza-it-barzio.html",
+    "https://it-era.pages.dev/pages/assistenza-it-basiano.html",
+    "https://it-era.pages.dev/pages/assistenza-it-basiglio.html",
+    "https://it-era.pages.dev/pages/assistenza-it-bellano.html"
+  ],
+  "sitemap_checksum_sha1": "2186b2177651f43bf760520468750ccfda7f9b32",
+  "deploy": {
+    "method": "git",
+    "status": "warning",
+    "message": "push failed: fatal: 'origin' does not appear to be a git repository\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n"
+  },
+  "warnings": []
+}

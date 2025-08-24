@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 3: Dashboard Style - Milano</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #2d3436;
+            background: #ddd6fe;
+            overflow-x: hidden;
+        }
+        
+        /* Dashboard Sidebar */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 280px;
+            height: 100vh;
+            background: linear-gradient(180deg, #6c5ce7 0%, #a29bfe 100%);
+            padding: 30px 25px;
+            z-index: 1000;
+            box-shadow: 4px 0 20px rgba(108,92,231,0.3);
+        }
+        
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .logo-dashboard {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .logo-subtitle {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        
+        .dashboard-nav {
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-bottom: 5px;
+        }
+        
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .nav-icon {
+            width: 20px;
+            margin-right: 15px;
+            text-align: center;
+        }
+        
+        .threat-indicator {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .threat-status {
+            color: #00b894;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .threat-count {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        
+        /* Main Dashboard Content */
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ddd6fe 0%, #f1f2f6 100%);
+        }
+        
+        /* Top Bar */
+        .top-bar {
+            background: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 20px rgba(108,92,231,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2d3436;
+        }
+        
+        .top-controls {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .control-btn {
+            padding: 10px 20px;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .control-btn:hover {
+            background: #5f3dc4;
+            transform: translateY(-2px);
+        }
+        
+        .control-btn.secondary {
+            background: transparent;
+            color: #6c5ce7;
+            border: 2px solid #6c5ce7;
+        }
+        
+        .control-btn.secondary:hover {
+            background: #6c5ce7;
+            color: white;
+        }
+        
+        /* Dashboard Grid */
+        .dashboard-content {
+            padding: 30px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .metric-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(108,92,231,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(108,92,231,0.2);
+        }
+        
+        .metric-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .metric-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+        }
+        
+        .metric-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            color: #636e72;
+            font-size: 0.95rem;
+        }
+        
+        .metric-trend {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+            font-size: 0.85rem;
+        }
+        
+        .trend-up {
+            color: #00b894;
+        }
+        
+        .trend-down {
+            color: #e84393;
+        }
+        
+        /* Services Dashboard */
+        .services-dashboard {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .services-main {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(108,92,231,0.1);
+        }
+        
+        .dashboard-section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-list {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .service-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .service-item:hover {
+            background: white;
+            border-left-color: #6c5ce7;
+            box-shadow: 0 5px 15px rgba(108,92,231,0.1);
+        }
+        
+        .service-icon-dash {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .service-info {
+            flex: 1;
+        }
+        
+        .service-name {
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 5px;
+        }
+        
+        .service-desc-dash {
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+        
+        .service-status {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .status-active {
+            background: #d1f2eb;
+            color: #00b894;
+        }
+        
+        .status-pending {
+            background: #fef9e7;
+            color: #fdcb6e;
+        }
+        
+        /* Quick Stats Sidebar */
+        .quick-stats {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(108,92,231,0.1);
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f2f6;
+        }
+        
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+        
+        .stat-name {
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            color: #2d3436;
+        }
+        
+        /* Pricing Dashboard */
+        .pricing-dashboard {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(108,92,231,0.1);
+        }
+        
+        .pricing-grid-dash {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        
+        .price-widget {
+            text-align: center;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .price-widget.featured {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: white;
+            border-color: #5f3dc4;
+        }
+        
+        .price-widget:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(108,92,231,0.2);
+        }
+        
+        .plan-name {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .plan-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        .plan-features li {
+            padding: 5px 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .feature-check {
+            color: #00b894;
+            font-weight: bold;
+        }
+        
+        .select-plan {
+            width: 100%;
+            padding: 12px;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .select-plan:hover {
+            background: #5f3dc4;
+        }
+        
+        .price-widget.featured .select-plan {
+            background: white;
+            color: #6c5ce7;
+        }
+        
+        .price-widget.featured .select-plan:hover {
+            background: rgba(255,255,255,0.9);
+        }
+        
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .sidebar.active {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .services-dashboard {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid-dash {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .dashboard-content {
+                padding: 20px;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .top-controls {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-dashboard">CYBERSECURITY</div>
+            <div class="logo-subtitle">Milano Protection Suite</div>
+        </div>
+        
+        <nav>
+            <ul class="dashboard-nav">
+                <li class="nav-item">
+                    <a href="#overview" class="nav-link active">
+                        <i class="fas fa-tachometer-alt nav-icon"></i>
+                        Overview
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#threats" class="nav-link">
+                        <i class="fas fa-exclamation-triangle nav-icon"></i>
+                        Threat Detection
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">
+                        <i class="fas fa-shield-alt nav-icon"></i>
+                        Security Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">
+                        <i class="fas fa-credit-card nav-icon"></i>
+                        Protection Plans
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reports" class="nav-link">
+                        <i class="fas fa-chart-bar nav-icon"></i>
+                        Security Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#settings" class="nav-link">
+                        <i class="fas fa-cog nav-icon"></i>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="threat-indicator">
+            <div class="threat-status">SISTEMA SICURO</div>
+            <div class="threat-count">
+                <span id="threats-blocked">1,247</span> minacce bloccate oggi
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <h1 class="page-title">Security Dashboard</h1>
+            <div class="top-controls">
+                <button class="control-btn secondary">Scan Security</button>
+                <button class="control-btn">Emergency Contact</button>
+            </div>
+        </div>
+        
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Metrics Grid -->
+            <section id="overview" class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <div class="metric-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="metric-value">24/7</div>
+                    <div class="metric-label">SOC Monitoring</div>
+                    <div class="metric-trend trend-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>100% Uptime</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <div class="metric-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                    <div class="metric-value">0</div>
+                    <div class="metric-label">Security Breaches</div>
+                    <div class="metric-trend trend-up">
+                        <i class="fas fa-check"></i>
+                        <span>Zero incidents</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <div class="metric-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="metric-value">&lt;5min</div>
+                    <div class="metric-label">Response Time</div>
+                    <div class="metric-trend trend-up">
+                        <i class="fas fa-bolt"></i>
+                        <span>Ultra-fast</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <div class="metric-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="metric-value">ISO</div>
+                    <div class="metric-label">27001 Certified</div>
+                    <div class="metric-trend trend-up">
+                        <i class="fas fa-medal"></i>
+                        <span>Compliance</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Services Dashboard -->
+            <section id="services" class="services-dashboard">
+                <div class="services-main">
+                    <h2 class="dashboard-section-title">
+                        <i class="fas fa-shield-virus"></i>
+                        Active Security Services
+                    </h2>
+                    
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-icon-dash">
+                                <i class="fas fa-virus-slash"></i>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Ransomware Protection</div>
+                                <div class="service-desc-dash">AI-powered detection con behavioral analysis</div>
+                            </div>
+                            <div class="service-status status-active">ATTIVO</div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon-dash">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">SOC Monitoring 24/7</div>
+                                <div class="service-desc-dash">Security analysts dedicati con threat intelligence</div>
+                            </div>
+                            <div class="service-status status-active">ATTIVO</div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon-dash">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Penetration Testing</div>
+                                <div class="service-desc-dash">Test mensili per identificare vulnerabilità</div>
+                            </div>
+                            <div class="service-status status-pending">SCHEDULED</div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon-dash">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Identity Protection</div>
+                                <div class="service-desc-dash">Multi-factor authentication e access control</div>
+                            </div>
+                            <div class="service-status status-active">ATTIVO</div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon-dash">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Security Training</div>
+                                <div class="service-desc-dash">Formazione cybersecurity per dipendenti</div>
+                            </div>
+                            <div class="service-status status-active">ATTIVO</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-stats">
+                    <h3 class="dashboard-section-title">
+                        <i class="fas fa-chart-line"></i>
+                        Quick Stats
+                    </h3>
+                    
+                    <div class="stat-item">
+                        <span class="stat-name">Minacce bloccate oggi</span>
+                        <span class="stat-value">1,247</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-name">Scan completati</span>
+                        <span class="stat-value">156</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-name">Endpoint protetti</span>
+                        <span class="stat-value">85</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-name">Vulnerabilità risolte</span>
+                        <span class="stat-value">23</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-name">Uptime sistema</span>
+                        <span class="stat-value">99.9%</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-name">Tempo medio risposta</span>
+                        <span class="stat-value">3.2 min</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Pricing Dashboard -->
+            <section id="pricing" class="pricing-dashboard">
+                <h2 class="dashboard-section-title">
+                    <i class="fas fa-shield-alt"></i>
+                    Security Protection Plans
+                </h2>
+                
+                <div class="pricing-grid-dash">
+                    <div class="price-widget">
+                        <div class="plan-name">Essential Security</div>
+                        <div class="plan-price">€390<small>/mese</small></div>
+                        <ul class="plan-features">
+                            <li><span class="feature-check">✓</span> Antimalware avanzato</li>
+                            <li><span class="feature-check">✓</span> Firewall gestito</li>
+                            <li><span class="feature-check">✓</span> Email security</li>
+                            <li><span class="feature-check">✓</span> Monitoring base</li>
+                            <li><span class="feature-check">✓</span> Supporto 9-18</li>
+                        </ul>
+                        <button class="select-plan">Seleziona Piano</button>
+                    </div>
+                    
+                    <div class="price-widget featured">
+                        <div class="plan-name">Advanced Security</div>
+                        <div class="plan-price">€790<small>/mese</small></div>
+                        <ul class="plan-features">
+                            <li><span class="feature-check">✓</span> SOC monitoring 24/7</li>
+                            <li><span class="feature-check">✓</span> Incident response</li>
+                            <li><span class="feature-check">✓</span> Threat intelligence</li>
+                            <li><span class="feature-check">✓</span> Vulnerability scanning</li>
+                            <li><span class="feature-check">✓</span> Quarterly pentest</li>
+                        </ul>
+                        <button class="select-plan">Piano Consigliato</button>
+                    </div>
+                    
+                    <div class="price-widget">
+                        <div class="plan-name">Complete Security</div>
+                        <div class="plan-price">€1290<small>/mese</small></div>
+                        <ul class="plan-features">
+                            <li><span class="feature-check">✓</span> Dedicated SOC team</li>
+                            <li><span class="feature-check">✓</span> Advanced persistent threat</li>
+                            <li><span class="feature-check">✓</span> Zero-day protection</li>
+                            <li><span class="feature-check">✓</span> Monthly pentest</li>
+                            <li><span class="feature-check">✓</span> ISO 27001 certification</li>
+                        </ul>
+                        <button class="select-plan">Contatta Esperti</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script>
+        // Sidebar navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all links
+                navLinks.forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+                
+                // Scroll to section
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Threat counter animation
+        let threatCount = 1247;
+        const threatCounter = document.getElementById('threats-blocked');
+        
+        function updateThreatCounter() {
+            threatCount += Math.floor(Math.random() * 5) + 1;
+            threatCounter.textContent = threatCount.toLocaleString();
+        }
+        
+        // Update every 5 seconds
+        setInterval(updateThreatCounter, 5000);
+        
+        // Animate metric cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all metric cards
+        document.querySelectorAll('.metric-card, .service-item, .price-widget').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'all 0.6s ease';
+            observer.observe(element);
+        });
+        
+        // Mobile sidebar toggle
+        if (window.innerWidth <= 1024) {
+            const sidebar = document.querySelector('.sidebar');
+            const topBar = document.querySelector('.top-bar');
+            
+            // Add menu button
+            const menuBtn = document.createElement('button');
+            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            menuBtn.className = 'control-btn';
+            menuBtn.style.order = '-1';
+            
+            menuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+            });
+            
+            document.querySelector('.top-controls').appendChild(menuBtn);
+        }
+    </script>
+</body>
+</html>

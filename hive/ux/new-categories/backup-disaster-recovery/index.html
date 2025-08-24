@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup e Disaster Recovery - Proteggi i Tuoi Dati | IT-ERA</title>
+    <meta name="description" content="Soluzioni professionali di backup e disaster recovery. Protezione dati 24/7, recovery time minimo, infrastruttura sicura e certificata.">
+    
+    <!-- Performance & SEO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="styles/backup-recovery.css" as="style">
+    <link rel="preload" href="components/security-shield.js" as="script">
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/backup-recovery.css">
+    
+    <!-- Schema.org for Backup Services -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Backup e Disaster Recovery Professionale",
+        "description": "Soluzioni complete di protezione dati e disaster recovery per aziende",
+        "author": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+        }
+    }
+    </script>
+</head>
+
+<body class="backup-recovery-page">
+    <!-- Security Status Bar -->
+    <div class="security-status-bar" role="banner" aria-label="Stato sicurezza">
+        <div class="container">
+            <div class="status-items">
+                <div class="status-item">
+                    <span class="status-icon secured" aria-hidden="true">🛡️</span>
+                    <span>Infrastruttura Sicura</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-icon active" aria-hidden="true">🔒</span>
+                    <span>Crittografia AES-256</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-icon certified" aria-hidden="true">✅</span>
+                    <span>Certificazione ISO 27001</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Security Visualization -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Proteggi la Tua Azienda con 
+                        <span class="gradient-text">Backup Professionale</span>
+                    </h1>
+                    <p class="hero-description">
+                        Soluzioni di disaster recovery che garantiscono continuità operativa. 
+                        Recovery Time Objective (RTO) < 4 ore, protezione dati certificata.
+                    </p>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <strong>99.9%</strong>
+                            <span>Uptime SLA</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>< 15 min</strong>
+                            <span>RPO Medio</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>24/7</strong>
+                            <span>Monitoraggio</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-group">
+                        <button class="btn btn-primary" onclick="openAssessment()" aria-describedby="assessment-desc">
+                            <span>Analisi Rischi Gratuita</span>
+                            <span class="btn-icon" aria-hidden="true">🔍</span>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scheduleDemo()" aria-describedby="demo-desc">
+                            <span>Demo Recovery</span>
+                            <span class="btn-icon" aria-hidden="true">▶️</span>
+                        </button>
+                    </div>
+
+                    <!-- Hidden descriptions for accessibility -->
+                    <div id="assessment-desc" class="sr-only">Avvia una valutazione gratuita dei rischi per i tuoi dati</div>
+                    <div id="demo-desc" class="sr-only">Richiedi una dimostrazione del processo di recovery</div>
+                </div>
+
+                <!-- Interactive Security Shield Visualization -->
+                <div class="hero-visual">
+                    <div class="security-shield-container">
+                        <div class="security-shield" id="securityShield" role="img" aria-label="Visualizzazione sicurezza dati">
+                            <div class="shield-layers">
+                                <div class="layer firewall" data-protection="Firewall"></div>
+                                <div class="layer encryption" data-protection="Crittografia"></div>
+                                <div class="layer backup" data-protection="Backup"></div>
+                                <div class="layer monitoring" data-protection="Monitoraggio"></div>
+                            </div>
+                            <div class="data-flow">
+                                <div class="data-particle" style="--delay: 0s"></div>
+                                <div class="data-particle" style="--delay: 1s"></div>
+                                <div class="data-particle" style="--delay: 2s"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recovery Time Visualization -->
+                        <div class="recovery-timeline">
+                            <div class="timeline-item">
+                                <span class="time">0 min</span>
+                                <span class="event">Incidente Rilevato</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="time">< 5 min</span>
+                                <span class="event">Notifica Automatica</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="time">< 15 min</span>
+                                <span class="event">Inizio Recovery</span>
+                            </div>
+                            <div class="timeline-item highlighted">
+                                <span class="time">< 4 ore</span>
+                                <span class="event">Sistema Ripristinato</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Risk Assessment Calculator -->
+    <section class="risk-calculator-section" aria-labelledby="risk-calculator-title">
+        <div class="container">
+            <h2 id="risk-calculator-title" class="section-title">Calcola il Tuo Rischio Aziendale</h2>
+            <p class="section-subtitle">Scopri quanto potrebbero costarti i downtime non pianificati</p>
+            
+            <div class="calculator-container">
+                <form class="risk-form" id="riskCalculator" aria-label="Calcolatore rischio dati">
+                    <div class="form-group">
+                        <label for="employees">Numero Dipendenti</label>
+                        <select id="employees" name="employees" required>
+                            <option value="">Seleziona...</option>
+                            <option value="1-10">1-10 dipendenti</option>
+                            <option value="11-50">11-50 dipendenti</option>
+                            <option value="51-200">51-200 dipendenti</option>
+                            <option value="201+">201+ dipendenti</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="revenue">Fatturato Annuo</label>
+                        <select id="revenue" name="revenue" required>
+                            <option value="">Seleziona...</option>
+                            <option value="<100k">Meno di €100.000</option>
+                            <option value="100k-500k">€100.000 - €500.000</option>
+                            <option value="500k-2M">€500.000 - €2.000.000</option>
+                            <option value="2M+">Oltre €2.000.000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="criticality">Criticità Dati</label>
+                        <select id="criticality" name="criticality" required>
+                            <option value="">Seleziona...</option>
+                            <option value="low">Bassa - File office standard</option>
+                            <option value="medium">Media - Database clienti</option>
+                            <option value="high">Alta - Dati finanziari/sanitari</option>
+                            <option value="critical">Critica - Sistemi mission-critical</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        Calcola Rischio
+                    </button>
+                </form>
+                
+                <div class="risk-results" id="riskResults" aria-live="polite">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Comparison -->
+    <section class="solutions-section" aria-labelledby="solutions-title">
+        <div class="container">
+            <h2 id="solutions-title" class="section-title">Soluzioni su Misura</h2>
+            
+            <div class="solutions-grid">
+                <div class="solution-card basic">
+                    <div class="solution-header">
+                        <h3>Backup Essenziale</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">29</span>
+                            <span class="period">/mese</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> Backup giornaliero</li>
+                        <li><span class="check">✓</span> 30 giorni retention</li>
+                        <li><span class="check">✓</span> Crittografia standard</li>
+                        <li><span class="check">✓</span> Support email</li>
+                        <li class="unavailable"><span class="cross">✗</span> Recovery testing</li>
+                    </ul>
+                    <button class="btn btn-outline">Inizia Prova</button>
+                </div>
+                
+                <div class="solution-card professional featured">
+                    <div class="featured-badge">Consigliato</div>
+                    <div class="solution-header">
+                        <h3>Disaster Recovery Pro</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">89</span>
+                            <span class="period">/mese</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> Backup continuo (CDP)</li>
+                        <li><span class="check">✓</span> 90 giorni retention</li>
+                        <li><span class="check">✓</span> Crittografia AES-256</li>
+                        <li><span class="check">✓</span> Support 24/7</li>
+                        <li><span class="check">✓</span> Recovery testing mensile</li>
+                        <li><span class="check">✓</span> RTO < 4 ore garantito</li>
+                    </ul>
+                    <button class="btn btn-primary">Inizia Subito</button>
+                </div>
+                
+                <div class="solution-card enterprise">
+                    <div class="solution-header">
+                        <h3>Enterprise HA</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">249</span>
+                            <span class="period">/mese</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><span class="check">✓</span> Replica real-time</li>
+                        <li><span class="check">✓</span> Retention personalizzata</li>
+                        <li><span class="check">✓</span> Multi-site backup</li>
+                        <li><span class="check">✓</span> Dedicated support</li>
+                        <li><span class="check">✓</span> Recovery testing settimanale</li>
+                        <li><span class="check">✓</span> RTO < 1 ora garantito</li>
+                        <li><span class="check">✓</span> Compliance reporting</li>
+                    </ul>
+                    <button class="btn btn-outline">Contatta Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Certifications -->
+    <section class="trust-section">
+        <div class="container">
+            <h2 class="section-title">Sicurezza Certificata</h2>
+            
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <img src="assets/iso27001.svg" alt="Certificazione ISO 27001" loading="lazy">
+                    <h3>ISO 27001</h3>
+                    <p>Gestione sicurezza informazioni</p>
+                </div>
+                <div class="cert-card">
+                    <img src="assets/gdpr.svg" alt="GDPR Compliant" loading="lazy">
+                    <h3>GDPR</h3>
+                    <p>Protezione dati personali</p>
+                </div>
+                <div class="cert-card">
+                    <img src="assets/tier3.svg" alt="Data Center Tier III" loading="lazy">
+                    <h3>Tier III</h3>
+                    <p>Data center ridondanti</p>
+                </div>
+                <div class="cert-card">
+                    <img src="assets/soc2.svg" alt="SOC 2 Type II" loading="lazy">
+                    <h3>SOC 2 Type II</h3>
+                    <p>Controlli operativi</p>
+                </div>
+            </div>
+
+            <div class="testimonials-slider" role="region" aria-label="Testimonianze clienti">
+                <div class="testimonial active">
+                    <blockquote>
+                        "Grazie a IT-ERA abbiamo recuperato completamente i nostri sistemi in meno di 2 ore dopo un ransomware. Il loro sistema di backup ci ha salvato l'azienda."
+                    </blockquote>
+                    <cite>— Marco Rossi, CTO TechnoWeb SRL</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="cta-footer">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Proteggi i Tuoi Dati Oggi</h2>
+                <p>Non aspettare il disastro. Inizia con una valutazione gratuita.</p>
+                
+                <div class="cta-actions">
+                    <button class="btn btn-primary large" onclick="openAssessment()">
+                        Analisi Gratuita
+                    </button>
+                    <div class="contact-info">
+                        <span>📞 +39 02 1234 5678</span>
+                        <span>✉️ backup@it-era.it</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Assessment Modal -->
+    <div class="modal" id="assessmentModal" role="dialog" aria-labelledby="assessment-modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="assessment-modal-title">Analisi Rischi Personalizzata</h3>
+                <button class="modal-close" onclick="closeAssessment()" aria-label="Chiudi modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Assessment form will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="components/security-shield.js" defer></script>
+    <script src="components/risk-calculator.js" defer></script>
+    <script src="components/modal-manager.js" defer></script>
+    
+    <!-- Performance monitoring -->
+    <script>
+        // Critical CSS and resource loading optimization
+        window.addEventListener('load', function() {
+            // Lazy load non-critical resources
+            if ('IntersectionObserver' in window) {
+                const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src || img.src;
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+                lazyImages.forEach(img => imageObserver.observe(img));
+            }
+        });
+    </script>
+</body>
+</html>

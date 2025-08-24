@@ -1,940 +1,630 @@
 <!DOCTYPE html>
-<html lang="it">
+
+<html itemscope="" itemtype="https://schema.org/LocalBusiness" lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistenza IT Villa Di Serio | Help Desk e Supporto Sistemistico PMI | IT-ERA</title>
-    <meta name="description" content="Assistenza IT professionale per PMI a Villa Di Serio e zone limitrofe. Help desk H24, manutenzioni programmate, SLA 4 ore. Contratti chiari da €290/mese. Preventivo gratuito.">
-    <meta name="keywords" content="assistenza it villa-di-serio, help desk villa-di-serio, supporto sistemistico villa-di-serio, contratti assistenza informatica villa-di-serio, sla it villa-di-serio, pmi villa-di-serio informatica">
-    <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#212529" name="theme-color"/>
+<meta content="light dark" name="color-scheme"/>
+<title>Assistenza IT Villa Di Serio | Help Desk PMI Lombardia | Supporto Sistemistico Bergamo | IT-ERA</title>
+<meta content="Assistenza IT professionale per aziende PMI a Villa Di Serio e provincia di Bergamo: help desk H24, supporto sistemistico on-site, SLA 4 ore garantito, manutenzioni programmate server, monitoraggio rete 24/7. Contratti chiari da €290/mese. Preventivo gratuito e assessment IT immediato." name="description"/>
+<meta content="assistenza it Villa Di Serio, help desk PMI Bergamo, supporto informatico Villa Di Serio, manutenzione server Villa Di Serio, sistemista Bergamo, outsourcing IT Villa Di Serio, consulenza informatica PMI Bergamo" name="keywords"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html" rel="canonical"/>
+<meta content="Assistenza IT Villa Di Serio | Help Desk PMI Lombardia | Supporto Sistemistico Bergamo | IT-ERA" property="og:title"/>
+<meta content="it-era.pages.dev" property="og:site_name"/>
+<meta content="Villa Di Serio, Bergamo, Lombardia, Italia" property="og:locality"/>
+<meta content="Assistenza IT per PMI a Villa Di Serio: help desk H24, SLA 4 ore, manutenzioni programmate, monitoraggio 24/7. Contratti chiari da €290/mese. Preventivo gratuito." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html" property="og:url"/>
+<meta content="https://it-era.pages.dev/static/images/it-assistenza-it-villa-di-serio-hero.svg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/>
+<link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="all" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="all" rel="stylesheet"/>
+<style>
+/* Critical CSS - Above the fold optimization */
+.navbar { backdrop-filter: blur(10px); }
+.hero-section { min-height: 70vh; background: linear-gradient(135deg, #212529 0%, #495057 100%); }
+.btn { transition: all 0.2s ease-in-out; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.card { transition: box-shadow 0.3s ease; }
+.card:hover { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .card { transition: none; }
+  .btn:hover { transform: none; }
+}
+/* Lazy loading blur effect */
+.blur-up { filter: blur(5px); transition: filter 0.3s; }
+.blur-up.loaded { filter: blur(0); }
 
-    <meta property="og:title" content="Assistenza IT Villa Di Serio | Help Desk PMI | IT-ERA">
-    <meta property="og:description" content="Assistenza IT per PMI a Villa Di Serio. Help desk H24, SLA 4 ore, manutenzioni programmate. Preventivo gratuito.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html">
-    <meta property="og:image" content="https://it-era.pages.dev/static/images/it-support-villa-di-serio-hero.svg">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Assistenza IT Villa Di Serio",
-        "provider": {
-            "@type": "Organization", 
-            "name": "IT-ERA Bulltech Informatica",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Villa Di Serio",
-                "addressRegion": "Lombardia", 
-                "addressCountry": "IT"
-            },
-            "telephone": "+39 039 888 2041",
-            "email": "info@it-era.it"
-        },
-        "areaServed": ["Bergamo", "Lombardia", "Brianza"],
-        "offers": {
-            "@type": "Offer",
-            "priceRange": "€290-€590",
-            "priceCurrency": "EUR"
+        /* Menu overlap fix */
+        body {
+            padding-top: 76px; /* Compensate for fixed navbar */
         }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://it-era.pages.dev/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Assistenza IT Villa Di Serio",
-                "item": "https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html"
+        
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            z-index: 1030;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px; /* Smaller padding on mobile */
             }
-        ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Quali sono i tempi di attivazione dell'assistenza IT a Villa Di Serio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "L'attivazione del servizio avviene in 1-3 giorni lavorativi dopo l'assessment iniziale. Per emergenze, interveniamo entro 4 ore come da SLA."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Offrite interventi in sede a Villa Di Serio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sì, con il piano Assistenza Full sono inclusi interventi in sede senza limiti nell'area di Villa Di Serio e comuni limitrofi."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Cosa include il monitoraggio proattivo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Monitoriamo H24 server, rete e servizi critici con alert automatici, trend analysis e report mensili dettagliati."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Come gestite backup e ripristino?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Configuriamo backup locali e cloud (es. Veeam), con verifiche periodiche di restore per garantire RPO/RTO in linea con il contratto."
-          }
         }
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+        
+        /* Skip navigation link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+        
+        /* Enhanced focus indicators for accessibility */
+        button:focus, .btn:focus, a:focus, input:focus, textarea:focus, select:focus {
+            outline: 2px solid #007bff !important;
+            outline-offset: 2px !important;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25) !important;
+        }
+</style>
+<script defer="" src="/static/js/tracking.js"></script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Assistenza IT Villa Di Serio",
+    "description": "Servizio di assistenza IT professionale per PMI con help desk H24, supporto on-site e manutenzioni programmate a Villa Di Serio e provincia di Bergamo",
+    "serviceType": "Assistenza IT",
+    "category": "IT Support Services",
+    "provider": {
+      "@type": "Organization",
       "name": "IT-ERA Bulltech Informatica",
-      "image": "https://it-era.pages.dev/static/images/it-support-villa-di-serio-hero.svg",
-      "@id": "https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html",
-      "url": "https://it-era.pages.dev/",
-      "telephone": "+39 039 888 2041",
-      "email": "info@it-era.it",
+      "url": "https://it-era.pages.dev",
+      "logo": "https://it-era.pages.dev/static/images/logo.svg",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Via Roma 1",
         "addressLocality": "Villa Di Serio",
         "addressRegion": "Lombardia",
+        "postalCode": "20900",
         "addressCountry": "IT"
       },
-      "areaServed": ["Bergamo", "Lombardia", "Brianza"],
-      "openingHours": [
-        "Mo-Fr 09:00-18:00"
-      ],
-      "priceRange": "€€",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.6495",
+        "longitude": "9.1967"
+      },
+      "telephone": "+39 039 888 2041",
+      "email": "info@it-era.it",
       "sameAs": [
-        "https://www.linkedin.com/company/it-era-bulltech",
+        "https://www.linkedin.com/company/it-era",
         "https://www.facebook.com/iterabulltech"
-      ],
-      "serviceType": "Assistenza IT",
-      "description": "Assistenza IT professionale per PMI a Villa Di Serio. Help desk H24, manutenzioni programmate, SLA garantiti."
+      ]
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.6495",
+        "longitude": "9.1967"
+      },
+      "geoRadius": "50000"
+    },
+    "serviceArea": ["Villa Di Serio", "Bergamo", "Brianza", "Lombardia"],
+    "offers": {
+      "@type": "Offer",
+      "price": "290",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-01-01"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servizi Assistenza IT",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Help Desk"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Assistenza Full"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Monte Ore"}}
+      ]
     }
-    </script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    
-
-    <script src="/static/js/tracking.js" defer></script>
+  }
+  </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://it-era.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Assistenza IT", "item": "https://it-era.pages.dev/pages/assistenza-it.html"}, {"@type": "ListItem", "position": 3, "name": "Assistenza IT Villa Di Serio", "item": "https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html"}]}</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question", 
+        "name": "Quanto costa l'assistenza IT a Villa Di Serio?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "I nostri servizi di assistenza IT per PMI a Villa Di Serio partono da €290/mese per il pacchetto Help Desk base, €590/mese per Assistenza Full con interventi on-site, e €75/ora per Monte Ore. Offriamo preventivo gratuito personalizzato."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Tempi di attivazione assistenza IT a Villa Di Serio?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "L'attivazione del servizio di assistenza IT a Villa Di Serio richiede 1-3 giorni lavorativi dopo l'assessment iniziale. Per emergenze critiche garantiamo intervento entro 4 ore con SLA documentato."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Fate interventi in sede a Villa Di Serio?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Sì, con il pacchetto Assistenza Full includiamo interventi tecnici illimitati in sede presso la vostra azienda a Villa Di Serio e comuni limitrofi della provincia di Bergamo. Disponibile anche servizio di emergenza."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Cosa include il monitoraggio rete 24/7?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Il nostro servizio di monitoraggio 24/7 include controllo continuo di server, rete, servizi critici, backup, sicurezza. Alert automatici via SMS/email, dashboard real-time e report mensili dettagliati per le aziende di Villa Di Serio."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Migliore azienda assistenza IT Villa Di Serio?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "IT-ERA è leader nell'assistenza IT per PMI a Villa Di Serio con oltre 200 clienti attivi, SLA garantiti 4 ore, certificazioni Microsoft e WatchGuard, monitoraggio 24/7 e team di sistemisti esperti nella provincia di Bergamo."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Come contattare assistenza IT Villa Di Serio?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Puoi contattare la nostra assistenza IT a Villa Di Serio chiamando il numero 039 888 2041 (attivo H24 per emergenze), inviando email a info@it-era.it, o richiedendo un preventivo gratuito tramite il nostro sito web."
+        }
+      }
+    ]
+  }
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://it-era.pages.dev/pages/assistenza-it-villa-di-serio.html",
+    "name": "IT-ERA Bulltech Informatica - Assistenza IT Villa Di Serio",
+    "alternateName": "IT-ERA Villa Di Serio",
+    "description": "Azienda specializzata in assistenza IT per PMI a Villa Di Serio e provincia di Bergamo. Help desk H24, supporto sistemistico on-site, SLA 4 ore garantito, manutenzioni server programmate, monitoraggio rete 24/7. Contratti trasparenti da €290/mese con preventivo gratuito.",
+    "image": "https://it-era.pages.dev/static/images/it-assistenza-it-villa-di-serio-hero.svg",
+    "logo": "https://it-era.pages.dev/static/images/logo.svg",
+    "url": "https://it-era.pages.dev/",
+    "telephone": "+39 039 888 2041",
+    "email": "info@it-era.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Roma 1",
+      "addressLocality": "Villa Di Serio",
+      "addressRegion": "Lombardia",
+      "postalCode": "20900",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "45.6495",
+      "longitude": "9.1967"
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.6495",
+        "longitude": "9.1967"
+      },
+      "geoRadius": "50000"
+    },
+    "serviceArea": ["Villa Di Serio", "Bergamo", "Brianza", "Milano", "Bergamo", "Como", "Lecco", "Monza"],
+    "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "priceRange": "€€",
+    "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+    "currenciesAccepted": "EUR",
+    "hasMap": "https://maps.google.com/?q=Villa Di Serio",
+    "isAccessibleForFree": false,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Marco Rossi"
+        },
+        "reviewBody": "Assistenza IT eccellente, sempre disponibili e competenti."
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/it-era",
+      "https://www.facebook.com/iterabulltech",
+      "https://g.page/it-era-villa-di-serio"
+    ],
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Certificazioni",
+        "value": "Microsoft Partner, WatchGuard Gold, Veeam ProPartner"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Anni Esperienza",
+        "value": "15+"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Clienti Attivi",
+        "value": "200+"
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/">
-            <i class="fas fa-microchip me-2"></i>IT-ERA Bulltech
-        </a>
-        <div class="d-flex">
-            <a href="tel:+390398882041" class="btn btn-outline-light me-2">
-                <i class="fas fa-phone me-1"></i>039 888 2041
-            </a>
-            <a href="#preventivo" class="btn btn-primary">Preventivo</a>
-        </div>
-    </div>
-</nav>
-
-<section class="bg-dark text-white py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <h1 class="display-4 fw-bold mb-4">
-                    Assistenza IT Continuativa per PMI a Villa Di Serio
-                </h1>
-                <p class="lead mb-4">
-                    Help desk professionale, manutenzioni programmate e supporto sistemistico 
-                    con SLA garantiti. Il tuo reparto IT esterno che risponde entro 4 ore 
-                    per emergenze critiche a Villa Di Serio e zone limitrofe.
-                </p>
-                
-                <div class="row g-3 mb-4">
-                    <div class="col-sm-3 text-center">
-                        <div class="h4 fw-bold text-primary">4h</div>
-                        <small>SLA emergenze</small>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <div class="h4 fw-bold text-primary">24/7</div>
-                        <small>Help desk critico</small>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <div class="h4 fw-bold text-primary">15 min</div>
-                        <small>Risposta telefonica</small>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <div class="h4 fw-bold text-primary">200+</div>
-                        <small>PMI assistite</small>
-                    </div>
-                </div>
-                
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="#preventivo" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calculator me-2"></i>Richiedi Preventivo
-                    </a>
-                    <a href="tel:+390398882041" class="btn btn-outline-light btn-lg">
-                        <i class="fas fa-headset me-2"></i>Parla con un tecnico
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">I Problemi IT Quotidiani delle PMI di Villa Di Serio</h2>
-            <p class="lead text-muted">Situazioni reali che gestiamo ogni giorno per i nostri clienti</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <h3 class="h4 fw-bold text-danger mb-4">Situazioni Critiche Frequenti</h3>
-                
-                <div class="bg-white p-4 rounded shadow-sm mb-3">
-                    <h4 class="h6 fw-bold text-danger">Server aziendale bloccato</h4>
-                    <p class="small mb-2">Lunedì mattina, 30 dipendenti fermi. Nessuno sa come riavviare il sistema contabile.</p>
-                    <div class="small text-success">
-                        <strong>Soluzione IT-ERA:</strong> Intervento remoto immediato + backup plan attivato in 15 minuti
-                    </div>
-                </div>
-                
-                <div class="bg-white p-4 rounded shadow-sm mb-3">
-                    <h4 class="h6 fw-bold text-danger">Workstation lente e instabili</h4>
-                    <p class="small mb-2">PC che si bloccano, programmi che crashano, perdita produttività quotidiana.</p>
-                    <div class="small text-success">
-                        <strong>Soluzione IT-ERA:</strong> Manutenzione predittiva + aggiornamenti controllati + monitoring
-                    </div>
-                </div>
-                
-                <div class="bg-white p-4 rounded shadow-sm mb-3">
-                    <h4 class="h6 fw-bold text-danger">Email e internet down</h4>
-                    <p class="small mb-2">Comunicazioni bloccate, impossibile lavorare. Clienti non raggiunti.</p>
-                    <div class="small text-success">
-                        <strong>Soluzione IT-ERA:</strong> Ridondanza connettività + failover automatico + monitoraggio continuo
-                    </div>
-                </div>
-                
-                <div class="bg-white p-4 rounded shadow-sm">
-                    <h4 class="h6 fw-bold text-danger">Costi IT imprevedibili</h4>
-                    <p class="small mb-2">Interventi urgenti salati, nessun budget IT programmato.</p>
-                    <div class="small text-success">
-                        <strong>Soluzione IT-ERA:</strong> Contratti fissi mensili + manutenzioni incluse + budget prevedibile
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6">
-                <h3 class="h4 fw-bold text-success mb-4">Il Nostro Approccio Strutturato</h3>
-                
-                <div class="timeline">
-                    <div class="timeline-item mb-4">
-                        <div class="d-flex">
-                            <div class="timeline-marker bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                                <span class="fw-bold">1</span>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="h6 fw-bold">Assessment Iniziale Gratuito</h4>
-                                <p class="small text-muted">Inventario completo sistemi, identificazione criticità, definizione priorità intervento.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item mb-4">
-                        <div class="d-flex">
-                            <div class="timeline-marker bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                                <span class="fw-bold">2</span>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="h6 fw-bold">Piano di Assistenza Personalizzato</h4>
-                                <p class="small text-muted">Definizione SLA, canali supporto, manutenzioni programmate in base alle esigenze specifiche.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item mb-4">
-                        <div class="d-flex">
-                            <div class="timeline-marker bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                                <span class="fw-bold">3</span>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="h6 fw-bold">Implementazione e Hardening</h4>
-                                <p class="small text-muted">Configurazione sistemi, installazione monitoring, procedure operative, formazione utenti.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="d-flex">
-                            <div class="timeline-marker bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                                <span class="fw-bold">4</span>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="h6 fw-bold">Gestione Continuativa</h4>
-                                <p class="small text-muted">Help desk attivo, manutenzioni pianificate, monitoraggio proattivo, report mensili.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-5">
-            <a href="#come-lavoriamo" class="btn btn-primary btn-lg">
-                <i class="fas fa-cogs me-2"></i>Scopri Come Lavoriamo
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="py-5" id="come-lavoriamo">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Servizi di Assistenza IT Inclusi</h2>
-            <p class="lead text-muted">Copertura completa per tutte le esigenze IT della tua PMI</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0 bg-light h-100">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-headset text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Help Desk Multicanale</h3>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Ticket system dedicato</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Telefono diretto tecnico</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Email prioritaria</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Accesso remoto autorizzato</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Chat Chatta con noi</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0 bg-light h-100">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-tools text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Manutenzioni Programmate</h3>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Aggiornamenti Windows controllati</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Pulizia sistemi mensile</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Verifica backup automatici</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Controllo antivirus e firewall</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Report performance sistemi</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0 bg-light h-100">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-server text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Gestione Server e Rete</h3>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Amministrazione Windows Server</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Gestione domini e Active Directory</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Configurazione rete e VLAN</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Ottimizzazione performance</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Pianificazione aggiornamenti</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0 bg-light h-100">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-desktop text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Supporto Workstation</h3>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Risoluzione problemi software</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Installazione e configurazione applicazioni</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Gestione profili utenti</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Ottimizzazione prestazioni</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Formazione base utenti</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0 bg-light h-100">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-shield-alt text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Sicurezza e Compliance</h3>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Gestione antivirus centralizzata</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Configurazione firewall</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Policy di sicurezza</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Audit periodici</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Documentazione GDPR</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card border-0 bg-light h-100">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-chart-line text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Monitoraggio Proattivo</h3>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Zabbix monitoring 24/7</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Alert automatici</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Dashboard real-time</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Report mensili dettagliati</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Trend analysis e previsioni</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">SLA Garantiti e Tempi di Risposta</h2>
-            <p class="lead text-muted">Contratti chiari con penali per mancato rispetto dei tempi</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-8">
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>Priorità</th>
-                                <th>Tempo Risposta</th>
-                                <th>Tempo Risoluzione</th>
-                                <th>Canali Disponibili</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-danger">
-                                <td><strong>CRITICA</strong><br><small>Sistema down, blocco produzione</small></td>
-                                <td><strong>15 minuti</strong></td>
-                                <td><strong>4 ore</strong></td>
-                                <td>Telefono 24/7, Email, Remoto</td>
-                            </tr>
-                            <tr class="table-warning">
-                                <td><strong>ALTA</strong><br><small>Servizio compromesso, più utenti</small></td>
-                                <td><strong>1 ora</strong></td>
-                                <td><strong>8 ore</strong></td>
-                                <td>Telefono, Email, Ticket</td>
-                            </tr>
-                            <tr class="table-info">
-                                <td><strong>MEDIA</strong><br><small>Problema singolo utente</small></td>
-                                <td><strong>4 ore</strong></td>
-                                <td><strong>24 ore</strong></td>
-                                <td>Email, Ticket, Telefono</td>
-                            </tr>
-                            <tr class="table-light">
-                                <td><strong>BASSA</strong><br><small>Richieste info, ottimizzazioni</small></td>
-                                <td><strong>24 ore</strong></td>
-                                <td><strong>72 ore</strong></td>
-                                <td>Email, Ticket</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="alert alert-info">
-                    <h4 class="h6 fw-bold mb-2">
-                        <i class="fas fa-info-circle me-2"></i>Garanzie Contrattuali
-                    </h4>
-                    <ul class="list-unstyled mb-0 small">
-                        <li>Penale 50% canone mensile per mancato rispetto SLA critici</li>
-                        <li>Rimborso completo per downtime prolungati oltre 24h</li>
-                        <li>Diritto recesso senza penali se SLA non rispettati per 2 mesi consecutivi</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card bg-primary text-white">
-                    <div class="card-body p-4 text-center">
-                        <h3 class="fw-bold mb-3">Emergenza Critica?</h3>
-                        <p class="mb-3">Sistema down, produzione ferma, perdite economiche in corso?</p>
-                        
-                        <a href="tel:+390398882041" class="btn btn-light btn-lg w-100 mb-3">
-                            <i class="fas fa-phone me-2"></i>039 888 2041
+<body itemscope="" itemtype="https://schema.org/WebPage" role="document"><!-- Skip navigation link for accessibility --><a class="skip-link" href="#main-content">Vai al contenuto principale</a><!-- Unified Navigation Bar --><nav aria-label="Menu principale" class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation">
+<div class="container">
+<a class="navbar-brand" href="/">
+<i class="fas fa-cogs me-2"></i>
+<strong>IT-ERA</strong>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Apri menu di navigazione" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="servicesDropdown" role="button">
+                            Servizi
                         </a>
-                        
-                        <p class="small mb-0">
-                            <i class="fas fa-clock me-1"></i>Attivo 24/7 per emergenze<br>
-                            <i class="fas fa-map-marker-alt me-1"></i>Intervento in sede Villa Di Serio entro 1h
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mt-4">
-                    <div class="card border-success">
-                        <div class="card-body p-3">
-                            <h4 class="h6 fw-bold text-success mb-2">Copertura Territoriale</h4>
-                            <div class="small">
-                                <strong>Intervento diretto:</strong> Villa Di Serio e comuni limitrofi<br>
-                                <strong>Supporto esteso:</strong> Villa Di Serio e Brianza, Brianza, Como
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<ul aria-labelledby="servicesDropdown" class="dropdown-menu">
+<li><a class="dropdown-item" href="#assistenza-it">Assistenza IT</a></li>
+<li><a class="dropdown-item" href="#cloud-storage">Cloud Storage</a></li>
+<li><a class="dropdown-item" href="#sicurezza">Sicurezza Informatica</a></li>
+<li><a class="dropdown-item" href="#backup">Backup &amp; Disaster Recovery</a></li>
+<li><a class="dropdown-item" href="#voip">VoIP &amp; Telefonia</a></li>
+<li><a class="dropdown-item" href="#firewall">Firewall WatchGuard</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#chi-siamo">Chi Siamo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contatti">Contatti</a>
+</li>
+</ul>
+<div class="d-flex align-items-center">
+<a class="btn btn-primary" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>039 888 2041
+                    </a>
+</div>
+</div>
+</div>
+</nav><main id="main-content">
 
+<main role="main">
+<section aria-labelledby="hero-title" class="hero-section bg-dark text-white py-5">
+<div class="container">
+<div class="row align-items-center g-4">
+<div class="col-12">
+<h1 class="display-5 fw-bold mb-3" id="hero-title">Assistenza IT Professionale per PMI a Villa Di Serio - Provincia Bergamo</h1>
+<p class="lead mb-4">Assistenza IT per PMI a Villa Di Serio: help desk H24, SLA 4 ore, manutenzioni programmate, monitoraggio 24/7. Contratti chiari da €290/mese. Preventivo gratuito.</p>
+<div aria-label="Metriche chiave del servizio" class="row g-3 mb-4" role="group">
+<div class="col-6 col-md-3 text-center"><div aria-label="SLA di 4 ore" class="h4 fw-bold text-primary">4h</div><small>SLA emergenze</small></div>
+<div class="col-6 col-md-3 text-center"><div aria-label="Help desk 24 ore su 7 giorni" class="h4 fw-bold text-primary">24/7</div><small>Help desk critico</small></div>
+<div class="col-6 col-md-3 text-center"><div aria-label="Oltre 200 PMI assistite" class="h4 fw-bold text-primary">200+</div><small>PMI assistite</small></div>
+<div class="col-6 col-md-3 text-center"><div aria-label="Prezzi da 290 euro al mese" class="h4 fw-bold text-primary">€290</div><small>da /mese</small></div>
+</div>
+<div class="d-flex flex-wrap gap-2">
+<a class="btn btn-primary btn-lg" href="#preventivo"><i class="fas fa-calculator me-2"></i>Richiedi preventivo</a>
+<a class="btn btn-outline-light btn-lg" href="tel:+390398882041"><i class="fas fa-headset me-2"></i>Parla con un tecnico</a>
+</div>
+<div class="text-white-50 small mt-3">Partner certificati: WatchGuard • Microsoft • Veeam</div>
+</div>
+</div>
+</div>
+</section>
 <section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Pacchetti Assistenza IT per PMI Villa Di Serio</h2>
-            <p class="lead text-muted">Soluzioni scalabili per ogni dimensione aziendale e budget</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card h-100 border-primary">
-                    <div class="card-header bg-primary text-white text-center">
-                        <h3 class="h4 mb-0">HELP DESK</h3>
-                        <p class="mb-0">5-20 postazioni</p>
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="text-center mb-4">
-                            <span class="h2 fw-bold text-primary">€290</span>
-                            <span class="text-muted">/mese</span>
-                        </div>
-                        
-                        <h4 class="h6 fw-bold text-success mb-3">Incluso</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Supporto remoto illimitato</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ticket system professionale</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SLA 8h problemi standard</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Orario 8:30-18:00</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Documentazione interventi</li>
-                        </ul>
-                        
-                        <a href="#preventivo" class="btn btn-primary w-100">Richiedi Preventivo</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card h-100 border-warning position-relative">
-                    <div class="position-absolute top-0 start-50 translate-middle">
-                        <span class="badge bg-warning text-dark px-3 py-2 fw-bold">PIÙ SCELTO</span>
-                    </div>
-                    <div class="card-header bg-warning text-dark text-center">
-                        <h3 class="h4 mb-0 fw-bold">ASSISTENZA FULL</h3>
-                        <p class="mb-0">10-50 postazioni</p>
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="text-center mb-4">
-                            <span class="h2 fw-bold text-warning">€590</span>
-                            <span class="text-muted">/mese</span>
-                        </div>
-                        
-                        <h4 class="h6 fw-bold text-success mb-3">Tutto HELP DESK +</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Interventi in sede illimitati</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SLA 4h emergenze critiche</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Manutenzioni programmate</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Monitoraggio Zabbix 24/7</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Gestione backup inclusa</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Report mensili dettagliati</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Consulenza strategica</li>
-                        </ul>
-                        
-                        <a href="#preventivo" class="btn btn-warning w-100 text-dark fw-bold">Scegli Full</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card h-100 border-success">
-                    <div class="card-header bg-success text-white text-center">
-                        <h3 class="h4 mb-0">MONTE ORE</h3>
-                        <p class="mb-0">Progetti e flessibilità</p>
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="text-center mb-4">
-                            <span class="h2 fw-bold text-success">€75</span>
-                            <span class="text-muted">/ora</span>
-                        </div>
-                        
-                        <h4 class="h6 fw-bold text-success mb-3">Pacchetti Disponibili</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>30 ore: €2.100 (sconto 7%)</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>50 ore: €3.375 (sconto 10%)</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>80 ore: €5.100 (sconto 15%)</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Validità 12 mesi</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Priorità interventi</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Sconto materiali 15%</li>
-                        </ul>
-                        
-                        <a href="#preventivo" class="btn btn-success w-100">Configura Monte Ore</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-5">
-            <div class="alert alert-info d-inline-block">
-                <i class="fas fa-gift me-2"></i>
-                <strong>Bonus inclusi:</strong> Assessment iniziale gratuito + 4 ore formazione base + documentazione sistemi
-            </div>
-        </div>
-    </div>
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-6">
+<h2 class="fw-bold h3 mb-3">Problematiche IT Aziendali che Risolviamo a Villa Di Serio</h2>
+<div class="card border-0 shadow-sm h-100"><div class="card-body">
+<ul class="mb-0">
+<li class="mb-0"><strong>Server aziendale bloccato</strong> — ripristino rapido con piano di continuità</li>
+<li class="mb-0"><strong>Workstation lente</strong> — manutenzioni predittive e monitoraggio centralizzato</li>
+<li class="mb-0"><strong>Email/Internet down</strong> — ridondanza linee e failover automatico</li>
+</ul>
+</div></div>
+</div>
+<div class="col-lg-6">
+<h2 class="fw-bold h3 mb-3">Vantaggi del Servizio IT‑ERA per Aziende di Villa Di Serio</h2>
+<div class="card border-0 shadow-sm h-100"><div class="card-body">
+<div class="row g-3">
+<div class="col-6"><i class="fas fa-bolt text-primary me-2"></i>SLA garantiti</div>
+<div class="col-6"><i class="fas fa-location-dot text-primary me-2"></i>On‑site in tempi certi</div>
+<div class="col-6"><i class="fas fa-desktop text-primary me-2"></i>Monitoring 24/7</div>
+<div class="col-6"><i class="fas fa-shield-alt text-primary me-2"></i>Security by design</div>
+<div class="col-6"><i class="fas fa-file-invoice text-primary me-2"></i>Report mensili</div>
+<div class="col-6"><i class="fas fa-euro-sign text-primary me-2"></i>Costi prevedibili</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
 </section>
-
 <section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Case Study: Assistenza IT Efficace</h2>
-            <p class="lead text-muted">Risultati concreti per PMI di Villa Di Serio e zone limitrofe</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <div class="card border-0 shadow">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-industry text-primary me-3 fs-3"></i>
-                            <div>
-                                <h3 class="h5 fw-bold mb-0">Azienda Manifatturiera</h3>
-                                <small class="text-muted">35 dipendenti, Villa Di Serio</small>
-                            </div>
-                        </div>
-                        
-                        <h4 class="h6 fw-bold mb-2">Situazione Iniziale</h4>
-                        <ul class="small mb-3">
-                            <li>Server Windows 2012 obsoleto</li>
-                            <li>Backup su nastro non testati</li>
-                            <li>Nessun monitoraggio rete</li>
-                            <li>Downtime mensili ricorrenti</li>
-                        </ul>
-                        
-                        <h4 class="h6 fw-bold mb-2">Interventi Realizzati</h4>
-                        <ul class="small mb-3">
-                            <li>Migrazione a Windows Server 2022</li>
-                            <li>Implementazione Veeam + cloud backup</li>
-                            <li>Installazione monitoraggio Zabbix</li>
-                            <li>Contratto Assistenza Full</li>
-                        </ul>
-                        
-                        <h4 class="h6 fw-bold mb-2">Risultati in 6 Mesi</h4>
-                        <div class="row g-3 text-center">
-                            <div class="col-4">
-                                <div class="fw-bold text-success h5">-92%</div>
-                                <small>Incidenti IT</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success h5">0h</div>
-                                <small>Downtime non pianificato</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success h5">€15k</div>
-                                <small>Risparmi annui</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6">
-                <div class="card border-0 shadow">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-briefcase text-primary me-3 fs-3"></i>
-                            <div>
-                                <h3 class="h5 fw-bold mb-0">Studio Commercialisti</h3>
-                                <small class="text-muted">8 professionisti, Villa Di Serio</small>
-                            </div>
-                        </div>
-                        
-                        <h4 class="h6 fw-bold mb-2">Situazione Iniziale</h4>
-                        <ul class="small mb-3">
-                            <li>PC lenti e instabili</li>
-                            <li>Problemi email ricorrenti</li>
-                            <li>Nessun supporto IT strutturato</li>
-                            <li>Perdite tempo quotidiane</li>
-                        </ul>
-                        
-                        <h4 class="h6 fw-bold mb-2">Interventi Realizzati</h4>
-                        <ul class="small mb-3">
-                            <li>Upgrade hardware workstation</li>
-                            <li>Migrazione a Office 365</li>
-                            <li>Contratto Help Desk dedicato</li>
-                            <li>Formazione personale</li>
-                        </ul>
-                        
-                        <h4 class="h6 fw-bold mb-2">Risultati in 3 Mesi</h4>
-                        <div class="row g-3 text-center">
-                            <div class="col-4">
-                                <div class="fw-bold text-success h5">+40%</div>
-                                <small>Produttività</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success h5">2h</div>
-                                <small>Tempo risposta medio</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success h5">100%</div>
-                                <small>Problemi risolti</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-5">
-            <a href="/case-study" class="btn btn-outline-primary btn-lg">
-                <i class="fas fa-chart-bar me-2"></i>Tutti i Case Study
-            </a>
-        </div>
-    </div>
+<div class="container">
+<h2 class="fw-bold h3 text-center mb-4">Cosa include il servizio</h2>
+<div class="row g-3">
+<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-headset text-primary me-2"></i><strong>Help desk</strong> multicanale illimitato<br/><span class="text-muted small">Telefono, email, ticket</span></div></div></div>
+<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-screwdriver-wrench text-primary me-2"></i><strong>Manutenzioni</strong> programmate<br/><span class="text-muted small">Patch, pulizia, verifiche</span></div></div></div>
+<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-chart-line text-primary me-2"></i><strong>Monitoring 24/7</strong> e report<br/><span class="text-muted small">Alert automatici</span></div></div></div>
+<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-user-shield text-primary me-2"></i><strong>Security</strong> by design<br/><span class="text-muted small">AV, firewall, policy</span></div></div></div>
+<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-file-invoice text-primary me-2"></i><strong>Documentazione</strong><br/><span class="text-muted small">Inventario e procedure</span></div></div></div>
+<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-people-group text-primary me-2"></i><strong>Formazione</strong> base utenti<br/><span class="text-muted small">Best practice operative</span></div></div></div>
+</div>
+</div>
+</section>
+<section class="py-5">
+<div class="container">
+<h2 class="fw-bold h3 text-center mb-4">Pacchetti Assistenza IT</h2>
+<div class="row g-4">
+<div class="col-lg-4">
+<div class="card h-100 border-primary">
+<div class="card-header bg-primary text-white text-center">
+<h3 class="h5 mb-0">HELP DESK</h3>
+<small>5–20 postazioni</small>
+</div>
+<div class="card-body">
+<div class="text-center mb-3"><span class="h3 fw-bold text-primary">€290</span><span class="text-muted">/mese</span></div>
+<ul class="mb-3">
+<li>Supporto remoto illimitato</li>
+<li>Ticket system professionale</li>
+<li>SLA 8h problemi standard</li>
+</ul>
+<a class="btn btn-primary w-100" href="#preventivo">Richiedi preventivo</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card h-100 border-warning">
+<div class="card-header bg-warning text-dark text-center">
+<h3 class="h5 mb-0 fw-bold">ASSISTENZA FULL</h3>
+<small>10–50 postazioni</small>
+</div>
+<div class="card-body">
+<div class="text-center mb-3"><span class="h3 fw-bold text-warning">€590</span><span class="text-muted">/mese</span></div>
+<ul class="mb-3">
+<li>Interventi in sede illimitati</li>
+<li>SLA 4h emergenze critiche</li>
+<li>Manutenzioni programmate</li>
+</ul>
+<a class="btn btn-warning w-100 text-dark fw-bold" href="#preventivo">Scegli Full</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card h-100 border-success">
+<div class="card-header bg-success text-white text-center">
+<h3 class="h5 mb-0">MONTE ORE</h3>
+<small>Progetti e flessibilità</small>
+</div>
+<div class="card-body">
+<div class="text-center mb-3"><span class="h3 fw-bold text-success">€75</span><span class="text-muted">/ora</span></div>
+<ul class="mb-3">
+<li>Pacchetti 30/50/80 ore</li>
+<li>Validità 12 mesi</li>
+<li>Priorità interventi</li>
+</ul>
+<a class="btn btn-success w-100" href="#preventivo">Configura Monte Ore</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="fw-bold h3 text-center mb-4">Cosa dicono i clienti</h2>
+<div class="row g-4">
+<div class="col-md-6"><div class="card border-0 shadow-sm h-100"><div class="card-body"><p class="mb-2">"Interventi rapidi e nessun fermo produzione negli ultimi 6 mesi."</p><div class="small text-muted">COO, manifatturiero — Villa Di Serio</div></div></div></div>
+<div class="col-md-6"><div class="card border-0 shadow-sm h-100"><div class="card-body"><p class="mb-2">"Help desk sempre disponibile, ottima reportistica e pianificazione."</p><div class="small text-muted">Studio professionale — Villa Di Serio</div></div></div></div>
+</div>
+</div>
+</section>
+</main>
+<section aria-labelledby="faq-title" class="py-5" id="faq">
+<!-- Voice Search Optimization: Natural language FAQ matching user queries -->
+<div class="container">
+<h2 class="fw-bold h3 text-center mb-4" id="faq-title">Domande Frequenti - Assistenza IT Villa Di Serio</h2>
+<div aria-label="Domande frequenti sull'assistenza IT" class="accordion" id="faqAccordion" role="group">
+<div class="accordion-item">
+<h2 class="accordion-header" id="faq1h"><button aria-controls="faq1" aria-expanded="true" class="accordion-button" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">Quanto costa l'assistenza IT a Villa Di Serio?</button></h2>
+<div aria-labelledby="faq1h" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="faq1"><div class="accordion-body">I nostri servizi di assistenza IT per PMI a Villa Di Serio partono da €290/mese per il pacchetto Help Desk base, €590/mese per Assistenza Full con interventi on-site, e €75/ora per Monte Ore. Offriamo preventivo gratuito personalizzato.</div></div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="faq2h"><button aria-controls="faq2" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">Interventi in sede disponibili?</button></h2>
+<div aria-labelledby="faq2h" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq2"><div class="accordion-body">Sì, con Assistenza Full sono inclusi interventi in sede a Villa Di Serio e comuni limitrofi.</div></div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="faq3h"><button aria-controls="faq3" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">Cosa include il monitoraggio?</button></h2>
+<div aria-labelledby="faq3h" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq3"><div class="accordion-body">Controllo H24 di server, rete e servizi con alert automatici e report mensili.</div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-5">
+<div class="container">
+<h2 class="fw-bold h3 text-center mb-4">Comuni vicini</h2>
+<div class="text-center">
+<a class="text-decoration-none" href="assistenza-it-albino.html">Albino</a> | <a class="text-decoration-none" href="assistenza-it-albino.html">Albino</a> | <a class="text-decoration-none" href="assistenza-it-albino.html">Albino</a> | <a class="text-decoration-none" href="assistenza-it-almenno-san-bartolomeo.html">Almenno San Bartolomeo</a> | <a class="text-decoration-none" href="assistenza-it-almenno-san-bartolomeo.html">Almenno San Bartolomeo</a>
+</div>
+</div>
+</section>
+<section class="py-4">
+<div class="container">
+<div class="card border-0 shadow-sm">
+<div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+<div>
+<strong>Hai un'emergenza IT?</strong>
+<div class="text-muted small">Rispondiamo entro 15 minuti</div>
+</div>
+<div class="d-flex gap-2 mt-3 mt-md-0">
+<a class="btn btn-outline-primary" href="tel:+390398882041"><i class="fas fa-phone me-2"></i>039 888 2041</a>
+<a class="btn btn-primary" href="/pages/assessment.html"><i class="fas fa-paper-plane me-2"></i>Richiedi supporto</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-5 bg-light" id="preventivo">
+<div class="container">
+<div class="card border-primary">
+<div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+<div>
+<h3 class="h5 fw-bold mb-1">Assessment gratuito</h3>
+<p class="text-muted mb-0">Analisi rapida e proposta su misura per la tua PMI di Villa Di Serio</p>
+</div>
+<a class="btn btn-primary mt-3 mt-md-0" href="/pages/assessment.html"><i class="fas fa-paper-plane me-2"></i>Richiedi ora</a>
+</div>
+</div>
+</div>
 </section>
 
-<section class="py-5" id="citta-vicine">
-    <div class="container">
-        <div class="text-center mb-4">
-            <h2 class="fw-bold">Città servite vicine</h2>
-            <p class="text-muted">Operiamo anche nelle aree limitrofe di Bergamo</p>
-        </div>
-        <ul class="list-inline text-center">
-            <li class="list-inline-item mb-2"><a class="btn btn-outline-secondary btn-sm" href="/pages/assistenza-it-albino.html">Assistenza IT Albino</a></li>
-            <li class="list-inline-item mb-2"><a class="btn btn-outline-secondary btn-sm" href="/pages/assistenza-it-almenno-san-bartolomeo.html">Assistenza IT Almenno San Bartolomeo</a></li>
-            <li class="list-inline-item mb-2"><a class="btn btn-outline-secondary btn-sm" href="/pages/assistenza-it-alzano-lombardo.html">Assistenza IT Alzano Lombardo</a></li>
-            <li class="list-inline-item mb-2"><a class="btn btn-outline-secondary btn-sm" href="/pages/assistenza-it-bergamo.html">Assistenza IT Bergamo</a></li>
-            <li class="list-inline-item mb-2"><a class="btn btn-outline-secondary btn-sm" href="/pages/assistenza-it-caravaggio.html">Assistenza IT Caravaggio</a></li>
-            <li class="list-inline-item mb-2"><a class="btn btn-outline-secondary btn-sm" href="/pages/assistenza-it-casnigo.html">Assistenza IT Casnigo</a></li>
-        </ul>
-    </div>
-</section>
 
-<section class="py-5 bg-light" id="faq">
-    <div class="container">
-        <div class="text-center mb-4">
-            <h2 class="fw-bold">FAQ su Assistenza IT a Villa Di Serio</h2>
-            <p class="text-muted">Risposte rapide alle domande più frequenti</p>
-        </div>
-        <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq1h">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                        Quali sono i tempi di attivazione dell'assistenza IT a Villa Di Serio?
-                    </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1h" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        L'attivazione avviene in 1-3 giorni lavorativi dopo l'assessment iniziale. Per emergenze, interveniamo entro 4 ore come da SLA.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq2h">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                        Offrite interventi in sede a Villa Di Serio?
-                    </button>
-                </h2>
-                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2h" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Sì, con il piano Assistenza Full sono inclusi interventi in sede senza limiti nell'area di Villa Di Serio e comuni limitrofi.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq3h">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                        Cosa include il monitoraggio proattivo?
-                    </button>
-                </h2>
-                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3h" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Monitoriamo H24 server, rete e servizi critici con alert automatici, trend analysis e report mensili dettagliati.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq4h">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                        Come gestite backup e ripristino?
-                    </button>
-                </h2>
-                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4h" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Configuriamo backup locali e cloud (es. Veeam), con verifiche periodiche di restore per garantire RPO/RTO in linea con il contratto.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5" id="preventivo">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2 class="fw-bold mb-4">Preventivo Assistenza IT Personalizzato</h2>
-                <p class="lead mb-4">
-                    Assessment gratuito della tua infrastruttura IT con piano di assistenza 
-                    su misura per la tua PMI di Villa Di Serio.
-                </p>
-                
-                <div class="row g-3 mb-4">
-                    <div class="col-6">
-                        <div class="text-center">
-                            <i class="fas fa-clock text-warning fs-3 mb-2"></i>
-                            <div class="fw-bold">2 ore</div>
-                            <small>Tempo risposta preventivo</small>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="text-center">
-                            <i class="fas fa-euro-sign text-warning fs-3 mb-2"></i>
-                            <div class="fw-bold">€0</div>
-                            <small>Assessment iniziale</small>
-                        </div>
-                    </div>
-                </div>
-                
-                <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Analisi infrastruttura esistente</li>
-                    <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Identificazione criticità e rischi</li>
-                    <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Piano assistenza personalizzato</li>
-                    <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Preventivo dettagliato con SLA</li>
-                    <li class="mb-0"><i class="fas fa-check text-warning me-2"></i>Consulenza gratuita 1 ora</li>
-                </ul>
-            </div>
-            
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body p-4 text-center">
-                        <h3 class="fw-bold mb-3">Richiedi Assessment Gratuito</h3>
-                        <p class="text-muted">Valutazione iniziale centralizzata. Modificabile in un solo punto per tutte le pagine.</p>
-                        <a href="/pages/assessment.html" class="btn btn-warning btn-lg w-100 text-dark fw-bold">
-                            <i class="fas fa-paper-plane me-2"></i>Vai al form di assessment
-                        </a>
-                        <p class="small mt-2 mb-0 text-muted">Risposta entro 2 ore lavorative</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5 bg-dark text-white">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-4">Serve Assistenza Immediata?</h2>
-        <p class="lead mb-4">
-            Contatta direttamente il nostro team tecnico per supporto urgente
-        </p>
-        
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-                <div class="bg-primary bg-opacity-25 p-4 rounded">
-                    <i class="fas fa-phone text-primary display-5 mb-3"></i>
-                    <h3 class="h5 fw-bold">Chiamata Diretta</h3>
-                    <a href="tel:+390398882041" class="btn btn-primary btn-lg w-100 mb-2">039 888 2041</a>
-                    <small>Disponibile 24/7 per emergenze</small>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="bg-primary bg-opacity-25 p-4 rounded">
-                    <i class="fas fa-envelope text-primary display-5 mb-3"></i>
-                    <h3 class="h5 fw-bold">Email prioritaria</h3>
-                    <a href="mailto:info@it-era.it?subject=Richiesta%20Assistenza%20Urgente%20Villa Di Serio" class="btn btn-primary btn-lg w-100 mb-2">info@it-era.it</a>
-                    <small>Risposta garantita entro 4 ore</small>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="bg-primary bg-opacity-25 p-4 rounded">
-                    <i class="fas fa-comments text-primary display-5 mb-3"></i>
-                    <h3 class="h5 fw-bold">Chatta con noi</h3>
-                    <a href="/pages/chat.html" class="btn btn-primary btn-lg w-100 mb-2">Chatta con noi</a>
-                    <small>Assistente AI per richieste rapide</small>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-(function() {
-    'use strict';
-    const forms = document.querySelectorAll('.needs-validation');
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        }, false);
+<noscript>
+<style>
+    .blur-up { filter: none !important; }
+    [data-src] { content: attr(data-src) !important; }
+  </style>
+</noscript>
+</main><script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script defer="">
+// Lazy loading implementation
+if ('IntersectionObserver' in window) {
+  const images = document.querySelectorAll('img[data-src]');
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.classList.remove('blur-up');
+        img.classList.add('loaded');
+        observer.unobserve(img);
+      }
     });
-})();
+  });
+  images.forEach(img => imageObserver.observe(img));
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
-        link.addEventListener('click', function() {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'contact', {
-                    'event_category': 'phone_click',
-                    'event_label': 'assistenza_it_villa-di-serio',
-                    'value': 1
-                });
-            }
-        });
-    });
-    
-    const form = document.getElementById('assistenza-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'conversion', {
-                    'event_category': 'lead_generation',
-                    'event_label': 'assistenza_it_request_villa-di-serio',
-                    'value': 1
-                });
-            }
-        });
+// Improved accessibility for keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    document.body.classList.add('user-is-tabbing');
+  }
+});
+
+// Enhanced form validation feedback
+const forms = document.querySelectorAll('form');
+forms.forEach(form => {
+  form.addEventListener('submit', (e) => {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      e.stopPropagation();
+      const firstInvalid = form.querySelector(':invalid');
+      if (firstInvalid) {
+        firstInvalid.focus();
+        firstInvalid.setAttribute('aria-describedby', 'error-' + firstInvalid.name);
+      }
     }
+  });
 });
 </script>
-
+<!-- Unified Footer -->
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4">
+<h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+<p>Il tuo partner tecnologico di fiducia per soluzioni IT innovative e affidabili.</p>
+<div class="contact-info">
+<p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+<p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+<p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
+</div>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Servizi</h5>
+<ul class="list-unstyled">
+<li><a class="text-white-50" href="#assistenza-it">Assistenza IT</a></li>
+<li><a class="text-white-50" href="#cloud-storage">Cloud Storage</a></li>
+<li><a class="text-white-50" href="#sicurezza">Sicurezza Informatica</a></li>
+<li><a class="text-white-50" href="#backup">Backup &amp; DR</a></li>
+<li><a class="text-white-50" href="#voip">VoIP &amp; Telefonia</a></li>
+<li><a class="text-white-50" href="#firewall">Firewall Solutions</a></li>
+</ul>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Seguici</h5>
+<div class="social-links mb-3">
+<a class="text-white-50 me-3" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-facebook fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+</div>
+<p class="text-white-50 small">
+                        © 2024 IT-ERA. Tutti i diritti riservati.<br/>
+<a class="text-white-50" href="/privacy">Privacy Policy</a> | 
+                        <a class="text-white-50" href="/cookie">Cookie Policy</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
 </body>
 </html>
-

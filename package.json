@@ -18,5 +18,9 @@
   "type": "commonjs",
   "devDependencies": {
     "wrangler": "^4.32.0"
+  },
+  "dependencies": {
+    "@testsprite/testsprite-mcp": "^0.0.12",
+    "puppeteer": "^24.17.0"
   }
 }

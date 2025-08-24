@@ -7,7 +7,10 @@ class APIManager {
 
     // Generic API request
     async request(endpoint, options = {}) {
-        const url = endpoint.startsWith('/admin/api') ? endpoint : `${this.baseURL}${endpoint}`;
+        // If it's already a full URL, use it as is
+        const url = endpoint.startsWith('http') ? endpoint : 
+                   endpoint.startsWith('/admin/api') ? endpoint : 
+                   `${this.baseURL}${endpoint}`;
         
         const defaultOptions = {
             headers: authManager.getAuthHeaders()

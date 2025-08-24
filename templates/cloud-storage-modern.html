@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage {{CITY}} | Backup e Archiviazione Cloud | IT-ERA</title>
+    <meta name="description" content="Servizi Cloud Storage professionali a {{CITY}}. Backup automatico, sincronizzazione file, disaster recovery. Storage sicuro da 1TB a illimitato.">
+    <meta name="keywords" content="cloud storage {{CITY}}, backup cloud {{CITY}}, archiviazione online {{CITY}}, disaster recovery">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "name": "IT-ERA - Cloud Storage {{CITY}}",
+                "description": "Servizi professionali di cloud storage e backup per aziende a {{CITY}}",
+                "url": "https://www.it-era.it",
+                "telephone": "+39 039 888 2041",
+                "email": "info@it-era.it",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Viale Risorgimento 32",
+                    "addressLocality": "Vimercate",
+                    "postalCode": "20871",
+                    "addressRegion": "MB",
+                    "addressCountry": "IT"
+                },
+                "serviceArea": {
+                    "@type": "City",
+                    "name": "{{CITY}}"
+                },
+                "openingHours": "Mo-Fr 09:00-18:00",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "156"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Cloud Storage Service",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "IT-ERA"
+                },
+                "serviceType": "Cloud Storage",
+                "areaServed": "{{CITY}}",
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "39",
+                    "highPrice": "590",
+                    "priceCurrency": "EUR"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Come funziona il backup automatico?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Il backup automatico sincronizza i tuoi file in tempo reale sul nostro cloud sicuro. Ogni modifica viene salvata istantaneamente con versioning completo per recuperare versioni precedenti quando necessario."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "I miei dati sono al sicuro?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sì, utilizziamo crittografia AES-256 e i nostri data center sono certificati ISO 27001. I dati sono replicati su server in Italia per massima sicurezza e conformità GDPR."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Posso accedere ai file da qualsiasi dispositivo?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Certamente! Offriamo app native per Windows, Mac, iOS e Android, oltre all'accesso web. I file si sincronizzano automaticamente su tutti i dispositivi connessi."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary: #17a2b8;  /* Azzurro cloud */
+            --secondary: #20c997;
+            --success: #28a745;
+            --info: #17a2b8;
+            --dark: #0c5460;
+            --light-blue: #e3f2fd;
+        }
+        
+        body {
+            padding-top: 76px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        /* Cloud Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,224C672,224,768,256,864,261.3C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .cloud-animation {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 100px;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            25% { transform: translateX(100px) translateY(-20px); }
+            50% { transform: translateX(-50px) translateY(10px); }
+            75% { transform: translateX(50px) translateY(-10px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Cloud Features */
+        .cloud-feature {
+            background: var(--light-blue);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .cloud-feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(23,162,184,0.2);
+        }
+        
+        .cloud-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* Storage Plans */
+        .storage-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .storage-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(23,162,184,0.3);
+        }
+        
+        .storage-card.popular {
+            border: 3px solid var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .storage-header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .storage-size {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        /* Animated Stats */
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* CTA Buttons */
+        .btn-cloud {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .btn-cloud:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(23,162,184,0.3);
+            color: white;
+        }
+        
+        /* Navigation Enhancement */
+        .navbar {
+            min-height: 76px;
+        }
+        
+        .dropdown-header {
+            font-weight: 600;
+            padding: 0.5rem 1rem 0.25rem;
+        }
+        
+        .dropdown-item {
+            padding: 0.4rem 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            padding-left: 1.25rem;
+        }
+        
+        .badge {
+            font-size: 0.7rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            background: #f8f9fa;
+            padding: 40px 0;
+        }
+        
+        .badge-item {
+            display: inline-block;
+            margin: 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .badge-item:hover {
+            opacity: 1;
+        }
+        
+        /* Mobile Navigation */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                padding: 1rem 0;
+            }
+            
+            .nav-item {
+                border-bottom: 1px solid #f8f9fa;
+            }
+            
+            .nav-item:last-child {
+                border-bottom: none;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Optimized Navigation Component -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            
+            <!-- Emergency CTA for Mobile -->
+            <div class="d-lg-none ms-auto me-2">
+                <a href="tel:+390398882041" class="btn btn-danger btn-sm">
+                    🚨 Emergenza
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <!-- Emergency Support - Primary CTA -->
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                            🚨 Supporto Urgente
+                        </a>
+                    </li>
+                    
+                    <!-- Services Dropdown with Icons -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+                            <li><a class="dropdown-item" href="/pages/assistenza-it-{{CITY_SLUG}}.html">
+                                🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/sicurezza-informatica-{{CITY_SLUG}}.html">
+                                🛡️ Sicurezza Informatica
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+                            <li><a class="dropdown-item" href="/pages/cloud-storage-{{CITY_SLUG}}.html">
+                                ☁️ Cloud Storage
+                            </a></li>
+                            <li><a class="dropdown-item" href="#backup">
+                                💾 Backup Automatico
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+                            <li><a class="dropdown-item" href="#all-inclusive">
+                                ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#piani">Piani</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatti">Contatti</a>
+                    </li>
+                    
+                    <!-- Primary CTA Button -->
+                    <li class="nav-item ms-lg-3">
+                        <a href="tel:+390398882041" class="btn btn-primary">
+                            📞 039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Cloud Hero Section -->
+    <section class="hero">
+        <div class="cloud-animation" style="top: 10%; left: 10%;"></div>
+        <div class="cloud-animation" style="top: 50%; right: 10%; animation-delay: -5s;"></div>
+        <div class="cloud-animation" style="bottom: 10%; left: 30%; animation-delay: -10s;"></div>
+        
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="bi bi-cloud-fill"></i> Cloud Storage {{CITY}}
+                    </h1>
+                    <p class="lead mb-4">Libera spazio, proteggi i tuoi dati e accedi ai file ovunque. Storage cloud sicuro e affidabile per aziende a {{CITY}}.</p>
+                    <div class="d-flex gap-3 flex-wrap mb-4">
+                        <a href="tel:+390398882041" class="btn btn-cloud btn-lg">
+                            <i class="bi bi-telephone-fill me-2"></i>Attiva Subito
+                        </a>
+                        <a href="#piani" class="btn btn-light btn-lg">
+                            <i class="bi bi-box-arrow-up me-2"></i>Vedi i Piani
+                        </a>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-auto">
+                            <span class="badge bg-white text-primary p-2">
+                                <i class="bi bi-shield-check"></i> Crittografia AES-256
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-white text-primary p-2">
+                                <i class="bi bi-speedometer"></i> Upload 10 Gbps
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge bg-white text-primary p-2">
+                                <i class="bi bi-infinity"></i> Storage Illimitato
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="position-relative">
+                        <i class="bi bi-cloud-arrow-up" style="font-size: 15rem; opacity: 0.3;"></i>
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <div class="stat-card">
+                                <div class="stat-number">10TB+</div>
+                                <div class="text-muted">Storage Disponibile</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cloud Features -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Perché Scegliere il Nostro Cloud Storage</h2>
+                <p class="lead text-muted">Tecnologia enterprise per aziende di ogni dimensione a {{CITY}}</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="cloud-feature">
+                        <div class="cloud-icon">
+                            <i class="bi bi-lock-fill"></i>
+                        </div>
+                        <h4>Sicurezza Massima</h4>
+                        <p>Crittografia end-to-end, data center certificati ISO 27001 in Italia</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cloud-feature">
+                        <div class="cloud-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h4>Backup Automatico</h4>
+                        <p>Sincronizzazione in tempo reale, versioning illimitato dei file</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cloud-feature">
+                        <div class="cloud-icon">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h4>Accesso Ovunque</h4>
+                        <p>App desktop, mobile e web. Lavora da qualsiasi dispositivo</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cloud-feature">
+                        <div class="cloud-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4>Collaborazione</h4>
+                        <p>Condivisione sicura, editing collaborativo in tempo reale</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cloud-feature">
+                        <div class="cloud-icon">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h4>Prestazioni Top</h4>
+                        <p>CDN globale, upload/download ultra veloce, zero downtime</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cloud-feature">
+                        <div class="cloud-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>Supporto 24/7</h4>
+                        <p>Assistenza dedicata in italiano, SLA garantiti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Storage Plans -->
+    <section id="piani" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Piani Cloud Storage per {{CITY}}</h2>
+                <p class="lead text-muted">Spazio sicuro e scalabile per ogni esigenza aziendale</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Starter Plan -->
+                <div class="col-lg-4">
+                    <div class="storage-card">
+                        <div class="storage-header">
+                            <h3>Starter Cloud</h3>
+                            <div class="storage-size">1TB</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <span class="price">€39</span>
+                                <span class="text-muted">/TB mese</span>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> 1TB storage sicuro</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> 5 utenti inclusi</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Backup giornaliero</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Versioning 30 giorni</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> App mobile/desktop</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-outline-primary w-100">Inizia Ora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Business Plan -->
+                <div class="col-lg-4">
+                    <div class="storage-card popular">
+                        <div class="position-relative">
+                            <span class="position-absolute top-0 start-50 translate-middle badge bg-danger px-3 py-2">
+                                PIÙ POPOLARE
+                            </span>
+                        </div>
+                        <div class="storage-header">
+                            <h3>Business Cloud</h3>
+                            <div class="storage-size">5TB</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <span class="price">€149</span>
+                                <span class="text-muted">/5TB mese</span>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> 5TB storage sicuro</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> 25 utenti inclusi</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Backup continuo</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Versioning illimitato</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Collaborazione real-time</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> API e integrazioni</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-cloud w-100">Inizia Ora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4">
+                    <div class="storage-card">
+                        <div class="storage-header">
+                            <h3>Enterprise Cloud</h3>
+                            <div class="storage-size">∞</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <span class="price">Custom</span>
+                                <span class="text-muted">su misura</span>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Storage illimitato</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Utenti illimitati</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Disaster recovery</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Geo-replicazione</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> SLA 99.99%</li>
+                                <li class="mb-3"><i class="bi bi-check-circle text-success"></i> Account manager dedicato</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-outline-primary w-100">Contattaci</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container text-center">
+            <h3 class="mb-4">Tecnologie e Certificazioni</h3>
+            <div class="d-flex justify-content-center flex-wrap gap-4">
+                <img src="https://img.shields.io/badge/Microsoft_Azure-Partner-0078D4?style=for-the-badge&logo=microsoft-azure" alt="Microsoft Azure" class="badge-item">
+                <img src="https://img.shields.io/badge/AWS-Partner-FF9900?style=for-the-badge&logo=amazon-aws" alt="AWS Partner" class="badge-item">
+                <img src="https://img.shields.io/badge/ISO_27001-Certified-00A859?style=for-the-badge" alt="ISO 27001" class="badge-item">
+                <img src="https://img.shields.io/badge/GDPR-Compliant-2E7D32?style=for-the-badge" alt="GDPR Compliant" class="badge-item">
+                <img src="https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam" alt="Veeam Partner" class="badge-item">
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Domande Frequenti sul Cloud Storage</h2>
+                <p class="lead text-muted">Tutto quello che devi sapere sui nostri servizi cloud a {{CITY}}</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Come funziona il backup automatico?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Il backup automatico sincronizza i tuoi file in tempo reale sul nostro cloud sicuro. Ogni modifica viene salvata istantaneamente con versioning completo per recuperare versioni precedenti quando necessario.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    I miei dati sono al sicuro?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sì, utilizziamo crittografia AES-256 e i nostri data center sono certificati ISO 27001. I dati sono replicati su server in Italia per massima sicurezza e conformità GDPR.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Posso accedere ai file da qualsiasi dispositivo?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Certamente! Offriamo app native per Windows, Mac, iOS e Android, oltre all'accesso web. I file si sincronizzano automaticamente su tutti i dispositivi connessi.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Quanto costa il cloud storage?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I piani partono da €39/mese per 1TB. Offriamo piani scalabili fino allo storage illimitato per grandi aziende. Prova gratuita di 30 giorni inclusa.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Che supporto offrite?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Supporto tecnico 24/7 in italiano via telefono, email e chat. I nostri tecnici sono specializzati in soluzioni cloud enterprise e intervengono rapidamente per ogni necessità.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contatti" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4" style="color: var(--primary);">
+                        Richiedi Prova Gratuita
+                    </h2>
+                    <p class="lead mb-4">
+                        Testa il nostro cloud storage per 30 giorni senza impegno. 
+                        I nostri esperti ti aiuteranno nella configurazione e migrazione.
+                    </p>
+                    <div class="mb-3">
+                        <i class="bi bi-geo-alt-fill me-3" style="color: var(--primary);"></i>
+                        <strong>Viale Risorgimento 32, Vimercate MB</strong>
+                    </div>
+                    <div class="mb-3">
+                        <i class="bi bi-telephone-fill me-3" style="color: var(--primary);"></i>
+                        <strong>+39 039 888 2041</strong>
+                    </div>
+                    <div class="mb-3">
+                        <i class="bi bi-envelope-fill me-3" style="color: var(--primary);"></i>
+                        <strong>info@it-era.it</strong>
+                    </div>
+                    <div class="mb-4">
+                        <i class="bi bi-clock-fill me-3" style="color: var(--primary);"></i>
+                        <strong>Lun-Ven: 9:00-18:00</strong>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="mb-4" style="color: var(--primary);">
+                            <i class="bi bi-cloud-arrow-up me-2"></i>
+                            Richiedi Prova Gratuita
+                        </h4>
+                        <form id="contactForm" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input class="form-control" name="nome" placeholder="Nome *" required type="text"/>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input class="form-control" name="cognome" placeholder="Cognome" type="text"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input class="form-control" name="azienda" placeholder="Azienda" type="text"/>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input class="form-control" name="comune" placeholder="Comune" type="text"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input class="form-control" name="email" placeholder="Email *" required type="email"/>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input class="form-control" name="telefono" placeholder="Telefono *" required type="tel"/>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Servizi di interesse (opzionale):</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" id="storage" name="servizi[]" type="checkbox" value="Cloud Storage"/>
+                                            <label class="form-check-label" for="storage">Cloud Storage</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" id="backup" name="servizi[]" type="checkbox" value="Backup Automatico"/>
+                                            <label class="form-check-label" for="backup">Backup Automatico</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" id="sync" name="servizi[]" type="checkbox" value="Sincronizzazione"/>
+                                            <label class="form-check-label" for="sync">Sincronizzazione</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" id="collaboration" name="servizi[]" type="checkbox" value="Collaborazione"/>
+                                            <label class="form-check-label" for="collaboration">Collaborazione</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" id="disaster" name="servizi[]" type="checkbox" value="Disaster Recovery"/>
+                                            <label class="form-check-label" for="disaster">Disaster Recovery</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" id="migration" name="servizi[]" type="checkbox" value="Migrazione Dati"/>
+                                            <label class="form-check-label" for="migration">Migrazione Dati</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="messaggio" placeholder="Descrivi le tue esigenze di storage o volume di dati..." rows="3"></textarea>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" id="privacy" name="privacy" required type="checkbox"/>
+                                <label class="form-check-label" for="privacy">
+                                    Accetto il trattamento dei dati personali secondo la 
+                                    <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> *
+                                </label>
+                            </div>
+                            <button class="btn btn-cloud w-100" type="submit">
+                                <i class="bi bi-cloud-check me-2"></i>
+                                Richiedi Prova Gratuita
+                            </button>
+                            <div class="text-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-1"></i>
+                                    Ti contatteremo entro 2 ore lavorative
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-white" style="background: linear-gradient(135deg, var(--primary), var(--dark));">
+        <div class="container text-center">
+            <h2 class="mb-4">Inizia Subito con il Cloud Storage a {{CITY}}</h2>
+            <p class="lead mb-4">Prova gratuita di 30 giorni. Nessuna carta di credito richiesta.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="tel:+390398882041" class="btn btn-light btn-lg">
+                    <i class="bi bi-telephone-fill me-2"></i>039 888 2041
+                </a>
+                <a href="#contatti" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-play-circle me-2"></i>Compila il Form
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-info">IT-ERA Cloud</h5>
+                    <p>Soluzioni cloud professionali per aziende a {{CITY}} e in tutta la Lombardia.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-info">Servizi Cloud</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Cloud Storage</a></li>
+                        <li><a href="#" class="text-white-50">Backup & Disaster Recovery</a></li>
+                        <li><a href="#" class="text-white-50">Microsoft 365</a></li>
+                        <li><a href="#" class="text-white-50">Server Virtuali</a></li>
+                        <li><a href="#" class="text-white-50">Desktop Remoto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-info">Contatti</h5>
+                    <p><i class="bi bi-geo-alt"></i> Viale Risorgimento 32, Vimercate MB</p>
+                    <p><i class="bi bi-telephone"></i> 039 888 2041</p>
+                    <p><i class="bi bi-envelope"></i> info@it-era.it</p>
+                    <p><i class="bi bi-clock"></i> Lun-Ven: 9:00-18:00</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center py-3">
+                <p class="mb-0">© 2024 IT-ERA. Tutti i diritti riservati. | P.IVA: 10524040966</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Contact Form Handler -->
+    <script src="form-handler.js"></script>
+</body>
+</html>

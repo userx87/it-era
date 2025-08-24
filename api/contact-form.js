@@ -6,13 +6,13 @@
 // Configurazione
 const CONFIG = {
   // Email settings
-  EMAIL_TO: 'info@it-era.it',
-  EMAIL_FROM: 'noreply@it-era.it',
+  EMAIL_TO: 'andrea@bulltech.it',  // Destinatario principale
+  EMAIL_FROM: 'info@it-era.it', // Usa l'email verificata su SendGrid
   EMAIL_SUBJECT_PREFIX: '[IT-ERA]',
-  EMAIL_CC: 'andrea@bulltech.it', // Copia per backup
+  EMAIL_CC: '', // Copia per backup (disabilitata per ora)
   
   // Rate limiting
-  RATE_LIMIT_REQUESTS: 5,
+  RATE_LIMIT_REQUESTS: 100, // Aumentato per test
   RATE_LIMIT_WINDOW: 3600, // 1 ora in secondi
   
   // CORS
@@ -147,7 +147,7 @@ async function sendEmail(data, env) {
     const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${env.SENDGRID_API_KEY}`,
+        'Authorization': `Bearer ${env.SENDGRID_SMTP_PASSWORD || env.SENDGRID_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({

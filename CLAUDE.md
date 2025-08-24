@@ -1,3 +1,33 @@
+# IT-ERA Project - Claude Code Configuration
+
+## 🏗️ IT-ERA ARCHITETTURA COMPONENTI
+
+### Menu e Footer Separati (IMPORTANTE!)
+**Menu e footer sono componenti SEPARATI e unificati:**
+- **Navigation**: `/components/navigation-optimized.html` - Menu conversion-optimized
+- **Footer**: Componente unificato in tutti i template
+- **Applicazione**: Python script applica a tutte le 1,544 pagine
+- **⚠️ MAI modificare direttamente nelle pagine, usa sempre i componenti centrali**
+
+### Sistema Template con Placeholder
+**Template usano {{CITY}} come placeholder principale:**
+- `{{CITY}}` - Nome città (es: Milano, Monza, Como)
+- Slug URL e altri dati generati automaticamente dal nome città
+- Template path: `/templates/[servizio]-template.html`
+
+### Temi Colore per Servizio
+1. **🔧 Assistenza IT**: Blu professionale (#0056cc)
+2. **🔴 Sicurezza Informatica**: Rosso/Dark cyber (#dc3545, #1a1a2e) 
+3. **☁️ Cloud Storage**: Azzurro cloud (#17a2b8)
+
+### Informazioni Contatto (UNIFICATE)
+- **Telefono**: 039 888 2041
+- **Indirizzo**: Viale Risorgimento 32, Vimercate MB
+- **Email**: info@it-era.it
+- **P.IVA**: 10524040966
+
+---
+
 # Claude Code Configuration - SPARC Development Environment
 
 ## 🚨 CRITICAL: CONCURRENT EXECUTION & FILE MANAGEMENT

@@ -5,10 +5,10 @@
 
 class ITERAFormHandler {
   constructor() {
-    // Endpoint principale con dominio it-era.it
-    this.apiEndpoint = 'https://api.it-era.it/api/contact';
-    // Fallback su Workers.dev se necessario
-    this.fallbackEndpoint = 'https://it-era-contact-api.andrea-panzeri.workers.dev/api/contact';
+    // Endpoint Workers.dev con integrazione Resend attiva
+    this.apiEndpoint = 'https://it-era-email.bulltech.workers.dev/api/contact';
+    // Sistema aggiornato con Resend API - Fallback automatico per dominio non verificato
+    // Quando configuri DNS su api.it-era.it, punta a: it-era-email.bulltech.workers.dev
     this.isSubmitting = false;
     this.init();
   }
@@ -148,26 +148,14 @@ class ITERAFormHandler {
         sendCopy: formData.get('sendCopy') === 'on'
       };
 
-      // Invia richiesta con fallback automatico
-      let response;
-      try {
-        response = await fetch(this.apiEndpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      } catch (primaryError) {
-        console.log('Tentativo con endpoint fallback...');
-        response = await fetch(this.fallbackEndpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      }
+      // Invia richiesta
+      const response = await fetch(this.apiEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      });
 
       const result = await response.json();
 

@@ -1,5 +1,5 @@
-name = "it-era-contact-api"
-main = "src/index.js"
+name = "it-era-email"
+main = "contact-form-resend.js"
 compatibility_date = "2024-01-23"
 
 # Account ID Bulltech
@@ -29,18 +29,10 @@ binding = "ANALYTICS_DB"
 database_name = "it-era-analytics"
 database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
 
-# Workers dev
-workers_dev = true
-
-# Routes per it-era.it
-[[routes]]
-pattern = "api.it-era.it/*"
-zone_name = "it-era.it"
-
-# Route alternativo per Pages
-[[routes]]
-pattern = "www.it-era.it/api/*"
-zone_name = "it-era.it"
+# Routes disabilitati temporaneamente per test
+# [[routes]]
+# pattern = "api.it-era.it/*"
+# zone_name = "it-era.it"
 
 # Environment variables
 [vars]
@@ -58,6 +50,7 @@ vars = { ENVIRONMENT = "staging" }
 
 # Production secrets (usa wrangler secret put)
 # SENDGRID_API_KEY
+# RESEND_API_KEY
 # TELEGRAM_BOT_TOKEN
 # TELEGRAM_CHAT_ID
 # MAILGUN_API_KEY

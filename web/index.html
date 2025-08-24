@@ -1,1219 +1,781 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT-ERA Bulltech | Assistenza IT Professionale per PMI a Lecco</title>
-    <meta name="description" content="Partner IT di fiducia per PMI a Lecco e provincia. Assistenza sistemistica, cybersecurity WatchGuard, backup Veeam, Office 365. SLA garantiti, risposta 4h. Preventivo gratuito.">
-    <meta name="keywords" content="assistenza it lecco, consulenza informatica lecco, cybersecurity lecco, backup aziendale lecco, office 365 lecco, pmi lecco it">
-    
-    <!-- Schema Markup Organization -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "IT-ERA Bulltech Informatica",
-        "image": "/static/images/it-era-bulltech-lecco.jpg",
-        "description": "Assistenza IT professionale per PMI a Lecco e provincia",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Lecco",
-            "addressRegion": "Lombardia",
-            "addressCountry": "IT"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 45.8566,
-            "longitude": 9.3897
-        },
-        "telephone": "+39 039 888 2041",
-        "email": "info@it-era.it",
-        "url": "https://www.bulltech.it",
-        "areaServed": ["Lecco", "Merate", "Calolziocorte", "Oggiono", "Valmadrera", "Brianza"],
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": 45.8566,
-                "longitude": 9.3897
-            },
-            "geoRadius": "50000"
-        },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servizi IT",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Assistenza IT Continuativa",
-                        "description": "Help desk e supporto sistemistico per PMI"
-                    }
-                },
-                {
-                    "@type": "Offer", 
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Cybersecurity",
-                        "description": "Firewall WatchGuard e protezione endpoint"
-                    }
-                }
-            ]
-        }
-    }
-    </script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="canonical" href="https://it-era.pages.dev/">
-
-    <!-- Performance preconnects -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <!-- GA4 (placeholder) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{GA_MEASUREMENT_ID}}"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', '{{GA_MEASUREMENT_ID}}');
-    </script>
-
-    <!-- Tracking & performance tweaks -->
-    <script src="/static/js/tracking.js" defer></script>
-</head>
-<body>
-
-<!-- Header/Navigation -->
-<header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/">
-            <i class="fas fa-microchip me-2"></i>IT-ERA Bulltech
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Servizi IT</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pages/assistenza-it-lecco.html">Assistenza IT</a></li>
-                        <li><a class="dropdown-item" href="/pages/cybersecurity-lecco.html">Cybersecurity</a></li>
-                        <li><a class="dropdown-item" href="/pages/backup-disaster-recovery-lecco.html">Backup & DR</a></li>
-                        <li><a class="dropdown-item" href="/pages/office365-microsoft-lecco.html">Office 365</a></li>
-                        <li><a class="dropdown-item" href="/pages/monitoraggio-rete-lecco.html">Monitoraggio</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/case-study/">Case Study</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/prezzi.html">Prezzi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/blog/">Blog IT</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-                <a href="tel:+390398882041" class="btn btn-outline-light me-2">
-                    <i class="fas fa-phone me-1"></i>039 888 2041
-                </a>
-                <a href="#contatti" class="btn btn-primary">Preventivo</a>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section class="bg-gradient-dark text-white py-5 position-relative overflow-hidden">
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <h1 class="display-4 fw-bold mb-4">
-                    Assistenza IT Professionale per PMI a Lecco e Provincia
-                </h1>
-                <p class="lead mb-4">
-                    Partner tecnologico di fiducia per oltre 200 aziende lecchesi. 
-                    Assistenza sistemistica, cybersecurity avanzata e backup sicuri 
-                    con SLA garantiti e risposta entro 4 ore.
-                </p>
-                
-                <div class="row g-3 mb-4">
-                    <div class="col-sm-4 text-center">
-                        <div class="h3 fw-bold text-primary mb-1">4h</div>
-                        <small>Tempo risposta SLA</small>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <div class="h3 fw-bold text-primary mb-1">200+</div>
-                        <small>PMI assistite</small>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <div class="h3 fw-bold text-primary mb-1">24/7</div>
-                        <small>Emergenze critiche</small>
-                    </div>
-                </div>
-                
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="#preventivo-gratuito" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calculator me-2"></i>Preventivo Gratuito
-                    </a>
-                    <a href="tel:+390398882041" class="btn btn-outline-light btn-lg">
-                        <i class="fas fa-headset me-2"></i>Chiama Ora
-                    </a>
-                </div>
-                
-                <div class="mt-4 d-flex flex-wrap gap-3 align-items-center">
-                    <small class="text-light opacity-75">Partner certificati:</small>
-                    <img src="/static/images/microsoft-gold-partner.svg" alt="Microsoft Gold Partner" height="30" class="opacity-75">
-                    <img src="/static/images/watchguard-partner.svg" alt="WatchGuard Partner" height="30" class="opacity-75">
-                    <img src="/static/images/bitdefender-partner.svg" alt="Bitdefender Partner" height="30" class="opacity-75">
-                </div>
-            </div>
-            
-            <div class="col-lg-5 text-center">
-                <div class="position-relative">
-                    <img src="/static/images/it-support-lecco-hero.svg" alt="Assistenza IT professionale Lecco" class="img-fluid rounded shadow-lg">
-                    <div class="position-absolute top-0 end-0 bg-success text-white px-3 py-2 rounded-bottom-start">
-                        <i class="fas fa-phone me-1"></i>Attivi ora
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Problemi PMI → Soluzioni -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">I Problemi IT delle PMI di Lecco che Risolviamo</h2>
-            <p class="lead text-muted">Dalla gestione quotidiana alle emergenze critiche, interveniamo rapidamente</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <div class="h-100">
-                    <h3 class="h4 fw-bold text-danger mb-4">
-                        <i class="fas fa-exclamation-triangle me-2"></i>Problemi Tipici
-                    </h3>
-                    
-                    <div class="problem-item mb-4 p-3 bg-white rounded border-start border-danger border-4">
-                        <h4 class="h6 fw-bold text-danger">Sistema down senza supporto tecnico</h4>
-                        <p class="mb-0 small">Server bloccato, dipendenti fermi, nessuno che sa come intervenire. Perdite economiche immediate.</p>
-                    </div>
-                    
-                    <div class="problem-item mb-4 p-3 bg-white rounded border-start border-danger border-4">
-                        <h4 class="h6 fw-bold text-danger">Attacchi ransomware e phishing</h4>
-                        <p class="mb-0 small">Email sospette, file crittografati, richieste di riscatto. Sicurezza inadeguata per minacce moderne.</p>
-                    </div>
-                    
-                    <div class="problem-item mb-4 p-3 bg-white rounded border-start border-danger border-4">
-                        <h4 class="h6 fw-bold text-danger">Backup assenti o non testati</h4>
-                        <p class="mb-0 small">Perdita dati critica senza possibilità di recupero. Nessun piano di disaster recovery.</p>
-                    </div>
-                    
-                    <div class="problem-item mb-4 p-3 bg-white rounded border-start border-danger border-4">
-                        <h4 class="h6 fw-bold text-danger">Costi IT imprevedibili</h4>
-                        <p class="mb-0 small">Interventi urgenti, fatture salate, nessun controllo budget. Manca una gestione strutturata.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6">
-                <div class="h-100">
-                    <h3 class="h4 fw-bold text-success mb-4">
-                        <i class="fas fa-tools me-2"></i>Come Interveniamo
-                    </h3>
-                    
-                    <div class="solution-item mb-4 p-3 bg-white rounded border-start border-success border-4">
-                        <h4 class="h6 fw-bold text-success">Help desk H24 con SLA 4 ore</h4>
-                        <p class="mb-0 small">Team tecnico dedicato per Lecco. Intervento in sede entro 4 ore o remoto immediato.</p>
-                    </div>
-                    
-                    <div class="solution-item mb-4 p-3 bg-white rounded border-start border-success border-4">
-                        <h4 class="h6 fw-bold text-success">Firewall WatchGuard + Bitdefender</h4>
-                        <p class="mb-0 small">Protezione perimetrale enterprise con endpoint security centralizzata e AI anti-ransomware.</p>
-                    </div>
-                    
-                    <div class="solution-item mb-4 p-3 bg-white rounded border-start border-success border-4">
-                        <h4 class="h6 fw-bold text-success">Backup 3-2-1 con test mensili</h4>
-                        <p class="mb-0 small">Strategia professionale Veeam + cloud Wasabi. Disaster recovery testato e documentato.</p>
-                    </div>
-                    
-                    <div class="solution-item mb-4 p-3 bg-white rounded border-start border-success border-4">
-                        <h4 class="h6 fw-bold text-success">Contratti chiari con costi fissi</h4>
-                        <p class="mb-0 small">Pacchetti mensili trasparenti. Budget IT prevedibile senza sorprese.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-5">
-            <a href="#servizi-completi" class="btn btn-primary btn-lg">
-                <i class="fas fa-arrow-down me-2"></i>Scopri Tutti i Servizi
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Servizi Principali -->
-<section class="py-5" id="servizi-completi">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Servizi IT Completi per Aziende di Lecco</h2>
-            <p class="lead text-muted">Dalla gestione quotidiana ai progetti strategici, il tuo reparto IT esterno</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm service-card">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-headset text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Assistenza IT Continuativa</h3>
-                        <p class="small text-muted mb-3">Help desk, manutenzioni, aggiornamenti</p>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Help desk multicanale</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Manutenzioni programmate</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Gestione server e workstation</li>
-                            <li><i class="fas fa-check text-success me-2"></i>SLA 4 ore critiche</li>
-                        </ul>
-                        <a href="/pages/assistenza-it-lecco.html" class="btn btn-outline-primary btn-sm">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm service-card">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-shield-alt text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Cybersecurity</h3>
-                        <p class="small text-muted mb-3">Firewall, antivirus, protezione ransomware</p>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Firewall WatchGuard</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Bitdefender GravityZone</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Formazione anti-phishing</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Audit vulnerabilità</li>
-                        </ul>
-                        <a href="/pages/cybersecurity-lecco.html" class="btn btn-outline-primary btn-sm">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm service-card">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-cloud-upload-alt text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Backup & Disaster Recovery</h3>
-                        <p class="small text-muted mb-3">Protezione dati con strategia 3-2-1</p>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Veeam Backup & Replication</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Cloud storage Wasabi</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Test recovery mensili</li>
-                            <li><i class="fas fa-check text-success me-2"></i>RTO/RPO documentati</li>
-                        </ul>
-                        <a href="/pages/backup-aziendale-lecco.html" class="btn btn-outline-primary btn-sm">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm service-card">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-cloud text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Microsoft 365</h3>
-                        <p class="small text-muted mb-3">Licenze, migrazioni, tenant security</p>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Licenze Education e Business</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Migrazioni senza downtime</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Security policies</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Formazione utenti</li>
-                        </ul>
-                        <a href="/pages/office365-microsoft-lecco.html" class="btn btn-outline-primary btn-sm">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm service-card">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-chart-line text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Monitoraggio Proattivo</h3>
-                        <p class="small text-muted mb-3">Zabbix monitoring e manutenzioni predittive</p>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Monitoring 24/7 Zabbix</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Alert automatici</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Report performance</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Manutenzioni predittive</li>
-                        </ul>
-                        <a href="/pages/monitoraggio-rete-lecco.html" class="btn btn-outline-primary btn-sm">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm service-card">
-                    <div class="card-body p-4 text-center">
-                        <i class="fas fa-rocket text-primary display-6 mb-3"></i>
-                        <h3 class="h5 fw-bold">Onboarding Nuovo Cliente</h3>
-                        <p class="small text-muted mb-3">Assessment, inventario, hardening completo</p>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="fas fa-check text-success me-2"></i>Assessment iniziale gratuito</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Inventario completo asset</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Hardening di sicurezza</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Documentazione sistemi</li>
-                        </ul>
-                        <a href="/pages/onboarding-it-lecco.html" class="btn btn-outline-primary btn-sm">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Case Study Highlights -->
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Risultati Concreti per PMI di Lecco</h2>
-            <p class="lead text-muted">Case study reali dal nostro portfolio clienti</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-industry text-primary display-6"></i>
-                        </div>
-                        <h3 class="h5 fw-bold text-center">Azienda Metalmeccanica</h3>
-                        <p class="small text-center text-muted mb-3">45 dipendenti, Lecco</p>
-                        
-                        <div class="row g-2 text-center mb-3">
-                            <div class="col-4">
-                                <div class="fw-bold text-success">-85%</div>
-                                <small>Incidenti IT</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success">0</div>
-                                <small>Ore downtime</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success">24h</div>
-                                <small>Recovery completo</small>
-                            </div>
-                        </div>
-                        
-                        <p class="small">Implementazione firewall WatchGuard, backup Veeam e procedure operative. Ransomware bloccato senza impatti.</p>
-                        
-                        <a href="/pages/case-study/metalmeccanica-lecco.html" class="btn btn-primary btn-sm w-100">Leggi Case Study</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-graduation-cap text-primary display-6"></i>
-                        </div>
-                        <h3 class="h5 fw-bold text-center">Istituto Comprensivo</h3>
-                        <p class="small text-center text-muted mb-3">850 studenti, Lecco</p>
-                        
-                        <div class="row g-2 text-center mb-3">
-                            <div class="col-4">
-                                <div class="fw-bold text-success">100%</div>
-                                <small>Uptime didattica</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success">-40%</div>
-                                <small>Costi licenze</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success">GDPR</div>
-                                <small>Compliance</small>
-                            </div>
-                        </div>
-                        
-                        <p class="small">Migrazione a Office 365 Education con sicurezza avanzata e gestione dispositivi studenti.</p>
-                        
-                        <a href="/pages/case-study/scuola-lecco.html" class="btn btn-primary btn-sm w-100">Leggi Case Study</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-briefcase text-primary display-6"></i>
-                        </div>
-                        <h3 class="h5 fw-bold text-center">Studio Professionale</h3>
-                        <p class="small text-center text-muted mb-3">12 professionisti, Lecco</p>
-                        
-                        <div class="row g-2 text-center mb-3">
-                            <div class="col-4">
-                                <div class="fw-bold text-success">€0</div>
-                                <small>Sanzioni GDPR</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success">2h</div>
-                                <small>Tempo risposta</small>
-                            </div>
-                            <div class="col-4">
-                                <div class="fw-bold text-success">100%</div>
-                                <small>Dati protetti</small>
-                            </div>
-                        </div>
-                        
-                        <p class="small">Compliance GDPR completa con audit, procedure e formazione personale specializzato.</p>
-                        
-                        <a href="/pages/case-study/studio-professionale-lecco.html" class="btn btn-primary btn-sm w-100">Leggi Case Study</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Perché Scegliere IT-ERA -->
-<section class="bg-primary text-white py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h2 class="fw-bold mb-4">Perché 200+ PMI di Lecco Scelgono IT-ERA</h2>
-                
-                <div class="row g-4">
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-map-marker-alt text-warning me-3 mt-1 fs-4"></i>
-                            <div>
-                                <h3 class="h6 fw-bold">Presenza Locale</h3>
-                                <p class="small mb-0">Team tecnico residente a Lecco. Conosciamo territorio, PMI e problematiche specifiche della zona.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-stopwatch text-warning me-3 mt-1 fs-4"></i>
-                            <div>
-                                <h3 class="h6 fw-bold">SLA Rispettati</h3>
-                                <p class="small mb-0">Contratti con tempi garantiti: 4h per criticità, 24h per media priorità. Penali per ritardi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-award text-warning me-3 mt-1 fs-4"></i>
-                            <div>
-                                <h3 class="h6 fw-bold">Partner Enterprise</h3>
-                                <p class="small mb-0">Microsoft Gold, WatchGuard Certified, Bitdefender Elite. Accesso diretto a supporto vendor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-euro-sign text-warning me-3 mt-1 fs-4"></i>
-                            <div>
-                                <h3 class="h6 fw-bold">Costi Trasparenti</h3>
-                                <p class="small mb-0">Pacchetti chiari senza sorprese. Budget IT prevedibile per pianificazione aziendale.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-4">
-                    <a href="/pages/chi-siamo.html" class="btn btn-light btn-lg">
-                        <i class="fas fa-users me-2"></i>Conosci il Team
-                    </a>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 text-center">
-                <img src="/static/images/team-it-era-lecco.svg" alt="Team IT-ERA Bulltech Lecco" class="img-fluid rounded shadow">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Pacchetti Assistenza -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Pacchetti Assistenza IT per PMI Lecco</h2>
-            <p class="lead text-muted">Soluzioni modulari per ogni esigenza e budget aziendale</p>
-        </div>
-        
-        <div class="row g-4 align-items-end">
-            <div class="col-lg-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="card-header bg-light text-center">
-                        <h3 class="h5 fw-bold mb-0">HELP DESK</h3>
-                        <p class="small text-muted mb-0">Supporto base 5-20 postazioni</p>
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="text-center mb-4">
-                            <span class="h3 fw-bold">€290</span>
-                            <span class="text-muted">/mese</span>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Supporto remoto illimitato</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SLA 8h problemi non critici</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Ticket system dedicato</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Orario 8:30-18:00</li>
-                            <li class="mb-2"><i class="fas fa-times text-muted me-2"></i>Interventi in sede esclusi</li>
-                        </ul>
-                        <a href="/prezzi#help-desk" class="btn btn-outline-primary w-100">Dettagli Pacchetto</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card border-warning shadow h-100 position-relative">
-                    <div class="position-absolute top-0 start-50 translate-middle">
-                        <span class="badge bg-warning text-dark px-3 py-2 fw-bold">CONSIGLIATO</span>
-                    </div>
-                    <div class="card-header bg-warning text-dark text-center">
-                        <h3 class="h5 fw-bold mb-0">ASSISTENZA FULL</h3>
-                        <p class="small mb-0">Completo 10-50 postazioni</p>
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="text-center mb-4">
-                            <span class="h3 fw-bold">€590</span>
-                            <span class="text-muted">/mese</span>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Help desk + interventi in sede</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SLA 4h emergenze critiche</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Manutenzioni programmate</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Monitoraggio proattivo</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Backup management incluso</li>
-                        </ul>
-                        <a href="#preventivo-gratuito" class="btn btn-warning w-100 text-dark fw-bold" onclick="selectPackage('full')">Scegli Full</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="card-header bg-dark text-white text-center">
-                        <h3 class="h5 fw-bold mb-0">MONTE ORE</h3>
-                        <p class="small mb-0">Flessibile per progetti</p>
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="text-center mb-4">
-                            <span class="h3 fw-bold">€75</span>
-                            <span class="text-muted">/ora</span>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Pacchetti 30-50-80 ore</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Validità 12 mesi</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Priorità su interventi</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Sconto 15% su materiali</li>
-                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Report ore dettagliato</li>
-                        </ul>
-                        <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#monteOreModal">Configura Monte Ore</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-5">
-            <p class="text-muted">
-                <i class="fas fa-info-circle me-2"></i>
-                Tutti i pacchetti includono assessment iniziale e formazione base gratuita
-            </p>
-            <a href="/pages/prezzi.html" class="btn btn-primary btn-lg">
-                <i class="fas fa-calculator me-2"></i>Confronta Tutti i Pacchetti
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Copertura Territoriale -->
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Copertura Territoriale Lecco e Provincia</h2>
-            <p class="lead text-muted">Supporto tecnico locale per comuni di Lecco, Como, Monza e Brianza</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-8">
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <h3 class="h6 fw-bold text-primary">Lecco Centro</h3>
-                        <ul class="list-unstyled small">
-                            <li><a href="/pages/assistenza-it-lecco.html" class="text-decoration-none">Lecco</a></li>
-                            <li><a href="#" class="text-decoration-none disabled">Malgrate</a></li>
-                            <li><a href="#" class="text-decoration-none disabled">Garlate</a></li>
-                            <li><a href="#" class="text-decoration-none disabled">Olginate</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3 class="h6 fw-bold text-primary">Lecco Nord</h3>
-                        <ul class="list-unstyled small">
-                            <li><a href="/pages/assistenza-it-mandello.html" class="text-decoration-none">Mandello del Lario</a></li>
-                            <li><a href="#" class="text-decoration-none disabled">Bellano</a></li>
-                            <li><a href="#" class="text-decoration-none disabled">Colico</a></li>
-                            <li><a href="#" class="text-decoration-none disabled">Dervio</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3 class="h6 fw-bold text-primary">Lecco Sud</h3>
-                        <ul class="list-unstyled small">
-                            <li><a href="/pages/assistenza-it-merate.html" class="text-decoration-none">Merate</a></li>
-                            <li><a href="/pages/assistenza-it-calolziocorte.html" class="text-decoration-none">Calolziocorte</a></li>
-                            <li><a href="/pages/assistenza-it-oggiono.html" class="text-decoration-none">Oggiono</a></li>
-                            <li><a href="/pages/assistenza-it-valmadrera.html" class="text-decoration-none">Valmadrera</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bg-light p-4 rounded mt-4">
-                    <h3 class="h6 fw-bold">Tempi di Intervento Garantiti</h3>
-                    <div class="row g-3 text-center">
-                        <div class="col-4">
-                            <div class="fw-bold text-success">30 min</div>
-                            <small>Lecco centro</small>
-                        </div>
-                        <div class="col-4">
-                            <div class="fw-bold text-success">45 min</div>
-                            <small>Provincia Lecco</small>
-                        </div>
-                        <div class="col-4">
-                            <div class="fw-bold text-success">60 min</div>
-                            <small>Brianza/Como</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="bg-white text-dark p-4 rounded">
-                    <h3 class="fw-bold text-center mb-3">Richiedi Intervento Immediato</h3>
-                    <div class="text-center mb-3">
-                        <a href="tel:+390398882041" class="btn btn-primary btn-lg w-100 mb-2">
-                            <i class="fas fa-phone me-2"></i>039 888 2041
-                        </a>
-                        <a href="mailto:info@it-era.it?subject=Richiesta%20Urgente%20Lecco" class="btn btn-outline-primary w-100">
-                            <i class="fas fa-envelope me-2"></i>Email Urgente
-                        </a>
-                    </div>
-                    <p class="small text-center text-muted mb-0">
-                        Linea diretta attiva H24 per emergenze critiche
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Preventivo Gratuito -->
-<section class="py-5" id="preventivo-gratuito">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card border-0 shadow-lg">
-                    <div class="card-body p-5">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-calculator text-primary display-5 mb-3"></i>
-                            <h2 class="fw-bold">Preventivo Personalizzato Gratuito</h2>
-                            <p class="lead text-muted">
-                                Assessment IT completo per la tua azienda a Lecco. 
-                                Ricevi un piano dettagliato con costi e priorità di intervento.
-                            </p>
-                        </div>
-                        
-                        <form id="preventivo-form" class="needs-validation" novalidate>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label fw-bold">Nome e Cognome *</label>
-                                    <input type="text" class="form-control" name="nome" required>
-                                    <div class="invalid-feedback">Inserisci nome e cognome</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-bold">Ruolo in Azienda *</label>
-                                    <select class="form-select" name="ruolo" required>
-                                        <option value="">Seleziona ruolo...</option>
-                                        <option value="ceo">CEO/Proprietario</option>
-                                        <option value="it-manager">IT Manager</option>
-                                        <option value="amministratore">Amministratore</option>
-                                        <option value="responsabile">Responsabile Ufficio</option>
-                                        <option value="altro">Altro</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-8">
-                                    <label class="form-label fw-bold">Azienda *</label>
-                                    <input type="text" class="form-control" name="azienda" required>
-                                </div>
-                                <div class="col-md-4">
-                                    <label class="form-label fw-bold">Dipendenti</label>
-                                    <select class="form-select" name="dipendenti">
-                                        <option value="">N. dipendenti</option>
-                                        <option value="1-5">1-5</option>
-                                        <option value="6-15">6-15</option>
-                                        <option value="16-30">16-30</option>
-                                        <option value="31-50">31-50</option>
-                                        <option value="51-100">51-100</option>
-                                        <option value="100+">Oltre 100</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-bold">Email *</label>
-                                    <input type="email" class="form-control" name="email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-bold">Telefono *</label>
-                                    <input type="tel" class="form-control" name="telefono" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-bold">Comune *</label>
-                                    <select class="form-select" name="comune" required>
-                                        <option value="">Seleziona comune...</option>
-                                        <option value="lecco">Lecco</option>
-                                        <option value="merate">Merate</option>
-                                        <option value="calolziocorte">Calolziocorte</option>
-                                        <option value="oggiono">Oggiono</option>
-                                        <option value="valmadrera">Valmadrera</option>
-                                        <option value="mandello">Mandello del Lario</option>
-                                        <option value="bellano">Bellano</option>
-                                        <option value="colico">Colico</option>
-                                        <option value="altro-lecco">Altro provincia Lecco</option>
-                                        <option value="brianza">Brianza</option>
-                                        <option value="como">Como</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-bold">Urgenza Richiesta</label>
-                                    <select class="form-select" name="urgenza">
-                                        <option value="normale">Normale (7-10 giorni)</option>
-                                        <option value="prioritaria">Prioritaria (2-3 giorni)</option>
-                                        <option value="urgente">Urgente (24-48h)</option>
-                                        <option value="critica">Critica (immediata)</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label fw-bold">Servizi di Interesse</label>
-                                    <div class="row g-2">
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="servizi[]" value="help-desk">
-                                                <label class="form-check-label small">Help Desk e Supporto</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="servizi[]" value="cybersecurity">
-                                                <label class="form-check-label small">Cybersecurity</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="servizi[]" value="backup">
-                                                <label class="form-check-label small">Backup & Disaster Recovery</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="servizi[]" value="office365">
-                                                <label class="form-check-label small">Microsoft 365</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="servizi[]" value="monitoraggio">
-                                                <label class="form-check-label small">Monitoraggio Rete</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="servizi[]" value="progetto">
-                                                <label class="form-check-label small">Progetto specifico</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label fw-bold">Dettagli Richiesta</label>
-                                    <textarea class="form-control" name="messaggio" rows="4" placeholder="Descrivi la tua situazione IT attuale, problematiche specifiche o obiettivi del progetto..."></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="privacy" required>
-                                        <label class="form-check-label small">
-                                            Accetto il trattamento dei dati personali secondo la 
-                                            <a href="/privacy-policy" target="_blank">Privacy Policy</a> *
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg px-5">
-                                        <i class="fas fa-paper-plane me-2"></i>Richiedi Preventivo Gratuito
-                                    </button>
-                                    <p class="small text-muted mt-2 mb-0">Risposta entro 2 ore lavorative</p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-white py-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <h3 class="h5 fw-bold mb-3">IT-ERA Bulltech Informatica</h3>
-                <p class="small">
-                    Partner tecnologico specializzato in assistenza IT per PMI di Lecco e provincia. 
-                    Competenze Microsoft, WatchGuard, Bitdefender con SLA garantiti.
-                </p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-            
-            <div class="col-lg-2">
-                <h4 class="h6 fw-bold mb-3">Servizi</h4>
-                <ul class="list-unstyled small">
-                    <li><a href="/pages/assistenza-it-lecco.html" class="text-white-50 text-decoration-none">Assistenza IT</a></li>
-                    <li><a href="/pages/cybersecurity-lecco.html" class="text-white-50 text-decoration-none">Cybersecurity</a></li>
-                    <li><a href="/pages/backup-disaster-recovery-lecco.html" class="text-white-50 text-decoration-none">Backup</a></li>
-                    <li><a href="/pages/office365-microsoft-lecco.html" class="text-white-50 text-decoration-none">Office 365</a></li>
-                    <li><a href="/pages/monitoraggio-rete-lecco.html" class="text-white-50 text-decoration-none">Monitoraggio</a></li>
-                </ul>
-            </div>
-            
-            <div class="col-lg-2">
-                <h4 class="h6 fw-bold mb-3">Azienda</h4>
-                <ul class="list-unstyled small">
-                    <li><a href="/pages/chi-siamo.html" class="text-white-50 text-decoration-none">Chi Siamo</a></li>
-                    <li><a href="/pages/partner-certificazioni.html" class="text-white-50 text-decoration-none">Partner</a></li>
-                    <li><a href="/pages/case-study/" class="text-white-50 text-decoration-none">Case Study</a></li>
-                    <li><a href="/pages/prezzi.html" class="text-white-50 text-decoration-none">Prezzi</a></li>
-                    <li><a href="/pages/blog/" class="text-white-50 text-decoration-none">Blog IT</a></li>
-                </ul>
-            </div>
-            
-            <div class="col-lg-4">
-                <h4 class="h6 fw-bold mb-3">Contatti Diretti</h4>
-                <div class="mb-3">
-                    <div class="d-flex align-items-center mb-2">
-                        <i class="fas fa-phone text-primary me-3"></i>
-                        <div>
-                            <a href="tel:+390398882041" class="text-white text-decoration-none fw-bold">039 888 2041</a><br>
-                            <a href="tel:+390395787212" class="text-white-50 text-decoration-none small">039 578 7212</a>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-2">
-                        <i class="fas fa-envelope text-primary me-3"></i>
-                        <a href="mailto:info@it-era.it" class="text-white text-decoration-none">info@it-era.it</a>
-                    </div>
-                    <div class="d-flex align-items-start">
-                        <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
-                        <div class="small">
-                            Lecco e Provincia<br>
-                            Copertura Brianza e Milano Nord
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-primary bg-opacity-25 p-3 rounded">
-                    <div class="small fw-bold mb-1">Orari Ufficio</div>
-                    <div class="small">Lun-Ven: 8:30-18:00</div>
-                    <div class="small">Emergency: 24/7</div>
-                </div>
-            </div>
-        </div>
-        
-        <hr class="my-4">
-        
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <p class="small mb-0">&copy; 2024 IT-ERA Bulltech Informatica. Tutti i diritti riservati.</p>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <div class="small">
-                    <a href="/pages/privacy-policy.html" class="text-white-50 text-decoration-none me-3">Privacy</a>
-                    <a href="/pages/cookie-policy.html" class="text-white-50 text-decoration-none me-3">Cookie</a>
-                    <a href="/pages/termini-servizio.html" class="text-white-50 text-decoration-none">Termini</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Modal Monte Ore -->
-<div class="modal fade" id="monteOreModal" tabindex="-1" aria-labelledby="monteOreModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header bg-dark text-white">
-                <h5 class="modal-title" id="monteOreModalLabel">
-                    <i class="fas fa-clock me-2"></i>Configura il Tuo Monte Ore
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card border-primary h-100">
-                            <div class="card-body text-center">
-                                <h6 class="fw-bold">30 ORE</h6>
-                                <div class="h4 fw-bold text-primary">€2.100</div>
-                                <p class="small text-muted">€70/ora (sconto 7%)</p>
-                                <ul class="list-unstyled small text-start">
-                                    <li>✓ Validità 12 mesi</li>
-                                    <li>✓ Priorità interventi</li>
-                                    <li>✓ Report mensile</li>
-                                </ul>
-                                <button class="btn btn-primary w-100" onclick="selectMonteOre(30)">
-                                    Scegli 30 Ore
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-success h-100">
-                            <div class="card-body text-center">
-                                <h6 class="fw-bold">50 ORE</h6>
-                                <div class="h4 fw-bold text-success">€3.375</div>
-                                <p class="small text-muted">€67.50/ora (sconto 10%)</p>
-                                <ul class="list-unstyled small text-start">
-                                    <li>✓ Validità 12 mesi</li>
-                                    <li>✓ Priorità interventi</li>
-                                    <li>✓ Report mensile</li>
-                                    <li>✓ Sconto 15% materiali</li>
-                                </ul>
-                                <button class="btn btn-success w-100" onclick="selectMonteOre(50)">
-                                    Scegli 50 Ore
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-warning h-100">
-                            <div class="card-body text-center">
-                                <h6 class="fw-bold">80 ORE</h6>
-                                <div class="h4 fw-bold text-warning">€5.100</div>
-                                <p class="small text-muted">€63.75/ora (sconto 15%)</p>
-                                <ul class="list-unstyled small text-start">
-                                    <li>✓ Validità 12 mesi</li>
-                                    <li>✓ Priorità massima</li>
-                                    <li>✓ Report settimanale</li>
-                                    <li>✓ Sconto 20% materiali</li>
-                                    <li>✓ Consulenza strategica</li>
-                                </ul>
-                                <button class="btn btn-warning w-100" onclick="selectMonteOre(80)">
-                                    Scegli 80 Ore
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="alert alert-info mt-4">
-                    <i class="fas fa-info-circle me-2"></i>
-                    <strong>Come funziona:</strong> Acquisti un pacchetto ore prepagato da utilizzare per interventi, progetti e consulenze. 
-                    Le ore non scadono per 12 mesi e hai sempre visibilità del consumo con report dettagliati.
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
-                <button type="button" class="btn btn-primary" onclick="goToContactForm()">
-                    <i class="fas fa-phone me-2"></i>Parla con un Consulente
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sticky CTA Mobile -->
-<div class="d-lg-none position-fixed bottom-0 start-0 end-0 bg-primary p-3 shadow-lg" style="z-index: 1000;">
-    <div class="d-flex gap-2">
-        <a href="tel:+39039 888 2041" class="btn btn-light flex-fill">
-            <i class="fas fa-phone me-1"></i>Chiama
-        </a>
-        <a href="#preventivo-gratuito" class="btn btn-warning flex-fill">
-            <i class="fas fa-calculator me-1"></i>Preventivo
-        </a>
-    </div>
-</div>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Form validation
-(function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        var forms = document.getElementsByClassName('needs-validation');
-        var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
-
-// Tracking conversioni
-document.addEventListener('DOMContentLoaded', function() {
-    // Track phone clicks
-    document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
-        link.addEventListener('click', function() {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'contact', {
-                    'event_category': 'phone_click',
-                    'event_label': 'homepage_lecco',
-                    'value': 1
-                });
-            }
-        });
-    });
-    
-    // Track form submission
-    document.getElementById('preventivo-form').addEventListener('submit', function(e) {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'conversion', {
-                'event_category': 'lead_generation',
-                'event_label': 'preventivo_gratuito',
-                'value': 1
-            });
-        }
-    });
-    
-    // Track service card clicks
-    document.querySelectorAll('.service-card a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'navigation', {
-                    'event_category': 'service_click',
-                    'event_label': this.getAttribute('href'),
-                    'value': 1
-                });
-            }
-        });
-    });
-});
-
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Funzione per pre-selezionare pacchetto
-function selectPackage(packageType) {
-    // Scroll al form
-    const form = document.getElementById('preventivo-gratuito');
-    if (form) {
-        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        
-        // Pre-compila il form
-        setTimeout(function() {
-            const checkboxes = document.querySelectorAll('input[name="servizi[]"]');
-            checkboxes.forEach(cb => cb.checked = false);
-            
-            if (packageType === 'full') {
-                // Seleziona tutti i servizi per il pacchetto full
-                checkboxes.forEach(cb => cb.checked = true);
-                
-                // Aggiungi nota nel campo messaggio
-                const messageField = document.querySelector('textarea[name="messaggio"]');
-                if (messageField) {
-                    messageField.value = 'Sono interessato al pacchetto ASSISTENZA FULL (€590/mese). Vorrei maggiori informazioni e schedulare un assessment iniziale.';
-                }
-            }
-        }, 500);
-    }
-}
-
-// Funzione per selezionare monte ore
-function selectMonteOre(hours) {
-    // Chiudi il modal
-    const modal = bootstrap.Modal.getInstance(document.getElementById('monteOreModal'));
-    if (modal) modal.hide();
-    
-    // Scroll al form
-    const form = document.getElementById('preventivo-gratuito');
-    if (form) {
-        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        
-        // Pre-compila il form
-        setTimeout(function() {
-            const messageField = document.querySelector('textarea[name="messaggio"]');
-            if (messageField) {
-                messageField.value = `Sono interessato al pacchetto MONTE ORE da ${hours} ore. Vorrei ricevere maggiori dettagli su:
-- Modalità di utilizzo delle ore
-- Tipologie di interventi inclusi
-- Report e tracciamento consumo
-- Termini di pagamento`;
-            }
-            
-            // Seleziona checkbox progetto
-            const progettoCheckbox = document.querySelector('input[value="progetto"]');
-            if (progettoCheckbox) progettoCheckbox.checked = true;
-        }, 500);
-    }
-    
-    // Track evento
-    if (typeof gtag !== 'undefined') {
-        gtag('event', 'select_package', {
-            'event_category': 'engagement',
-            'event_label': 'monte_ore_' + hours,
-            'value': hours
-        });
-    }
-}
-
-// Funzione per andare al form contatti
-function goToContactForm() {
-    const modal = bootstrap.Modal.getInstance(document.getElementById('monteOreModal'));
-    if (modal) modal.hide();
-    
-    const form = document.getElementById('preventivo-gratuito');
-    if (form) {
-        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
-</script>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia</title>
+<meta content="IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti." name="description"/>
+<!-- Critical CSS Inline for Performance -->
 <style>
-.bg-gradient-dark {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        :root {
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --danger: #dc3545;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 76px;
+        }
+        
+        /* Skip Navigation */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            border-radius: 4px;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        /* Emergency Banner */
+        .emergency-banner {
+            background: linear-gradient(90deg, #dc3545, #ff6b6b);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            position: fixed;
+            top: 76px;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.9; }
+        }
+        
+        .emergency-banner a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 10px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056cc 0%, #00b336 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero .lead {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        /* CTA Buttons */
+        .btn-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: var(--primary);
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            min-height: 48px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            min-height: 48px;
+            margin-left: 20px;
+        }
+        
+        .btn-cta-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: white;
+            padding: 30px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .trust-metrics {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Services Grid */
+        .services {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .service-card .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+        
+        .service-card .price-period {
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        /* Client Logos */
+        .clients {
+            padding: 60px 20px;
+            background: white;
+        }
+        
+        .client-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            filter: grayscale(100%);
+            opacity: 0.6;
+        }
+        
+        .client-logos img {
+            height: 40px;
+            transition: all 0.3s;
+        }
+        
+        .client-logos img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Coverage Map */
+        .coverage {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e9ecef 100%);
+        }
+        
+        .coverage h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--dark);
+        }
+        
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .city-tag {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-align: center;
+            color: var(--primary);
+            font-weight: 500;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+        
+        .city-tag:hover {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+            
+            .emergency-banner {
+                top: 60px;
+                font-size: 0.9rem;
+            }
+            
+            .hero {
+                padding: 50px 20px;
+            }
+            
+            .btn-cta-secondary {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .trust-metrics {
+                gap: 20px;
+            }
+            
+            .metric-value {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Navbar fixes */
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            z-index: 1030;
+        }
+    </style>
+<!-- Preconnect for performance -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+<!-- Font loading with swap -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap CSS (deferred) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print" onload="this.media='all'; this.onload=null;" rel="stylesheet"/>
+<noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/></noscript>
+<!-- Font Awesome (deferred) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;" rel="stylesheet"/>
+<noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/></noscript>
+<style>
+/* Optimized Navigation Styles */
+.navbar {
+    min-height: 76px;
 }
 
-.service-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.dropdown-menu-columns {
+    min-width: 400px;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+.dropdown-header {
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.25rem;
 }
 
-.problem-item, .solution-item {
-    transition: transform 0.2s ease;
+.dropdown-item {
+    padding: 0.4rem 1rem;
+    transition: all 0.2s ease;
 }
 
-.problem-item:hover, .solution-item:hover {
-    transform: translateX(5px);
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.25rem;
 }
-</style>
 
+.badge {
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Mobile optimizations */
+@media (max-width: 991px) {
+    .dropdown-menu-columns {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-columns .row {
+        display: block;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+}</style></head>
+<body style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: #0056cc;">IT</span>-ERA
+        </a>
+<!-- Emergency CTA for Mobile -->
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-danger btn-sm" href="tel:+390398882041">
+                🚨 Emergenza
+            </a>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<!-- Emergency Support - Primary CTA -->
+<li class="nav-item d-none d-lg-block">
+<a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                        🚨 Supporto Urgente
+                    </a>
+</li>
+<!-- Services Dropdown with Icons -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Servizi
+                    </a>
+<ul class="dropdown-menu">
+<li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+<li><a class="dropdown-item" href="/pages/assistenza-it-milano.html">
+                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+</a></li>
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica-milano.html">
+                            🛡️ Sicurezza Informatica
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+<li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
+                            ☁️ Cloud Storage
+                        </a></li>
+<li><a class="dropdown-item" href="#backup">
+                            💾 Backup Automatico
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+<li><a class="dropdown-item" href="#all-inclusive">
+                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+</a></li>
+</ul>
+</li>
+<!-- Industry Sectors Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Settori
+                    </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#pmi">
+                            🏢 PMI e Startup
+                        </a></li>
+<li><a class="dropdown-item" href="#studi">
+                            ⚕️ Studi Medici
+                        </a></li>
+<li><a class="dropdown-item" href="#commercialisti">
+                            📊 Commercialisti
+                        </a></li>
+<li><a class="dropdown-item" href="#avvocati">
+                            ⚖️ Studi Legali
+                        </a></li>
+<li><a class="dropdown-item" href="#industria">
+                            🏭 Industria 4.0
+                        </a></li>
+<li><a class="dropdown-item" href="#retail">
+                            🛍️ Retail e GDO
+                        </a></li>
+</ul>
+</li>
+<!-- Coverage Areas -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Zone Coperte
+                    </a>
+<ul class="dropdown-menu dropdown-menu-columns">
+<div class="row g-0">
+<div class="col-6">
+<li class="dropdown-header text-muted small">MILANO E BRIANZA</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-milano.html">Milano</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-monza.html">Monza</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-seregno.html">Seregno</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lissone.html">Lissone</a></li>
+</div>
+<div class="col-6">
+<li class="dropdown-header text-muted small">COMO E LECCO</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-como.html">Como</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lecco.html">Lecco</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-cantu.html">Cantù</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-merate.html">Merate</a></li>
+<li><a class="text-primary" href="#">Vedi tutte →</a></li>
+</div>
+</div>
+</ul>
+</li>
+<!-- Why IT-ERA -->
+<li class="nav-item">
+<a class="nav-link" href="#perche">Perché IT-ERA</a>
+</li>
+<!-- Contact -->
+<li class="nav-item">
+<a class="nav-link" href="#contatti">Contatti</a>
+</li>
+<!-- Primary CTA Button -->
+<li class="nav-item ms-lg-3">
+<a class="btn btn-primary" href="tel:+390398882041">
+                        📞 039 888 2041
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Skip Navigation -->
+<a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+<!-- Emergency Support Banner -->
+<div class="emergency-banner">
+        🚨 <strong>Sistema bloccato?</strong> Assistenza immediata: 
+        <a href="tel:+390398882041">📞 039 888 2041</a>
+<span class="d-none d-md-inline">- Risposta garantita in 15 minuti</span>
+</div>
+<!-- Navigation -->
+
+<!-- Main Content -->
+<main id="main-content">
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<h1>Il Partner IT che la Tua Azienda Merita</h1>
+<p class="lead">Assistenza informatica professionale, sicurezza avanzata e soluzioni cloud per PMI in Lombardia. Interventi garantiti in 15 minuti, 24/7.</p>
+<div class="hero-cta">
+<a class="btn-cta-primary" href="tel:+390398882041">
+                        🚨 Assistenza Urgente
+                        <small class="d-block" style="font-size: 0.8rem; font-weight: 400;">Risposta in 15 min</small>
+</a>
+<a class="btn-cta-secondary" href="#services">
+                        📋 Preventivo Gratuito
+                    </a>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="trust-bar">
+<div class="container">
+<div class="trust-metrics">
+<div class="metric">
+<div class="metric-value">300+</div>
+<div class="metric-label">Aziende Assistite</div>
+</div>
+<div class="metric">
+<div class="metric-value">15min</div>
+<div class="metric-label">Tempo di Risposta</div>
+</div>
+<div class="metric">
+<div class="metric-value">24/7</div>
+<div class="metric-label">Supporto Continuativo</div>
+</div>
+<div class="metric">
+<div class="metric-value">99.9%</div>
+<div class="metric-label">Uptime Garantito</div>
+</div>
+<div class="metric">
+<div class="metric-value">4.8⭐</div>
+<div class="metric-label">Valutazione Clienti</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="services" id="services">
+<div class="container">
+<h2>Soluzioni IT Complete per la Tua Azienda</h2>
+<p class="text-center text-muted mb-5">Scegli il servizio più adatto alle tue esigenze o crea un pacchetto personalizzato</p>
+<div class="services-grid">
+<!-- Assistenza IT -->
+<div class="service-card">
+<div class="service-icon">🔧</div>
+<h3>Assistenza IT</h3>
+<p>Supporto tecnico completo per hardware, software e reti. Interventi on-site e remoti.</p>
+<div class="price">
+                            €150
+                            <span class="price-period">/mese</span>
+</div>
+<a class="btn btn-primary w-100 mt-3" href="/pages/assistenza-it-milano.html">Scopri di più</a>
+</div>
+<!-- Cloud Storage -->
+<div class="service-card">
+<div class="service-icon">☁️</div>
+<h3>Cloud Storage</h3>
+<p>Archiviazione sicura e backup automatici con tecnologia Veeam. Disaster recovery incluso.</p>
+<div class="price">
+                            €50
+                            <span class="price-period">/TB/mese</span>
+</div>
+<a class="btn btn-primary w-100 mt-3" href="/pages/cloud-storage-milano.html">Scopri di più</a>
+</div>
+<!-- Cybersecurity -->
+<div class="service-card">
+<div class="service-icon">🛡️</div>
+<h3>Sicurezza Informatica</h3>
+<p>Protezione avanzata contro malware, ransomware e attacchi cyber. SOC 24/7.</p>
+<div class="price">
+                            €250
+                            <span class="price-period">/mese</span>
+</div>
+<a class="btn btn-primary w-100 mt-3" href="/pages/sicurezza-informatica-milano.html">Scopri di più</a>
+</div>
+<!-- VoIP -->
+<div class="service-card">
+<div class="service-icon">📞</div>
+<h3>VoIP &amp; Telefonia</h3>
+<p>Centralino cloud Wildix con funzionalità avanzate. Risparmia fino al 50% sui costi.</p>
+<div class="price">
+                            €15
+                            <span class="price-period">/utente/mese</span>
+</div>
+<a class="btn btn-primary w-100 mt-3" href="/pages/voip-telefonia-milano.html">Scopri di più</a>
+</div>
+<!-- Firewall -->
+<div class="service-card">
+<div class="service-icon">🔥</div>
+<h3>Firewall WatchGuard</h3>
+<p>Firewall gestito as-a-Service con protezione UTM completa. Zero configurazione.</p>
+<div class="price">
+                            €89
+                            <span class="price-period">/mese</span>
+</div>
+<a class="btn btn-primary w-100 mt-3" href="/pages/firewall-watchguard-milano.html">Scopri di più</a>
+</div>
+<!-- Pacchetto Completo -->
+<div class="service-card" style="border: 3px solid var(--secondary);">
+<div class="service-icon">🎯</div>
+<h3>Pacchetto All-Inclusive</h3>
+<p><strong>RISPARMIA 30%</strong> - Tutti i servizi in un'unica soluzione integrata.</p>
+<div class="price">
+                            €490
+                            <span class="price-period">/mese</span>
+</div>
+<a class="btn btn-success w-100 mt-3" href="tel:+390398882041">Richiedi Offerta</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Logos -->
+<section class="clients">
+<div class="container">
+<p class="text-center text-muted mb-4">Aziende che si affidano a IT-ERA</p>
+<div class="client-logos">
+<img alt="Microsoft Partner" src="https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&amp;logo=microsoft&amp;logoColor=white"/>
+<img alt="VMware Partner" src="https://img.shields.io/badge/VMware-Partner-607078?style=for-the-badge&amp;logo=vmware&amp;logoColor=white"/>
+<img alt="Veeam Gold Partner" src="https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&amp;logo=veeam&amp;logoColor=white"/>
+<img alt="WatchGuard Partner" src="https://img.shields.io/badge/WatchGuard-Partner-ED1C24?style=for-the-badge&amp;logo=watchguard&amp;logoColor=white"/>
+<img alt="Wildix Gold Partner" src="https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&amp;logo=wildix&amp;logoColor=white"/>
+</div>
+</div>
+</section>
+<!-- Coverage Section -->
+<section class="coverage" id="zone-servite">
+<div class="container">
+<h2>Presenti in Tutta la Lombardia</h2>
+<p class="text-center text-muted mb-5">Interventi on-site garantiti in tutte le province</p>
+<div class="coverage-grid">
+<!-- Major Cities -->
+<a class="city-tag" href="/pages/assistenza-it-milano.html">Milano</a>
+<a class="city-tag" href="/pages/assistenza-it-monza.html">Monza</a>
+<a class="city-tag" href="/pages/assistenza-it-bergamo.html">Bergamo</a>
+<a class="city-tag" href="/pages/assistenza-it-como.html">Como</a>
+<a class="city-tag" href="/pages/assistenza-it-lecco.html">Lecco</a>
+<a class="city-tag" href="/pages/assistenza-it-lodi.html">Lodi</a>
+<a class="city-tag" href="/pages/assistenza-it-vimercate.html">Vimercate</a>
+<a class="city-tag" href="/pages/assistenza-it-seregno.html">Seregno</a>
+<a class="city-tag" href="/pages/assistenza-it-desio.html">Desio</a>
+<a class="city-tag" href="/pages/assistenza-it-sesto-san-giovanni.html">Sesto S. Giovanni</a>
+<a class="city-tag" href="/pages/assistenza-it-cinisello-balsamo.html">Cinisello Balsamo</a>
+<a class="city-tag" href="/pages/assistenza-it-rho.html">Rho</a>
+<a class="city-tag" href="/pages/assistenza-it-paderno-dugnano.html">Paderno Dugnano</a>
+<a class="city-tag" href="/pages/assistenza-it-cologno-monzese.html">Cologno Monzese</a>
+<a class="city-tag" href="/pages/assistenza-it-lissone.html">Lissone</a>
+<!-- Add more cities as needed -->
+</div>
+<div class="text-center mt-5">
+<p class="lead">Non trovi la tua città? Contattiamo comunque!</p>
+<a class="btn btn-primary btn-lg" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>Verifica Copertura
+                    </a>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="hero" style="background: linear-gradient(135deg, #00b336 0%, #0056cc 100%);">
+<div class="container">
+<h2 style="font-size: 2.5rem;">Inizia Oggi la Trasformazione Digitale</h2>
+<p class="lead">Richiedi una consulenza gratuita e scopri come possiamo migliorare la tua infrastruttura IT</p>
+<div class="hero-cta">
+<a class="btn-cta-primary" href="tel:+390398882041">
+                        📞 Chiama Ora
+                        <small class="d-block" style="font-size: 0.8rem; font-weight: 400;">039 888 2041</small>
+</a>
+<a class="btn-cta-secondary" href="mailto:info@it-era.it?subject=Richiesta%20Preventivo">
+                        ✉️ Richiedi Preventivo
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-dark text-white py-5 mt-0">
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4">
+<h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+<p>Il tuo partner tecnologico di fiducia per soluzioni IT innovative e affidabili.</p>
+<div class="contact-info">
+<p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+<p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+<p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
+</div>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Servizi</h5>
+<ul class="list-unstyled">
+<li><a class="text-white-50" href="/pages/assistenza-it-milano.html">Assistenza IT</a></li>
+<li><a class="text-white-50" href="/pages/cloud-storage-milano.html">Cloud Storage</a></li>
+<li><a class="text-white-50" href="/pages/sicurezza-informatica-milano.html">Sicurezza Informatica</a></li>
+<li><a class="text-white-50" href="/pages/backup-disaster-recovery-milano.html">Backup &amp; DR</a></li>
+<li><a class="text-white-50" href="/pages/voip-telefonia-milano.html">VoIP &amp; Telefonia</a></li>
+<li><a class="text-white-50" href="/pages/firewall-watchguard-milano.html">Firewall Solutions</a></li>
+</ul>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Seguici</h5>
+<div class="social-links mb-3">
+<a class="text-white-50 me-3" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-facebook fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+</div>
+<p class="text-white-50 small">
+                        © 2024 IT-ERA. Tutti i diritti riservati.<br/>
+                        P.IVA: 12345678901<br/>
+<a class="text-white-50" href="/privacy">Privacy Policy</a> | 
+                        <a class="text-white-50" href="/cookie">Cookie Policy</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS (deferred) -->
+<script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Minimal Critical JS -->
+<script>
+        // Track phone clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                            'event_category': 'engagement',
+                            'event_label': 'phone_call'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

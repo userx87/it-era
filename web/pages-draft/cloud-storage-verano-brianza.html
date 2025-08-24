@@ -172,50 +172,184 @@
     "description": "Cloud storage per PMI a Verano Brianza: backup automatico, disaster recovery, sincronizzazione multi-sede. Storage sicuro da €190/mese. Prova gratuita 30 giorni."
   }
   </script>
-</head>
-<body itemscope="" itemtype="https://schema.org/WebPage" role="document"><!-- Skip navigation link for accessibility --><a class="skip-link" href="#main-content">Vai al contenuto principale</a><!-- Unified Navigation Bar --><nav aria-label="Menu principale" class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation">
+<style>
+/* Optimized Navigation Styles */
+.navbar {
+    min-height: 76px;
+}
+
+.dropdown-menu-columns {
+    min-width: 400px;
+}
+
+.dropdown-header {
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.25rem;
+}
+
+.dropdown-item {
+    padding: 0.4rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.25rem;
+}
+
+.badge {
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Mobile optimizations */
+@media (max-width: 991px) {
+    .dropdown-menu-columns {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-columns .row {
+        display: block;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+}</style></head>
+<body itemscope="" itemtype="https://schema.org/WebPage" role="document" style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
 <div class="container">
-<a class="navbar-brand" href="/">
-<i class="fas fa-cogs me-2"></i>
-<strong>IT-ERA</strong>
-</a>
-<button aria-controls="navbarNav" aria-expanded="false" aria-label="Apri menu di navigazione" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: #0056cc;">IT</span>-ERA
+        </a>
+<!-- Emergency CTA for Mobile -->
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-danger btn-sm" href="tel:+390398882041">
+                🚨 Emergenza
+            </a>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav mx-auto">
-<li class="nav-item">
-<a class="nav-link" href="/">Home</a>
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<!-- Emergency Support - Primary CTA -->
+<li class="nav-item d-none d-lg-block">
+<a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                        🚨 Supporto Urgente
+                    </a>
 </li>
+<!-- Services Dropdown with Icons -->
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="servicesDropdown" role="button">
-                            Servizi
-                        </a>
-<ul aria-labelledby="servicesDropdown" class="dropdown-menu">
-<li><a class="dropdown-item" href="#assistenza-it">Assistenza IT</a></li>
-<li><a class="dropdown-item" href="#cloud-storage">Cloud Storage</a></li>
-<li><a class="dropdown-item" href="#sicurezza">Sicurezza Informatica</a></li>
-<li><a class="dropdown-item" href="#backup">Backup &amp; Disaster Recovery</a></li>
-<li><a class="dropdown-item" href="#voip">VoIP &amp; Telefonia</a></li>
-<li><a class="dropdown-item" href="#firewall">Firewall WatchGuard</a></li>
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Servizi
+                    </a>
+<ul class="dropdown-menu">
+<li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+<li><a class="dropdown-item" href="/pages/assistenza-it-milano.html">
+                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+</a></li>
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica-milano.html">
+                            🛡️ Sicurezza Informatica
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+<li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
+                            ☁️ Cloud Storage
+                        </a></li>
+<li><a class="dropdown-item" href="#backup">
+                            💾 Backup Automatico
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+<li><a class="dropdown-item" href="#all-inclusive">
+                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+</a></li>
 </ul>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="#chi-siamo">Chi Siamo</a>
+<!-- Industry Sectors Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Settori
+                    </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#pmi">
+                            🏢 PMI e Startup
+                        </a></li>
+<li><a class="dropdown-item" href="#studi">
+                            ⚕️ Studi Medici
+                        </a></li>
+<li><a class="dropdown-item" href="#commercialisti">
+                            📊 Commercialisti
+                        </a></li>
+<li><a class="dropdown-item" href="#avvocati">
+                            ⚖️ Studi Legali
+                        </a></li>
+<li><a class="dropdown-item" href="#industria">
+                            🏭 Industria 4.0
+                        </a></li>
+<li><a class="dropdown-item" href="#retail">
+                            🛍️ Retail e GDO
+                        </a></li>
+</ul>
 </li>
+<!-- Coverage Areas -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Zone Coperte
+                    </a>
+<ul class="dropdown-menu dropdown-menu-columns">
+<div class="row g-0">
+<div class="col-6">
+<li class="dropdown-header text-muted small">MILANO E BRIANZA</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-milano.html">Milano</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-monza.html">Monza</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-seregno.html">Seregno</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lissone.html">Lissone</a></li>
+</div>
+<div class="col-6">
+<li class="dropdown-header text-muted small">COMO E LECCO</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-como.html">Como</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lecco.html">Lecco</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-cantu.html">Cantù</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-merate.html">Merate</a></li>
+<li><a class="text-primary" href="#">Vedi tutte →</a></li>
+</div>
+</div>
+</ul>
+</li>
+<!-- Why IT-ERA -->
+<li class="nav-item">
+<a class="nav-link" href="#perche">Perché IT-ERA</a>
+</li>
+<!-- Contact -->
 <li class="nav-item">
 <a class="nav-link" href="#contatti">Contatti</a>
 </li>
-</ul>
-<div class="d-flex align-items-center">
+<!-- Primary CTA Button -->
+<li class="nav-item ms-lg-3">
 <a class="btn btn-primary" href="tel:+390398882041">
-<i class="fas fa-phone me-2"></i>039 888 2041
+                        📞 039 888 2041
                     </a>
+</li>
+</ul>
 </div>
 </div>
-</div>
-</nav><main id="main-content">
-
+</nav><!-- Skip navigation link for accessibility --><a class="skip-link" href="#main-content">Vai al contenuto principale</a><!-- Unified Navigation Bar --><main id="main-content">
 <main role="main">
 <section aria-labelledby="hero-title" class="hero-section bg-info text-white py-5">
 <div class="container">

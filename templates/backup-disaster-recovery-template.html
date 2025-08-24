@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="it" itemscope itemtype="https://schema.org/Organization">
+
+<html itemscope="" itemtype="https://schema.org/Organization" lang="it">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- SEO Meta Tags -->
-    <title>Backup e Disaster Recovery {{CITY}} | Veeam Partner | IT-ERA</title>
-    <meta name="description" content="Servizi di Backup e Disaster Recovery a {{CITY}}. Veeam Gold Partner, RPO 15 min, RTO 1 ora. Protezione completa da ransomware e perdite dati.">
-    <meta name="keywords" content="disaster recovery {{CITY}}, backup aziendale {{CITY}}, Veeam backup, business continuity, protezione dati, ransomware protection, {{REGION}}">
-    <meta name="author" content="IT-ERA">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.it-era.it/backup-disaster-recovery-{{CITY_SLUG}}">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Backup e Disaster Recovery {{CITY}} | Veeam Partner | IT-ERA">
-    <meta property="og:description" content="Servizi professionali di Backup e Disaster Recovery a {{CITY}}. Zero downtime garantito con Veeam.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.it-era.it/images/backup-disaster-recovery-{{CITY_SLUG}}.jpg">
-    <meta property="og:url" content="https://www.it-era.it/backup-disaster-recovery-{{CITY_SLUG}}">
-    <meta property="og:site_name" content="IT-ERA">
-    <meta property="og:locale" content="it_IT">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Backup e Disaster Recovery {{CITY}} | Veeam Partner | IT-ERA">
-    <meta name="twitter:description" content="Servizi professionali di Backup e Disaster Recovery a {{CITY}}. Zero downtime garantito con Veeam.">
-    <meta name="twitter:image" content="https://www.it-era.it/images/backup-disaster-recovery-{{CITY_SLUG}}.jpg">
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO Meta Tags -->
+<title>Backup e Disaster Recovery {{CITY}} | Veeam Partner | IT-ERA</title>
+<meta content="Servizi di Backup e Disaster Recovery a {{CITY}}. Veeam Gold Partner, RPO 15 min, RTO 1 ora. Protezione completa da ransomware e perdite dati." name="description"/>
+<meta content="disaster recovery {{CITY}}, backup aziendale {{CITY}}, Veeam backup, business continuity, protezione dati, ransomware protection, {{REGION}}" name="keywords"/>
+<meta content="IT-ERA" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.it-era.it/backup-disaster-recovery-{{CITY_SLUG}}" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Backup e Disaster Recovery {{CITY}} | Veeam Partner | IT-ERA" property="og:title"/>
+<meta content="Servizi professionali di Backup e Disaster Recovery a {{CITY}}. Zero downtime garantito con Veeam." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.it-era.it/images/backup-disaster-recovery-{{CITY_SLUG}}.jpg" property="og:image"/>
+<meta content="https://www.it-era.it/backup-disaster-recovery-{{CITY_SLUG}}" property="og:url"/>
+<meta content="IT-ERA" property="og:site_name"/>
+<meta content="it_IT" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Backup e Disaster Recovery {{CITY}} | Veeam Partner | IT-ERA" name="twitter:title"/>
+<meta content="Servizi professionali di Backup e Disaster Recovery a {{CITY}}. Zero downtime garantito con Veeam." name="twitter:description"/>
+<meta content="https://www.it-era.it/images/backup-disaster-recovery-{{CITY_SLUG}}.jpg" name="twitter:image"/>
+<!-- Local Business Schema -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -91,14 +88,12 @@
         "serviceType": "Backup e Disaster Recovery"
     }
     </script>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles for Backup & DR -->
-    <style>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Custom Styles for Backup & DR -->
+<style>
         :root {
             --primary-color: #ffffff;
             --secondary-color: #f8fafc;
@@ -619,775 +614,898 @@
             outline-offset: 2px;
         }
     </style>
-</head>
+<style>
+/* Optimized Navigation Styles */
+.navbar {
+    min-height: 76px;
+}
 
-<body>
-    <!-- Skip Navigation Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation" aria-label="Menu principale">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <i class="fas fa-cogs me-2"></i>IT-ERA
+.dropdown-menu-columns {
+    min-width: 400px;
+}
+
+.dropdown-header {
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.25rem;
+}
+
+.dropdown-item {
+    padding: 0.4rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.25rem;
+}
+
+.badge {
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Mobile optimizations */
+@media (max-width: 991px) {
+    .dropdown-menu-columns {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-columns .row {
+        display: block;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+}</style></head>
+<body style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: #0056cc;">IT</span>-ERA
+        </a>
+<!-- Emergency CTA for Mobile -->
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-danger btn-sm" href="tel:+390398882041">
+                🚨 Emergenza
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Apri menu di navigazione">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviziDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servizi
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="serviziDropdown">
-                            <li><a class="dropdown-item" href="/assistenza-it">Assistenza IT</a></li>
-                            <li><a class="dropdown-item" href="/cloud-storage">Cloud Storage</a></li>
-                            <li><a class="dropdown-item" href="/sicurezza-informatica">Sicurezza Informatica</a></li>
-                            <li><a class="dropdown-item" href="#servizi">Backup & DR</a></li>
-                            <li><a class="dropdown-item" href="/voip-telefonia-cloud">VoIP & Telefonia</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary text-white px-3 ms-2" href="tel:+390398882041">
-                            <i class="fas fa-phone me-1"></i>039 888 2041
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<!-- Emergency Support - Primary CTA -->
+<li class="nav-item d-none d-lg-block">
+<a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                        🚨 Supporto Urgente
+                    </a>
+</li>
+<!-- Services Dropdown with Icons -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Servizi
+                    </a>
+<ul class="dropdown-menu">
+<li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+<li><a class="dropdown-item" href="/pages/assistenza-it-milano.html">
+                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+</a></li>
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica-milano.html">
+                            🛡️ Sicurezza Informatica
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+<li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
+                            ☁️ Cloud Storage
+                        </a></li>
+<li><a class="dropdown-item" href="#backup">
+                            💾 Backup Automatico
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+<li><a class="dropdown-item" href="#all-inclusive">
+                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+</a></li>
+</ul>
+</li>
+<!-- Industry Sectors Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Settori
+                    </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#pmi">
+                            🏢 PMI e Startup
+                        </a></li>
+<li><a class="dropdown-item" href="#studi">
+                            ⚕️ Studi Medici
+                        </a></li>
+<li><a class="dropdown-item" href="#commercialisti">
+                            📊 Commercialisti
+                        </a></li>
+<li><a class="dropdown-item" href="#avvocati">
+                            ⚖️ Studi Legali
+                        </a></li>
+<li><a class="dropdown-item" href="#industria">
+                            🏭 Industria 4.0
+                        </a></li>
+<li><a class="dropdown-item" href="#retail">
+                            🛍️ Retail e GDO
+                        </a></li>
+</ul>
+</li>
+<!-- Coverage Areas -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Zone Coperte
+                    </a>
+<ul class="dropdown-menu dropdown-menu-columns">
+<div class="row g-0">
+<div class="col-6">
+<li class="dropdown-header text-muted small">MILANO E BRIANZA</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-milano.html">Milano</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-monza.html">Monza</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-seregno.html">Seregno</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lissone.html">Lissone</a></li>
+</div>
+<div class="col-6">
+<li class="dropdown-header text-muted small">COMO E LECCO</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-como.html">Como</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lecco.html">Lecco</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-cantu.html">Cantù</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-merate.html">Merate</a></li>
+<li><a class="text-primary" href="#">Vedi tutte →</a></li>
+</div>
+</div>
+</ul>
+</li>
+<!-- Why IT-ERA -->
+<li class="nav-item">
+<a class="nav-link" href="#perche">Perché IT-ERA</a>
+</li>
+<!-- Contact -->
+<li class="nav-item">
+<a class="nav-link" href="#contatti">Contatti</a>
+</li>
+<!-- Primary CTA Button -->
+<li class="nav-item ms-lg-3">
+<a class="btn btn-primary" href="tel:+390398882041">
+                        📞 039 888 2041
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Skip Navigation Link for Accessibility -->
+<a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+<!-- Navigation -->
 
-    <!-- Hero Section -->
-    <main id="main-content">
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">
+<!-- Hero Section -->
+<main id="main-content">
+<section class="hero-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1 class="display-4 fw-bold mb-4">
                         Backup e Disaster Recovery <span class="text-success">{{CITY}}</span>
-                        <br><span class="text-primary" style="color: var(--veeam-green) !important;">Zero Downtime Garantito</span>
-                    </h1>
-                    <p class="lead mb-4 text-muted">
+<br/><span class="text-primary" style="color: var(--veeam-green) !important;">Zero Downtime Garantito</span>
+</h1>
+<p class="lead mb-4 text-muted">
                         Proteggi la tua azienda con soluzioni enterprise Veeam. 
                         <strong>RPO 15 minuti</strong> e <strong>RTO 1 ora</strong> garantiti.
                     </p>
-                    
-                    <!-- RPO/RTO Controls -->
-                    <div class="rpo-rto-controls">
-                        <h5 class="text-primary mb-3" style="color: var(--veeam-green) !important;">
-                            <i class="bi bi-stopwatch me-2"></i>Configura i tuoi SLA
+<!-- RPO/RTO Controls -->
+<div class="rpo-rto-controls">
+<h5 class="text-primary mb-3" style="color: var(--veeam-green) !important;">
+<i class="bi bi-stopwatch me-2"></i>Configura i tuoi SLA
                         </h5>
-                        <div class="slider-container">
-                            <label class="form-label">RPO (Recovery Point Objective)</label>
-                            <input type="range" class="custom-slider" id="rpoSlider" min="15" max="360" value="15" step="15">
-                            <div class="d-flex justify-content-between text-muted small">
-                                <span>15 min</span>
-                                <span id="rpoValue">15 minuti</span>
-                                <span>6 ore</span>
-                            </div>
-                        </div>
-                        <div class="slider-container">
-                            <label class="form-label">RTO (Recovery Time Objective)</label>
-                            <input type="range" class="custom-slider" id="rtoSlider" min="60" max="480" value="60" step="30">
-                            <div class="d-flex justify-content-between text-muted small">
-                                <span>1 ora</span>
-                                <span id="rtoValue">1 ora</span>
-                                <span>8 ore</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex flex-wrap gap-3 mt-4">
-                        <button class="btn btn-veeam btn-lg">
-                            <i class="bi bi-calendar-check me-2"></i>Valutazione Gratuita
+<div class="slider-container">
+<label class="form-label">RPO (Recovery Point Objective)</label>
+<input class="custom-slider" id="rpoSlider" max="360" min="15" step="15" type="range" value="15"/>
+<div class="d-flex justify-content-between text-muted small">
+<span>15 min</span>
+<span id="rpoValue">15 minuti</span>
+<span>6 ore</span>
+</div>
+</div>
+<div class="slider-container">
+<label class="form-label">RTO (Recovery Time Objective)</label>
+<input class="custom-slider" id="rtoSlider" max="480" min="60" step="30" type="range" value="60"/>
+<div class="d-flex justify-content-between text-muted small">
+<span>1 ora</span>
+<span id="rtoValue">1 ora</span>
+<span>8 ore</span>
+</div>
+</div>
+</div>
+<div class="d-flex flex-wrap gap-3 mt-4">
+<button class="btn btn-veeam btn-lg">
+<i class="bi bi-calendar-check me-2"></i>Valutazione Gratuita
                         </button>
-                        <button class="btn btn-outline-veeam btn-lg">
-                            <i class="bi bi-play-circle me-2"></i>Demo Live
+<button class="btn btn-outline-veeam btn-lg">
+<i class="bi bi-play-circle me-2"></i>Demo Live
                         </button>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <!-- Disaster Simulation Interface -->
-                    <div class="disaster-simulation">
-                        <h5 class="text-primary mb-3" style="color: var(--veeam-green) !important;">
-                            <i class="bi bi-shield-exclamation me-2"></i>Simulatore Disaster Recovery
+</div>
+</div>
+<div class="col-lg-6">
+<!-- Disaster Simulation Interface -->
+<div class="disaster-simulation">
+<h5 class="text-primary mb-3" style="color: var(--veeam-green) !important;">
+<i class="bi bi-shield-exclamation me-2"></i>Simulatore Disaster Recovery
                         </h5>
-                        <div class="disaster-timeline">
-                            <div class="timeline-line"></div>
-                            <div class="timeline-event" style="left: 10%;" data-event="failure" title="Failure Detected"></div>
-                            <div class="timeline-event recovery" style="left: 25%;" data-event="backup" title="Backup Activated"></div>
-                            <div class="timeline-event recovery" style="left: 50%;" data-event="failover" title="Failover Started"></div>
-                            <div class="timeline-event recovery" style="left: 75%;" data-event="restored" title="Service Restored"></div>
-                            <div class="timeline-event recovery" style="left: 90%;" data-event="verified" title="Recovery Verified"></div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <div class="text-danger">
-                                    <i class="bi bi-x-circle fs-3"></i>
-                                    <div class="small">Failure</div>
-                                    <div class="fw-bold">T+0</div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-warning">
-                                    <i class="bi bi-arrow-repeat fs-3"></i>
-                                    <div class="small">Recovery</div>
-                                    <div class="fw-bold">T+15min</div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-primary" style="color: var(--veeam-green) !important;">
-                                    <i class="bi bi-check-circle fs-3"></i>
-                                    <div class="small">Restored</div>
-                                    <div class="fw-bold">T+1h</div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-veeam w-100 mt-3" id="simulateFailover">
-                            <i class="bi bi-play-fill me-2"></i>Simula Disaster Recovery
+<div class="disaster-timeline">
+<div class="timeline-line"></div>
+<div class="timeline-event" data-event="failure" style="left: 10%;" title="Failure Detected"></div>
+<div class="timeline-event recovery" data-event="backup" style="left: 25%;" title="Backup Activated"></div>
+<div class="timeline-event recovery" data-event="failover" style="left: 50%;" title="Failover Started"></div>
+<div class="timeline-event recovery" data-event="restored" style="left: 75%;" title="Service Restored"></div>
+<div class="timeline-event recovery" data-event="verified" style="left: 90%;" title="Recovery Verified"></div>
+</div>
+<div class="row text-center">
+<div class="col-4">
+<div class="text-danger">
+<i class="bi bi-x-circle fs-3"></i>
+<div class="small">Failure</div>
+<div class="fw-bold">T+0</div>
+</div>
+</div>
+<div class="col-4">
+<div class="text-warning">
+<i class="bi bi-arrow-repeat fs-3"></i>
+<div class="small">Recovery</div>
+<div class="fw-bold">T+15min</div>
+</div>
+</div>
+<div class="col-4">
+<div class="text-primary" style="color: var(--veeam-green) !important;">
+<i class="bi bi-check-circle fs-3"></i>
+<div class="small">Restored</div>
+<div class="fw-bold">T+1h</div>
+</div>
+</div>
+</div>
+<button class="btn btn-outline-veeam w-100 mt-3" id="simulateFailover">
+<i class="bi bi-play-fill me-2"></i>Simula Disaster Recovery
                         </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Veeam Partnership -->
-    <section class="veeam-partnership">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold mb-3">Veeam Gold Partner Certificato</h2>
-                    <p class="lead mb-4">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Veeam Partnership -->
+<section class="veeam-partnership">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<h2 class="display-5 fw-bold mb-3">Veeam Gold Partner Certificato</h2>
+<p class="lead mb-4">
                         IT-ERA è partner Gold Veeam con oltre 15 anni di esperienza nella protezione dei dati enterprise. 
                         Soluzioni certificate per aziende di ogni dimensione.
                     </p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="veeam-badge">
-                        <img src="https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam&logoColor=white" alt="Veeam Gold Partner" class="img-fluid mb-2" style="max-height: 80px;">
-                        <div class="fw-bold">Gold Partner</div>
-                        <div class="small text-muted">Certified Since 2008</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3-2-1 Backup Rule -->
-    <section class="py-5">
-        <div class="container">
-            <div class="backup-rule-321">
-                <h2 class="text-center mb-5">
-                    <i class="bi bi-shield-check me-3" style="color: var(--veeam-green);"></i>
+</div>
+<div class="col-lg-4">
+<div class="veeam-badge">
+<img alt="Veeam Gold Partner" class="img-fluid mb-2" src="https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&amp;logo=veeam&amp;logoColor=white" style="max-height: 80px;"/>
+<div class="fw-bold">Gold Partner</div>
+<div class="small text-muted">Certified Since 2008</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3-2-1 Backup Rule -->
+<section class="py-5">
+<div class="container">
+<div class="backup-rule-321">
+<h2 class="text-center mb-5">
+<i class="bi bi-shield-check me-3" style="color: var(--veeam-green);"></i>
                     Regola 3-2-1 del Backup
                 </h2>
-                <div class="rule-item">
-                    <div class="rule-number">3</div>
-                    <div>
-                        <h5 class="mb-2">3 Copie dei Dati</h5>
-                        <p class="text-muted mb-0">Mantieni sempre almeno 3 copie dei tuoi dati critici per massima sicurezza</p>
-                    </div>
-                </div>
-                <div class="rule-item">
-                    <div class="rule-number">2</div>
-                    <div>
-                        <h5 class="mb-2">2 Supporti Diversi</h5>
-                        <p class="text-muted mb-0">Utilizza almeno 2 tipi di storage diversi (SSD, HDD, Cloud, Tape)</p>
-                    </div>
-                </div>
-                <div class="rule-item">
-                    <div class="rule-number">1</div>
-                    <div>
-                        <h5 class="mb-2">1 Copia Offsite</h5>
-                        <p class="text-muted mb-0">Una copia deve essere conservata in location geograficamente separata</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Data Protection Heatmap -->
-    <section class="py-5" style="background: var(--secondary-color);">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-thermometer-half me-3" style="color: var(--veeam-green);"></i>
+<div class="rule-item">
+<div class="rule-number">3</div>
+<div>
+<h5 class="mb-2">3 Copie dei Dati</h5>
+<p class="text-muted mb-0">Mantieni sempre almeno 3 copie dei tuoi dati critici per massima sicurezza</p>
+</div>
+</div>
+<div class="rule-item">
+<div class="rule-number">2</div>
+<div>
+<h5 class="mb-2">2 Supporti Diversi</h5>
+<p class="text-muted mb-0">Utilizza almeno 2 tipi di storage diversi (SSD, HDD, Cloud, Tape)</p>
+</div>
+</div>
+<div class="rule-item">
+<div class="rule-number">1</div>
+<div>
+<h5 class="mb-2">1 Copia Offsite</h5>
+<p class="text-muted mb-0">Una copia deve essere conservata in location geograficamente separata</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Data Protection Heatmap -->
+<section class="py-5" style="background: var(--secondary-color);">
+<div class="container">
+<h2 class="text-center mb-5">
+<i class="bi bi-thermometer-half me-3" style="color: var(--veeam-green);"></i>
                 Mappa di Protezione Sistemi
             </h2>
-            <div class="protection-heatmap">
-                <p class="lead text-center mb-4">Analisi del rischio e stato di protezione per tipologia di sistema</p>
-                <div class="heatmap-grid">
-                    <div class="heatmap-item critical">
-                        <i class="bi bi-server fs-2 mb-2 text-danger"></i>
-                        <h6>Database Server</h6>
-                        <small class="text-danger">CRITICO</small>
-                        <div class="mt-2 small">RPO: 15 min</div>
-                    </div>
-                    <div class="heatmap-item critical">
-                        <i class="bi bi-envelope fs-2 mb-2 text-danger"></i>
-                        <h6>Email Server</h6>
-                        <small class="text-danger">CRITICO</small>
-                        <div class="mt-2 small">RPO: 30 min</div>
-                    </div>
-                    <div class="heatmap-item high">
-                        <i class="bi bi-folder fs-2 mb-2 text-warning"></i>
-                        <h6>File Server</h6>
-                        <small class="text-warning">ALTO</small>
-                        <div class="mt-2 small">RPO: 1 ora</div>
-                    </div>
-                    <div class="heatmap-item protected">
-                        <i class="bi bi-cloud fs-2 mb-2" style="color: var(--veeam-green);"></i>
-                        <h6>Cloud Storage</h6>
-                        <small style="color: var(--veeam-green);">PROTETTO</small>
-                        <div class="mt-2 small">RPO: 15 min</div>
-                    </div>
-                    <div class="heatmap-item high">
-                        <i class="bi bi-laptop fs-2 mb-2 text-warning"></i>
-                        <h6>Workstation</h6>
-                        <small class="text-warning">MEDIO</small>
-                        <div class="mt-2 small">RPO: 4 ore</div>
-                    </div>
-                    <div class="heatmap-item protected">
-                        <i class="bi bi-hdd-stack fs-2 mb-2" style="color: var(--veeam-green);"></i>
-                        <h6>VM Infrastructure</h6>
-                        <small style="color: var(--veeam-green);">PROTETTO</small>
-                        <div class="mt-2 small">RPO: 15 min</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Failover Testing Simulator -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-arrow-repeat me-3" style="color: var(--veeam-green);"></i>
+<div class="protection-heatmap">
+<p class="lead text-center mb-4">Analisi del rischio e stato di protezione per tipologia di sistema</p>
+<div class="heatmap-grid">
+<div class="heatmap-item critical">
+<i class="bi bi-server fs-2 mb-2 text-danger"></i>
+<h6>Database Server</h6>
+<small class="text-danger">CRITICO</small>
+<div class="mt-2 small">RPO: 15 min</div>
+</div>
+<div class="heatmap-item critical">
+<i class="bi bi-envelope fs-2 mb-2 text-danger"></i>
+<h6>Email Server</h6>
+<small class="text-danger">CRITICO</small>
+<div class="mt-2 small">RPO: 30 min</div>
+</div>
+<div class="heatmap-item high">
+<i class="bi bi-folder fs-2 mb-2 text-warning"></i>
+<h6>File Server</h6>
+<small class="text-warning">ALTO</small>
+<div class="mt-2 small">RPO: 1 ora</div>
+</div>
+<div class="heatmap-item protected">
+<i class="bi bi-cloud fs-2 mb-2" style="color: var(--veeam-green);"></i>
+<h6>Cloud Storage</h6>
+<small style="color: var(--veeam-green);">PROTETTO</small>
+<div class="mt-2 small">RPO: 15 min</div>
+</div>
+<div class="heatmap-item high">
+<i class="bi bi-laptop fs-2 mb-2 text-warning"></i>
+<h6>Workstation</h6>
+<small class="text-warning">MEDIO</small>
+<div class="mt-2 small">RPO: 4 ore</div>
+</div>
+<div class="heatmap-item protected">
+<i class="bi bi-hdd-stack fs-2 mb-2" style="color: var(--veeam-green);"></i>
+<h6>VM Infrastructure</h6>
+<small style="color: var(--veeam-green);">PROTETTO</small>
+<div class="mt-2 small">RPO: 15 min</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Failover Testing Simulator -->
+<section class="py-5">
+<div class="container">
+<h2 class="text-center mb-5">
+<i class="bi bi-arrow-repeat me-3" style="color: var(--veeam-green);"></i>
                 Simulatore Test di Failover
             </h2>
-            <div class="failover-simulator">
-                <p class="lead text-center mb-4">Test automatici mensili per garantire l'efficacia del piano di disaster recovery</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5 class="mb-3">Stato Server Primari</h5>
-                        <div class="server-status online" id="primaryDB">
-                            <div class="status-indicator online"></div>
-                            <div>
-                                <strong>Database Primary</strong>
-                                <div class="small text-muted">db-primary-01.{{CITY_SLUG}}</div>
-                            </div>
-                            <div class="ms-auto">
-                                <span class="badge bg-success">ONLINE</span>
-                            </div>
-                        </div>
-                        <div class="server-status online" id="primaryWeb">
-                            <div class="status-indicator online"></div>
-                            <div>
-                                <strong>Web Server Primary</strong>
-                                <div class="small text-muted">web-primary-01.{{CITY_SLUG}}</div>
-                            </div>
-                            <div class="ms-auto">
-                                <span class="badge bg-success">ONLINE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h5 class="mb-3">Stato Server DR</h5>
-                        <div class="server-status" id="drDB">
-                            <div class="status-indicator"></div>
-                            <div>
-                                <strong>Database DR</strong>
-                                <div class="small text-muted">db-dr-01.backup.{{CITY_SLUG}}</div>
-                            </div>
-                            <div class="ms-auto">
-                                <span class="badge bg-secondary">STANDBY</span>
-                            </div>
-                        </div>
-                        <div class="server-status" id="drWeb">
-                            <div class="status-indicator"></div>
-                            <div>
-                                <strong>Web Server DR</strong>
-                                <div class="small text-muted">web-dr-01.backup.{{CITY_SLUG}}</div>
-                            </div>
-                            <div class="ms-auto">
-                                <span class="badge bg-secondary">STANDBY</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <button class="btn btn-veeam me-3" id="startFailoverTest">
-                        <i class="bi bi-play-circle me-2"></i>Avvia Test Failover
+<div class="failover-simulator">
+<p class="lead text-center mb-4">Test automatici mensili per garantire l'efficacia del piano di disaster recovery</p>
+<div class="row">
+<div class="col-md-6">
+<h5 class="mb-3">Stato Server Primari</h5>
+<div class="server-status online" id="primaryDB">
+<div class="status-indicator online"></div>
+<div>
+<strong>Database Primary</strong>
+<div class="small text-muted">db-primary-01.{{CITY_SLUG}}</div>
+</div>
+<div class="ms-auto">
+<span class="badge bg-success">ONLINE</span>
+</div>
+</div>
+<div class="server-status online" id="primaryWeb">
+<div class="status-indicator online"></div>
+<div>
+<strong>Web Server Primary</strong>
+<div class="small text-muted">web-primary-01.{{CITY_SLUG}}</div>
+</div>
+<div class="ms-auto">
+<span class="badge bg-success">ONLINE</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<h5 class="mb-3">Stato Server DR</h5>
+<div class="server-status" id="drDB">
+<div class="status-indicator"></div>
+<div>
+<strong>Database DR</strong>
+<div class="small text-muted">db-dr-01.backup.{{CITY_SLUG}}</div>
+</div>
+<div class="ms-auto">
+<span class="badge bg-secondary">STANDBY</span>
+</div>
+</div>
+<div class="server-status" id="drWeb">
+<div class="status-indicator"></div>
+<div>
+<strong>Web Server DR</strong>
+<div class="small text-muted">web-dr-01.backup.{{CITY_SLUG}}</div>
+</div>
+<div class="ms-auto">
+<span class="badge bg-secondary">STANDBY</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-4">
+<button class="btn btn-veeam me-3" id="startFailoverTest">
+<i class="bi bi-play-circle me-2"></i>Avvia Test Failover
                     </button>
-                    <button class="btn btn-outline-veeam" id="resetSimulation">
-                        <i class="bi bi-arrow-clockwise me-2"></i>Reset
+<button class="btn btn-outline-veeam" id="resetSimulation">
+<i class="bi bi-arrow-clockwise me-2"></i>Reset
                     </button>
-                </div>
-                <div id="failoverLog" class="mt-4" style="display: none;">
-                    <h6>Log del Test:</h6>
-                    <div class="bg-dark p-3 rounded" style="font-family: monospace; font-size: 0.85em;">
-                        <div id="logContent"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recovery Calculator -->
-    <section class="py-5" style="background: var(--secondary-color);" id="calcolatore">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-calculator me-3" style="color: var(--veeam-green);"></i>
-                Calcolatore Recovery Time & Backup Size
+</div>
+<div class="mt-4" id="failoverLog" style="display: none;">
+<h6>Log del Test:</h6>
+<div class="bg-dark p-3 rounded" style="font-family: monospace; font-size: 0.85em;">
+<div id="logContent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recovery Calculator -->
+<section class="py-5" id="calcolatore" style="background: var(--secondary-color);">
+<div class="container">
+<h2 class="text-center mb-5">
+<i class="bi bi-calculator me-3" style="color: var(--veeam-green);"></i>
+                Calcolatore Recovery Time &amp; Backup Size
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="recovery-calculator">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5 class="mb-3">Configurazione Sistema</h5>
-                                <div class="mb-3">
-                                    <label class="form-label">Numero di VM</label>
-                                    <input type="number" class="form-control calculator-input" id="vmCount" value="10" min="1" max="1000">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Dimensione media VM (GB)</label>
-                                    <input type="number" class="form-control calculator-input" id="vmSize" value="100" min="10" max="10000">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Change Rate giornaliero (%)</label>
-                                    <input type="number" class="form-control calculator-input" id="changeRate" value="5" min="1" max="50">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Retention (giorni)</label>
-                                    <input type="number" class="form-control calculator-input" id="retention" value="30" min="7" max="365">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="mb-3">Parametri Recovery</h5>
-                                <div class="mb-3">
-                                    <label class="form-label">Banda disponibile (Mbps)</label>
-                                    <input type="number" class="form-control calculator-input" id="bandwidth" value="100" min="10" max="10000">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Tipo di storage</label>
-                                    <select class="form-control calculator-input" id="storageType">
-                                        <option value="ssd">SSD Enterprise</option>
-                                        <option value="hdd">HDD SATA</option>
-                                        <option value="nvme">NVMe</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Priorità Recovery</label>
-                                    <select class="form-control calculator-input" id="priority">
-                                        <option value="critical">Critica (parallelo)</option>
-                                        <option value="high">Alta (4 VM/volta)</option>
-                                        <option value="normal">Normale (2 VM/volta)</option>
-                                    </select>
-                                </div>
-                                <button class="btn btn-veeam w-100" onclick="calculateRecovery()">
-                                    <i class="bi bi-calculator me-2"></i>Calcola Recovery
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="recovery-calculator">
+<div class="row">
+<div class="col-md-6">
+<h5 class="mb-3">Configurazione Sistema</h5>
+<div class="mb-3">
+<label class="form-label">Numero di VM</label>
+<input class="form-control calculator-input" id="vmCount" max="1000" min="1" type="number" value="10"/>
+</div>
+<div class="mb-3">
+<label class="form-label">Dimensione media VM (GB)</label>
+<input class="form-control calculator-input" id="vmSize" max="10000" min="10" type="number" value="100"/>
+</div>
+<div class="mb-3">
+<label class="form-label">Change Rate giornaliero (%)</label>
+<input class="form-control calculator-input" id="changeRate" max="50" min="1" type="number" value="5"/>
+</div>
+<div class="mb-3">
+<label class="form-label">Retention (giorni)</label>
+<input class="form-control calculator-input" id="retention" max="365" min="7" type="number" value="30"/>
+</div>
+</div>
+<div class="col-md-6">
+<h5 class="mb-3">Parametri Recovery</h5>
+<div class="mb-3">
+<label class="form-label">Banda disponibile (Mbps)</label>
+<input class="form-control calculator-input" id="bandwidth" max="10000" min="10" type="number" value="100"/>
+</div>
+<div class="mb-3">
+<label class="form-label">Tipo di storage</label>
+<select class="form-control calculator-input" id="storageType">
+<option value="ssd">SSD Enterprise</option>
+<option value="hdd">HDD SATA</option>
+<option value="nvme">NVMe</option>
+</select>
+</div>
+<div class="mb-3">
+<label class="form-label">Priorità Recovery</label>
+<select class="form-control calculator-input" id="priority">
+<option value="critical">Critica (parallelo)</option>
+<option value="high">Alta (4 VM/volta)</option>
+<option value="normal">Normale (2 VM/volta)</option>
+</select>
+</div>
+<button class="btn btn-veeam w-100" onclick="calculateRecovery()">
+<i class="bi bi-calculator me-2"></i>Calcola Recovery
                                 </button>
-                            </div>
-                        </div>
-                        
-                        <div class="calculator-result" id="calculatorResult" style="display: none;">
-                            <div class="row text-center">
-                                <div class="col-md-3">
-                                    <div class="fs-4 fw-bold" id="totalBackupSize">0 GB</div>
-                                    <div class="small">Spazio Backup Totale</div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="fs-4 fw-bold" id="dailyBackupSize">0 GB</div>
-                                    <div class="small">Backup Giornaliero</div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="fs-4 fw-bold" id="recoveryTime">0 ore</div>
-                                    <div class="small">Tempo Recovery Stimato</div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="fs-4 fw-bold" id="monthlyCost">€0</div>
-                                    <div class="small">Costo Mensile Stimato</div>
-                                </div>
-                            </div>
-                            <div class="mt-3 text-center">
-                                <small>*Calcoli basati su medie Veeam e infrastruttura IT-ERA</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="prezzi">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-tag me-3" style="color: var(--veeam-green);"></i>
+</div>
+</div>
+<div class="calculator-result" id="calculatorResult" style="display: none;">
+<div class="row text-center">
+<div class="col-md-3">
+<div class="fs-4 fw-bold" id="totalBackupSize">0 GB</div>
+<div class="small">Spazio Backup Totale</div>
+</div>
+<div class="col-md-3">
+<div class="fs-4 fw-bold" id="dailyBackupSize">0 GB</div>
+<div class="small">Backup Giornaliero</div>
+</div>
+<div class="col-md-3">
+<div class="fs-4 fw-bold" id="recoveryTime">0 ore</div>
+<div class="small">Tempo Recovery Stimato</div>
+</div>
+<div class="col-md-3">
+<div class="fs-4 fw-bold" id="monthlyCost">€0</div>
+<div class="small">Costo Mensile Stimato</div>
+</div>
+</div>
+<div class="mt-3 text-center">
+<small>*Calcoli basati su medie Veeam e infrastruttura IT-ERA</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="pricing-section" id="prezzi">
+<div class="container">
+<h2 class="text-center mb-5">
+<i class="bi bi-tag me-3" style="color: var(--veeam-green);"></i>
                 Prezzi Trasparenti e Competitivi
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="pricing-card">
-                        <h4 class="mb-3">Backup Essenziale</h4>
-                        <div class="price-tag">€16</div>
-                        <div class="text-muted mb-4">/VM/mese</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Backup incrementale</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Retention 30 giorni</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RPO 4 ore</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Storage on-site</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Monitoraggio 24/7</li>
-                        </ul>
-                        <button class="btn btn-outline-veeam w-100">Scegli Essenziale</button>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="pricing-card featured">
-                        <div class="badge bg-primary position-absolute top-0 end-0 m-3" style="background: var(--veeam-green) !important;">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="pricing-card">
+<h4 class="mb-3">Backup Essenziale</h4>
+<div class="price-tag">€16</div>
+<div class="text-muted mb-4">/VM/mese</div>
+<ul class="list-unstyled mb-4">
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Backup incrementale</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Retention 30 giorni</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RPO 4 ore</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Storage on-site</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Monitoraggio 24/7</li>
+</ul>
+<button class="btn btn-outline-veeam w-100">Scegli Essenziale</button>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="pricing-card featured">
+<div class="badge bg-primary position-absolute top-0 end-0 m-3" style="background: var(--veeam-green) !important;">
                             PIÙ SCELTO
                         </div>
-                        <h4 class="mb-3">Disaster Recovery</h4>
-                        <div class="price-tag">€89</div>
-                        <div class="text-muted mb-4">/VM/mese</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Backup + Replica</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RPO 15 minuti</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RTO 1 ora</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Failover automatico</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Test mensili</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Storage geograficamente separato</li>
-                        </ul>
-                        <button class="btn btn-veeam w-100">Scegli DR Completo</button>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="pricing-card">
-                        <h4 class="mb-3">Enterprise Plus</h4>
-                        <div class="price-tag">€149</div>
-                        <div class="text-muted mb-4">/VM/mese</div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>DR multi-site</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RPO 5 minuti</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RTO 30 minuti</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Replica sincrona</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Orchestrazione avanzata</li>
-                            <li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>SLA 99.99%</li>
-                        </ul>
-                        <button class="btn btn-outline-veeam w-100">Scegli Enterprise</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <p class="lead">
-                    <i class="bi bi-shield-check me-2" style="color: var(--veeam-green);"></i>
+<h4 class="mb-3">Disaster Recovery</h4>
+<div class="price-tag">€89</div>
+<div class="text-muted mb-4">/VM/mese</div>
+<ul class="list-unstyled mb-4">
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Backup + Replica</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RPO 15 minuti</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RTO 1 ora</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Failover automatico</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Test mensili</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Storage geograficamente separato</li>
+</ul>
+<button class="btn btn-veeam w-100">Scegli DR Completo</button>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="pricing-card">
+<h4 class="mb-3">Enterprise Plus</h4>
+<div class="price-tag">€149</div>
+<div class="text-muted mb-4">/VM/mese</div>
+<ul class="list-unstyled mb-4">
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>DR multi-site</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RPO 5 minuti</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>RTO 30 minuti</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Replica sincrona</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>Orchestrazione avanzata</li>
+<li class="mb-2"><i class="bi bi-check2 me-2" style="color: var(--veeam-green);"></i>SLA 99.99%</li>
+</ul>
+<button class="btn btn-outline-veeam w-100">Scegli Enterprise</button>
+</div>
+</div>
+</div>
+<div class="text-center mt-5">
+<p class="lead">
+<i class="bi bi-shield-check me-2" style="color: var(--veeam-green);"></i>
                     Tutti i piani includono: Supporto 24/7, Monitoraggio proattivo, Report mensili
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recovery Testing Timeline -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-clipboard-check me-3" style="color: var(--veeam-green);"></i>
+</div>
+</div>
+</section>
+<!-- Recovery Testing Timeline -->
+<section class="py-5">
+<div class="container">
+<h2 class="text-center mb-5">
+<i class="bi bi-clipboard-check me-3" style="color: var(--veeam-green);"></i>
                 Test di Recovery Mensili Inclusi
             </h2>
-            <div class="testing-timeline">
-                <p class="lead text-center mb-4">
+<div class="testing-timeline">
+<p class="lead text-center mb-4">
                     Cronogramma dei test automatizzati per validare l'efficacia del piano di disaster recovery
                 </p>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="bi bi-calendar-week"></i>
-                    </div>
-                    <div>
-                        <h6>Settimana 1 - Test di Backup</h6>
-                        <p class="mb-0 text-muted">Verifica integrità e completezza dei backup incrementali</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="bi bi-arrow-repeat"></i>
-                    </div>
-                    <div>
-                        <h6>Settimana 2 - Test di Restore</h6>
-                        <p class="mb-0 text-muted">Ripristino completo di VM critiche in ambiente isolato</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="bi bi-shuffle"></i>
-                    </div>
-                    <div>
-                        <h6>Settimana 3 - Test di Failover</h6>
-                        <p class="mb-0 text-muted">Simulazione completa di disaster recovery con failover automatico</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="bi bi-file-earmark-text"></i>
-                    </div>
-                    <div>
-                        <h6>Settimana 4 - Report e Ottimizzazione</h6>
-                        <p class="mb-0 text-muted">Analisi risultati e ottimizzazione procedure di recovery</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problems We Solve -->
-    <section class="py-5" style="background: var(--secondary-color);">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-shield-exclamation me-3" style="color: var(--veeam-green);"></i>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="bi bi-calendar-week"></i>
+</div>
+<div>
+<h6>Settimana 1 - Test di Backup</h6>
+<p class="mb-0 text-muted">Verifica integrità e completezza dei backup incrementali</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="bi bi-arrow-repeat"></i>
+</div>
+<div>
+<h6>Settimana 2 - Test di Restore</h6>
+<p class="mb-0 text-muted">Ripristino completo di VM critiche in ambiente isolato</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="bi bi-shuffle"></i>
+</div>
+<div>
+<h6>Settimana 3 - Test di Failover</h6>
+<p class="mb-0 text-muted">Simulazione completa di disaster recovery con failover automatico</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+<div>
+<h6>Settimana 4 - Report e Ottimizzazione</h6>
+<p class="mb-0 text-muted">Analisi risultati e ottimizzazione procedure di recovery</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problems We Solve -->
+<section class="py-5" style="background: var(--secondary-color);">
+<div class="container">
+<h2 class="text-center mb-5">
+<i class="bi bi-shield-exclamation me-3" style="color: var(--veeam-green);"></i>
                 Problemi che Risolviamo
             </h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-bug-fill fs-1 text-danger"></i>
-                        </div>
-                        <h5 class="mb-3">Ransomware e Malware</h5>
-                        <p class="text-muted">
+<div class="row">
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="text-center p-4">
+<div class="mb-3">
+<i class="bi bi-bug-fill fs-1 text-danger"></i>
+</div>
+<h5 class="mb-3">Ransomware e Malware</h5>
+<p class="text-muted">
                             Protezione avanzata con backup immutabili e air-gap per prevenire 
                             il danneggiamento dei dati da parte di ransomware.
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-motherboard-fill fs-1 text-warning"></i>
-                        </div>
-                        <h5 class="mb-3">Guasti Hardware</h5>
-                        <p class="text-muted">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="text-center p-4">
+<div class="mb-3">
+<i class="bi bi-motherboard-fill fs-1 text-warning"></i>
+</div>
+<h5 class="mb-3">Guasti Hardware</h5>
+<p class="text-muted">
                             Failover automatico su infrastruttura ridondante per garantire 
                             continuità operativa anche in caso di guasti critici.
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-person-x-fill fs-1" style="color: var(--veeam-green);"></i>
-                        </div>
-                        <h5 class="mb-3">Errore Umano</h5>
-                        <p class="text-muted">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="text-center p-4">
+<div class="mb-3">
+<i class="bi bi-person-x-fill fs-1" style="color: var(--veeam-green);"></i>
+</div>
+<h5 class="mb-3">Errore Umano</h5>
+<p class="text-muted">
                             Recovery granulare per ripristinare singoli file, cartelle o 
                             applicazioni senza impattare l'intera infrastruttura.
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-lightning-fill fs-1 text-primary"></i>
-                        </div>
-                        <h5 class="mb-3">Disastri Naturali</h5>
-                        <p class="text-muted">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="text-center p-4">
+<div class="mb-3">
+<i class="bi bi-lightning-fill fs-1 text-primary"></i>
+</div>
+<h5 class="mb-3">Disastri Naturali</h5>
+<p class="text-muted">
                             Backup geograficamente distribuiti per proteggere i dati 
                             da eventi catastrofici e interruzioni prolungate.
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-database-fill-x fs-1 text-info"></i>
-                        </div>
-                        <h5 class="mb-3">Corruzione Dati</h5>
-                        <p class="text-muted">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="text-center p-4">
+<div class="mb-3">
+<i class="bi bi-database-fill-x fs-1 text-info"></i>
+</div>
+<h5 class="mb-3">Corruzione Dati</h5>
+<p class="text-muted">
                             Verifiche di integrità automatiche e restore point multipli 
                             per garantire la validità dei dati ripristinati.
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-power fs-1 text-secondary"></i>
-                        </div>
-                        <h5 class="mb-3">Interruzioni Prolungate</h5>
-                        <p class="text-muted">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="text-center p-4">
+<div class="mb-3">
+<i class="bi bi-power fs-1 text-secondary"></i>
+</div>
+<h5 class="mb-3">Interruzioni Prolungate</h5>
+<p class="text-muted">
                             Infrastruttura DR dedicata con UPS e generatori per mantenere 
                             i servizi critici sempre operativi.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="py-5" id="contatti">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="mb-4">
-                        <i class="bi bi-telephone me-3" style="color: var(--veeam-green);"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-5" id="contatti">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h2 class="mb-4">
+<i class="bi bi-telephone me-3" style="color: var(--veeam-green);"></i>
                         Contattaci per una Consulenza Gratuita
                     </h2>
-                    <p class="lead mb-4">
+<p class="lead mb-4">
                         I nostri esperti certificati Veeam sono pronti ad analizzare la tua infrastruttura 
                         e progettare la soluzione di backup e disaster recovery più adatta.
                     </p>
-                    <div class="mb-3">
-                        <i class="bi bi-geo-alt-fill me-3" style="color: var(--veeam-green);"></i>
-                        <strong>Servizio su {{CITY}} e provincia</strong>
-                    </div>
-                    <div class="mb-3">
-                        <i class="bi bi-clock-fill me-3" style="color: var(--veeam-green);"></i>
-                        <strong>Intervento entro 4 ore</strong>
-                    </div>
-                    <div class="mb-4">
-                        <i class="bi bi-shield-check me-3" style="color: var(--veeam-green);"></i>
-                        <strong>Garanzia soddisfatti o rimborsati</strong>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card" style="background: var(--card-bg); border: 1px solid rgba(0, 212, 170, 0.2); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);">
-                        <div class="card-body p-4">
-                            <form action="/api/contact" method="POST">
-                                <div class="mb-3">
-                                    <label class="form-label" style="color: var(--text-dark);">Nome Azienda</label>
-                                    <input type="text" class="form-control calculator-input" required>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label" style="color: var(--text-dark);">Nome</label>
-                                        <input type="text" class="form-control calculator-input" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label" style="color: var(--text-dark);">Cognome</label>
-                                        <input type="text" class="form-control calculator-input" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" style="color: var(--text-dark);">Email</label>
-                                    <input type="email" class="form-control calculator-input" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" style="color: var(--text-dark);">Telefono</label>
-                                    <input type="tel" class="form-control calculator-input" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" style="color: var(--text-dark);">Numero di VM da proteggere</label>
-                                    <select class="form-control calculator-input">
-                                        <option>1-10 VM</option>
-                                        <option>11-50 VM</option>
-                                        <option>51-100 VM</option>
-                                        <option>Oltre 100 VM</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" style="color: var(--text-dark);">Note aggiuntive</label>
-                                    <textarea class="form-control calculator-input" rows="3"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-veeam w-100">
-                                    <i class="bi bi-send me-2"></i>Richiedi Consulenza Gratuita
+<div class="mb-3">
+<i class="bi bi-geo-alt-fill me-3" style="color: var(--veeam-green);"></i>
+<strong>Servizio su {{CITY}} e provincia</strong>
+</div>
+<div class="mb-3">
+<i class="bi bi-clock-fill me-3" style="color: var(--veeam-green);"></i>
+<strong>Intervento entro 4 ore</strong>
+</div>
+<div class="mb-4">
+<i class="bi bi-shield-check me-3" style="color: var(--veeam-green);"></i>
+<strong>Garanzia soddisfatti o rimborsati</strong>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card" style="background: var(--card-bg); border: 1px solid rgba(0, 212, 170, 0.2); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);">
+<div class="card-body p-4">
+<form action="/api/contact" method="POST">
+<div class="mb-3">
+<label class="form-label" style="color: var(--text-dark);">Nome Azienda</label>
+<input class="form-control calculator-input" required="" type="text"/>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<label class="form-label" style="color: var(--text-dark);">Nome</label>
+<input class="form-control calculator-input" required="" type="text"/>
+</div>
+<div class="col-md-6 mb-3">
+<label class="form-label" style="color: var(--text-dark);">Cognome</label>
+<input class="form-control calculator-input" required="" type="text"/>
+</div>
+</div>
+<div class="mb-3">
+<label class="form-label" style="color: var(--text-dark);">Email</label>
+<input class="form-control calculator-input" required="" type="email"/>
+</div>
+<div class="mb-3">
+<label class="form-label" style="color: var(--text-dark);">Telefono</label>
+<input class="form-control calculator-input" required="" type="tel"/>
+</div>
+<div class="mb-3">
+<label class="form-label" style="color: var(--text-dark);">Numero di VM da proteggere</label>
+<select class="form-control calculator-input">
+<option>1-10 VM</option>
+<option>11-50 VM</option>
+<option>51-100 VM</option>
+<option>Oltre 100 VM</option>
+</select>
+</div>
+<div class="mb-3">
+<label class="form-label" style="color: var(--text-dark);">Note aggiuntive</label>
+<textarea class="form-control calculator-input" rows="3"></textarea>
+</div>
+<button class="btn btn-veeam w-100" type="submit">
+<i class="bi bi-send me-2"></i>Richiedi Consulenza Gratuita
                                 </button>
-                            </form>
-                        </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+<div class="container">
+<div class="row">
+<div class="col-lg-4">
+<h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+<p>Soluzioni IT professionali per {{CITY}} e provincia. Assistenza tecnica, cloud, sicurezza e telefonia aziendale con supporto 24/7.</p>
+<div class="d-flex gap-3">
+<a class="text-white" href="tel:+390398882041" title="Chiamaci">
+<i class="fas fa-phone"></i>
+</a>
+<a class="text-white" href="mailto:info@it-era.it" title="Inviaci una email">
+<i class="fas fa-envelope"></i>
+</a>
+<a class="text-white" href="https://linkedin.com/company/it-era" title="Seguici su LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+<a class="text-white" href="https://facebook.com/itera.informatica" title="Seguici su Facebook">
+<i class="fab fa-facebook"></i>
+</a>
+</div>
+</div>
+<div class="col-lg-2">
+<h6>Servizi</h6>
+<ul class="list-unstyled">
+<li><a class="text-light text-decoration-none" href="/assistenza-it">Assistenza IT</a></li>
+<li><a class="text-light text-decoration-none" href="/cloud-storage">Cloud Storage</a></li>
+<li><a class="text-light text-decoration-none" href="/sicurezza-informatica">Sicurezza Informatica</a></li>
+<li><a class="text-light text-decoration-none" href="/backup-disaster-recovery">Backup &amp; DR</a></li>
+<li><a class="text-light text-decoration-none" href="/voip-telefonia-cloud">VoIP &amp; Telefonia</a></li>
+</ul>
+</div>
+<div class="col-lg-2">
+<h6>Supporto</h6>
+<ul class="list-unstyled">
+<li><a class="text-light text-decoration-none" href="/documentazione">Documentazione</a></li>
+<li><a class="text-light text-decoration-none" href="/faq">FAQ</a></li>
+<li><a class="text-light text-decoration-none" href="/ticket">Sistema Ticket</a></li>
+<li><a class="text-light text-decoration-none" href="/training">Formazione</a></li>
+</ul>
+</div>
+<div class="col-lg-4">
+<h6>Contatti</h6>
+<div class="mb-2">
+<i class="fas fa-map-marker-alt me-2"></i>
+<strong>Viale Risorgimento 32</strong><br/>
+<span class="ms-4">20871 Vimercate (MB)</span>
+</div>
+<div class="mb-2">
+<i class="fas fa-phone me-2"></i>
+<strong>039 888 2041</strong>
+</div>
+<div class="mb-2">
+<i class="fas fa-envelope me-2"></i>
+<strong>info@it-era.it</strong>
+</div>
+<div class="mb-0">
+<i class="fas fa-clock me-2"></i>
+<strong>24/7</strong> - Sempre disponibili
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
-                    <p>Soluzioni IT professionali per {{CITY}} e provincia. Assistenza tecnica, cloud, sicurezza e telefonia aziendale con supporto 24/7.</p>
-                    <div class="d-flex gap-3">
-                        <a href="tel:+390398882041" class="text-white" title="Chiamaci">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                        <a href="mailto:info@it-era.it" class="text-white" title="Inviaci una email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://linkedin.com/company/it-era" class="text-white" title="Seguici su LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://facebook.com/itera.informatica" class="text-white" title="Seguici su Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <h6>Servizi</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="/assistenza-it" class="text-light text-decoration-none">Assistenza IT</a></li>
-                        <li><a href="/cloud-storage" class="text-light text-decoration-none">Cloud Storage</a></li>
-                        <li><a href="/sicurezza-informatica" class="text-light text-decoration-none">Sicurezza Informatica</a></li>
-                        <li><a href="/backup-disaster-recovery" class="text-light text-decoration-none">Backup & DR</a></li>
-                        <li><a href="/voip-telefonia-cloud" class="text-light text-decoration-none">VoIP & Telefonia</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                    <h6>Supporto</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="/documentazione" class="text-light text-decoration-none">Documentazione</a></li>
-                        <li><a href="/faq" class="text-light text-decoration-none">FAQ</a></li>
-                        <li><a href="/ticket" class="text-light text-decoration-none">Sistema Ticket</a></li>
-                        <li><a href="/training" class="text-light text-decoration-none">Formazione</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h6>Contatti</h6>
-                    <div class="mb-2">
-                        <i class="fas fa-map-marker-alt me-2"></i>
-                        <strong>Viale Risorgimento 32</strong><br>
-                        <span class="ms-4">20871 Vimercate (MB)</span>
-                    </div>
-                    <div class="mb-2">
-                        <i class="fas fa-phone me-2"></i>
-                        <strong>039 888 2041</strong>
-                    </div>
-                    <div class="mb-2">
-                        <i class="fas fa-envelope me-2"></i>
-                        <strong>info@it-era.it</strong>
-                    </div>
-                    <div class="mb-0">
-                        <i class="fas fa-clock me-2"></i>
-                        <strong>24/7</strong> - Sempre disponibili
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <small>&copy; 2025 IT-ERA - Brand of Bulltech Informatica Srl - P.IVA 03917760138 - Tutti i diritti riservati</small>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <small>
-                        <a href="/privacy" class="text-light text-decoration-none me-3">Privacy</a>
-                        <a href="/cookie" class="text-light text-decoration-none">Cookie</a>
-                    </small>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script>
+</div>
+</div>
+<hr class="my-4"/>
+<div class="row align-items-center">
+<div class="col-md-8">
+<small>© 2025 IT-ERA - Brand of Bulltech Informatica Srl - P.IVA 03917760138 - Tutti i diritti riservati</small>
+</div>
+<div class="col-md-4 text-md-end">
+<small>
+<a class="text-light text-decoration-none me-3" href="/privacy">Privacy</a>
+<a class="text-light text-decoration-none" href="/cookie">Cookie</a>
+</small>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script>
         // RPO/RTO Slider Controls
         document.getElementById('rpoSlider').addEventListener('input', function() {
             const value = this.value;

@@ -1,4 +1,4 @@
-name = "it-era-api"
+name = "it-era-contact-api"
 main = "src/index.js"
 compatibility_date = "2024-01-23"
 
@@ -32,10 +32,15 @@ database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
 # Workers dev
 workers_dev = true
 
-# Routes
+# Routes per it-era.it
 [[routes]]
-pattern = "api.bulltech.it/*"
-zone_name = "bulltech.it"
+pattern = "api.it-era.it/*"
+zone_name = "it-era.it"
+
+# Route alternativo per Pages
+[[routes]]
+pattern = "www.it-era.it/api/*"
+zone_name = "it-era.it"
 
 # Environment variables
 [vars]

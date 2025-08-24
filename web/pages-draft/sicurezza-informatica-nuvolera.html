@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+
+<html itemscope="" itemtype="https://schema.org/Organization" lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sicurezza Informatica Nuvolera | Protezione Avanzata Cyber Security | IT-ERA</title>
+<meta content="Servizi di Sicurezza Informatica a Nuvolera ✓ Protezione ransomware ✓ SOC 24/7 ✓ Penetration testing ✓ Compliance GDPR ✓ Fortinet Partner" name="description"/>
+<meta content="sicurezza informatica Nuvolera, cybersecurity, protezione ransomware, SOC, penetration test, compliance GDPR, Lombardia" name="keywords"/>
+<meta content="IT-ERA" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.it-era.it/sicurezza-informatica-nuvolera" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Sicurezza Informatica Nuvolera | Protezione Cyber Security Avanzata" property="og:title"/>
+<meta content="Proteggi la tua azienda con soluzioni di cybersecurity enterprise. SOC 24/7, protezione ransomware, compliance GDPR." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.it-era.it/images/cybersecurity-nuvolera.jpg" property="og:image"/>
+<meta content="https://www.it-era.it/sicurezza-informatica-nuvolera" property="og:url"/>
+<meta content="IT-ERA" property="og:site_name"/>
+<!-- Schema.org -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "IT-ERA - Sicurezza Informatica Nuvolera",
+        "description": "Servizi professionali di cybersecurity e sicurezza informatica a Nuvolera",
+        "url": "https://www.it-era.it",
+        "telephone": "+39 039 888 2041",
+        "email": "info@it-era.it",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Viale Risorgimento 32",
+            "addressLocality": "Vimercate",
+            "postalCode": "20871",
+            "addressRegion": "MB",
+            "addressCountry": "IT"
+        },
+        "serviceArea": {
+            "@type": "City",
+            "name": "Nuvolera"
+        }
+    }
+    </script>
+<!-- Bootstrap & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        :root {
+            /* Modern Cyber Theme Colors */
+            --cyber-primary: #00ff88;      /* Neon green */
+            --cyber-secondary: #0066ff;    /* Electric blue */
+            --cyber-accent: #ff0066;       /* Cyber pink */
+            --cyber-warning: #ffaa00;      /* Alert orange */
+            --cyber-danger: #ff0033;       /* Critical red */
+            --cyber-success: #00ff44;      /* Success green */
+            
+            /* Dark Theme Base */
+            --dark-bg-1: #0a0a0a;          /* Deep black */
+            --dark-bg-2: #1a1a1a;          /* Dark gray */
+            --dark-bg-3: #2a2a2a;          /* Medium gray */
+            --dark-bg-card: #151515;       /* Card background */
+            --dark-border: #333333;        /* Border color */
+            
+            /* Text Colors */
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --text-muted: #888888;
+            --text-cyber: var(--cyber-primary);
+            
+            /* Gradients */
+            --gradient-cyber: linear-gradient(135deg, var(--cyber-primary) 0%, var(--cyber-secondary) 100%);
+            --gradient-threat: linear-gradient(135deg, var(--cyber-danger) 0%, var(--cyber-accent) 100%);
+            --gradient-dark: linear-gradient(135deg, var(--dark-bg-1) 0%, var(--dark-bg-2) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg-1);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-top: 76px; /* Compensate for fixed navbar */
+        }
+
+        /* Navbar enhancements */
+        .navbar {
+            background-color: rgba(10, 10, 10, 0.95) !important;
+            box-shadow: 0 2px 4px rgba(255,255,255,.1);
+            z-index: 1030;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px; /* Smaller padding on mobile */
+            }
+        }
+
+        /* Animated Background */
+        .cyber-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-bg-1);
+            z-index: -2;
+        }
+
+        .cyber-bg::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 0, 102, 0.05) 0%, transparent 50%);
+            animation: cyberFloat 20s ease-in-out infinite;
+        }
+
+        .cyber-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridMove 30s linear infinite;
+        }
+
+        @keyframes cyberFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 10, 10, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--cyber-primary);
+            box-shadow: 0 2px 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .navbar-brand {
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            font-size: 1.8rem;
+            background: var(--gradient-cyber);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        .nav-link {
+            color: var(--text-secondary) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--cyber-primary) !important;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--gradient-dark);
+            padding: 150px 0 100px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            background: var(--gradient-cyber);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.4;
+        }
+
+        /* Threat Monitor Dashboard */
+        .threat-monitor {
+            background: var(--dark-bg-card);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--cyber-primary);
+            box-shadow: 
+                0 0 30px rgba(0, 255, 136, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .threat-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--dark-border);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .threat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-cyber);
+            transform: translateX(-100%);
+            animation: threatScan 3s ease-in-out infinite;
+        }
+
+        @keyframes threatScan {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .threat-item.critical {
+            border-left-color: var(--cyber-danger);
+            box-shadow: 0 0 20px rgba(255, 0, 51, 0.3);
+        }
+
+        .threat-item.high {
+            border-left-color: var(--cyber-warning);
+            box-shadow: 0 0 20px rgba(255, 170, 0, 0.3);
+        }
+
+        .threat-item.medium {
+            border-left-color: var(--cyber-primary);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        /* Cyber Security Cards */
+        .cyber-card {
+            background: var(--dark-bg-card);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid var(--dark-border);
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cyber-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-cyber);
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+        }
+
+        .cyber-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .cyber-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--cyber-primary);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(0, 255, 136, 0.2);
+        }
+
+        .cyber-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--gradient-cyber);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--dark-bg-1);
+            font-size: 1.8rem;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+        }
+
+        /* Pricing Section */
+        .pricing-card {
+            background: var(--dark-bg-card);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid var(--dark-border);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-cyber);
+            opacity: 0.05;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--cyber-primary);
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(0, 255, 136, 0.3);
+        }
+
+        .pricing-card:hover::after {
+            opacity: 0.05;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--cyber-primary);
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.3);
+        }
+
+        .price-tag {
+            font-family: 'Orbitron', monospace;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--cyber-primary);
+            margin: 1.5rem 0;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        /* Buttons */
+        .btn-cyber {
+            background: var(--gradient-cyber);
+            border: none;
+            color: var(--dark-bg-1);
+            font-weight: 600;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-family: 'Orbitron', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .btn-cyber:hover {
+            color: var(--dark-bg-1);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
+        }
+
+        .btn-outline-cyber {
+            border: 2px solid var(--cyber-primary);
+            color: var(--cyber-primary);
+            background: transparent;
+            font-weight: 600;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-family: 'Orbitron', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-cyber:hover {
+            background: var(--cyber-primary);
+            color: var(--dark-bg-1);
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+        }
+
+        /* Security Monitor */
+        .security-monitor {
+            background: var(--dark-bg-card);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--cyber-primary);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+        }
+
+        .monitor-metric {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid var(--dark-border);
+            transition: all 0.3s ease;
+        }
+
+        .monitor-metric:hover {
+            border-color: var(--cyber-primary);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .metric-value {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cyber-primary);
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+        }
+
+        /* Contact Section */
+        .contact-form {
+            background: var(--dark-bg-card);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid var(--cyber-primary);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--dark-border);
+            color: var(--text-primary);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--cyber-primary);
+            color: var(--text-primary);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .form-control::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg-2);
+            border-top: 1px solid var(--cyber-primary);
+            padding: 3rem 0;
+            color: var(--text-secondary);
+        }
+
+        /* Animations */
+        .cyber-pulse {
+            animation: cyberPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes cyberPulse {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(0, 255, 136, 0.6);
+                transform: scale(1.02);
+            }
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .threat-monitor {
+                padding: 1rem;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--cyber-primary);
+            color: var(--dark-bg-1);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid #ffffff;
+            outline-offset: 2px;
+        }
+        
+        /* Enhanced focus indicators */
+        button:focus, .btn:focus, a:focus, input:focus, textarea:focus, select:focus {
+            outline: 2px solid var(--cyber-primary) !important;
+            outline-offset: 2px !important;
+            box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.25) !important;
+        }
+        
+        /* Visibility fixes - ensure all elements are visible by default */
+        .cyber-card, .pricing-card, .service-card, .threat-item, .security-feature {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+        
+        /* Animation enhancement class */
+        .animate-in {
+            animation: slideInUp 0.6s ease-out;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0.7;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+            
+            .cyber-card, .pricing-card, .service-card, .threat-item {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+        
+    </style>
+<style>
+/* Optimized Navigation Styles */
+.navbar {
+    min-height: 76px;
+}
+
+.dropdown-menu-columns {
+    min-width: 400px;
+}
+
+.dropdown-header {
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.25rem;
+}
+
+.dropdown-item {
+    padding: 0.4rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.25rem;
+}
+
+.badge {
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Mobile optimizations */
+@media (max-width: 991px) {
+    .dropdown-menu-columns {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-columns .row {
+        display: block;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+}</style></head>
+<body style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: #0056cc;">IT</span>-ERA
+        </a>
+<!-- Emergency CTA for Mobile -->
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-danger btn-sm" href="tel:+390398882041">
+                🚨 Emergenza
+            </a>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<!-- Emergency Support - Primary CTA -->
+<li class="nav-item d-none d-lg-block">
+<a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                        🚨 Supporto Urgente
+                    </a>
+</li>
+<!-- Services Dropdown with Icons -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Servizi
+                    </a>
+<ul class="dropdown-menu">
+<li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+<li><a class="dropdown-item" href="/pages/assistenza-it-milano.html">
+                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+</a></li>
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica-milano.html">
+                            🛡️ Sicurezza Informatica
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+<li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
+                            ☁️ Cloud Storage
+                        </a></li>
+<li><a class="dropdown-item" href="#backup">
+                            💾 Backup Automatico
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+<li><a class="dropdown-item" href="#all-inclusive">
+                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+</a></li>
+</ul>
+</li>
+<!-- Industry Sectors Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Settori
+                    </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#pmi">
+                            🏢 PMI e Startup
+                        </a></li>
+<li><a class="dropdown-item" href="#studi">
+                            ⚕️ Studi Medici
+                        </a></li>
+<li><a class="dropdown-item" href="#commercialisti">
+                            📊 Commercialisti
+                        </a></li>
+<li><a class="dropdown-item" href="#avvocati">
+                            ⚖️ Studi Legali
+                        </a></li>
+<li><a class="dropdown-item" href="#industria">
+                            🏭 Industria 4.0
+                        </a></li>
+<li><a class="dropdown-item" href="#retail">
+                            🛍️ Retail e GDO
+                        </a></li>
+</ul>
+</li>
+<!-- Coverage Areas -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Zone Coperte
+                    </a>
+<ul class="dropdown-menu dropdown-menu-columns">
+<div class="row g-0">
+<div class="col-6">
+<li class="dropdown-header text-muted small">MILANO E BRIANZA</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-milano.html">Milano</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-monza.html">Monza</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-seregno.html">Seregno</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lissone.html">Lissone</a></li>
+</div>
+<div class="col-6">
+<li class="dropdown-header text-muted small">COMO E LECCO</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-como.html">Como</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-lecco.html">Lecco</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-cantu.html">Cantù</a></li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-merate.html">Merate</a></li>
+<li><a class="text-primary" href="#">Vedi tutte →</a></li>
+</div>
+</div>
+</ul>
+</li>
+<!-- Why IT-ERA -->
+<li class="nav-item">
+<a class="nav-link" href="#perche">Perché IT-ERA</a>
+</li>
+<!-- Contact -->
+<li class="nav-item">
+<a class="nav-link" href="#contatti">Contatti</a>
+</li>
+<!-- Primary CTA Button -->
+<li class="nav-item ms-lg-3">
+<a class="btn btn-primary" href="tel:+390398882041">
+                        📞 039 888 2041
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="cyber-bg"></div>
+<div class="cyber-grid"></div>
+<!-- Skip Navigation Link -->
+<a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+<!-- Navigation -->
+
+<!-- Hero Section -->
+<main id="main-content">
+<section class="hero-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1 class="hero-title">
+                        CYBER<br/>
+                        SECURITY<br/>
+<span class="glow-text">Nuvolera</span>
+</h1>
+<p class="hero-subtitle">
+                        Protezione avanzata contro ransomware, attacchi informatici e minacce cyber. 
+                        SOC 24/7 con intelligenza artificiale e risposta automatica agli incidenti.
+                    </p>
+<!-- Security Stats -->
+<div class="row mb-4">
+<div class="col-4">
+<div class="text-center">
+<div class="metric-value">99.9%</div>
+<small class="text-muted">Uptime SOC</small>
+</div>
+</div>
+<div class="col-4">
+<div class="text-center">
+<div class="metric-value">&lt;5min</div>
+<small class="text-muted">Response Time</small>
+</div>
+</div>
+<div class="col-4">
+<div class="text-center">
+<div class="metric-value">24/7</div>
+<small class="text-muted">Monitoring</small>
+</div>
+</div>
+</div>
+<div class="d-flex gap-3 flex-wrap">
+<button class="btn btn-cyber">
+<i class="bi bi-shield-check me-2"></i>Valutazione Gratuita
+                        </button>
+<button class="btn btn-outline-cyber">
+<i class="bi bi-eye me-2"></i>Demo Live SOC
+                        </button>
+</div>
+</div>
+<div class="col-lg-6">
+<!-- Live Threat Monitor -->
+<div class="threat-monitor cyber-pulse">
+<h5 class="mb-4">
+<i class="bi bi-radar me-2" style="color: var(--cyber-primary);"></i>
+                            Threat Monitor Live - Nuvolera
+                        </h5>
+<div class="threat-item critical">
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<strong style="color: var(--cyber-danger);">Ransomware Attempt</strong><br/>
+<small class="text-muted">IP: 185.220.xxx.xxx → BLOCKED</small>
+</div>
+<div class="text-end">
+<span class="badge" style="background: var(--cyber-danger);">CRITICAL</span><br/>
+<small class="text-muted">T-2 min</small>
+</div>
+</div>
+</div>
+<div class="threat-item high">
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<strong style="color: var(--cyber-warning);">Phishing Email</strong><br/>
+<small class="text-muted">25 emails quarantined</small>
+</div>
+<div class="text-end">
+<span class="badge" style="background: var(--cyber-warning);">HIGH</span><br/>
+<small class="text-muted">T-8 min</small>
+</div>
+</div>
+</div>
+<div class="threat-item medium">
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<strong style="color: var(--cyber-primary);">Port Scan</strong><br/>
+<small class="text-muted">Automated scan detected</small>
+</div>
+<div class="text-end">
+<span class="badge" style="background: var(--cyber-primary); color: var(--dark-bg-1);">MEDIUM</span><br/>
+<small class="text-muted">T-15 min</small>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-3 border-top" style="border-color: var(--dark-border) !important;">
+<small class="text-muted">
+<i class="bi bi-activity me-2"></i>
+                                Real-time threat intelligence powered by AI
+                            </small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-5" id="servizi">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3" style="color: var(--cyber-primary);">
+                    Servizi di Cyber Security
+                </h2>
+<p class="lead text-secondary">
+                    Protezione completa multi-layer per la tua infrastruttura IT
+                </p>
+</div>
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div class="cyber-card">
+<div class="cyber-icon">
+<i class="bi bi-shield-shaded"></i>
+</div>
+<h4 class="mb-3" style="color: var(--cyber-primary);">SOC 24/7</h4>
+<p class="text-secondary">
+                            Security Operations Center con analisti esperti e intelligenza artificiale 
+                            per monitoraggio continuo e risposta automatica agli incidenti.
+                        </p>
+<ul class="list-unstyled mt-3">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Monitoraggio H24 degli eventi
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Correlazione automatica degli alert
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Response team dedicato
+                            </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="cyber-card">
+<div class="cyber-icon">
+<i class="bi bi-bug"></i>
+</div>
+<h4 class="mb-3" style="color: var(--cyber-primary);">Penetration Testing</h4>
+<p class="text-secondary">
+                            Test di penetrazione etica per identificare vulnerabilità prima 
+                            che possano essere sfruttate da attaccanti reali.
+                        </p>
+<ul class="list-unstyled mt-3">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Network &amp; Web App testing
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Social engineering test
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Report dettagliati
+                            </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="cyber-card">
+<div class="cyber-icon">
+<i class="bi bi-file-lock"></i>
+</div>
+<h4 class="mb-3" style="color: var(--cyber-primary);">Compliance GDPR</h4>
+<p class="text-secondary">
+                            Consulenza e implementazione per conformità normativa GDPR, 
+                            ISO 27001 e altri standard di sicurezza.
+                        </p>
+<ul class="list-unstyled mt-3">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Gap analysis normativo
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Policy e procedure
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Audit di conformità
+                            </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="cyber-card">
+<div class="cyber-icon">
+<i class="bi bi-virus"></i>
+</div>
+<h4 class="mb-3" style="color: var(--cyber-primary);">Anti-Ransomware</h4>
+<p class="text-secondary">
+                            Protezione avanzata contro ransomware con backup immutabili, 
+                            comportmental analysis e recovery automatico.
+                        </p>
+<ul class="list-unstyled mt-3">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Behavioral analysis
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Backup immutabili
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Recovery automatico
+                            </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="cyber-card">
+<div class="cyber-icon">
+<i class="bi bi-person-check"></i>
+</div>
+<h4 class="mb-3" style="color: var(--cyber-primary);">Security Training</h4>
+<p class="text-secondary">
+                            Formazione del personale su cyber security awareness, 
+                            phishing simulation e best practice di sicurezza.
+                        </p>
+<ul class="list-unstyled mt-3">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Phishing simulation
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Security awareness
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Certificazioni riconosciute
+                            </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="cyber-card">
+<div class="cyber-icon">
+<i class="bi bi-graph-up"></i>
+</div>
+<h4 class="mb-3" style="color: var(--cyber-primary);">Threat Intelligence</h4>
+<p class="text-secondary">
+                            Intelligence sulle minacce con feed globali, 
+                            IOC personalizzati e hunting proattivo.
+                        </p>
+<ul class="list-unstyled mt-3">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Feed threat globali
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                IOC personalizzati
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Threat hunting
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-5" id="prezzi" style="background: var(--dark-bg-2);">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3" style="color: var(--cyber-primary);">
+                    Piani di Protezione
+                </h2>
+<p class="lead text-secondary">
+                    Soluzioni scalabili per ogni dimensione aziendale
+                </p>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-4 mb-4">
+<div class="pricing-card">
+<h4 class="mb-3" style="color: var(--text-primary);">Security Essential</h4>
+<div class="price-tag">€89</div>
+<div class="text-muted mb-4">/postazione/mese</div>
+<ul class="list-unstyled mb-4">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Endpoint Protection
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Email Security Gateway
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Firewall gestito
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Monitoring 24/7
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Report mensili
+                            </li>
+</ul>
+<button class="btn btn-outline-cyber w-100">Scegli Essential</button>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="pricing-card featured">
+<div class="position-absolute top-0 end-0 m-3">
+<span class="badge" style="background: var(--cyber-primary); color: var(--dark-bg-1);">
+                                PIÙ SCELTO
+                            </span>
+</div>
+<h4 class="mb-3" style="color: var(--text-primary);">SOC Advanced</h4>
+<div class="price-tag">€149</div>
+<div class="text-muted mb-4">/postazione/mese</div>
+<ul class="list-unstyled mb-4">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Tutto del piano Essential
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                SOC 24/7 dedicato
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Incident Response
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Vulnerability Assessment
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Threat Intelligence
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Security awareness training
+                            </li>
+</ul>
+<button class="btn btn-cyber w-100">Scegli SOC Advanced</button>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="pricing-card">
+<h4 class="mb-3" style="color: var(--text-primary);">Enterprise Shield</h4>
+<div class="price-tag">€249</div>
+<div class="text-muted mb-4">/postazione/mese</div>
+<ul class="list-unstyled mb-4">
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Tutto del piano Advanced
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Penetration Testing trimestrale
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Compliance GDPR/ISO27001
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                Zero Trust Architecture
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                CSIRT dedicato
+                            </li>
+<li class="mb-2">
+<i class="bi bi-check2 me-2" style="color: var(--cyber-success);"></i>
+                                SLA 99.99%
+                            </li>
+</ul>
+<button class="btn btn-outline-cyber w-100">Scegli Enterprise</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Threat Protection -->
+<section class="py-5" id="minacce">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3" style="color: var(--cyber-primary);">
+                    Minacce che Neutralizziamo
+                </h2>
+<p class="lead text-secondary">
+                    Protezione completa contro le cyber minacce più avanzate
+                </p>
+</div>
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div class="text-center p-4">
+<div class="cyber-icon mx-auto">
+<i class="bi bi-virus"></i>
+</div>
+<h5 class="mb-3" style="color: var(--text-primary);">Ransomware</h5>
+<p class="text-secondary">
+                            Protezione multi-layer contro ransomware con AI behavior analysis, 
+                            backup immutabili e recovery point garantiti.
+                        </p>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="text-center p-4">
+<div class="cyber-icon mx-auto">
+<i class="bi bi-envelope-slash"></i>
+</div>
+<h5 class="mb-3" style="color: var(--text-primary);">Phishing Avanzato</h5>
+<p class="text-secondary">
+                            Email security con machine learning per identificare phishing 
+                            sophisticati, business email compromise e attacchi social engineering.
+                        </p>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="text-center p-4">
+<div class="cyber-icon mx-auto">
+<i class="bi bi-person-fill-x"></i>
+</div>
+<h5 class="mb-3" style="color: var(--text-primary);">APT &amp; Zero-Day</h5>
+<p class="text-secondary">
+                            Detection avanzata per Advanced Persistent Threats e exploit zero-day 
+                            con threat intelligence globale e sandbox analysis.
+                        </p>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="text-center p-4">
+<div class="cyber-icon mx-auto">
+<i class="bi bi-wifi-off"></i>
+</div>
+<h5 class="mb-3" style="color: var(--text-primary);">Network Intrusion</h5>
+<p class="text-secondary">
+                            IPS/IDS di nuova generazione con machine learning per bloccare 
+                            intrusioni di rete, lateral movement e data exfiltration.
+                        </p>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="text-center p-4">
+<div class="cyber-icon mx-auto">
+<i class="bi bi-cloud-slash"></i>
+</div>
+<h5 class="mb-3" style="color: var(--text-primary);">Cloud Threats</h5>
+<p class="text-secondary">
+                            Sicurezza cloud-native con CSPM, container security, 
+                            API protection e compliance multi-cloud.
+                        </p>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="text-center p-4">
+<div class="cyber-icon mx-auto">
+<i class="bi bi-person-badge"></i>
+</div>
+<h5 class="mb-3" style="color: var(--text-primary);">Insider Threats</h5>
+<p class="text-secondary">
+                            User behavior analytics per identificare minacce interne, 
+                            accessi anomali e violazioni di privilege escalation.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-5" id="contatti" style="background: var(--dark-bg-2);">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h2 class="display-5 fw-bold mb-4" style="color: var(--cyber-primary);">
+                        Richiedi Assessment Gratuito
+                    </h2>
+<p class="lead text-secondary mb-4">
+                        I nostri esperti di cybersecurity analizzeranno la tua infrastruttura 
+                        e ti forniranno un report dettagliato sui rischi e le raccomandazioni.
+                    </p>
+<div class="mb-3">
+<i class="bi bi-geo-alt-fill me-3" style="color: var(--cyber-primary);"></i>
+<strong style="color: var(--text-primary);">Viale Risorgimento 32, Vimercate MB</strong>
+</div>
+<div class="mb-3">
+<i class="bi bi-telephone-fill me-3" style="color: var(--cyber-primary);"></i>
+<strong style="color: var(--text-primary);">+39 039 888 2041</strong>
+</div>
+<div class="mb-3">
+<i class="bi bi-envelope-fill me-3" style="color: var(--cyber-primary);"></i>
+<strong style="color: var(--text-primary);">info@it-era.it</strong>
+</div>
+<div class="mb-4">
+<i class="bi bi-clock-fill me-3" style="color: var(--cyber-primary);"></i>
+<strong style="color: var(--text-primary);">SOC attivo 24/7/365</strong>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="contact-form">
+<h4 class="mb-4" style="color: var(--text-primary);">
+<i class="bi bi-shield-check me-2" style="color: var(--cyber-primary);"></i>
+                            Security Assessment Gratuito
+                        </h4>
+<form action="mailto:info@it-era.it" method="POST">
+<div class="row">
+<div class="col-md-6 mb-3">
+<input class="form-control" placeholder="Nome *" required="" type="text"/>
+</div>
+<div class="col-md-6 mb-3">
+<input class="form-control" placeholder="Cognome *" required="" type="text"/>
+</div>
+</div>
+<div class="mb-3">
+<input class="form-control" placeholder="Azienda *" required="" type="text"/>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input class="form-control" placeholder="Email *" required="" type="email"/>
+</div>
+<div class="col-md-6 mb-3">
+<input class="form-control" placeholder="Telefono *" required="" type="tel"/>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<select class="form-control" required="">
+<option value="">Dimensione azienda *</option>
+<option value="1-10">1-10 dipendenti</option>
+<option value="11-50">11-50 dipendenti</option>
+<option value="51-200">51-200 dipendenti</option>
+<option value="200+">Oltre 200 dipendenti</option>
+</select>
+</div>
+<div class="col-md-6 mb-3">
+<select class="form-control" required="">
+<option value="">Settore *</option>
+<option value="manifatturiero">Manifatturiero</option>
+<option value="servizi">Servizi</option>
+<option value="sanita">Sanità</option>
+<option value="finanza">Finanza</option>
+<option value="pa">Pubblica Amministrazione</option>
+<option value="altro">Altro</option>
+</select>
+</div>
+</div>
+<div class="mb-3">
+<select class="form-control">
+<option value="">Priorità di sicurezza</option>
+<option value="ransomware">Protezione ransomware</option>
+<option value="compliance">Compliance GDPR</option>
+<option value="soc">Monitoraggio SOC</option>
+<option value="pentest">Penetration testing</option>
+<option value="training">Security training</option>
+</select>
+</div>
+<div class="mb-3">
+<textarea class="form-control" placeholder="Descrivi le tue esigenze di sicurezza o eventuali incidenti recenti..." rows="3"></textarea>
+</div>
+<div class="form-check mb-4">
+<input class="form-check-input" id="privacy" required="" type="checkbox"/>
+<label class="form-check-label text-secondary" for="privacy">
+                                    Accetto il trattamento dei dati personali secondo la 
+                                    <a href="/privacy" style="color: var(--cyber-primary);">Privacy Policy</a>
+</label>
+</div>
+<button class="btn btn-cyber w-100" type="submit">
+<i class="bi bi-shield-lock me-2"></i>
+                                Richiedi Assessment Gratuito
+                            </button>
+<div class="text-center mt-3">
+<small class="text-muted">
+<i class="bi bi-clock me-1"></i>
+                                    Ti contatteremo entro 2 ore lavorative
+                                </small>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-4 mb-4">
+<h5 class="mb-3">
+<i class="bi bi-shield-lock-fill me-2" style="color: var(--cyber-primary);"></i>
+                        IT-ERA Cyber Security
+                    </h5>
+<p class="text-muted">
+                        Esperti in cybersecurity per Nuvolera e provincia. 
+                        Protezione avanzata contro cyber minacce con tecnologie enterprise 
+                        e SOC dedicato.
+                    </p>
+<div class="d-flex gap-3">
+<a href="#" style="color: var(--cyber-primary);">
+<i class="bi bi-linkedin"></i>
+</a>
+<a href="#" style="color: var(--cyber-primary);">
+<i class="bi bi-twitter"></i>
+</a>
+<a href="#" style="color: var(--cyber-primary);">
+<i class="bi bi-youtube"></i>
+</a>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 mb-4">
+<h6 class="mb-3" style="color: var(--text-primary);">Servizi</h6>
+<ul class="list-unstyled">
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#servizi">SOC 24/7</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#servizi">Penetration Test</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#servizi">Compliance</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#servizi">Anti-Ransomware</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 mb-4">
+<h6 class="mb-3" style="color: var(--text-primary);">Soluzioni</h6>
+<ul class="list-unstyled">
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#minacce">Endpoint Protection</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#minacce">Email Security</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#minacce">Network Security</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#minacce">Cloud Security</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 mb-4">
+<h6 class="mb-3" style="color: var(--text-primary);">Supporto</h6>
+<ul class="list-unstyled">
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#">Incident Response</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#">Security Training</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#">Documentation</a>
+</li>
+<li class="mb-2">
+<a class="text-muted text-decoration-none" href="#contatti">Emergenze 24/7</a>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 mb-4">
+<h6 class="mb-3" style="color: var(--text-primary);">Contatti</h6>
+<div class="text-muted">
+<div class="mb-2">
+<i class="bi bi-telephone me-2" style="color: var(--cyber-primary);"></i>
+                            +39 039 888 2041
+                        </div>
+<div class="mb-2">
+<i class="bi bi-envelope me-2" style="color: var(--cyber-primary);"></i>
+                            info@it-era.it
+                        </div>
+<div class="mb-2">
+<i class="bi bi-geo-alt me-2" style="color: var(--cyber-primary);"></i>
+                            Viale Risorgimento 32<br/>20871 Vimercate (MB)
+                        </div>
+</div>
+</div>
+</div>
+<hr class="my-4" style="border-color: var(--cyber-primary); opacity: 0.3;"/>
+<div class="row align-items-center">
+<div class="col-md-8">
+<p class="mb-0 text-muted">
+                        © 2025 IT-ERA - Brand of Bulltech Informatica Srl - P.IVA 03917760138 - Tutti i diritti riservati
+                    </p>
+</div>
+<div class="col-md-4 text-md-end">
+<a class="text-muted text-decoration-none me-3" href="/privacy">Privacy</a>
+<a class="text-muted text-decoration-none me-3" href="/cookie">Cookie</a>
+<a class="text-muted text-decoration-none" href="/termini">Termini</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Cyber glitch effect on hover
+        document.querySelectorAll('.cyber-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.animation = 'none';
+                this.offsetHeight; // Trigger reflow
+                this.style.animation = 'cyberGlitch 0.5s ease';
+            });
+        });
+
+        // Add cyber glitch animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes cyberGlitch {
+                0%, 100% { transform: translateY(0); }
+                10% { transform: translateY(-2px) translateX(2px); }
+                20% { transform: translateY(2px) translateX(-2px); }
+                30% { transform: translateY(-1px) translateX(1px); }
+                40% { transform: translateY(1px) translateX(-1px); }
+                50% { transform: translateY(-2px) translateX(0px); }
+                60% { transform: translateY(0px) translateX(2px); }
+                70% { transform: translateY(-1px) translateX(-1px); }
+                80% { transform: translateY(1px) translateX(1px); }
+                90% { transform: translateY(0px) translateX(-2px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Animate threat monitor items
+        function updateThreatMonitor() {
+            const threatItems = document.querySelectorAll('.threat-item');
+            
+            setInterval(() => {
+                threatItems.forEach((item, index) => {
+                    if (Math.random() < 0.1) { // 10% chance per second
+                        item.style.animation = 'none';
+                        item.offsetHeight; // Trigger reflow
+                        item.style.animation = 'threatScan 2s ease-in-out';
+                    }
+                });
+            }, 2000);
+        }
+
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            updateThreatMonitor();
+            
+            // Intersection Observer for animations - ensure visibility fallback
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Always ensure elements are visible
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            // Observe cards for animation
+            document.querySelectorAll('.cyber-card, .pricing-card').forEach(card => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0px)';
+                card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Add typing effect to hero title
+        function typeWriter() {
+            const title = document.querySelector('.hero-title');
+            if (title) {
+                const text = title.innerHTML;
+                title.innerHTML = '';
+                let i = 0;
+                
+                function type() {
+                    if (i < text.length) {
+                        title.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, 100);
+                    }
+                }
+                
+                setTimeout(type, 1000);
+            }
+        }
+
+        // Initialize typing effect
+        window.addEventListener('load', typeWriter);
+    </script>
+</body>
+</html>

@@ -1,0 +1,783 @@
+<!-- Internal Linking Strategy for IT-ERA SEO Optimization
+     This component provides contextual internal links to boost page authority
+     and improve user experience across the IT services ecosystem.
+     
+     Usage: Include this component in templates to create semantic link networks
+     that distribute link equity and improve crawlability.
+-->
+
+<!-- Regional Service Links Hub -->
+<section class="internal-links-hub py-4 bg-light border-top" role="navigation" aria-labelledby="related-services">
+    <div class="container">
+        <h3 id="related-services" class="h5 text-center mb-4 text-muted">
+            <i class="fas fa-link me-2" aria-hidden="true"></i>
+            Servizi Correlati {{REGION}}
+        </h3>
+        
+        <div class="row g-3">
+            <!-- Primary Service Links -->
+            <div class="col-lg-3">
+                <div class="service-link-group">
+                    <h4 class="h6 text-uppercase fw-bold text-primary mb-3">Assistenza IT</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-{{CITY_SLUG}}" class="text-decoration-none" 
+                               title="Assistenza informatica {{CITY}} - Help desk 24/7">
+                                <i class="fas fa-desktop text-primary me-2" aria-hidden="true"></i>
+                                Assistenza IT {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/riparazione-pc-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Riparazione computer e laptop {{CITY}}">
+                                <i class="fas fa-wrench text-primary me-2" aria-hidden="true"></i>
+                                Riparazione PC {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/supporto-remoto-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Supporto tecnico remoto sicuro {{CITY}}">
+                                <i class="fas fa-remote text-primary me-2" aria-hidden="true"></i>
+                                Supporto Remoto {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/help-desk-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Help desk professionale {{CITY}} con SLA garantiti">
+                                <i class="fas fa-headset text-primary me-2" aria-hidden="true"></i>
+                                Help Desk {{CITY}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Security Services -->
+            <div class="col-lg-3">
+                <div class="service-link-group">
+                    <h4 class="h6 text-uppercase fw-bold text-success mb-3">Sicurezza IT</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/sicurezza-informatica-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Sicurezza informatica e cybersecurity {{CITY}}">
+                                <i class="fas fa-shield-alt text-success me-2" aria-hidden="true"></i>
+                                Sicurezza {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/firewall-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Configurazione firewall e protezione rete {{CITY}}">
+                                <i class="fas fa-fire text-success me-2" aria-hidden="true"></i>
+                                Firewall {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/antivirus-aziendale-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Soluzioni antivirus per aziende {{CITY}}">
+                                <i class="fas fa-virus-slash text-success me-2" aria-hidden="true"></i>
+                                Antivirus Aziendale
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/backup-disaster-recovery-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Backup automatici e disaster recovery {{CITY}}">
+                                <i class="fas fa-save text-success me-2" aria-hidden="true"></i>
+                                Backup & Recovery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Cloud Solutions -->
+            <div class="col-lg-3">
+                <div class="service-link-group">
+                    <h4 class="h6 text-uppercase fw-bold text-info mb-3">Soluzioni Cloud</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/cloud-storage-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Cloud storage sicuro per aziende {{CITY}}">
+                                <i class="fas fa-cloud text-info me-2" aria-hidden="true"></i>
+                                Cloud Storage {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/microsoft-365-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Microsoft 365 configurazione e supporto {{CITY}}">
+                                <i class="fab fa-microsoft text-info me-2" aria-hidden="true"></i>
+                                Microsoft 365
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/server-cloud-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Migrazione server al cloud {{CITY}}">
+                                <i class="fas fa-server text-info me-2" aria-hidden="true"></i>
+                                Server Cloud
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/voip-telefonia-cloud-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="VoIP e telefonia cloud per aziende {{CITY}}">
+                                <i class="fas fa-phone-alt text-info me-2" aria-hidden="true"></i>
+                                VoIP & Telefonia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Geographic Coverage -->
+            <div class="col-lg-3">
+                <div class="service-link-group">
+                    <h4 class="h6 text-uppercase fw-bold text-warning mb-3">Copertura {{REGION}}</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <!-- Dynamic city links based on region -->
+                        {{#NEARBY_CITIES}}
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Assistenza informatica {{CITY_NAME}}">
+                                <i class="fas fa-map-marker-alt text-warning me-2" aria-hidden="true"></i>
+                                {{CITY_NAME}}
+                            </a>
+                        </li>
+                        {{/NEARBY_CITIES}}
+                        <!-- Fallback static links for major cities -->
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-milano" class="text-decoration-none"
+                               title="Assistenza IT Milano - Supporto professionale">
+                                <i class="fas fa-map-marker-alt text-warning me-2" aria-hidden="true"></i>
+                                Milano
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-bergamo" class="text-decoration-none"
+                               title="Assistenza informatica Bergamo">
+                                <i class="fas fa-map-marker-alt text-warning me-2" aria-hidden="true"></i>
+                                Bergamo
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-como" class="text-decoration-none"
+                               title="Supporto IT Como e provincia">
+                                <i class="fas fa-map-marker-alt text-warning me-2" aria-hidden="true"></i>
+                                Como
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-lecco" class="text-decoration-none"
+                               title="Help desk Lecco e Brianza">
+                                <i class="fas fa-map-marker-alt text-warning me-2" aria-hidden="true"></i>
+                                Lecco
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contextual Service Recommendations -->
+<section class="service-recommendations py-4 bg-white" role="complementary" aria-labelledby="recommended-services">
+    <div class="container">
+        <h3 id="recommended-services" class="h5 mb-4 text-center text-muted">
+            <i class="fas fa-lightbulb me-2" aria-hidden="true"></i>
+            Servizi Spesso Richiesti Insieme
+        </h3>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="recommendation-card bg-light rounded-3 p-4 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="recommendation-icon bg-primary bg-opacity-10 rounded-circle p-2 me-3">
+                            <i class="fas fa-shield-check text-primary" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="h6 mb-0">Pacchetto Sicurezza Completa</h4>
+                    </div>
+                    <p class="text-muted small mb-3">
+                        Chi sceglie l'assistenza IT spesso aggiunge la sicurezza informatica per protezione totale.
+                    </p>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/assistenza-it-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Assistenza IT {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/sicurezza-informatica-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Sicurezza Informatica {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/backup-automatico-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Backup Automatico
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="badge bg-success small">Risparmio 25%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="recommendation-card bg-light rounded-3 p-4 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="recommendation-icon bg-info bg-opacity-10 rounded-circle p-2 me-3">
+                            <i class="fas fa-cloud-upload-alt text-info" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="h6 mb-0">Migrazione al Cloud</h4>
+                    </div>
+                    <p class="text-muted small mb-3">
+                        Modernizza la tua infrastruttura con cloud storage e telefonia integrata.
+                    </p>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/cloud-storage-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Cloud Storage {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/voip-telefonia-cloud-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ VoIP Telefonia Cloud
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/microsoft-365-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Microsoft 365 Setup
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="badge bg-info small">Trend 2025</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="recommendation-card bg-light rounded-3 p-4 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="recommendation-icon bg-warning bg-opacity-10 rounded-circle p-2 me-3">
+                            <i class="fas fa-cogs text-warning" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="h6 mb-0">Manutenzione Preventiva</h4>
+                    </div>
+                    <p class="text-muted small mb-3">
+                        Evita i problemi con monitoraggio costante e manutenzioni programmate.
+                    </p>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/monitoraggio-sistemi-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Monitoraggio 24/7
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/manutenzione-preventiva-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Manutenzione Sistemi
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/ottimizzazione-performance-{{CITY_SLUG}}" class="text-decoration-none">
+                                ➤ Ottimizzazione Performance
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="badge bg-warning small">Preventivo Gratuito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industry-Specific Internal Links -->
+<section class="industry-links py-4 bg-gradient-light" role="navigation" aria-labelledby="industry-solutions">
+    <div class="container">
+        <h3 id="industry-solutions" class="h5 mb-4 text-center text-muted">
+            <i class="fas fa-industry me-2" aria-hidden="true"></i>
+            Soluzioni per Settore {{CITY}}
+        </h3>
+        
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="industry-card text-center p-3 bg-white rounded-3 shadow-sm h-100">
+                    <div class="industry-icon mb-2">
+                        <i class="fas fa-stethoscope fs-2 text-primary" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="h6 fw-bold mb-2">Studi Medici</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/assistenza-it-studi-medici-{{CITY_SLUG}}" class="text-decoration-none">
+                                IT per Medici {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/gdpr-sanita-{{CITY_SLUG}}" class="text-decoration-none">
+                                GDPR Sanitario
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/backup-cartelle-cliniche-{{CITY_SLUG}}" class="text-decoration-none">
+                                Backup Cartelle Cliniche
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="industry-card text-center p-3 bg-white rounded-3 shadow-sm h-100">
+                    <div class="industry-icon mb-2">
+                        <i class="fas fa-balance-scale fs-2 text-success" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="h6 fw-bold mb-2">Studi Legali</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/assistenza-it-studi-legali-{{CITY_SLUG}}" class="text-decoration-none">
+                                IT per Avvocati {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/sicurezza-dati-legali-{{CITY_SLUG}}" class="text-decoration-none">
+                                Sicurezza Dati Legali
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/archiviazione-documenti-{{CITY_SLUG}}" class="text-decoration-none">
+                                Archiviazione Digitale
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="industry-card text-center p-3 bg-white rounded-3 shadow-sm h-100">
+                    <div class="industry-icon mb-2">
+                        <i class="fas fa-calculator fs-2 text-info" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="h6 fw-bold mb-2">Commercialisti</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/assistenza-it-commercialisti-{{CITY_SLUG}}" class="text-decoration-none">
+                                IT per Commercialisti
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/software-contabilita-{{CITY_SLUG}}" class="text-decoration-none">
+                                Software Contabilità
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/conservazione-digitale-{{CITY_SLUG}}" class="text-decoration-none">
+                                Conservazione Digitale
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="industry-card text-center p-3 bg-white rounded-3 shadow-sm h-100">
+                    <div class="industry-icon mb-2">
+                        <i class="fas fa-industry fs-2 text-warning" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="h6 fw-bold mb-2">Industria 4.0</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <a href="/assistenza-it-industria-{{CITY_SLUG}}" class="text-decoration-none">
+                                IT Industriale {{CITY}}
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/iot-monitoraggio-{{CITY_SLUG}}" class="text-decoration-none">
+                                IoT e Monitoraggio
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="/cybersecurity-industriale-{{CITY_SLUG}}" class="text-decoration-none">
+                                Cybersecurity OT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Knowledge Base and Resources Internal Linking -->
+<section class="knowledge-links py-4 bg-white border-top" role="navigation" aria-labelledby="resources-knowledge">
+    <div class="container">
+        <h3 id="resources-knowledge" class="h5 mb-4 text-center text-muted">
+            <i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>
+            Risorse e Guide Utili
+        </h3>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="resource-group">
+                    <h4 class="h6 text-uppercase fw-bold text-primary mb-3">Guide Tecniche</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/guide/backup-automatico-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Come configurare backup automatici {{CITY}}">
+                                <i class="fas fa-file-alt text-primary me-2" aria-hidden="true"></i>
+                                Guida Backup Automatici
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/guide/sicurezza-password-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Best practices per password sicure">
+                                <i class="fas fa-lock text-primary me-2" aria-hidden="true"></i>
+                                Password Sicure: Guida
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/guide/ottimizzazione-pc-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Come velocizzare PC e laptop {{CITY}}">
+                                <i class="fas fa-tachometer-alt text-primary me-2" aria-hidden="true"></i>
+                                Ottimizzare PC Lenti
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/guide/configurazione-email-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Configurare email aziendale {{CITY}}">
+                                <i class="fas fa-envelope text-primary me-2" aria-hidden="true"></i>
+                                Setup Email Aziendale
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="resource-group">
+                    <h4 class="h6 text-uppercase fw-bold text-success mb-3">Casi Studio</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/casi-studio/studio-medico-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Caso studio: digitalizzazione studio medico {{CITY}}">
+                                <i class="fas fa-chart-line text-success me-2" aria-hidden="true"></i>
+                                Studio Medico Digitalizzato
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/casi-studio/azienda-manifatturiera-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Migrazione cloud azienda manifatturiera">
+                                <i class="fas fa-industry text-success me-2" aria-hidden="true"></i>
+                                Migrazione Cloud PMI
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/casi-studio/disaster-recovery-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Come abbiamo salvato i dati dopo un ransomware">
+                                <i class="fas fa-shield-virus text-success me-2" aria-hidden="true"></i>
+                                Recovery da Ransomware
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/casi-studio/smart-working-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Implementazione smart working sicuro">
+                                <i class="fas fa-home text-success me-2" aria-hidden="true"></i>
+                                Smart Working Sicuro
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="resource-group">
+                    <h4 class="h6 text-uppercase fw-bold text-info mb-3">FAQ e Supporto</h4>
+                    <ul class="list-unstyled small" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/faq/assistenza-it-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Domande frequenti assistenza IT {{CITY}}">
+                                <i class="fas fa-question-circle text-info me-2" aria-hidden="true"></i>
+                                FAQ Assistenza IT
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/faq/sicurezza-informatica-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="FAQ sicurezza informatica e cybersecurity">
+                                <i class="fas fa-shield-alt text-info me-2" aria-hidden="true"></i>
+                                FAQ Sicurezza IT
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/faq/cloud-storage-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Domande su cloud storage e backup">
+                                <i class="fas fa-cloud text-info me-2" aria-hidden="true"></i>
+                                FAQ Cloud Storage
+                            </a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/contatti/supporto-urgente-{{CITY_SLUG}}" class="text-decoration-none"
+                               title="Contatti per supporto urgente {{CITY}}">
+                                <i class="fas fa-phone text-info me-2" aria-hidden="true"></i>
+                                Supporto Urgente
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA for more resources -->
+        <div class="text-center mt-4">
+            <a href="/centro-risorse" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-book-open me-2" aria-hidden="true"></i>
+                Esplora Tutte le Risorse
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Internal Links (for template inclusion) -->
+<nav class="footer-internal-links py-3 bg-dark text-white" role="navigation" aria-label="Link utili footer">
+    <div class="container">
+        <div class="row small">
+            <div class="col-md-4">
+                <h5 class="h6 text-uppercase mb-2">Servizi Principali</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="/assistenza-it" class="text-light text-decoration-none badge bg-secondary">Assistenza IT</a>
+                    <a href="/sicurezza-informatica" class="text-light text-decoration-none badge bg-secondary">Sicurezza IT</a>
+                    <a href="/cloud-storage" class="text-light text-decoration-none badge bg-secondary">Cloud Storage</a>
+                    <a href="/backup-disaster-recovery" class="text-light text-decoration-none badge bg-secondary">Backup & DR</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="h6 text-uppercase mb-2">Zone Copertura</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="/assistenza-it-milano" class="text-light text-decoration-none badge bg-secondary">Milano</a>
+                    <a href="/assistenza-it-bergamo" class="text-light text-decoration-none badge bg-secondary">Bergamo</a>
+                    <a href="/assistenza-it-como" class="text-light text-decoration-none badge bg-secondary">Como</a>
+                    <a href="/assistenza-it-lecco" class="text-light text-decoration-none badge bg-secondary">Lecco</a>
+                    <a href="/assistenza-it-monza" class="text-light text-decoration-none badge bg-secondary">Monza</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="h6 text-uppercase mb-2">Settori Specializzati</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="/settori/studi-medici" class="text-light text-decoration-none badge bg-secondary">Studi Medici</a>
+                    <a href="/settori/studi-legali" class="text-light text-decoration-none badge bg-secondary">Studi Legali</a>
+                    <a href="/settori/commercialisti" class="text-light text-decoration-none badge bg-secondary">Commercialisti</a>
+                    <a href="/settori/industria-4-0" class="text-light text-decoration-none badge bg-secondary">Industria 4.0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Schema.org for Internal Linking Structure -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": "IT-ERA Internal Navigation",
+    "url": "{{BASE_URL}}",
+    "hasPart": [
+        {
+            "@type": "SiteNavigationElement",
+            "name": "Assistenza IT {{REGION}}",
+            "url": "{{BASE_URL}}/assistenza-it",
+            "description": "Servizi di assistenza informatica per {{REGION}}"
+        },
+        {
+            "@type": "SiteNavigationElement", 
+            "name": "Sicurezza Informatica {{REGION}}",
+            "url": "{{BASE_URL}}/sicurezza-informatica",
+            "description": "Soluzioni cybersecurity per aziende {{REGION}}"
+        },
+        {
+            "@type": "SiteNavigationElement",
+            "name": "Cloud Storage {{REGION}}", 
+            "url": "{{BASE_URL}}/cloud-storage",
+            "description": "Archiviazione cloud sicura per {{REGION}}"
+        },
+        {
+            "@type": "SiteNavigationElement",
+            "name": "Backup e Disaster Recovery",
+            "url": "{{BASE_URL}}/backup-disaster-recovery", 
+            "description": "Soluzioni backup e continuità operativa"
+        }
+    ]
+}
+</script>
+
+<!-- CSS Styles for Internal Links -->
+<style>
+.internal-links-hub {
+    border-top: 3px solid #e9ecef;
+}
+
+.service-link-group h4 {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.service-link-group h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+}
+
+.recommendation-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e9ecef;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.industry-card {
+    transition: all 0.2s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.resource-group ul li a {
+    color: #6c757d;
+    transition: color 0.2s ease;
+}
+
+.resource-group ul li a:hover {
+    color: #007bff;
+    padding-left: 8px;
+}
+
+/* Link tracking for SEO analytics */
+.internal-links-hub a[href^="/"],
+.service-recommendations a[href^="/"],
+.industry-links a[href^="/"],
+.knowledge-links a[href^="/"] {
+    position: relative;
+}
+
+.internal-links-hub a[href^="/"]:hover,
+.service-recommendations a[href^="/"]:hover,
+.industry-links a[href^="/"]:hover, 
+.knowledge-links a[href^="/"]:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .internal-links-hub .row > div {
+        margin-bottom: 2rem;
+    }
+    
+    .industry-card {
+        margin-bottom: 1rem;
+    }
+    
+    .resource-group {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Accessibility improvements */
+.internal-links-hub [role="list"] {
+    margin: 0;
+    padding: 0;
+}
+
+.internal-links-hub [role="listitem"] {
+    list-style: none;
+}
+
+/* Print styles */
+@media print {
+    .internal-links-hub,
+    .service-recommendations,
+    .industry-links,
+    .knowledge-links,
+    .footer-internal-links {
+        display: none !important;
+    }
+}
+</style>
+
+<!-- JavaScript for Link Tracking and Analytics -->
+<script>
+// Track internal link clicks for SEO analysis
+document.addEventListener('DOMContentLoaded', function() {
+    const internalLinks = document.querySelectorAll('.internal-links-hub a[href^="/"], .service-recommendations a[href^="/"], .industry-links a[href^="/"], .knowledge-links a[href^="/"]');
+    
+    internalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Track internal link clicks
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'internal_link_click', {
+                    event_category: 'SEO',
+                    event_label: this.href,
+                    page_location: window.location.href,
+                    link_text: this.textContent.trim(),
+                    link_section: this.closest('section')?.getAttribute('aria-labelledby') || 'unknown'
+                });
+            }
+            
+            // Optional: Add visual feedback
+            this.style.opacity = '0.7';
+            setTimeout(() => {
+                this.style.opacity = '1';
+            }, 150);
+        });
+    });
+    
+    // Lazy load non-critical internal link sections
+    if ('IntersectionObserver' in window) {
+        const linkSections = document.querySelectorAll('.service-recommendations, .industry-links, .knowledge-links');
+        
+        const linkObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animate section entrance
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    linkObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            rootMargin: '50px 0px'
+        });
+        
+        linkSections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            linkObserver.observe(section);
+        });
+    }
+});
+
+// Preload high-priority internal pages
+function preloadInternalPages() {
+    const highPriorityLinks = [
+        '/sicurezza-informatica-{{CITY_SLUG}}',
+        '/cloud-storage-{{CITY_SLUG}}',
+        '/backup-disaster-recovery'
+    ];
+    
+    highPriorityLinks.forEach(url => {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = url;
+        document.head.appendChild(link);
+    });
+}
+
+// Initialize preloading after page load
+window.addEventListener('load', preloadInternalPages);
+</script>

@@ -1,0 +1,2594 @@
+{
+  "cities": [
+    {
+      "name": "Abbadia Lariana",
+      "slug": "abbadia-lariana",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Abbiategrasso",
+      "slug": "abbiategrasso",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Agnadello",
+      "slug": "agnadello",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Agrate Brianza",
+      "slug": "agrate-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Aicurzio",
+      "slug": "aicurzio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Airuno",
+      "slug": "airuno",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Albiate",
+      "slug": "albiate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Albino",
+      "slug": "albino",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Almenno San Bartolomeo",
+      "slug": "almenno-san-bartolomeo",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Alzano Lombardo",
+      "slug": "alzano-lombardo",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Annone di Brianza",
+      "slug": "annone-di-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Anzano del Parco",
+      "slug": "anzano-del-parco",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Appiano Gentile",
+      "slug": "appiano-gentile",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Arcore",
+      "slug": "arcore",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Arosio",
+      "slug": "arosio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Arzago D Adda",
+      "slug": "arzago-d-adda",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Assago",
+      "slug": "assago",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ballabio",
+      "slug": "ballabio",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bariano",
+      "slug": "bariano",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Barlassina",
+      "slug": "barlassina",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Barzago",
+      "slug": "barzago",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Barzio",
+      "slug": "barzio",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Basiano",
+      "slug": "basiano",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Basiglio",
+      "slug": "basiglio",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bellano",
+      "slug": "bellano",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bellusco",
+      "slug": "bellusco",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bergamo",
+      "slug": "bergamo",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bernareggio",
+      "slug": "bernareggio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Besana in Brianza",
+      "slug": "besana-in-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Besate",
+      "slug": "besate",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Biassono",
+      "slug": "biassono",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Binasco",
+      "slug": "binasco",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bollate",
+      "slug": "bollate",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Borghetto Lodigiano",
+      "slug": "borghetto-lodigiano",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bovisio Masciago",
+      "slug": "bovisio-masciago",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bregnano",
+      "slug": "bregnano",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Brenna",
+      "slug": "brenna",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bresso",
+      "slug": "bresso",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Brignano Gera D Adda",
+      "slug": "brignano-gera-d-adda",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Brugherio",
+      "slug": "brugherio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bubbiano",
+      "slug": "bubbiano",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Buccinasco",
+      "slug": "buccinasco",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Bulgarograsso",
+      "slug": "bulgarograsso",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Burago di Molgora",
+      "slug": "burago-di-molgora",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Busnago",
+      "slug": "busnago",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cabiate",
+      "slug": "cabiate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cadorago",
+      "slug": "cadorago",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Calolziocorte",
+      "slug": "calolziocorte",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Calvenzano",
+      "slug": "calvenzano",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Calvignasco",
+      "slug": "calvignasco",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cambiago",
+      "slug": "cambiago",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Camparada",
+      "slug": "camparada",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cantu",
+      "slug": "cantu",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Capiago Intimiano",
+      "slug": "capiago-intimiano",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Carate Brianza",
+      "slug": "carate-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Caravaggio",
+      "slug": "caravaggio",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Carbonate",
+      "slug": "carbonate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Carimate",
+      "slug": "carimate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Carnate",
+      "slug": "carnate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Caronno Pertusella",
+      "slug": "caronno-pertusella",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Carugo",
+      "slug": "carugo",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Casalpusterlengo",
+      "slug": "casalpusterlengo",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Casatenovo",
+      "slug": "casatenovo",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Casirate D Adda",
+      "slug": "casirate-d-adda",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Casnigo",
+      "slug": "casnigo",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cassina Valsassina",
+      "slug": "cassina-valsassina",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Castiglione D Adda",
+      "slug": "castiglione-d-adda",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Castione della Presolana",
+      "slug": "castione-della-presolana",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cavenago di Brianza",
+      "slug": "cavenago-di-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cazzano Sant Andrea",
+      "slug": "cazzano-sant-andrea",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cermenate",
+      "slug": "cermenate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cernusco Lombardone",
+      "slug": "cernusco-lombardone",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cesano Boscone",
+      "slug": "cesano-boscone",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cesano Maderno",
+      "slug": "cesano-maderno",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cesate",
+      "slug": "cesate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cinisello Balsamo",
+      "slug": "cinisello-balsamo",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cirimido",
+      "slug": "cirimido",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cislago",
+      "slug": "cislago",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Clusone",
+      "slug": "clusone",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Codogno",
+      "slug": "codogno",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cogliate",
+      "slug": "cogliate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Colico",
+      "slug": "colico",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cologno Monzese",
+      "slug": "cologno-monzese",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Colzate",
+      "slug": "colzate",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Como",
+      "slug": "como",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Concorezzo",
+      "slug": "concorezzo",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cormano",
+      "slug": "cormano",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cornate D Adda",
+      "slug": "cornate-d-adda",
+      "province": "Unknown",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Correzzana",
+      "slug": "correzzana",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Corsico",
+      "slug": "corsico",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cortenova",
+      "slug": "cortenova",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Costa Masnaga",
+      "slug": "costa-masnaga",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Covo",
+      "slug": "covo",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Crema",
+      "slug": "crema",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cremeno",
+      "slug": "cremeno",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Curno",
+      "slug": "curno",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Cusano Milanino",
+      "slug": "cusano-milanino",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Dalmine",
+      "slug": "dalmine",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Dervio",
+      "slug": "dervio",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Desio",
+      "slug": "desio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Dolzago",
+      "slug": "dolzago",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Dovera",
+      "slug": "dovera",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ello",
+      "slug": "ello",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Fara Gera D Adda",
+      "slug": "fara-gera-d-adda",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Fenegro",
+      "slug": "fenegro",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Figino Serenza",
+      "slug": "figino-serenza",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Fino Mornasco",
+      "slug": "fino-mornasco",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Fiorano al Serio",
+      "slug": "fiorano-al-serio",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Fombio",
+      "slug": "fombio",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Formigara",
+      "slug": "formigara",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Gandino",
+      "slug": "gandino",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Garbagnate Milanese",
+      "slug": "garbagnate-milanese",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Garlate",
+      "slug": "garlate",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Gazzaniga",
+      "slug": "gazzaniga",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Gerenzano",
+      "slug": "gerenzano",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Giussano",
+      "slug": "giussano",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Gorle",
+      "slug": "gorle",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Grassobbio",
+      "slug": "grassobbio",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Introbio",
+      "slug": "introbio",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Inverigo",
+      "slug": "inverigo",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "La Valletta Brianza",
+      "slug": "la-valletta-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lacchiarella",
+      "slug": "lacchiarella",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lambrugo",
+      "slug": "lambrugo",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lazzate",
+      "slug": "lazzate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lecco",
+      "slug": "lecco",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Leffe",
+      "slug": "leffe",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lentate sul Seveso",
+      "slug": "lentate-sul-seveso",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lesmo",
+      "slug": "lesmo",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lezzeno",
+      "slug": "lezzeno",
+      "province": "Unknown",
+      "services": [
+        "assistenza"
+      ]
+    },
+    {
+      "name": "Lierna",
+      "slug": "lierna",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Limbiate",
+      "slug": "limbiate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Limido Comasco",
+      "slug": "limido-comasco",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lissone",
+      "slug": "lissone",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Locate di Triulzi",
+      "slug": "locate-di-triulzi",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Locate Varesino",
+      "slug": "locate-varesino",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lodi",
+      "slug": "lodi",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lodi Vecchio",
+      "slug": "lodi-vecchio",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lomazzo",
+      "slug": "lomazzo",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lurano",
+      "slug": "lurano",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Lurate Caccivio",
+      "slug": "lurate-caccivio",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Maleo",
+      "slug": "maleo",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Malgrate",
+      "slug": "malgrate",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Mandello del Lario",
+      "slug": "mandello-del-lario",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Mariano Comense",
+      "slug": "mariano-comense",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Masate",
+      "slug": "masate",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Meda",
+      "slug": "meda",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Merate",
+      "slug": "merate",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Mezzago",
+      "slug": "mezzago",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Milano",
+      "slug": "milano",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Misano di Gera D Adda",
+      "slug": "misano-di-gera-d-adda",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Misinto",
+      "slug": "misinto",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Moggio",
+      "slug": "moggio",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Montanaso Lombardo",
+      "slug": "montanaso-lombardo",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Montevecchia",
+      "slug": "montevecchia",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Montorfano",
+      "slug": "montorfano",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Monza",
+      "slug": "monza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Morimondo",
+      "slug": "morimondo",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Morterone",
+      "slug": "morterone",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Mozzate",
+      "slug": "mozzate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Mozzo",
+      "slug": "mozzo",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Muggio",
+      "slug": "muggio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Nembro",
+      "slug": "nembro",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Nibionno",
+      "slug": "nibionno",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Nova Milanese",
+      "slug": "nova-milanese",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Novate Brianza",
+      "slug": "novate-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Novedrate",
+      "slug": "novedrate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Noviglio",
+      "slug": "noviglio",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Offanengo",
+      "slug": "offanengo",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Oggiono",
+      "slug": "oggiono",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Olgiate Comasco",
+      "slug": "olgiate-comasco",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Olginate",
+      "slug": "olginate",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Opera",
+      "slug": "opera",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Origgio",
+      "slug": "origgio",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Orio al Serio",
+      "slug": "orio-al-serio",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ornago",
+      "slug": "ornago",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Osio sotto",
+      "slug": "osio-sotto",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Osnago",
+      "slug": "osnago",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ossago Lodigiano",
+      "slug": "ossago-lodigiano",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Paderno Dugnano",
+      "slug": "paderno-dugnano",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pagazzano",
+      "slug": "pagazzano",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Paladina",
+      "slug": "paladina",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pandino",
+      "slug": "pandino",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Parre",
+      "slug": "parre",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pasturo",
+      "slug": "pasturo",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pedrengo",
+      "slug": "pedrengo",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Perledo",
+      "slug": "perledo",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pieve Emanuele",
+      "slug": "pieve-emanuele",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pieve Fissiraga",
+      "slug": "pieve-fissiraga",
+      "province": "Unknown",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pizzighettone",
+      "slug": "pizzighettone",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ponte Nossa",
+      "slug": "ponte-nossa",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ponte San Pietro",
+      "slug": "ponte-san-pietro",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Pradalunga",
+      "slug": "pradalunga",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Premana",
+      "slug": "premana",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Premolo",
+      "slug": "premolo",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Primaluna",
+      "slug": "primaluna",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ranica",
+      "slug": "ranica",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Renate",
+      "slug": "renate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rho",
+      "slug": "rho",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rivolta D Adda",
+      "slug": "rivolta-d-adda",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rogeno",
+      "slug": "rogeno",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Romano di Lombardia",
+      "slug": "romano-di-lombardia",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Roncello",
+      "slug": "roncello",
+      "province": "PV",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Ronco Briantino",
+      "slug": "ronco-briantino",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rosate",
+      "slug": "rosate",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rovellasca",
+      "slug": "rovellasca",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rovello Porro",
+      "slug": "rovello-porro",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Rozzano",
+      "slug": "rozzano",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "San Fiorano",
+      "slug": "san-fiorano",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "San Pellegrino Terme",
+      "slug": "san-pellegrino-terme",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Sant'Angelo Lodigiano",
+      "slug": "sant-angelo-lodigiano",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Sant'Omobono Terme",
+      "slug": "sant-omobono-terme",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Saronno",
+      "slug": "saronno",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Scanzorosciate",
+      "slug": "scanzorosciate",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Senago",
+      "slug": "senago",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Senna Comasco",
+      "slug": "senna-comasco",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Seregno",
+      "slug": "seregno",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Seriate",
+      "slug": "seriate",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Sesto San Giovanni",
+      "slug": "sesto-san-giovanni",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Seveso",
+      "slug": "seveso",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Solaro",
+      "slug": "solaro",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Somaglia",
+      "slug": "somaglia",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Sovico",
+      "slug": "sovico",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Spino D Adda",
+      "slug": "spino-d-adda",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Spirano",
+      "slug": "spirano",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Stezzano",
+      "slug": "stezzano",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Sulbiate",
+      "slug": "sulbiate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Taceno",
+      "slug": "taceno",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Tavazzano con Villavesco",
+      "slug": "tavazzano-con-villavesco",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Torlasco",
+      "slug": "torlasco",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Torre Boldone",
+      "slug": "torre-boldone",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Tradate",
+      "slug": "tradate",
+      "province": "Unknown",
+      "services": [
+        "assistenza"
+      ]
+    },
+    {
+      "name": "Trescore Cremasco",
+      "slug": "trescore-cremasco",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Treviglio",
+      "slug": "treviglio",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Trezzano sul Naviglio",
+      "slug": "trezzano-sul-naviglio",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Triuggio",
+      "slug": "triuggio",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Turate",
+      "slug": "turate",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Uboldo",
+      "slug": "uboldo",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Usmate Velate",
+      "slug": "usmate-velate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Vaiano Cremasco",
+      "slug": "vaiano-cremasco",
+      "province": "CR",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Valmadrera",
+      "slug": "valmadrera",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Varedo",
+      "slug": "varedo",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Varenna",
+      "slug": "varenna",
+      "province": "LC",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Vedano al Lambro",
+      "slug": "vedano-al-lambro",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Veniano",
+      "slug": "veniano",
+      "province": "CO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Verano Brianza",
+      "slug": "verano-brianza",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Verdellino",
+      "slug": "verdellino",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Vertova",
+      "slug": "vertova",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Villa d'Almè",
+      "slug": "villa-d-alme",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Villa di Serio",
+      "slug": "villa-di-serio",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Villasanta",
+      "slug": "villasanta",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Vimercate",
+      "slug": "vimercate",
+      "province": "MB",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Zanica",
+      "slug": "zanica",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Zelo Buon Persico",
+      "slug": "zelo-buon-persico",
+      "province": "LO",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Zibido San Giacomo",
+      "slug": "zibido-san-giacomo",
+      "province": "MI",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    },
+    {
+      "name": "Zogno",
+      "slug": "zogno",
+      "province": "BG",
+      "services": [
+        "assistenza",
+        "cloud",
+        "sicurezza"
+      ]
+    }
+  ],
+  "stats": {
+    "total_cities": 255,
+    "coverage_percentage": "99.22%",
+    "provinces": {
+      "BG": 50,
+      "LC": 41,
+      "CO": 36,
+      "MI": 36,
+      "MB": 56,
+      "CR": 16,
+      "LO": 15,
+      "PV": 1,
+      "Unknown": 4
+    },
+    "service_coverage": {
+      "all_three": 253,
+      "two_services": 0,
+      "one_service": 2
+    },
+    "services_count": {
+      "assistenza": 255,
+      "sicurezza": 253,
+      "cloud": 253
+    },
+    "incomplete_cities_count": 2
+  },
+  "incomplete_cities": [
+    {
+      "name": "Lezzeno",
+      "slug": "lezzeno",
+      "missing_services": [
+        "sicurezza",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Tradate",
+      "slug": "tradate",
+      "missing_services": [
+        "sicurezza",
+        "cloud"
+      ]
+    }
+  ]
+}

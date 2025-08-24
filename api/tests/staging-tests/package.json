@@ -1,0 +1,20 @@
+{
+  "name": "it-era-chatbot-staging-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive test suite for IT-ERA chatbot swarm system",
+  "main": "chatbot-swarm-test.js",
+  "scripts": {
+    "test": "node chatbot-swarm-test.js",
+    "test:health": "node -e \"const Tester = require('./chatbot-swarm-test.js'); const t = new Tester(); t.testHealthEndpoint().then(console.log);\"",
+    "test:performance": "node -e \"const Tester = require('./chatbot-swarm-test.js'); const t = new Tester(); t.runAllTests();\""
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "keywords": ["testing", "chatbot", "swarm", "it-era", "api"],
+  "author": "IT-ERA Development Team",
+  "license": "MIT"
+}

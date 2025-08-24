@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perché IT-ERA - La Tua Scelta per l'Assistenza IT</title>
+    <meta name="description" content="Scopri perché scegliere IT-ERA per l'assistenza informatica. Esperienza, professionalità e supporto 24/7 in Lombardia. Chiamaci al 039 888 2041.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navigation-placeholder"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Perché IT-ERA</h1>
+                    <p class="lead mb-4">La scelta professionale per l'assistenza IT in Lombardia</p>
+                    <div class="alert alert-warning">
+                        <h5>🚧 Pagina in Costruzione</h5>
+                        <p class="mb-0">Stiamo preparando contenuti completi sui nostri vantaggi. Per informazioni immediate contattaci al <a href="tel:+390398882041" class="text-dark fw-bold">039 888 2041</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="hero-cta">
+                        <a href="tel:+390398882041" class="btn btn-warning btn-lg">
+                            📞 039 888 2041
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>I Nostri Vantaggi</h2>
+                    <p>IT-ERA è la scelta professionale per l'assistenza informatica con oltre 15 anni di esperienza nel settore.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-primary h-100">
+                                <div class="card-body">
+                                    <h5>⚡ Intervento Rapido</h5>
+                                    <p class="text-muted">Assistenza in 15 minuti, risoluzione entro 4 ore</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-primary h-100">
+                                <div class="card-body">
+                                    <h5>🛡️ Sicurezza Garantita</h5>
+                                    <p class="text-muted">Protezione completa dei tuoi dati aziendali</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-primary h-100">
+                                <div class="card-body">
+                                    <h5>📍 Copertura Locale</h5>
+                                    <p class="text-muted">Milano, Monza, Como, Lecco e tutta la Brianza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-primary h-100">
+                                <div class="card-body">
+                                    <h5>💰 Prezzi Trasparenti</h5>
+                                    <p class="text-muted">Preventivi chiari, nessun costo nascosto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-success">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">✅ Garanzia IT-ERA</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ SLA 4 ore garantito</li>
+                                <li>✓ Tecnici certificati</li>
+                                <li>✓ Supporto 24/7</li>
+                                <li>✓ Prezzi fissi</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-danger btn-lg w-100">
+                                📞 039 888 2041
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-info mt-4">
+                        <div class="card-body text-center">
+                            <h6>📍 La Nostra Sede</h6>
+                            <p class="small mb-0">Viale Risorgimento 32<br>20871 Vimercate (MB)<br>📧 info@it-era.it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load navigation
+        fetch('../components/navigation-optimized.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+{
+  "tech_stack": [
+    "JavaScript",
+    "Node.js", 
+    "Cloudflare Workers",
+    "Cloudflare KV Storage",
+    "OpenRouter API",
+    "Microsoft Teams Webhooks",
+    "AI/ML (Claude, GPT-4, DeepSeek)",
+    "REST APIs",
+    "Wrangler CLI",
+    "Jest"
+  ],
+  "features": [
+    {
+      "name": "AI-Enhanced Chatbot API",
+      "description": "Main chatbot endpoint with AI integration, swarm orchestration, and business rule protection",
+      "files": [
+        "api/src/chatbot/api/chatbot-worker-simple.js",
+        "api/wrangler-chatbot.toml"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "IT-ERA Chatbot API",
+          "version": "2.0.0",
+          "description": "AI-powered chatbot with swarm intelligence and business protection"
+        },
+        "servers": [
+          {
+            "url": "https://it-era-chatbot-staging.bulltech.workers.dev",
+            "description": "Staging environment"
+          }
+        ],
+        "paths": {
+          "/api/chat": {
+            "post": {
+              "summary": "Process chat messages",
+              "description": "Main endpoint for chatbot conversations with AI, swarm orchestration, and lead scoring",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "message": {"type": "string", "description": "User message"},
+                        "sessionId": {"type": "string", "description": "Chat session identifier"},
+                        "action": {"type": "string", "enum": ["start", "message"], "description": "Action type"}
+                      },
+                      "required": ["action"]
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Successful chat response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "success": {"type": "boolean"},
+                          "sessionId": {"type": "string"},
+                          "response": {"type": "string"},
+                          "options": {"type": "array", "items": {"type": "string"}},
+                          "intent": {"type": "string"},
+                          "confidence": {"type": "number"},
+                          "leadScore": {"type": "number"},
+                          "source": {"type": "string", "enum": ["ai", "swarm", "fallback"]},
+                          "cost": {"type": "number"}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/health": {
+            "get": {
+              "summary": "Health check endpoint",
+              "description": "Returns system status, AI availability, and performance metrics",
+              "responses": {
+                "200": {
+                  "description": "Health status",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "status": {"type": "string"},
+                          "service": {"type": "string"},
+                          "ai": {
+                            "type": "object",
+                            "properties": {
+                              "enabled": {"type": "boolean"},
+                              "initialized": {"type": "boolean"},
+                              "provider": {"type": "string"},
+                              "model": {"type": "string"}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Swarm Intelligence Orchestration",
+      "description": "Multi-agent AI system with 8 specialized agents for lead qualification, technical advice, and business protection",
+      "files": [
+        "api/src/chatbot/swarm/chatbot-swarm-integration.js",
+        "api/src/chatbot/swarm/swarm-orchestrator.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "Swarm Orchestration System",
+          "version": "1.0.0",
+          "description": "Multi-agent AI coordination with consensus building and A/B testing"
+        },
+        "components": {
+          "schemas": {
+            "SwarmResponse": {
+              "type": "object",
+              "properties": {
+                "response": {"type": "string"},
+                "agentsUsed": {"type": "array", "items": {"type": "string"}},
+                "consensusStrength": {"type": "number"},
+                "leadScore": {"type": "number"},
+                "cost": {"type": "number"}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Business Rules Protection System",
+      "description": "Intelligent blocking of technical solution sharing to protect consulting revenue",
+      "files": [
+        "api/src/chatbot/config/business-rules.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "Business Protection Rules",
+          "version": "1.0.0",
+          "description": "Pattern-based blocking system for protecting business value"
+        }
+      }
+    },
+    {
+      "name": "Lead Scoring & Teams Integration",
+      "description": "Automatic lead qualification (0-100) with Microsoft Teams notifications for high-value leads",
+      "files": [
+        "api/src/chatbot/api/teams-webhook.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "Lead Scoring System",
+          "version": "1.0.0",
+          "description": "Real-time lead qualification with automatic Teams notifications"
+        }
+      }
+    },
+    {
+      "name": "A/B Testing & Performance Analytics",
+      "description": "Progressive rollout system comparing swarm vs traditional approaches with real-time metrics",
+      "files": [
+        "api/src/chatbot/swarm/chatbot-swarm-integration.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "A/B Testing System",
+          "version": "1.0.0",
+          "description": "Performance comparison and optimization system"
+        }
+      }
+    },
+    {
+      "name": "Multi-Model AI Cost Optimization",
+      "description": "Intelligent routing between DeepSeek (cheap), Claude, and GPT-4 based on query complexity",
+      "files": [
+        "api/src/ai-engine/ai-integration.js",
+        "api/src/ai-engine/openrouter-engine.js",
+        "api/src/cost-monitoring/cost-optimizer.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "AI Cost Optimization",
+          "version": "1.0.0", 
+          "description": "Multi-provider AI routing with cost optimization"
+        }
+      }
+    },
+    {
+      "name": "Session Management & Memory",
+      "description": "Persistent conversation memory with 30-day retention and cross-session learning",
+      "files": [
+        "api/src/chatbot/api/chatbot-worker-simple.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "Session Management",
+          "version": "1.0.0",
+          "description": "Persistent conversation memory system"
+        }
+      }
+    },
+    {
+      "name": "Knowledge Base Integration",
+      "description": "IT-ERA specific knowledge base with product information, pricing, and service details",
+      "files": [
+        "api/src/knowledge-base/it-era-knowledge-real.js",
+        "api/src/knowledge-base/it-era-knowledge.js"
+      ],
+      "api_doc": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "Knowledge Base System",
+          "version": "1.0.0",
+          "description": "IT-ERA specialized knowledge repository"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "generation_summary": {
+    "total_municipalities": 1502,
+    "pages_generated": 1502,
+    "errors": 0,
+    "success_rate": "100.00%",
+    "duration": "0m 0s",
+    "start_time": "2025-08-24T15:13:17.652Z",
+    "end_time": "2025-08-24T15:13:18.558Z"
+  },
+  "province_breakdown": {
+    "Varese": 136,
+    "Como": 147,
+    "Sondrio": 77,
+    "Milano": 133,
+    "Bergamo": 243,
+    "Brescia": 205,
+    "Pavia": 185,
+    "Cremona": 113,
+    "Mantova": 64,
+    "Lecco": 84,
+    "Lodi": 60,
+    "Monza e della Brianza": 55
+  },
+  "configuration": {
+    "service_type": "riparazione-pc",
+    "output_directories": [
+      "/Users/andreapanzeri/progetti/IT-ERA/web/pages",
+      "/Users/andreapanzeri/progetti/IT-ERA/web/pages-draft"
+    ],
+    "batch_size": 50
+  },
+  "error_details": [],
+  "files_generated": {
+    "pages_directory": 1502,
+    "pages_draft_directory": 1502,
+    "sitemap_updated": true
+  }
+}

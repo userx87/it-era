@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-08-24T16:39:28.822Z",
+  "system": "IT-ERA Chatbot Swarm",
+  "environment": "Staging",
+  "tests": [
+    {
+      "name": "System Health",
+      "status": "PASS",
+      "details": "Service: IT-ERA AI-Enhanced Chatbot API, AI: true"
+    },
+    {
+      "name": "Basic Chat Flow",
+      "status": "FAIL",
+      "details": "timeout of 8000ms exceeded"
+    },
+    {
+      "name": "Performance Check",
+      "status": "FAIL",
+      "details": "timeout of 5000ms exceeded"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "passed": 1,
+    "failed": 2,
+    "errors": 0,
+    "warnings": 0,
+    "passRate": "33.3%"
+  }
+}

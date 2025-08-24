@@ -18,6 +18,11 @@ id = "ad59b007da2043f5be9d8a4140d73f2b"
 binding = "QUOTES_KV"
 id = "e7d0addb40e44d3ea665385819689431"
 
+# Chatbot KV namespace
+[[kv_namespaces]]
+binding = "CHAT_SESSIONS"
+id = "988273308c524f4191ab95ed641dc05b"
+
 # D1 Database bindings
 [[d1_databases]]
 binding = "CONTACT_DB"
@@ -29,6 +34,11 @@ binding = "ANALYTICS_DB"
 database_name = "it-era-analytics"
 database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
 
+[[d1_databases]]
+binding = "BLOG_DB"
+database_name = "it-era-blog"
+database_id = "blog-db-uuid-here"
+
 # Routes disabilitati temporaneamente per test
 # [[routes]]
 # pattern = "api.it-era.it/*"
@@ -37,6 +47,9 @@ database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
 # Environment variables
 [vars]
 ENVIRONMENT = "production"
+# Chatbot configuration
+MAX_SESSION_DURATION = "1800"
+RATE_LIMIT_MESSAGES = "100"
 
 # Development environment
 [env.development]
@@ -47,6 +60,49 @@ vars = { ENVIRONMENT = "development" }
 [env.staging]
 name = "it-era-api-staging"
 vars = { ENVIRONMENT = "staging" }
+
+# Production environment
+[env.production]
+name = "it-era-email"
+
+# KV Namespaces for production
+[[env.production.kv_namespaces]]
+binding = "CONTACT_KV"
+id = "e8bd03a1105a46208000adfc1cc84487"
+
+[[env.production.kv_namespaces]]
+binding = "ANALYTICS_KV" 
+id = "ad59b007da2043f5be9d8a4140d73f2b"
+
+[[env.production.kv_namespaces]]
+binding = "QUOTES_KV"
+id = "e7d0addb40e44d3ea665385819689431"
+
+[[env.production.kv_namespaces]]
+binding = "CHAT_SESSIONS"
+id = "988273308c524f4191ab95ed641dc05b"
+
+# D1 Database bindings for production
+[[env.production.d1_databases]]
+binding = "CONTACT_DB"
+database_name = "it-era-contacts"
+database_id = "3e79669f-6644-47f6-90ba-19c0f79d37b8"
+
+[[env.production.d1_databases]]
+binding = "ANALYTICS_DB"
+database_name = "it-era-analytics"
+database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
+
+[[env.production.d1_databases]]
+binding = "BLOG_DB"
+database_name = "it-era-blog"
+database_id = "494b7d9b-295c-4b64-a32a-14224d061a0e"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+MAX_SESSION_DURATION = "1800"
+RATE_LIMIT_MESSAGES = "100"
+TEAMS_WEBHOOK_URL = "https://bulltechit.webhook.office.com/webhookb2/621e560e-86d9-478c-acfc-496624a88b79@f6ba30ad-37c0-41bf-a994-e434c59b4b2a/IncomingWebhook/fb2b1700f71c4806bdcbf0fc873952d0/c0aa99b7-8edb-41b4-b139-0ec4dd7864d5/V2l2_rh4MbAzeQQ4SpDifcMFLsktri3ocfMcQGZ6OHUmI1"
 
 # Production secrets (usa wrangler secret put)
 # SENDGRID_API_KEY

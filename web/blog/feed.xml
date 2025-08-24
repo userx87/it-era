@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>IT-ERA Blog - Soluzioni IT per Aziende in Lombardia</title>
+        <link>https://www.it-era.it/blog/</link>
+        <atom:link href="https://www.it-era.it/blog/feed.xml" rel="self" type="application/rss+xml" />
+        <description>Guide, consigli e novità su assistenza IT, sicurezza informatica e cloud storage per PMI in Lombardia. IT-ERA, il tuo partner tecnologico di fiducia.</description>
+        <language>it-IT</language>
+        <copyright>Copyright © 2024 IT-ERA - P.IVA 10524040966</copyright>
+        <lastBuildDate>Sat, 24 Aug 2025 14:00:00 +0000</lastBuildDate>
+        <generator>IT-ERA Blog System</generator>
+        <webMaster>info@it-era.it (IT-ERA Team)</webMaster>
+        <managingEditor>info@it-era.it (IT-ERA Editorial Team)</managingEditor>
+        <category>Tecnologia</category>
+        <category>Sicurezza Informatica</category>
+        <category>Cloud Computing</category>
+        <category>Assistenza IT</category>
+        <ttl>60</ttl>
+        <image>
+            <url>https://www.it-era.it/images/logo-it-era.png</url>
+            <title>IT-ERA Blog</title>
+            <link>https://www.it-era.it/blog/</link>
+            <width>144</width>
+            <height>144</height>
+        </image>
+        
+        <!-- First Article: Ransomware Protection -->
+        <item>
+            <title>Protezione Ransomware Completa 2024: Guida per Aziende</title>
+            <link>https://www.it-era.it/blog/ransomware-protezione-completa-2024</link>
+            <guid isPermaLink="true">https://www.it-era.it/blog/ransomware-protezione-completa-2024</guid>
+            <description><![CDATA[
+                Scopri come proteggere la tua azienda dai ransomware nel 2024. Guida completa con strategie di prevenzione, rilevamento e recovery per PMI in Lombardia.
+            ]]></description>
+            <content:encoded><![CDATA[
+                <p>Nel 2024, i ransomware rappresentano una delle minacce più pericolose per le aziende di ogni dimensione. Secondo il Rapporto Clusit 2024, gli attacchi ransomware in Italia sono aumentati del 45% rispetto all'anno precedente, con un danno medio per azienda di oltre €150.000.</p>
+                
+                <h2>Cos'è un Ransomware?</h2>
+                <p>Un ransomware è un tipo di malware che cripta i file della vittima, rendendoli inaccessibili fino al pagamento di un riscatto. Le moderne varianti come LockBit 3.0, BlackCat e Conti utilizzano tecniche sofisticate di doppia estorsione.</p>
+                
+                <h2>Strategie di Prevenzione</h2>
+                <ul>
+                    <li>Backup regolari con regola 3-2-1</li>
+                    <li>Formazione continua del personale</li>
+                    <li>Aggiornamenti di sicurezza tempestivi</li>
+                    <li>Implementazione di EDR e XDR</li>
+                    <li>Segmentazione della rete</li>
+                </ul>
+                
+                <h2>Piano di Recovery</h2>
+                <p>Un piano di disaster recovery efficace deve includere procedure chiare per il ripristino, comunicazione di crisi e valutazione del danno. IT-ERA offre soluzioni complete di protezione ransomware per PMI in Lombardia.</p>
+                
+                <p><strong>Contattaci al 039 888 2041 per una consulenza gratuita sulla sicurezza della tua azienda.</strong></p>
+            ]]></content:encoded>
+            <dc:creator>IT-ERA Security Team</dc:creator>
+            <pubDate>Sat, 24 Aug 2025 10:00:00 +0000</pubDate>
+            <category>Sicurezza Informatica</category>
+            <category>Ransomware</category>
+            <category>Cybersecurity</category>
+            <category>PMI</category>
+            <enclosure url="https://www.it-era.it/images/blog/ransomware-protection.jpg" length="125000" type="image/jpeg" />
+        </item>
+        
+        <!-- Second Article: Lorem Ipsum Cloud Storage -->
+        <item>
+            <title>Lorem Ipsum: Solutioni Cloud Storage per Aziende</title>
+            <link>https://www.it-era.it/blog/lorem-ipsum-cloud-storage</link>
+            <guid isPermaLink="true">https://www.it-era.it/blog/lorem-ipsum-cloud-storage</guid>
+            <description><![CDATA[
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            ]]></description>
+            <content:encoded><![CDATA[
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                <h2>Lorem Ipsum e le Basi del Cloud</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                <h2>Implementazione Lorem Ipsum nel Cloud</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                
+                <ul>
+                    <li>Lorem Primario: Similique sunt in culpa qui officia</li>
+                    <li>Ipsum Secondario: Id est laborum et dolorum fuga</li>
+                    <li>Dolor Terziario: Facilis est et expedita distinctio</li>
+                </ul>
+                
+                <p><strong>Per maggiori informazioni sulle nostre soluzioni cloud, contattaci al 039 888 2041.</strong></p>
+            ]]></content:encoded>
+            <dc:creator>IT-ERA Team</dc:creator>
+            <pubDate>Sat, 24 Aug 2025 08:00:00 +0000</pubDate>
+            <category>Cloud Storage</category>
+            <category>Cloud Computing</category>
+            <category>Lorem Ipsum</category>
+            <enclosure url="https://www.it-era.it/images/blog/cloud-storage.jpg" length="115000" type="image/jpeg" />
+        </item>
+    </channel>
+</rss>

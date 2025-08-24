@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistenza IT Nova Milanese | Supporto Tecnico Professionale 24/7 | IT-ERA</title>
+    <meta name="description" content="Assistenza IT professionale a Nova Milanese, Lombardia. Supporto tecnico 24/7, risoluzione problemi in 15 minuti. Partner Microsoft, Veeam e Wildix.">
+    <meta name="keywords" content="assistenza it Nova Milanese, supporto tecnico Nova Milanese, riparazione computer Nova Milanese, consulenza informatica Lombardia">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary: #0056cc;
+            --secondary: #17a2b8;
+            --success: #28a745;
+            --danger: #dc3545;
+            --dark: #1a1a2e;
+        }
+        
+        body {
+            padding-top: 76px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056cc 0%, #003d8f 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: #f8f9fa;
+            border-top: 3px solid var(--primary);
+            padding: 20px 0;
+        }
+        
+        .metric {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        /* Service Cards */
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-card.featured {
+            border: 2px solid var(--success);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .price-period {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+        .badge-corner {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--danger);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Partners Section */
+        .partners {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+        
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .partner-logos img {
+            height: 60px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        
+        .partner-logos img:hover {
+            opacity: 1;
+        }
+        
+        /* Features Grid */
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .feature-box:hover {
+            background: #f8f9fa;
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* CTA Buttons */
+        .btn-cta {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .btn-cta-primary {
+            background: var(--success);
+            color: white;
+            border: none;
+        }
+        
+        .btn-cta-primary:hover {
+            background: #218838;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+        }
+        
+        .btn-cta-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-cta-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        footer h5 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        /* Navigation Enhancement */
+        .navbar {
+            min-height: 76px;
+        }
+        
+        .dropdown-menu-columns {
+            min-width: 400px;
+        }
+        
+        .dropdown-header {
+            font-weight: 600;
+            padding: 0.5rem 1rem 0.25rem;
+        }
+        
+        .dropdown-item {
+            padding: 0.4rem 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            padding-left: 1.25rem;
+        }
+        
+        .badge {
+            font-size: 0.7rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Responsive */
+        @media (max-width: 991px) {
+            .dropdown-menu-columns {
+                min-width: 100%;
+            }
+            
+            .dropdown-menu-columns .row {
+                display: block;
+            }
+            
+            .navbar-nav {
+                padding: 1rem 0;
+            }
+            
+            .nav-item {
+                border-bottom: 1px solid #f8f9fa;
+            }
+            
+            .nav-item:last-child {
+                border-bottom: none;
+                margin-top: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .metric-value {
+                font-size: 1.5rem;
+            }
+            
+            .price {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Optimized Navigation Component -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            
+            <!-- Emergency CTA for Mobile -->
+            <div class="d-lg-none ms-auto me-2">
+                <a href="tel:+390398882041" class="btn btn-danger btn-sm">
+                    🚨 Emergenza
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <!-- Emergency Support - Primary CTA -->
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                            🚨 Supporto Urgente
+                        </a>
+                    </li>
+                    
+                    <!-- Services Dropdown with Icons -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+                            <li><a class="dropdown-item" href="/pages/assistenza-it-nova-milanese.html">
+                                🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/sicurezza-informatica-nova-milanese.html">
+                                🛡️ Sicurezza Informatica
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+                            <li><a class="dropdown-item" href="/pages/cloud-storage-nova-milanese.html">
+                                ☁️ Cloud Storage
+                            </a></li>
+                            <li><a class="dropdown-item" href="#backup">
+                                💾 Backup Automatico
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+                            <li><a class="dropdown-item" href="#all-inclusive">
+                                ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vantaggi">Vantaggi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partner">Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatti">Contatti</a>
+                    </li>
+                    
+                    <!-- Primary CTA Button -->
+                    <li class="nav-item ms-lg-3">
+                        <a href="tel:+390398882041" class="btn btn-primary">
+                            📞 039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Assistenza IT Nova Milanese</h1>
+                    <p class="lead mb-4">Supporto tecnico professionale per aziende a Nova Milanese e provincia. Risolviamo ogni problema IT in tempi rapidi con SLA garantiti.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="tel:+390398882041" class="btn btn-cta btn-cta-primary">
+                            <i class="bi bi-telephone-fill me-2"></i>Chiama Ora - 039 888 2041
+                        </a>
+                        <a href="#servizi" class="btn btn-cta btn-cta-secondary">
+                            <i class="bi bi-arrow-right-circle me-2"></i>Scopri i Servizi
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <span class="badge bg-success me-2"><i class="bi bi-check-circle"></i> Risposta in 15 min</span>
+                        <span class="badge bg-info me-2"><i class="bi bi-shield-check"></i> SLA Garantiti</span>
+                        <span class="badge bg-warning text-dark"><i class="bi bi-award"></i> Partner Microsoft</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="https://img.shields.io/badge/Supporto-24%2F7-brightgreen?style=for-the-badge" alt="Supporto 24/7" class="mb-3">
+                    <br>
+                    <img src="https://img.shields.io/badge/Clienti_Soddisfatti-300%2B-blue?style=for-the-badge" alt="300+ Clienti">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 metric">
+                    <div class="metric-value">300+</div>
+                    <div class="metric-label">Aziende Clienti</div>
+                </div>
+                <div class="col-6 col-md-3 metric">
+                    <div class="metric-value">15min</div>
+                    <div class="metric-label">Tempo Risposta</div>
+                </div>
+                <div class="col-6 col-md-3 metric">
+                    <div class="metric-value">24/7</div>
+                    <div class="metric-label">Supporto Continuo</div>
+                </div>
+                <div class="col-6 col-md-3 metric">
+                    <div class="metric-value">99.9%</div>
+                    <div class="metric-label">Uptime Garantito</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="servizi" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">I Nostri Servizi di Assistenza IT</h2>
+                <p class="lead text-muted">Soluzioni complete per ogni esigenza informatica a Nova Milanese</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Basic Plan -->
+                <div class="col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon text-primary">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <h3>Help Desk Base</h3>
+                            <p class="text-muted">Supporto remoto e telefonico per piccole aziende</p>
+                            <div class="price">€49<span class="price-period">/mese</span></div>
+                            <ul class="list-unstyled mt-4 mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Supporto remoto illimitato</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Risposta garantita in 2 ore</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Orario ufficio 9-18</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Fino a 10 postazioni</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Antivirus business incluso</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Backup settimanale</strong></li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-outline-primary w-100">Attiva Ora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Plan -->
+                <div class="col-lg-4">
+                    <div class="card service-card featured">
+                        <span class="badge-corner">PIÙ VENDUTO</span>
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon text-success">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3>Professional</h3>
+                            <p class="text-muted">Soluzione completa per PMI in crescita</p>
+                            <div class="price">€189<span class="price-period">/mese</span></div>
+                            <ul class="list-unstyled mt-4 mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Tutto del piano Base +</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Interventi on-site inclusi</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Risposta in 1 ora</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Supporto esteso 7-22</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Fino a 50 postazioni</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Backup giornaliero cloud</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Monitoraggio proattivo</strong></li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-success w-100">Attiva Ora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon text-danger">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h3>Enterprise</h3>
+                            <p class="text-muted">Massima protezione per grandi aziende</p>
+                            <div class="price">€549<span class="price-period">/mese</span></div>
+                            <ul class="list-unstyled mt-4 mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Tutto del piano Professional +</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Tecnico dedicato senior</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Risposta in 15 minuti</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Supporto 24/7/365</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Postazioni illimitate</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>Disaster Recovery completo</strong></li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> <strong>SLA 99.9% garantito</strong></li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-outline-danger w-100">Contattaci</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="vantaggi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Perché Scegliere IT-ERA a Nova Milanese</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h4>Intervento Rapido</h4>
+                        <p>Risoluzione in 15 minuti per problemi urgenti. Tecnici sempre pronti a Nova Milanese.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Sicurezza Garantita</h4>
+                        <p>Protezione avanzata contro malware e attacchi informatici. Backup automatici.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4>Team Certificato</h4>
+                        <p>Tecnici certificati Microsoft, Veeam e Wildix. Formazione continua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h4>Monitoraggio Proattivo</h4>
+                        <p>Preveniamo i problemi prima che si verifichino. Manutenzione preventiva.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-currency-euro"></i>
+                        </div>
+                        <h4>Costi Trasparenti</h4>
+                        <p>Nessun costo nascosto. Preventivi chiari e canoni fissi mensili.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4>Presenza Locale</h4>
+                        <p>Sede a Vimercate, interventi rapidi in tutta Nova Milanese e Lombardia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Partners Section -->
+    <section id="partner" class="partners">
+        <div class="container">
+            <h2 class="text-center mb-5">I Nostri Partner Tecnologici</h2>
+            <div class="partner-logos">
+                <img src="https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&logo=microsoft" alt="Microsoft Partner">
+                <img src="https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam" alt="Veeam Gold Partner">
+                <img src="https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge" alt="Wildix Gold Partner">
+                <img src="https://img.shields.io/badge/Fortinet-Partner-EE3124?style=for-the-badge&logo=fortinet" alt="Fortinet Partner">
+                <img src="https://img.shields.io/badge/Acronis-Partner-1E4B8B?style=for-the-badge" alt="Acronis Partner">
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section id="contatti" class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Hai Bisogno di Assistenza IT Immediata a Nova Milanese?</h2>
+            <p class="lead mb-4">Il nostro team è pronto ad aiutarti. Chiamaci ora per una consulenza gratuita.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="tel:+390398882041" class="btn btn-success btn-lg">
+                    <i class="bi bi-telephone-fill me-2"></i>039 888 2041
+                </a>
+                <a href="mailto:info@it-era.it" class="btn btn-light btn-lg">
+                    <i class="bi bi-envelope-fill me-2"></i>info@it-era.it
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>IT-ERA</h5>
+                    <p>Il tuo partner tecnologico di fiducia a Nova Milanese e in tutta la Lombardia.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Servizi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/assistenza-it-nova-milanese.html">Assistenza IT</a></li>
+                        <li><a href="/pages/sicurezza-informatica-nova-milanese.html">Sicurezza Informatica</a></li>
+                        <li><a href="/pages/cloud-storage-nova-milanese.html">Cloud Storage</a></li>
+                        <li><a href="#backup">Backup e Disaster Recovery</a></li>
+                        <li><a href="#voip">Centralini VoIP</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contatti</h5>
+                    <p><i class="bi bi-geo-alt"></i> Viale Risorgimento 32, Vimercate MB</p>
+                    <p><i class="bi bi-telephone"></i> 039 888 2041</p>
+                    <p><i class="bi bi-envelope"></i> info@it-era.it</p>
+                    <p><i class="bi bi-clock"></i> Lun-Ven: 9:00-18:00</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center py-3">
+                <p class="mb-0">© 2024 IT-ERA. Tutti i diritti riservati. | P.IVA: 10524040966</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

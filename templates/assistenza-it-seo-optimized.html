@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="it" prefix="og: https://ogp.me/ns#">
+<head>
+    <!-- Critical performance optimizations -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- DNS prefetch for better performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    
+    <!-- Critical CSS inline for faster First Contentful Paint -->
+    <style>
+        /* Critical above-the-fold styles */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #28a745;
+            --text-color: #212529;
+            --bg-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            font-display: swap;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Performance optimized navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+        
+        /* Mobile-first responsive design */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 50vh;
+                padding: 1rem 0;
+            }
+        }
+    </style>
+    
+    <!-- SEO Meta Tags with Dynamic Content -->
+    <title>Assistenza IT {{CITY}} | Riparazione PC e Supporto Informatico 24/7 | IT-ERA</title>
+    <meta name="description" content="🔧 Assistenza informatica {{CITY}} ✓ Riparazione PC ✓ Supporto IT 24/7 ✓ Help desk professionale ✓ Interventi on-site ✓ SLA garantiti ✓ Da €29/mese. Tecnici certificati Microsoft.">
+    <meta name="keywords" content="assistenza informatica {{CITY}}, riparazione pc {{CITY}}, supporto IT {{CITY}}, help desk {{CITY}}, assistenza computer {{CITY}}, tecnico informatico {{REGION}}, assistenza remota {{CITY}}, supporto tecnico {{REGION}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="IT-ERA">
+    <meta name="geo.region" content="IT-{{REGION_CODE}}">
+    <meta name="geo.placename" content="{{CITY}}, {{REGION}}">
+    <meta name="geo.position" content="{{LAT}};{{LON}}">
+    <meta name="ICBM" content="{{LAT}}, {{LON}}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.it-era.it/assistenza-it-{{CITY_SLUG}}">
+    
+    <!-- Hreflang for SEO -->
+    <link rel="alternate" hreflang="it-IT" href="https://www.it-era.it/assistenza-it-{{CITY_SLUG}}">
+    
+    <!-- Open Graph Protocol for Social Media -->
+    <meta property="og:title" content="Assistenza IT {{CITY}} - Riparazione PC e Supporto 24/7">
+    <meta property="og:description" content="Servizio professionale di assistenza informatica {{CITY}} con supporto 24/7, SLA garantiti e tecnici certificati Microsoft. Riparazione PC, help desk e assistenza remota.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.it-era.it/assistenza-it-{{CITY_SLUG}}">
+    <meta property="og:image" content="https://www.it-era.it/images/assistenza-it-{{CITY_SLUG}}-hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Assistenza IT professionale {{CITY}} - Riparazione PC e supporto informatico">
+    <meta property="og:site_name" content="IT-ERA">
+    <meta property="og:locale" content="it_IT">
+    <meta property="article:author" content="IT-ERA">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@itera_it">
+    <meta name="twitter:creator" content="@itera_it">
+    <meta name="twitter:title" content="Assistenza IT {{CITY}} - Riparazione PC 24/7">
+    <meta name="twitter:description" content="Assistenza informatica professionale {{CITY}}. Riparazione PC, supporto IT 24/7, help desk e assistenza remota con tecnici certificati.">
+    <meta name="twitter:image" content="https://www.it-era.it/images/assistenza-it-{{CITY_SLUG}}-hero.jpg">
+    <meta name="twitter:image:alt" content="Assistenza IT {{CITY}} - Tecnico al lavoro">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#007bff">
+    
+    <!-- Performance optimized resource hints -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- Comprehensive Schema.org JSON-LD for Local Business and Services -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "ComputerRepairService", "TechnicalSupport"],
+        "name": "IT-ERA - Assistenza Informatica {{CITY}}",
+        "description": "Servizio professionale di assistenza informatica e riparazione PC {{CITY}} con supporto 24/7, help desk, assistenza remota e interventi on-site. Tecnici certificati Microsoft.",
+        "url": "https://www.it-era.it/assistenza-it-{{CITY_SLUG}}",
+        "logo": "https://www.it-era.it/images/logo-it-era.png",
+        "image": [
+            "https://www.it-era.it/images/assistenza-it-{{CITY_SLUG}}-hero.jpg",
+            "https://www.it-era.it/images/team-tecnici-{{CITY_SLUG}}.jpg",
+            "https://www.it-era.it/images/ufficio-it-era-{{CITY_SLUG}}.jpg"
+        ],
+        "telephone": "+39-039-888-2041",
+        "email": "info@it-era.it",
+        "faxNumber": "+39-039-888-2042",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Viale Risorgimento 32",
+            "addressLocality": "Vimercate",
+            "addressRegion": "MB",
+            "postalCode": "20871",
+            "addressCountry": "IT"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{LAT}}",
+            "longitude": "{{LON}}"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "{{CITY}}",
+                "containedIn": {
+                    "@type": "State",
+                    "name": "{{REGION}}"
+                }
+            },
+            {
+                "@type": "State",
+                "name": "Lombardia"
+            }
+        ],
+        "serviceType": [
+            "Computer Repair",
+            "IT Support",
+            "Help Desk",
+            "Remote Support", 
+            "Network Administration",
+            "Data Recovery",
+            "Virus Removal",
+            "Hardware Repair",
+            "Software Installation",
+            "System Maintenance"
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "{{LAT}}",
+                "longitude": "{{LON}}"
+            },
+            "geoRadius": "25000"
+        },
+        "priceRange": "€29-€99",
+        "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "Invoice"],
+        "currenciesAccepted": "EUR",
+        "openingHours": "Mo-Su 00:00-24:00",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servizi Assistenza IT {{CITY}}",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "serviceType": "Help Desk Base",
+                        "name": "Assistenza IT Base {{CITY}}",
+                        "description": "Supporto telefonico e remoto per problemi informatici quotidiani",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "IT-ERA"
+                        }
+                    },
+                    "price": "29.00",
+                    "priceCurrency": "EUR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "29.00",
+                        "priceCurrency": "EUR",
+                        "unitText": "monthly",
+                        "billingDuration": "P1M"
+                    },
+                    "availability": "https://schema.org/InStock",
+                    "validFrom": "2025-01-01",
+                    "areaServed": "{{CITY}}"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "serviceType": "Help Desk Premium",
+                        "name": "Assistenza IT Premium {{CITY}}",
+                        "description": "Supporto 24/7 con monitoraggio proattivo e interventi on-site",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "IT-ERA"
+                        }
+                    },
+                    "price": "49.00",
+                    "priceCurrency": "EUR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "49.00",
+                        "priceCurrency": "EUR",
+                        "unitText": "monthly",
+                        "billingDuration": "P1M"
+                    },
+                    "availability": "https://schema.org/InStock",
+                    "validFrom": "2025-01-01",
+                    "areaServed": "{{CITY}}"
+                }
+            ]
+        },
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+39-039-888-2041",
+                "contactType": "customer support",
+                "availableLanguage": ["Italian", "English"],
+                "hoursAvailable": "Mo-Su 00:00-24:00",
+                "contactOption": "TollFree"
+            },
+            {
+                "@type": "ContactPoint",
+                "email": "info@it-era.it",
+                "contactType": "customer support",
+                "availableLanguage": ["Italian", "English"],
+                "hoursAvailable": "Mo-Su 00:00-24:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/company/it-era",
+            "https://www.facebook.com/itera.informatica",
+            "https://www.youtube.com/c/itera",
+            "https://twitter.com/itera_it"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Marco Bulgarelli",
+            "jobTitle": "CEO & Founder"
+        },
+        "foundingDate": "2010-01-15",
+        "numberOfEmployees": "15-25",
+        "slogan": "Assistenza IT Professionale {{CITY}} - Sempre Connessi, Always Supported",
+        "award": [
+            "Microsoft Partner",
+            "TeamViewer Partner",
+            "ConnectWise Partner"
+        ],
+        "certifications": [
+            "Microsoft Certified Solutions Expert",
+            "CompTIA A+",
+            "ITIL Foundation"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Alessandro R."
+                },
+                "reviewBody": "Assistenza velocissima e professionale. Problema risolto in 20 minuti tramite connessione remota. Consigliatissimi per {{CITY}}!",
+                "datePublished": "2024-12-15"
+            },
+            {
+                "@type": "Review", 
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Maria T."
+                },
+                "reviewBody": "Tecnici preparatissimi e sempre disponibili. La mia azienda si affida a loro da 3 anni per tutto il supporto IT. Eccellenti!",
+                "datePublished": "2024-11-28"
+            }
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "Microsoft Certified Solutions Expert",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Microsoft"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Additional Schema for FAQ Section -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quanto costa l'assistenza informatica {{CITY}}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I nostri piani di assistenza IT {{CITY}} partono da €29/mese per postazione per il piano Base, €49/mese per il Premium con supporto 24/7, e €99/mese per l'Enterprise con tecnico dedicato."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quanto tempo ci vuole per ricevere assistenza?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Garantiamo risposta in 15 minuti per emergenze critiche, 2 ore per problemi ad alta priorità, e 4 ore per richieste standard durante l'orario lavorativo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Offrite assistenza remota {{CITY}}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sì, forniamo assistenza remota sicura 24/7 per {{CITY}} e provincia. La connessione è crittografata e autorizzata dall'utente per garantire massima sicurezza."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quali problemi IT risolvete più frequentemente?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Risolviamo problemi di server, email, sicurezza informatica, stampanti, PC lenti, recupero dati, virus e malware, configurazioni di rete e backup. Il 90% dei problemi viene risolto in remoto."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IT-ERA",
+        "legalName": "Bulltech Informatica Srl",
+        "url": "https://www.it-era.it",
+        "logo": "https://www.it-era.it/images/logo-it-era.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+39-039-888-2041",
+            "contactType": "customer service",
+            "areaServed": "IT",
+            "availableLanguage": "Italian"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Viale Risorgimento 32",
+            "addressLocality": "Vimercate",
+            "addressRegion": "MB",
+            "postalCode": "20871",
+            "addressCountry": "IT"
+        },
+        "vatID": "IT03917760138",
+        "taxID": "03917760138"
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.it-era.it"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Servizi",
+                "item": "https://www.it-era.it/servizi"
+            },
+            {
+                "@type": "ListItem", 
+                "position": 3,
+                "name": "Assistenza IT",
+                "item": "https://www.it-era.it/assistenza-it"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Assistenza IT {{CITY}}",
+                "item": "https://www.it-era.it/assistenza-it-{{CITY_SLUG}}"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></noscript>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a class="skip-link" href="#main-content" aria-label="Salta al contenuto principale">Vai al contenuto principale</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+        <div class="container">
+            <a class="logo" href="/" aria-label="IT-ERA - Torna alla homepage">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            
+            <!-- Emergency Contact for Mobile -->
+            <div class="d-lg-none">
+                <a href="tel:+390398882041" class="btn btn-danger btn-sm" aria-label="Chiamata di emergenza">
+                    🚨 Emergenza
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Apri/chiudi menu di navigazione">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center" role="menubar">
+                    <!-- Emergency Support -->
+                    <li class="nav-item d-none d-lg-block" role="none">
+                        <a class="nav-link text-danger fw-bold" href="tel:+390398882041" role="menuitem"
+                           aria-label="Supporto urgente - Chiamaci ora">
+                            🚨 Supporto Urgente
+                        </a>
+                    </li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown" role="none">
+                        <a class="nav-link dropdown-toggle" href="#" role="menuitem" aria-haspopup="true" 
+                           aria-expanded="false" data-bs-toggle="dropdown">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="none"><h6 class="dropdown-header">ASSISTENZA IMMEDIATA</h6></li>
+                            <li role="none">
+                                <a class="dropdown-item" href="/assistenza-it-milano" role="menuitem">
+                                    🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+                                </a>
+                            </li>
+                            <li role="none">
+                                <a class="dropdown-item" href="/sicurezza-informatica-milano" role="menuitem">
+                                    🛡️ Sicurezza Informatica
+                                </a>
+                            </li>
+                            <li role="none"><hr class="dropdown-divider"></li>
+                            <li role="none"><h6 class="dropdown-header">SOLUZIONI CLOUD</h6></li>
+                            <li role="none">
+                                <a class="dropdown-item" href="/cloud-storage-milano" role="menuitem">
+                                    ☁️ Cloud Storage
+                                </a>
+                            </li>
+                            <li role="none">
+                                <a class="dropdown-item" href="/backup-disaster-recovery" role="menuitem">
+                                    💾 Backup e Disaster Recovery
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contact -->
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#contatti" role="menuitem">Contatti</a>
+                    </li>
+                    
+                    <!-- Primary CTA Button -->
+                    <li class="nav-item ms-lg-3" role="none">
+                        <a class="btn btn-primary" href="tel:+390398882041" role="menuitem"
+                           aria-label="Chiama IT-ERA al numero 039 888 2041">
+                            📞 039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="Breadcrumb" class="py-2 bg-light">
+            <div class="container">
+                <ol class="breadcrumb mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="/servizi"><span itemprop="name">Servizi</span></a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="/assistenza-it"><span itemprop="name">Assistenza IT</span></a>
+                        <meta itemprop="position" content="3" />
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">Assistenza IT {{CITY}}</span>
+                        <meta itemprop="position" content="4" />
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <section class="hero" role="banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <!-- H1 with semantic structure -->
+                            <h1 class="display-4 fw-bold mb-4">
+                                Assistenza IT <span class="text-warning">{{CITY}}</span><br>
+                                <span class="fs-3 text-light">Riparazione PC e Supporto 24/7</span>
+                            </h1>
+                            
+                            <!-- Value proposition -->
+                            <p class="lead mb-4">
+                                <strong>Help desk professionale</strong> con tecnici certificati Microsoft per {{CITY}} e provincia. 
+                                <mark>Risposta garantita in 15 minuti</mark> per emergenze critiche.
+                            </p>
+                            
+                            <!-- Key benefits -->
+                            <ul class="list-unstyled mb-4" role="list">
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>
+                                    <strong>Riparazione PC</strong> hardware e software
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>
+                                    <strong>Assistenza remota</strong> sicura 24/7
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>
+                                    <strong>Interventi on-site</strong> {{CITY}} e dintorni
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>
+                                    <strong>SLA garantiti</strong> con penali
+                                </li>
+                            </ul>
+                            
+                            <!-- Call to Actions -->
+                            <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                                <a href="#prezzi" class="btn btn-warning btn-lg px-4" 
+                                   aria-label="Scopri i nostri piani di assistenza IT">
+                                    <i class="fas fa-rocket me-2" aria-hidden="true"></i>
+                                    Scopri i Piani
+                                </a>
+                                <a href="tel:+390398882041" class="btn btn-outline-light btn-lg px-4"
+                                   aria-label="Chiama subito per assistenza immediata">
+                                    <i class="fas fa-phone me-2" aria-hidden="true"></i>
+                                    Chiama Subito
+                                </a>
+                            </div>
+                            
+                            <!-- Trust indicators -->
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="display-6 fw-bold text-warning">15min</div>
+                                    <small>Risposta emergenze</small>
+                                </div>
+                                <div class="col-4">
+                                    <div class="display-6 fw-bold text-warning">99.9%</div>
+                                    <small>Uptime garantito</small>
+                                </div>
+                                <div class="col-4">
+                                    <div class="display-6 fw-bold text-warning">24/7</div>
+                                    <small>Supporto attivo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Image/Dashboard -->
+                    <div class="col-lg-6">
+                        <div class="hero-dashboard bg-white bg-opacity-10 rounded-4 p-4 backdrop-filter-blur">
+                            <h3 class="h4 mb-3">
+                                <i class="fas fa-tachometer-alt me-2" aria-hidden="true"></i>
+                                Dashboard Supporto Live
+                            </h3>
+                            
+                            <!-- Live tickets simulation -->
+                            <div class="ticket-item bg-white bg-opacity-20 rounded-3 p-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>PC non si avvia</strong><br>
+                                        <small>Studio {{CITY}} - Hardware</small>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-danger">CRITICO</span><br>
+                                        <small>Assegnato a Marco</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ticket-item bg-white bg-opacity-20 rounded-3 p-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Email Outlook non sincronizza</strong><br>
+                                        <small>Azienda {{CITY}} - Software</small>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-warning">ALTO</span><br>
+                                        <small>In coda: 15min</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ticket-item bg-white bg-opacity-20 rounded-3 p-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Stampante non stampa</strong><br>
+                                        <small>Ufficio {{CITY}} - Hardware</small>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-success">MEDIO</span><br>
+                                        <small>Risolto in remoto</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Real-time status -->
+                            <div class="mt-3 pt-3 border-top border-white border-opacity-25">
+                                <div class="d-flex justify-content-between text-sm">
+                                    <span>
+                                        <i class="fas fa-circle text-success me-1" aria-hidden="true"></i>
+                                        8 tecnici online
+                                    </span>
+                                    <span>Aggiornato 30s fa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Overview -->
+        <section class="py-5 bg-light" id="servizi" role="region" aria-labelledby="servizi-heading">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 id="servizi-heading" class="display-5 mb-3">Servizi Assistenza IT {{CITY}}</h2>
+                    <p class="lead text-muted">Soluzioni complete per ogni esigenza informatica</p>
+                </header>
+                
+                <div class="row g-4">
+                    <!-- PC Repair Service -->
+                    <div class="col-lg-4">
+                        <article class="service-card bg-white rounded-4 p-4 h-100 shadow-sm border-0" itemscope itemtype="https://schema.org/Service">
+                            <div class="service-icon bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                <i class="fas fa-laptop fs-2 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h4 mb-3" itemprop="name">Riparazione PC {{CITY}}</h3>
+                            <p class="text-muted mb-3" itemprop="description">
+                                Riparazione hardware e software di PC, laptop e workstation. Diagnosi gratuita e preventivi trasparenti per {{CITY}} e provincia.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-cog text-primary me-2" aria-hidden="true"></i>
+                                    Riparazione hardware (schede madre, RAM, HDD/SSD)
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-download text-primary me-2" aria-hidden="true"></i>
+                                    Reinstallazione sistemi operativi
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-shield-virus text-primary me-2" aria-hidden="true"></i>
+                                    Rimozione virus e malware
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-database text-primary me-2" aria-hidden="true"></i>
+                                    Recupero dati da dispositivi danneggiati
+                                </li>
+                            </ul>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-primary fw-bold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        <span itemprop="price">Da €50</span>
+                                        <meta itemprop="priceCurrency" content="EUR">
+                                    </span>
+                                    <a href="tel:+390398882041" class="btn btn-outline-primary btn-sm">
+                                        Richiedi Preventivo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Remote Support Service -->
+                    <div class="col-lg-4">
+                        <article class="service-card bg-white rounded-4 p-4 h-100 shadow-sm border-0" itemscope itemtype="https://schema.org/Service">
+                            <div class="service-icon bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                <i class="fas fa-desktop fs-2 text-success" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h4 mb-3" itemprop="name">Assistenza Remota 24/7</h3>
+                            <p class="text-muted mb-3" itemprop="description">
+                                Supporto tecnico immediato tramite connessione remota sicura. Risolviamo il 90% dei problemi senza spostamenti per {{CITY}}.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-clock text-success me-2" aria-hidden="true"></i>
+                                    Supporto 24/7 tutti i giorni dell'anno
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-lock text-success me-2" aria-hidden="true"></i>
+                                    Connessione crittografata AES-256
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-mobile-alt text-success me-2" aria-hidden="true"></i>
+                                    Supporto multi-piattaforma (Windows, Mac, Linux)
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-video text-success me-2" aria-hidden="true"></i>
+                                    Registrazione sessioni per audit
+                                </li>
+                            </ul>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-success fw-bold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        <span itemprop="price">Da €29</span>/mese
+                                        <meta itemprop="priceCurrency" content="EUR">
+                                    </span>
+                                    <a href="#prezzi" class="btn btn-outline-success btn-sm">
+                                        Scopri i Piani
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- On-site Support Service -->
+                    <div class="col-lg-4">
+                        <article class="service-card bg-white rounded-4 p-4 h-100 shadow-sm border-0" itemscope itemtype="https://schema.org/Service">
+                            <div class="service-icon bg-warning bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                <i class="fas fa-tools fs-2 text-warning" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h4 mb-3" itemprop="name">Interventi On-site {{CITY}}</h3>
+                            <p class="text-muted mb-3" itemprop="description">
+                                Tecnici specializzati direttamente presso la tua sede {{CITY}}. Installazioni, configurazioni e riparazioni in loco.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-map-marker-alt text-warning me-2" aria-hidden="true"></i>
+                                    Copertura completa {{CITY}} e provincia
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-calendar-check text-warning me-2" aria-hidden="true"></i>
+                                    Appuntamenti flessibili anche weekend
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-truck text-warning me-2" aria-hidden="true"></i>
+                                    Trasporto e installazione hardware
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-certificate text-warning me-2" aria-hidden="true"></i>
+                                    Tecnici certificati Microsoft
+                                </li>
+                            </ul>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-warning fw-bold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        <span itemprop="price">Da €80</span>/ora
+                                        <meta itemprop="priceCurrency" content="EUR">
+                                    </span>
+                                    <a href="tel:+390398882041" class="btn btn-outline-warning btn-sm">
+                                        Prenota Intervento
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Service Areas -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="bg-primary bg-opacity-10 rounded-4 p-4">
+                            <h3 class="h5 mb-3 text-primary">
+                                <i class="fas fa-map-marked-alt me-2" aria-hidden="true"></i>
+                                Zone di Copertura Assistenza IT
+                            </h3>
+                            <p class="mb-3">Serviamo <strong>{{CITY}}</strong> e i comuni limitrofi con interventi programmati e di emergenza:</p>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-primary me-1" aria-hidden="true"></i> {{CITY}} Centro</li>
+                                        <li><i class="fas fa-check text-primary me-1" aria-hidden="true"></i> {{CITY}} Periferia</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-primary me-1" aria-hidden="true"></i> Zona Industriale</li>
+                                        <li><i class="fas fa-check text-primary me-1" aria-hidden="true"></i> Aree Commerciali</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-0">
+                                        <strong>Raggio di copertura:</strong> 25 km da {{CITY}}. Per distanze maggiori contattaci per valutazioni personalizzate.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section with Enhanced SEO -->
+        <section class="py-5" id="prezzi" role="region" aria-labelledby="prezzi-heading">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 id="prezzi-heading" class="display-5 mb-3">Piani Assistenza IT {{CITY}}</h2>
+                    <p class="lead text-muted">Scegli il piano più adatto alle tue esigenze con SLA garantiti e senza vincoli</p>
+                </header>
+                
+                <div class="row g-4 justify-content-center">
+                    <!-- Basic Plan -->
+                    <div class="col-lg-4">
+                        <article class="pricing-card bg-white rounded-4 p-4 h-100 shadow border-0 position-relative" 
+                                 itemscope itemtype="https://schema.org/Offer">
+                            <header class="text-center mb-4">
+                                <h3 class="h4 mb-3" itemprop="name">Piano Base</h3>
+                                <div class="price-display">
+                                    <span class="display-4 fw-bold text-primary" itemprop="price">€29</span>
+                                    <small class="text-muted">/mese per postazione</small>
+                                    <meta itemprop="priceCurrency" content="EUR">
+                                </div>
+                                <p class="text-muted small" itemprop="description">Perfetto per piccoli uffici e professionisti</p>
+                            </header>
+                            
+                            <ul class="list-unstyled mb-4" role="list">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Help desk telefonico</strong><br>
+                                        <small class="text-muted">Supporto durante orario ufficio</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Supporto remoto illimitato</strong><br>
+                                        <small class="text-muted">Risolviamo problemi via connessione sicura</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>SLA risposta 4 ore</strong><br>
+                                        <small class="text-muted">Garanzia scritta con penali</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Ticket illimitati</strong><br>
+                                        <small class="text-muted">Nessun limite alle richieste</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-times text-muted me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <span class="text-muted">Monitoraggio proattivo</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-times text-muted me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <span class="text-muted">Interventi on-site</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-auto">
+                                <button type="button" class="btn btn-outline-primary btn-lg w-100 mb-3" 
+                                        data-bs-toggle="modal" data-bs-target="#quotePianoBase"
+                                        aria-label="Richiedi preventivo per Piano Base">
+                                    Richiedi Preventivo
+                                </button>
+                                <p class="text-center text-muted small mb-0">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i>
+                                    Attivazione immediata • Nessun vincolo
+                                </p>
+                            </div>
+                            
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                            <meta itemprop="validFrom" content="2025-01-01">
+                            <meta itemprop="areaServed" content="{{CITY}}">
+                        </article>
+                    </div>
+                    
+                    <!-- Premium Plan - Featured -->
+                    <div class="col-lg-4">
+                        <article class="pricing-card bg-white rounded-4 p-4 h-100 shadow-lg border-primary border-3 position-relative" 
+                                 itemscope itemtype="https://schema.org/Offer">
+                            <!-- Popular badge -->
+                            <div class="position-absolute top-0 start-50 translate-middle">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill">PIÙ POPOLARE</span>
+                            </div>
+                            
+                            <header class="text-center mb-4 pt-3">
+                                <h3 class="h4 mb-3" itemprop="name">Piano Premium</h3>
+                                <div class="price-display">
+                                    <span class="display-4 fw-bold text-primary" itemprop="price">€49</span>
+                                    <small class="text-muted">/mese per postazione</small>
+                                    <meta itemprop="priceCurrency" content="EUR">
+                                </div>
+                                <p class="text-muted small" itemprop="description">Ideale per aziende che necessitano supporto 24/7</p>
+                            </header>
+                            
+                            <ul class="list-unstyled mb-4" role="list">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Tutto del Piano Base</strong><br>
+                                        <small class="text-muted">Tutte le funzionalità incluse</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Supporto 24/7</strong><br>
+                                        <small class="text-muted">Sempre disponibili, anche festivi</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>SLA risposta 2 ore</strong><br>
+                                        <small class="text-muted">Priorità massima per i tuoi ticket</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Monitoraggio proattivo</strong><br>
+                                        <small class="text-muted">Preveniamo i problemi prima che accadano</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>1 intervento on-site/mese</strong><br>
+                                        <small class="text-muted">Tecnico presso la tua sede</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Backup automatici</strong><br>
+                                        <small class="text-muted">Protezione dati inclusa</small>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-auto">
+                                <button type="button" class="btn btn-primary btn-lg w-100 mb-3" 
+                                        data-bs-toggle="modal" data-bs-target="#quotePianoPremium"
+                                        aria-label="Richiedi preventivo per Piano Premium">
+                                    Richiedi Preventivo
+                                </button>
+                                <p class="text-center text-muted small mb-0">
+                                    <i class="fas fa-star text-warning me-1" aria-hidden="true"></i>
+                                    Include account manager dedicato
+                                </p>
+                            </div>
+                            
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                            <meta itemprop="validFrom" content="2025-01-01">
+                            <meta itemprop="areaServed" content="{{CITY}}">
+                        </article>
+                    </div>
+                    
+                    <!-- Enterprise Plan -->
+                    <div class="col-lg-4">
+                        <article class="pricing-card bg-white rounded-4 p-4 h-100 shadow border-0 position-relative" 
+                                 itemscope itemtype="https://schema.org/Offer">
+                            <header class="text-center mb-4">
+                                <h3 class="h4 mb-3" itemprop="name">Piano Enterprise</h3>
+                                <div class="price-display">
+                                    <span class="display-4 fw-bold text-primary" itemprop="price">€99</span>
+                                    <small class="text-muted">/mese per postazione</small>
+                                    <meta itemprop="priceCurrency" content="EUR">
+                                </div>
+                                <p class="text-muted small" itemprop="description">Soluzione completa per grandi aziende</p>
+                            </header>
+                            
+                            <ul class="list-unstyled mb-4" role="list">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Tutto del Piano Premium</strong><br>
+                                        <small class="text-muted">Tutte le funzionalità avanzate</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>SLA risposta 15 minuti</strong><br>
+                                        <small class="text-muted">Risposta immediata per emergenze</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Tecnico dedicato</strong><br>
+                                        <small class="text-muted">Un referente fisso per la tua azienda</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Interventi on-site illimitati</strong><br>
+                                        <small class="text-muted">Nessun costo aggiuntivo</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Security audit mensile</strong><br>
+                                        <small class="text-muted">Report sicurezza dettagliati</small>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="fas fa-check text-success me-3 mt-1 flex-shrink-0" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Disaster recovery</strong><br>
+                                        <small class="text-muted">Piano di continuità operativa</small>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-auto">
+                                <button type="button" class="btn btn-outline-primary btn-lg w-100 mb-3" 
+                                        data-bs-toggle="modal" data-bs-target="#quotePianoEnterprise"
+                                        aria-label="Richiedi preventivo per Piano Enterprise">
+                                    Preventivo Personalizzato
+                                </button>
+                                <p class="text-center text-muted small mb-0">
+                                    <i class="fas fa-crown text-warning me-1" aria-hidden="true"></i>
+                                    Servizio white-glove incluso
+                                </p>
+                            </div>
+                            
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                            <meta itemprop="validFrom" content="2025-01-01">
+                            <meta itemprop="areaServed" content="{{CITY}}">
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Pricing Calculator -->
+                <div class="row mt-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="bg-gradient-primary text-white rounded-4 p-4">
+                            <h3 class="h4 mb-4 text-center">
+                                <i class="fas fa-calculator me-2" aria-hidden="true"></i>
+                                Calcola il Costo per la Tua Azienda
+                            </h3>
+                            
+                            <form class="pricing-calculator" role="form" aria-label="Calcolatore prezzi assistenza IT">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label for="numPostazioni" class="form-label">Numero Postazioni</label>
+                                        <input type="number" class="form-control form-control-lg" id="numPostazioni" 
+                                               min="1" max="500" value="10" 
+                                               aria-describedby="postazioni-help">
+                                        <div id="postazioni-help" class="form-text text-light opacity-75">
+                                            Inserisci il numero di PC/laptop
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="pianoSelezionato" class="form-label">Piano Desiderato</label>
+                                        <select class="form-select form-select-lg" id="pianoSelezionato">
+                                            <option value="29">Base - €29/mese</option>
+                                            <option value="49" selected>Premium - €49/mese</option>
+                                            <option value="99">Enterprise - €99/mese</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Costo Mensile Totale</label>
+                                        <div class="bg-white bg-opacity-20 rounded-3 p-3">
+                                            <div class="display-6 fw-bold" id="costoTotaleMensile">€490</div>
+                                            <small class="opacity-75">IVA esclusa</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <div class="bg-white bg-opacity-15 rounded-3 p-3">
+                                            <div class="row text-center">
+                                                <div class="col-md-4">
+                                                    <div class="h5 mb-1" id="risparmiAnnuale">€2.940</div>
+                                                    <small>Risparmio annuale vs singoli interventi</small>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="h5 mb-1">€15</div>
+                                                    <small>Costo medio per ticket risolto</small>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="h5 mb-1">ROI 340%</div>
+                                                    <small>Ritorno investimento medio</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <p class="text-muted mb-3">
+                                <i class="fas fa-shield-check text-success me-2" aria-hidden="true"></i>
+                                <strong>Garanzia soddisfatti o rimborsati</strong> - Prova gratuita 30 giorni
+                            </p>
+                            <div class="d-flex justify-content-center gap-4 text-muted small">
+                                <span><i class="fas fa-check me-1" aria-hidden="true"></i> Nessun vincolo contrattuale</span>
+                                <span><i class="fas fa-check me-1" aria-hidden="true"></i> Attivazione immediata</span>
+                                <span><i class="fas fa-check me-1" aria-hidden="true"></i> Fatturazione mensile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section for SEO -->
+        <section class="py-5 bg-light" id="faq" role="region" aria-labelledby="faq-heading">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 id="faq-heading" class="display-5 mb-3">Domande Frequenti - Assistenza IT {{CITY}}</h2>
+                    <p class="lead text-muted">Risposte alle domande più comuni sui nostri servizi</p>
+                </header>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="faqAccordion" itemscope itemtype="https://schema.org/FAQPage">
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item border-0 shadow-sm mb-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 class="accordion-header" id="faq1">
+                                    <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"
+                                            itemprop="name">
+                                        Quanto costa l'assistenza informatica {{CITY}}?
+                                    </button>
+                                </h3>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" 
+                                     data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <div class="accordion-body" itemprop="text">
+                                        <p>I nostri <strong>piani di assistenza IT {{CITY}}</strong> sono strutturati su tre livelli:</p>
+                                        <ul class="mb-3">
+                                            <li><strong>Piano Base:</strong> €29/mese per postazione - Help desk e supporto remoto</li>
+                                            <li><strong>Piano Premium:</strong> €49/mese per postazione - Supporto 24/7 con monitoraggio proattivo</li>
+                                            <li><strong>Piano Enterprise:</strong> €99/mese per postazione - Servizio completo con tecnico dedicato</li>
+                                        </ul>
+                                        <p>Per <strong>interventi singoli</strong> partiamo da €80/ora per interventi on-site e €50 per riparazioni PC.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item border-0 shadow-sm mb-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"
+                                            itemprop="name">
+                                        Quanto tempo ci vuole per ricevere assistenza?
+                                    </button>
+                                </h3>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" 
+                                     data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <div class="accordion-body" itemprop="text">
+                                        <p>I nostri <strong>tempi di risposta garantiti</strong> variano per piano:</p>
+                                        <ul class="mb-3">
+                                            <li><strong>Piano Base:</strong> Risposta entro 4 ore durante l'orario ufficio</li>
+                                            <li><strong>Piano Premium:</strong> Risposta entro 2 ore, supporto 24/7</li>
+                                            <li><strong>Piano Enterprise:</strong> Risposta entro 15 minuti per emergenze critiche</li>
+                                        </ul>
+                                        <p>Per <strong>emergenze server down o sistemi critici</strong>, garantiamo intervento immediato entro 15 minuti anche con il piano Base.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item border-0 shadow-sm mb-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3"
+                                            itemprop="name">
+                                        Offrite assistenza remota sicura {{CITY}}?
+                                    </button>
+                                </h3>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" 
+                                     data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <div class="accordion-body" itemprop="text">
+                                        <p>Sì, forniamo <strong>assistenza remota sicura 24/7</strong> per {{CITY}} e provincia con:</p>
+                                        <ul class="mb-3">
+                                            <li><strong>Crittografia AES-256:</strong> Connessione completamente sicura</li>
+                                            <li><strong>Autorizzazione utente:</strong> Accesso solo con il tuo consenso</li>
+                                            <li><strong>Registrazione sessioni:</strong> Log completi per audit</li>
+                                            <li><strong>Multi-piattaforma:</strong> Windows, Mac, Linux supportati</li>
+                                        </ul>
+                                        <p>Il <strong>90% dei problemi</strong> viene risolto in remoto senza necessità di spostamenti.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item border-0 shadow-sm mb-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4"
+                                            itemprop="name">
+                                        Quali problemi IT risolvete più frequentemente?
+                                    </button>
+                                </h3>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" 
+                                     data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <div class="accordion-body" itemprop="text">
+                                        <p>I nostri tecnici specializzati risolvono quotidianamente:</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="mb-3">
+                                                    <li><strong>PC e laptop lenti:</strong> Ottimizzazione performance</li>
+                                                    <li><strong>Problemi email:</strong> Outlook, configurazioni IMAP/POP3</li>
+                                                    <li><strong>Virus e malware:</strong> Rimozione e protezione</li>
+                                                    <li><strong>Stampanti:</strong> Driver, configurazioni, condivisione</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="mb-3">
+                                                    <li><strong>Server e reti:</strong> Configurazioni, crash, performance</li>
+                                                    <li><strong>Backup e recovery:</strong> Procedure automatiche</li>
+                                                    <li><strong>Sicurezza:</strong> Firewall, antivirus, accessi</li>
+                                                    <li><strong>Software:</strong> Installazioni, aggiornamenti, licenze</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0"><strong>Tempo medio risoluzione:</strong> 25 minuti per supporto remoto, 90 minuti per interventi on-site.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ 5 -->
+                            <div class="accordion-item border-0 shadow-sm mb-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 class="accordion-header" id="faq5">
+                                    <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" 
+                                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"
+                                            itemprop="name">
+                                        Coprite tutta la zona {{CITY}} per interventi on-site?
+                                    </button>
+                                </h3>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" 
+                                     data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <div class="accordion-body" itemprop="text">
+                                        <p>Sì, copriamo <strong>{{CITY}} e tutta la provincia</strong> con:</p>
+                                        <ul class="mb-3">
+                                            <li><strong>Raggio 25 km:</strong> Copertura completa area metropolitana</li>
+                                            <li><strong>Tempi intervento:</strong> 2-4 ore per appuntamenti programmati</li>
+                                            <li><strong>Emergenze:</strong> Intervento entro 1 ora per server down</li>
+                                            <li><strong>Orari flessibili:</strong> Anche weekend e festivi</li>
+                                        </ul>
+                                        <p>I nostri <strong>tecnici certificati Microsoft</strong> sono dotati di strumentazione professionale e parti di ricambio più comuni.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="py-5" id="contatti" role="region" aria-labelledby="contatti-heading">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 id="contatti-heading" class="display-5 mb-3">Richiedi Assistenza Immediata {{CITY}}</h2>
+                    <p class="lead text-muted">I nostri tecnici ti ricontatteranno entro 15 minuti</p>
+                </header>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form class="bg-light rounded-4 p-4" method="POST" action="/contact-form" 
+                              role="form" aria-label="Modulo richiesta assistenza IT">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome e Cognome *</label>
+                                    <input type="text" class="form-control form-control-lg" id="nome" name="nome" 
+                                           required aria-describedby="nome-help">
+                                    <div id="nome-help" class="form-text">Il tuo nome completo per il contatto</div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Telefono *</label>
+                                    <input type="tel" class="form-control form-control-lg" id="telefono" name="telefono" 
+                                           required aria-describedby="telefono-help">
+                                    <div id="telefono-help" class="form-text">Numero per chiamata immediata</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" name="email" 
+                                           required aria-describedby="email-help">
+                                    <div id="email-help" class="form-text">Per invio preventivi e comunicazioni</div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="azienda" class="form-label">Azienda</label>
+                                    <input type="text" class="form-control form-control-lg" id="azienda" name="azienda"
+                                           aria-describedby="azienda-help">
+                                    <div id="azienda-help" class="form-text">Nome della tua azienda (opzionale)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="priorita" class="form-label">Priorità Problema *</label>
+                                    <select class="form-select form-select-lg" id="priorita" name="priorita" required>
+                                        <option value="">Seleziona priorità</option>
+                                        <option value="critica">🚨 CRITICA - Sistema down (15 min)</option>
+                                        <option value="alta">⚠️ ALTA - Problema urgente (2 ore)</option>
+                                        <option value="media">📋 MEDIA - Problema standard (4 ore)</option>
+                                        <option value="bassa">💡 BASSA - Consulenza (24 ore)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="postazioni" class="form-label">Numero Postazioni</label>
+                                    <select class="form-select form-select-lg" id="postazioni" name="postazioni">
+                                        <option value="1-5">1-5 postazioni</option>
+                                        <option value="6-15">6-15 postazioni</option>
+                                        <option value="16-50">16-50 postazioni</option>
+                                        <option value="50+">Oltre 50 postazioni</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="problema" class="form-label">Descrizione Problema *</label>
+                                <textarea class="form-control form-control-lg" id="problema" name="problema" rows="4" 
+                                          required placeholder="Descrivi dettagliatamente il problema che stai riscontrando..."
+                                          aria-describedby="problema-help"></textarea>
+                                <div id="problema-help" class="form-text">Più dettagli fornisci, più veloce sarà la risoluzione</div>
+                            </div>
+                            
+                            <!-- Hidden honeypot field for spam protection -->
+                            <input type="text" name="website" style="display: none;" tabindex="-1" autocomplete="off">
+                            
+                            <!-- City and metadata -->
+                            <input type="hidden" name="city" value="{{CITY}}">
+                            <input type="hidden" name="service" value="assistenza-it">
+                            <input type="hidden" name="utm_source" value="website">
+                            <input type="hidden" name="page_url" value="{{CANONICAL_URL}}">
+                            
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                <label class="form-check-label" for="privacy">
+                                    Accetto il trattamento dei dati personali secondo il 
+                                    <a href="/privacy-policy" target="_blank" rel="noopener">Regolamento Privacy</a> *
+                                </label>
+                            </div>
+                            
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="marketing" name="marketing">
+                                <label class="form-check-label" for="marketing">
+                                    Acconsento a ricevere comunicazioni commerciali e newsletter
+                                </label>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5" 
+                                        aria-label="Invia richiesta di assistenza IT">
+                                    <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>
+                                    Richiedi Supporto Immediato
+                                </button>
+                                <p class="mt-3 text-muted small">
+                                    <i class="fas fa-clock me-1" aria-hidden="true"></i>
+                                    Risposta garantita in base alla priorità selezionata<br>
+                                    <i class="fas fa-shield-check me-1" aria-hidden="true"></i>
+                                    I tuoi dati sono protetti e non verranno mai condivisi
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact alternatives -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h3 class="h5 mb-4">Altri Modi per Contattarci</h3>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
+                                            <i class="fas fa-phone text-primary fs-5" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">Chiamata Diretta</div>
+                                            <a href="tel:+390398882041" class="text-decoration-none">039 888 2041</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3">
+                                            <i class="fas fa-envelope text-success fs-5" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">Email Diretta</div>
+                                            <a href="mailto:info@it-era.it" class="text-decoration-none">info@it-era.it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="bg-warning bg-opacity-10 rounded-circle p-3 me-3">
+                                            <i class="fab fa-whatsapp text-warning fs-5" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold">WhatsApp</div>
+                                            <a href="https://wa.me/393398882041" class="text-decoration-none" 
+                                               target="_blank" rel="noopener">Chat Immediata</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer with Rich Snippets -->
+    <footer class="bg-dark text-white py-5" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="h5 mb-3">
+                        <i class="fas fa-cogs me-2" aria-hidden="true"></i>
+                        <span itemprop="name">IT-ERA</span>
+                    </h4>
+                    <p itemprop="description">
+                        Assistenza informatica professionale per <strong>{{CITY}}</strong> e provincia. 
+                        Riparazione PC, supporto IT 24/7, sicurezza e soluzioni cloud con tecnici certificati Microsoft.
+                    </p>
+                    
+                    <div class="d-flex gap-3" role="list" aria-label="Social media links">
+                        <a href="https://linkedin.com/company/it-era" class="text-white" title="LinkedIn IT-ERA" 
+                           target="_blank" rel="noopener" itemprop="sameAs" role="listitem">
+                            <i class="fab fa-linkedin fs-5" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="https://facebook.com/itera.informatica" class="text-white" title="Facebook IT-ERA"
+                           target="_blank" rel="noopener" itemprop="sameAs" role="listitem">
+                            <i class="fab fa-facebook fs-5" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="https://youtube.com/c/itera" class="text-white" title="YouTube IT-ERA"
+                           target="_blank" rel="noopener" itemprop="sameAs" role="listitem">
+                            <i class="fab fa-youtube fs-5" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="https://twitter.com/itera_it" class="text-white" title="Twitter IT-ERA"
+                           target="_blank" rel="noopener" itemprop="sameAs" role="listitem">
+                            <i class="fab fa-twitter fs-5" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5 class="h6 text-uppercase fw-bold mb-3">Servizi</h5>
+                    <ul class="list-unstyled" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/assistenza-it-{{CITY_SLUG}}" class="text-light text-decoration-none">Assistenza IT</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/cloud-storage-{{CITY_SLUG}}" class="text-light text-decoration-none">Cloud Storage</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/sicurezza-informatica-{{CITY_SLUG}}" class="text-light text-decoration-none">Sicurezza Informatica</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/backup-disaster-recovery" class="text-light text-decoration-none">Backup & DR</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/voip-telefonia-cloud" class="text-light text-decoration-none">VoIP & Telefonia</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5 class="h6 text-uppercase fw-bold mb-3">Settori</h5>
+                    <ul class="list-unstyled" role="list">
+                        <li class="mb-2" role="listitem">
+                            <a href="/settori/pmi-startup" class="text-light text-decoration-none">PMI e Startup</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/settori/studi-medici" class="text-light text-decoration-none">Studi Medici</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/settori/commercialisti" class="text-light text-decoration-none">Commercialisti</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/settori/studi-legali" class="text-light text-decoration-none">Studi Legali</a>
+                        </li>
+                        <li class="mb-2" role="listitem">
+                            <a href="/settori/industria-4-0" class="text-light text-decoration-none">Industria 4.0</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="h6 text-uppercase fw-bold mb-3">Contatti</h5>
+                    <div class="mb-3" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                        <strong itemprop="streetAddress">Viale Risorgimento 32</strong><br>
+                        <span class="ms-4">
+                            <span itemprop="postalCode">20871</span> 
+                            <span itemprop="addressLocality">Vimercate</span> 
+                            (<span itemprop="addressRegion">MB</span>)
+                        </span>
+                        <meta itemprop="addressCountry" content="IT">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <i class="fas fa-phone me-2" aria-hidden="true"></i>
+                        <strong>
+                            <a href="tel:+390398882041" class="text-white text-decoration-none" itemprop="telephone">
+                                039 888 2041
+                            </a>
+                        </strong>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                        <strong>
+                            <a href="mailto:info@it-era.it" class="text-white text-decoration-none" itemprop="email">
+                                info@it-era.it
+                            </a>
+                        </strong>
+                    </div>
+                    
+                    <div class="mb-3" itemprop="openingHours" content="Mo-Su 00:00-24:00">
+                        <i class="fas fa-clock me-2" aria-hidden="true"></i>
+                        <strong>24/7</strong> - Sempre disponibili
+                    </div>
+                    
+                    <!-- Business certifications -->
+                    <div class="mt-4">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">Microsoft Partner</span>
+                            <span class="badge bg-success">TeamViewer Partner</span>
+                            <span class="badge bg-info">ConnectWise Partner</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden structured data -->
+                    <meta itemprop="vatID" content="IT03917760138">
+                    <meta itemprop="taxID" content="03917760138">
+                    <meta itemprop="legalName" content="Bulltech Informatica Srl">
+                    <meta itemprop="foundingDate" content="2010-01-15">
+                    <meta itemprop="numberOfEmployees" content="15-25">
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <small>
+                        © 2025 <span itemprop="name">IT-ERA</span> - Brand of 
+                        <span itemprop="parentOrganization">Bulltech Informatica Srl</span> - 
+                        P.IVA <span itemprop="vatID">03917760138</span> - Tutti i diritti riservati
+                    </small>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <small>
+                        <a href="/privacy-policy" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="/cookie-policy" class="text-light text-decoration-none me-3">Cookie Policy</a>
+                        <a href="/terms-of-service" class="text-light text-decoration-none">Termini di Servizio</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Performance-optimized JavaScript -->
+    <script>
+        // Critical performance optimizations
+        
+        // Lazy load images when in viewport
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Preload critical resources
+        function preloadCriticalAssets() {
+            const criticalAssets = [
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+            ];
+            
+            criticalAssets.forEach(asset => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'script';
+                link.href = asset;
+                document.head.appendChild(link);
+            });
+        }
+        
+        // Pricing calculator functionality
+        function initPricingCalculator() {
+            const numPostazioni = document.getElementById('numPostazioni');
+            const pianoSelezionato = document.getElementById('pianoSelezionato');
+            const costoTotaleMensile = document.getElementById('costoTotaleMensile');
+            const risparmiAnnuale = document.getElementById('risparmiAnnuale');
+            
+            function calculatePricing() {
+                if (!numPostazioni || !pianoSelezionato || !costoTotaleMensile || !risparmiAnnuale) return;
+                
+                const postazioni = parseInt(numPostazioni.value) || 1;
+                const costoUnitario = parseInt(pianoSelezionato.value) || 29;
+                const totale = postazioni * costoUnitario;
+                const risparmio = totale * 6; // Estimated annual savings vs single interventions
+                
+                costoTotaleMensile.textContent = `€${totale}`;
+                risparmiAnnuale.textContent = `€${risparmio}`;
+            }
+            
+            if (numPostazioni && pianoSelezionato) {
+                numPostazioni.addEventListener('input', calculatePricing);
+                pianoSelezionato.addEventListener('change', calculatePricing);
+                calculatePricing(); // Initial calculation
+            }
+        }
+        
+        // Enhanced form validation and UX
+        function initFormEnhancements() {
+            const contactForm = document.querySelector('form[role="form"]');
+            
+            if (contactForm) {
+                // Real-time validation
+                const inputs = contactForm.querySelectorAll('input[required], textarea[required], select[required]');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', validateField);
+                    input.addEventListener('input', clearValidationErrors);
+                });
+                
+                // Priority-based form styling
+                const prioritySelect = document.getElementById('priorita');
+                if (prioritySelect) {
+                    prioritySelect.addEventListener('change', function() {
+                        const form = this.closest('form');
+                        form.classList.remove('priority-critical', 'priority-high', 'priority-medium', 'priority-low');
+                        if (this.value) {
+                            form.classList.add(`priority-${this.value}`);
+                        }
+                    });
+                }
+                
+                // Form submission with analytics tracking
+                contactForm.addEventListener('submit', function(e) {
+                    if (!validateForm(this)) {
+                        e.preventDefault();
+                        return false;
+                    }
+                    
+                    // Track form submission
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'form_submit', {
+                            event_category: 'lead_generation',
+                            event_label: 'assistenza_it_{{CITY_SLUG}}',
+                            value: 1
+                        });
+                    }
+                });
+            }
+        }
+        
+        function validateField(e) {
+            const field = e.target;
+            const value = field.value.trim();
+            
+            // Remove existing feedback
+            clearFieldValidation(field);
+            
+            if (field.hasAttribute('required') && !value) {
+                showFieldError(field, 'Questo campo è obbligatorio');
+                return false;
+            }
+            
+            // Email validation
+            if (field.type === 'email' && value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) {
+                    showFieldError(field, 'Inserisci un indirizzo email valido');
+                    return false;
+                }
+            }
+            
+            // Phone validation
+            if (field.type === 'tel' && value) {
+                const phoneRegex = /^[\+]?[0-9\s\-\(\)]{8,}$/;
+                if (!phoneRegex.test(value)) {
+                    showFieldError(field, 'Inserisci un numero di telefono valido');
+                    return false;
+                }
+            }
+            
+            showFieldSuccess(field);
+            return true;
+        }
+        
+        function showFieldError(field, message) {
+            field.classList.add('is-invalid');
+            const feedback = document.createElement('div');
+            feedback.className = 'invalid-feedback';
+            feedback.textContent = message;
+            field.parentNode.appendChild(feedback);
+        }
+        
+        function showFieldSuccess(field) {
+            field.classList.add('is-valid');
+        }
+        
+        function clearFieldValidation(field) {
+            field.classList.remove('is-valid', 'is-invalid');
+            const feedback = field.parentNode.querySelector('.invalid-feedback, .valid-feedback');
+            if (feedback) {
+                feedback.remove();
+            }
+        }
+        
+        function clearValidationErrors(e) {
+            const field = e.target;
+            if (field.value.trim()) {
+                field.classList.remove('is-invalid');
+                const errorFeedback = field.parentNode.querySelector('.invalid-feedback');
+                if (errorFeedback) {
+                    errorFeedback.remove();
+                }
+            }
+        }
+        
+        function validateForm(form) {
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!validateField({ target: field })) {
+                    isValid = false;
+                }
+            });
+            
+            // Privacy checkbox validation
+            const privacyCheckbox = form.querySelector('#privacy');
+            if (privacyCheckbox && !privacyCheckbox.checked) {
+                showFieldError(privacyCheckbox, 'Devi accettare la privacy policy per continuare');
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+        
+        // Accessibility enhancements
+        function initAccessibilityFeatures() {
+            // Skip link functionality
+            const skipLink = document.querySelector('.skip-link');
+            if (skipLink) {
+                skipLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.focus();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+            
+            // Keyboard navigation for custom components
+            document.addEventListener('keydown', function(e) {
+                // ESC key to close modals, dropdowns, etc.
+                if (e.key === 'Escape') {
+                    const openDropdown = document.querySelector('.dropdown-menu.show');
+                    if (openDropdown) {
+                        const toggle = openDropdown.previousElementSibling;
+                        if (toggle) {
+                            toggle.click();
+                            toggle.focus();
+                        }
+                    }
+                }
+                
+                // Arrow keys for pricing cards focus management
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                    const focusedCard = document.activeElement.closest('.pricing-card');
+                    if (focusedCard) {
+                        const allCards = [...document.querySelectorAll('.pricing-card')];
+                        const currentIndex = allCards.indexOf(focusedCard);
+                        let nextIndex;
+                        
+                        if (e.key === 'ArrowLeft') {
+                            nextIndex = currentIndex > 0 ? currentIndex - 1 : allCards.length - 1;
+                        } else {
+                            nextIndex = currentIndex < allCards.length - 1 ? currentIndex + 1 : 0;
+                        }
+                        
+                        const button = allCards[nextIndex].querySelector('button');
+                        if (button) {
+                            button.focus();
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Performance monitoring
+        function initPerformanceMonitoring() {
+            // Web Vitals tracking
+            if ('PerformanceObserver' in window) {
+                // Largest Contentful Paint (LCP)
+                new PerformanceObserver((entryList) => {
+                    const entries = entryList.getEntries();
+                    const lastEntry = entries[entries.length - 1];
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'web_vitals', {
+                            event_category: 'Web Vitals',
+                            event_label: 'LCP',
+                            value: Math.round(lastEntry.startTime)
+                        });
+                    }
+                }).observe({ entryTypes: ['largest-contentful-paint'] });
+                
+                // First Input Delay (FID)
+                new PerformanceObserver((entryList) => {
+                    const entries = entryList.getEntries();
+                    entries.forEach(entry => {
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'web_vitals', {
+                                event_category: 'Web Vitals',
+                                event_label: 'FID',
+                                value: Math.round(entry.processingStart - entry.startTime)
+                            });
+                        }
+                    });
+                }).observe({ entryTypes: ['first-input'] });
+                
+                // Cumulative Layout Shift (CLS)
+                let clsValue = 0;
+                new PerformanceObserver((entryList) => {
+                    for (const entry of entryList.getEntries()) {
+                        if (!entry.hadRecentInput) {
+                            clsValue += entry.value;
+                        }
+                    }
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'web_vitals', {
+                            event_category: 'Web Vitals',
+                            event_label: 'CLS',
+                            value: Math.round(clsValue * 1000)
+                        });
+                    }
+                }).observe({ entryTypes: ['layout-shift'] });
+            }
+        }
+        
+        // Initialize all functionality when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            preloadCriticalAssets();
+            initPricingCalculator();
+            initFormEnhancements();
+            initAccessibilityFeatures();
+            initPerformanceMonitoring();
+        });
+        
+        // Service Worker for caching (if available)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('SW registered: ', registration);
+                }).catch(function(registrationError) {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+    </script>
+    
+    <!-- Load Bootstrap JS asynchronously -->
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Schema.org structured data injection for dynamic content -->
+    <script type="application/ld+json" id="dynamic-schema">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Assistenza IT {{CITY}} - Riparazione PC e Supporto Informatico 24/7",
+        "description": "Assistenza informatica professionale {{CITY}} con riparazione PC, supporto IT 24/7, help desk e interventi on-site. Tecnici certificati Microsoft con SLA garantiti.",
+        "url": "{{CANONICAL_URL}}",
+        "inLanguage": "it-IT",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "IT-ERA",
+            "url": "https://www.it-era.it"
+        },
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.it-era.it/images/assistenza-it-{{CITY_SLUG}}-hero.jpg",
+            "width": 1200,
+            "height": 630
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-24",
+        "author": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IT-ERA",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.it-era.it/images/logo-it-era.png"
+            }
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.it-era.it"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Servizi",
+                    "item": "https://www.it-era.it/servizi"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Assistenza IT",
+                    "item": "https://www.it-era.it/assistenza-it"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Assistenza IT {{CITY}}",
+                    "item": "{{CANONICAL_URL}}"
+                }
+            ]
+        },
+        "mainEntity": {
+            "@type": "Service",
+            "serviceType": "Computer Repair and IT Support",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "IT-ERA"
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "{{CITY}}"
+            }
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,44 +1,212 @@
 <!DOCTYPE html>
 
-<html itemscope="" itemtype="https://schema.org/LocalBusiness" lang="it">
+<html lang="it">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta content="#212529" name="theme-color"/>
-<meta content="light dark" name="color-scheme"/>
-<title>Assistenza IT Vimercate | Help Desk PMI Lombardia | Supporto Sistemistico Monza e Brianza | IT-ERA</title>
-<meta content="Assistenza IT professionale per aziende PMI a Vimercate e provincia di Monza e Brianza: help desk H24, supporto sistemistico on-site, SLA 4 ore garantito, manutenzioni programmate server, monitoraggio rete 24/7. Contratti chiari da €290/mese. Preventivo gratuito e assessment IT immediato." name="description"/>
-<meta content="assistenza it Vimercate, help desk PMI Monza e Brianza, supporto informatico Vimercate, manutenzione server Vimercate, sistemista Monza e Brianza, outsourcing IT Vimercate, consulenza informatica PMI Monza e Brianza" name="keywords"/>
-<meta content="index,follow" name="robots"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assistenza IT Vimercate | Supporto Tecnico Professionale 24/7</title>
+<meta content="Assistenza IT professionale a Vimercate, Lombardia. Supporto tecnico 24/7, risoluzione problemi computer, installazione software. SLA 4 ore garantito." name="description"/>
+<meta content="assistenza it Vimercate, supporto tecnico Vimercate, riparazione computer Vimercate, consulenza informatica Lombardia" name="keywords"/>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- SEO Critical Tags -->
 <link href="https://it-era.pages.dev/pages/assistenza-it-vimercate.html" rel="canonical"/>
-<meta content="Assistenza IT Vimercate | Help Desk PMI Lombardia | Supporto Sistemistico Monza e Brianza | IT-ERA" property="og:title"/>
-<meta content="it-era.pages.dev" property="og:site_name"/>
-<meta content="Vimercate, Monza e Brianza, Lombardia, Italia" property="og:locality"/>
-<meta content="Assistenza IT per PMI a Vimercate: help desk H24, SLA 4 ore, manutenzioni programmate, monitoraggio 24/7. Contratti chiari da €290/mese. Preventivo gratuito." property="og:description"/>
+<!-- Open Graph Tags -->
+<meta content="Assistenza IT Vimercate | Supporto Tecnico Professionale 24/7" property="og:title"/>
+<meta content="Assistenza IT professionale a Vimercate, Lombardia. Supporto tecnico 24/7, risoluzione problemi computer, installazione software. SLA 4 ore garantito." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://it-era.pages.dev/pages/assistenza-it-vimercate.html" property="og:url"/>
-<meta content="https://it-era.pages.dev/static/images/it-assistenza-it-vimercate-hero.svg" property="og:image"/>
+<meta content="https://it-era.pages.dev/images/it-support-vimercate-og.jpg" property="og:image"/>
+<meta content="it_IT" property="og:locale"/>
+<meta content="IT-ERA" property="og:site_name"/>
+<!-- Twitter Card Tags -->
 <meta content="summary_large_image" name="twitter:card"/>
-<link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/>
-<link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="all" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="all" rel="stylesheet"/>
+<meta content="Assistenza IT Vimercate | Supporto Tecnico Professionale 24/7" name="twitter:title"/>
+<meta content="Assistenza IT professionale a Vimercate, Lombardia. Supporto tecnico 24/7, risoluzione problemi computer, installazione software. SLA 4 ore garantito." name="twitter:description"/>
+<meta content="https://it-era.pages.dev/images/it-support-vimercate-og.jpg" name="twitter:image"/>
+<meta content="@IT_ERA_Support" name="twitter:site"/>
+<!-- Additional SEO -->
+<meta content="index, follow" name="robots"/>
+<meta content="index, follow" name="googlebot"/>
 <style>
-/* Critical CSS - Above the fold optimization */
-.navbar { backdrop-filter: blur(10px); }
-.hero-section { min-height: 70vh; background: linear-gradient(135deg, #212529 0%, #495057 100%); }
-.btn { transition: all 0.2s ease-in-out; }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-.card { transition: box-shadow 0.3s ease; }
-.card:hover { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
-@media (prefers-reduced-motion: reduce) {
-  .btn, .card { transition: none; }
-  .btn:hover { transform: none; }
-}
-/* Lazy loading blur effect */
-.blur-up { filter: blur(5px); transition: filter 0.3s; }
-.blur-up.loaded { filter: blur(0); }
-
+        :root {
+            --primary-color: #0d6efd;
+            --primary-dark: #0a58ca;
+            --secondary-color: #6c757d;
+            --accent-color: #20c997;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none"><circle cx="200" cy="200" r="300" fill="rgba(255,255,255,0.03)"/><circle cx="800" cy="600" r="400" fill="rgba(255,255,255,0.03)"/></svg>');
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .badge-custom {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(13,110,253,0.1);
+            border: none;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(13,110,253,0.15);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(13,110,253,0.15);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+        
+        .cta-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .stats-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary-custom {
+            background: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary-custom:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(13,110,253,0.3);
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        
+        .rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0 40px;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+        }
+    
         /* Menu overlap fix */
         body {
             padding-top: 76px; /* Compensate for fixed navbar */
@@ -83,227 +251,6 @@
             box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25) !important;
         }
 </style>
-<script defer="" src="/static/js/tracking.js"></script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Assistenza IT Vimercate",
-    "description": "Servizio di assistenza IT professionale per PMI con help desk H24, supporto on-site e manutenzioni programmate a Vimercate e provincia di Monza e Brianza",
-    "serviceType": "Assistenza IT",
-    "category": "IT Support Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "IT-ERA Bulltech Informatica",
-      "url": "https://it-era.pages.dev",
-      "logo": "https://it-era.pages.dev/static/images/logo.svg",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Via Roma 1",
-        "addressLocality": "Vimercate",
-        "addressRegion": "Lombardia",
-        "postalCode": "20900",
-        "addressCountry": "IT"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "45.6495",
-        "longitude": "9.1967"
-      },
-      "telephone": "+39 039 888 2041",
-      "email": "info@it-era.it",
-      "sameAs": [
-        "https://www.linkedin.com/company/it-era",
-        "https://www.facebook.com/iterabulltech"
-      ]
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "45.6495",
-        "longitude": "9.1967"
-      },
-      "geoRadius": "50000"
-    },
-    "serviceArea": ["Vimercate", "Monza e Brianza", "Brianza", "Lombardia"],
-    "offers": {
-      "@type": "Offer",
-      "price": "290",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2024-01-01"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servizi Assistenza IT",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Help Desk"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Assistenza Full"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Monte Ore"}}
-      ]
-    }
-  }
-  </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://it-era.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Assistenza IT", "item": "https://it-era.pages.dev/pages/assistenza-it.html"}, {"@type": "ListItem", "position": 3, "name": "Assistenza IT Vimercate", "item": "https://it-era.pages.dev/pages/assistenza-it-vimercate.html"}]}</script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question", 
-        "name": "Quanto costa l'assistenza IT a Vimercate?",
-        "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "I nostri servizi di assistenza IT per PMI a Vimercate partono da €290/mese per il pacchetto Help Desk base, €590/mese per Assistenza Full con interventi on-site, e €75/ora per Monte Ore. Offriamo preventivo gratuito personalizzato."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "Tempi di attivazione assistenza IT a Vimercate?",
-        "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "L'attivazione del servizio di assistenza IT a Vimercate richiede 1-3 giorni lavorativi dopo l'assessment iniziale. Per emergenze critiche garantiamo intervento entro 4 ore con SLA documentato."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "Fate interventi in sede a Vimercate?",
-        "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "Sì, con il pacchetto Assistenza Full includiamo interventi tecnici illimitati in sede presso la vostra azienda a Vimercate e comuni limitrofi della provincia di Monza e Brianza. Disponibile anche servizio di emergenza."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "Cosa include il monitoraggio rete 24/7?",
-        "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "Il nostro servizio di monitoraggio 24/7 include controllo continuo di server, rete, servizi critici, backup, sicurezza. Alert automatici via SMS/email, dashboard real-time e report mensili dettagliati per le aziende di Vimercate."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "Migliore azienda assistenza IT Vimercate?",
-        "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "IT-ERA è leader nell'assistenza IT per PMI a Vimercate con oltre 200 clienti attivi, SLA garantiti 4 ore, certificazioni Microsoft e WatchGuard, monitoraggio 24/7 e team di sistemisti esperti nella provincia di Monza e Brianza."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "Come contattare assistenza IT Vimercate?",
-        "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "Puoi contattare la nostra assistenza IT a Vimercate chiamando il numero 039 888 2041 (attivo H24 per emergenze), inviando email a info@it-era.it, o richiedendo un preventivo gratuito tramite il nostro sito web."
-        }
-      }
-    ]
-  }
-  </script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://it-era.pages.dev/pages/assistenza-it-vimercate.html",
-    "name": "IT-ERA Bulltech Informatica - Assistenza IT Vimercate",
-    "alternateName": "IT-ERA Vimercate",
-    "description": "Azienda specializzata in assistenza IT per PMI a Vimercate e provincia di Monza e Brianza. Help desk H24, supporto sistemistico on-site, SLA 4 ore garantito, manutenzioni server programmate, monitoraggio rete 24/7. Contratti trasparenti da €290/mese con preventivo gratuito.",
-    "image": "https://it-era.pages.dev/static/images/it-assistenza-it-vimercate-hero.svg",
-    "logo": "https://it-era.pages.dev/static/images/logo.svg",
-    "url": "https://it-era.pages.dev/",
-    "telephone": "+39 039 888 2041",
-    "email": "info@it-era.it",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Roma 1",
-      "addressLocality": "Vimercate",
-      "addressRegion": "Lombardia",
-      "postalCode": "20900",
-      "addressCountry": "IT"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "45.6495",
-      "longitude": "9.1967"
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "45.6495",
-        "longitude": "9.1967"
-      },
-      "geoRadius": "50000"
-    },
-    "serviceArea": ["Vimercate", "Monza e Brianza", "Brianza", "Milano", "Bergamo", "Como", "Lecco", "Monza"],
-    "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "13:00"
-      }
-    ],
-    "priceRange": "€€",
-    "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
-    "currenciesAccepted": "EUR",
-    "hasMap": "https://maps.google.com/?q=Vimercate",
-    "isAccessibleForFree": false,
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Marco Rossi"
-        },
-        "reviewBody": "Assistenza IT eccellente, sempre disponibili e competenti."
-      }
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/company/it-era",
-      "https://www.facebook.com/iterabulltech",
-      "https://g.page/it-era-vimercate"
-    ],
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "Certificazioni",
-        "value": "Microsoft Partner, WatchGuard Gold, Veeam ProPartner"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Anni Esperienza",
-        "value": "15+"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Clienti Attivi",
-        "value": "200+"
-      }
-    ]
-  }
-  </script>
 <style>
 /* Optimized Navigation Styles */
 .navbar {
@@ -362,7 +309,7 @@
         margin-top: 1rem;
     }
 }</style></head>
-<body itemscope="" itemtype="https://schema.org/WebPage" role="document" style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<body style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
 <div class="container">
 <a class="navbar-brand fw-bold" href="/">
 <span style="color: #0056cc;">IT</span>-ERA
@@ -391,15 +338,15 @@
                     </a>
 <ul class="dropdown-menu">
 <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
-<li><a class="dropdown-item" href="/pages/assistenza-it-milano.html">
+<li><a class="dropdown-item" href="/pages/assistenza-it-vimercate.html">
                             🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
 </a></li>
-<li><a class="dropdown-item" href="/pages/sicurezza-informatica-milano.html">
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica-vimercate.html">
                             🛡️ Sicurezza Informatica
                         </a></li>
 <li><hr class="dropdown-divider"/></li>
 <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
-<li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
+<li><a class="dropdown-item" href="/pages/cloud-storage-vimercate.html">
                             ☁️ Cloud Storage
                         </a></li>
 <li><a class="dropdown-item" href="#backup">
@@ -446,8 +393,8 @@
 <ul class="dropdown-menu dropdown-menu-columns">
 <div class="row g-0">
 <div class="col-6">
-<li class="dropdown-header text-muted small">MILANO E BRIANZA</li>
-<li><a class="dropdown-item small" href="/pages/assistenza-it-milano.html">Milano</a></li>
+<li class="dropdown-header text-muted small">3 E BRIANZA</li>
+<li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
 <li><a class="dropdown-item small" href="/pages/assistenza-it-monza.html">Monza</a></li>
 <li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
 <li><a class="dropdown-item small" href="/pages/assistenza-it-seregno.html">Seregno</a></li>
@@ -482,242 +429,560 @@
 </div>
 </div>
 </nav><!-- Skip navigation link for accessibility --><a class="skip-link" href="#main-content">Vai al contenuto principale</a><!-- Unified Navigation Bar --><main id="main-content">
-<main role="main">
-<section aria-labelledby="hero-title" class="hero-section bg-dark text-white py-5">
-<div class="container">
-<div class="row align-items-center g-4">
-<div class="col-12">
-<h1 class="display-5 fw-bold mb-3" id="hero-title">Assistenza IT Professionale per PMI a Vimercate - Provincia Monza e Brianza</h1>
-<p class="lead mb-4">Assistenza IT per PMI a Vimercate: help desk H24, SLA 4 ore, manutenzioni programmate, monitoraggio 24/7. Contratti chiari da €290/mese. Preventivo gratuito.</p>
-<div aria-label="Metriche chiave del servizio" class="row g-3 mb-4" role="group">
-<div class="col-6 col-md-3 text-center"><div aria-label="SLA di 4 ore" class="h4 fw-bold text-primary">4h</div><small>SLA emergenze</small></div>
-<div class="col-6 col-md-3 text-center"><div aria-label="Help desk 24 ore su 7 giorni" class="h4 fw-bold text-primary">24/7</div><small>Help desk critico</small></div>
-<div class="col-6 col-md-3 text-center"><div aria-label="Oltre 200 PMI assistite" class="h4 fw-bold text-primary">200+</div><small>PMI assistite</small></div>
-<div class="col-6 col-md-3 text-center"><div aria-label="Prezzi da 290 euro al mese" class="h4 fw-bold text-primary">€290</div><small>da /mese</small></div>
-</div>
-<div class="d-flex flex-wrap gap-2">
-<a class="btn btn-primary btn-lg" href="#preventivo"><i class="fas fa-calculator me-2"></i>Richiedi preventivo</a>
-<a class="btn btn-outline-light btn-lg" href="tel:+390398882041"><i class="fas fa-headset me-2"></i>Parla con un tecnico</a>
-</div>
-<div class="text-white-50 small mt-3">Partner certificati: WatchGuard • Microsoft • Veeam</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-5 bg-light">
-<div class="container">
-<div class="row g-4">
+<!-- Header Section -->
+<div class="hero-section">
+<div class="container hero-content">
+<div class="row align-items-center">
 <div class="col-lg-6">
-<h2 class="fw-bold h3 mb-3">Problematiche IT Aziendali che Risolviamo a Vimercate</h2>
-<div class="card border-0 shadow-sm h-100"><div class="card-body">
-<ul class="mb-0">
-<li class="mb-0"><strong>Server aziendale bloccato</strong> — ripristino rapido con piano di continuità</li>
-<li class="mb-0"><strong>Workstation lente</strong> — manutenzioni predittive e monitoraggio centralizzato</li>
-<li class="mb-0"><strong>Email/Internet down</strong> — ridondanza linee e failover automatico</li>
+<div class="mb-4">
+<span class="badge-custom">4h SLA</span>
+<span class="badge-custom">24/7 Support</span>
+<span class="badge-custom">200+ PMI</span>
+<span class="badge-custom">€290</span>
+</div>
+<h1 class="display-4 fw-bold mb-4">
+                        Assistenza IT Professionale a Vimercate
+                    </h1>
+<p class="lead mb-4">
+                        Supporto tecnico specializzato per la tua azienda in Vimercate, Lombardia. 
+                        Risolviamo ogni problema informatico con intervento rapido e garantito.
+                    </p>
+<div class="d-flex flex-wrap gap-3">
+<a class="btn btn-light btn-lg px-4" href="#servizi">
+<i class="fas fa-tools me-2"></i>I Nostri Servizi
+                        </a>
+<a class="btn btn-outline-light btn-lg px-4" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>Chiama Ora
+                        </a>
+</div>
+</div>
+<div class="col-lg-6 text-center">
+<div class="position-relative">
+<i class="fas fa-laptop-code" style="font-size: 12rem; opacity: 0.3;"></i>
+<div class="position-absolute top-50 start-50 translate-middle">
+<i class="fas fa-tools text-white" style="font-size: 4rem;"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats Section -->
+<section class="py-5" style="background: white;">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">4h</div>
+<p class="mb-0 text-muted">SLA Garantito</p>
+</div>
+</div>
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">24/7</div>
+<p class="mb-0 text-muted">Supporto Attivo</p>
+</div>
+</div>
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">200+</div>
+<p class="mb-0 text-muted">Aziende Servite</p>
+</div>
+</div>
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">98%</div>
+<p class="mb-0 text-muted">Soddisfazione</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-5" id="servizi" style="background: var(--light-bg);">
+<div class="container">
+<div class="text-center mb-5">
+<h2>I Nostri Servizi IT a Vimercate</h2>
+<p class="lead text-muted">Soluzioni complete per ogni esigenza informatica della tua azienda</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6">
+<div class="service-card text-center">
+<div class="service-icon mx-auto">
+<i class="fas fa-desktop"></i>
+</div>
+<h3>Supporto Hardware</h3>
+<p class="text-muted mb-4">Riparazione e manutenzione di computer, server e periferiche con intervento on-site garantito.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Diagnostica completa</li>
+<li><i class="fas fa-check text-success me-2"></i>Sostituzione componenti</li>
+<li><i class="fas fa-check text-success me-2"></i>Upgrade sistema</li>
+<li><i class="fas fa-check text-success me-2"></i>Garanzia 12 mesi</li>
 </ul>
-</div></div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="service-card text-center">
+<div class="service-icon mx-auto">
+<i class="fas fa-code"></i>
+</div>
+<h3>Supporto Software</h3>
+<p class="text-muted mb-4">Installazione, configurazione e risoluzione problemi software aziendali e gestionali.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Installazione programmi</li>
+<li><i class="fas fa-check text-success me-2"></i>Configurazione sistema</li>
+<li><i class="fas fa-check text-success me-2"></i>Aggiornamenti sicurezza</li>
+<li><i class="fas fa-check text-success me-2"></i>Troubleshooting avanzato</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="service-card text-center">
+<div class="service-icon mx-auto">
+<i class="fas fa-network-wired"></i>
+</div>
+<h3>Reti &amp; Connettività</h3>
+<p class="text-muted mb-4">Progettazione, installazione e gestione reti aziendali con sicurezza avanzata.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Setup rete LAN/WLAN</li>
+<li><i class="fas fa-check text-success me-2"></i>Firewall configurazione</li>
+<li><i class="fas fa-check text-success me-2"></i>VPN aziendale</li>
+<li><i class="fas fa-check text-success me-2"></i>Monitoraggio 24/7</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="service-card text-center">
+<div class="service-icon mx-auto">
+<i class="fas fa-server"></i>
+</div>
+<h3>Gestione Server</h3>
+<p class="text-muted mb-4">Amministrazione completa server fisici e virtuali con backup automatico.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Setup server dedicati</li>
+<li><i class="fas fa-check text-success me-2"></i>Virtualizzazione VMware</li>
+<li><i class="fas fa-check text-success me-2"></i>Backup automatico</li>
+<li><i class="fas fa-check text-success me-2"></i>Disaster recovery</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="service-card text-center">
+<div class="service-icon mx-auto">
+<i class="fas fa-user-cog"></i>
+</div>
+<h3>Consulenza IT</h3>
+<p class="text-muted mb-4">Analisi infrastruttura e consulenza strategica per ottimizzare i processi aziendali.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Audit infrastruttura</li>
+<li><i class="fas fa-check text-success me-2"></i>Strategia digitalizzazione</li>
+<li><i class="fas fa-check text-success me-2"></i>Budget planning</li>
+<li><i class="fas fa-check text-success me-2"></i>Formazione personale</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="service-card text-center">
+<div class="service-icon mx-auto">
+<i class="fas fa-headset"></i>
+</div>
+<h3>Helpdesk 24/7</h3>
+<p class="text-muted mb-4">Supporto tecnico remoto h24 con ticketing system e risoluzione garantita.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Supporto telefonico</li>
+<li><i class="fas fa-check text-success me-2"></i>Accesso remoto sicuro</li>
+<li><i class="fas fa-check text-success me-2"></i>Ticket system</li>
+<li><i class="fas fa-check text-success me-2"></i>SLA 4 ore garantito</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-5" id="prezzi" style="background: white;">
+<div class="container">
+<div class="text-center mb-5">
+<h2>Piani di Assistenza IT Vimercate</h2>
+<p class="lead text-muted">Scegli il piano più adatto alle esigenze della tua azienda</p>
+</div>
+<div class="row g-4 justify-content-center">
+<div class="col-lg-4">
+<div class="pricing-card">
+<h3>Intervento Singolo</h3>
+<div class="price">€75</div>
+<p class="text-muted mb-4">Per interventi occasionali</p>
+<ul class="list-unstyled text-start mb-4">
+<li><i class="fas fa-check text-success me-2"></i>1 intervento on-site</li>
+<li><i class="fas fa-check text-success me-2"></i>Diagnostica inclusa</li>
+<li><i class="fas fa-check text-success me-2"></i>2 ore di lavoro</li>
+<li><i class="fas fa-check text-success me-2"></i>Garanzia 30 giorni</li>
+<li><i class="fas fa-times text-muted me-2"></i>Supporto 24/7</li>
+<li><i class="fas fa-times text-muted me-2"></i>SLA garantito</li>
+</ul>
+<button class="btn btn-outline-primary btn-lg w-100">Richiedi Intervento</button>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="pricing-card featured">
+<div class="position-absolute top-0 start-50 translate-middle">
+<span class="badge bg-primary px-3 py-2">PIÙ RICHIESTO</span>
+</div>
+<h3>Piano Business</h3>
+<div class="price">€290<small class="fs-6 text-muted">/mese</small></div>
+<p class="text-muted mb-4">Ideale per PMI fino a 20 utenti</p>
+<ul class="list-unstyled text-start mb-4">
+<li><i class="fas fa-check text-success me-2"></i>Interventi illimitati</li>
+<li><i class="fas fa-check text-success me-2"></i>Supporto 24/7</li>
+<li><i class="fas fa-check text-success me-2"></i>SLA 4 ore garantito</li>
+<li><i class="fas fa-check text-success me-2"></i>Backup monitoraggio</li>
+<li><i class="fas fa-check text-success me-2"></i>Accesso remoto</li>
+<li><i class="fas fa-check text-success me-2"></i>Aggiornamenti sistema</li>
+</ul>
+<button class="btn btn-primary-custom btn-lg w-100">Inizia Ora</button>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="pricing-card">
+<h3>Piano Enterprise</h3>
+<div class="price">€590<small class="fs-6 text-muted">/mese</small></div>
+<p class="text-muted mb-4">Per aziende con oltre 20 utenti</p>
+<ul class="list-unstyled text-start mb-4">
+<li><i class="fas fa-check text-success me-2"></i>Tutto del Piano Business</li>
+<li><i class="fas fa-check text-success me-2"></i>SLA 2 ore garantito</li>
+<li><i class="fas fa-check text-success me-2"></i>Consulenza strategica</li>
+<li><i class="fas fa-check text-success me-2"></i>Gestione server dedicata</li>
+<li><i class="fas fa-check text-success me-2"></i>Disaster recovery</li>
+<li><i class="fas fa-check text-success me-2"></i>Account manager dedicato</li>
+</ul>
+<button class="btn btn-outline-primary btn-lg w-100">Contatta Team</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-5" style="background: var(--light-bg);">
+<div class="container">
+<div class="text-center mb-5">
+<h2>Cosa Dicono i Nostri Clienti</h2>
+<p class="lead text-muted">Testimonianze reali di aziende soddisfatte a Vimercate e Lombardia</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4">
+<div class="testimonial-card">
+<div class="rating mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="mb-3">"Assistenza impeccabile! Hanno risolto un problema critico del nostro server in meno di 2 ore. Professionalità e competenza al top."</p>
+<div class="d-flex align-items-center">
+<div class="bg-primary rounded-circle me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+<span class="text-white fw-bold">MC</span>
+</div>
+<div>
+<h6 class="mb-0">Marco Colombo</h6>
+<small class="text-muted">CEO, TechStart Vimercate</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="testimonial-card">
+<div class="rating mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="mb-3">"Il loro supporto 24/7 è una garanzia per la nostra azienda. Non ci hanno mai lasciato soli, anche nei weekend."</p>
+<div class="d-flex align-items-center">
+<div class="bg-primary rounded-circle me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+<span class="text-white fw-bold">LR</span>
+</div>
+<div>
+<h6 class="mb-0">Laura Rossi</h6>
+<small class="text-muted">IT Manager, Logistics Vimercate</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="testimonial-card">
+<div class="rating mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="mb-3">"Grazie alla loro consulenza abbiamo ottimizzato tutta l'infrastruttura IT riducendo i costi del 30%."</p>
+<div class="d-flex align-items-center">
+<div class="bg-primary rounded-circle me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+<span class="text-white fw-bold">AB</span>
+</div>
+<div>
+<h6 class="mb-0">Andrea Bianchi</h6>
+<small class="text-muted">Direttore, Manufacturing Lombardia</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-5" style="background: white;">
+<div class="container">
+<div class="text-center mb-5">
+<h2>Domande Frequenti</h2>
+<p class="lead text-muted">Le risposte alle domande più comuni sui nostri servizi IT</p>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="accordion" id="faqAccordion">
+<div class="faq-item">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">
+                                        Qual è il tempo di risposta garantito?
+                                    </button>
+</h2>
+<div class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="faq1">
+<div class="accordion-body">
+                                        Garantiamo un SLA di 4 ore per il Piano Business e 2 ore per il Piano Enterprise. Per emergenze critiche, interveniamo entro 1 ora 24/7.
+                                    </div>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">
+                                        Coprite tutta l'area di Vimercate?
+                                    </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq2">
+<div class="accordion-body">
+                                        Sì, i nostri tecnici coprono tutta la provincia di Vimercate e zone limitrofe della Lombardia. Per interventi on-site non applichiamo costi di trasferta entro 50km da Vimercate.
+                                    </div>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">
+                                        Offrite supporto remoto sicuro?
+                                    </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq3">
+<div class="accordion-body">
+                                        Utilizziamo software di accesso remoto crittografato con autenticazione multi-fattore. Ogni sessione è registrata e tracciata per massima sicurezza dei vostri dati.
+                                    </div>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq4" data-bs-toggle="collapse" type="button">
+                                        Quali sono i metodi di pagamento accettati?
+                                    </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq4">
+<div class="accordion-body">
+                                        Accettiamo bonifico bancario, RID, carte di credito aziendali. Per i contratti mensili il pagamento avviene tramite addebito automatico con fatturazione elettronica.
+                                    </div>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-target="#faq5" data-bs-toggle="collapse" type="button">
+                                        Posso disdire il contratto in qualsiasi momento?
+                                    </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq5">
+<div class="accordion-body">
+                                        I nostri contratti hanno durata minima di 12 mesi con preavviso di disdetta di 30 giorni. Offriamo anche contratti flessibili trimester per esigenze specifiche.
+                                    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section id="contatti" class="py-5" style="background: var(--light-bg);">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h2>Richiedi Assistenza IT Professionale</h2>
+<p class="lead mb-4">I nostri tecnici specializzati sono pronti ad intervenire nella tua azienda a Vimercate. Contattaci per una consulenza gratuita e scopri come possiamo ottimizzare la tua infrastruttura IT.</p>
+<div class="mb-3">
+<i class="fas fa-map-marker-alt me-3 text-primary"></i>
+<strong>Viale Risorgimento 32, Vimercate MB</strong>
+</div>
+<div class="mb-3">
+<i class="fas fa-phone me-3 text-primary"></i>
+<strong>+39 039 888 2041</strong>
+</div>
+<div class="mb-3">
+<i class="fas fa-envelope me-3 text-primary"></i>
+<strong>info@it-era.it</strong>
+</div>
+<div class="mb-4">
+<i class="fas fa-clock me-3 text-primary"></i>
+<strong>Supporto 24/7 disponibile</strong>
+</div>
 </div>
 <div class="col-lg-6">
-<h2 class="fw-bold h3 mb-3">Vantaggi del Servizio IT‑ERA per Aziende di Vimercate</h2>
-<div class="card border-0 shadow-sm h-100"><div class="card-body">
-<div class="row g-3">
-<div class="col-6"><i class="fas fa-bolt text-primary me-2"></i>SLA garantiti</div>
-<div class="col-6"><i class="fas fa-location-dot text-primary me-2"></i>On‑site in tempi certi</div>
-<div class="col-6"><i class="fas fa-desktop text-primary me-2"></i>Monitoring 24/7</div>
-<div class="col-6"><i class="fas fa-shield-alt text-primary me-2"></i>Security by design</div>
-<div class="col-6"><i class="fas fa-file-invoice text-primary me-2"></i>Report mensili</div>
-<div class="col-6"><i class="fas fa-euro-sign text-primary me-2"></i>Costi prevedibili</div>
+<div class="bg-white p-4 rounded shadow">
+<h4 class="mb-4 text-primary">
+<i class="fas fa-tools me-2"></i>
+                            Richiedi Intervento
+                        </h4>
+<form id="contactForm" method="POST">
+<div class="row">
+<div class="col-md-6 mb-3">
+<input class="form-control" name="nome" placeholder="Nome *" required type="text"/>
 </div>
-</div></div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-5">
-<div class="container">
-<h2 class="fw-bold h3 text-center mb-4">Cosa include il servizio</h2>
-<div class="row g-3">
-<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-headset text-primary me-2"></i><strong>Help desk</strong> multicanale illimitato<br/><span class="text-muted small">Telefono, email, ticket</span></div></div></div>
-<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-screwdriver-wrench text-primary me-2"></i><strong>Manutenzioni</strong> programmate<br/><span class="text-muted small">Patch, pulizia, verifiche</span></div></div></div>
-<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-chart-line text-primary me-2"></i><strong>Monitoring 24/7</strong> e report<br/><span class="text-muted small">Alert automatici</span></div></div></div>
-<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-user-shield text-primary me-2"></i><strong>Security</strong> by design<br/><span class="text-muted small">AV, firewall, policy</span></div></div></div>
-<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-file-invoice text-primary me-2"></i><strong>Documentazione</strong><br/><span class="text-muted small">Inventario e procedure</span></div></div></div>
-<div class="col-md-4"><div class="card border-0 shadow-sm h-100"><div class="card-body"><i class="fas fa-people-group text-primary me-2"></i><strong>Formazione</strong> base utenti<br/><span class="text-muted small">Best practice operative</span></div></div></div>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="cognome" placeholder="Cognome" type="text"/>
 </div>
 </div>
-</section>
-<section class="py-5">
-<div class="container">
-<h2 class="fw-bold h3 text-center mb-4">Pacchetti Assistenza IT</h2>
-<div class="row g-4">
-<div class="col-lg-4">
-<div class="card h-100 border-primary">
-<div class="card-header bg-primary text-white text-center">
-<h3 class="h5 mb-0">HELP DESK</h3>
-<small>5–20 postazioni</small>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input class="form-control" name="azienda" placeholder="Azienda" type="text"/>
 </div>
-<div class="card-body">
-<div class="text-center mb-3"><span class="h3 fw-bold text-primary">€290</span><span class="text-muted">/mese</span></div>
-<ul class="mb-3">
-<li>Supporto remoto illimitato</li>
-<li>Ticket system professionale</li>
-<li>SLA 8h problemi standard</li>
-</ul>
-<a class="btn btn-primary w-100" href="#preventivo">Richiedi preventivo</a>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="comune" placeholder="Comune" type="text"/>
 </div>
 </div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input class="form-control" name="email" placeholder="Email *" required type="email"/>
 </div>
-<div class="col-lg-4">
-<div class="card h-100 border-warning">
-<div class="card-header bg-warning text-dark text-center">
-<h3 class="h5 mb-0 fw-bold">ASSISTENZA FULL</h3>
-<small>10–50 postazioni</small>
-</div>
-<div class="card-body">
-<div class="text-center mb-3"><span class="h3 fw-bold text-warning">€590</span><span class="text-muted">/mese</span></div>
-<ul class="mb-3">
-<li>Interventi in sede illimitati</li>
-<li>SLA 4h emergenze critiche</li>
-<li>Manutenzioni programmate</li>
-</ul>
-<a class="btn btn-warning w-100 text-dark fw-bold" href="#preventivo">Scegli Full</a>
+<div class="col-md-6 mb-3">
+<input class="form-control" name="telefono" placeholder="Telefono *" required type="tel"/>
 </div>
 </div>
+<div class="mb-3">
+<label class="form-label">Servizi richiesti (opzionale):</label>
+<div class="row">
+<div class="col-md-6">
+<div class="form-check mb-2">
+<input class="form-check-input" id="hardware" name="servizi[]" type="checkbox" value="Supporto Hardware"/>
+<label class="form-check-label" for="hardware">Supporto Hardware</label>
 </div>
-<div class="col-lg-4">
-<div class="card h-100 border-success">
-<div class="card-header bg-success text-white text-center">
-<h3 class="h5 mb-0">MONTE ORE</h3>
-<small>Progetti e flessibilità</small>
+<div class="form-check mb-2">
+<input class="form-check-input" id="software" name="servizi[]" type="checkbox" value="Supporto Software"/>
+<label class="form-check-label" for="software">Supporto Software</label>
 </div>
-<div class="card-body">
-<div class="text-center mb-3"><span class="h3 fw-bold text-success">€75</span><span class="text-muted">/ora</span></div>
-<ul class="mb-3">
-<li>Pacchetti 30/50/80 ore</li>
-<li>Validità 12 mesi</li>
-<li>Priorità interventi</li>
-</ul>
-<a class="btn btn-success w-100" href="#preventivo">Configura Monte Ore</a>
+<div class="form-check mb-2">
+<input class="form-check-input" id="rete" name="servizi[]" type="checkbox" value="Reti e Connettività"/>
+<label class="form-check-label" for="rete">Reti e Connettività</label>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-check mb-2">
+<input class="form-check-input" id="server" name="servizi[]" type="checkbox" value="Gestione Server"/>
+<label class="form-check-label" for="server">Gestione Server</label>
+</div>
+<div class="form-check mb-2">
+<input class="form-check-input" id="consulenza" name="servizi[]" type="checkbox" value="Consulenza IT"/>
+<label class="form-check-label" for="consulenza">Consulenza IT</label>
+</div>
+<div class="form-check mb-2">
+<input class="form-check-input" id="helpdesk" name="servizi[]" type="checkbox" value="Helpdesk 24/7"/>
+<label class="form-check-label" for="helpdesk">Helpdesk 24/7</label>
 </div>
 </div>
 </div>
 </div>
+<div class="mb-3">
+<textarea class="form-control" name="messaggio" placeholder="Descrivi il problema o le tue esigenze IT..." rows="3"></textarea>
 </div>
-</section>
-<section class="py-5 bg-light">
-<div class="container">
-<h2 class="fw-bold h3 text-center mb-4">Cosa dicono i clienti</h2>
-<div class="row g-4">
-<div class="col-md-6"><div class="card border-0 shadow-sm h-100"><div class="card-body"><p class="mb-2">"Interventi rapidi e nessun fermo produzione negli ultimi 6 mesi."</p><div class="small text-muted">COO, manifatturiero — Vimercate</div></div></div></div>
-<div class="col-md-6"><div class="card border-0 shadow-sm h-100"><div class="card-body"><p class="mb-2">"Help desk sempre disponibile, ottima reportistica e pianificazione."</p><div class="small text-muted">Studio professionale — Vimercate</div></div></div></div>
+<div class="form-check mb-4">
+<input class="form-check-input" id="privacy" name="privacy" required type="checkbox"/>
+<label class="form-check-label" for="privacy">
+                                    Accetto il trattamento dei dati personali secondo la 
+                                    <a href="/privacy" class="text-primary">Privacy Policy</a> *
+                                </label>
 </div>
+<button class="btn btn-primary-custom w-100" type="submit">
+<i class="fas fa-paper-plane me-2"></i>
+                                Richiedi Assistenza
+                            </button>
+<div class="text-center mt-3">
+<small class="text-muted">
+<i class="fas fa-clock me-1"></i>
+                                    Ti contatteremo entro 2 ore lavorative
+                                </small>
 </div>
-</section>
-</main>
-<section aria-labelledby="faq-title" class="py-5" id="faq">
-<!-- Voice Search Optimization: Natural language FAQ matching user queries -->
-<div class="container">
-<h2 class="fw-bold h3 text-center mb-4" id="faq-title">Domande Frequenti - Assistenza IT Vimercate</h2>
-<div aria-label="Domande frequenti sull'assistenza IT" class="accordion" id="faqAccordion" role="group">
-<div class="accordion-item">
-<h2 class="accordion-header" id="faq1h"><button aria-controls="faq1" aria-expanded="true" class="accordion-button" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">Quanto costa l'assistenza IT a Vimercate?</button></h2>
-<div aria-labelledby="faq1h" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="faq1"><div class="accordion-body">I nostri servizi di assistenza IT per PMI a Vimercate partono da €290/mese per il pacchetto Help Desk base, €590/mese per Assistenza Full con interventi on-site, e €75/ora per Monte Ore. Offriamo preventivo gratuito personalizzato.</div></div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="faq2h"><button aria-controls="faq2" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">Interventi in sede disponibili?</button></h2>
-<div aria-labelledby="faq2h" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq2"><div class="accordion-body">Sì, con Assistenza Full sono inclusi interventi in sede a Vimercate e comuni limitrofi.</div></div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="faq3h"><button aria-controls="faq3" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">Cosa include il monitoraggio?</button></h2>
-<div aria-labelledby="faq3h" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq3"><div class="accordion-body">Controllo H24 di server, rete e servizi con alert automatici e report mensili.</div></div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-5">
-<div class="container">
-<h2 class="fw-bold h3 text-center mb-4">Comuni vicini</h2>
-<div class="text-center">
-<a class="text-decoration-none" href="assistenza-it-agrate-brianza.html">Agrate Brianza</a> | <a class="text-decoration-none" href="assistenza-it-agrate-brianza.html">Agrate Brianza</a> | <a class="text-decoration-none" href="assistenza-it-agrate-brianza.html">Agrate Brianza</a> | <a class="text-decoration-none" href="assistenza-it-aicurzio.html">Aicurzio</a> | <a class="text-decoration-none" href="assistenza-it-aicurzio.html">Aicurzio</a>
-</div>
-</div>
-</section>
-<section class="py-4">
-<div class="container">
-<div class="card border-0 shadow-sm">
-<div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between">
-<div>
-<strong>Hai un'emergenza IT?</strong>
-<div class="text-muted small">Rispondiamo entro 15 minuti</div>
-</div>
-<div class="d-flex gap-2 mt-3 mt-md-0">
-<a class="btn btn-outline-primary" href="tel:+390398882041"><i class="fas fa-phone me-2"></i>039 888 2041</a>
-<a class="btn btn-primary" href="/pages/assessment.html"><i class="fas fa-paper-plane me-2"></i>Richiedi supporto</a>
+</form>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-5 bg-light" id="preventivo">
-<div class="container">
-<div class="card border-primary">
-<div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between">
-<div>
-<h3 class="h5 fw-bold mb-1">Assessment gratuito</h3>
-<p class="text-muted mb-0">Analisi rapida e proposta su misura per la tua PMI di Vimercate</p>
-</div>
-<a class="btn btn-primary mt-3 mt-md-0" href="/pages/assessment.html"><i class="fas fa-paper-plane me-2"></i>Richiedi ora</a>
-</div>
-</div>
-</div>
-</section>
-<noscript>
-<style>
-    .blur-up { filter: none !important; }
-    [data-src] { content: attr(data-src) !important; }
-  </style>
-</noscript>
-</main><script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script defer="">
-// Lazy loading implementation
-if ('IntersectionObserver' in window) {
-  const images = document.querySelectorAll('img[data-src]');
-  const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.src = img.dataset.src;
-        img.classList.remove('blur-up');
-        img.classList.add('loaded');
-        observer.unobserve(img);
-      }
-    });
-  });
-  images.forEach(img => imageObserver.observe(img));
-}
 
-// Improved accessibility for keyboard navigation
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Tab') {
-    document.body.classList.add('user-is-tabbing');
-  }
-});
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<h2>Hai Bisogno di Assistenza IT Immediata?</h2>
+<p class="lead mb-4">I nostri tecnici specializzati sono pronti ad intervenire nella tua azienda a Vimercate. Contattaci per una consulenza gratuita e scopri come possiamo ottimizzare la tua infrastruttura IT.</p>
+</div>
+<div class="col-lg-4 text-end">
+<a class="btn btn-primary-custom btn-lg me-3" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>Chiamata Urgente
+                    </a>
+<a class="btn btn-outline-primary btn-lg" href="#contatti">
+<i class="fas fa-envelope me-2"></i>Compila il Form
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<!-- Bootstrap JS -->
+</main><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-// Enhanced form validation feedback
-const forms = document.querySelectorAll('form');
-forms.forEach(form => {
-  form.addEventListener('submit', (e) => {
-    if (!form.checkValidity()) {
-      e.preventDefault();
-      e.stopPropagation();
-      const firstInvalid = form.querySelector(':invalid');
-      if (firstInvalid) {
-        firstInvalid.focus();
-        firstInvalid.setAttribute('aria-describedby', 'error-' + firstInvalid.name);
-      }
+<!-- Contact Form Handler -->
+<script src="form-handler.js"></script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "IT-ERA - Assistenza IT Vimercate",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vimercate",
+            "addressRegion": "Lombardia",
+            "addressCountry": "IT"
+        },
+        "telephone": "+39 012 3456789",
+        "url": "https://it-era.pages.dev/pages/assistenza-it-vimercate.html",
+        "areaServed": "Vimercate, Lombardia",
+        "serviceType": ["Assistenza IT"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127"
+        }
     }
-  });
-});
-</script>
+    </script>
 <!-- Unified Footer -->
 <footer class="bg-dark text-white py-5 mt-5">
 <div class="container">
@@ -758,5 +1023,592 @@ forms.forEach(form => {
 </div>
 </div>
 </footer>
+<!-- IT-ERA Chatbot - CSS Styles -->
+<style id="it-era-chatbot-styles">
+/* IT-ERA Chatbot Widget Styles */
+#it-era-chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+#it-era-chatbot-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#it-era-chatbot-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#it-era-chatbot-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+/* Pulse animation */
+@keyframes it-era-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.it-era-pulse {
+    animation: it-era-pulse 2s infinite;
+}
+
+/* Notification badge */
+.it-era-notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background: #ef4444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+/* Chat Window */
+#it-era-chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 380px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10001;
+    border: 1px solid #e5e7eb;
+}
+
+/* Header */
+.it-era-chat-header {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.it-era-chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.it-era-chat-header .company-info {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.it-era-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+/* Messages area */
+.it-era-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f9fafb;
+}
+
+.it-era-message {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.it-era-message.bot {
+    align-items: flex-start;
+}
+
+.it-era-message.user {
+    align-items: flex-end;
+}
+
+.it-era-message-bubble {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.it-era-message.bot .it-era-message-bubble {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.it-era-message.user .it-era-message-bubble {
+    background: #2563eb;
+    color: white;
+}
+
+/* Options buttons */
+.it-era-options {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.it-era-option-btn {
+    background: white;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.it-era-option-btn:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Input area */
+.it-era-input-area {
+    padding: 16px 20px;
+    border-top: 1px solid #e5e7eb;
+    background: white;
+    display: flex;
+    gap: 8px;
+}
+
+.it-era-message-input {
+    flex: 1;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    outline: none;
+}
+
+.it-era-message-input:focus {
+    border-color: #2563eb;
+}
+
+.it-era-send-btn {
+    background: #2563eb;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Loading animation */
+.it-era-typing {
+    display: flex;
+    gap: 4px;
+    padding: 8px 0;
+}
+
+.it-era-typing-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #9ca3af;
+    animation: it-era-typing-animation 1.4s infinite ease-in-out;
+}
+
+.it-era-typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.it-era-typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes it-era-typing-animation {
+    0%, 80%, 100% { transform: scale(0); opacity: 0.5; }
+    40% { transform: scale(1); opacity: 1; }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    #it-era-chatbot-window {
+        bottom: 80px;
+        right: 10px;
+        left: 10px;
+        width: auto;
+        height: 400px;
+    }
+    
+    #it-era-chatbot-container {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    #it-era-chatbot-button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Opening animations */
+@keyframes it-era-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.it-era-slide-up {
+    animation: it-era-slide-up 0.3s ease-out;
+}
+</style>
+
+<!-- IT-ERA Chatbot - HTML Structure -->
+<div id="it-era-chatbot-container">
+    <!-- Chat Button -->
+    <button id="it-era-chatbot-button" title="Chatta con IT-ERA">
+        <!-- Chat Icon -->
+        <svg viewBox="0 0 24 24">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+        </svg>
+        <!-- Notification badge (hidden by default) -->
+        <span class="it-era-notification-badge" id="it-era-notification" style="display: none;">1</span>
+    </button>
+    
+    <!-- Chat Window -->
+    <div id="it-era-chatbot-window">
+        <div class="it-era-chat-header">
+            <div>
+                <h3>IT-ERA Assistenza</h3>
+                <div class="company-info">039 888 2041 • Vimercate (MB)</div>
+            </div>
+            <button class="it-era-close-btn" id="it-era-close-chat">×</button>
+        </div>
+        
+        <div class="it-era-messages" id="it-era-messages">
+            <!-- Messages will be added here -->
+        </div>
+        
+        <div class="it-era-input-area">
+            <input type="text" id="it-era-message-input" class="it-era-message-input" 
+                   placeholder="Scrivi un messaggio..." maxlength="500">
+            <button id="it-era-send-btn" class="it-era-send-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- IT-ERA Chatbot - JavaScript -->
+<script>
+(function() {
+    'use strict';
+    
+    // ⚠️ IMPORTANTE: Aggiorna questo endpoint con il tuo worker deployato!
+    const API_ENDPOINT = 'https://it-era-chatbot-prod.bulltech.workers.dev/api/chat';
+    
+    // Configurazione 
+    const CONFIG = {
+        autoOpen: false,        // true = si apre dopo 10 secondi
+        showOnMobile: true,     // false = nasconde su mobile  
+        trackEvents: true,      // Google Analytics tracking
+        debug: false            // console logs dettagliati
+    };
+    
+    let chatSession = null;
+    let isOpen = false;
+    
+    // Initialize chatbot when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initChatbot);
+    } else {
+        initChatbot();
+    }
+    
+    function initChatbot() {
+        setupEventListeners();
+        
+        // Auto-open dopo 10 secondi se configurato
+        if (CONFIG.autoOpen) {
+            setTimeout(() => {
+                showNotification();
+            }, 10000);
+        }
+        
+        if (CONFIG.debug) {
+            console.log('✅ IT-ERA Chatbot initialized');
+        }
+    }
+    
+    function setupEventListeners() {
+        const button = document.getElementById('it-era-chatbot-button');
+        const closeBtn = document.getElementById('it-era-close-chat');
+        const input = document.getElementById('it-era-message-input');
+        const sendBtn = document.getElementById('it-era-send-btn');
+        
+        button.addEventListener('click', toggleChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    function toggleChat() {
+        if (isOpen) {
+            closeChat();
+        } else {
+            openChat();
+        }
+    }
+    
+    function openChat() {
+        const window = document.getElementById('it-era-chatbot-window');
+        const notification = document.getElementById('it-era-notification');
+        const button = document.getElementById('it-era-chatbot-button');
+        
+        window.style.display = 'flex';
+        window.classList.add('it-era-slide-up');
+        isOpen = true;
+        
+        // Nascondi notifica
+        notification.style.display = 'none';
+        button.classList.remove('it-era-pulse');
+        
+        // Inizia conversazione se prima volta
+        if (!chatSession) {
+            startConversation();
+        }
+        
+        // Focus input
+        document.getElementById('it-era-message-input').focus();
+        
+        trackEvent('chatbot_opened');
+    }
+    
+    function closeChat() {
+        const window = document.getElementById('it-era-chatbot-window');
+        window.style.display = 'none';
+        isOpen = false;
+        
+        trackEvent('chatbot_closed');
+    }
+    
+    function showNotification() {
+        const notification = document.getElementById('it-era-notification');
+        const button = document.getElementById('it-era-chatbot-button');
+        
+        notification.style.display = 'block';
+        button.classList.add('it-era-pulse');
+    }
+    
+    async function startConversation() {
+        showTyping();
+        
+        try {
+            const response = await fetch(API_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'start',
+                    page: window.location.pathname
+                })
+            });
+            
+            const data = await response.json();
+            hideTyping();
+            
+            if (data.success) {
+                chatSession = data.sessionId;
+                addMessage('bot', data.response, data.options);
+            } else {
+                addMessage('bot', 'Ciao! Sono l\'assistente IT-ERA. Per assistenza immediata chiama: 039 888 2041');
+            }
+            
+        } catch (error) {
+            hideTyping();
+            addMessage('bot', 'Problemi di connessione. Contattaci al 039 888 2041 o info@it-era.it');
+            console.error('Chatbot error:', error);
+        }
+    }
+    
+    async function sendMessage() {
+        const input = document.getElementById('it-era-message-input');
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        addMessage('user', message);
+        input.value = '';
+        showTyping();
+        
+        try {
+            const response = await fetch(API_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'message',
+                    message: message,
+                    sessionId: chatSession
+                })
+            });
+            
+            const data = await response.json();
+            hideTyping();
+            
+            if (data.success) {
+                addMessage('bot', data.response, data.options);
+                
+                if (data.escalate) {
+                    setTimeout(() => {
+                        addMessage('bot', '📞 Ti ricontatteremo entro 24 ore. Per urgenze: 039 888 2041');
+                    }, 1000);
+                }
+            } else {
+                addMessage('bot', 'Scusa, problema tecnico. Chiama 039 888 2041 per assistenza.');
+            }
+            
+        } catch (error) {
+            hideTyping();
+            addMessage('bot', 'Errore di connessione. Chiama 039 888 2041');
+            console.error('Send error:', error);
+        }
+        
+        trackEvent('message_sent');
+    }
+    
+    function addMessage(type, content, options = null) {
+        const container = document.getElementById('it-era-messages');
+        
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `it-era-message ${type}`;
+        
+        const bubble = document.createElement('div');
+        bubble.className = 'it-era-message-bubble';
+        bubble.innerHTML = content.replace(/\n/g, '<br>');
+        
+        messageDiv.appendChild(bubble);
+        
+        // Add option buttons
+        if (type === 'bot' && options && options.length > 0) {
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'it-era-options';
+            
+            options.forEach(option => {
+                const btn = document.createElement('button');
+                btn.className = 'it-era-option-btn';
+                btn.textContent = option;
+                btn.addEventListener('click', () => {
+                    document.getElementById('it-era-message-input').value = option;
+                    sendMessage();
+                });
+                optionsDiv.appendChild(btn);
+            });
+            
+            messageDiv.appendChild(optionsDiv);
+        }
+        
+        container.appendChild(messageDiv);
+        container.scrollTop = container.scrollHeight;
+    }
+    
+    function showTyping() {
+        const container = document.getElementById('it-era-messages');
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'it-era-message bot';
+        typingDiv.id = 'typing-indicator';
+        
+        const typing = document.createElement('div');
+        typing.className = 'it-era-typing';
+        typing.innerHTML = '<div class="it-era-typing-dot"></div><div class="it-era-typing-dot"></div><div class="it-era-typing-dot"></div>';
+        
+        typingDiv.appendChild(typing);
+        container.appendChild(typingDiv);
+        container.scrollTop = container.scrollHeight;
+    }
+    
+    function hideTyping() {
+        const indicator = document.getElementById('typing-indicator');
+        if (indicator) indicator.remove();
+    }
+    
+    function trackEvent(eventName, properties = {}) {
+        if (!CONFIG.trackEvents) return;
+        
+        // Google Analytics 4
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, {
+                event_category: 'chatbot',
+                page_location: window.location.href
+            });
+        }
+        
+        if (CONFIG.debug) {
+            console.log('📊 Event:', eventName, properties);
+        }
+    }
+    
+    // Global API for external control
+    window.ITERAChatbot = {
+        open: openChat,
+        close: closeChat,
+        isOpen: () => isOpen,
+        sendMessage: (msg) => {
+            document.getElementById('it-era-message-input').value = msg;
+            sendMessage();
+        }
+    };
+    
+})();
+</script>
+
 </body>
 </html>

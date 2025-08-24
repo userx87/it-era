@@ -1,0 +1,231 @@
+{
+  "title_tag": {
+    "min_length": 30,
+    "max_length": 60,
+    "required": true,
+    "avoid_duplicates": true,
+    "patterns": {
+      "assistenza_it": "Assistenza IT {{city}} | {{service}} | IT-ERA",
+      "cloud_storage": "Cloud Storage {{city}} | {{service}} | IT-ERA", 
+      "sicurezza_informatica": "Sicurezza Informatica {{city}} | {{service}} | IT-ERA"
+    },
+    "recommendations": [
+      "Include target keyword at the beginning",
+      "Include city name for local SEO",
+      "Include brand name at the end",
+      "Keep under 60 characters"
+    ]
+  },
+  
+  "meta_description": {
+    "min_length": 120,
+    "max_length": 160,
+    "required": true,
+    "avoid_duplicates": true,
+    "must_include": ["city_name", "service_type", "contact_info"],
+    "recommendations": [
+      "Include primary and secondary keywords",
+      "Include compelling call-to-action",
+      "Mention key benefits (24/7, SLA, etc.)",
+      "Include phone number for local searches"
+    ]
+  },
+  
+  "url_structure": {
+    "max_length": 75,
+    "format": "kebab-case",
+    "structure": "/{{service_type}}-{{city_slug}}.html",
+    "avoid": ["underscores", "special_characters", "stop_words"],
+    "canonical_required": true,
+    "recommendations": [
+      "Use hyphens instead of underscores",
+      "Keep URLs short and descriptive", 
+      "Include target keywords",
+      "Avoid deep nesting (max 3 levels)"
+    ]
+  },
+  
+  "heading_structure": {
+    "h1": {
+      "count": 1,
+      "required": true,
+      "max_length": 70,
+      "must_include": ["service_type", "city_name"]
+    },
+    "h2": {
+      "count": "3-8",
+      "recommended": true,
+      "structure": ["services", "pricing", "problems", "contact"]
+    },
+    "h3_h6": {
+      "hierarchy": true,
+      "descriptive": true
+    }
+  },
+  
+  "image_optimization": {
+    "alt_tags": {
+      "required": true,
+      "max_length": 125,
+      "descriptive": true,
+      "include_keywords": true
+    },
+    "file_naming": {
+      "format": "keyword-description-city.extension",
+      "avoid_generic": true
+    },
+    "formats": {
+      "preferred": ["webp", "jpg", "png"],
+      "avoid": ["bmp", "tiff"]
+    },
+    "compression": {
+      "max_size_kb": 100,
+      "quality": 80
+    },
+    "lazy_loading": {
+      "enabled": true,
+      "exclude_above_fold": true
+    }
+  },
+  
+  "internal_linking": {
+    "min_internal_links": 5,
+    "max_internal_links": 15,
+    "anchor_text": {
+      "descriptive": true,
+      "avoid_generic": ["click here", "read more", "link"],
+      "include_keywords": true
+    },
+    "link_depth": {
+      "max_clicks_from_homepage": 3
+    },
+    "breadcrumbs": {
+      "required": true,
+      "schema_markup": true
+    }
+  },
+  
+  "content_quality": {
+    "word_count": {
+      "min": 800,
+      "recommended": 1500,
+      "max": 3000
+    },
+    "keyword_density": {
+      "primary_keyword": "1-3%",
+      "secondary_keywords": "0.5-1%"
+    },
+    "readability": {
+      "flesch_score": "60-70",
+      "avg_sentence_length": "15-20 words"
+    },
+    "uniqueness": {
+      "duplicate_content": "max 10%",
+      "similar_pages_threshold": "85%"
+    }
+  },
+  
+  "technical_seo": {
+    "page_speed": {
+      "core_web_vitals": {
+        "lcp": "< 2.5s",
+        "fid": "< 100ms", 
+        "cls": "< 0.1"
+      },
+      "time_to_first_byte": "< 600ms",
+      "first_contentful_paint": "< 1.8s"
+    },
+    "mobile_optimization": {
+      "responsive_design": true,
+      "mobile_friendly_test": true,
+      "touch_targets": "> 48px"
+    },
+    "security": {
+      "https": true,
+      "ssl_certificate": true
+    }
+  },
+  
+  "local_seo": {
+    "google_my_business": {
+      "optimized": true,
+      "complete_profile": true,
+      "regular_posts": true
+    },
+    "local_schema": {
+      "local_business": true,
+      "service_area": true,
+      "contact_info": true
+    },
+    "nap_consistency": {
+      "name": "IT-ERA",
+      "address": "Viale Risorgimento 32, Vimercate MB",
+      "phone": "039 888 2041"
+    },
+    "local_keywords": {
+      "include_city": true,
+      "include_province": true,
+      "nearby_cities": true
+    }
+  },
+  
+  "schema_markup": {
+    "required_types": [
+      "LocalBusiness",
+      "Service",
+      "Organization",
+      "BreadcrumbList"
+    ],
+    "recommended_types": [
+      "FAQPage",
+      "Review",
+      "AggregateRating",
+      "ContactPoint"
+    ],
+    "validation": {
+      "google_structured_data_testing_tool": true,
+      "no_errors": true,
+      "warnings_acceptable": 2
+    }
+  },
+  
+  "social_media": {
+    "open_graph": {
+      "required_tags": ["og:title", "og:description", "og:type", "og:url", "og:image"],
+      "image_size": "1200x630px"
+    },
+    "twitter_cards": {
+      "type": "summary_large_image",
+      "required_tags": ["twitter:title", "twitter:description", "twitter:image"]
+    }
+  },
+  
+  "monitoring": {
+    "google_analytics": {
+      "installed": true,
+      "enhanced_ecommerce": true,
+      "goal_tracking": true
+    },
+    "google_search_console": {
+      "verified": true,
+      "sitemap_submitted": true,
+      "regular_monitoring": true
+    },
+    "core_web_vitals": {
+      "monthly_reports": true,
+      "improvement_tracking": true
+    }
+  },
+  
+  "content_freshness": {
+    "update_frequency": "monthly",
+    "date_modified": true,
+    "content_audit": "quarterly"
+  },
+  
+  "competitor_analysis": {
+    "keyword_gap_analysis": true,
+    "backlink_analysis": true,
+    "content_comparison": true
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "startTime": "2025-08-24T17:03:47.368Z",
+  "endTime": "2025-08-24T17:04:07.801Z",
+  "totalDuration": 20433,
+  "suiteResults": [
+    {
+      "name": "UI Responsiveness",
+      "file": "ui-responsiveness.test.js",
+      "status": "failed",
+      "duration": 3609,
+      "output": "",
+      "errors": [
+        "Jest exited with code 1\\nFAIL ./ui-responsiveness.test.js\n  UI Responsiveness Testing\n    Test Page Load and Basic Structure\n      ✕ should load test page correctly on all viewports\n      ✕ should display swarm status indicators correctly\n    Responsive Design Validation\n      ✕ should adapt layout correctly for mobile devices\n      ✕ should maintain functionality on tablet viewport\n    CSS Animations and Transitions\n      ✕ should display message animations correctly\n      ✕ should show loading states correctly\n    Performance Metrics Display\n      ✕ should update metrics correctly\n    Cross-Browser Compatibility\n      ✕ should work consistently across different user agents\n\n  ● UI Responsiveness Testing › Test Page Load and Basic Structure › should load test page correctly on all viewports\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › Test Page Load and Basic Structure › should display swarm status indicators correctly\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › Responsive Design Validation › should adapt layout correctly for mobile devices\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › Responsive Design Validation › should maintain functionality on tablet viewport\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › CSS Animations and Transitions › should display message animations correctly\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › CSS Animations and Transitions › should show loading states correctly\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › Performance Metrics Display › should update metrics correctly\n\n    socket hang up\n\n\n\n  ● UI Responsiveness Testing › Cross-Browser Compatibility › should work consistently across different user agents\n\n    socket hang up\n\n\n\nTest Suites: 1 failed, 1 total\nTests:       8 failed, 8 total\nSnapshots:   0 total\nTime:        2.798 s\nRan all test suites matching /ui-responsiveness.test.js/i.\n"
+      ],
+      "startTime": "2025-08-24T17:03:47.375Z",
+      "endTime": "2025-08-24T17:03:50.984Z"
+    },
+    {
+      "name": "Chatbot Interface",
+      "file": "chatbot-interface.test.js",
+      "status": "failed",
+      "duration": 1207,
+      "output": "",
+      "errors": [
+        "Jest exited with code 1\\nFAIL ./chatbot-interface.test.js\n  Chatbot Interface Testing\n    Chat Input/Output Functionality\n      ✕ should handle chat message input correctly (1 ms)\n      ✕ should send messages via button and enter key\n      ✕ should display bot responses with proper formatting\n    Test Scenario Buttons\n      ✕ should load and execute all test scenarios\n      ✕ should validate scenario content matches PSD requirements\n    Status Indicators and Metrics\n      ✕ should display swarm status correctly\n      ✕ should update metrics in real-time\n    Options and Interactive Elements\n      ✕ should display and handle option buttons correctly\n      ✕ should maintain conversation history\n    Error Handling and Edge Cases\n      ✕ should handle network errors gracefully\n      ✕ should prevent spam and handle rapid clicks\n\n  ● Chatbot Interface Testing › Chat Input/Output Functionality › should handle chat message input correctly\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Chat Input/Output Functionality › should send messages via button and enter key\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Chat Input/Output Functionality › should display bot responses with proper formatting\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Test Scenario Buttons › should load and execute all test scenarios\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Test Scenario Buttons › should validate scenario content matches PSD requirements\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Status Indicators and Metrics › should display swarm status correctly\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Status Indicators and Metrics › should update metrics in real-time\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Options and Interactive Elements › should display and handle option buttons correctly\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Options and Interactive Elements › should maintain conversation history\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Error Handling and Edge Cases › should handle network errors gracefully\n\n    socket hang up\n\n\n\n  ● Chatbot Interface Testing › Error Handling and Edge Cases › should prevent spam and handle rapid clicks\n\n    socket hang up\n\n\n\nTest Suites: 1 failed, 1 total\nTests:       11 failed, 11 total\nSnapshots:   0 total\nTime:        0.815 s\nRan all test suites matching /chatbot-interface.test.js/i.\n"
+      ],
+      "startTime": "2025-08-24T17:03:52.986Z",
+      "endTime": "2025-08-24T17:03:54.193Z"
+    },
+    {
+      "name": "Admin Panel",
+      "file": "admin-panel.test.js",
+      "status": "failed",
+      "duration": 1198,
+      "output": "",
+      "errors": [
+        "Jest exited with code 1\\nFAIL ./admin-panel.test.js\n  Admin Panel Testing\n    Admin Panel Structure and Loading\n      ✕ should load admin panel correctly\n      ✕ should display correct dashboard metrics\n    Tab Switching Functionality\n      ✕ should switch between all tabs correctly\n    Configuration Management\n      ✕ should handle AI model configuration\n      ✕ should handle swarm configuration settings\n      ✕ should save configurations\n    Business Rules Management\n      ✕ should display and manage blocked patterns\n      ✕ should add new blocked patterns\n      ✕ should manage standard responses\n    Real-time Metrics and Monitoring\n      ✕ should display live conversation data\n      ✕ should show performance statistics\n    Deploy and Management Functions\n      ✕ should handle deploy interface\n      ✕ should handle emergency swarm disable\n    System Integration and Export/Import\n      ✕ should export configuration (1 ms)\n\n  ● Admin Panel Testing › Admin Panel Structure and Loading › should load admin panel correctly\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Admin Panel Structure and Loading › should display correct dashboard metrics\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Tab Switching Functionality › should switch between all tabs correctly\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Configuration Management › should handle AI model configuration\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Configuration Management › should handle swarm configuration settings\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Configuration Management › should save configurations\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Business Rules Management › should display and manage blocked patterns\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Business Rules Management › should add new blocked patterns\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Business Rules Management › should manage standard responses\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Real-time Metrics and Monitoring › should display live conversation data\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Real-time Metrics and Monitoring › should show performance statistics\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Deploy and Management Functions › should handle deploy interface\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › Deploy and Management Functions › should handle emergency swarm disable\n\n    socket hang up\n\n\n\n  ● Admin Panel Testing › System Integration and Export/Import › should export configuration\n\n    socket hang up\n\n\n\nTest Suites: 1 failed, 1 total\nTests:       14 failed, 14 total\nSnapshots:   0 total\nTime:        0.804 s\nRan all test suites matching /admin-panel.test.js/i.\n"
+      ],
+      "startTime": "2025-08-24T17:03:56.194Z",
+      "endTime": "2025-08-24T17:03:57.392Z"
+    },
+    {
+      "name": "Interaction Flow",
+      "file": "interaction-flow.test.js",
+      "status": "failed",
+      "duration": 1226,
+      "output": "",
+      "errors": [
+        "Jest exited with code 1\\nFAIL ./interaction-flow.test.js\n  Interaction Flow Testing\n    Complete User Journey Testing\n      ✕ should complete high-value lead journey successfully\n      ✕ should handle urgent support workflow correctly (1 ms)\n      ✕ should handle pricing inquiry flow\n    Form Validation and Error Handling\n      ✕ should validate empty messages\n      ✕ should handle very long messages\n      ✕ should handle special characters and HTML\n    Loading States and Progress Indicators\n      ✕ should show loading states during message processing\n    Message History and Persistence\n      ✕ should maintain message history throughout session\n      ✕ should scroll to new messages automatically\n\n  ● Interaction Flow Testing › Complete User Journey Testing › should complete high-value lead journey successfully\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Complete User Journey Testing › should handle urgent support workflow correctly\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Complete User Journey Testing › should handle pricing inquiry flow\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Form Validation and Error Handling › should validate empty messages\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Form Validation and Error Handling › should handle very long messages\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Form Validation and Error Handling › should handle special characters and HTML\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Loading States and Progress Indicators › should show loading states during message processing\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Message History and Persistence › should maintain message history throughout session\n\n    socket hang up\n\n\n\n  ● Interaction Flow Testing › Message History and Persistence › should scroll to new messages automatically\n\n    socket hang up\n\n\n\nTest Suites: 1 failed, 1 total\nTests:       9 failed, 9 total\nSnapshots:   0 total\nTime:        0.815 s\nRan all test suites matching /interaction-flow.test.js/i.\n"
+      ],
+      "startTime": "2025-08-24T17:03:59.394Z",
+      "endTime": "2025-08-24T17:04:00.620Z"
+    },
+    {
+      "name": "Performance UI",
+      "file": "performance-ui.test.js",
+      "status": "failed",
+      "duration": 595,
+      "output": "",
+      "errors": [
+        "Jest exited with code 1\\nFAIL ./performance-ui.test.js\n  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    /Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-ui/node_modules/lighthouse/core/index.js:7\n    import Trace from './gather/gatherers/trace.js';\n    ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      2 | const fs = require('fs-extra');\n      3 | const path = require('path');\n    > 4 | const lighthouse = require('lighthouse');\n        |                    ^\n      5 |\n      6 | describe('Performance UI Testing', () => {\n      7 |   let browser;\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n      at Object.require (performance-ui.test.js:4:20)\n\nTest Suites: 1 failed, 1 total\nTests:       0 total\nSnapshots:   0 total\nTime:        0.256 s\nRan all test suites matching /performance-ui.test.js/i.\n"
+      ],
+      "startTime": "2025-08-24T17:04:02.622Z",
+      "endTime": "2025-08-24T17:04:03.217Z"
+    },
+    {
+      "name": "Accessibility",
+      "file": "accessibility.test.js",
+      "status": "failed",
+      "duration": 581,
+      "output": "",
+      "errors": [
+        "Jest exited with code 1\\nFAIL ./accessibility.test.js\n  ● Test suite failed to run\n\n    Cannot find module '@axe-core/puppeteer' from 'accessibility.test.js'\n\n      2 | const fs = require('fs-extra');\n      3 | const path = require('path');\n    > 4 | const { AxePuppeteer } = require('@axe-core/puppeteer');\n        |                          ^\n      5 |\n      6 | describe('Accessibility Testing', () => {\n      7 |   let browser;\n\n      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)\n      at Object.require (accessibility.test.js:4:26)\n\nTest Suites: 1 failed, 1 total\nTests:       0 total\nSnapshots:   0 total\nTime:        0.257 s\nRan all test suites matching /accessibility.test.js/i.\n"
+      ],
+      "startTime": "2025-08-24T17:04:05.219Z",
+      "endTime": "2025-08-24T17:04:05.800Z"
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 0,
+    "failed": 6,
+    "skipped": 0
+  }
+}

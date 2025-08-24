@@ -108,7 +108,65 @@
         border-bottom: none;
         margin-top: 1rem;
     }
-}</style></head>
+}</style><style id="nav-optimized-styles">
+/* Custom styles for optimized navigation */
+.navbar {
+    min-height: 76px;
+}
+
+.dropdown-menu-columns {
+    min-width: 400px;
+}
+
+.dropdown-header {
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.25rem;
+}
+
+.dropdown-item {
+    padding: 0.4rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.25rem;
+}
+
+.badge {
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Mobile optimizations */
+@media (max-width: 991px) {
+    .dropdown-menu-columns {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-columns .row {
+        display: block;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+}
+</style></head>
 <body style="padding-top: 76px;"><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
 <div class="container">
 <a class="navbar-brand fw-bold" href="/">
@@ -149,12 +207,12 @@
 <li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
                             ☁️ Cloud Storage
                         </a></li>
-<li><a class="dropdown-item" href="#backup">
+<li><a class="dropdown-item" href="/pages/backup-automatico.html">
                             💾 Backup Automatico
                         </a></li>
 <li><hr class="dropdown-divider"/></li>
 <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
-<li><a class="dropdown-item" href="#all-inclusive">
+<li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
                             ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
 </a></li>
 </ul>
@@ -165,10 +223,10 @@
                         Settori
                     </a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item" href="#pmi">
+<li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
                             🏢 PMI e Startup
                         </a></li>
-<li><a class="dropdown-item" href="#studi">
+<li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
                             ⚕️ Studi Medici
                         </a></li>
 <li><a class="dropdown-item" href="#commercialisti">
@@ -213,11 +271,17 @@
 </li>
 <!-- Why IT-ERA -->
 <li class="nav-item">
-<a class="nav-link" href="#perche">Perché IT-ERA</a>
+<a class="nav-link" href="/pages/perche-it-era.html">Perché IT-ERA</a>
+</li>
+<!-- Blog -->
+<li class="nav-item">
+<a class="nav-link" href="/blog/">
+                        📝 Blog
+                    </a>
 </li>
 <!-- Contact -->
 <li class="nav-item">
-<a class="nav-link" href="#contatti">Contatti</a>
+<a class="nav-link" href="/pages/contatti.html">Contatti</a>
 </li>
 <!-- Primary CTA Button -->
 <li class="nav-item ms-lg-3">

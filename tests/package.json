@@ -21,11 +21,12 @@
   "author": "IT-ERA Testing Suite",
   "license": "MIT",
   "dependencies": {
-    "jsdom": "^23.0.1",
-    "puppeteer": "^21.5.2",
-    "axios": "^1.6.2"
+    "axios": "^1.6.2",
+    "jsdom": "^23.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "puppeteer": "^24.17.0"
+  },
   "engines": {
     "node": ">=16.0.0"
   }

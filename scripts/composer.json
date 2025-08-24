@@ -1,0 +1,40 @@
+{
+    "name": "it-era/seo-system",
+    "description": "IT-ERA comprehensive SEO indexing and sitemap generation system",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IT-ERA",
+            "email": "info@it-era.it"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "google/apiclient": "^2.0",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ITERA\\SEO\\": "src/"
+        }
+    },
+    "scripts": {
+        "seo:full": "php seo-cron.php --full --verbose",
+        "seo:daily": "php seo-cron.php --daily --verbose",
+        "seo:weekly": "php seo-cron.php --weekly --verbose",
+        "seo:monthly": "php seo-cron.php --monthly --verbose",
+        "sitemap": "php seo-indexer.php --sitemap-only --verbose",
+        "meta": "php meta-generator.php --generate-all --verbose",
+        "schema": "php structured-data-generator.php --generate-all --verbose",
+        "monitor": "php seo-monitor.php --check-all --verbose",
+        "google": "php google-indexing.php --recent=1 --verbose"
+    }
+}

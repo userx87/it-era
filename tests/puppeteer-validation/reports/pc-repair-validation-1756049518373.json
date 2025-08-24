@@ -1,0 +1,204 @@
+{
+  "timestamp": "2025-08-24T15:31:26.806Z",
+  "testResults": [
+    {
+      "testName": "Hero Section Visual",
+      "status": "passed",
+      "issues": [],
+      "screenshots": []
+    },
+    {
+      "testName": "Navigation Menu",
+      "status": "warning",
+      "issues": [
+        "Error testing Clienti dropdown: No element found for selector: [data-bs-toggle=\"dropdown\"]:nth-of-type(2)",
+        "Error testing Zone Coperte dropdown: No element found for selector: [data-bs-toggle=\"dropdown\"]:nth-of-type(3)"
+      ],
+      "screenshots": []
+    },
+    {
+      "testName": "Content Validation",
+      "status": "failed",
+      "issues": [
+        "Found 3 instances of \"gratuito\" text"
+      ],
+      "screenshots": []
+    },
+    {
+      "testName": "Pricing Section",
+      "status": "passed",
+      "issues": [],
+      "screenshots": []
+    },
+    {
+      "testName": "Chatbot Functionality",
+      "status": "passed",
+      "issues": [],
+      "screenshots": []
+    },
+    {
+      "testName": "Contact Form",
+      "status": "passed",
+      "issues": [],
+      "screenshots": []
+    },
+    {
+      "testName": "Mobile Responsive",
+      "status": "warning",
+      "issues": [
+        "Pricing cards too wide for iPhone SE viewport",
+        "Pricing cards too wide for iPhone 11 Pro Max viewport"
+      ],
+      "screenshots": []
+    },
+    {
+      "testName": "Performance & Core Web Vitals",
+      "status": "passed",
+      "issues": [],
+      "screenshots": []
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "hero-section",
+      "description": "Hero section with title, badges and CTA buttons",
+      "filename": "1756049489042_hero-section.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049489042_hero-section.png",
+      "timestamp": "2025-08-24T15:31:29.221Z"
+    },
+    {
+      "name": "navigation-menu",
+      "description": "Navigation menu with all dropdowns",
+      "filename": "1756049490239_navigation-menu.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049490239_navigation-menu.png",
+      "timestamp": "2025-08-24T15:31:30.407Z"
+    },
+    {
+      "name": "dropdown-services",
+      "description": "Services dropdown menu opened",
+      "filename": "1756049491985_dropdown-services.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049491985_dropdown-services.png",
+      "timestamp": "2025-08-24T15:31:32.152Z"
+    },
+    {
+      "name": "pricing-section",
+      "description": "Pricing section with all three plans",
+      "filename": "1756049495665_pricing-section.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049495665_pricing-section.png",
+      "timestamp": "2025-08-24T15:31:35.840Z"
+    },
+    {
+      "name": "chatbot-closed",
+      "description": "Chatbot toggle button visible",
+      "filename": "1756049497852_chatbot-closed.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049497852_chatbot-closed.png",
+      "timestamp": "2025-08-24T15:31:38.014Z"
+    },
+    {
+      "name": "chatbot-open",
+      "description": "Chatbot window opened with welcome message",
+      "filename": "1756049499035_chatbot-open.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049499035_chatbot-open.png",
+      "timestamp": "2025-08-24T15:31:39.215Z"
+    },
+    {
+      "name": "chatbot-conversation",
+      "description": "Chatbot conversation with user message and bot response",
+      "filename": "1756049501759_chatbot-conversation.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049501759_chatbot-conversation.png",
+      "timestamp": "2025-08-24T15:31:41.958Z"
+    },
+    {
+      "name": "contact-form",
+      "description": "Contact form section",
+      "filename": "1756049504474_contact-form.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049504474_contact-form.png",
+      "timestamp": "2025-08-24T15:31:44.655Z"
+    },
+    {
+      "name": "contact-form-filled",
+      "description": "Contact form filled with test data",
+      "filename": "1756049504711_contact-form-filled.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049504711_contact-form-filled.png",
+      "timestamp": "2025-08-24T15:31:44.898Z"
+    },
+    {
+      "name": "contact-form-success",
+      "description": "Contact form submitted successfully",
+      "filename": "1756049507908_contact-form-success.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049507908_contact-form-success.png",
+      "timestamp": "2025-08-24T15:31:48.085Z"
+    },
+    {
+      "name": "mobile-iphone-se",
+      "description": "Page at iPhone SE viewport (375x667)",
+      "filename": "1756049510091_mobile-iphone-se.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049510091_mobile-iphone-se.png",
+      "timestamp": "2025-08-24T15:31:50.209Z"
+    },
+    {
+      "name": "mobile-menu-iphone-se",
+      "description": "Mobile navigation menu at iPhone SE",
+      "filename": "1756049511227_mobile-menu-iphone-se.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049511227_mobile-menu-iphone-se.png",
+      "timestamp": "2025-08-24T15:31:51.343Z"
+    },
+    {
+      "name": "mobile-ipad",
+      "description": "Page at iPad viewport (768x1024)",
+      "filename": "1756049512866_mobile-ipad.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049512866_mobile-ipad.png",
+      "timestamp": "2025-08-24T15:31:53.014Z"
+    },
+    {
+      "name": "mobile-iphone-11-pro-max",
+      "description": "Page at iPhone 11 Pro Max viewport (414x896)",
+      "filename": "1756049514019_mobile-iphone-11-pro-max.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049514019_mobile-iphone-11-pro-max.png",
+      "timestamp": "2025-08-24T15:31:54.144Z"
+    },
+    {
+      "name": "mobile-menu-iphone-11-pro-max",
+      "description": "Mobile navigation menu at iPhone 11 Pro Max",
+      "filename": "1756049515158_mobile-menu-iphone-11-pro-max.png",
+      "filepath": "/Users/andreapanzeri/progetti/IT-ERA/tests/puppeteer-validation/screenshots/1756049515158_mobile-menu-iphone-11-pro-max.png",
+      "timestamp": "2025-08-24T15:31:55.278Z"
+    }
+  ],
+  "performance": {
+    "metrics": {
+      "Timestamp": 538892.800739,
+      "Documents": 12,
+      "Frames": 5,
+      "JSEventListeners": 72,
+      "Nodes": 2871,
+      "LayoutCount": 305,
+      "RecalcStyleCount": 741,
+      "LayoutDuration": 0.106973,
+      "RecalcStyleDuration": 0.102901,
+      "ScriptDuration": 0.017379,
+      "TaskDuration": 0.53286,
+      "JSHeapUsedSize": 2697780,
+      "JSHeapTotalSize": 3932160
+    },
+    "webVitals": {
+      "domContentLoaded": 0,
+      "loadComplete": 0.20000004768371582,
+      "firstPaint": 32,
+      "firstContentfulPaint": 32,
+      "resourceCount": 4
+    },
+    "timestamp": "2025-08-24T15:31:57.361Z"
+  },
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "totalTests": 8,
+    "passedTests": 5,
+    "failedTests": 1,
+    "warningTests": 2,
+    "totalScreenshots": 15,
+    "totalErrors": 0,
+    "totalWarnings": 0
+  }
+}

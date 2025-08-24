@@ -1,7 +1,6 @@
 {
   "status": "commited",
-  "type": "backend",
+  "type": "frontend",
   "scope": "codebase",
-  "localEndpoint": "http://localhost:5173",
-  "backendAuthType": "public"
+  "localEndpoint": "http://localhost:8788"
 }

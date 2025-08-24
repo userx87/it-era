@@ -2,10 +2,17 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.bulltech.it/sitemap.xml
+Sitemap: https://www.it-era.it/sitemap.xml
+
+# Blog specific rules
+Allow: /blog/
+Allow: /blog/*
+Allow: /api/blog/public/
 
 # Directories to exclude (private areas, admin, temp files)
 Disallow: /admin/
+Disallow: /api/blog/admin/
+Disallow: /api/blog/auth/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /cache/

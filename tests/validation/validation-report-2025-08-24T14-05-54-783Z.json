@@ -1,0 +1,770 @@
+{
+  "summary": {
+    "totalPages": 10,
+    "passedPages": 2,
+    "failedPages": 8,
+    "issues": []
+  },
+  "pageResults": {
+    "assistenza-it-milano.html": {
+      "pageName": "assistenza-it-milano.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 30,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 971,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533633.58119,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 51,
+          "RecalcStyleCount": 66,
+          "LayoutDuration": 0.021707,
+          "RecalcStyleDuration": 0.014181,
+          "ScriptDuration": 0.006834,
+          "TaskDuration": 0.098448,
+          "JSHeapUsedSize": 1847792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 72
+    },
+    "assistenza-it-monza.html": {
+      "pageName": "assistenza-it-monza.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-monza#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-monza#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-monza#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-monza#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-monza#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-monza#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 801,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533643.327469,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 60,
+          "LayoutDuration": 0.016485,
+          "RecalcStyleDuration": 0.007808,
+          "ScriptDuration": 0.002502,
+          "TaskDuration": 0.05771,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-bergamo.html": {
+      "pageName": "assistenza-it-bergamo.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 20,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bergamo#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bergamo#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bergamo#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bergamo#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 992,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533653.208016,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 51,
+          "RecalcStyleCount": 61,
+          "LayoutDuration": 0.020609,
+          "RecalcStyleDuration": 0.008181,
+          "ScriptDuration": 0.002521,
+          "TaskDuration": 0.064643,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 70
+    },
+    "assistenza-it-como.html": {
+      "pageName": "assistenza-it-como.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-como#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-como#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-como#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-como#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-como#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-como#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 992,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533663.443789,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 60,
+          "LayoutDuration": 0.017027,
+          "RecalcStyleDuration": 0.007884,
+          "ScriptDuration": 0.002463,
+          "TaskDuration": 0.054885,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-lecco.html": {
+      "pageName": "assistenza-it-lecco.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lecco#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lecco#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lecco#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lecco#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lecco#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lecco#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 993,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533673.605336,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 60,
+          "LayoutDuration": 0.017304,
+          "RecalcStyleDuration": 0.007509,
+          "ScriptDuration": 0.002343,
+          "TaskDuration": 0.05552,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-vimercate.html": {
+      "pageName": "assistenza-it-vimercate.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-vimercate#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-vimercate#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-vimercate#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-vimercate#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-vimercate#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-vimercate#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 989,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533683.812669,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 51,
+          "RecalcStyleCount": 61,
+          "LayoutDuration": 0.018837,
+          "RecalcStyleDuration": 0.008054,
+          "ScriptDuration": 0.002545,
+          "TaskDuration": 0.061589,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-seregno.html": {
+      "pageName": "assistenza-it-seregno.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-seregno#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-seregno#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-seregno#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-seregno#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-seregno#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-seregno#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 993,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533693.759243,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 60,
+          "LayoutDuration": 0.016506,
+          "RecalcStyleDuration": 0.007493,
+          "ScriptDuration": 0.002421,
+          "TaskDuration": 0.055022,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-lissone.html": {
+      "pageName": "assistenza-it-lissone.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lissone#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lissone#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lissone#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lissone#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lissone#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-lissone#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 993,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533703.97858,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 58,
+          "LayoutDuration": 0.017991,
+          "RecalcStyleDuration": 0.007082,
+          "ScriptDuration": 0.002114,
+          "TaskDuration": 0.052276,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-dalmine.html": {
+      "pageName": "assistenza-it-dalmine.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-dalmine#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-dalmine#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-dalmine#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-dalmine#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-dalmine#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-dalmine#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 581,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533713.758997,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 59,
+          "LayoutDuration": 0.015404,
+          "RecalcStyleDuration": 0.006943,
+          "ScriptDuration": 0.002061,
+          "TaskDuration": 0.048053,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    },
+    "assistenza-it-bollate.html": {
+      "pageName": "assistenza-it-bollate.html",
+      "scores": {
+        "placeholders": 100,
+        "forms": 100,
+        "mobile": 0,
+        "performance": 100,
+        "links": 0,
+        "seo": 100
+      },
+      "issues": [
+        {
+          "type": "MOBILE_TEST_ERROR",
+          "message": "Failed to test mobile responsiveness: page.waitForTimeout is not a function"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bollate#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/sicurezza-informatica-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/cloud-storage-milano.html\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bollate#backup\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bollate#all-inclusive\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bollate#\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bollate#pmi\" returns 304"
+        },
+        {
+          "type": "BROKEN_INTERNAL_LINK",
+          "message": "Internal link \"https://it-era.pages.dev/pages/assistenza-it-bollate#studi\" returns 304"
+        }
+      ],
+      "details": {
+        "loadTime": 586,
+        "cityName": "Milano",
+        "metrics": {
+          "Timestamp": 533722.377566,
+          "Documents": 11,
+          "Frames": 5,
+          "JSEventListeners": 21,
+          "Nodes": 1666,
+          "LayoutCount": 49,
+          "RecalcStyleCount": 58,
+          "LayoutDuration": 0.016131,
+          "RecalcStyleDuration": 0.007889,
+          "ScriptDuration": 0.0024,
+          "TaskDuration": 0.054247,
+          "JSHeapUsedSize": 1848792,
+          "JSHeapTotalSize": 2883584
+        },
+        "internalLinksCount": 42
+      },
+      "overallScore": 67
+    }
+  }
+}

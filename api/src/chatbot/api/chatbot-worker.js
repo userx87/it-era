@@ -4,18 +4,29 @@
  * and intelligent lead qualification system
  */
 
-import AIIntegrationEngine from '../../ai-engine/ai-integration.js';
+import OpenRouterEngine from '../../ai-engine/openrouter-engine.js';
 import ConversationDesigner from '../../conversation-flows/conversation-designer.js';
-import { ITERAKnowledgeBase, KnowledgeUtils } from '../../knowledge-base/it-era-knowledge.js';
+import { AIConfig, getModelConfig, shouldEscalateConversation, calculateLeadPriority, selectHybridModel } from '../../ai-engine/ai-config.js';
+import aiAnalytics from '../../ai-engine/ai-analytics.js';
+import hybridModelSelector from '../../ai-engine/hybrid-model-selector.js';
+import hybridPerformanceMonitor from '../../ai-engine/hybrid-performance-monitor.js';
+// Import updated knowledge base with real IT-ERA data
+import { ITERAKnowledgeBase, KnowledgeUtils } from '../../knowledge-base/it-era-knowledge-real.js';
+// Import Teams webhook integration
+import teamsWebhook from './teams-webhook.js';
 
 const CONFIG = {
-  // AI Settings
-  AI_PROVIDER: 'openai', // 'openai' or 'anthropic'
-  AI_MODEL: 'gpt-4o-mini', // Cost-effective model
-  AI_MAX_TOKENS: 150,
-  AI_TEMPERATURE: 0.7,
-  AI_COST_LIMIT: 0.10, // $0.10 per conversation
-  AI_CACHE_TTL: 3600, // 1 hour response cache
+  // Hybrid AI Settings (Updated Strategy)
+  AI_MODEL: AIConfig.OPENROUTER.MODELS.PRIMARY, // GPT-4o Mini
+  AI_FALLBACK_MODEL: AIConfig.OPENROUTER.MODELS.SECONDARY, // DeepSeek
+  AI_EMERGENCY_MODEL: AIConfig.OPENROUTER.MODELS.FALLBACK, // Claude Haiku
+  AI_MAX_TOKENS: AIConfig.RESPONSE.MAX_TOKENS,
+  AI_TEMPERATURE: AIConfig.RESPONSE.TEMPERATURE,
+  AI_COST_LIMIT: AIConfig.OPENROUTER.COST_LIMITS.PER_SESSION, // €0.040
+  AI_CACHE_TTL: AIConfig.CACHE.TTL_SECONDS,
+  // Hybrid Strategy Settings
+  HYBRID_ENABLED: AIConfig.OPENROUTER.HYBRID_STRATEGY.ENABLED,
+  TARGET_RESPONSE_TIME: AIConfig.OPENROUTER.HYBRID_STRATEGY.TARGET_RESPONSE_TIME_MS,
   
   // Enhanced Chat settings
   MAX_SESSION_DURATION: 3600, // 1 hour for AI conversations
@@ -54,23 +65,28 @@ function generateSessionId() {
   return `chat_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 }
 
-// Initialize AI and Conversation systems
-let aiEngine = null;
+// Initialize Hybrid AI System
+let openRouterEngine = null;
 let conversationDesigner = null;
+let hybridInitialized = false;
 
-// Initialize AI systems
+// Initialize AI systems with Hybrid Strategy
 async function initializeAI(env) {
-  if (!aiEngine) {
-    aiEngine = new AIIntegrationEngine({
-      provider: CONFIG.AI_PROVIDER,
-      model: CONFIG.AI_MODEL,
+  if (!openRouterEngine) {
+    openRouterEngine = new OpenRouterEngine({
+      model: CONFIG.AI_MODEL, // GPT-4o Mini
+      fallbackModel: CONFIG.AI_FALLBACK_MODEL, // DeepSeek
+      emergencyModel: CONFIG.AI_EMERGENCY_MODEL, // Claude Haiku
       maxTokens: CONFIG.AI_MAX_TOKENS,
       temperature: CONFIG.AI_TEMPERATURE,
       costLimit: CONFIG.AI_COST_LIMIT,
-      language: 'italian'
+      cacheTTL: CONFIG.AI_CACHE_TTL,
+      language: 'italian',
+      hybridEnabled: CONFIG.HYBRID_ENABLED
     });
     
-    await aiEngine.initializeProvider(env);
+    await openRouterEngine.initialize(env);
+    console.log('✅ Hybrid OpenRouter Engine initialized');
   }
   
   if (!conversationDesigner) {
@@ -82,7 +98,14 @@ async function initializeAI(env) {
     });
   }
   
-  return { aiEngine, conversationDesigner };
+  // Start hybrid performance monitoring
+  if (CONFIG.HYBRID_ENABLED && !hybridInitialized) {
+    hybridPerformanceMonitor.startMonitoring(30000); // Monitor every 30 seconds
+    hybridInitialized = true;
+    console.log('📊 Hybrid Performance Monitor started');
+  }
+  
+  return { aiEngine: openRouterEngine, conversationDesigner };
 }
 
 // Enhanced AI-powered intent recognition
@@ -130,11 +153,12 @@ function fallbackIntentClassification(message) {
   return { intent: 'generale', confidence: 0.5, escalate: false };
 }
 
-// Enhanced AI-powered response generation
+// Enhanced AI-powered response generation with analytics
 async function generateResponse(message, context = {}, env) {
+  const sessionId = context.sessionId || 'unknown';
+  const startTime = Date.now();
+  
   try {
-    const sessionId = context.sessionId || 'unknown';
-    
     // Initialize AI systems
     const { aiEngine, conversationDesigner } = await initializeAI(env);
     
@@ -150,30 +174,72 @@ async function generateResponse(message, context = {}, env) {
       
       try {
         const aiResponse = await Promise.race([aiPromise, timeoutPromise]);
+        aiResponse.responseTime = Date.now() - startTime;
+        
+        // Track hybrid performance
+        const modelUsed = aiResponse.model || CONFIG.AI_MODEL;
+        const responseSuccess = !aiResponse.error && responseTime < CONFIG.TARGET_RESPONSE_TIME * 2;
+        
+        // Track AI request success
+        aiAnalytics.trackAIRequest(sessionId, { message, context }, aiResponse);
+        
+        // Track hybrid performance metrics
+        if (CONFIG.HYBRID_ENABLED) {
+          hybridPerformanceMonitor.trackRequest(
+            modelUsed, 
+            responseTime, 
+            aiResponse.cost || 0, 
+            responseSuccess,
+            { sessionId, message: message.substring(0, 50), error: aiResponse.error }
+          );
+        }
         
         // Process through conversation designer
         const flowResponse = await conversationDesigner.processMessage(
           message, context, aiResponse
         );
         
+        // Enhanced response with lead qualification
+        const enhancedResponse = enhanceResponseWithLeadData(flowResponse, context);
+        
         return {
-          ...flowResponse,
+          ...enhancedResponse,
           aiPowered: true,
           cost: aiResponse.cost || 0,
-          cached: aiResponse.cached || false
+          cached: aiResponse.cached || false,
+          responseTime: aiResponse.responseTime
         };
         
       } catch (aiError) {
         console.warn('AI generation failed, using fallback:', aiError);
-        return await generateFallbackResponse(message, context, conversationDesigner);
+        
+        // Track AI request failure
+        aiAnalytics.trackAIRequest(sessionId, { message, context }, null, aiError);
+        
+        // Track hybrid performance failure
+        if (CONFIG.HYBRID_ENABLED) {
+          hybridPerformanceMonitor.trackRequest(
+            CONFIG.AI_MODEL, 
+            Date.now() - startTime, 
+            0, 
+            false,
+            { sessionId, error: aiError.message }
+          );
+        }
+        
+        return await generateFallbackResponse(message, context, conversationDesigner, startTime);
       }
     } else {
       // Use conversation flows only
-      return await generateFallbackResponse(message, context, conversationDesigner);
+      return await generateFallbackResponse(message, context, conversationDesigner, startTime);
     }
     
   } catch (error) {
     console.error('Response generation error:', error);
+    
+    // Track system error
+    aiAnalytics.trackAIRequest(sessionId, { message, context }, null, error);
+    
     return getEmergencyFallbackResponse();
   }
 }
@@ -196,21 +262,55 @@ async function generateAIResponse(message, context, aiEngine, sessionId) {
 }
 
 // Generate fallback response using conversation flows
-async function generateFallbackResponse(message, context, conversationDesigner) {
+async function generateFallbackResponse(message, context, conversationDesigner, startTime = Date.now()) {
   const response = await conversationDesigner.processMessage(message, context);
   
   return {
     ...response,
     aiPowered: false,
     fallbackUsed: true,
-    cost: 0
+    cost: 0,
+    responseTime: Date.now() - startTime
   };
 }
 
-// Determine if AI should be used
+// Enhance response with lead qualification data
+function enhanceResponseWithLeadData(response, context) {
+  const enhanced = { ...response };
+  
+  // Add lead priority calculation if we have lead data
+  if (context.leadData) {
+    const priority = calculateLeadPriority(context.leadData, context);
+    enhanced.leadPriority = priority;
+    
+    // Track the lead
+    const qualified = priority === 'high' || priority === 'immediate';
+    aiAnalytics.trackLead(context.sessionId, context.leadData, priority, qualified);
+  }
+  
+  // Check for automatic escalation based on new rules
+  const escalationCheck = shouldEscalateConversation(context, response.message || '');
+  if (escalationCheck.escalate && !enhanced.escalate) {
+    enhanced.escalate = true;
+    enhanced.escalationType = escalationCheck.reason;
+    enhanced.priority = escalationCheck.priority;
+    
+    // Track escalation
+    aiAnalytics.trackEscalation(
+      context.sessionId, 
+      escalationCheck.reason, 
+      escalationCheck.priority, 
+      'auto_escalation_rule'
+    );
+  }
+  
+  return enhanced;
+}
+
+// Determine if AI should be used (updated for OpenRouter)
 function shouldUseAI(context, env) {
-  // Don't use AI if no API keys
-  if (!env.OPENAI_API_KEY && !env.ANTHROPIC_API_KEY) {
+  // Don't use AI if no OpenRouter API key
+  if (!env.OPENROUTER_API_KEY) {
     return false;
   }
   
@@ -290,37 +390,137 @@ async function checkRateLimit(ip, CHAT_SESSIONS) {
   return true;
 }
 
-// Integrazione con sistema email
-async function sendToEmailSystem(leadData) {
+// Enhanced email integration with AI context
+async function sendToEmailSystem(leadData, conversationContext = {}) {
   try {
+    // Build comprehensive email data with AI insights
     const emailData = {
-      nome: leadData.nome || 'Lead da Chat',
+      // Basic lead information
+      nome: leadData.contact_name || leadData.nome || 'Lead da Chat AI',
       email: leadData.email || '',
-      telefono: leadData.telefono || '',
-      azienda: leadData.azienda || '',
-      comune: leadData.comune || '',
-      dipendenti: leadData.dipendenti || '',
-      servizi: leadData.servizi || [],
-      urgenza: leadData.urgenza || 'normale',
-      messaggio: leadData.messaggio || '',
-      formType: 'chatbot-lead',
-      privacy: true // Consenso dato in chat
+      telefono: leadData.phone || leadData.telefono || '',
+      azienda: leadData.company_name || leadData.azienda || '',
+      comune: leadData.location || leadData.comune || '',
+      dipendenti: leadData.company_size || leadData.dipendenti || '',
+      
+      // Service information
+      servizi: Array.isArray(leadData.servizi) ? leadData.servizi : 
+               leadData.service_type ? [leadData.service_type] : [],
+      urgenza: leadData.urgency || leadData.urgenza || 'normale',
+      
+      // Enhanced message with conversation insights
+      messaggio: buildEnhancedMessage(leadData, conversationContext),
+      
+      // AI-specific metadata
+      formType: 'ai-chatbot-lead',
+      privacy: true,
+      aiGenerated: true,
+      conversationId: conversationContext.sessionId,
+      leadQuality: conversationContext.leadQuality || 'medium',
+      escalationReason: conversationContext.escalationReason || 'completed_qualification',
+      conversationSummary: conversationContext.conversationSummary || {},
+      timestamp: new Date().toISOString()
     };
+    
+    // Add AI conversation metrics
+    if (conversationContext.aiMetrics) {
+      emailData.aiMetrics = {
+        totalCost: conversationContext.totalCost || 0,
+        responseTime: conversationContext.averageResponseTime || 0,
+        messageCount: conversationContext.messageCount || 0,
+        aiConfidence: conversationContext.averageConfidence || 0
+      };
+    }
     
     const response = await fetch(CONFIG.EMAIL_API_ENDPOINT, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'User-Agent': 'IT-ERA-AI-Chatbot/1.0'
       },
       body: JSON.stringify(emailData)
     });
     
     const result = await response.json();
-    return { success: response.ok, data: result };
+    
+    return { 
+      success: response.ok, 
+      data: result,
+      emailData: emailData // Include for debugging
+    };
     
   } catch (error) {
-    console.error('Email integration error:', error);
+    console.error('Enhanced email integration error:', error);
     return { success: false, error: error.message };
+  }
+}
+
+// Build enhanced message with conversation context
+function buildEnhancedMessage(leadData, context) {
+  let message = leadData.messaggio || leadData.message || '';
+  
+  // Add conversation context
+  if (context.sessionId) {
+    message += `\n\n--- Informazioni Conversazione AI ---\n`;
+    message += `Sessione: ${context.sessionId}\n`;
+    message += `Messaggi scambiati: ${context.messageCount || 0}\n`;
+    
+    if (context.leadQuality) {
+      message += `Qualità lead: ${context.leadQuality}\n`;
+    }
+    
+    if (context.escalationReason) {
+      message += `Motivo escalation: ${context.escalationReason}\n`;
+    }
+    
+    if (leadData.budget_range) {
+      message += `Budget indicativo: ${leadData.budget_range}\n`;
+    }
+    
+    if (leadData.timeline) {
+      message += `Timeline progetto: ${leadData.timeline}\n`;
+    }
+    
+    if (leadData.sector) {
+      message += `Settore: ${leadData.sector}\n`;
+    }
+  }
+  
+  return message;
+}
+
+// Calculate average response time for metrics
+function calculateAverageResponseTime(messages) {
+  const botMessages = messages.filter(m => m.type === 'bot' && m.responseTime);
+  if (botMessages.length === 0) return 0;
+  
+  const totalTime = botMessages.reduce((sum, msg) => sum + (msg.responseTime || 0), 0);
+  return Math.round(totalTime / botMessages.length);
+}
+
+// Session cleanup for AI data
+async function cleanupAISession(sessionId, CHAT_SESSIONS) {
+  try {
+    const session = await CHAT_SESSIONS.get(sessionId);
+    if (!session) return;
+    
+    const sessionData = JSON.parse(session);
+    
+    // Log final metrics
+    if (sessionData.context) {
+      console.log(`Session ${sessionId} completed:`, {
+        messageCount: sessionData.context.messageCount,
+        totalCost: sessionData.context.totalCost,
+        averageResponseTime: sessionData.context.averageResponseTime,
+        escalated: !!sessionData.escalation
+      });
+    }
+    
+    // Clean up the session
+    await CHAT_SESSIONS.delete(sessionId);
+    
+  } catch (error) {
+    console.error('Session cleanup error:', error);
   }
 }
 
@@ -330,16 +530,134 @@ export default {
     const url = new URL(request.url);
     const origin = request.headers.get('Origin') || '';
     
-    // Health check
+    // Health check with Hybrid AI system status
     if (url.pathname === '/health') {
+      let aiHealthy = false;
+      let aiStatus = 'not_initialized';
+      let hybridStatus = { status: 'disabled' };
+      
+      try {
+        if (openRouterEngine) {
+          const healthCheck = await openRouterEngine.healthCheck();
+          aiHealthy = healthCheck.status === 'healthy';
+          aiStatus = healthCheck.status;
+        }
+        
+        if (CONFIG.HYBRID_ENABLED) {
+          hybridStatus = hybridPerformanceMonitor.healthCheck();
+        }
+      } catch (error) {
+        aiStatus = 'error';
+      }
+      
       return new Response(JSON.stringify({
-        status: 'ok',
-        service: 'IT-ERA Chatbot API',
+        status: aiHealthy ? 'ok' : 'degraded',
+        service: 'IT-ERA Chatbot API (Hybrid)',
         provider: 'Cloudflare Workers',
+        ai: {
+          engine: 'OpenRouter_Hybrid',
+          status: aiStatus,
+          strategy: 'GPT-4o Mini + DeepSeek v3.1',
+          primaryModel: CONFIG.AI_MODEL,
+          fallbackModel: CONFIG.AI_FALLBACK_MODEL,
+          hybridEnabled: CONFIG.HYBRID_ENABLED,
+          targetCost: `€${CONFIG.AI_COST_LIMIT}`,
+          targetResponseTime: `${CONFIG.TARGET_RESPONSE_TIME}ms`
+        },
+        hybrid: hybridStatus,
         timestamp: new Date().toISOString()
       }), {
         headers: { 'Content-Type': 'application/json' },
       });
+    }
+    
+    // Enhanced Analytics endpoint with Hybrid metrics
+    if (url.pathname === '/analytics' && request.method === 'GET') {
+      try {
+        const report = aiAnalytics.getAnalyticsReport('today');
+        const hybridReport = CONFIG.HYBRID_ENABLED ? 
+          hybridPerformanceMonitor.getPerformanceReport() : 
+          { status: 'disabled' };
+        const engineStats = openRouterEngine ? 
+          openRouterEngine.getUsageStats() : 
+          { status: 'not_initialized' };
+        
+        return new Response(JSON.stringify({
+          success: true,
+          analytics: {
+            traditional: report,
+            hybrid: hybridReport,
+            engine: engineStats
+          },
+          performance: {
+            hybridEnabled: CONFIG.HYBRID_ENABLED,
+            targets: {
+              costPerConversation: CONFIG.AI_COST_LIMIT,
+              responseTimeMs: CONFIG.TARGET_RESPONSE_TIME
+            }
+          },
+          generated: new Date().toISOString()
+        }), {
+          headers: { 'Content-Type': 'application/json' },
+        });
+      } catch (error) {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Analytics not available',
+          message: error.message
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+    }
+    
+    // Hybrid Performance Dashboard endpoint
+    if (url.pathname === '/hybrid-dashboard' && request.method === 'GET') {
+      try {
+        if (!CONFIG.HYBRID_ENABLED) {
+          return new Response(JSON.stringify({
+            success: false,
+            error: 'Hybrid strategy not enabled'
+          }), {
+            status: 404,
+            headers: { 'Content-Type': 'application/json' },
+          });
+        }
+        
+        const hybridReport = hybridPerformanceMonitor.getPerformanceReport();
+        const strategyStatus = hybridModelSelector.getStrategyStatus();
+        
+        return new Response(JSON.stringify({
+          success: true,
+          dashboard: {
+            performance: hybridReport,
+            strategy: strategyStatus,
+            models: {
+              primary: { name: CONFIG.AI_MODEL, type: 'customer_chat' },
+              secondary: { name: CONFIG.AI_FALLBACK_MODEL, type: 'technical_docs' },
+              emergency: { name: CONFIG.AI_EMERGENCY_MODEL, type: 'fallback' }
+            },
+            targets: {
+              costPerConversation: CONFIG.AI_COST_LIMIT,
+              responseTimeMs: CONFIG.TARGET_RESPONSE_TIME,
+              description: 'GPT-4o Mini for customer chat, DeepSeek for technical content'
+            }
+          },
+          generated: new Date().toISOString()
+        }), {
+          headers: { 'Content-Type': 'application/json' },
+        });
+      } catch (error) {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Hybrid dashboard not available',
+          message: error.message
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
     }
     
     // CORS preflight
@@ -405,7 +723,11 @@ export default {
           content: response.message,
           options: response.options,
           timestamp: Date.now(),
-          aiPowered: response.aiPowered
+          aiPowered: response.aiPowered,
+          // Hybrid metrics
+          hybridEnabled: CONFIG.HYBRID_ENABLED,
+          model: response.model || CONFIG.AI_MODEL,
+          modelReason: response.modelReason || 'default'
         });
         
         session.step = response.nextStep;
@@ -460,7 +782,12 @@ export default {
           timestamp: Date.now(),
           aiPowered: response.aiPowered,
           responseTime,
-          cost: response.cost || 0
+          cost: response.cost || 0,
+          // Hybrid information
+          hybridEnabled: CONFIG.HYBRID_ENABLED,
+          model: response.model || CONFIG.AI_MODEL,
+          modelReason: response.modelReason || 'default',
+          hybridOptimal: response.cost <= CONFIG.AI_COST_LIMIT && responseTime <= CONFIG.TARGET_RESPONSE_TIME
         });
         
         // Update session with new context and response data
@@ -473,7 +800,7 @@ export default {
           averageResponseTime: calculateAverageResponseTime(session.messages)
         };
         
-        // Handle escalation if required
+        // Handle escalation if required - with Teams notification
         if (response.escalate || response.escalationRequired) {
           session.escalation = {
             required: true,
@@ -484,6 +811,19 @@ export default {
             conversationSummary: conversationDesigner ? 
                                conversationDesigner.getConversationSummary(session.context) : {}
           };
+          
+          // Send Teams notification for escalation
+          const teamsWebhookUrl = env.TEAMS_WEBHOOK_URL || "https://bulltechit.webhook.office.com/webhookb2/621e560e-86d9-478c-acfc-496624a88b79@f6ba30ad-37c0-41bf-a994-e434c59b4b2a/IncomingWebhook/fb2b1700f71c4806bdcbf0fc873952d0/c0aa99b7-8edb-41b4-b139-0ec4dd7864d5/V2l2_rh4MbAzeQQ4SpDifcMFLsktri3ocfMcQGZ6OHUmI1";
+          
+          if (teamsWebhookUrl && globalThis.TeamsWebhook) {
+            try {
+              const leadData = globalThis.TeamsWebhook.collectLeadData(session.context, { message });
+              await globalThis.TeamsWebhook.sendTeamsNotification(leadData, teamsWebhookUrl);
+              console.log('Teams notification sent for escalation');
+            } catch (error) {
+              console.error('Failed to send Teams notification:', error);
+            }
+          }
           
           // If high priority, prepare for immediate handoff
           if (response.priority === 'high' || response.priority === 'immediate') {
@@ -518,13 +858,19 @@ export default {
           cost: response.cost || 0
         };
         
-        // Add debug info in development
+        // Add debug info in development (Enhanced with Hybrid data)
         if (env.NODE_ENV === 'development') {
           responseData.debug = {
             contextStep: session.context.currentStep,
             messageCount: session.context.messageCount,
             totalCost: session.context.totalCost,
-            leadData: session.context.leadData
+            leadData: session.context.leadData,
+            // Hybrid debug info
+            hybridStrategy: CONFIG.HYBRID_ENABLED,
+            selectedModel: response.model,
+            modelSelection: response.modelReason,
+            costEfficient: response.cost <= CONFIG.AI_COST_LIMIT,
+            performanceTarget: responseTime <= CONFIG.TARGET_RESPONSE_TIME
           };
         }
         
@@ -533,34 +879,109 @@ export default {
         });
       }
       
-      if (action === 'email_handoff') {
-        // Handoff al sistema email
-        const emailResult = await sendToEmailSystem(data.leadData);
+      if (action === 'email_handoff' || action === 'escalate') {
+        // Enhanced handoff to email system with AI context
+        const leadData = data.leadData || session.context.leadData || {};
+        
+        // Prepare conversation context for handoff
+        const conversationContext = {
+          sessionId: session.id,
+          messageCount: session.context.messageCount || 0,
+          totalCost: session.context.totalCost || 0,
+          averageResponseTime: session.context.averageResponseTime || 0,
+          escalationReason: session.escalation?.reason || data.escalationReason || 'user_request',
+          leadQuality: session.escalation?.priority || 'medium',
+          conversationSummary: session.escalation?.conversationSummary || {},
+          aiMetrics: true
+        };
+        
+        const emailResult = await sendToEmailSystem(leadData, conversationContext);
         
         if (emailResult.success) {
-          session.leadData = data.leadData;
+          // Track conversion
+          aiAnalytics.trackConversion(session.id, 'email_handoff', 0);
+          
+          // Update session with handoff data
+          session.leadData = leadData;
           session.emailSent = true;
+          session.handoffTimestamp = Date.now();
           session.ticketId = emailResult.data.ticketId;
+          session.escalation = {
+            ...session.escalation,
+            completed: true,
+            emailSent: true,
+            ticketId: emailResult.data.ticketId
+          };
           
           await saveSession(session, env.CHAT_SESSIONS);
           
+          // Schedule session cleanup
+          setTimeout(() => {
+            cleanupAISession(session.id, env.CHAT_SESSIONS);
+          }, 300000); // 5 minutes delay
+          
+          const successMessage = session.escalation?.priority === 'high' || session.escalation?.priority === 'immediate' ?
+            'Perfetto! I tuoi dati sono stati inviati al nostro team. Ti contatteremo entro 2 ore lavorative.' :
+            'Grazie! Abbiamo ricevuto la tua richiesta. Ti invieremo il preventivo via email e ti contatteremo per eventuali chiarimenti.';
+          
           return new Response(JSON.stringify({
             success: true,
-            message: 'Perfetto! I tuoi dati sono stati inviati al nostro team.',
+            message: successMessage,
             ticketId: emailResult.data.ticketId,
-            emailId: emailResult.data.emailId
+            emailId: emailResult.data.emailId,
+            priority: session.escalation?.priority || 'medium',
+            expectedResponseTime: session.escalation?.priority === 'high' ? '2 ore' : '24 ore'
           }), {
             headers: corsHeaders(origin),
           });
         } else {
           return new Response(JSON.stringify({
             success: false,
-            error: 'Errore nell\'invio. Riprova o contattaci direttamente.'
+            error: 'Errore nell\'invio. Riprova o contattaci direttamente al numero: +39 XXX XXX XXXX',
+            fallbackAction: 'phone_contact'
           }), {
             status: 500,
             headers: corsHeaders(origin),
           });
         }
+      }
+      
+      // Handle data collection updates
+      if (action === 'update_data') {
+        // Update lead data in session
+        session.context.leadData = {
+          ...session.context.leadData,
+          ...data.leadData
+        };
+        
+        await saveSession(session, env.CHAT_SESSIONS);
+        
+        return new Response(JSON.stringify({
+          success: true,
+          message: 'Dati aggiornati con successo',
+          leadData: session.context.leadData
+        }), {
+          headers: corsHeaders(origin),
+        });
+      }
+      
+      // Handle AI metrics request
+      if (action === 'get_metrics') {
+        const metrics = {
+          sessionId: session.id,
+          messageCount: session.context.messageCount || 0,
+          totalCost: session.context.totalCost || 0,
+          averageResponseTime: session.context.averageResponseTime || 0,
+          aiUsage: session.messages.filter(m => m.aiPowered).length,
+          escalated: !!session.escalation?.required
+        };
+        
+        return new Response(JSON.stringify({
+          success: true,
+          metrics
+        }), {
+          headers: corsHeaders(origin),
+        });
       }
       
       // Azione non riconosciuta

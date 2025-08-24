@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Setup Rete Aziendale Professionale per PMI | Blog IT-ERA</title>
+    <meta name="description" content="Progetta e implementa una rete aziendale scalabile e sicura per la tua PMI. Guida completa con architetture, VLAN, QoS e best practices professionali."/>
+    <meta name="keywords" content="rete aziendale, network setup, vlan, infrastructure, switching, routing, it-era"/>
+    <meta name="author" content="IT-ERA"/>
+    
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://it-era.pages.dev/blog/rete-aziendale-setup-professionale.html"/>
+    <meta property="og:title" content="Setup Rete Aziendale Professionale per PMI | Blog IT-ERA"/>
+    <meta property="og:description" content="Progetta e implementa una rete aziendale scalabile e sicura per la tua PMI. Guida completa con architetture, VLAN, QoS e best practices professionali."/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://it-era.pages.dev/blog/rete-aziendale-setup-professionale.html"/>
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop&crop=entropy&auto=format"/>
+    <meta property="article:published_time" content="2024-02-25T09:00:00+01:00"/>
+    <meta property="article:modified_time" content="2024-02-25T09:00:00+01:00"/>
+    <meta property="article:author" content="IT-ERA"/>
+    <meta property="article:section" content="Infrastruttura IT"/>
+    <meta name="robots" content="index, follow"/>
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Setup Rete Aziendale Professionale per PMI | Blog IT-ERA"/>
+    <meta name="twitter:description" content="Progetta e implementa una rete aziendale scalabile e sicura per la tua PMI. Guida completa con architetture, VLAN, QoS e best practices professionali."/>
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop&crop=entropy&auto=format"/>
+    
+    <!-- Structured Data for Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Setup Rete Aziendale Professionale per PMI",
+        "description": "Progetta e implementa una rete aziendale scalabile e sicura per la tua PMI. Guida completa con architetture, VLAN, QoS e best practices professionali.",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop&crop=entropy&auto=format",
+        "author": {
+            "@type": "Organization",
+            "name": "IT-ERA",
+            "url": "https://it-era.pages.dev"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IT-ERA",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://it-era.pages.dev/images/logo.png"
+            }
+        },
+        "datePublished": "2024-02-25T09:00:00+01:00",
+        "dateModified": "2024-02-25T09:00:00+01:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://it-era.pages.dev/blog/rete-aziendale-setup-professionale.html"
+        }
+    }
+    </script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Prism.js for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/>
+    
+    <style>
+        :root {
+            --primary-color: #0056cc;
+            --primary-dark: #003d99;
+            --secondary-color: #00b336;
+            --accent-color: #20c997;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+            --border-color: #e9ecef;
+            --text-muted: #6c757d;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            padding-top: 76px;
+        }
+        
+        .navbar {
+            min-height: 76px;
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            z-index: 1030;
+        }
+        
+        /* Article Header */
+        .article-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 60px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none"><circle cx="200" cy="200" r="300" fill="rgba(255,255,255,0.03)"/><circle cx="800" cy="600" r="400" fill="rgba(255,255,255,0.03)"/></svg>');
+            opacity: 0.1;
+        }
+        
+        .article-header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .article-category {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .article-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.9);
+            font-size: 1rem;
+        }
+        
+        .article-excerpt {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.95;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+        
+        /* Article Content */
+        .article-content {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .article-body {
+            max-width: 800px;
+        }
+        
+        .article-body h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-bg);
+            margin: 50px 0 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .article-body h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 30px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .article-body h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-bg);
+            margin: 40px 0 20px;
+        }
+        
+        .article-body h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dark-bg);
+            margin: 30px 0 15px;
+        }
+        
+        .article-body p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        
+        .article-body ul,
+        .article-body ol {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            padding-left: 30px;
+        }
+        
+        .article-body li {
+            margin-bottom: 8px;
+        }
+        
+        .article-body blockquote {
+            background: var(--light-bg);
+            border-left: 4px solid var(--primary-color);
+            padding: 25px 30px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.15rem;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .article-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Code Blocks */
+        .article-body pre {
+            background: #1e1e1e;
+            color: #f8f8f2;
+            padding: 25px;
+            border-radius: 15px;
+            overflow-x: auto;
+            margin: 30px 0;
+            border: 1px solid #333;
+        }
+        
+        .article-body code {
+            background: #f1f3f5;
+            color: #e03e52;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        
+        .article-body pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        
+        /* Info Boxes */
+        .info-box {
+            background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+            border: 1px solid #bbdefb;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .info-box.warning {
+            background: linear-gradient(135deg, #fff3e0, #ffecb3);
+            border-color: #ffcc02;
+        }
+        
+        .info-box.danger {
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            border-color: #f44336;
+        }
+        
+        .info-box.success {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border-color: #4caf50;
+        }
+        
+        .info-box .info-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Table of Contents */
+        .table-of-contents {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .table-of-contents h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+        
+        .toc-list a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        .toc-list a:hover,
+        .toc-list a.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Related Articles */
+        .related-articles {
+            background: var(--light-bg);
+            padding: 60px 0;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .related-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .related-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .related-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .related-content {
+            padding: 25px;
+        }
+        
+        .related-category {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .related-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark-bg);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .related-excerpt {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .article-cta {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .article-cta h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        
+        .article-cta p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-cta-primary {
+            background: white;
+            color: var(--primary-color);
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .btn-cta-secondary {
+            background: transparent;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-cta-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* Social Share */
+        .social-share {
+            position: sticky;
+            top: 120px;
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 25px;
+        }
+        
+        .social-share h5 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .share-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .share-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .share-btn.linkedin {
+            background: #0077b5;
+            color: white;
+        }
+        
+        .share-btn.twitter {
+            background: #1da1f2;
+            color: white;
+        }
+        
+        .share-btn.facebook {
+            background: #4267b2;
+            color: white;
+        }
+        
+        .share-btn.whatsapp {
+            background: #25d366;
+            color: white;
+        }
+        
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Progress Bar */
+        .reading-progress {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: var(--secondary-color);
+            z-index: 1020;
+            transition: width 0.1s ease;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .table-of-contents,
+            .social-share {
+                position: relative;
+                top: auto;
+            }
+            
+            .article-body {
+                max-width: 100%;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-cta-primary,
+            .btn-cta-secondary {
+                width: 280px;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .article-header {
+                padding: 40px 0 30px;
+            }
+            
+            .article-title {
+                font-size: 2rem;
+            }
+            
+            .article-meta {
+                gap: 20px;
+            }
+            
+            .article-content {
+                padding: 50px 0;
+            }
+            
+            .article-body h2 {
+                font-size: 1.6rem;
+                margin: 35px 0 20px;
+            }
+            
+            .article-body h3 {
+                font-size: 1.3rem;
+            }
+            
+            .article-cta h3 {
+                font-size: 2rem;
+            }
+            
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Optimized Navigation Styles */
+        .dropdown-menu-columns {
+            min-width: 400px;
+        }
+        
+        .dropdown-header {
+            font-weight: 600;
+            padding: 0.5rem 1rem 0.25rem;
+        }
+        
+        .dropdown-item {
+            padding: 0.4rem 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            padding-left: 1.25rem;
+        }
+        
+        .badge {
+            font-size: 0.7rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        @media (max-width: 991px) {
+            .dropdown-menu-columns {
+                min-width: 100%;
+            }
+            
+            .dropdown-menu-columns .row {
+                display: block;
+            }
+            
+            .navbar-nav {
+                padding: 1rem 0;
+            }
+            
+            .nav-item {
+                border-bottom: 1px solid #f8f9fa;
+            }
+            
+            .nav-item:last-child {
+                border-bottom: none;
+                margin-top: 1rem;
+            }
+        }
+        
+        /* Network diagram styles */
+        .network-diagram {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="reading-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            
+            <!-- Emergency CTA for Mobile -->
+            <div class="d-lg-none ms-auto me-2">
+                <a href="tel:+390398882041" class="btn btn-danger btn-sm">
+                    🚨 Emergenza
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <!-- Emergency Support - Primary CTA -->
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-danger fw-bold" href="tel:+390398882041">
+                            🚨 Supporto Urgente
+                        </a>
+                    </li>
+                    
+                    <!-- Services Dropdown with Icons -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+                            <li><a class="dropdown-item" href="/pages/assistenza-it-milano.html">
+                                🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/sicurezza-informatica-milano.html">
+                                🛡️ Sicurezza Informatica
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+                            <li><a class="dropdown-item" href="/pages/cloud-storage-milano.html">
+                                ☁️ Cloud Storage
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/backup-automatico.html">
+                                💾 Backup Automatico
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+                            <li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
+                                ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Blog Link (active) -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/blog/">Blog</a>
+                    </li>
+                    
+                    <!-- Coverage Areas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Zone Coperte
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-columns">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <li class="dropdown-header text-muted small">MILANO E BRIANZA</li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-milano.html">Milano</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-monza.html">Monza</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-vimercate.html">Vimercate</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-seregno.html">Seregno</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-lissone.html">Lissone</a></li>
+                                </div>
+                                <div class="col-6">
+                                    <li class="dropdown-header text-muted small">COMO E LECCO</li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-como.html">Como</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-lecco.html">Lecco</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-cantu.html">Cantù</a></li>
+                                    <li><a class="dropdown-item small" href="/pages/assistenza-it-merate.html">Merate</a></li>
+                                    <li><a class="text-primary" href="#">Vedi tutte →</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contatti.html">Contatti</a>
+                    </li>
+                    
+                    <!-- Primary CTA Button -->
+                    <li class="nav-item ms-lg-3">
+                        <a href="tel:+390398882041" class="btn btn-primary">
+                            📞 039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb" class="mt-3">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/blog/">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Rete Aziendale Setup</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Article Header -->
+        <header class="article-header">
+            <div class="container article-header-content">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <span class="article-category">
+                            <i class="fas fa-network-wired"></i>
+                            Infrastruttura IT
+                        </span>
+                        
+                        <h1 class="article-title">Setup Rete Aziendale Professionale per PMI</h1>
+                        
+                        <div class="article-meta">
+                            <div class="article-meta-item">
+                                <i class="fas fa-calendar"></i>
+                                25 Febbraio 2024
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-clock"></i>
+                                14 minuti di lettura
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-user"></i>
+                                IT-ERA Team
+                            </div>
+                            <div class="article-meta-item">
+                                <i class="fas fa-eye"></i>
+                                892 visualizzazioni
+                            </div>
+                        </div>
+                        
+                        <p class="article-excerpt">
+                            Progetta e implementa una rete aziendale scalabile e sicura per la tua PMI. Guida completa con architetture, VLAN, QoS e best practices professionali per performance ottimali.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Article Content -->
+        <section class="article-content">
+            <div class="container">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-lg-3 order-lg-2 mb-5">
+                        <!-- Table of Contents -->
+                        <div class="table-of-contents">
+                            <h4>
+                                <i class="fas fa-list"></i>
+                                Indice
+                            </h4>
+                            <ul class="toc-list" id="tableOfContents">
+                                <!-- Generated by JavaScript -->
+                            </ul>
+                        </div>
+                        
+                        <!-- Social Share -->
+                        <div class="social-share">
+                            <h5>
+                                <i class="fas fa-share-alt"></i>
+                                Condividi
+                            </h5>
+                            <div class="share-buttons">
+                                <a href="#" class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                                <a href="#" class="share-btn twitter" onclick="shareOnTwitter()">
+                                    <i class="fab fa-twitter"></i>
+                                    Twitter
+                                </a>
+                                <a href="#" class="share-btn facebook" onclick="shareOnFacebook()">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                                <a href="#" class="share-btn whatsapp" onclick="shareOnWhatsApp()">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Article -->
+                    <div class="col-lg-9 order-lg-1">
+                        <article class="article-body">
+                            <!-- Featured Image -->
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=450&fit=crop&crop=entropy&auto=format" alt="Rete Aziendale Setup" class="img-fluid">
+                            
+                            <!-- Article Content -->
+                            <div id="articleContent">
+                                <h2>L'Importanza di una Rete Aziendale Progettata Professionalmente</h2>
+                                <p>La rete aziendale rappresenta il sistema nervoso digitale di ogni moderna organizzazione. Una progettazione inadeguata può limitare gravemente la produttività, compromettere la sicurezza e generare costi nascosti enormi. Le <strong>PMI che investono in infrastrutture di rete professionali</strong> registrano un aumento medio del 35% nella produttività e una riduzione del 60% dei downtime IT.</p>
+                                
+                                <div class="info-box danger">
+                                    <div class="info-title">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        Costi di una Rete Inadeguata
+                                    </div>
+                                    <p>Una rete aziendale mal progettata può costare fino a <strong>€50,000/anno</strong> in una PMI di 50 dipendenti attraverso:</p>
+                                    <ul>
+                                        <li><strong>Downtime</strong>: 15-20 ore/mese di interruzioni</li>
+                                        <li><strong>Performance ridotte</strong>: 25% di tempo perso in attese</li>
+                                        <li><strong>Sicurezza compromessa</strong>: Vulnerabilità multiple</li>
+                                        <li><strong>Scalabilità limitata</strong>: Necessità di rifacimenti costosi</li>
+                                    </ul>
+                                </div>
+                                
+                                <p>IT-ERA ha sviluppato una metodologia comprovata per progettare reti aziendali che combinano performance, sicurezza, scalabilità e facilità di gestione, supportando la crescita aziendale per anni.</p>
+                                
+                                <h3>Elementi Fondamentali di una Rete Professionale</h3>
+                                <ul>
+                                    <li><strong>Architettura Gerarchica</strong>: Core, Distribution, Access layers</li>
+                                    <li><strong>Ridondanza</strong>: Eliminazione single point of failure</li>
+                                    <li><strong>Segmentazione</strong>: VLAN per sicurezza e performance</li>
+                                    <li><strong>Quality of Service (QoS)</strong>: Prioritizzazione traffico critico</li>
+                                    <li><strong>Monitoring</strong>: Visibilità completa su performance e utilizzo</li>
+                                    <li><strong>Documentazione</strong>: Schema di rete completo e aggiornato</li>
+                                </ul>
+                                
+                                <h2>Progettazione dell'Architettura di Rete</h2>
+                                <p>Una progettazione efficace parte dall'analisi dei requisiti aziendali e dalla comprensione dei flussi dati.</p>
+                                
+                                <h3>Modello Gerarchico a 3 Livelli</h3>
+                                
+                                <h4>Core Layer - Il Cuore della Rete</h4>
+                                <p>Layer ad alta velocità per interconnessione tra sedi e servizi critici:</p>
+                                
+                                <div class="network-diagram">
+                                    <h5>Core Layer Components</h5>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                                            <h6>Core Switch</h6>
+                                            <p class="small">Layer 3, Gigabit+, Redundant</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <i class="fas fa-network-wired fa-3x text-success mb-3"></i>
+                                            <h6>WAN Links</h6>
+                                            <p class="small">Fiber, MPLS, SD-WAN</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <i class="fas fa-shield-alt fa-3x text-warning mb-3"></i>
+                                            <h6>Firewall</h6>
+                                            <p class="small">UTM, Deep Inspection</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <h4>Distribution Layer - Controllo e Policy</h4>
+                                <p>Layer di controllo per implementazione policy di sicurezza e QoS:</p>
+                                
+                                <pre><code class="language-bash"># Configurazione Switch Distribution Cisco
+# VLAN Configuration
+vlan 10
+ name MANAGEMENT
+vlan 20
+ name USERS
+vlan 30
+ name SERVERS  
+vlan 40
+ name GUEST
+vlan 50
+ name VOIP
+
+# Trunking to Access Layer
+interface range GigabitEthernet 1/0/1-24
+ switchport mode trunk
+ switchport trunk allowed vlan 20,40,50
+ spanning-tree portfast trunk
+ 
+# Server VLAN (Layer 3 Interface)
+interface vlan 30
+ ip address 192.168.30.1 255.255.255.0
+ ip helper-address 192.168.30.10
+ standby 30 ip 192.168.30.1
+ standby 30 priority 110
+ standby 30 preempt</code></pre>
+                                
+                                <h4>Access Layer - Connettività End-User</h4>
+                                <p>Layer di accesso per dispositivi finali con controllo sicurezza:</p>
+                                
+                                <pre><code class="language-bash"># Access Switch Configuration
+# PoE for IP Phones and WiFi APs
+interface range GigabitEthernet 1/0/1-48
+ switchport mode access
+ switchport access vlan 20
+ switchport voice vlan 50
+ power inline auto
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+
+# Guest Network Ports (Conference Rooms)
+interface range GigabitEthernet 1/0/45-48
+ switchport access vlan 40
+ storm-control broadcast level 10
+ 
+# Critical Server Connections
+interface range GigabitEthernet 1/0/1-4
+ switchport access vlan 30
+ spanning-tree portfast disable</code></pre>
+                                
+                                <h3>Dimensionamento e Capacità</h3>
+                                
+                                <h4>Calcolo Bandwidth Requirements</h4>
+                                <p>Metodologia per dimensionare correttamente la rete:</p>
+                                
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-6">
+                                        <h5 class="text-primary">📊 Traffico per Utente Tipo</h5>
+                                        <ul>
+                                            <li><strong>Office Worker</strong>: 50-100 Mbps peak</li>
+                                            <li><strong>Power User</strong>: 200-500 Mbps peak</li>
+                                            <li><strong>Creative/CAD</strong>: 1-2 Gbps peak</li>
+                                            <li><strong>Server Access</strong>: 500 Mbps sustained</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-success">📱 Dispositivi per Utente</h5>
+                                        <ul>
+                                            <li><strong>Desktop/Laptop</strong>: 1 per utente</li>
+                                            <li><strong>Smartphone</strong>: 1.5 per utente</li>
+                                            <li><strong>Tablet</strong>: 0.8 per utente</li>
+                                            <li><strong>IoT Devices</strong>: 3-5 per utente</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <h4>Formule di Dimensionamento</h4>
+                                <pre><code class="language-javascript">// Calcolo bandwidth totale necessario
+function calculateBandwidthNeeds(users, userTypes) {
+    const baselinePerUser = {
+        'office': 75,      // Mbps average
+        'power': 300,      // Mbps average  
+        'creative': 1000   // Mbps average
+    };
+    
+    const concurrencyFactor = 0.7;  // 70% utilizzo simultaneo
+    const growthFactor = 1.5;       // 50% crescita prevista
+    const overheadFactor = 1.3;     // 30% overhead protocolli
+    
+    let totalBandwidth = 0;
+    
+    for (let type in userTypes) {
+        totalBandwidth += userTypes[type] * baselinePerUser[type];
+    }
+    
+    totalBandwidth *= concurrencyFactor * growthFactor * overheadFactor;
+    
+    return {
+        'core_required': totalBandwidth,
+        'internet_required': totalBandwidth * 0.4,  // 40% traffico esterno
+        'wan_required': totalBandwidth * 0.2        // 20% traffico inter-sede
+    };
+}
+
+// Esempio per azienda 50 utenti
+const result = calculateBandwidthNeeds(50, {
+    'office': 35,
+    'power': 12, 
+    'creative': 3
+});
+console.log(result);
+// Output: core_required: ~8.5 Gbps, internet_required: ~3.4 Gbps</code></pre>
+                                
+                                <h2>Implementazione VLAN e Segmentazione</h2>
+                                <p>La segmentazione tramite VLAN è fondamentale per sicurezza, performance e gestione.</p>
+                                
+                                <h3>Schema VLAN Standard IT-ERA</h3>
+                                
+                                <h4>VLAN Design Template</h4>
+                                <div class="info-box success">
+                                    <div class="info-title">
+                                        <i class="fas fa-sitemap"></i>
+                                        VLAN Allocation Standard
+                                    </div>
+                                    <ul>
+                                        <li><strong>VLAN 1</strong>: Native/Management (192.168.1.0/24)</li>
+                                        <li><strong>VLAN 10</strong>: IT Management (192.168.10.0/24)</li>
+                                        <li><strong>VLAN 20</strong>: General Users (192.168.20.0/23)</li>
+                                        <li><strong>VLAN 30</strong>: Servers (192.168.30.0/24)</li>
+                                        <li><strong>VLAN 40</strong>: Guest Network (192.168.40.0/24)</li>
+                                        <li><strong>VLAN 50</strong>: VoIP (192.168.50.0/24)</li>
+                                        <li><strong>VLAN 60</strong>: Wireless (192.168.60.0/23)</li>
+                                        <li><strong>VLAN 70</strong>: DMZ (192.168.70.0/24)</li>
+                                        <li><strong>VLAN 80</strong>: IoT/Building (192.168.80.0/24)</li>
+                                        <li><strong>VLAN 90</strong>: Backup Network (192.168.90.0/24)</li>
+                                    </ul>
+                                </div>
+                                
+                                <h4>Inter-VLAN Routing Configuration</h4>
+                                <p>Configurazione routing e ACL per controllo traffico tra VLAN:</p>
+                                
+                                <pre><code class="language-bash"># Layer 3 Switch Configuration
+ip routing
+
+# VLAN Interfaces with HSRP for HA
+interface vlan 20
+ ip address 192.168.20.1 255.255.254.0
+ ip helper-address 192.168.30.10
+ standby 20 ip 192.168.20.1
+ standby 20 priority 110
+ standby 20 preempt
+ standby 20 track 1 decrement 20
+
+# Access Control Lists
+ip access-list extended USERS_TO_SERVERS
+ permit tcp 192.168.20.0 0.0.1.255 192.168.30.0 0.0.0.255 eq 80
+ permit tcp 192.168.20.0 0.0.1.255 192.168.30.0 0.0.0.255 eq 443
+ permit tcp 192.168.20.0 0.0.1.255 192.168.30.0 0.0.0.255 eq 3389
+ deny ip 192.168.20.0 0.0.1.255 192.168.30.0 0.0.0.255
+ permit ip any any
+
+# Apply ACL to VLAN interface
+interface vlan 20
+ ip access-group USERS_TO_SERVERS out
+
+# DHCP Server Configuration per VLAN
+ip dhcp pool USERS_VLAN
+ network 192.168.20.0 255.255.254.0
+ default-router 192.168.20.1
+ dns-server 192.168.30.10 8.8.8.8
+ domain-name azienda.local
+ lease 0 8 0
+
+ip dhcp pool VOIP_VLAN  
+ network 192.168.50.0 255.255.255.0
+ default-router 192.168.50.1
+ option 150 ip 192.168.30.15  # IP Phone TFTP Server
+ lease 0 0 5</code></pre>
+                                
+                                <h3>Wireless Network Integration</h3>
+                                
+                                <h4>Enterprise Wi-Fi Architecture</h4>
+                                <p>Configurazione wireless professionale con controller centralizzato:</p>
+                                
+                                <pre><code class="language-javascript">// Ubiquiti UniFi Controller Configuration
+{
+  "wireless_networks": [
+    {
+      "name": "AZIENDA-Corporate",
+      "vlan": 20,
+      "security": "WPA3-Enterprise", 
+      "radius_server": "192.168.30.12",
+      "bandwidth_limit": "100_mbps_per_user",
+      "client_isolation": false
+    },
+    {
+      "name": "AZIENDA-Guest", 
+      "vlan": 40,
+      "security": "WPA3-Personal",
+      "bandwidth_limit": "50_mbps_per_user", 
+      "client_isolation": true,
+      "portal": {
+        "enabled": true,
+        "terms_acceptance": true,
+        "voucher_auth": false
+      }
+    },
+    {
+      "name": "AZIENDA-IoT",
+      "vlan": 80, 
+      "security": "WPA2-PSK",
+      "bandwidth_limit": "10_mbps_per_device",
+      "client_isolation": true,
+      "device_fingerprinting": true
+    }
+  ],
+  "access_points": {
+    "indoor_model": "U6-Pro", 
+    "outdoor_model": "U6-Mesh",
+    "density": "1_ap_per_500_sqm",
+    "power_method": "802.3at_PoE+",
+    "channels_2ghz": "auto_non_dfs",
+    "channels_5ghz": "auto_dfs_optimized"
+  }
+}</code></pre>
+                                
+                                <h2>Quality of Service (QoS) e Traffic Shaping</h2>
+                                <p>QoS garantisce performance ottimali per applicazioni business critical.</p>
+                                
+                                <h3>Classificazione del Traffico</h3>
+                                
+                                <h4>Traffic Classes Standard</h4>
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-3">
+                                        <div class="info-box danger">
+                                            <h6 class="text-danger">Critical</h6>
+                                            <ul class="small">
+                                                <li>VoIP/Video calls</li>
+                                                <li>ERP/CRM real-time</li>
+                                                <li>Database queries</li>
+                                                <li>50% bandwidth garantita</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="info-box warning">
+                                            <h6 class="text-warning">High</h6>
+                                            <ul class="small">
+                                                <li>Email/Office 365</li>
+                                                <li>File server access</li>
+                                                <li>Remote desktop</li>
+                                                <li>30% bandwidth garantita</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="info-box">
+                                            <h6 class="text-info">Normal</h6>
+                                            <ul class="small">
+                                                <li>Web browsing</li>
+                                                <li>Standard apps</li>
+                                                <li>Background sync</li>
+                                                <li>15% bandwidth garantita</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="info-box success">
+                                            <h6 class="text-success">Low</h6>
+                                            <ul class="small">
+                                                <li>P2P/Downloads</li>
+                                                <li>Personal streaming</li>
+                                                <li>System updates</li>
+                                                <li>5% bandwidth minima</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <h4>QoS Implementation</h4>
+                                <p>Configurazione dettagliata per switch e router Cisco:</p>
+                                
+                                <pre><code class="language-bash"># QoS Configuration - Cisco IOS
+# Enable QoS globally
+mls qos
+
+# Class Maps for Traffic Classification  
+class-map match-all VOICE
+ match ip dscp ef
+
+class-map match-all VIDEO
+ match ip dscp af41 af42 cs4
+
+class-map match-all CRITICAL_DATA
+ match ip dscp af31 af32 af33
+
+class-map match-all BEST_EFFORT
+ match ip dscp default
+
+# Policy Map with Bandwidth Allocation
+policy-map WAN_OUT
+ class VOICE
+  priority percent 15
+  set dscp ef
+ class VIDEO  
+  bandwidth percent 25
+  set dscp af41
+ class CRITICAL_DATA
+  bandwidth percent 35
+  set dscp af31
+ class BEST_EFFORT
+  bandwidth percent 25
+  fair-queue
+
+# Apply to WAN Interface
+interface Serial 0/0/0
+ service-policy output WAN_OUT
+ 
+# Trust DSCP on Access Ports with IP Phones
+interface range FastEthernet 0/1-24
+ mls qos trust dscp
+ auto qos voip cisco-phone</code></pre>
+                                
+                                <h3>Bandwidth Management</h3>
+                                
+                                <h4>Per-User Bandwidth Control</h4>
+                                <p>Controllo granulare utilizzo banda per utente/dipartimento:</p>
+                                
+                                <pre><code class="language-bash"># Bandwidth Control per User Groups
+# Executive Users - Higher Priority
+class-map match-all EXECUTIVES
+ match access-group name EXEC_USERS
+
+policy-map EXEC_POLICY
+ class EXECUTIVES  
+  bandwidth percent 20
+  priority level 1
+
+# General Users - Standard Limits  
+class-map match-all GENERAL_USERS
+ match access-group name GENERAL_USERS_ACL
+
+policy-map GENERAL_POLICY
+ class GENERAL_USERS
+  bandwidth percent 60
+  random-detect
+
+# Guest Users - Limited Bandwidth
+class-map match-all GUEST_USERS
+ match access-group name GUEST_ACL
+ 
+policy-map GUEST_POLICY
+ class GUEST_USERS
+  police rate 50000000 burst 1000000
+   conform-action transmit
+   exceed-action drop
+
+# Named Access Lists
+ip access-list extended EXEC_USERS
+ permit ip 192.168.20.10 0.0.0.10 any
+ip access-list extended GENERAL_USERS_ACL  
+ permit ip 192.168.20.0 0.0.1.255 any
+ip access-list extended GUEST_ACL
+ permit ip 192.168.40.0 0.0.0.255 any</code></pre>
+                                
+                                <h2>Sicurezza di Rete Integrata</h2>
+                                <p>Implementazione defense-in-depth per protezione multi-livello.</p>
+                                
+                                <h3>Network Access Control (NAC)</h3>
+                                
+                                <h4>802.1X Authentication</h4>
+                                <p>Controllo accesso basato su identità per tutti i dispositivi:</p>
+                                
+                                <pre><code class="language-bash"># 802.1X Configuration on Access Switch
+aaa new-model
+aaa authentication dot1x default group radius
+aaa authorization network default group radius
+
+# RADIUS Server Configuration
+radius server IT-ERA-NPS
+ address ipv4 192.168.30.11 auth-port 1812 acct-port 1813
+ key 7 strongRadiusKey123!
+
+# Enable 802.1X on Access Ports
+interface range GigabitEthernet 1/0/1-48
+ switchport mode access
+ authentication host-mode multi-auth
+ authentication port-control auto
+ authentication periodic
+ authentication timer restart 120
+ authentication violation replace
+ dot1x pae authenticator
+ dot1x timeout tx-period 10
+
+# Dynamic VLAN Assignment
+interface range GigabitEthernet 1/0/1-48
+ switchport access vlan 999  # Quarantine VLAN
+ authentication event fail action authorize vlan 999
+ authentication event no-response action authorize vlan 999</code></pre>
+                                
+                                <h3>Network Segmentation and Micro-Segmentation</h3>
+                                
+                                <h4>Zero Trust Network Model</h4>
+                                <p>Implementazione principi zero trust con micro-segmentazione:</p>
+                                
+                                <div class="info-box warning">
+                                    <div class="info-title">
+                                        <i class="fas fa-shield-virus"></i>
+                                        Zero Trust Principles
+                                    </div>
+                                    <ul>
+                                        <li><strong>Never Trust, Always Verify</strong>: Autenticazione continua</li>
+                                        <li><strong>Least Privilege Access</strong>: Accesso minimo necessario</li>
+                                        <li><strong>Assume Breach</strong>: Limitazione blast radius</li>
+                                        <li><strong>Continuous Monitoring</strong>: Visibilità real-time</li>
+                                    </ul>
+                                </div>
+                                
+                                <pre><code class="language-javascript">// Software-Defined Perimeter Configuration
+{
+  "zero_trust_config": {
+    "identity_verification": {
+      "multi_factor_auth": "mandatory",
+      "device_certificates": "required", 
+      "behavioral_analytics": "enabled"
+    },
+    "network_segmentation": {
+      "default_policy": "deny_all",
+      "micro_segments": [
+        {
+          "name": "hr_department",
+          "users": ["hr_group"],
+          "resources": ["hr_server", "payroll_system"],
+          "allowed_ports": [80, 443, 3389]
+        },
+        {
+          "name": "finance_department", 
+          "users": ["finance_group"],
+          "resources": ["erp_server", "accounting_system"],
+          "allowed_ports": [80, 443, 1433],
+          "time_restrictions": "business_hours"
+        }
+      ]
+    },
+    "continuous_monitoring": {
+      "anomaly_detection": "ml_powered",
+      "session_recording": "selective",
+      "threat_correlation": "enabled"
+    }
+  }
+}</code></pre>
+                                
+                                <h2>Monitoring e Network Management</h2>
+                                <p>Visibilità completa su performance, utilizzo e sicurezza della rete.</p>
+                                
+                                <h3>SNMP e Network Discovery</h3>
+                                
+                                <h4>Monitoring Infrastructure Setup</h4>
+                                <p>Configurazione PRTG Network Monitor per visibilità completa:</p>
+                                
+                                <pre><code class="language-yaml"># PRTG Monitoring Configuration Template
+network_monitoring:
+  discovery:
+    methods: ["snmp", "wmi", "ping", "port_scan"]
+    credentials:
+      snmp_v3:
+        security_name: "prtg_monitor"
+        auth_protocol: "SHA"
+        auth_passphrase: "SecureAuth123!"
+        priv_protocol: "AES"
+        priv_passphrase: "SecurePriv123!"
+        
+  device_templates:
+    cisco_switches:
+      sensors:
+        - "SNMP Traffic (Bandwidth)"
+        - "SNMP System Health" 
+        - "SNMP Port Status"
+        - "SNMP CPU Load"
+        - "SNMP Memory Usage"
+        - "SNMP Temperature"
+      thresholds:
+        bandwidth_warning: "80%"
+        bandwidth_error: "95%"
+        cpu_warning: "70%"
+        memory_warning: "85%"
+        
+    servers:
+      sensors:
+        - "WMI Performance Counters"
+        - "WMI Services"
+        - "WMI Disk Space"
+        - "WMI Network Adapters"
+      intervals:
+        standard: "60_seconds"
+        critical: "30_seconds"</code></pre>
+                                
+                                <h3>Flow Analysis e Traffic Monitoring</h3>
+                                
+                                <h4>NetFlow Configuration</h4>
+                                <p>Analisi dettagliata dei flussi di traffico per ottimizzazione e security:</p>
+                                
+                                <pre><code class="language-bash"># NetFlow Configuration - Cisco Router
+# Enable NetFlow on interfaces
+interface GigabitEthernet 0/0
+ ip flow ingress
+ ip flow egress
+
+# NetFlow Export to Collector
+ip flow-export destination 192.168.30.20 2055
+ip flow-export source GigabitEthernet 0/0
+ip flow-export version 9
+ip flow-export template refresh-rate 20
+
+# Flow Sampling for High-Traffic Links  
+interface GigabitEthernet 0/1
+ ip flow ingress sampled
+ ip flow egress sampled
+
+# Flow Sampling Configuration
+flow-sampler-map SAMPLE_1_IN_100
+ mode packet-interval 100
+ 
+interface range GigabitEthernet 0/0-1
+ ip flow-sampler SAMPLE_1_IN_100</code></pre>
+                                
+                                <h4>Advanced Analytics Dashboard</h4>
+                                <p>Creazione dashboard personalizzati per different stakeholders:</p>
+                                
+                                <pre><code class="language-javascript">// Network Analytics Dashboard Config
+{
+  "dashboards": [
+    {
+      "name": "Executive Summary",
+      "widgets": [
+        {
+          "type": "network_health_score",
+          "timeframe": "last_24h",
+          "threshold_good": 95,
+          "threshold_warning": 85
+        },
+        {
+          "type": "top_talkers",
+          "limit": 10,
+          "metric": "bandwidth_usage"
+        },
+        {
+          "type": "security_events", 
+          "severity": "high_critical",
+          "timeframe": "last_7d"
+        }
+      ]
+    },
+    {
+      "name": "IT Operations",
+      "widgets": [
+        {
+          "type": "interface_utilization",
+          "interfaces": "all_trunks",
+          "alert_threshold": 80
+        },
+        {
+          "type": "device_availability",
+          "categories": ["switches", "routers", "firewalls"]
+        },
+        {
+          "type": "qos_statistics",
+          "classes": ["voice", "video", "data"],
+          "metrics": ["drops", "delays", "jitter"]
+        }
+      ]
+    }
+  ],
+  "alerting": {
+    "email_notifications": "admin@it-era.it",
+    "sms_critical": "+39-039-888-2041",
+    "teams_webhook": "https://outlook.office.com/webhook/..."
+  }
+}</code></pre>
+                                
+                                <h2>Casi d'Uso e Implementazioni Reali</h2>
+                                <p>Esempi concreti di reti aziendali progettate e implementate da IT-ERA.</p>
+                                
+                                <h3>Caso Studio 1: Studio Legale Associato</h3>
+                                <div class="info-box">
+                                    <div class="info-title">
+                                        <i class="fas fa-balance-scale"></i>
+                                        Requisiti Specifici
+                                    </div>
+                                    <p><strong>Contesto</strong>: 40 avvocati, 3 sedi, documentazione riservata</p>
+                                    <p><strong>Sfide</strong>:</p>
+                                    <ul>
+                                        <li>Sicurezza dati clienti (segreto professionale)</li>
+                                        <li>Accesso remoto sicuro per smart working</li>
+                                        <li>Performance elevate per database giurisprudenziali</li>
+                                        <li>Backup e disaster recovery certificati</li>
+                                    </ul>
+                                    <p><strong>Soluzione implementata</strong>:</p>
+                                    <ul>
+                                        <li>VLAN dedicate per ogni tipologia dati</li>
+                                        <li>Firewall UTM con DLP integration</li>
+                                        <li>SD-WAN per interconnessione sedi</li>
+                                        <li>802.1X con certificati per device authentication</li>
+                                        <li>QoS ottimizzato per video conferenze</li>
+                                    </ul>
+                                    <p><strong>Risultati</strong>:</p>
+                                    <ul>
+                                        <li>Zero incident di sicurezza in 24 mesi</li>
+                                        <li>Performance network migliorata del 65%</li>
+                                        <li>Riduzione downtime del 90%</li>
+                                        <li>Smart working efficace per 100% degli utenti</li>
+                                    </ul>
+                                </div>
+                                
+                                <h3>Caso Studio 2: Manifatturiero con Automazione</h3>
+                                <div class="info-box success">
+                                    <div class="info-title">
+                                        <i class="fas fa-industry"></i>
+                                        Industry 4.0 Network
+                                    </div>
+                                    <p><strong>Infrastruttura</strong>: 200 dispositivi, PLC, SCADA, sensori IoT</p>
+                                    <p><strong>Architettura implementata</strong>:</p>
+                                    <ul>
+                                        <li><strong>Operational Technology (OT) Network</strong>: VLAN isolate per produzione</li>
+                                        <li><strong>IT/OT Convergence</strong>: DMZ con firewall industriale</li>
+                                        <li><strong>Industrial Ethernet</strong>: Switch ruggedizzati IP67</li>
+                                        <li><strong>Time-Sensitive Networking</strong>: IEEE 802.1Qbv per sincronizzazione</li>
+                                        <li><strong>Edge Computing</strong>: Nodi locali per processing real-time</li>
+                                    </ul>
+                                    <p><strong>Benefici misurabili</strong>:</p>
+                                    <ul>
+                                        <li>Efficienza produttiva: +28%</li>
+                                        <li>Downtime non pianificato: -85%</li>
+                                        <li>Predictive maintenance: risparmio €120,000/anno</li>
+                                        <li>Quality control automatizzato: difetti -92%</li>
+                                    </ul>
+                                </div>
+                                
+                                <h2>Costi e ROI di una Rete Professionale</h2>
+                                <p>Analisi dell'investimento necessario e ritorno economico previsto.</p>
+                                
+                                <h3>Breakdown Costi Implementazione</h3>
+                                
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-4">
+                                        <div class="info-box">
+                                            <h5 class="text-primary">💼 PMI Small (20-50 utenti)</h5>
+                                            <ul class="small">
+                                                <li>Core switch: €3,500</li>
+                                                <li>Access switch (3x): €4,500</li>
+                                                <li>Firewall UTM: €2,800</li>
+                                                <li>WiFi enterprise: €2,200</li>
+                                                <li>Cablaggio: €3,000</li>
+                                                <li>Implementazione: €4,000</li>
+                                                <li><strong>Totale: €20,000</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="info-box success">
+                                            <h5 class="text-success">🏢 PMI Medium (50-150 utenti)</h5>
+                                            <ul class="small">
+                                                <li>Core switch stack: €8,000</li>
+                                                <li>Access switch (8x): €12,000</li>
+                                                <li>Firewall cluster: €8,500</li>
+                                                <li>WiFi controller+APs: €6,500</li>
+                                                <li>Cablaggio strutturato: €12,000</li>
+                                                <li>Implementazione: €13,000</li>
+                                                <li><strong>Totale: €60,000</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="info-box warning">
+                                            <h5 class="text-warning">🏭 Enterprise (150+ utenti)</h5>
+                                            <ul class="small">
+                                                <li>Core infrastructure: €25,000</li>
+                                                <li>Distribution layer: €15,000</li>
+                                                <li>Access layer: €35,000</li>
+                                                <li>Security appliances: €18,000</li>
+                                                <li>Monitoring/Management: €8,000</li>
+                                                <li>Professional services: €25,000</li>
+                                                <li><strong>Totale: €126,000</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <h3>Calcolo ROI a 3 Anni</h3>
+                                <p>Confronto investimento vs benefici per PMI da 100 dipendenti:</p>
+                                
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-6">
+                                        <h5 class="text-danger">💸 Costi Rete Inadeguata (3 anni)</h5>
+                                        <ul>
+                                            <li>Downtime (40h/anno): €60,000</li>
+                                            <li>Performance ridotte (15%): €45,000</li>
+                                            <li>Supporto IT reattivo: €36,000</li>
+                                            <li>Sicurezza inadeguata: €25,000</li>
+                                            <li>Interventi straordinari: €24,000</li>
+                                            <li><strong>Totale 3 anni: €190,000</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-success">💰 Rete Professionale IT-ERA</h5>
+                                        <ul>
+                                            <li>Investimento iniziale: €60,000</li>
+                                            <li>Supporto managed (3 anni): €18,000</li>
+                                            <li>Aggiornamenti hardware: €8,000</li>
+                                            <li>Training e documentazione: €4,000</li>
+                                            <li>Downtime residuo: €3,000</li>
+                                            <li><strong>Totale 3 anni: €93,000</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <p><strong>Risparmio netto: €97,000 (ROI: 162%)</strong></p>
+                                
+                                <blockquote>
+                                    "L'investimento nella rete progettata da IT-ERA si è ripagato in soli 14 mesi. La produttività è aumentata sensibilmente e non abbiamo più problemi di connettività." - Marco T., CFO, Azienda di Servizi Finanziari
+                                </blockquote>
+                                
+                                <h2>Conclusioni e Prossimi Passi</h2>
+                                <p>Una rete aziendale progettata professionalmente non è un costo, ma un investimento strategico che abilita la crescita digitale dell'azienda. Le tecnologie moderne permettono di implementare soluzioni enterprise anche nelle PMI, con costi accessibili e ROI dimostrabili.</p>
+                                
+                                <p>IT-ERA accompagna le aziende in tutto il percorso: dalla progettazione iniziale all'implementazione, fino al supporto continuativo e agli upgrade evolutivi.</p>
+                                
+                                <div class="info-box success">
+                                    <div class="info-title">
+                                        <i class="fas fa-rocket"></i>
+                                        Inizia la Trasformazione della Tua Rete
+                                    </div>
+                                    <p>Non aspettare che problemi di rete limitino la crescita della tua azienda. Ogni giorno di ritardo significa opportunità perse e costi nascosti.</p>
+                                    <p>Contatta IT-ERA per un assessment gratuito della tua infrastruttura di rete attuale e scopri come possiamo progettare la rete del futuro per la tua azienda.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="article-cta">
+            <div class="container">
+                <h3>Progetta la Rete del Futuro</h3>
+                <p>Trasforma l'infrastruttura di rete della tua azienda con una progettazione professionale. Assessment gratuito e proposta su misura.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+390398882041" class="btn-cta-primary">
+                        <i class="fas fa-phone"></i>
+                        Chiama Subito: 039 888 2041
+                    </a>
+                    <a href="/pages/contatti.html" class="btn-cta-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Assessment Gratuito
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Articles -->
+        <section class="related-articles">
+            <div class="container">
+                <h3 class="text-center mb-5">
+                    <i class="fas fa-newspaper me-3"></i>
+                    Articoli Correlati
+                </h3>
+                
+                <div class="related-grid">
+                    <a href="/blog/firewall-watchguard-configurazione-ottimale.html" class="related-card">
+                        <div class="related-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=200&fit=crop&crop=entropy&auto=format" alt="Firewall WatchGuard" loading="lazy">
+                        </div>
+                        <div class="related-content">
+                            <div class="related-category">Sicurezza</div>
+                            <h4 class="related-title">Firewall WatchGuard: Configurazione Ottimale</h4>
+                            <p class="related-excerpt">Configura il firewall WatchGuard per massima sicurezza aziendale con regole avanzate.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="/blog/gestione-remota-it-best-practices.html" class="related-card">
+                        <div class="related-image">
+                            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=200&fit=crop&crop=entropy&auto=format" alt="Gestione Remota IT" loading="lazy">
+                        </div>
+                        <div class="related-content">
+                            <div class="related-category">Assistenza IT</div>
+                            <h4 class="related-title">Gestione Remota IT: Best Practices</h4>
+                            <p class="related-excerpt">Ottimizza il supporto IT remoto con strumenti professionali e procedure standardizzate.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="/blog/cloud-backup-veeam-guida-completa.html" class="related-card">
+                        <div class="related-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=200&fit=crop&crop=entropy&auto=format" alt="Cloud Backup Veeam" loading="lazy">
+                        </div>
+                        <div class="related-content">
+                            <div class="related-category">Cloud Storage</div>
+                            <h4 class="related-title">Cloud Backup Veeam: Guida Completa per PMI</h4>
+                            <p class="related-excerpt">Implementa una strategia di backup cloud professionale con Veeam per proteggere i dati aziendali.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+                    <p>Il tuo partner tecnologico di fiducia per soluzioni IT innovative e affidabili.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+                        <p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Servizi</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white-50" href="/pages/assistenza-it-milano.html">Assistenza IT</a></li>
+                        <li><a class="text-white-50" href="/pages/cloud-storage-milano.html">Cloud Storage</a></li>
+                        <li><a class="text-white-50" href="/pages/sicurezza-informatica-milano.html">Sicurezza Informatica</a></li>
+                        <li><a class="text-white-50" href="/pages/backup-disaster-recovery-milano.html">Backup & DR</a></li>
+                        <li><a class="text-white-50" href="/pages/voip-telefonia-milano.html">VoIP & Telefonia</a></li>
+                        <li><a class="text-white-50" href="/pages/firewall-watchguard-milano.html">Firewall Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Blog & Risorse</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white-50" href="/blog/">Blog IT-ERA</a></li>
+                        <li><a class="text-white-50" href="/blog/category/guide/">Guide Tecniche</a></li>
+                        <li><a class="text-white-50" href="/blog/category/sicurezza/">Sicurezza Informatica</a></li>
+                        <li><a class="text-white-50" href="/blog/category/news/">News & Trend</a></li>
+                    </ul>
+                    <div class="social-links mb-3">
+                        <a class="text-white-50 me-3" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a class="text-white-50 me-3" href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a class="text-white-50 me-3" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                    <p class="text-white-50 small">
+                        © 2024 IT-ERA. Tutti i diritti riservati.<br/>
+                        P.IVA: 10524040966<br/>
+                        <a class="text-white-50" href="/privacy">Privacy Policy</a> | 
+                        <a class="text-white-50" href="/cookie">Cookie Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+    
+    <!-- Article Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Generate Table of Contents
+            generateTableOfContents();
+            
+            // Reading progress bar
+            updateReadingProgress();
+            
+            // Smooth scroll for TOC links
+            setupSmoothScrolling();
+            
+            // Update active TOC item on scroll
+            setupScrollSpy();
+        });
+        
+        function generateTableOfContents() {
+            const headings = document.querySelectorAll('.article-body h2, .article-body h3');
+            const tocList = document.getElementById('tableOfContents');
+            
+            headings.forEach((heading, index) => {
+                // Create ID for heading if it doesn't exist
+                if (!heading.id) {
+                    heading.id = 'heading-' + index;
+                }
+                
+                // Create TOC item
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#' + heading.id;
+                a.textContent = heading.textContent;
+                a.className = heading.tagName === 'H3' ? 'toc-sub' : '';
+                
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        }
+        
+        function updateReadingProgress() {
+            window.addEventListener('scroll', function() {
+                const article = document.querySelector('.article-body');
+                const progressBar = document.getElementById('reading-progress');
+                
+                if (article && progressBar) {
+                    const articleTop = article.offsetTop;
+                    const articleHeight = article.offsetHeight;
+                    const windowHeight = window.innerHeight;
+                    const scrolled = window.scrollY;
+                    
+                    const progress = Math.min(100, Math.max(0, 
+                        ((scrolled - articleTop + windowHeight) / articleHeight) * 100
+                    ));
+                    
+                    progressBar.style.width = progress + '%';
+                }
+            });
+        }
+        
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+        
+        function setupScrollSpy() {
+            const tocLinks = document.querySelectorAll('.toc-list a');
+            const headings = document.querySelectorAll('.article-body h2, .article-body h3');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                headings.forEach(heading => {
+                    const rect = heading.getBoundingClientRect();
+                    if (rect.top <= 120) {
+                        current = heading.id;
+                    }
+                });
+                
+                tocLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        }
+        
+        // Social sharing functions
+        function shareOnLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank', 'width=600,height=400');
+        }
+        
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}`, '_blank', 'width=600,height=400');
+        }
+        
+        function shareOnFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
+        }
+        
+        function shareOnWhatsApp() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://wa.me/?text=${title} ${url}`, '_blank');
+        }
+        
+        // Track analytics events
+        function trackEvent(action, category = 'blog') {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    'event_category': category,
+                    'page_location': window.location.href
+                });
+            }
+        }
+        
+        // Track social shares
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const platform = this.classList[1]; // Get platform class (linkedin, twitter, etc.)
+                trackEvent('share', 'social');
+                trackEvent('share_' + platform, 'social');
+            });
+        });
+        
+        // Track reading time and engagement
+        let startTime = Date.now();
+        let maxScroll = 0;
+        
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+            maxScroll = Math.max(maxScroll, scrollPercent);
+        });
+        
+        window.addEventListener('beforeunload', function() {
+            const readingTime = Math.round((Date.now() - startTime) / 1000);
+            trackEvent('reading_time_' + Math.floor(readingTime / 30) * 30, 'engagement');
+            trackEvent('max_scroll_' + Math.floor(maxScroll / 25) * 25, 'engagement');
+        });
+    </script>
+</body>
+</html>

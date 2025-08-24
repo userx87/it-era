@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-08-24T16:40:45.991Z",
+  "system": "IT-ERA Chatbot Swarm",
+  "environment": "Production Staging",
+  "baseUrl": "https://it-era-chatbot-staging.bulltech.workers.dev",
+  "tests": [
+    {
+      "name": "System Health Check",
+      "category": "Infrastructure",
+      "status": "PASS",
+      "details": {
+        "status": "ok",
+        "service": "IT-ERA AI-Enhanced Chatbot API",
+        "version": "2.0",
+        "aiEnabled": true,
+        "aiProvider": "none",
+        "features": {
+          "teamsWebhook": false,
+          "rateLimit": true,
+          "fallbackMode": true
+        }
+      },
+      "responseTime": 0,
+      "timestamp": "2025-08-24T16:40:46.060Z"
+    },
+    {
+      "name": "Chat Session Initialization",
+      "category": "Functionality",
+      "status": "FAIL",
+      "details": {
+        "error": "timeout of 15000ms exceeded"
+      },
+      "timestamp": "2025-08-24T16:41:01.063Z"
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "passed": 1,
+    "warnings": 0,
+    "failed": 1,
+    "passRate": "50.0%",
+    "categories": {
+      "infrastructure": [
+        {
+          "name": "System Health Check",
+          "category": "Infrastructure",
+          "status": "PASS",
+          "details": {
+            "status": "ok",
+            "service": "IT-ERA AI-Enhanced Chatbot API",
+            "version": "2.0",
+            "aiEnabled": true,
+            "aiProvider": "none",
+            "features": {
+              "teamsWebhook": false,
+              "rateLimit": true,
+              "fallbackMode": true
+            }
+          },
+          "responseTime": 0,
+          "timestamp": "2025-08-24T16:40:46.060Z"
+        }
+      ],
+      "functionality": [
+        {
+          "name": "Chat Session Initialization",
+          "category": "Functionality",
+          "status": "FAIL",
+          "details": {
+            "error": "timeout of 15000ms exceeded"
+          },
+          "timestamp": "2025-08-24T16:41:01.063Z"
+        }
+      ],
+      "businessLogic": [],
+      "performance": []
+    },
+    "overallStatus": "ISSUES_DETECTED"
+  }
+}

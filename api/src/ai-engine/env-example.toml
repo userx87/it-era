@@ -1,0 +1,74 @@
+# Example Cloudflare Workers Configuration for IT-ERA AI Chatbot
+# Copy this to your wrangler.toml and update the values
+
+name = "it-era-ai-chatbot"
+compatibility_date = "2024-01-15"
+main = "src/chatbot/api/chatbot-worker.js"
+
+# Environment Variables for OpenRouter AI Integration
+[env.production.vars]
+# OpenRouter API Key - REQUIRED for AI functionality
+OPENROUTER_API_KEY = "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"
+
+# Email System Integration
+EMAIL_API_ENDPOINT = "https://it-era-email.bulltech.workers.dev/api/contact"
+
+# Teams Webhook for Escalations
+TEAMS_WEBHOOK_URL = "https://bulltechit.webhook.office.com/webhookb2/621e560e-86d9-478c-acfc-496624a88b79@f6ba30ad-37c0-41bf-a994-e434c59b4b2a/IncomingWebhook/fb2b1700f71c4806bdcbf0fc873952d0/c0aa99b7-8edb-41b4-b139-0ec4dd7864d5/V2l2_rh4MbAzeQQ4SpDifcMFLsktri3ocfMcQGZ6OHUmI1"
+
+# Environment Flags
+NODE_ENV = "production"
+AI_ENABLED = "true"
+ANALYTICS_ENABLED = "true"
+
+# Rate Limiting Settings
+RATE_LIMIT_ENABLED = "true"
+RATE_LIMIT_PER_HOUR = "60"
+
+# Cost Control
+AI_DAILY_BUDGET = "20.0"
+COST_ALERTS_ENABLED = "true"
+
+[env.development.vars]
+# Development Environment - Use cost-effective models
+OPENROUTER_API_KEY = "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"
+
+# Local Email System for Testing
+EMAIL_API_ENDPOINT = "http://localhost:3000/api/contact"
+
+# Local Teams Webhook (optional)
+TEAMS_WEBHOOK_URL = "https://webhook.site/your-test-url"
+
+# Development Flags
+NODE_ENV = "development"
+AI_ENABLED = "true"
+ANALYTICS_ENABLED = "true"
+DEBUG_MODE = "true"
+
+# Relaxed Limits for Development
+RATE_LIMIT_ENABLED = "false"
+AI_DAILY_BUDGET = "5.0"
+
+# KV Namespaces for Chat Sessions and Analytics
+[[kv_namespaces]]
+binding = "CHAT_SESSIONS"
+preview_id = "your-preview-kv-id"
+id = "your-production-kv-id"
+
+[[kv_namespaces]]
+binding = "AI_ANALYTICS"
+preview_id = "your-analytics-preview-kv-id" 
+id = "your-analytics-production-kv-id"
+
+# Routes Configuration
+[env.production]
+routes = [
+  "it-era.it/api/chat",
+  "it-era.it/api/analytics",
+  "it-era.it/health"
+]
+
+[env.development]
+routes = [
+  "localhost:8788/api/*"
+]

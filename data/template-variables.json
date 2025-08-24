@@ -1,0 +1,69 @@
+{
+  "template_variables": {
+    "description": "Template variables for city page generation - use these for consistent content creation",
+    "city_name_variations": {
+      "{{CITY_NAME}}": "Display name (e.g., 'Sant'Angelo Lodigiano')",
+      "{{CITY_SLUG}}": "URL-friendly slug (e.g., 'sant-angelo-lodigiano')",
+      "{{CITY_NAME_UPPER}}": "Uppercase version (e.g., 'SANT'ANGELO LODIGIANO')",
+      "{{CITY_NAME_TITLE}}": "Title case version (e.g., 'Sant'Angelo Lodigiano')"
+    },
+    "location_variables": {
+      "{{PROVINCE_CODE}}": "Two-letter province code (e.g., 'MI', 'BG', 'CO')",
+      "{{PROVINCE_NAME}}": "Full province name (e.g., 'Milano', 'Bergamo', 'Como')",
+      "{{REGION}}": "Always 'Lombardia' for this dataset"
+    },
+    "service_variables": {
+      "{{SERVICE_TYPE}}": "Service identifier ('assistenza', 'sicurezza', 'cloud')",
+      "{{SERVICE_NAME}}": "Display service name ('Assistenza IT', 'Sicurezza Informatica', 'Cloud Storage')",
+      "{{SERVICE_DESCRIPTION}}": "SEO-optimized service description"
+    },
+    "seo_variables": {
+      "{{META_TITLE}}": "Page title for SEO",
+      "{{META_DESCRIPTION}}": "Meta description for search engines",
+      "{{H1_TITLE}}": "Main page heading",
+      "{{CANONICAL_URL}}": "Canonical URL for the page"
+    }
+  },
+  "service_mappings": {
+    "assistenza": {
+      "name": "Assistenza IT",
+      "description": "Servizi di assistenza informatica e supporto tecnico",
+      "keywords": ["assistenza informatica", "supporto tecnico", "riparazione computer", "help desk"],
+      "url_prefix": "assistenza-it"
+    },
+    "sicurezza": {
+      "name": "Sicurezza Informatica", 
+      "description": "Soluzioni per la sicurezza informatica e protezione dati",
+      "keywords": ["sicurezza informatica", "cybersecurity", "protezione dati", "antivirus"],
+      "url_prefix": "sicurezza-informatica"
+    },
+    "cloud": {
+      "name": "Cloud Storage",
+      "description": "Servizi di archiviazione cloud e backup dati",
+      "keywords": ["cloud storage", "backup", "archiviazione dati", "cloud computing"],
+      "url_prefix": "cloud-storage"
+    }
+  },
+  "province_mappings": {
+    "BG": "Bergamo",
+    "CO": "Como", 
+    "CR": "Cremona",
+    "LC": "Lecco",
+    "LO": "Lodi",
+    "MB": "Monza e Brianza",
+    "MI": "Milano",
+    "PV": "Pavia",
+    "VA": "Varese"
+  },
+  "template_examples": {
+    "page_title": "{{SERVICE_NAME}} {{CITY_NAME}} - {{PROVINCE_NAME}} | IT-ERA",
+    "meta_description": "{{SERVICE_DESCRIPTION}} a {{CITY_NAME}} ({{PROVINCE_CODE}}). Contattaci per soluzioni IT professionali in {{PROVINCE_NAME}}, Lombardia.",
+    "h1_heading": "{{SERVICE_NAME}} a {{CITY_NAME}}",
+    "canonical_url": "https://it-era.it/{{SERVICE_TYPE}}-{{CITY_SLUG}}.html"
+  },
+  "content_patterns": {
+    "intro_paragraph": "Cerchi servizi di {{SERVICE_NAME}} a {{CITY_NAME}}? IT-ERA offre soluzioni professionali per {{CITY_NAME}} e tutta la provincia di {{PROVINCE_NAME}}.",
+    "location_reference": "{{CITY_NAME}}, situata in provincia di {{PROVINCE_CODE}} in Lombardia",
+    "service_area": "Serviamo {{CITY_NAME}} e le città limitrofe in provincia di {{PROVINCE_NAME}}"
+  }
+}

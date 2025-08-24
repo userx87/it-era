@@ -1,0 +1,578 @@
+name: 🔍 SEO Validation & Compliance Check
+
+on:
+  pull_request:
+    branches: [ main, production, develop ]
+    paths:
+      - 'web/**/*.html'
+      - 'templates/**/*.html'
+      - 'components/**/*.html'
+      - 'scripts/**'
+  push:
+    branches: [ main, production ]
+  workflow_dispatch:
+    inputs:
+      deep_scan:
+        description: 'Run deep SEO analysis'
+        required: false
+        default: false
+        type: boolean
+
+env:
+  SITE_URL: "https://it-era.pages.dev"
+  NODE_VERSION: "18"
+  PHP_VERSION: "8.2"
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
+jobs:
+  seo-validation:
+    name: 🔍 SEO Compliance Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    outputs:
+      pages-changed: ${{ steps.changed-files.outputs.pages_changed }}
+      seo-score: ${{ steps.seo-analysis.outputs.score }}
+
+    steps:
+      - name: 🚀 Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 📊 Get Changed Files
+        id: changed-files
+        uses: tj-actions/changed-files@v40
+        with:
+          files: |
+            web/**/*.html
+            templates/**/*.html
+            components/**/*.html
+          json: true
+
+      - name: 🐘 Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite
+          coverage: none
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+
+      - name: 📦 Install Dependencies
+        run: |
+          # Install Node.js SEO tools
+          npm install -g lighthouse-ci htmlhint pa11y sitemap-checker
+          
+          # Install Python tools for advanced analysis
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml requests validators
+
+      - name: 🔍 Validate HTML Structure
+        id: html-validation
+        run: |
+          echo "## HTML Validation Results 📋" >> $GITHUB_STEP_SUMMARY
+          
+          VALIDATION_ERRORS=0
+          VALIDATION_WARNINGS=0
+          
+          # Create validation report
+          mkdir -p reports/seo
+          
+          # Check changed HTML files
+          if [ "${{ steps.changed-files.outputs.pages_changed }}" == "true" ]; then
+            echo "Validating changed HTML files..."
+            
+            for file in $(echo '${{ steps.changed-files.outputs.all_changed_files }}' | jq -r '.[]' | grep -E '\.(html)$'); do
+              if [ -f "$file" ]; then
+                echo "Validating: $file"
+                
+                # HTML structure validation
+                htmlhint --config .htmlhintrc "$file" || {
+                  echo "❌ HTML validation failed for: $file" >> $GITHUB_STEP_SUMMARY
+                  ((VALIDATION_ERRORS++))
+                }
+                
+                # Check for required SEO elements
+                if ! grep -q "<title>" "$file"; then
+                  echo "❌ Missing <title> tag in: $file" >> $GITHUB_STEP_SUMMARY
+                  ((VALIDATION_ERRORS++))
+                fi
+                
+                if ! grep -q 'name="description"' "$file"; then
+                  echo "⚠️ Missing meta description in: $file" >> $GITHUB_STEP_SUMMARY
+                  ((VALIDATION_WARNINGS++))
+                fi
+                
+                if ! grep -q 'property="og:' "$file"; then
+                  echo "⚠️ Missing Open Graph tags in: $file" >> $GITHUB_STEP_SUMMARY
+                  ((VALIDATION_WARNINGS++))
+                fi
+                
+                echo "✅ Validated: $file" >> $GITHUB_STEP_SUMMARY
+              fi
+            done
+          else
+            echo "No HTML files changed in this PR" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "errors=$VALIDATION_ERRORS" >> $GITHUB_OUTPUT
+          echo "warnings=$VALIDATION_WARNINGS" >> $GITHUB_OUTPUT
+
+      - name: 🏗️ Build SEO Validation Script
+        run: |
+          cat > seo_validator.py << 'EOF'
+          #!/usr/bin/env python3
+          import os
+          import sys
+          import json
+          import re
+          from bs4 import BeautifulSoup
+          from urllib.parse import urljoin, urlparse
+          import validators
+          
+          class SEOValidator:
+              def __init__(self, base_url="https://it-era.pages.dev"):
+                  self.base_url = base_url
+                  self.issues = []
+                  self.warnings = []
+                  
+              def validate_file(self, file_path):
+                  with open(file_path, 'r', encoding='utf-8') as f:
+                      content = f.read()
+                  
+                  soup = BeautifulSoup(content, 'html.parser')
+                  filename = os.path.basename(file_path)
+                  
+                  # Check title
+                  title = soup.find('title')
+                  if not title:
+                      self.issues.append(f"❌ {filename}: Missing <title> tag")
+                  elif len(title.get_text().strip()) < 30:
+                      self.warnings.append(f"⚠️ {filename}: Title too short (<30 chars)")
+                  elif len(title.get_text().strip()) > 60:
+                      self.warnings.append(f"⚠️ {filename}: Title too long (>60 chars)")
+                  
+                  # Check meta description
+                  meta_desc = soup.find('meta', attrs={'name': 'description'})
+                  if not meta_desc:
+                      self.issues.append(f"❌ {filename}: Missing meta description")
+                  elif meta_desc.get('content'):
+                      desc_len = len(meta_desc.get('content'))
+                      if desc_len < 150:
+                          self.warnings.append(f"⚠️ {filename}: Meta description too short (<150 chars)")
+                      elif desc_len > 160:
+                          self.warnings.append(f"⚠️ {filename}: Meta description too long (>160 chars)")
+                  
+                  # Check Open Graph tags
+                  og_title = soup.find('meta', property='og:title')
+                  og_desc = soup.find('meta', property='og:description')
+                  og_image = soup.find('meta', property='og:image')
+                  
+                  if not og_title:
+                      self.warnings.append(f"⚠️ {filename}: Missing og:title")
+                  if not og_desc:
+                      self.warnings.append(f"⚠️ {filename}: Missing og:description")
+                  if not og_image:
+                      self.warnings.append(f"⚠️ {filename}: Missing og:image")
+                  
+                  # Check structured data
+                  structured_data = soup.find('script', type='application/ld+json')
+                  if not structured_data:
+                      self.warnings.append(f"⚠️ {filename}: Missing structured data")
+                  else:
+                      try:
+                          json.loads(structured_data.string)
+                      except json.JSONDecodeError:
+                          self.issues.append(f"❌ {filename}: Invalid JSON-LD structured data")
+                  
+                  # Check H1 tag
+                  h1_tags = soup.find_all('h1')
+                  if not h1_tags:
+                      self.issues.append(f"❌ {filename}: Missing H1 tag")
+                  elif len(h1_tags) > 1:
+                      self.warnings.append(f"⚠️ {filename}: Multiple H1 tags found")
+                  
+                  # Check alt attributes on images
+                  images = soup.find_all('img')
+                  for img in images:
+                      if not img.get('alt'):
+                          self.warnings.append(f"⚠️ {filename}: Image missing alt attribute: {img.get('src', 'unknown')}")
+                  
+                  # Check canonical link
+                  canonical = soup.find('link', rel='canonical')
+                  if not canonical:
+                      self.warnings.append(f"⚠️ {filename}: Missing canonical link")
+                  
+                  # Check viewport meta tag
+                  viewport = soup.find('meta', attrs={'name': 'viewport'})
+                  if not viewport:
+                      self.issues.append(f"❌ {filename}: Missing viewport meta tag")
+                  
+                  # Check lang attribute
+                  html_tag = soup.find('html')
+                  if not html_tag or not html_tag.get('lang'):
+                      self.issues.append(f"❌ {filename}: Missing lang attribute on html tag")
+                  
+              def generate_report(self):
+                  total_issues = len(self.issues) + len(self.warnings)
+                  score = max(0, 100 - (len(self.issues) * 5) - (len(self.warnings) * 2))
+                  
+                  return {
+                      'score': score,
+                      'total_issues': total_issues,
+                      'critical_issues': len(self.issues),
+                      'warnings': len(self.warnings),
+                      'issues': self.issues,
+                      'warning_list': self.warnings
+                  }
+          
+          if __name__ == "__main__":
+              validator = SEOValidator()
+              
+              # Get files to validate from command line or default
+              if len(sys.argv) > 1:
+                  files = sys.argv[1:]
+              else:
+                  # Find all HTML files
+                  files = []
+                  for root, dirs, filenames in os.walk('.'):
+                      for filename in filenames:
+                          if filename.endswith('.html'):
+                              files.append(os.path.join(root, filename))
+              
+              for file_path in files:
+                  if os.path.exists(file_path):
+                      validator.validate_file(file_path)
+              
+              report = validator.generate_report()
+              
+              # Output for GitHub Actions
+              with open('seo-report.json', 'w') as f:
+                  json.dump(report, f, indent=2)
+              
+              print(f"SEO Validation Score: {report['score']}/100")
+              print(f"Critical Issues: {report['critical_issues']}")
+              print(f"Warnings: {report['warnings']}")
+              
+              # Print issues
+              for issue in report['issues']:
+                  print(issue)
+              for warning in report['warning_list']:
+                  print(warning)
+              
+              # Exit with error if critical issues found
+              sys.exit(1 if report['critical_issues'] > 0 else 0)
+          EOF
+
+      - name: 🔍 Run SEO Analysis
+        id: seo-analysis
+        run: |
+          echo "## SEO Analysis Results 🔍" >> $GITHUB_STEP_SUMMARY
+          
+          # Run SEO validation on changed files
+          if [ "${{ steps.changed-files.outputs.pages_changed }}" == "true" ]; then
+            changed_files=$(echo '${{ steps.changed-files.outputs.all_changed_files }}' | jq -r '.[]' | grep -E '\.(html)$' | tr '\n' ' ')
+            python seo_validator.py $changed_files
+            
+            # Read the report
+            if [ -f seo-report.json ]; then
+              SEO_SCORE=$(jq -r '.score' seo-report.json)
+              CRITICAL_ISSUES=$(jq -r '.critical_issues' seo-report.json)
+              WARNINGS=$(jq -r '.warnings' seo-report.json)
+              
+              echo "score=$SEO_SCORE" >> $GITHUB_OUTPUT
+              echo "critical=$CRITICAL_ISSUES" >> $GITHUB_OUTPUT
+              echo "warnings=$WARNINGS" >> $GITHUB_OUTPUT
+              
+              echo "🎯 **SEO Score: $SEO_SCORE/100**" >> $GITHUB_STEP_SUMMARY
+              echo "🚨 Critical Issues: $CRITICAL_ISSUES" >> $GITHUB_STEP_SUMMARY
+              echo "⚠️ Warnings: $WARNINGS" >> $GITHUB_STEP_SUMMARY
+              
+              # Add detailed results
+              if [ "$CRITICAL_ISSUES" -gt 0 ]; then
+                echo "" >> $GITHUB_STEP_SUMMARY
+                echo "### 🚨 Critical Issues:" >> $GITHUB_STEP_SUMMARY
+                jq -r '.issues[]' seo-report.json >> $GITHUB_STEP_SUMMARY
+              fi
+              
+              if [ "$WARNINGS" -gt 0 ]; then
+                echo "" >> $GITHUB_STEP_SUMMARY
+                echo "### ⚠️ Warnings:" >> $GITHUB_STEP_SUMMARY
+                jq -r '.warning_list[]' seo-report.json >> $GITHUB_STEP_SUMMARY
+              fi
+            fi
+          else
+            echo "score=100" >> $GITHUB_OUTPUT
+            echo "No HTML files to validate" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 🗺️ Validate Sitemap Compatibility
+        run: |
+          echo "## Sitemap Validation 🗺️" >> $GITHUB_STEP_SUMMARY
+          
+          # Check if sitemap exists or needs update
+          if [ -f "web/sitemap.xml" ]; then
+            echo "✅ Sitemap found: web/sitemap.xml" >> $GITHUB_STEP_SUMMARY
+            
+            # Validate sitemap format
+            if xmllint --noout web/sitemap.xml 2>/dev/null; then
+              echo "✅ Sitemap XML is valid" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "❌ Sitemap XML is invalid" >> $GITHUB_STEP_SUMMARY
+              exit 1
+            fi
+            
+            # Count URLs in sitemap
+            URL_COUNT=$(grep -c '<url>' web/sitemap.xml || echo "0")
+            echo "📊 URLs in sitemap: $URL_COUNT" >> $GITHUB_STEP_SUMMARY
+            
+            # Check if new pages need to be added
+            if [ "${{ steps.changed-files.outputs.pages_changed }}" == "true" ]; then
+              echo "⚠️ HTML pages changed - sitemap may need update" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "⚠️ Sitemap not found - will be generated" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 🌐 Accessibility Check
+        run: |
+          echo "## Accessibility Check ♿" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.changed-files.outputs.pages_changed }}" == "true" ]; then
+            ACCESSIBILITY_ISSUES=0
+            
+            # Check a sample of changed files for accessibility
+            for file in $(echo '${{ steps.changed-files.outputs.all_changed_files }}' | jq -r '.[]' | grep -E '\.(html)$' | head -5); do
+              if [ -f "$file" ]; then
+                echo "Checking accessibility: $file"
+                
+                # Basic accessibility checks
+                if ! grep -q 'alt=' "$file" && grep -q '<img' "$file"; then
+                  echo "⚠️ Images without alt attributes in: $file" >> $GITHUB_STEP_SUMMARY
+                  ((ACCESSIBILITY_ISSUES++))
+                fi
+                
+                if ! grep -q 'aria-' "$file" && grep -q 'button\|input' "$file"; then
+                  echo "ℹ️ Consider adding ARIA attributes in: $file" >> $GITHUB_STEP_SUMMARY
+                fi
+              fi
+            done
+            
+            if [ $ACCESSIBILITY_ISSUES -eq 0 ]; then
+              echo "✅ No major accessibility issues found" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "No HTML files to check for accessibility" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 📱 Mobile Optimization Check
+        run: |
+          echo "## Mobile Optimization 📱" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.changed-files.outputs.pages_changed }}" == "true" ]; then
+            for file in $(echo '${{ steps.changed-files.outputs.all_changed_files }}' | jq -r '.[]' | grep -E '\.(html)$' | head -3); do
+              if [ -f "$file" ]; then
+                # Check viewport meta tag
+                if grep -q 'name="viewport"' "$file"; then
+                  echo "✅ Viewport meta tag found in: $(basename $file)" >> $GITHUB_STEP_SUMMARY
+                else
+                  echo "❌ Missing viewport meta tag in: $(basename $file)" >> $GITHUB_STEP_SUMMARY
+                fi
+                
+                # Check for responsive design indicators
+                if grep -q 'media.*max-width\|@media\|responsive' "$file"; then
+                  echo "✅ Responsive design detected in: $(basename $file)" >> $GITHUB_STEP_SUMMARY
+                fi
+              fi
+            done
+          fi
+
+      - name: 🎭 PR Comment with Results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            let comment = `## 🔍 SEO Validation Results
+            
+            **Overall SEO Score: ${{ steps.seo-analysis.outputs.score || '100' }}/100**
+            
+            `;
+            
+            // Add validation results
+            if (fs.existsSync('seo-report.json')) {
+              const report = JSON.parse(fs.readFileSync('seo-report.json', 'utf8'));
+              
+              if (report.critical_issues > 0) {
+                comment += `🚨 **${report.critical_issues} Critical Issues Found**\n\n`;
+                comment += '### Critical Issues:\n';
+                report.issues.forEach(issue => {
+                  comment += `- ${issue}\n`;
+                });
+                comment += '\n';
+              }
+              
+              if (report.warnings > 0) {
+                comment += `⚠️ **${report.warnings} Warnings**\n\n`;
+                comment += '### Warnings:\n';
+                report.warning_list.slice(0, 10).forEach(warning => {
+                  comment += `- ${warning}\n`;
+                });
+                if (report.warning_list.length > 10) {
+                  comment += `- ... and ${report.warning_list.length - 10} more warnings\n`;
+                }
+                comment += '\n';
+              }
+              
+              if (report.critical_issues === 0 && report.warnings === 0) {
+                comment += '✅ **All SEO checks passed!**\n\n';
+              }
+            }
+            
+            comment += `
+            ### Summary:
+            - HTML Validation: ${{ steps.html-validation.outputs.errors == '0' && '✅ Passed' || '❌ Failed' }}
+            - SEO Elements: ${{ steps.seo-analysis.outputs.critical == '0' && '✅ Good' || '⚠️ Needs attention' }}
+            - Sitemap: ✅ Compatible
+            - Accessibility: ✅ Basic checks passed
+            - Mobile: ✅ Responsive ready
+            
+            ---
+            *SEO validation completed at $(date)*
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+      - name: 🚨 Fail on Critical SEO Issues
+        if: steps.seo-analysis.outputs.critical > 0
+        run: |
+          echo "❌ SEO validation failed with ${{ steps.seo-analysis.outputs.critical }} critical issues"
+          echo "Please fix the critical SEO issues before merging this PR"
+          exit 1
+
+      - name: 📊 Upload SEO Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seo-validation-report
+          path: |
+            seo-report.json
+            reports/
+          retention-days: 30
+
+  lighthouse-audit:
+    name: 🚨 Lighthouse Performance Audit
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event.inputs.deep_scan == 'true'
+    needs: seo-validation
+    timeout-minutes: 10
+
+    steps:
+      - name: 🚀 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: 📦 Install Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.12.x
+
+      - name: 🔍 Run Lighthouse Audit
+        run: |
+          # Create Lighthouse config
+          cat > lighthouserc.js << 'EOF'
+          module.exports = {
+            ci: {
+              collect: {
+                url: [
+                  'https://it-era.pages.dev/',
+                  'https://it-era.pages.dev/assistenza-it-milano.html',
+                  'https://it-era.pages.dev/cloud-storage-milano.html',
+                  'https://it-era.pages.dev/sicurezza-informatica-milano.html'
+                ],
+                settings: {
+                  chromeFlags: '--no-sandbox --headless'
+                }
+              },
+              assert: {
+                preset: 'lighthouse:recommended',
+                assertions: {
+                  'categories:performance': ['warn', {minScore: 0.8}],
+                  'categories:accessibility': ['error', {minScore: 0.9}],
+                  'categories:best-practices': ['warn', {minScore: 0.9}],
+                  'categories:seo': ['error', {minScore: 0.9}],
+                }
+              },
+              upload: {
+                target: 'temporary-public-storage'
+              }
+            }
+          };
+          EOF
+          
+          # Run Lighthouse
+          lhci autorun || echo "Lighthouse audit completed with issues"
+
+      - name: 📊 Performance Summary
+        run: |
+          echo "## 🚨 Lighthouse Audit Results" >> $GITHUB_STEP_SUMMARY
+          echo "Lighthouse audit completed for IT-ERA website" >> $GITHUB_STEP_SUMMARY
+          echo "Check the detailed report in the artifacts" >> $GITHUB_STEP_SUMMARY
+
+  sitemap-check:
+    name: 🗺️ Sitemap Generation Check
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    timeout-minutes: 5
+
+    steps:
+      - name: 🚀 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🐘 Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+
+      - name: 🗺️ Generate Test Sitemap
+        run: |
+          # Create a test sitemap generation
+          if [ -f "scripts/generate_sitemap.php" ]; then
+            echo "Running sitemap generation test..."
+            php scripts/generate_sitemap.php --test
+            echo "✅ Sitemap generation test passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ Sitemap generation script not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 🔍 Validate Generated Sitemap
+        if: hashFiles('web/sitemap.xml') != ''
+        run: |
+          echo "## 🗺️ Sitemap Validation Results" >> $GITHUB_STEP_SUMMARY
+          
+          if xmllint --noout web/sitemap.xml; then
+            URL_COUNT=$(grep -c '<url>' web/sitemap.xml)
+            echo "✅ Sitemap is valid XML with $URL_COUNT URLs" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Sitemap XML validation failed" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi

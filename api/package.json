@@ -12,13 +12,18 @@
     "kv:quotes": "wrangler kv:namespace create QUOTES_KV && wrangler kv:namespace create QUOTES_KV --preview",
     "db:create": "wrangler d1 create it-era-contacts && wrangler d1 create it-era-analytics",
     "db:init": "wrangler d1 execute it-era-contacts --file=./schema.sql && wrangler d1 execute it-era-analytics --file=./schema.sql",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest tests/ --verbose",
+    "test:vision": "node test-vision.js",
+    "test:vision:dev": "CHATBOT_API_URL=http://localhost:8787/api/chat node test-vision.js",
+    "test:vision:prod": "CHATBOT_API_URL=https://it-era-chatbot.bulltech.workers.dev/api/chat node test-vision.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "jest": "^30.0.5",
+    "puppeteer": "^24.17.0",
     "wrangler": "^4.32.0"
   },
   "directories": {

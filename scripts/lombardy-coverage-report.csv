@@ -1,0 +1,13 @@
+Province,Expected,Found,Coverage%,Status
+"Milano (MI)",127,38,29.9,"Incomplete"
+"Bergamo (BG)",220,56,25.5,"Incomplete"
+"Brescia (BS)",192,1,0.5,"Incomplete"
+"Como (CO)",127,35,27.6,"Incomplete"
+"Cremona (CR)",112,18,16.1,"Incomplete"
+"Lecco (LC)",77,39,50.6,"Incomplete"
+"Lodi (LO)",57,17,29.8,"Incomplete"
+"Monza e Brianza (MB)",55,49,89.1,"Incomplete"
+"Mantova (MN)",63,0,0,"Incomplete"
+"Pavia (PV)",174,0,0,"Incomplete"
+"Sondrio (SO)",78,0,0,"Incomplete"
+"Varese (VA)",119,6,5,"Incomplete"

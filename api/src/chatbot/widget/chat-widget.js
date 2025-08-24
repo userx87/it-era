@@ -1,6 +1,7 @@
 /**
- * IT-ERA Chat Widget
- * Widget chat responsive per sito web con integrazione sistema email
+ * IT-ERA AI-Powered Chat Widget
+ * Enhanced responsive chat widget with AI features, advanced UX,
+ * dynamic suggestions, and intelligent escalation handling
  */
 
 class ITERAChatWidget {
@@ -19,7 +20,25 @@ class ITERAChatWidget {
     this.sessionId = null;
     this.isOpen = false;
     this.isLoading = false;
+    this.isTyping = false;
     this.messages = [];
+    this.leadData = {};
+    this.conversationMetrics = {
+      messageCount: 0,
+      aiResponses: 0,
+      averageResponseTime: 0,
+      totalCost: 0
+    };
+    this.suggestions = [];
+    this.quickReplies = [];
+    this.escalationMode = false;
+    
+    // Vision capabilities
+    this.visionEnabled = true;
+    this.maxImages = 5;
+    this.maxImageSize = 20 * 1024 * 1024; // 20MB
+    this.supportedImageTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+    this.uploadedImages = [];
     
     this.init();
   }
@@ -90,28 +109,106 @@ class ITERAChatWidget {
         <!-- Input -->
         <div class="itera-chat-input">
           <div class="itera-chat-input-area">
-            <textarea 
-              id="itera-chat-textarea" 
-              placeholder="Scrivi un messaggio..."
-              rows="1"
-              maxlength="500"
-            ></textarea>
-            <button class="itera-chat-send" id="itera-chat-send">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+            <!-- Smart input suggestions -->
+            <div class="itera-input-suggestions hidden" id="itera-input-suggestions">
+              <div class="itera-suggestion-item" data-text="Ho bisogno di un preventivo">💰 Preventivo</div>
+              <div class="itera-suggestion-item" data-text="Vorrei assistenza tecnica">🔧 Assistenza</div>
+              <div class="itera-suggestion-item" data-text="Parlare con una persona">👤 Operatore umano</div>
+            </div>
+            
+            <div class="itera-input-container">
+              <textarea 
+                id="itera-chat-textarea" 
+                placeholder="Scrivi un messaggio o carica immagini per assistenza tecnica..."
+                rows="1"
+                maxlength="1000"
+              ></textarea>
+              
+              <!-- Image upload button -->
+              <button class="itera-image-upload" id="itera-image-upload" title="Carica immagini">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/>
+                  <polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </button>
+              
+              <!-- Hidden file input -->
+              <input 
+                type="file" 
+                id="itera-file-input" 
+                multiple 
+                accept="image/*" 
+                style="display: none;"
+              />
+              
+              <!-- Voice input button (future feature) -->
+              <button class="itera-voice-input hidden" id="itera-voice-input" title="Messaggio vocale">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </button>
+              
+              <button class="itera-chat-send" id="itera-chat-send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         
-        <!-- Loading -->
+        <!-- Image Preview Area -->
+        <div class="itera-image-preview hidden" id="itera-image-preview">
+          <div class="itera-image-preview-header">
+            <span>📸 Immagini caricate:</span>
+            <button class="itera-clear-images" id="itera-clear-images">✕</button>
+          </div>
+          <div class="itera-image-preview-container" id="itera-image-preview-container">
+            <!-- Dynamic image previews -->
+          </div>
+          <div class="itera-image-help">
+            💡 Carica screenshot di errori, foto di hardware o diagrammi per assistenza specializzata
+          </div>
+        </div>
+        
+        <!-- Enhanced Loading & Typing Indicators -->
         <div class="itera-chat-loading hidden" id="itera-chat-loading">
           <div class="itera-typing-indicator">
             <div class="itera-typing-dot"></div>
             <div class="itera-typing-dot"></div>
             <div class="itera-typing-dot"></div>
           </div>
-          <span>L'assistente sta scrivendo...</span>
+          <span id="itera-loading-text">L'assistente sta scrivendo...</span>
+        </div>
+        
+        <!-- AI Status Indicator -->
+        <div class="itera-ai-status hidden" id="itera-ai-status">
+          <div class="itera-ai-badge">
+            <span class="itera-ai-icon">🤖</span>
+            <span class="itera-ai-text">Risposta AI</span>
+          </div>
+        </div>
+        
+        <!-- Vision Analysis Indicator -->
+        <div class="itera-vision-status hidden" id="itera-vision-status">
+          <div class="itera-vision-badge">
+            <span class="itera-vision-icon">👁️</span>
+            <span class="itera-vision-text">Analisi immagini in corso...</span>
+          </div>
+        </div>
+        
+        <!-- Quick Replies -->
+        <div class="itera-quick-replies hidden" id="itera-quick-replies">
+          <div class="itera-quick-replies-header">Risposte rapide:</div>
+          <div class="itera-quick-replies-container"></div>
+        </div>
+        
+        <!-- Smart Suggestions -->
+        <div class="itera-suggestions hidden" id="itera-suggestions">
+          <div class="itera-suggestions-header">💡 Suggerimenti:</div>
+          <div class="itera-suggestions-container"></div>
         </div>
       </div>
     `;
@@ -430,13 +527,171 @@ class ITERAChatWidget {
         display: none !important;
       }
       
+      /* AI-specific styles */
+      .itera-ai-status {
+        position: absolute;
+        top: -35px;
+        right: 0;
+        background: rgba(102, 126, 234, 0.1);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        border-radius: 15px;
+        padding: 4px 8px;
+        font-size: 11px;
+        color: ${this.config.primaryColor};
+        backdrop-filter: blur(5px);
+        animation: aiPulse 2s infinite;
+      }
+      
+      @keyframes aiPulse {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+      
+      .itera-ai-badge {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      
+      .itera-ai-icon {
+        font-size: 10px;
+      }
+      
+      .itera-quick-replies, .itera-suggestions {
+        padding: 12px;
+        background: #f9f9ff;
+        border-top: 1px solid #e0e0e0;
+        font-size: 12px;
+      }
+      
+      .itera-quick-replies-header, .itera-suggestions-header {
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: ${this.config.primaryColor};
+      }
+      
+      .itera-quick-replies-container, .itera-suggestions-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      
+      .itera-quick-reply, .itera-suggestion {
+        background: white;
+        border: 1px solid ${this.config.primaryColor};
+        color: ${this.config.primaryColor};
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 11px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .itera-quick-reply:hover, .itera-suggestion:hover {
+        background: ${this.config.primaryColor};
+        color: white;
+        transform: translateY(-1px);
+      }
+      
+      .itera-input-suggestions {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-bottom: none;
+        border-radius: 8px 8px 0 0;
+        padding: 8px;
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+      
+      .itera-suggestion-item {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 4px 8px;
+        font-size: 11px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .itera-suggestion-item:hover {
+        background: ${this.config.primaryColor};
+        color: white;
+        border-color: ${this.config.primaryColor};
+      }
+      
+      .itera-input-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+      }
+      
+      .itera-voice-input {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .itera-voice-input:hover {
+        background: ${this.config.primaryColor};
+        color: white;
+        border-color: ${this.config.primaryColor};
+      }
+      
+      /* Enhanced typing indicator */
+      .itera-chat-loading {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(90deg, #f9f9f9, #f0f0f0, #f9f9f9);
+        background-size: 200% 100%;
+        animation: loadingShimmer 2s infinite;
+        border-top: 1px solid #e0e0e0;
+        font-size: 12px;
+        color: #666;
+      }
+      
+      @keyframes loadingShimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+      
+      /* Message enhancements */
+      .itera-chat-message.ai-powered .itera-chat-message-content {
+        position: relative;
+      }
+      
+      .itera-chat-message.ai-powered .itera-chat-message-content::after {
+        content: '🤖';
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        font-size: 10px;
+        opacity: 0.5;
+      }
+      
+      .itera-chat-message.escalation .itera-chat-message-content {
+        border-left: 3px solid #ff9800;
+        background: linear-gradient(135deg, #fff3e0, #ffffff);
+      }
+      
       /* Mobile responsive */
       @media (max-width: 480px) {
         .itera-chat-window {
-          width: 90vw;
-          height: 70vh;
+          width: 95vw;
+          height: 75vh;
           bottom: 80px;
-          right: 5vw;
+          right: 2.5vw;
+          left: 2.5vw;
         }
         
         .itera-chat-widget.bottom-right {
@@ -445,6 +700,15 @@ class ITERAChatWidget {
         
         .itera-chat-widget.bottom-left {
           left: 20px;
+        }
+        
+        .itera-input-suggestions {
+          flex-direction: column;
+          gap: 4px;
+        }
+        
+        .itera-quick-replies-container, .itera-suggestions-container {
+          flex-direction: column;
         }
       }
     `;
@@ -550,13 +814,19 @@ class ITERAChatWidget {
     
     if (!message || this.isLoading) return;
     
-    // Aggiungi messaggio utente
-    this.addUserMessage(message);
+    // Clear input and suggestions
     textarea.value = '';
     textarea.style.height = 'auto';
+    this.hideInputSuggestions();
     
-    // Mostra loading
-    this.showLoading(true);
+    // Add user message with timestamp
+    this.addUserMessage(message);
+    this.conversationMetrics.messageCount++;
+    
+    // Show enhanced loading with AI context
+    this.showEnhancedLoading(true, 'L\'assistente AI sta elaborando...');
+    
+    const startTime = Date.now();
     
     try {
       const response = await fetch(this.config.apiEndpoint, {
@@ -567,30 +837,54 @@ class ITERAChatWidget {
         body: JSON.stringify({
           action: 'message',
           message: message,
-          sessionId: this.sessionId
+          sessionId: this.sessionId,
+          leadData: this.leadData,
+          timestamp: Date.now()
         })
       });
       
       const result = await response.json();
+      const responseTime = Date.now() - startTime;
       
       if (result.success) {
-        this.addBotMessage(result.response, result.options);
+        // Update metrics
+        this.updateConversationMetrics(result, responseTime);
         
-        // Se è un intent che richiede email, mostra form
-        if (['preventivo', 'supporto'].includes(result.intent)) {
-          setTimeout(() => {
-            this.showEmailForm();
-          }, 1000);
+        // Show AI status if AI-powered
+        if (result.aiPowered) {
+          this.showAIStatus(result.cached);
         }
+        
+        // Add bot message with enhanced features
+        this.addEnhancedBotMessage(result);
+        
+        // Handle escalation mode
+        if (result.escalate) {
+          this.handleEscalation(result);
+        }
+        
+        // Show smart suggestions
+        this.updateSmartSuggestions(result);
+        
+        // Handle data collection
+        if (result.step === 'contact_collection' || result.escalate) {
+          setTimeout(() => this.showDataCollectionForm(result), 1000);
+        }
+        
       } else {
-        this.addBotMessage('Scusa, non ho capito. Puoi ripetere?');
+        this.addBotMessage('Scusa, non ho capito bene. Puoi ripetere in modo diverso?', 
+                          ['Preventivo', 'Assistenza', 'Parlare con umano']);
       }
       
     } catch (error) {
-      console.error('Chat message error:', error);
-      this.addBotMessage('C\'è stato un errore di connessione. Riprova.');
+      console.error('Enhanced chat error:', error);
+      this.addBotMessage(
+        'C\'è stato un problema di connessione. Proviamo con un operatore umano?',
+        ['Operatore Umano', 'Riprova', 'Email Diretto']
+      );
+      this.showEscalationOptions();
     } finally {
-      this.showLoading(false);
+      this.showEnhancedLoading(false);
     }
   }
   
@@ -605,36 +899,64 @@ class ITERAChatWidget {
     this.scrollToBottom();
   }
   
-  addBotMessage(text, options = []) {
+  addEnhancedBotMessage(result) {
     const messagesContainer = document.getElementById('itera-chat-messages');
     const messageDiv = document.createElement('div');
-    messageDiv.className = 'itera-chat-message bot';
+    
+    // Enhanced message classes
+    let messageClasses = 'itera-chat-message bot';
+    if (result.aiPowered) messageClasses += ' ai-powered';
+    if (result.escalate) messageClasses += ' escalation';
+    if (result.cached) messageClasses += ' cached';
+    
+    messageDiv.className = messageClasses;
     
     let optionsHtml = '';
-    if (options && options.length > 0) {
+    if (result.options && result.options.length > 0) {
       optionsHtml = `
         <div class="itera-chat-options">
-          ${options.map(option => `
-            <button class="itera-chat-option" data-option="${option}">
-              ${option}
+          ${result.options.map((option, index) => `
+            <button class="itera-chat-option" data-option="${option}" data-index="${index}">
+              ${this.addEmojiToOption(option, result.intent)}
             </button>
           `).join('')}
         </div>
       `;
     }
     
+    // Enhanced message content with metadata
+    let metadataHtml = '';
+    if (result.aiPowered || result.responseTime > 3000) {
+      metadataHtml = `
+        <div class="itera-message-metadata">
+          ${result.aiPowered ? '<span class="ai-badge">🤖 AI</span>' : ''}
+          ${result.cached ? '<span class="cached-badge">⚡ Cached</span>' : ''}
+          ${result.responseTime > 3000 ? `<span class="time-badge">${(result.responseTime/1000).toFixed(1)}s</span>` : ''}
+        </div>
+      `;
+    }
+    
     messageDiv.innerHTML = `
-      <div class="itera-chat-message-content">${text}</div>
+      <div class="itera-chat-message-content">
+        ${this.formatMessageText(result.response)}
+        ${metadataHtml}
+      </div>
       ${optionsHtml}
     `;
     
     messagesContainer.appendChild(messageDiv);
     
-    // Aggiungi event listener per opzioni
-    if (options && options.length > 0) {
+    // Enhanced event listeners for options
+    if (result.options && result.options.length > 0) {
       messageDiv.querySelectorAll('.itera-chat-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const option = e.target.dataset.option;
+          const index = e.target.dataset.index;
+          
+          // Track option selection
+          this.trackOptionSelection(option, index, result.intent);
+          
+          // Auto-fill and send
           document.getElementById('itera-chat-textarea').value = option;
           this.sendMessage();
         });
@@ -642,6 +964,18 @@ class ITERAChatWidget {
     }
     
     this.scrollToBottom();
+    this.playMessageSound();
+  }
+  
+  // Legacy method for backwards compatibility
+  addBotMessage(text, options = []) {
+    const fakeResult = {
+      response: text,
+      options: options,
+      aiPowered: false,
+      intent: 'general'
+    };
+    this.addEnhancedBotMessage(fakeResult);
   }
   
   showEmailForm() {

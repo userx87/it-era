@@ -1,0 +1,2739 @@
+{
+  "timestamp": "2025-08-24T13:54:11.376Z",
+  "summary": {
+    "totalPages": 10,
+    "passedPages": 0,
+    "failedPages": 9,
+    "averageScore": 40
+  },
+  "results": [
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+      "timestamp": "2025-08-24T13:53:54.160Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 2013,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": true,
+          "details": {
+            "expectedCity": "Milano",
+            "cityFromUrl": "milano",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "Assistenza IT Milano | Supporto Tecnico Professionale 24/7",
+            "h1Text": "\n                        Assistenza IT Professionale a Milano\n                    ",
+            "cityInTitle": true,
+            "cityInH1": true,
+            "metaDescription": "Assistenza IT professionale a Milano, Milano. Supporto tecnico 24/7, risoluzione problemi computer, installazione software. SLA 4 ore garantito.",
+            "cityInMeta": true
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": true,
+          "details": {
+            "formExists": true,
+            "hasNameField": true,
+            "hasEmailField": true,
+            "hasMessageField": true,
+            "hasSubmitButton": true,
+            "validationError": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": false,
+          "details": {
+            "totalImages": 0,
+            "images": [],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": false,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 724,
+            "performanceMetrics": {
+              "domContentLoaded": 0.20000004768371582,
+              "loadComplete": 0.19999998807907104,
+              "firstPaint": 92,
+              "firstContentfulPaint": 92
+            },
+            "resourceCount": 6,
+            "totalTransferSize": 84027,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 60,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 60
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo.html",
+      "timestamp": "2025-08-24T13:53:57.080Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 761,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Bergamo",
+            "cityFromUrl": "bergamo",
+            "unreplacedPlaceholders": [
+              "{{CITY_SLUG}}",
+              "{{CITY_SLUG}}",
+              "{{CITY_SLUG}}"
+            ],
+            "hasUnreplacedPlaceholders": true,
+            "title": "Sicurezza Informatica Bergamo | Protezione Avanzata Cyber Security | IT-ERA",
+            "h1Text": "",
+            "cityInTitle": true,
+            "cityInH1": false,
+            "metaDescription": "Servizi di Sicurezza Informatica a Bergamo ✓ Protezione ransomware ✓ SOC 24/7 ✓ Penetration testing ✓ Compliance GDPR ✓ Fortinet Partner",
+            "cityInMeta": true
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": true,
+          "details": {
+            "formExists": true,
+            "hasNameField": true,
+            "hasEmailField": true,
+            "hasMessageField": true,
+            "hasSubmitButton": true,
+            "validationError": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": false,
+          "details": {
+            "totalImages": 0,
+            "images": [],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": false,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-bergamo#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 674,
+            "performanceMetrics": {
+              "domContentLoaded": 0.3999999761581421,
+              "loadComplete": 0.20000004768371582,
+              "firstPaint": 88,
+              "firstContentfulPaint": 88
+            },
+            "resourceCount": 6,
+            "totalTransferSize": 78951,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 40,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 40
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como.html",
+      "timestamp": "2025-08-24T13:53:58.616Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 727,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Como",
+            "cityFromUrl": "como",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "Cloud Storage Milano | Archiviazione Sicura e Backup Aziendale",
+            "h1Text": "\n                        Cloud Storage Sicuro per Como\n                    ",
+            "cityInTitle": false,
+            "cityInH1": true,
+            "metaDescription": "Servizi Cloud Storage professionali a Como, Lombardia. Backup automatico, archiviazione sicura, sincronizzazione dati. GDPR compliant e AES-256.",
+            "cityInMeta": true
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": true,
+          "details": {
+            "formExists": true,
+            "hasNameField": true,
+            "hasEmailField": true,
+            "hasMessageField": true,
+            "hasSubmitButton": true,
+            "validationError": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": false,
+          "details": {
+            "totalImages": 0,
+            "images": [],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": false,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-como#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 657,
+            "performanceMetrics": {
+              "domContentLoaded": 0.10000002384185791,
+              "loadComplete": 0.19999998807907104,
+              "firstPaint": 84,
+              "firstContentfulPaint": 84
+            },
+            "resourceCount": 5,
+            "totalTransferSize": 77288,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 40,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 40
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+      "timestamp": "2025-08-24T13:54:00.097Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 2015,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Lecco",
+            "cityFromUrl": "lecco",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "Assistenza IT Milano | Supporto Tecnico Professionale 24/7",
+            "h1Text": "\n                        Assistenza IT Professionale a Milano\n                    ",
+            "cityInTitle": false,
+            "cityInH1": false,
+            "metaDescription": "Assistenza IT professionale a Milano, Milano. Supporto tecnico 24/7, risoluzione problemi computer, installazione software. SLA 4 ore garantito.",
+            "cityInMeta": false
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": true,
+          "details": {
+            "formExists": true,
+            "hasNameField": true,
+            "hasEmailField": true,
+            "hasMessageField": true,
+            "hasSubmitButton": true,
+            "validationError": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": false,
+          "details": {
+            "totalImages": 0,
+            "images": [],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": false,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 718,
+            "performanceMetrics": {
+              "domContentLoaded": 0.09999996423721313,
+              "loadComplete": 0.30000001192092896,
+              "firstPaint": 80,
+              "firstContentfulPaint": 80
+            },
+            "resourceCount": 6,
+            "totalTransferSize": 84027,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 40,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 40
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza.html",
+      "timestamp": "2025-08-24T13:54:02.963Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 695,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Monza",
+            "cityFromUrl": "monza",
+            "unreplacedPlaceholders": [
+              "{{CITY_SLUG}}",
+              "{{CITY_SLUG}}",
+              "{{CITY_SLUG}}"
+            ],
+            "hasUnreplacedPlaceholders": true,
+            "title": "Sicurezza Informatica Monza | Protezione Avanzata Cyber Security | IT-ERA",
+            "h1Text": "",
+            "cityInTitle": true,
+            "cityInH1": false,
+            "metaDescription": "Servizi di Sicurezza Informatica a Monza ✓ Protezione ransomware ✓ SOC 24/7 ✓ Penetration testing ✓ Compliance GDPR ✓ Fortinet Partner",
+            "cityInMeta": true
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": true,
+          "details": {
+            "formExists": true,
+            "hasNameField": true,
+            "hasEmailField": true,
+            "hasMessageField": true,
+            "hasSubmitButton": true,
+            "validationError": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": false,
+          "details": {
+            "totalImages": 0,
+            "images": [],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": false,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-monza#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 688,
+            "performanceMetrics": {
+              "domContentLoaded": 0.19999998807907104,
+              "loadComplete": 0.30000001192092896,
+              "firstPaint": 112,
+              "firstContentfulPaint": 112
+            },
+            "resourceCount": 6,
+            "totalTransferSize": 78951,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 40,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 40
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html",
+      "timestamp": "2025-08-24T13:54:04.456Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 668,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Brescia",
+            "cityFromUrl": "brescia",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia",
+            "h1Text": "Il Partner IT che la Tua Azienda Merita",
+            "cityInTitle": false,
+            "cityInH1": false,
+            "metaDescription": "IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti.",
+            "cityInMeta": false
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": false,
+          "details": {
+            "formExists": false,
+            "error": "No contact form found on page"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": true,
+          "details": {
+            "totalImages": 5,
+            "images": [
+              {
+                "src": "https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&logo=microsoft&logoColor=white",
+                "alt": "Microsoft Partner",
+                "naturalWidth": 181,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/VMware-Partner-607078?style=for-the-badge&logo=vmware&logoColor=white",
+                "alt": "VMware Partner",
+                "naturalWidth": 178,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam&logoColor=white",
+                "alt": "Veeam Gold Partner",
+                "naturalWidth": 207,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/WatchGuard-Partner-ED1C24?style=for-the-badge&logo=watchguard&logoColor=white",
+                "alt": "WatchGuard Partner",
+                "naturalWidth": 194,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white",
+                "alt": "Wildix Gold Partner",
+                "naturalWidth": 196,
+                "naturalHeight": 28,
+                "complete": true
+              }
+            ],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": true,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-brescia.html#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 634,
+            "performanceMetrics": {
+              "domContentLoaded": 0.09999996423721313,
+              "loadComplete": 0.10000002384185791,
+              "firstPaint": 76,
+              "firstContentfulPaint": 76
+            },
+            "resourceCount": 10,
+            "totalTransferSize": 77447,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 35,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 35
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html",
+      "timestamp": "2025-08-24T13:54:05.843Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 634,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Mantova",
+            "cityFromUrl": "mantova",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia",
+            "h1Text": "Il Partner IT che la Tua Azienda Merita",
+            "cityInTitle": false,
+            "cityInH1": false,
+            "metaDescription": "IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti.",
+            "cityInMeta": false
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": false,
+          "details": {
+            "formExists": false,
+            "error": "No contact form found on page"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": true,
+          "details": {
+            "totalImages": 5,
+            "images": [
+              {
+                "src": "https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&logo=microsoft&logoColor=white",
+                "alt": "Microsoft Partner",
+                "naturalWidth": 181,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/VMware-Partner-607078?style=for-the-badge&logo=vmware&logoColor=white",
+                "alt": "VMware Partner",
+                "naturalWidth": 178,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam&logoColor=white",
+                "alt": "Veeam Gold Partner",
+                "naturalWidth": 207,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/WatchGuard-Partner-ED1C24?style=for-the-badge&logo=watchguard&logoColor=white",
+                "alt": "WatchGuard Partner",
+                "naturalWidth": 194,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white",
+                "alt": "Wildix Gold Partner",
+                "naturalWidth": 196,
+                "naturalHeight": 28,
+                "complete": true
+              }
+            ],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": true,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-mantova.html#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 662,
+            "performanceMetrics": {
+              "domContentLoaded": 0.10000002384185791,
+              "loadComplete": 0.20000004768371582,
+              "firstPaint": 80,
+              "firstContentfulPaint": 80
+            },
+            "resourceCount": 10,
+            "totalTransferSize": 77447,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 35,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 35
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html",
+      "timestamp": "2025-08-24T13:54:07.225Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 616,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Varese",
+            "cityFromUrl": "varese",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia",
+            "h1Text": "Il Partner IT che la Tua Azienda Merita",
+            "cityInTitle": false,
+            "cityInH1": false,
+            "metaDescription": "IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti.",
+            "cityInMeta": false
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": false,
+          "details": {
+            "formExists": false,
+            "error": "No contact form found on page"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": true,
+          "details": {
+            "totalImages": 5,
+            "images": [
+              {
+                "src": "https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&logo=microsoft&logoColor=white",
+                "alt": "Microsoft Partner",
+                "naturalWidth": 181,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/VMware-Partner-607078?style=for-the-badge&logo=vmware&logoColor=white",
+                "alt": "VMware Partner",
+                "naturalWidth": 178,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam&logoColor=white",
+                "alt": "Veeam Gold Partner",
+                "naturalWidth": 207,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/WatchGuard-Partner-ED1C24?style=for-the-badge&logo=watchguard&logoColor=white",
+                "alt": "WatchGuard Partner",
+                "naturalWidth": 194,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white",
+                "alt": "Wildix Gold Partner",
+                "naturalWidth": 196,
+                "naturalHeight": 28,
+                "complete": true
+              }
+            ],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": true,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-varese.html#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 627,
+            "performanceMetrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0.19999998807907104,
+              "firstPaint": 84,
+              "firstContentfulPaint": 84
+            },
+            "resourceCount": 10,
+            "totalTransferSize": 77447,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 35,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 35
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html",
+      "timestamp": "2025-08-24T13:54:08.564Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 627,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Pavia",
+            "cityFromUrl": "pavia",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia",
+            "h1Text": "Il Partner IT che la Tua Azienda Merita",
+            "cityInTitle": false,
+            "cityInH1": false,
+            "metaDescription": "IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti.",
+            "cityInMeta": false
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": false,
+          "details": {
+            "formExists": false,
+            "error": "No contact form found on page"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": true,
+          "details": {
+            "totalImages": 5,
+            "images": [
+              {
+                "src": "https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&logo=microsoft&logoColor=white",
+                "alt": "Microsoft Partner",
+                "naturalWidth": 181,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/VMware-Partner-607078?style=for-the-badge&logo=vmware&logoColor=white",
+                "alt": "VMware Partner",
+                "naturalWidth": 178,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam&logoColor=white",
+                "alt": "Veeam Gold Partner",
+                "naturalWidth": 207,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/WatchGuard-Partner-ED1C24?style=for-the-badge&logo=watchguard&logoColor=white",
+                "alt": "WatchGuard Partner",
+                "naturalWidth": 194,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white",
+                "alt": "Wildix Gold Partner",
+                "naturalWidth": 196,
+                "naturalHeight": 28,
+                "complete": true
+              }
+            ],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": true,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-pavia.html#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 644,
+            "performanceMetrics": {
+              "domContentLoaded": 0.10000002384185791,
+              "loadComplete": 0.09999996423721313,
+              "firstPaint": 84,
+              "firstContentfulPaint": 84
+            },
+            "resourceCount": 10,
+            "totalTransferSize": 77447,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 35,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 35
+    },
+    {
+      "url": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html",
+      "timestamp": "2025-08-24T13:54:09.933Z",
+      "tests": {
+        "pageLoading": {
+          "name": "Page Loading",
+          "passed": false,
+          "details": {
+            "loadTime": 659,
+            "statusCode": 200,
+            "loadTimeUnder3s": true,
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "placeholderReplacement": {
+          "name": "Placeholder Replacement",
+          "passed": false,
+          "details": {
+            "expectedCity": "Cremona",
+            "cityFromUrl": "cremona",
+            "unreplacedPlaceholders": [],
+            "hasUnreplacedPlaceholders": false,
+            "title": "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia",
+            "h1Text": "Il Partner IT che la Tua Azienda Merita",
+            "cityInTitle": false,
+            "cityInH1": false,
+            "metaDescription": "IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti.",
+            "cityInMeta": false
+          },
+          "weight": 20
+        },
+        "contactForm": {
+          "name": "Contact Form Functionality",
+          "passed": false,
+          "details": {
+            "formExists": false,
+            "error": "No contact form found on page"
+          },
+          "weight": 15
+        },
+        "imagesLoading": {
+          "name": "Images and Logo Loading",
+          "passed": true,
+          "details": {
+            "totalImages": 5,
+            "images": [
+              {
+                "src": "https://img.shields.io/badge/Microsoft-Partner-0078D4?style=for-the-badge&logo=microsoft&logoColor=white",
+                "alt": "Microsoft Partner",
+                "naturalWidth": 181,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/VMware-Partner-607078?style=for-the-badge&logo=vmware&logoColor=white",
+                "alt": "VMware Partner",
+                "naturalWidth": 178,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Veeam-Gold_Partner-00B336?style=for-the-badge&logo=veeam&logoColor=white",
+                "alt": "Veeam Gold Partner",
+                "naturalWidth": 207,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/WatchGuard-Partner-ED1C24?style=for-the-badge&logo=watchguard&logoColor=white",
+                "alt": "WatchGuard Partner",
+                "naturalWidth": 194,
+                "naturalHeight": 28,
+                "complete": true
+              },
+              {
+                "src": "https://img.shields.io/badge/Wildix-Gold_Partner-E30613?style=for-the-badge&logo=wildix&logoColor=white",
+                "alt": "Wildix Gold Partner",
+                "naturalWidth": 196,
+                "naturalHeight": 28,
+                "complete": true
+              }
+            ],
+            "brokenImages": [],
+            "brokenImageCount": 0,
+            "logoExists": true,
+            "imagesWithoutAlt": 0
+          },
+          "weight": 10
+        },
+        "navigationMenu": {
+          "name": "Navigation Menu",
+          "passed": true,
+          "details": {
+            "navExists": true,
+            "navLinks": [
+              {
+                "href": "https://13d750b1.it-era.pages.dev/",
+                "text": "IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Emergenza",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "🚨 Supporto Urgente",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#",
+                "text": "Servizi",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "🔧 Assistenza IT 15min",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/sicurezza-informatica-milano.html",
+                "text": "🛡️ Sicurezza Informatica",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-milano.html",
+                "text": "☁️ Cloud Storage",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#backup",
+                "text": "💾 Backup Automatico",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#all-inclusive",
+                "text": "⭐ All-Inclusive PMI -30%",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#",
+                "text": "Settori",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#pmi",
+                "text": "🏢 PMI e Startup",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#studi",
+                "text": "⚕️ Studi Medici",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#commercialisti",
+                "text": "📊 Commercialisti",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#avvocati",
+                "text": "⚖️ Studi Legali",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#industria",
+                "text": "🏭 Industria 4.0",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#retail",
+                "text": "🛍️ Retail e GDO",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#",
+                "text": "Zone Coperte",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-milano.html",
+                "text": "Milano",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-monza.html",
+                "text": "Monza",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-vimercate.html",
+                "text": "Vimercate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-seregno.html",
+                "text": "Seregno",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lissone.html",
+                "text": "Lissone",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-como.html",
+                "text": "Como",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-lecco.html",
+                "text": "Lecco",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-cantu.html",
+                "text": "Cantù",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/assistenza-it-merate.html",
+                "text": "Merate",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#",
+                "text": "Vedi tutte →",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#perche",
+                "text": "Perché IT-ERA",
+                "hasHref": true
+              },
+              {
+                "href": "https://13d750b1.it-era.pages.dev/pages/cloud-storage-cremona.html#contatti",
+                "text": "Contatti",
+                "hasHref": true
+              },
+              {
+                "href": "tel:+390398882041",
+                "text": "📞 039 888 2041",
+                "hasHref": true
+              }
+            ],
+            "navLinkCount": 30,
+            "workingLinks": 30,
+            "hasMobileToggle": false
+          },
+          "weight": 10
+        },
+        "mobileResponsiveness": {
+          "name": "Mobile Responsiveness",
+          "passed": false,
+          "details": {
+            "viewportTests": [],
+            "error": "page.waitForTimeout is not a function"
+          },
+          "weight": 15
+        },
+        "performance": {
+          "name": "Performance Metrics",
+          "passed": true,
+          "details": {
+            "totalLoadTime": 642,
+            "performanceMetrics": {
+              "domContentLoaded": 0,
+              "loadComplete": 0.10000002384185791,
+              "firstPaint": 80,
+              "firstContentfulPaint": 80
+            },
+            "resourceCount": 10,
+            "totalTransferSize": 77447,
+            "loadTimeGood": true,
+            "fcpGood": true,
+            "resourceSizeReasonable": true
+          },
+          "weight": 15
+        }
+      },
+      "score": 35,
+      "maxScore": 100,
+      "errors": [],
+      "warnings": [],
+      "percentage": 35
+    }
+  ]
+}

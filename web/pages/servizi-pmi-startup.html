@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluzioni IT per PMI e Startup in Lombardia | IT-ERA</title>
+    <meta name="description" content="Trasformazione digitale per PMI e Startup lombarde. Cloud, sicurezza, automazione business. Cresci velocemente con la tecnologia giusta. Preventivo gratuito.">
+    
+    <!-- Critical CSS inline for performance -->
+    <style>
+        :root {
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --accent: #ff6b35;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 80px;
+        }
+        
+        .hero-sector {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-sector::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="1000,100 1000,0 0,100"/></svg>');
+            background-size: 100% 100%;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-sector h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-sector .lead {
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 600px;
+        }
+        
+        .sector-stats {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .btn-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: var(--primary);
+            padding: 18px 36px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            margin-right: 20px;
+        }
+        
+        .btn-cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+            color: var(--primary);
+        }
+        
+        .btn-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: white;
+            padding: 18px 36px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cta-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 25px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 600;
+        }
+        
+        .pricing-section {
+            background: var(--light);
+            padding: 80px 20px;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+        }
+        
+        .pricing-card.featured {
+            border: 3px solid var(--secondary);
+            transform: scale(1.05);
+        }
+        
+        .pricing-card.featured .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0;
+        }
+        
+        .price-period {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .testimonials-section {
+            padding: 80px 20px;
+            background: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+        
+        .testimonial-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+        
+        .testimonial-content {
+            margin-bottom: 20px;
+            font-style: italic;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .testimonial-company {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .lead-form-section {
+            background: var(--dark);
+            color: white;
+            padding: 80px 20px;
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .form-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .form-benefits {
+            list-style: none;
+        }
+        
+        .form-benefits li {
+            padding: 10px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .form-benefits li::before {
+            content: '🚀';
+            position: absolute;
+            left: 0;
+        }
+        
+        .lead-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            color: var(--dark);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: #004099;
+        }
+        
+        .faq-section {
+            padding: 80px 20px;
+            background: var(--light);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background: var(--light);
+        }
+        
+        .faq-answer {
+            padding: 0 25px 20px;
+            color: #666;
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-sector {
+                padding: 60px 0;
+            }
+            
+            .sector-stats {
+                justify-content: center;
+            }
+            
+            .btn-cta-primary,
+            .btn-cta-secondary {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+            }
+            
+            .form-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (inherited from main site) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prezzi">Prezzi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary" href="tel:+390398882041">
+                            📞 039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-sector">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Soluzioni IT per PMI e Startup</h1>
+                <p class="lead">Trasforma la tua azienda con tecnologie enterprise-grade a prezzi PMI. Cresci velocemente con infrastrutture scalabili, sicure e sempre aggiornate.</p>
+                
+                <div class="hero-cta mb-4">
+                    <a href="#contatti" class="btn-cta-primary">
+                        🚀 Analisi Gratuita
+                        <small class="d-block" style="font-size: 0.8rem; font-weight: 400;">Consulenza personalizzata</small>
+                    </a>
+                    <a href="tel:+390398882041" class="btn-cta-secondary">
+                        📞 Chiamata Immediata
+                    </a>
+                </div>
+                
+                <div class="sector-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">850K+</span>
+                        <span class="stat-label">PMI in Lombardia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Startup attive</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">78%</span>
+                        <span class="stat-label">Usa sistemi legacy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">65%</span>
+                        <span class="stat-label">Pianifica la trasformazione</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servizi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--dark);">
+                Soluzioni Complete per la Crescita
+            </h2>
+            <p class="text-center text-muted mb-5" style="font-size: 1.2rem;">
+                Tecnologie progettate per accompagnare la tua crescita, dallo startup alla PMI strutturata
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Cloud Transformation -->
+            <div class="service-card">
+                <div class="service-icon">☁️</div>
+                <h3>Cloud Transformation</h3>
+                <p class="mb-3">Migrazione completa al cloud con zero downtime. Infrastructure-as-Code per scalabilità immediata.</p>
+                <ul class="service-features">
+                    <li>Analisi infrastruttura esistente</li>
+                    <li>Migration planning personalizzato</li>
+                    <li>Implementazione AWS/Azure</li>
+                    <li>Backup automatico e DR</li>
+                    <li>Monitoraggio 24/7</li>
+                    <li>Ottimizzazione costi continua</li>
+                </ul>
+                <div class="mt-4">
+                    <strong>ROI medio: 340% in 18 mesi</strong>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Shield -->
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Cybersecurity Shield</h3>
+                <p class="mb-3">Protezione enterprise contro ransomware e cyber attacks. SOC dedicato per PMI.</p>
+                <ul class="service-features">
+                    <li>Zero-trust architecture</li>
+                    <li>Endpoint protection avanzata</li>
+                    <li>Security awareness training</li>
+                    <li>Incident response planning</li>
+                    <li>Compliance GDPR garantita</li>
+                    <li>Cyber insurance support</li>
+                </ul>
+                <div class="mt-4">
+                    <strong>Protezione garantita 99.9%</strong>
+                </div>
+            </div>
+
+            <!-- Business Intelligence -->
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Business Intelligence</h3>
+                <p class="mb-3">Trasforma i dati in decisioni strategiche. Dashboard real-time e analytics predittivi.</p>
+                <ul class="service-features">
+                    <li>Data warehouse setup</li>
+                    <li>Dashboard personalizzate</li>
+                    <li>Reporting automatizzato</li>
+                    <li>Predictive analytics</li>
+                    <li>Mobile BI access</li>
+                    <li>KPI tracking avanzato</li>
+                </ul>
+                <div class="mt-4">
+                    <strong>+45% efficienza decisionale</strong>
+                </div>
+            </div>
+
+            <!-- Automation Suite -->
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>Automation Suite</h3>
+                <p class="mb-3">Automatizza processi ripetitivi e workflow complessi. RPA e AI integration.</p>
+                <ul class="service-features">
+                    <li>Process mining e analysis</li>
+                    <li>Workflow automation</li>
+                    <li>Document processing AI</li>
+                    <li>CRM/ERP integration</li>
+                    <li>Customer communication</li>
+                    <li>Performance monitoring</li>
+                </ul>
+                <div class="mt-4">
+                    <strong>-60% tempo processi manuali</strong>
+                </div>
+            </div>
+
+            <!-- DevOps Platform -->
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>DevOps Platform</h3>
+                <p class="mb-3">Accelera il development con CI/CD, containerization e Infrastructure-as-Code.</p>
+                <ul class="service-features">
+                    <li>Git repository setup</li>
+                    <li>CI/CD pipeline configuration</li>
+                    <li>Container orchestration</li>
+                    <li>Infrastructure as Code</li>
+                    <li>Monitoring e logging</li>
+                    <li>Team collaboration tools</li>
+                </ul>
+                <div class="mt-4">
+                    <strong>+80% velocity development</strong>
+                </div>
+            </div>
+
+            <!-- Managed IT Services -->
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Managed IT Services</h3>
+                <p class="mb-3">IT Department completo in outsourcing. Supporto proattivo 24/7 con SLA garantiti.</p>
+                <ul class="service-features">
+                    <li>Help desk multicanale</li>
+                    <li>Monitoring proattivo</li>
+                    <li>Patch management</li>
+                    <li>Asset management</li>
+                    <li>Strategic IT planning</li>
+                    <li>Vendor relationship</li>
+                </ul>
+                <div class="mt-4">
+                    <strong>99.9% uptime garantito</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="prezzi" class="pricing-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--dark);">
+                Piani Tariffari Scalabili
+            </h2>
+            <p class="text-center text-muted mb-5" style="font-size: 1.2rem;">
+                Scegli il piano più adatto alla tua fase di crescita. Upgrade automatico al crescere del business.
+            </p>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Startup Plan -->
+            <div class="pricing-card">
+                <h3 style="color: var(--primary); margin-bottom: 20px;">Startup</h3>
+                <div class="price">
+                    €490
+                    <span class="price-period">/mese</span>
+                </div>
+                <p class="text-muted mb-4">Perfetto per startup 5-20 dipendenti</p>
+                <ul class="service-features text-start">
+                    <li>Cloud infrastructure base</li>
+                    <li>Cybersecurity essentials</li>
+                    <li>Help desk 9-18</li>
+                    <li>Backup automatico</li>
+                    <li>Microsoft 365 integration</li>
+                    <li>Setup e formazione inclusi</li>
+                </ul>
+                <a href="#contatti" class="btn btn-outline-primary w-100 mt-4">Inizia Subito</a>
+            </div>
+
+            <!-- Growth Plan -->
+            <div class="pricing-card featured">
+                <div class="badge">PIÙ POPOLARE</div>
+                <h3 style="color: var(--secondary); margin-bottom: 20px;">Growth</h3>
+                <div class="price">
+                    €890
+                    <span class="price-period">/mese</span>
+                </div>
+                <p class="text-muted mb-4">Ideale per PMI 20-100 dipendenti</p>
+                <ul class="service-features text-start">
+                    <li>Tutto del piano Startup</li>
+                    <li>Business Intelligence</li>
+                    <li>Automation workflows</li>
+                    <li>Support 24/7</li>
+                    <li>DevOps platform</li>
+                    <li>Dedicated account manager</li>
+                </ul>
+                <a href="#contatti" class="btn btn-success w-100 mt-4">Piano Consigliato</a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <h3 style="color: var(--accent); margin-bottom: 20px;">Enterprise</h3>
+                <div class="price">
+                    €2,490
+                    <span class="price-period">/mese</span>
+                </div>
+                <p class="text-muted mb-4">Per aziende 100+ dipendenti</p>
+                <ul class="service-features text-start">
+                    <li>Tutto del piano Growth</li>
+                    <li>Advanced analytics</li>
+                    <li>Multi-cloud strategy</li>
+                    <li>Compliance automation</li>
+                    <li>Custom integrations</li>
+                    <li>Strategic IT consulting</li>
+                </ul>
+                <a href="#contatti" class="btn btn-outline-warning w-100 mt-4">Consultazione</a>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="text-muted">💡 <strong>Garanzia soddisfatti o rimborsati 60 giorni</strong> su tutti i piani</p>
+            <p class="text-muted">🔄 <strong>Upgrade/downgrade</strong> gratuito in qualsiasi momento</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--dark);">
+                Storie di Successo
+            </h2>
+            <p class="text-center text-muted mb-5" style="font-size: 1.2rem;">
+                PMI e startup che hanno accelerato la crescita con le nostre soluzioni
+            </p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "In 6 mesi abbiamo ridotto i costi IT del 45% e migliorato le performance del 300%. La migrazione al cloud è stata perfetta, zero downtime."
+                </div>
+                <div class="testimonial-author">Marco Rossi</div>
+                <div class="testimonial-company">CEO, TechStart Milano</div>
+                <div class="mt-2">
+                    <span class="badge bg-success">Startup → Scale-up</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "L'automazione dei processi ci ha fatto risparmiare 20 ore/settimana. Ora focalizziamo l'energia su strategia e crescita, non su task ripetitivi."
+                </div>
+                <div class="testimonial-author">Laura Bianchi</div>
+                <div class="testimonial-company">COO, InnovaCorp Bergamo</div>
+                <div class="mt-2">
+                    <span class="badge bg-primary">PMI Manifatturiera</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "La cybersecurity shield ci ha salvato da un attacco ransomware. Investimento che si è ripagato al primo tentativo di breach bloccato."
+                </div>
+                <div class="testimonial-author">Alessandro Verde</div>
+                <div class="testimonial-company">CTO, FinTech Lombardia</div>
+                <div class="mt-2">
+                    <span class="badge bg-warning text-dark">Fintech Startup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section id="contatti" class="lead-form-section">
+        <div class="form-container">
+            <div class="form-info">
+                <h2>Trasforma la Tua Azienda Oggi</h2>
+                <p class="mb-4">Ricevi un'analisi gratuita personalizzata e scopri come accelerare la crescita con la tecnologia giusta.</p>
+                
+                <ul class="form-benefits">
+                    <li><strong>Analisi gratuita</strong> della tua infrastruttura attuale</li>
+                    <li><strong>Piano di trasformazione</strong> personalizzato in 48h</li>
+                    <li><strong>ROI calculator</strong> specifico per il tuo business</li>
+                    <li><strong>Demo live</strong> delle soluzioni consigliate</li>
+                    <li><strong>Supporto dedicato</strong> durante tutto il processo</li>
+                </ul>
+            </div>
+            
+            <form class="lead-form" id="leadForm">
+                <h3 class="text-center mb-4">Richiedi Consulenza Gratuita</h3>
+                
+                <div class="form-group">
+                    <label for="company">Nome Azienda *</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Nome e Cognome *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="role">Ruolo *</label>
+                    <select id="role" name="role" required>
+                        <option value="">Seleziona ruolo</option>
+                        <option value="CEO/Founder">CEO/Founder</option>
+                        <option value="CTO">CTO</option>
+                        <option value="IT Manager">IT Manager</option>
+                        <option value="Operations Director">Operations Director</option>
+                        <option value="Other">Altro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="employees">Numero Dipendenti *</label>
+                    <select id="employees" name="employees" required>
+                        <option value="">Seleziona dimensioni</option>
+                        <option value="1-10">1-10 (Startup Early)</option>
+                        <option value="11-50">11-50 (Startup Growth)</option>
+                        <option value="51-200">51-200 (PMI)</option>
+                        <option value="200+">200+ (Enterprise)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sector">Settore *</label>
+                    <select id="sector" name="sector" required>
+                        <option value="">Seleziona settore</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Professional Services">Professional Services</option>
+                        <option value="Retail/E-commerce">Retail/E-commerce</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Other">Altro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="priority">Priorità Principale *</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">Seleziona priorità</option>
+                        <option value="Cloud Migration">Migrazione al Cloud</option>
+                        <option value="Cybersecurity">Sicurezza Informatica</option>
+                        <option value="Process Automation">Automazione Processi</option>
+                        <option value="Business Intelligence">Business Intelligence</option>
+                        <option value="Cost Reduction">Riduzione Costi IT</option>
+                        <option value="Scalability">Scalabilità Infrastruttura</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefono *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeline">Timeline Progetto</label>
+                    <select id="timeline" name="timeline">
+                        <option value="immediate">Immediato (0-30 giorni)</option>
+                        <option value="short">Breve termine (1-3 mesi)</option>
+                        <option value="medium">Medio termine (3-6 mesi)</option>
+                        <option value="long">Lungo termine (6+ mesi)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Budget Indicativo (mensile)</label>
+                    <select id="budget" name="budget">
+                        <option value="">Seleziona range</option>
+                        <option value="1000-3000">€1.000 - €3.000</option>
+                        <option value="3000-8000">€3.000 - €8.000</option>
+                        <option value="8000-15000">€8.000 - €15.000</option>
+                        <option value="15000+">€15.000+</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Descrivi la tua sfida tecnologica</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Es. Stiamo crescendo rapidamente e la nostra infrastruttura attuale non scala..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">
+                    🚀 Richiedi Analisi Gratuita
+                </button>
+                
+                <p class="text-center text-muted mt-3" style="font-size: 0.9rem;">
+                    * Risposta garantita entro 2 ore lavorative
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: var(--dark);">
+                Domande Frequenti
+            </h2>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Quanto tempo richiede una migrazione al cloud completa?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    La durata dipende dalla complessità dell'infrastruttura esistente. Per una PMI standard: 6-12 settimane per la migrazione completa, con possibilità di approccio graduale per minimizzare i disagi operativi. Forniamo sempre un piano dettagliato con milestone e tempi certi.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Come garantite la sicurezza durante la trasformazione digitale?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Implementiamo un approccio "security-by-design" con zero-trust architecture, crittografia end-to-end, backup ridondanti e monitoring 24/7. Tutti i nostri tecnici sono certificati nelle principali tecnologie di sicurezza e seguiamo standard ISO 27001.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Qual è il ROI tipico degli investimenti in automazione?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    I nostri clienti vedono mediamente una riduzione del 40-60% dei tempi per processi manuali, con ROI completo in 12-18 mesi. L'automazione libera risorse per attività strategiche e riduce errori umani del 90%+.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Supportate la crescita e lo scaling dell'infrastruttura?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Assolutamente. Le nostre soluzioni sono progettate per crescere con la tua azienda. Utilizziamo architetture cloud-native che scalano automaticamente, e i nostri piani tariffari si adattano alle tue esigenze in evoluzione.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Cosa include il supporto 24/7?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Help desk multicanale (phone, email, chat, ticket), monitoring proattivo dell'infrastruttura, incident response automatizzato, e team di escalation per problemi critici. SLA garantiti con tempi di risposta definiti per ogni tipologia di problema.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Offrite formazione per i nostri team interni?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Sì, ogni implementazione include formazione personalizzata per i vostri team. Offriamo sessioni on-site o remote, materiali di training, e supporto continuo per l'adozione delle nuove tecnologie. L'obiettivo è rendervi autonomi sulle operazioni quotidiane.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-rocket me-2"></i>IT-ERA PMI Solutions</h5>
+                    <p>Acceleriamo la crescita delle PMI lombarde con tecnologie enterprise-grade accessibili e scalabili.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+                        <p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+                        <p><i class="fas fa-envelope me-2"></i>pmi@it-era.it</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Soluzioni PMI</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white-50" href="#servizi">Cloud Transformation</a></li>
+                        <li><a class="text-white-50" href="#servizi">Cybersecurity Shield</a></li>
+                        <li><a class="text-white-50" href="#servizi">Business Intelligence</a></li>
+                        <li><a class="text-white-50" href="#servizi">Automation Suite</a></li>
+                        <li><a class="text-white-50" href="#servizi">DevOps Platform</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Risorse</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white-50" href="/blog/trasformazione-digitale-pmi">Blog Trasformazione</a></li>
+                        <li><a class="text-white-50" href="/case-studies/startup-lombardia">Case Studies</a></li>
+                        <li><a class="text-white-50" href="/whitepaper/cloud-migration-guide">Guide Pratiche</a></li>
+                        <li><a class="text-white-50" href="/webinar/pmi-digital">Webinar Gratuiti</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                answer.classList.toggle('active');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // Form Submission
+        document.getElementById('leadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Add PMI-specific data
+            data.sector_page = 'PMI e Startup';
+            data.source = 'Settori PMI Page';
+            data.timestamp = new Date().toISOString();
+            
+            try {
+                const response = await fetch('/api/leads', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    alert('Grazie! Ti ricontatteremo entro 2 ore per la tua analisi gratuita.');
+                    e.target.reset();
+                    
+                    // Track conversion
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+                            'event_category': 'lead',
+                            'event_label': 'pmi-startup-page'
+                        });
+                    }
+                } else {
+                    throw new Error('Errore nell\'invio');
+                }
+            } catch (error) {
+                alert('Errore nell\'invio. Chiama direttamente il 039 888 2041');
+                console.error('Form submission error:', error);
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -20,15 +20,15 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Totale Post</div>
-                                <div class="stat-number text-primary">${formatNumber(data.summary.totalPosts)}</div>
+                                <div class="stat-number text-primary">${formatNumber(data.posts?.total || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-file-text fa-2x text-gray-300"></i>
                             </div>
                         </div>
                         <div class="mt-2 text-muted small">
-                            <span class="text-success">${formatNumber(data.summary.publishedPosts)} pubblicati</span> •
-                            <span class="text-warning">${formatNumber(data.summary.draftPosts)} bozze</span>
+                            <span class="text-success">${formatNumber(data.posts?.published || 0)} pubblicati</span> •
+                            <span class="text-warning">${formatNumber(data.posts?.draft || 0)} bozze</span>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Visualizzazioni</div>
-                                <div class="stat-number text-success">${formatNumber(data.summary.totalViews)}</div>
+                                <div class="stat-number text-success">${formatNumber(data.views?.month || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-eye fa-2x text-gray-300"></i>
@@ -59,7 +59,7 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Categorie</div>
-                                <div class="stat-number text-info">${formatNumber(data.summary.totalCategories)}</div>
+                                <div class="stat-number text-info">${formatNumber(data.categories || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-folder fa-2x text-gray-300"></i>
@@ -78,7 +78,7 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Tag</div>
-                                <div class="stat-number text-warning">${formatNumber(data.summary.totalTags)}</div>
+                                <div class="stat-number text-warning">${formatNumber(data.tags || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-tags fa-2x text-gray-300"></i>
@@ -103,7 +103,7 @@ function renderDashboard(data) {
                         </button>
                     </div>
                     <div class="card-body">
-                        ${renderRecentPosts(data.posts.recent)}
+                        ${renderRecentPosts(data.recent_posts || [])}
                     </div>
                 </div>
             </div>
@@ -119,33 +119,11 @@ function renderDashboard(data) {
                     </div>
                 </div>
 
-                ${data.posts.byService.length > 0 ? `
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Per Servizio</h5>
-                    </div>
-                    <div class="card-body">
-                        ${renderServiceStats(data.posts.byService)}
-                    </div>
-                </div>
-                ` : ''}
             </div>
         </div>
 
         <div class="row">
             <!-- Popular Posts -->
-            ${data.posts.popular.length > 0 ? `
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Post Popolari</h5>
-                    </div>
-                    <div class="card-body">
-                        ${renderPopularPosts(data.posts.popular)}
-                    </div>
-                </div>
-            </div>
-            ` : ''}
 
             <!-- Webhook Activity -->
             ${data.webhooks && data.webhooks.length > 0 ? `

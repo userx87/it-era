@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicurezza Informatica Aziendale | IT-ERA Lombardia</title>
+    <meta name="description" content="Sicurezza informatica avanzata per aziende in Lombardia. Protezione da ransomware, malware, cyber attacchi. SOC 24/7, firewall gestito, antivirus enterprise.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #dc3545 0%, #ff6b6b 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .security-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+            border-left: 5px solid #dc3545;
+        }
+        
+        .security-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .threat-icon {
+            color: #dc3545;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+        
+        .protection-layer {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .emergency-alert {
+            background: linear-gradient(135deg, #dc3545, #ff6b6b);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.9; }
+        }
+        
+        .btn-security {
+            background: #dc3545;
+            color: white;
+            border: 2px solid #dc3545;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-security:hover {
+            background: #c82333;
+            border-color: #c82333;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .price-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Emergency Alert -->
+    <div class="emergency-alert">
+        🚨 <strong>Attacco Cyber in Corso?</strong> Contattaci immediatamente: 
+        <a href="tel:+390398882041" class="text-white fw-bold">📞 039 888 2041</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Servizi</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/assistenza-it.html">🔧 Assistenza IT</a></li>
+                            <li><a class="dropdown-item active" href="/pages/sicurezza-informatica.html">🛡️ Sicurezza Informatica</a></li>
+                            <li><a class="dropdown-item" href="/pages/cloud-storage.html">☁️ Cloud Storage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/perche-it-era.html">Perché IT-ERA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contatti.html">Contatti</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="tel:+390398882041">📞 039 888 2041</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Proteggi la Tua Azienda dagli Attacchi Cyber</h1>
+                    <p class="lead mb-5">Sicurezza informatica avanzata con SOC 24/7, protezione anti-ransomware, firewall gestito e monitoraggio continuo. La tua azienda al sicuro dalle minacce digitali.</p>
+                    <a href="tel:+390398882041" class="btn-security">🛡️ Valutazione Sicurezza Gratuita</a>
+                    <a href="#soluzioni" class="btn btn-light btn-lg ms-3">📋 Vedi Soluzioni</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threat Statistics -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-4">Le Minacce Sono Reali</h2>
+                    <p class="lead">I cyber criminali non si fermano mai. La tua azienda è protetta?</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">68%</div>
+                        <p>PMI subiscono attacchi cyber</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">€4M</div>
+                        <p>Costo medio di un attacco</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">21 giorni</div>
+                        <p>Tempo medio di recovery</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">60%</div>
+                        <p>PMI chiudono dopo 6 mesi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Solutions -->
+    <section class="py-5" id="soluzioni">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold">Soluzioni di Sicurezza Complete</h2>
+                    <p class="lead text-muted">Protezione a 360° per la tua infrastruttura IT</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card text-center">
+                        <div class="threat-icon">🛡️</div>
+                        <h4>Antivirus Enterprise</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>✓ Protezione endpoint avanzata</li>
+                            <li>✓ Anti-malware comportamentale</li>
+                            <li>✓ Protezione zero-day</li>
+                            <li>✓ Gestione centralizzata</li>
+                            <li>✓ Report automatici</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <strong class="text-danger">€8/postazione/mese</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card text-center">
+                        <div class="threat-icon">🔥</div>
+                        <h4>Firewall WatchGuard</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>✓ Firewall UTM completo</li>
+                            <li>✓ Filtro contenuti web</li>
+                            <li>✓ VPN site-to-site</li>
+                            <li>✓ Intrusion Prevention</li>
+                            <li>✓ Gestione as-a-Service</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <strong class="text-danger">€89/mese</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card text-center">
+                        <div class="threat-icon">👁️</div>
+                        <h4>SOC 24/7</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>✓ Monitoraggio continuo</li>
+                            <li>✓ Threat hunting attivo</li>
+                            <li>✓ Incident response</li>
+                            <li>✓ Analisi forensi</li>
+                            <li>✓ Report compliance</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <strong class="text-danger">€150/mese</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card text-center">
+                        <div class="threat-icon">📧</div>
+                        <h4>Email Security</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>✓ Anti-phishing avanzato</li>
+                            <li>✓ Sandbox per allegati</li>
+                            <li>✓ URL protection</li>
+                            <li>✓ Crittografia email</li>
+                            <li>✓ Business Email Compromise</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <strong class="text-danger">€5/utente/mese</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card text-center">
+                        <div class="threat-icon">💾</div>
+                        <h4>Backup Anti-Ransomware</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>✓ Backup immutabile</li>
+                            <li>✓ Veeam anti-ransomware</li>
+                            <li>✓ Air-gap protection</li>
+                            <li>✓ Recovery veloce</li>
+                            <li>✓ Test periodici</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <strong class="text-danger">€30/TB/mese</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card text-center">
+                        <div class="threat-icon">🎓</div>
+                        <h4>Security Training</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>✓ Formazione anti-phishing</li>
+                            <li>✓ Simulazioni attacchi</li>
+                            <li>✓ Policy di sicurezza</li>
+                            <li>✓ Awareness program</li>
+                            <li>✓ Certificazioni utenti</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <strong class="text-danger">€15/utente/mese</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protection Layers -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-6 fw-bold text-center mb-5">Difesa a Strati Multipli</h2>
+                    
+                    <div class="protection-layer">
+                        <div class="d-flex align-items-center">
+                            <div class="me-4">
+                                <i class="fas fa-user-shield fa-3x text-danger"></i>
+                            </div>
+                            <div>
+                                <h4>Livello 1: Utente</h4>
+                                <p class="mb-0">Formazione del personale, policy di sicurezza, autenticazione multi-fattore</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="protection-layer">
+                        <div class="d-flex align-items-center">
+                            <div class="me-4">
+                                <i class="fas fa-desktop fa-3x text-danger"></i>
+                            </div>
+                            <div>
+                                <h4>Livello 2: Endpoint</h4>
+                                <p class="mb-0">Antivirus enterprise, EDR, controllo applicazioni, patch management</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="protection-layer">
+                        <div class="d-flex align-items-center">
+                            <div class="me-4">
+                                <i class="fas fa-network-wired fa-3x text-danger"></i>
+                            </div>
+                            <div>
+                                <h4>Livello 3: Rete</h4>
+                                <p class="mb-0">Firewall UTM, IPS/IDS, network segmentation, VPN sicure</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="protection-layer">
+                        <div class="d-flex align-items-center">
+                            <div class="me-4">
+                                <i class="fas fa-server fa-3x text-danger"></i>
+                            </div>
+                            <div>
+                                <h4>Livello 4: Server e Dati</h4>
+                                <p class="mb-0">Backup anti-ransomware, crittografia, access control, monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="protection-layer">
+                        <div class="d-flex align-items-center">
+                            <div class="me-4">
+                                <i class="fas fa-eye fa-3x text-danger"></i>
+                            </div>
+                            <div>
+                                <h4>Livello 5: Monitoraggio</h4>
+                                <p class="mb-0">SOC 24/7, SIEM, threat intelligence, incident response</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold">Pacchetti Sicurezza</h2>
+                    <p class="lead text-muted">Protezione completa a prezzi competitivi</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Essential</h5>
+                            <div class="display-6 fw-bold text-danger mb-3">€89<small class="fs-6">/mese</small></div>
+                            <p class="text-muted">Protezione base</p>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>✓ Firewall WatchGuard</li>
+                                <li>✓ Antivirus endpoint (5 PC)</li>
+                                <li>✓ Email security basic</li>
+                                <li>✓ Backup locale</li>
+                                <li>✓ Supporto 8x5</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-outline-danger w-100">Scegli Essential</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card border-danger shadow h-100 position-relative">
+                        <div class="price-badge">CONSIGLIATO</div>
+                        <div class="card-body text-center p-4 pt-5">
+                            <h5 class="card-title">Professional</h5>
+                            <div class="display-6 fw-bold text-danger mb-3">€250<small class="fs-6">/mese</small></div>
+                            <p class="text-muted">Protezione avanzata</p>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>✓ Tutto dell'Essential</li>
+                                <li>✓ SOC monitoring 24/7</li>
+                                <li>✓ Backup anti-ransomware cloud</li>
+                                <li>✓ Security training utenti</li>
+                                <li>✓ Vulnerability assessment</li>
+                                <li>✓ Incident response</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-danger w-100">Scegli Professional</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Enterprise</h5>
+                            <div class="display-6 fw-bold text-danger mb-3">€450<small class="fs-6">/mese</small></div>
+                            <p class="text-muted">Massima protezione</p>
+                            <ul class="list-unstyled mb-4 text-start">
+                                <li>✓ Tutto del Professional</li>
+                                <li>✓ Threat hunting attivo</li>
+                                <li>✓ Penetration testing</li>
+                                <li>✓ Compliance GDPR</li>
+                                <li>✓ DLP (Data Loss Prevention)</li>
+                                <li>✓ Security Officer dedicato</li>
+                            </ul>
+                            <a href="tel:+390398882041" class="btn btn-outline-danger w-100">Scegli Enterprise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="alert alert-warning">
+                        <h5><i class="fas fa-exclamation-triangle me-2"></i>Valutazione Gratuita</h5>
+                        <p class="mb-0">Non sai quale livello di sicurezza ti serve? Ti offriamo una valutazione gratuita della tua infrastruttura IT per identificare le vulnerabilità.</p>
+                    </div>
+                    <a href="/pages/contatti.html" class="btn btn-warning btn-lg">📋 Richiedi Valutazione Gratuita</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Response -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-4">🚨 Emergenza Cyber?</h2>
+                    <p class="lead mb-5">Se sospetti di essere sotto attacco o hai subito una violazione, chiamaci immediatamente. Il nostro team di incident response è pronto ad intervenire.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <h5>Attacco in Corso</h5>
+                            <p class="mb-2">Disconnetti i sistemi dalla rete</p>
+                            <a href="tel:+390398882041" class="btn btn-light btn-lg w-100">📞 CHIAMATA URGENTE</a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h5>Ransomware</h5>
+                            <p class="mb-2">NON pagare il riscatto</p>
+                            <a href="tel:+390398882041" class="btn btn-light btn-lg w-100">📞 SUPPORTO IMMEDIATO</a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h5>Data Breach</h5>
+                            <p class="mb-2">Documenta tutto</p>
+                            <a href="tel:+390398882041" class="btn btn-light btn-lg w-100">📞 INCIDENT RESPONSE</a>
+                        </div>
+                    </div>
+                    
+                    <small class="d-block mt-4">Intervento garantito entro 1 ora per emergenze critiche</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5><span style="color: #0056cc;">IT</span>-ERA</h5>
+                    <p>Il tuo partner tecnologico di fiducia per soluzioni IT innovative e affidabili.</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Contatti</h5>
+                    <p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 IT-ERA. Tutti i diritti riservati. | <a href="/privacy" class="text-white-50">Privacy Policy</a> | <a href="/cookie" class="text-white-50">Cookie Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

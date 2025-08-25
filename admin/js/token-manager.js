@@ -320,7 +320,7 @@ class TokenManager {
         try {
             console.info(`TokenManager: Attempting token refresh (attempt ${retryCount + 1}/${this.MAX_RETRY_ATTEMPTS})`);
 
-            const response = await fetch(`${CONFIG.API_BASE_URL}/auth/refresh`, {
+            const response = await fetch(`${CONFIG.API_BASE_URL}/admin/api/auth/refresh`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

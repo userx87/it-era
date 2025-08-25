@@ -177,7 +177,7 @@ class SecurityGuard {
             }
 
             // Validate token with server
-            const response = await this.makeSecureRequest('/auth/validate', {
+            const response = await this.makeSecureRequest('/admin/api/auth/validate', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -220,7 +220,7 @@ class SecurityGuard {
             // Validate credentials format
             this.validateCredentials(credentials);
 
-            const response = await this.makeSecureRequest('/auth/login', {
+            const response = await this.makeSecureRequest('/admin/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -284,7 +284,7 @@ class SecurityGuard {
             
             if (token) {
                 // Notify server of logout
-                await this.makeSecureRequest('/auth/logout', {
+                await this.makeSecureRequest('/admin/api/auth/logout', {
                     method: 'POST',
                     headers: this.tokenManager.getAuthHeaders()
                 }).catch(() => {
@@ -532,7 +532,7 @@ class SecurityGuard {
         try {
             const token = this.tokenManager.getToken();
             if (token) {
-                const response = await this.makeSecureRequest('/auth/validate', {
+                const response = await this.makeSecureRequest('/admin/api/auth/validate', {
                     method: 'POST'
                 });
                 
@@ -662,7 +662,7 @@ class SecurityGuard {
      */
     async reportSecurityEvent(event) {
         try {
-            await this.makeSecureRequest('/security/event', {
+            await this.makeSecureRequest('/admin/api/security/event', {
                 method: 'POST',
                 body: JSON.stringify(event)
             });

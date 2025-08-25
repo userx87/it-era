@@ -1,0 +1,267 @@
+<!-- Standardized Navigation Template for IT-ERA Sector Pages -->
+<!-- Bootstrap 5.3.2 Responsive Navigation with Complete Service & Sector Dropdowns -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">
+            <span style="color: #0056cc;">IT</span>-ERA
+        </a>
+
+        <!-- Emergency CTA for Mobile -->
+        <div class="d-lg-none ms-auto me-2">
+            <a class="btn btn-danger btn-sm" href="tel:+390398882041">
+                🚨 Emergenza
+            </a>
+        </div>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <!-- Services Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Servizi
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+                        <li><a class="dropdown-item" href="/pages/assistenza-it.html">
+                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/sicurezza-informatica.html">
+                            🛡️ Sicurezza Informatica
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+                        <li><a class="dropdown-item" href="/pages/cloud-storage.html">
+                            ☁️ Cloud Storage
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/backup-automatico.html">
+                            💾 Backup Automatico
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+                        <li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
+                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- Industry Sectors Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Settori
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
+                            🏢 PMI e Startup
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
+                            ⚕️ Studi Medici
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/settori-commercialisti.html">
+                            📊 Commercialisti
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/settori-studi-legali.html">
+                            ⚖️ Studi Legali
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/settori-industria-40.html">
+                            🏭 Industria 4.0
+                        </a></li>
+                        <li><a class="dropdown-item" href="/pages/settori-retail-gdo.html">
+                            🛍️ Retail e GDO
+                        </a></li>
+                    </ul>
+                </li>
+
+                <!-- Why IT-ERA -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/perche-it-era.html">Perché IT-ERA</a>
+                </li>
+
+                <!-- Blog -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/">
+                        📝 Blog
+                    </a>
+                </li>
+
+                <!-- Contact -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contatti.html">Contatti</a>
+                </li>
+
+                <!-- Primary CTA Button -->
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-primary" href="tel:+390398882041">
+                        📞 039 888 2041
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Skip Navigation for Accessibility -->
+<a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+
+<!-- Emergency Support Banner -->
+<div class="emergency-banner">
+    🚨 <strong>Sistema bloccato?</strong> Assistenza immediata: 
+    <a href="tel:+390398882041">📞 039 888 2041</a>
+    <span class="d-none d-md-inline">- Risposta garantita in 15 minuti</span>
+</div>
+
+<!-- Required CSS for Navigation (add to <head> section) -->
+<style>
+/* Navigation Optimized Styles */
+.navbar {
+    min-height: 76px;
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    z-index: 1030;
+}
+
+.dropdown-menu-columns {
+    min-width: 400px;
+}
+
+.dropdown-header {
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.25rem;
+}
+
+.dropdown-item {
+    padding: 0.4rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.25rem;
+}
+
+.badge {
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Skip Navigation for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Emergency Banner */
+.emergency-banner {
+    background: linear-gradient(90deg, #dc3545, #ff6b6b);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+.emergency-banner a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 991px) {
+    .dropdown-menu-columns {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-columns .row {
+        display: block;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .emergency-banner {
+        top: 60px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Page content offset */
+body {
+    padding-top: 76px;
+}
+
+/* Adjust for emergency banner */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+}
+</style>
+
+<!-- Navigation Template Usage Instructions -->
+<!--
+IMPLEMENTATION STEPS:
+
+1. Add Bootstrap 5.3.2 CSS to <head>:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+2. Add Bootstrap 5.3.2 JS before closing </body>:
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+3. Copy the complete navigation block above into your sector pages
+
+4. Ensure your main content has id="main-content" for accessibility
+
+5. IMPORTANT: Zone Coperte has been moved to footer section only as requested
+
+FEATURES INCLUDED:
+✅ Complete Servizi dropdown with generic page links (not Milano-specific)
+✅ Complete Settori dropdown with all 6 sector links
+✅ Perché IT-ERA, Blog, Contatti links
+✅ Emergency button and phone CTA
+✅ Bootstrap 5.3.2 responsive classes
+✅ Accessibility features (skip navigation)
+✅ Mobile-first responsive design
+✅ Proper z-index layering
+✅ Emergency banner with animation
+✅ Professional styling consistent with brand
+-->

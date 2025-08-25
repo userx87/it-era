@@ -1,7 +1,7 @@
 // Admin Panel Configuration
 const CONFIG = {
-    API_BASE_URL: 'https://it-era-blog-api.bulltech.workers.dev/api',
-    ADMIN_API_BASE_URL: 'https://it-era-blog-api.bulltech.workers.dev/admin/api',
+    API_BASE_URL: 'https://it-era-admin-auth-production.bulltech.workers.dev',
+    ADMIN_API_BASE_URL: 'https://it-era-admin-auth-production.bulltech.workers.dev',
     
     // IT-ERA Brand Colors
     COLORS: {

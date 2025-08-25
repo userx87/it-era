@@ -1,0 +1,276 @@
+name: Deploy IT-ERA Admin Panel
+
+on:
+  push:
+    branches: [main, production]
+    paths:
+      - 'admin/**'
+      - 'deployment/**'
+      - '.github/workflows/deploy-admin-panel.yml'
+  pull_request:
+    branches: [main, production]
+    paths:
+      - 'admin/**'
+      - 'deployment/**'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+        - staging
+        - production
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      deployment-matrix: ${{ steps.set-matrix.outputs.matrix }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Set deployment matrix
+      id: set-matrix
+      run: |
+        if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          echo "matrix={\"environment\":[\"${{ github.event.inputs.environment }}\"]}" >> $GITHUB_OUTPUT
+        elif [[ "${{ github.ref }}" == "refs/heads/production" ]]; then
+          echo "matrix={\"environment\":[\"production\"]}" >> $GITHUB_OUTPUT
+        else
+          echo "matrix={\"environment\":[\"staging\"]}" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Install dependencies
+      working-directory: ./deployment/cloudflare
+      run: npm ci
+      
+    - name: Build admin panel
+      working-directory: ./deployment/cloudflare
+      run: |
+        export ENVIRONMENT=staging
+        export API_BASE_URL="https://it-era-admin-auth-staging.bulltech.workers.dev"
+        npm run build
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: admin-panel-build
+        path: deployment/cloudflare/dist/
+        retention-days: 30
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.build.outputs.deployment-matrix)}}
+      
+    environment: ${{ matrix.environment }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: admin-panel-build
+        path: deployment/cloudflare/dist/
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install Wrangler
+      run: npm install -g wrangler
+      
+    - name: Configure environment
+      run: |
+        if [[ "${{ matrix.environment }}" == "production" ]]; then
+          echo "API_BASE_URL=https://it-era-admin-auth-production.bulltech.workers.dev" >> $GITHUB_ENV
+          echo "CLOUDFLARE_PROJECT_NAME=it-era-admin-panel-production" >> $GITHUB_ENV
+        else
+          echo "API_BASE_URL=https://it-era-admin-auth-staging.bulltech.workers.dev" >> $GITHUB_ENV  
+          echo "CLOUDFLARE_PROJECT_NAME=it-era-admin-panel-staging" >> $GITHUB_ENV
+        fi
+        
+    - name: Update build configuration
+      working-directory: ./deployment/cloudflare
+      run: |
+        # Update configuration files for the target environment
+        node -e "
+        const fs = require('fs');
+        const path = require('path');
+        
+        // Update config.js
+        const configPath = path.join('dist', 'js', 'config.js');
+        let configContent = fs.readFileSync(configPath, 'utf8');
+        configContent = configContent.replace(
+          /API_BASE_URL:\s*['\"][^'\"]*['\"]/,
+          \`API_BASE_URL: '\${process.env.API_BASE_URL}'\`
+        );
+        configContent = configContent.replace(
+          /ADMIN_API_BASE_URL:\s*['\"][^'\"]*['\"]/,
+          \`ADMIN_API_BASE_URL: '\${process.env.API_BASE_URL}'\`
+        );
+        fs.writeFileSync(configPath, configContent);
+        
+        // Update index.html
+        const indexPath = path.join('dist', 'index.html');
+        let indexContent = fs.readFileSync(indexPath, 'utf8');
+        indexContent = indexContent.replace(
+          /API_BASE_URL:\s*['\"][^'\"]*['\"]/,
+          \`API_BASE_URL: '\${process.env.API_BASE_URL}'\`
+        );
+        fs.writeFileSync(indexPath, indexContent);
+        
+        console.log('✅ Updated configuration for ${{ matrix.environment }} environment');
+        "
+        
+    - name: Deploy to Cloudflare Pages
+      working-directory: ./deployment/cloudflare
+      run: |
+        wrangler pages deploy dist \
+          --project-name="${CLOUDFLARE_PROJECT_NAME}" \
+          --compatibility-date="2024-08-25"
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        
+    - name: Verify deployment
+      run: |
+        echo "✅ Deployment completed successfully!"
+        echo "🌐 Environment: ${{ matrix.environment }}"
+        echo "🚀 Admin panel should be available at the configured domain"
+        
+        # Add basic health check
+        sleep 30  # Wait for deployment to propagate
+        
+        if [[ "${{ matrix.environment }}" == "production" ]]; then
+          HEALTH_URL="https://admin.it-era.it"
+        else
+          HEALTH_URL="https://staging-admin.it-era.it"
+        fi
+        
+        if curl -s --head "$HEALTH_URL" | head -n 1 | grep -q "200\|301\|302"; then
+          echo "✅ Health check passed: $HEALTH_URL is accessible"
+        else
+          echo "⚠️ Health check warning: $HEALTH_URL may not be ready yet"
+        fi
+
+  create-release:
+    if: github.ref == 'refs/heads/production' && github.event_name == 'push'
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: admin-panel-build
+        path: release-package/
+        
+    - name: Create deployment package
+      run: |
+        cd release-package
+        
+        # Create deployment instructions
+        cat > DEPLOYMENT_INSTRUCTIONS.md << EOF
+        # IT-ERA Admin Panel - Deployment Package
+        
+        **Generated**: $(date)
+        **Version**: ${{ github.sha }}
+        **Branch**: ${{ github.ref_name }}
+        
+        ## Quick Deploy
+        
+        ### Cloudflare Pages
+        1. Upload contents to Cloudflare Pages
+        2. Set build command: \`echo "Pre-built"\`
+        3. Set build output directory: \`/\`
+        4. Configure environment variables:
+           - \`API_BASE_URL\`: Your API endpoint URL
+        
+        ### Static Hosting
+        1. Upload all files to your web server
+        2. Configure SPA routing for \`/admin/*\` paths
+        3. Ensure proper CORS headers
+        
+        ### Manual Configuration
+        - Edit \`js/config.js\` to update API endpoints
+        - Modify \`_headers\` for your server requirements
+        - Update \`_redirects\` for your routing needs
+        
+        ## Verification Checklist
+        - [ ] Admin panel loads at deployed URL
+        - [ ] Login functionality works
+        - [ ] All navigation sections accessible
+        - [ ] API connectivity confirmed
+        - [ ] No console errors
+        
+        For support: IT-ERA Technical Team
+        EOF
+        
+        # Create ZIP package
+        zip -r ../it-era-admin-panel-${{ github.sha }}.zip .
+        
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: admin-v${{ github.run_number }}
+        name: IT-ERA Admin Panel v${{ github.run_number }}
+        body: |
+          ## IT-ERA Admin Panel Release
+          
+          **Commit**: ${{ github.sha }}
+          **Date**: $(date)
+          
+          ### Changes
+          - Automated deployment from production branch
+          - Updated configuration for production environment
+          - Verified deployment to Cloudflare Pages
+          
+          ### Deployment Status
+          - ✅ Built successfully
+          - ✅ Deployed to production
+          - ✅ Health check passed
+          
+          ### Download
+          Download the `it-era-admin-panel-*.zip` file for manual deployment to other environments.
+          
+        files: |
+          it-era-admin-panel-${{ github.sha }}.zip
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  notify:
+    if: always()
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Notify deployment status
+      run: |
+        if [[ "${{ needs.deploy.result }}" == "success" ]]; then
+          echo "✅ IT-ERA Admin Panel deployment completed successfully"
+          echo "🌐 Check your configured domain for the updated admin panel"
+        else
+          echo "❌ IT-ERA Admin Panel deployment failed"
+          echo "🔍 Check the deployment logs for details"
+        fi

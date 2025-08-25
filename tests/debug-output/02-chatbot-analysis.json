@@ -1,0 +1,12 @@
+{
+  "analysis": {
+    "containsWidget": false,
+    "containsChatbot": false,
+    "containsCloudflare": true,
+    "containsWorker": false,
+    "hasScriptTags": 2,
+    "hasExternalScripts": 1
+  },
+  "foundIndicators": [],
+  "htmlLength": 24011
+}

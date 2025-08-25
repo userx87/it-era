@@ -1,0 +1,23 @@
+{
+  "name": "it-era-admin-panel",
+  "version": "1.0.0",
+  "description": "IT-ERA Admin Panel - Frontend Application",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "wrangler pages dev dist --local",
+    "deploy": "wrangler pages deploy dist",
+    "deploy:production": "wrangler pages deploy dist --env production",
+    "deploy:staging": "wrangler pages deploy dist --env staging",
+    "preview": "wrangler pages dev dist",
+    "test": "echo 'No tests configured'",
+    "lint": "echo 'No linting configured'",
+    "prepare": "npm run build"
+  },
+  "keywords": ["admin", "panel", "cloudflare", "pages"],
+  "author": "IT-ERA",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {}
+}

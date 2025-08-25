@@ -1,0 +1,62 @@
+{
+  "#chat-widget": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  ".chat-widget": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "[id*=\"chat\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "[class*=\"chat\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "[data-chat]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "iframe[src*=\"chat\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "script[src*=\"chat\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "script[src*=\"widget\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "div[id*=\"chatbot\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  ".chatbot-container": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "#it-era-chat": {
+    "found": false,
+    "count": 0,
+    "details": []
+  },
+  "[data-testid*=\"chat\"]": {
+    "found": false,
+    "count": 0,
+    "details": []
+  }
+}

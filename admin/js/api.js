@@ -25,10 +25,8 @@ class APIManager {
         let url;
         if (endpoint.startsWith('http')) {
             url = endpoint;
-        } else if (endpoint.startsWith('/admin/api')) {
-            url = endpoint; // Already has correct path
         } else if (endpoint.startsWith('/admin')) {
-            url = endpoint;
+            url = `${this.baseURL}${endpoint}`;
         } else {
             url = `${this.baseURL}${endpoint}`;
         }
@@ -162,23 +160,23 @@ class APIManager {
     }
 
     async getCategory(id) {
-        return this.get(`/categories/${id}`);
+        return this.get(`/admin/api/categories/${id}`);
     }
 
     async createCategory(categoryData) {
-        return this.post('/categories', categoryData);
+        return this.post('/admin/api/categories', categoryData);
     }
 
     async updateCategory(id, categoryData) {
-        return this.put(`/categories/${id}`, categoryData);
+        return this.put(`/admin/api/categories/${id}`, categoryData);
     }
 
     async deleteCategory(id) {
-        return this.delete(`/categories/${id}`);
+        return this.delete(`/admin/api/categories/${id}`);
     }
 
     async toggleCategoryStatus(id) {
-        return this.post(`/categories/${id}/toggle-status`);
+        return this.post(`/admin/api/categories/${id}/toggle-status`);
     }
 
     // Tags API
@@ -187,27 +185,27 @@ class APIManager {
     }
 
     async getTag(id) {
-        return this.get(`/tags/${id}`);
+        return this.get(`/admin/api/tags/${id}`);
     }
 
     async createTag(tagData) {
-        return this.post('/tags', tagData);
+        return this.post('/admin/api/tags', tagData);
     }
 
     async updateTag(id, tagData) {
-        return this.put(`/tags/${id}`, tagData);
+        return this.put(`/admin/api/tags/${id}`, tagData);
     }
 
     async deleteTag(id) {
-        return this.delete(`/tags/${id}`);
+        return this.delete(`/admin/api/tags/${id}`);
     }
 
     async bulkCreateTags(tags) {
-        return this.post('/tags/bulk-create', { tags });
+        return this.post('/admin/api/tags/bulk-create', { tags });
     }
 
     async mergeTags(sourceTagId, targetTagId, deleteSource = true) {
-        return this.post('/tags/merge', {
+        return this.post('/admin/api/tags/merge', {
             source_tag_id: sourceTagId,
             target_tag_id: targetTagId,
             delete_source: deleteSource
@@ -220,7 +218,7 @@ class APIManager {
     }
 
     async getMediaFile(id) {
-        return this.get(`/media/${id}`);
+        return this.get(`/admin/api/media/${id}`);
     }
 
     async uploadMedia(files, metadata = {}) {
@@ -233,36 +231,36 @@ class APIManager {
         if (metadata.alt_text) formData.append('alt_text', metadata.alt_text);
         if (metadata.caption) formData.append('caption', metadata.caption);
 
-        return this.upload('/media/upload', formData);
+        return this.upload('/admin/api/media/upload', formData);
     }
 
     async updateMedia(id, mediaData) {
-        return this.put(`/media/${id}`, mediaData);
+        return this.put(`/admin/api/media/${id}`, mediaData);
     }
 
     async deleteMedia(id) {
-        return this.delete(`/media/${id}`);
+        return this.delete(`/admin/api/media/${id}`);
     }
 
     async bulkDeleteMedia(mediaIds) {
-        return this.post('/media/bulk-delete', { media_ids: mediaIds });
+        return this.post('/admin/api/media/bulk-delete', { media_ids: mediaIds });
     }
 
     async getMediaStats() {
-        return this.get('/media/stats');
+        return this.get('/admin/api/media/stats');
     }
 
     // Analytics API
     async getAnalyticsDashboard(timeframe = '30') {
-        return this.get('/analytics/dashboard', { timeframe });
+        return this.get('/admin/api/analytics/dashboard', { timeframe });
     }
 
     async getPostAnalytics(postId, timeframe = '30') {
-        return this.get(`/analytics/posts/${postId}`, { timeframe });
+        return this.get(`/admin/api/analytics/posts/${postId}`, { timeframe });
     }
 
     async trackEvent(event, postId = null, categoryId = null, metadata = {}) {
-        return this.post('/analytics/track', {
+        return this.post('/admin/api/analytics/track', {
             event,
             post_id: postId,
             category_id: categoryId,
@@ -271,11 +269,11 @@ class APIManager {
     }
 
     async exportAnalytics(params = {}) {
-        return this.get('/analytics/export', params);
+        return this.get('/admin/api/analytics/export', params);
     }
 
     async getRealtimeAnalytics(minutes = 60) {
-        return this.get('/analytics/realtime', { minutes });
+        return this.get('/admin/api/analytics/realtime', { minutes });
     }
 
     // Admin API
@@ -309,11 +307,11 @@ class APIManager {
 
     // Webhooks API
     async getWebhookLogs(params = {}) {
-        return this.get('/webhooks/logs', params);
+        return this.get('/admin/api/webhooks/logs', params);
     }
 
     async retryWebhook(logId) {
-        return this.post(`/webhooks/retry/${logId}`);
+        return this.post(`/admin/api/webhooks/retry/${logId}`);
     }
 
     // Users API (admin only)
@@ -322,7 +320,7 @@ class APIManager {
     }
 
     async createUser(userData) {
-        return this.post('/auth/register', userData);
+        return this.post('/admin/api/users', userData);
     }
 
     async updateUser(id, userData) {
@@ -356,52 +354,57 @@ class APIManager {
 const apiManager = new APIManager();
 
 // Utility functions
-function handleAPIError(error, defaultMessage = 'Si è verificato un errore') {
+function handleAPIError(error, context = '', defaultMessage = 'Si è verificato un errore') {
+    // Use the new notification manager
+    if (window.notificationManager) {
+        return notificationManager.handleApiError(error, context);
+    }
+    
+    // Fallback for backward compatibility
     console.error('API Error:', error);
     
     let message = defaultMessage;
-    
-    if (error.message) {
+    if (error && error.message) {
         message = error.message;
     }
     
-    showNotification(message, 'error');
+    if (typeof showNotification === 'function') {
+        showNotification(message, 'danger');
+    }
     return message;
 }
 
-// Loading state management
+// Loading state management - now handled by NotificationManager
 let activeRequests = 0;
 
-function showLoading(element = null) {
+// Backward compatibility functions
+function showLoading(element = null, message = 'Caricamento...') {
     activeRequests++;
     
-    if (element) {
-        element.style.position = 'relative';
-        
-        const overlay = document.createElement('div');
-        overlay.className = 'loading-overlay';
-        overlay.innerHTML = `
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        `;
-        
-        element.appendChild(overlay);
+    if (window.notificationManager) {
+        const elementId = element ? element.id || `element_${Date.now()}` : null;
+        if (element && !element.id) {
+            element.id = elementId;
+        }
+        notificationManager.showLoading(elementId, message);
     } else {
-        // Show global loading indicator
-        document.body.style.cursor = 'wait';
+        // Fallback implementation
+        if (!element) {
+            document.body.style.cursor = 'wait';
+        }
     }
 }
 
 function hideLoading(element = null) {
     activeRequests = Math.max(0, activeRequests - 1);
     
-    if (element) {
-        const overlay = element.querySelector('.loading-overlay');
-        if (overlay) {
-            overlay.remove();
+    if (window.notificationManager) {
+        const elementId = element ? element.id : null;
+        notificationManager.hideLoading(elementId);
+    } else {
+        // Fallback implementation
+        if (!element && activeRequests === 0) {
+            document.body.style.cursor = 'default';
         }
-    } else if (activeRequests === 0) {
-        document.body.style.cursor = 'default';
     }
 }

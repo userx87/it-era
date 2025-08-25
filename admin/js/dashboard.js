@@ -160,7 +160,7 @@ class DashboardManager {
      */
     async loadStats() {
         try {
-            const response = await securityGuard.makeSecureRequest('/dashboard/stats');
+            const response = await securityGuard.makeSecureRequest('/admin/api/dashboard/stats');
             
             if (response.success) {
                 this.stats = response.data || {};
@@ -179,7 +179,7 @@ class DashboardManager {
      */
     async loadRecentActivity() {
         try {
-            const response = await securityGuard.makeSecureRequest('/dashboard/activity');
+            const response = await securityGuard.makeSecureRequest('/admin/api/dashboard/activity');
             
             if (response.success) {
                 this.activities = response.data || [];
@@ -197,7 +197,7 @@ class DashboardManager {
      */
     async loadSystemStatus() {
         try {
-            const response = await securityGuard.makeSecureRequest('/dashboard/status');
+            const response = await securityGuard.makeSecureRequest('/admin/api/dashboard/status');
             
             if (response.success) {
                 this.systemStatus = response.data || {};

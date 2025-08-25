@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-08-25T11:06:06.800Z",
+  "local": {
+    "hasChatbotContainer": true,
+    "hasChatbotButton": true,
+    "hasChatbotStyles": true,
+    "hasChatbotScript": true,
+    "hasAPIEndpoint": true,
+    "totalLength": 41826
+  },
+  "production": {
+    "hasChatbotContainer": false,
+    "hasChatbotButton": false,
+    "hasChatbotStyles": false,
+    "hasChatbotScript": false,
+    "hasAPIEndpoint": false,
+    "totalLength": 24011
+  },
+  "differences": {
+    "chatbotMissing": true,
+    "sizeDifference": 17815,
+    "percentageDifference": 42.59312389422847
+  }
+}

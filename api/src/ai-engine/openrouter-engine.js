@@ -335,7 +335,36 @@ Rispondi sempre come esperto IT-ERA con focus su lead generation B2B.`;
    * Process AI response and extract actionable information
    */
   processAIResponse(aiResponse, context, originalMessage) {
-    const message = aiResponse.choices[0].message.content.trim();
+    const rawMessage = aiResponse.choices[0].message.content.trim();
+    
+    // SECURITY CRITICAL: Check if AI returned system prompt instead of conversational response
+    const systemPromptIndicators = [
+      'Sei l\'assistente virtuale di IT-ERA',
+      '🏢 AZIENDA:',
+      '📍 SEDE:',
+      '🎯 OBIETTIVI CONVERSAZIONE:',
+      'Rispondi sempre come esperto IT-ERA',
+      'primo filtro commerciale',
+      'Non sei un tecnico'
+    ];
+    
+    let message = rawMessage;
+    
+    // Check if response contains system prompt indicators
+    const hasSystemContent = systemPromptIndicators.some(indicator => 
+      rawMessage.includes(indicator)
+    );
+    
+    if (hasSystemContent) {
+      console.error('SECURITY ALERT: AI returned system prompt, using safe fallback');
+      message = "[IT-ERA] Ciao, come posso aiutarti?";
+    }
+    
+    // Additional check for unusually long responses that look like system prompts
+    if (rawMessage.length > 500 && rawMessage.includes('🎯') && rawMessage.includes('📞')) {
+      console.error('SECURITY ALERT: AI returned system-like structured response, using safe fallback');
+      message = "[IT-ERA] Ciao, come posso aiutarti?";
+    }
     
     // Extract intent and confidence
     const intent = this.extractIntent(message, originalMessage, context);
@@ -356,7 +385,8 @@ Rispondi sempre come esperto IT-ERA con focus su lead generation B2B.`;
       priority: escalation.priority,
       options,
       nextStep: this.determineNextStep(intent, context),
-      usage: aiResponse.usage || {}
+      usage: aiResponse.usage || {},
+      sanitized: message !== rawMessage // Track if we had to sanitize
     };
   }
 

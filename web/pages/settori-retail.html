@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT per Retail e GDO | IT-ERA Lombardia</title>
+    <meta name="description" content="Soluzioni IT per Retail e GDO in Lombardia. Sistemi POS, e-commerce, gestionale magazzino, sicurezza pagamenti, customer analytics. Digitalizza il tuo punto vendita con IT-ERA.">
+    <meta name="keywords" content="retail IT, GDO, POS sistemi, e-commerce, inventory management, customer analytics, digital payment, omnichannel">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --retail: #ff6b35;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding-top: 76px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--retail) 0%, #f7931e 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .retail-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+            border-left: 5px solid var(--retail);
+        }
+        
+        .retail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .retail-icon {
+            color: var(--retail);
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn-retail {
+            background: var(--retail);
+            color: white;
+            border: 2px solid var(--retail);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-retail:hover {
+            background: #e5552d;
+            border-color: #e5552d;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .stats-section {
+            background: var(--light);
+            padding: 60px 0;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--retail);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" style="min-height: 76px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+                            <li><a class="dropdown-item" href="/pages/assistenza-it.html">
+                                🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/sicurezza-informatica.html">
+                                🛡️ Sicurezza Informatica
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+                            <li><a class="dropdown-item" href="/pages/cloud-storage.html">
+                                ☁️ Cloud Storage
+                            </a></li>
+                        </ul>
+                    </li>
+                    <!-- Industry Sectors Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            Settori
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
+                                🏢 PMI e Startup
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
+                                ⚕️ Studi Medici
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/settori-commercialisti.html">
+                                📊 Commercialisti
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/settori-studi-legali.html">
+                                ⚖️ Studi Legali
+                            </a></li>
+                            <li><a class="dropdown-item" href="/pages/settori-industria.html">
+                                🏭 Industria 4.0
+                            </a></li>
+                            <li><a class="dropdown-item active" href="/pages/settori-retail.html">
+                                🛍️ Retail e GDO
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/perche-it-era.html">Perché IT-ERA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contatti.html">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="tel:+390398882041" role="button">
+                            📞 039 888 2041
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-4 fw-bold mb-4">🛍️ Retail e GDO: Digitalizza la Tua Vendita</h1>
+                    <p class="lead mb-5">Trasforma il tuo punto vendita con soluzioni IT all'avanguardia: POS moderni, e-commerce integrato, inventory management smart e customer analytics. L'omnichannel perfetto inizia qui.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="tel:+390398882041" class="btn-retail">🚀 Demo Gratuita</a>
+                        <a href="#soluzioni" class="btn btn-light btn-lg">🛍️ Vedi le Soluzioni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number">35%</div>
+                        <p class="mb-0">Aumento Vendite</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number">50%</div>
+                        <p class="mb-0">Riduzione Errori</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number">70%</div>
+                        <p class="mb-0">Customer Satisfaction</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number">200+</div>
+                        <p class="mb-0">Punti Vendita</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-5" id="soluzioni">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold">Soluzioni IT per Retail e GDO</h2>
+                    <p class="lead text-muted">Tecnologie innovative per vendite omnichannel e customer experience superiore</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="retail-card text-center">
+                        <div class="retail-icon">🏪</div>
+                        <h4>Sistemi POS Avanzati</h4>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li>✓ POS touch screen moderni</li>
+                            <li>✓ Pagamenti contactless/mobile</li>
+                            <li>✓ Integrazione e-commerce</li>
+                            <li>✓ Gestione sconti e promozioni</li>
+                            <li>✓ Fidelity card automatiche</li>
+                            <li>✓ Receipt digitali</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="retail-card text-center">
+                        <div class="retail-icon">🛒</div>
+                        <h4>E-commerce Integrato</h4>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li>✓ Piattaforma e-commerce completa</li>
+                            <li>✓ Sincronizzazione magazzino</li>
+                            <li>✓ Click & Collect</li>
+                            <li>✓ Marketplace management</li>
+                            <li>✓ Mobile app personalizzata</li>
+                            <li>✓ SEO e marketing automation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="retail-card text-center">
+                        <div class="retail-icon">📦</div>
+                        <h4>Inventory Management</h4>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li>✓ Gestione stock automatica</li>
+                            <li>✓ RFID e barcode scanning</li>
+                            <li>✓ Riordino automatico</li>
+                            <li>✓ Multi-warehouse support</li>
+                            <li>✓ Forecasting intelligente</li>
+                            <li>✓ Loss prevention system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="retail-card text-center">
+                        <div class="retail-icon">📊</div>
+                        <h4>Customer Analytics</h4>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li>✓ Customer journey mapping</li>
+                            <li>✓ Behavioral analytics</li>
+                            <li>✓ Personalized recommendations</li>
+                            <li>✓ Loyalty program digitale</li>
+                            <li>✓ Social media integration</li>
+                            <li>✓ Sentiment analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="retail-card text-center">
+                        <div class="retail-icon">💳</div>
+                        <h4>Payment Security</h4>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li>✓ PCI DSS compliance</li>
+                            <li>✓ Fraud detection avanzato</li>
+                            <li>✓ Multi-payment gateway</li>
+                            <li>✓ Crypto payment support</li>
+                            <li>✓ Tokenization sicura</li>
+                            <li>✓ Audit e monitoring 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="retail-card text-center">
+                        <div class="retail-icon">📱</div>
+                        <h4>Digital Experience</h4>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li>✓ Digital signage dinamico</li>
+                            <li>✓ Interactive kiosk</li>
+                            <li>✓ AR/VR product visualization</li>
+                            <li>✓ Voice commerce integration</li>
+                            <li>✓ IoT store automation</li>
+                            <li>✓ Real-time notifications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-6 fw-bold">Il Nostro Processo di Digital Retail Transformation</h2>
+                    <p class="lead text-muted">Dalla strategia omnichannel all'implementazione completa</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <strong>1</strong>
+                        </div>
+                        <h5>Analisi Customer Journey</h5>
+                        <p class="text-muted">Studio approfondito del percorso cliente e touchpoint critici</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <strong>2</strong>
+                        </div>
+                        <h5>Strategia Omnichannel</h5>
+                        <p class="text-muted">Definizione ecosistema integrato online/offline personalizzato</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <strong>3</strong>
+                        </div>
+                        <h5>Deploy & Integration</h5>
+                        <p class="text-muted">Implementazione graduale senza interruzioni delle vendite</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <strong>4</strong>
+                        </div>
+                        <h5>Growth & Analytics</h5>
+                        <p class="text-muted">Ottimizzazione continua basata su dati e performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="display-6 fw-bold mb-4">Perché Scegliere IT-ERA per il Retail?</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px; min-width: 40px;">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Esperienza nel Retail</h5>
+                                    <p class="text-muted mb-0">Oltre 200 punti vendita digitalizzati con successo in Lombardia</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px; min-width: 40px;">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Integrazione Totale</h5>
+                                    <p class="text-muted mb-0">Sincronizzazione perfetta tra tutti i canali di vendita</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px; min-width: 40px;">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Support 24/7</h5>
+                                    <p class="text-muted mb-0">Assistenza immediata per non perdere mai una vendita</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-4 rounded-3">
+                        <h4 class="mb-4">Case Study: Catena Fashion</h4>
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="h2 text-primary">+45%</div>
+                                <small class="text-muted">Vendite Online</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="h2 text-primary">-60%</div>
+                                <small class="text-muted">Tempo Check-out</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="h2 text-primary">+80%</div>
+                                <small class="text-muted">Customer Retention</small>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0"><small class="text-muted">Risultati ottenuti in 6 mesi di digitalizzazione completa</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, var(--retail) 0%, #f7931e 100%); color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-4">Pronto per il Futuro del Retail?</h2>
+                    <p class="lead mb-5">Trasforma il tuo business retail in un'esperienza omnichannel vincente. Dalla strategia all'implementazione, siamo il partner giusto per la tua crescita.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="tel:+390398882041" class="btn btn-light btn-lg px-4">🛍️ Demo Gratuita</a>
+                        <a href="/pages/contatti.html" class="btn btn-outline-light btn-lg px-4">📧 Parla con un Esperto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4">
+                    <h5><span style="color: #0056cc;">IT</span>-ERA</h5>
+                    <p class="mb-3">Il partner tecnologico di fiducia per la tua trasformazione digitale retail.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Servizi</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/assistenza-it.html" class="text-white-50 text-decoration-none">Assistenza IT</a></li>
+                        <li><a href="/pages/sicurezza-informatica.html" class="text-white-50 text-decoration-none">Sicurezza</a></li>
+                        <li><a href="/pages/cloud-storage.html" class="text-white-50 text-decoration-none">Cloud Storage</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Settori</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/settori-pmi-startup.html" class="text-white-50 text-decoration-none">PMI e Startup</a></li>
+                        <li><a href="/pages/settori-industria.html" class="text-white-50 text-decoration-none">Industria 4.0</a></li>
+                        <li><a href="/pages/settori-retail.html" class="text-white-50 text-decoration-none">Retail</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Contatti</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone me-2"></i><a href="tel:+390398882041" class="text-white text-decoration-none">039 888 2041</a></li>
+                        <li><i class="fas fa-envelope me-2"></i><a href="mailto:info@it-era.it" class="text-white text-decoration-none">info@it-era.it</a></li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, 20871 Vimercate (MB)</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="/privacy" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="/cookie" class="text-white-50 text-decoration-none">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

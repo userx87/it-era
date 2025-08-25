@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-wrapper, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluzioni IT per Studi Legali | IT-ERA</title>
     <meta name="description" content="Soluzioni IT per studi legali in Lombardia. Sicurezza massima, gestione documentale, backup e supporto software giuridico specializzato.">
     
@@ -35,18 +35,123 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             height: 100%;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        /* Navbar fixes */
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            z-index: 1030;
+            min-height: 76px;
+        }
+        
+        .dropdown-item.active {
+            background-color: var(--primary);
         }
     </style>
 </head>
 <body>
-    <!-- Navigation placeholder -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" style="min-height: 76px;">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
-                <span style="color: #0056cc;">IT</span>-ERA
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: #0056cc;">IT</span>-ERA
+        </a>
+<!-- Emergency CTA for Mobile -->
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-danger btn-sm" href="tel:+390398882041">
+                🚨 Emergenza
             </a>
-        </div>
-    </nav>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<!-- Services Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Servizi
+                    </a>
+<ul class="dropdown-menu">
+<li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+<li><a class="dropdown-item" href="/pages/assistenza-it.html">
+                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+</a></li>
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica.html">
+                            🛡️ Sicurezza Informatica
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+<li><a class="dropdown-item" href="/pages/cloud-storage.html">
+                            ☁️ Cloud Storage
+                        </a></li>
+<li><a class="dropdown-item" href="/pages/backup-automatico.html">
+                            💾 Backup Automatico
+                        </a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+<li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
+                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+</a></li>
+</ul>
+</li>
+<!-- Industry Sectors Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">
+                        Settori
+                    </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
+                            🏢 PMI e Startup
+                        </a></li>
+<li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
+                            ⚕️ Studi Medici
+                        </a></li>
+<li><a class="dropdown-item" href="/pages/settori-commercialisti.html">
+                            📊 Commercialisti
+                        </a></li>
+<li><a class="dropdown-item active" href="/pages/settori-studi-legali.html">
+                            ⚖️ Studi Legali
+                        </a></li>
+<li><a class="dropdown-item" href="#industria">
+                            🏭 Industria 4.0
+                        </a></li>
+<li><a class="dropdown-item" href="#retail">
+                            🛍️ Retail e GDO
+                        </a></li>
+</ul>
+</li>
+<!-- Why IT-ERA -->
+<li class="nav-item">
+<a class="nav-link" href="/pages/perche-it-era.html">Perché IT-ERA</a>
+</li>
+<!-- Blog -->
+<li class="nav-item">
+<a class="nav-link" href="/blog/">
+                        📝 Blog
+                    </a>
+</li>
+<!-- Contact -->
+<li class="nav-item">
+<a class="nav-link" href="/pages/contatti.html">Contatti</a>
+</li>
+<!-- Primary CTA Button -->
+<li class="nav-item ms-lg-3">
+<a class="btn btn-primary" href="tel:+390398882041">
+                        📞 039 888 2041
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -66,7 +171,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="service-card">
-                        <i class="fas fa-balance-scale fa-3x" style="color: #6f42c1;" mb-3></i>
+                        <i class="fas fa-balance-scale fa-3x mb-3" style="color: #6f42c1;"></i>
                         <h4>Riservatezza Assoluta</h4>
                         <p>Crittografia avanzata e protocolli di sicurezza per il segreto professionale.</p>
                     </div>
@@ -74,7 +179,7 @@
                 
                 <div class="col-md-4">
                     <div class="service-card">
-                        <i class="fas fa-gavel fa-3x" style="color: #6f42c1;" mb-3></i>
+                        <i class="fas fa-gavel fa-3x mb-3" style="color: #6f42c1;"></i>
                         <h4>Software Giuridici</h4>
                         <p>Supporto per Sistemi Lex, Giuffrè e altri software legali specializzati.</p>
                     </div>
@@ -82,8 +187,8 @@
                 
                 <div class="col-md-4">
                     <div class="service-card">
-                        <i class="fas fa-archive fa-3x" style="color: #6f42c1;" mb-3></i>
-                        <h4>Archiviazione Praticas</h4>
+                        <i class="fas fa-archive fa-3x mb-3" style="color: #6f42c1;"></i>
+                        <h4>Archiviazione Pratiche</h4>
                         <p>Gestione digitale sicura di fascicoli e documenti legali.</p>
                     </div>
                 </div>
@@ -92,10 +197,58 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <p>&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
+    <footer class="bg-dark text-white py-5 mt-0">
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4">
+<h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+<p>Il tuo partner tecnologico di fiducia per soluzioni IT innovative e affidabili.</p>
+<div class="contact-info">
+<p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+<p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+<p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+<h5>Servizi</h5>
+<ul class="list-unstyled">
+<li><a class="text-white-50" href="/pages/assistenza-it.html">Assistenza IT</a></li>
+<li><a class="text-white-50" href="/pages/cloud-storage.html">Cloud Storage</a></li>
+<li><a class="text-white-50" href="/pages/sicurezza-informatica.html">Sicurezza Informatica</a></li>
+<li><a class="text-white-50" href="/pages/backup-automatico.html">Backup &amp; DR</a></li>
+<li><a class="text-white-50" href="/pages/voip-telefonia.html">VoIP &amp; Telefonia</a></li>
+<li><a class="text-white-50" href="/pages/firewall-watchguard.html">Firewall Solutions</a></li>
+</ul>
+</div>
+<div class="col-md-3 mb-4">
+<h5>Zone Coperte</h5>
+<ul class="list-unstyled">
+<li><a class="text-white-50" href="/pages/assistenza-it.html">Milano</a></li>
+<li><a class="text-white-50" href="/pages/assistenza-it-monza.html">Monza</a></li>
+<li><a class="text-white-50" href="/pages/assistenza-it-bergamo.html">Bergamo</a></li>
+<li><a class="text-white-50" href="/pages/assistenza-it-como.html">Como</a></li>
+<li><a class="text-white-50" href="/pages/assistenza-it-lecco.html">Lecco</a></li>
+<li><a class="text-white-50" href="/pages/assistenza-it-lodi.html">Lodi</a></li>
+</ul>
+</div>
+<div class="col-md-3 mb-4">
+<h5>Seguici</h5>
+<div class="social-links mb-3">
+<a class="text-white-50 me-3" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-facebook fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+</div>
+<p class="text-white-50 small">
+                        © 2024 IT-ERA. Tutti i diritti riservati.<br/>
+                        P.IVA: 12345678901<br/>
+<a class="text-white-50" href="/privacy">Privacy Policy</a> | 
+                        <a class="text-white-50" href="/cookie">Cookie Policy</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+    <!-- Bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

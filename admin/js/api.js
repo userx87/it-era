@@ -90,36 +90,36 @@ class APIManager {
 
     // Posts API
     async getPosts(params = {}) {
-        return this.get('/posts', params);
+        return this.get('/admin/api/posts', params);
     }
 
     async getPost(id) {
-        return this.get(`/posts/${id}`);
+        return this.get(`/admin/api/posts/${id}`);
     }
 
     async createPost(postData) {
-        return this.post('/posts', postData);
+        return this.post('/admin/api/posts', postData);
     }
 
     async updatePost(id, postData) {
-        return this.put(`/posts/${id}`, postData);
+        return this.put(`/admin/api/posts/${id}`, postData);
     }
 
     async deletePost(id) {
-        return this.delete(`/posts/${id}`);
+        return this.delete(`/admin/api/posts/${id}`);
     }
 
     async publishPost(id) {
-        return this.post(`/posts/${id}/publish`);
+        return this.post(`/admin/api/posts/${id}/publish`);
     }
 
     async unpublishPost(id) {
-        return this.post(`/posts/${id}/unpublish`);
+        return this.post(`/admin/api/posts/${id}/unpublish`);
     }
 
     // Categories API
     async getCategories(params = {}) {
-        return this.get('/categories', params);
+        return this.get('/admin/api/categories', params);
     }
 
     async getCategory(id) {
@@ -144,7 +144,7 @@ class APIManager {
 
     // Tags API
     async getTags(params = {}) {
-        return this.get('/tags', params);
+        return this.get('/admin/api/tags', params);
     }
 
     async getTag(id) {
@@ -177,7 +177,7 @@ class APIManager {
 
     // Media API
     async getMedia(params = {}) {
-        return this.get('/media', params);
+        return this.get('/admin/api/media', params);
     }
 
     async getMediaFile(id) {

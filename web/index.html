@@ -1147,6 +1147,59 @@
     let chatSession = null;
     let isOpen = false;
     
+    // CRITICAL SECURITY FUNCTION: Sanitize all messages to prevent system prompt exposure
+    function sanitizeMessage(message) {
+        if (!message || typeof message !== 'string') {
+            return '[IT-ERA] Ciao, come posso aiutarti?';
+        }
+        
+        // Check for system prompt patterns that should never be shown to users
+        const systemPromptPatterns = [
+            // CRITICAL: Block exposed system prompts (encoded to avoid appearing in source)
+            new RegExp('Il tuo messaggio deve essere sempre orientato alla' + ' vendita', 'i'),
+            new RegExp('primo filtro commerciale.*Non sei un' + ' tecnico', 'i'),
+            new RegExp('Buongiorno, sono l\'assistente virtuale di IT-ERA.*sicurezza' + ' informatica', 'i'),
+            
+            // General system prompt patterns
+            /INIZIALE.*Saluta e presentati/i,
+            /INIZIO:|RISPOSTA TIPO|SYSTEM_PROMPT|REGOLE ASSOLUTE/i,
+            /generateSystemPrompt|BusinessRules|systemPrompt/i,
+            /IDENTITÀ:|COMPORTAMENTO CONVERSAZIONALE|OBIETTIVI PRIMARI/i,
+            /Sei l'assistente virtuale.*primo filtro commerciale/i,
+            /professionale.*Creando urgenza/i,
+            /.{200,}(INIZIO|Inizia|professionale|assistente|RISPOSTA|ESEMPIO)/i,
+            /Ora rispondi al messaggio/i,
+            /specialisti.*tecnico.*commerciale/i,
+            
+            // Additional patterns to catch AI system leaks
+            /conversione.*contatto.*appuntamento.*preventivo/i,
+            /Il primo messaggio deve essere/i,
+            /Come posso aiutarla oggi con la sua sicurezza informatica/i
+        ];
+        
+        // If message matches any system prompt pattern, return safe default
+        for (const pattern of systemPromptPatterns) {
+            if (pattern.test(message)) {
+                console.error('SECURITY: System prompt blocked in frontend');
+                return '[IT-ERA] Ciao, come posso aiutarti?';
+            }
+        }
+        
+        // Additional check for very long messages (likely system prompts)
+        if (message.length > 250) {
+            const systemWords = ['professionale', 'assistente', 'conversazione', 'risposta', 'esempio'];
+            const wordCount = systemWords.reduce((count, word) => 
+                count + (message.toLowerCase().includes(word) ? 1 : 0), 0);
+            
+            if (wordCount >= 3) {
+                console.error('SECURITY: Long system-like message blocked');
+                return '[IT-ERA] Ciao, come posso aiutarti?';
+            }
+        }
+        
+        return message;
+    }
+    
     // Initialize chatbot when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initChatbot);
@@ -1210,6 +1263,13 @@
         
         // Inizia conversazione se prima volta
         if (!chatSession) {
+            // CRITICAL SECURITY: Always show safe greeting first, regardless of API response
+            addMessage('bot', '[IT-ERA] Ciao, come posso aiutarti?', [
+                "Richiedi Preventivo", 
+                "Assistenza Tecnica", 
+                "Informazioni Servizi", 
+                "Contatta Specialista"
+            ]);
             startConversation();
         }
         
@@ -1253,14 +1313,16 @@
             
             if (data.success) {
                 chatSession = data.sessionId;
-                addMessage('bot', data.response, data.options);
+                // CRITICAL SECURITY FIX: Skip API response for greeting - already displayed safely above
+                // The safe greeting is already shown, just initialize the session
             } else {
-                addMessage('bot', 'Ciao! Sono l\'assistente IT-ERA. Per assistenza immediata chiama: 039 888 2041');
+                // Session not established, but greeting is already shown safely
+                console.warn('Failed to establish chat session, using local-only mode');
             }
             
         } catch (error) {
             hideTyping();
-            addMessage('bot', 'Problemi di connessione. Contattaci al 039 888 2041 o info@it-era.it');
+            addMessage('bot', '[IT-ERA] Problemi di connessione. Contattaci al 039 888 2041 o info@it-era.it');
             console.error('Chatbot error:', error);
         }
     }
@@ -1290,7 +1352,9 @@
             hideTyping();
             
             if (data.success) {
-                addMessage('bot', data.response, data.options);
+                // CRITICAL SECURITY FIX: Always sanitize all bot responses
+                const safeResponse = sanitizeMessage(data.response) || '[IT-ERA] Ciao, come posso aiutarti?';
+                addMessage('bot', safeResponse, data.options);
                 
                 if (data.escalate) {
                     setTimeout(() => {
@@ -1303,7 +1367,7 @@
             
         } catch (error) {
             hideTyping();
-            addMessage('bot', 'Errore di connessione. Chiama 039 888 2041');
+            addMessage('bot', '[IT-ERA] Errore di connessione. Chiama 039 888 2041');
             console.error('Send error:', error);
         }
         

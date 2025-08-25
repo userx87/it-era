@@ -3,303 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluzioni IT per Commercialisti in Lombardia | Cloud Accounting | IT-ERA</title>
-    <meta name="description" content="IT specializzato per studi di commercialisti lombardi. Migrazione cloud, sicurezza dati clienti, automazione processi contabili. Consulenza GDPR gratuita.">
+    <title>Soluzioni IT per Commercialisti | IT-ERA</title>
+    <meta name="description" content="Soluzioni IT per studi di commercialisti in Lombardia. Sicurezza dati, backup, gestione documentale e supporto software specializzato.">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Critical CSS inline -->
     <style>
         :root {
-            --accounting-primary: #1a5490;
-            --accounting-secondary: #0ea5e9;
-            --accounting-accent: #06b6d4;
-            --accounting-success: #10b981;
-            --accounting-warning: #f59e0b;
-            --accounting-danger: #ef4444;
-            --accounting-light: #f1f5f9;
-            --accounting-dark: #1e293b;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --accounting: #28a745;
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding-top: 80px;
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
         }
         
-        .hero-accounting {
-            background: linear-gradient(135deg, var(--accounting-primary) 0%, var(--accounting-secondary) 100%);
+        .hero-section {
+            background: linear-gradient(135deg, var(--accounting) 0%, var(--primary) 100%);
             color: white;
             padding: 100px 0;
-            position: relative;
-            overflow: hidden;
         }
         
-        .hero-accounting::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" fill="white" opacity="0.08"><circle cx="20" cy="10" r="1"/><circle cx="40" cy="10" r="1"/><circle cx="60" cy="10" r="1"/><circle cx="80" cy="10" r="1"/></svg>') repeat;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .cloud-migration-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(255,255,255,0.2);
-            padding: 12px 24px;
-            border-radius: 30px;
-            margin-bottom: 30px;
-            border: 1px solid rgba(255,255,255,0.3);
-            animation: pulse 3s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            height: 100%;
         }
     </style>
 </head>
-<body style="padding-top: 76px;">
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/">
-            <span style="color: #0056cc;">IT</span>-ERA
-        </a>
-        <!-- Emergency CTA for Mobile -->
-        <div class="d-lg-none ms-auto me-2">
-            <a class="btn btn-danger btn-sm" href="tel:+390398882041">
-                🚨 Emergenza
+<body>
+    <!-- Navigation placeholder -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" style="min-height: 76px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
             </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <!-- Emergency Support - Primary CTA -->
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link text-danger fw-bold" href="tel:+390398882041">
-                <!-- Services Dropdown with Icons -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Servizi
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
-                        <li><a class="dropdown-item" href="/pages/assistenza-it.html">
-                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/sicurezza-informatica.html">
-                            🛡️ Sicurezza Informatica
-                        </a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
-                        <li><a class="dropdown-item" href="/pages/cloud-storage.html">
-                            ☁️ Cloud Storage
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/backup-automatico.html">
-                            💾 Backup Automatico
-                        </a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
-                        <li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
-                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
-                        </a></li>
-                    </ul>
-                </li>
-                <!-- Industry Sectors Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Settori
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
-                            🏢 PMI e Startup
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
-                            ⚕️ Studi Medici
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/settori-commercialisti.html">
-                            📊 Commercialisti
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/settori-studi-legali.html">
-                            ⚖️ Studi Legali
-                        </a></li>
-                        <li><a class="dropdown-item" href="#industria">
-                            🏭 Industria 4.0
-                        </a></li>
-                        <li><a class="dropdown-item" href="#retail">
-                            🛍️ Retail e GDO
-                        </a></li>
-                    </ul>
-                </li>
-                </li>
-                <!-- Contact CTA -->
-                <li class="nav-item">
-                    <a class="nav-link" href="tel:+390398882041">
-                        📞 039 888 2041
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Hero Section -->
-<section class="hero-accounting">
-    <div class="container">
-        <div class="hero-content">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <div class="cloud-migration-badge">
-                        <span>☁️ Migrazione Cloud Sicura</span>
-                        <span class="badge bg-success">GDPR Compliant</span>
-                    </div>
-                    <h1>Soluzioni IT Specializzate per Commercialisti</h1>
-                    <p class="lead">Trasforma il tuo studio con tecnologie cloud sicure, automazione dei processi contabili e supporto IT dedicato. Esperienza specifica con studi lombardi dal 2008.</p>
-                    <div class="d-flex gap-3 flex-wrap mt-4">
-                        <a href="tel:+390398882041" class="btn btn-warning btn-lg">
-                            <i class="fas fa-phone me-2"></i>Consulenza Gratuita
-                        </a>
-                        <a href="#servizi" class="btn btn-outline-light btn-lg">
-                            Scopri le Soluzioni
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="accounting-stats">
-                        <div class="accounting-stat-card">
-                            <div class="stat-number">85+</div>
-                            <div class="stat-label">Studi Serviti</div>
-                        </div>
-                        <div class="accounting-stat-card">
-                            <div class="stat-number">€280</div>
-                            <div class="stat-label">Da /mese</div>
-                        </div>
-                        <div class="accounting-stat-card">
-                            <div class="stat-number">15</div>
-                            <div class="stat-label">Anni Esperienza</div>
-                        </div>
-                        <div class="accounting-stat-card">
-                            <div class="stat-number">99.8%</div>
-                            <div class="stat-label">Uptime Cloud</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Soluzioni IT per Commercialisti</h1>
+            <p class="lead">Tecnologia affidabile per la gestione fiscale e contabile</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Services Section -->
-<section id="servizi" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Servizi IT per Studi Commercialisti</h2>
-            <p class="lead text-muted">Soluzioni tecnologiche pensate per ottimizzare la gestione contabile</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body p-4">
-                        <h4 class="card-title">☁️ Cloud Accounting</h4>
-                        <p class="card-text">Migrazione sicura verso soluzioni cloud per gestione documenti, backup automatico e accesso remoto sicuro.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Office 365 configurato</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Backup automatico 24/7</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Accesso da qualsiasi device</li>
-                        </ul>
+    <!-- Content Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Esperti in IT Contabile</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-file-invoice fa-3x text-success mb-3"></i>
+                        <h4>Gestione Documentale</h4>
+                        <p>Archiviazione digitale sicura e ricerca avanzata dei documenti.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body p-4">
-                        <h4 class="card-title">🛡️ Sicurezza Dati</h4>
-                        <p class="card-text">Protezione completa dei dati sensibili dei clienti con crittografia avanzata e conformità GDPR.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Crittografia end-to-end</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Conformità GDPR</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Audit trail completo</li>
-                        </ul>
+                
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-calculator fa-3x text-success mb-3"></i>
+                        <h4>Software Contabili</h4>
+                        <p>Supporto specializzato per Teamsystem, Zucchetti e altri.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body p-4">
-                        <h4 class="card-title">⚡ Automazione</h4>
-                        <p class="card-text">Automatizza processi ripetitivi, fatturazione elettronica e comunicazioni con clienti.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Workflow automatizzati</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Fatturazione elettronica</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Reportistica avanzata</li>
-                        </ul>
+                
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-lock fa-3x text-success mb-3"></i>
+                        <h4>Sicurezza Fiscale</h4>
+                        <p>Protezione massima per dati fiscali e informazioni riservate.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-light py-5 mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5 class="fw-bold mb-3">
-                    <span style="color: #0056cc;">IT</span>-ERA
-                </h5>
-                <p>Supporto tecnico professionale per aziende e professionisti in Lombardia.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h6 class="fw-bold">Servizi</h6>
-                <ul class="list-unstyled">
-                    <li><a href="/pages/assistenza-it.html" class="text-light-emphasis">Assistenza IT</a></li>
-                    <li><a href="/pages/sicurezza-informatica.html" class="text-light-emphasis">Sicurezza Informatica</a></li>
-                    <li><a href="/pages/cloud-storage.html" class="text-light-emphasis">Cloud Storage</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h6 class="fw-bold">Contatti</h6>
-                <p><i class="fas fa-phone me-2"></i>039 888 2041</p>
-                <p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
-                <p><i class="fas fa-map-marker-alt me-2"></i>Lombardia, Italia</p>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <p>&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
         </div>
-    </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
 </body>
 </html>

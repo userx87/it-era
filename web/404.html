@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Pagina Non Trovata - 404 | IT-ERA</title>
-<meta content="Pagina non trovata. Torna alla homepage di IT-ERA per scoprire i nostri servizi IT professionali per aziende in Lombardia." name="description"/>
-<meta content="noindex, nofollow" name="robots"/>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Non Trovata | IT-ERA</title>
+    <meta name="description" content="La pagina che stai cercando non esiste. Torna alla home di IT-ERA o contattaci per assistenza IT immediata.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
         :root {
-            --primary-color: #0d6efd;
-            --primary-dark: #0a58ca;
-            --secondary-color: #6c757d;
-            --accent-color: #20c997;
-            --light-bg: #f8f9fa;
-            --dark-bg: #212529;
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --danger: #dc3545;
         }
         
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -34,279 +30,222 @@
         
         .error-container {
             background: white;
-            border-radius: 20px;
             padding: 60px 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            max-width: 600px;
+            margin: 0 auto;
         }
         
-        .error-container::before {
-            content: '';
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 100px;
-            height: 100px;
-            background: rgba(13,110,253,0.1);
-            border-radius: 50%;
-            z-index: 1;
-        }
-        
-        .error-number {
+        .error-code {
             font-size: 8rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--primary);
             line-height: 1;
             margin-bottom: 20px;
-            position: relative;
-            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
         
-        .error-icon {
-            font-size: 4rem;
-            color: var(--secondary-color);
-            margin-bottom: 30px;
-            opacity: 0.7;
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
         }
         
-        .countdown {
+        .error-message {
             font-size: 1.2rem;
-            color: var(--primary-color);
-            font-weight: 600;
-            margin: 30px 0;
+            color: #666;
+            margin-bottom: 40px;
         }
         
-        .btn-primary-custom {
-            background: var(--primary-color);
-            border: none;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+        .btn-home {
+            background: var(--primary);
             color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
             text-decoration: none;
             display: inline-block;
-            margin: 10px;
+            transition: all 0.3s;
+            margin: 0 10px 15px;
         }
         
-        .btn-primary-custom:hover {
-            background: var(--primary-dark);
+        .btn-home:hover {
+            background: #003d8a;
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(13,110,253,0.3);
             color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
-        .btn-outline-custom {
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            background: transparent;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 600;
+        .btn-contact {
+            background: var(--secondary);
+            color: white;
+            padding: 15px 30px;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
+            font-weight: 600;
+            border-radius: 50px;
             text-decoration: none;
             display: inline-block;
-            margin: 10px;
+            transition: all 0.3s;
+            margin: 0 10px 15px;
         }
         
-        .btn-outline-custom:hover {
-            background: var(--primary-color);
-            color: white;
+        .btn-contact:hover {
+            background: #00a030;
             transform: translateY(-2px);
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
         .suggestions {
-            margin: 40px 0;
-            text-align: left;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e9ecef;
         }
         
-        .suggestions h5 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        
-        .suggestions ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .suggestions li {
-            margin: 10px 0;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .suggestions li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        
-        .suggestions a {
-            color: var(--primary-color);
+        .suggestion-link {
+            display: inline-block;
+            background: #f8f9fa;
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 25px;
             text-decoration: none;
-            font-weight: 500;
+            margin: 5px;
+            transition: all 0.2s;
+            border: 1px solid #e9ecef;
         }
         
-        .suggestions a:hover {
+        .suggestion-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .logo {
+            color: var(--primary);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+        
+        .emergency-bar {
+            background: var(--danger);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .emergency-bar a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .emergency-bar a:hover {
             text-decoration: underline;
         }
         
         @media (max-width: 768px) {
-            .error-number {
-                font-size: 5rem;
-            }
-            
             .error-container {
-                padding: 40px 20px;
                 margin: 20px;
+                padding: 40px 20px;
             }
             
-            .btn-primary-custom,
-            .btn-outline-custom {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-message {
+                font-size: 1.1rem;
+            }
+            
+            .btn-home, .btn-contact {
                 display: block;
+                width: 100%;
                 margin: 10px 0;
-                text-align: center;
             }
         }
-        
-        /* Animation */
-        @keyframes bounce {
-            0%, 20%, 60%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-20px);
-            }
-            80% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        .error-icon {
-            animation: bounce 2s infinite;
-        }
-</style>
+    </style>
 </head>
 <body>
-
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8">
-<div class="error-container">
-<div class="error-icon">
-<i class="fas fa-exclamation-triangle"></i>
-</div>
-<div class="error-number">404</div>
-<h1 class="h3 mb-3">Pagina Non Trovata</h1>
-<p class="lead text-muted mb-4">
-Oops! La pagina che stavi cercando non esiste più o è stata spostata.
-</p>
-
-<div class="countdown" id="countdown">
-Reindirizzamento automatico alla homepage in <span id="timer">5</span> secondi...
-</div>
-
-<div class="mb-4">
-<a href="/" class="btn-primary-custom">
-<i class="fas fa-home me-2"></i>Torna alla Homepage
-</a>
-<a href="/pages/contatti.html" class="btn-outline-custom">
-<i class="fas fa-envelope me-2"></i>Contattaci
-</a>
-</div>
-
-<div class="suggestions">
-<h5><i class="fas fa-lightbulb me-2"></i>Potresti essere interessato a:</h5>
-<div class="row">
-<div class="col-md-6">
-<ul>
-<li><a href="/pages/assistenza-it.html">Assistenza IT Professionale</a></li>
-<li><a href="/pages/sicurezza-informatica.html">Sicurezza Informatica</a></li>
-<li><a href="/pages/cloud-storage.html">Cloud Storage Aziendale</a></li>
-</ul>
-</div>
-<div class="col-md-6">
-<ul>
-<li><a href="/pages/perche-it-era.html">Perché Scegliere IT-ERA</a></li>
-<li><a href="/blog/">Blog e Risorse IT</a></li>
-<li><a href="tel:+390398882041">Assistenza Urgente: 039 888 2041</a></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div class="row mt-5">
-<div class="col-md-4 text-center mb-4">
-<div class="h5 text-primary">
-<i class="fas fa-phone fa-2x mb-3"></i>
-<br>Chiamaci
-</div>
-<p class="text-muted">
-<strong>039 888 2041</strong><br>
-Supporto 24/7
-</p>
-</div>
-<div class="col-md-4 text-center mb-4">
-<div class="h5 text-primary">
-<i class="fas fa-envelope fa-2x mb-3"></i>
-<br>Email
-</div>
-<p class="text-muted">
-<strong>info@it-era.it</strong><br>
-Risposta in 2 ore
-</p>
-</div>
-<div class="col-md-4 text-center mb-4">
-<div class="h5 text-primary">
-<i class="fas fa-map-marker-alt fa-2x mb-3"></i>
-<br>Ufficio
-</div>
-<p class="text-muted">
-<strong>Vimercate (MB)</strong><br>
-Viale Risorgimento 32
-</p>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-// Auto redirect countdown
-let timeLeft = 5;
-const timerElement = document.getElementById('timer');
-
-const countdown = setInterval(() => {
-    timeLeft--;
-    timerElement.textContent = timeLeft;
+    <div class="container">
+        <div class="error-container">
+            <a href="/" class="logo text-decoration-none">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+            
+            <div class="error-code">404</div>
+            <h1 class="error-title">Pagina Non Trovata</h1>
+            <p class="error-message">
+                Ops! La pagina che stai cercando sembra essere sparita nel cyberspazio. 
+                Non preoccuparti, il nostro team IT può aiutarti a ritrovare quello che cerchi.
+            </p>
+            
+            <div class="d-flex flex-wrap justify-content-center">
+                <a href="/" class="btn-home">
+                    <i class="fas fa-home me-2"></i>Torna alla Home
+                </a>
+                <a href="tel:+390398882041" class="btn-contact">
+                    <i class="fas fa-phone me-2"></i>Chiamaci: 039 888 2041
+                </a>
+            </div>
+            
+            <div class="suggestions">
+                <h5>Forse stavi cercando:</h5>
+                <a href="/pages/assistenza-it.html" class="suggestion-link">
+                    🔧 Assistenza IT
+                </a>
+                <a href="/pages/sicurezza-informatica.html" class="suggestion-link">
+                    🛡️ Sicurezza Informatica
+                </a>
+                <a href="/pages/cloud-storage.html" class="suggestion-link">
+                    ☁️ Cloud Storage
+                </a>
+                <a href="/pages/contatti.html" class="suggestion-link">
+                    📞 Contatti
+                </a>
+                <a href="/blog/" class="suggestion-link">
+                    📝 Blog
+                </a>
+                <a href="/pages/perche-it-era.html" class="suggestion-link">
+                    ❓ Perché IT-ERA
+                </a>
+            </div>
+            
+            <div class="emergency-bar">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                <strong>Emergenza IT?</strong> 
+                <a href="tel:+390398882041">Chiamaci subito al 039 888 2041</a> 
+                - Risposta garantita in 15 minuti!
+            </div>
+        </div>
+    </div>
     
-    if (timeLeft <= 0) {
-        clearInterval(countdown);
-        window.location.href = '/';
-    }
-}, 1000);
-
-// Track 404 errors
-if (typeof gtag !== 'undefined') {
-    gtag('event', 'page_view', {
-        page_title: '404 Error',
-        page_location: window.location.href,
-        custom_parameter: 'error_404'
-    });
-}
-</script>
-
+    <!-- Error Tracking -->
+    <script>
+        // Log 404 error for analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_not_found', {
+                'event_category': 'error',
+                'event_label': window.location.pathname + window.location.search,
+                'page_location': window.location.href
+            });
+        }
+        
+        // Console message for developers
+        console.log('🚨 IT-ERA 404 Error');
+        console.log('Missing page:', window.location.href);
+        console.log('Referrer:', document.referrer);
+        console.log('Need help? Call us: 039 888 2041');
+    </script>
 </body>
 </html>

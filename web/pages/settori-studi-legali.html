@@ -2,323 +2,100 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supporto IT per Studi Legali in Lombardia | IT-ERA</title>
-    <meta name="description" content="Assistenza IT specializzata per studi legali: Office 365 SharePoint, backup sicuri, email protette, supporto on-site. Soluzioni pratiche per avvocati lombardi.">
+    <meta name="viewport" content="width=device-wrapper, initial-scale=1.0">
+    <title>Soluzioni IT per Studi Legali | IT-ERA</title>
+    <meta name="description" content="Soluzioni IT per studi legali in Lombardia. Sicurezza massima, gestione documentale, backup e supporto software giuridico specializzato.">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --legal-primary: #1a365d;
-            --legal-secondary: #2563eb;
-            --legal-accent: #3b82f6;
-            --legal-success: #059669;
-            --legal-warning: #d97706;
-            --legal-danger: #dc2626;
-            --legal-light: #f8fafc;
-            --legal-dark: #1e293b;
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --legal: #6f42c1;
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding-top: 80px;
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
         }
         
-        .hero-legal {
-            background: linear-gradient(135deg, var(--legal-primary) 0%, var(--legal-secondary) 100%);
+        .hero-section {
+            background: linear-gradient(135deg, var(--legal) 0%, var(--primary) 100%);
             color: white;
             padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-legal::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" fill="white" opacity="0.1"><polygon points="0,20 100,0 100,20"/></svg>');
-            background-size: 100% 100%;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
         }
         
         .service-card {
-            border: none;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             height: 100%;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
-        }
-        
-        .price-badge {
-            background: linear-gradient(135deg, #059669, #10b981);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        
-        .real-case {
-            background: #f1f5f9;
-            border-left: 4px solid #1a365d;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
         }
     </style>
 </head>
-<body style="padding-top: 76px;">
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/">
-            <span style="color: #0056cc;">IT</span>-ERA
-        </a>
-        <!-- Emergency CTA for Mobile -->
-        <div class="d-lg-none ms-auto me-2">
-            <a class="btn btn-danger btn-sm" href="tel:+390398882041">
-                🚨 Emergenza
+<body>
+    <!-- Navigation placeholder -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" style="min-height: 76px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
             </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <!-- Emergency Support - Primary CTA -->
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link text-danger fw-bold" href="tel:+390398882041">
-                <!-- Services Dropdown with Icons -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Servizi
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
-                        <li><a class="dropdown-item" href="/pages/assistenza-it.html">
-                            🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/sicurezza-informatica.html">
-                            🛡️ Sicurezza Informatica
-                        </a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
-                        <li><a class="dropdown-item" href="/pages/cloud-storage.html">
-                            ☁️ Cloud Storage
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/backup-automatico.html">
-                            💾 Backup Automatico
-                        </a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
-                        <li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
-                            ⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
-                        </a></li>
-                    </ul>
-                </li>
-                <!-- Industry Sectors Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Settori
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
-                            🏢 PMI e Startup
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
-                            ⚕️ Studi Medici
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/settori-commercialisti.html">
-                            📊 Commercialisti
-                        </a></li>
-                        <li><a class="dropdown-item" href="/pages/settori-studi-legali.html">
-                            ⚖️ Studi Legali
-                        </a></li>
-                        <li><a class="dropdown-item" href="#industria">
-                            🏭 Industria 4.0
-                        </a></li>
-                        <li><a class="dropdown-item" href="#retail">
-                            🛍️ Retail e GDO
-                        </a></li>
-                    </ul>
-                </li>
-                </li>
-                <!-- Contact CTA -->
-                <li class="nav-item">
-                    <a class="nav-link" href="tel:+390398882041">
-                        📞 039 888 2041
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Hero Section -->
-<section class="hero-legal">
-    <div class="container">
-        <div class="hero-content">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-4">Supporto IT Specializzato per Studi Legali</h1>
-                    <p class="lead mb-4">Assistenza IT pratica per avvocati: Office 365 SharePoint per documenti, email sicure, backup affidabili e supporto on-site. Soluzioni concrete da oltre 15 anni in Lombardia.</p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#servizi" class="btn btn-warning btn-lg">
-                            <i class="fas fa-gavel me-2"></i>Scopri le Soluzioni Reali
-                        </a>
-                        <a href="tel:+390398882041" class="btn btn-outline-light btn-lg">
-                            📞 039 888 2041
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="bg-white bg-opacity-10 p-4 rounded">
-                        <h5 class="mb-3">Studi legali che ci scelgono:</h5>
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <h3 class="fw-bold">35+</h3>
-                                <small>Studi</small>
-                            </div>
-                            <div class="col-4">
-                                <h3 class="fw-bold">15</h3>
-                                <small>Anni esperienza</small>
-                            </div>
-                            <div class="col-4">
-                                <h3 class="fw-bold">€250</h3>
-                                <small>Da /mese</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Soluzioni IT per Studi Legali</h1>
+            <p class="lead">Sicurezza e riservatezza per la professione legale</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Services Section -->
-<section id="servizi" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Servizi che Funzionano per Studi Legali</h2>
-            <p class="lead text-muted">Soluzioni pratiche testate con avvocati e praticanti lombardi</p>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="card service-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h4 class="card-title">📁 SharePoint Documenti</h4>
-                            <span class="price-badge">€80/mese</span>
-                        </div>
-                        <p class="card-text">Organizzazione completa di fascicoli e documenti legali con accesso sicuro e condivisione controllata.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Struttura fascicoli automatica</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Versioning documenti</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Accesso mobile sicuro</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Content Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Tecnologia per l'Avvocatura</h2>
             </div>
             
-            <div class="col-lg-4 col-md-6">
-                <div class="card service-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h4 class="card-title">📧 Email Sicure</h4>
-                            <span class="price-badge">€60/mese</span>
-                        </div>
-                        <p class="card-text">Sistema email professionale con crittografia, archiviazione legale e protezione da spam avanzata.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Crittografia end-to-end</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Archiviazione a lungo termine</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Conformità normativa</li>
-                        </ul>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-balance-scale fa-3x" style="color: #6f42c1;" mb-3></i>
+                        <h4>Riservatezza Assoluta</h4>
+                        <p>Crittografia avanzata e protocolli di sicurezza per il segreto professionale.</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="card service-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <h4 class="card-title">🔒 Backup Sicuro</h4>
-                            <span class="price-badge">€90/mese</span>
-                        </div>
-                        <p class="card-text">Backup automatico giornaliero con conservazione a norma e ripristino rapido in caso di emergenza.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Backup automatico 24/7</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Conservazione 10 anni</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Ripristino in 1 ora</li>
-                        </ul>
+                
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-gavel fa-3x" style="color: #6f42c1;" mb-3></i>
+                        <h4>Software Giuridici</h4>
+                        <p>Supporto per Sistemi Lex, Giuffrè e altri software legali specializzati.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-archive fa-3x" style="color: #6f42c1;" mb-3></i>
+                        <h4>Archiviazione Praticas</h4>
+                        <p>Gestione digitale sicura di fascicoli e documenti legali.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Real Case Study -->
-        <div class="real-case mt-5">
-            <h5><strong>Caso Reale:</strong> Studio Legale Associato Milano</h5>
-            <p><em>"Prima perdevo 2 ore al giorno solo per trovare documenti. Ora con SharePoint e il backup automatico, il mio studio è più efficiente e sicuro. Il supporto IT-ERA è sempre disponibile quando serve."</em></p>
-            <small class="text-muted">- Avv. Marco Rossi, Studio Legale Milano</small>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-light py-5 mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5 class="fw-bold mb-3">
-                    <span style="color: #0056cc;">IT</span>-ERA
-                </h5>
-                <p>Supporto tecnico professionale per aziende e professionisti in Lombardia.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h6 class="fw-bold">Servizi</h6>
-                <ul class="list-unstyled">
-                    <li><a href="/pages/assistenza-it.html" class="text-light-emphasis">Assistenza IT</a></li>
-                    <li><a href="/pages/sicurezza-informatica.html" class="text-light-emphasis">Sicurezza Informatica</a></li>
-                    <li><a href="/pages/cloud-storage.html" class="text-light-emphasis">Cloud Storage</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h6 class="fw-bold">Contatti</h6>
-                <p><i class="fas fa-phone me-2"></i>039 888 2041</p>
-                <p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
-                <p><i class="fas fa-map-marker-alt me-2"></i>Lombardia, Italia</p>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <p>&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
         </div>
-    </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
 </body>
 </html>

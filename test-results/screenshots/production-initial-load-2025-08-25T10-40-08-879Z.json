@@ -1,0 +1,13 @@
+{
+  "filename": "production-initial-load-2025-08-25T10-40-08-879Z.png",
+  "timestamp": "2025-08-25T10-40-08-879Z",
+  "url": "https://it-era.pages.dev/",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "context": "environment-test",
+  "environment": "production",
+  "step": "initial-load"
+}

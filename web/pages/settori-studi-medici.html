@@ -3,77 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studi Medici - IT-ERA | Soluzioni IT Sanitarie</title>
-    <meta name="description" content="Soluzioni IT specializzate per studi medici e strutture sanitarie. Gestione dati pazienti, sicurezza GDPR. Chiamaci al 039 888 2041.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/main.css">
+    <title>Soluzioni IT per Studi Medici | IT-ERA</title>
+    <meta name="description" content="Soluzioni IT specializzate per studi medici in Lombardia. GDPR compliance, sicurezza dati sanitari, backup e sistemi gestionali.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --medical: #dc3545;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--medical) 0%, var(--primary) 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <div id="navigation-placeholder"></div>
-    
-    <!-- Hero Section -->
-    <section class="hero-section bg-success text-white py-5 mt-5">
+    <!-- Navigation placeholder -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" style="min-height: 76px;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-4">⚕️ Studi Medici</h1>
-                    <p class="lead mb-4">Soluzioni IT specializzate per il settore sanitario</p>
-                    <div class="alert alert-warning">
-                        <h5>🚧 Pagina in Costruzione</h5>
-                        <p class="mb-0">Soluzioni specifiche per studi medici in preparazione. Per assistenza immediata contattaci al <a href="tel:+390398882041" class="text-dark fw-bold">039 888 2041</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-end">
-                    <div class="hero-cta">
-                        <a href="tel:+390398882041" class="btn btn-warning btn-lg">
-                            📞 039 888 2041
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <a class="navbar-brand fw-bold" href="/">
+                <span style="color: #0056cc;">IT</span>-ERA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Soluzioni IT per Studi Medici</h1>
+            <p class="lead">Tecnologia sicura e conforme per la sanità</p>
         </div>
     </section>
 
     <!-- Content Section -->
     <section class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2>Servizio in Preparazione</h2>
-                    <p>Stiamo sviluppando soluzioni IT dedicate agli studi medici con focus su sicurezza e privacy.</p>
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <div class="card border-success h-100">
-                                <div class="card-body">
-                                    <h5>🔐 GDPR Compliant</h5>
-                                    <p class="text-muted">Protezione dati pazienti</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card border-success h-100">
-                                <div class="card-body">
-                                    <h5>📋 Gestione Cartelle</h5>
-                                    <p class="text-muted">Sistema digitale sicuro</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="text-center mb-5">
+                <h2>Specializzati in Sanità Digitale</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-shield-virus fa-3x text-danger mb-3"></i>
+                        <h4>GDPR Sanitario</h4>
+                        <p>Conformità completa per la gestione di dati sanitari sensibili.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card border-warning">
-                        <div class="card-header bg-warning">
-                            <h5 class="mb-0">🚨 Assistenza Sanitaria</h5>
-                        </div>
-                        <div class="card-body">
-                            <p>Supporto per studi medici:</p>
-                            <a href="tel:+390398882041" class="btn btn-danger btn-lg w-100 mb-3">
-                                📞 039 888 2041
-                            </a>
-                            <p class="small text-muted">Viale Risorgimento 32, Vimercate MB</p>
-                        </div>
+                
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-database fa-3x text-danger mb-3"></i>
+                        <h4>Backup Sicuro</h4>
+                        <p>Backup crittografati dei dati dei pazienti con retention a norma.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-stethoscope fa-3x text-danger mb-3"></i>
+                        <h4>Software Gestionali</h4>
+                        <p>Integrazione e supporto per software di gestione dello studio.</p>
                     </div>
                 </div>
             </div>
@@ -81,23 +92,10 @@
     </section>
 
     <!-- Footer -->
-    <div id="footer-placeholder"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Load navigation
-        fetch('../components/navigation-optimized.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navigation-placeholder').innerHTML = data;
-            });
-
-        // Load footer
-        fetch('../components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-    </script>
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <p>&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 </body>
 </html>

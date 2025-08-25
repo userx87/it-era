@@ -15,7 +15,7 @@ const http = require('http');
 
 class DeploymentValidator {
     constructor() {
-        this.baseURL = 'https://it-era-admin-auth.admin-013.workers.dev';
+        this.baseURL = 'https://it-era-admin-auth-production.bulltech.workers.dev';
         this.adminURL = 'https://it-era.pages.dev';
         this.testResults = [];
         this.token = null;
@@ -144,7 +144,7 @@ class DeploymentValidator {
     async testValidLogin() {
         const credentials = {
             email: 'admin@it-era.it',
-            password: 'admin123!'
+            password: 'admin123'
         };
 
         const response = await this.makeRequest('/admin/api/auth/login', {

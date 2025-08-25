@@ -1,0 +1,14 @@
+{
+  "testDuration": 21325,
+  "summary": {
+    "totalErrors": 0,
+    "totalConsoleMessages": 0,
+    "totalNetworkRequests": 29,
+    "failedRequests": 0
+  },
+  "errors": [],
+  "consoleLogs": [],
+  "networkIssues": [],
+  "corsIssues": [],
+  "recommendations": []
+}

@@ -25,7 +25,7 @@ const TEST_USERS = {
     email: 'admin@it-era.it',
     name: 'IT-ERA Admin',
     role: 'admin',
-    password: 'admin123!',
+    password: 'admin123',
     avatar: '/assets/admin-avatar.png'
   }
 };
@@ -65,27 +65,39 @@ export default {
  */
 async function handleLogin(request, env) {
   try {
+    console.log('Login request received');
+    
     const body = await request.json();
     const { email, password } = body;
+    
+    console.log('Parsed body:', { email, hasPassword: !!password });
 
     // Validate input
     if (!email || !password) {
+      console.log('Missing email or password');
       return createErrorResponse('Email and password are required', 400);
     }
 
     // For development/testing - check against test user
     const testUser = TEST_USERS[email.toLowerCase()];
+    console.log('Test user found:', !!testUser);
+    
     if (!testUser) {
+      console.log('User not found:', email);
       return createErrorResponse('Invalid credentials', 401);
     }
 
     // Verify password (in production, this would hash and compare)
+    console.log('Password check:', password, testUser.password);
     if (password !== testUser.password) {
+      console.log('Password mismatch');
       return createErrorResponse('Invalid credentials', 401);
     }
 
     // Generate JWT token
+    console.log('Generating JWT token');
     const tokenPayload = {
+      sub: testUser.id, // Standard JWT 'sub' claim
       id: testUser.id,
       email: testUser.email,
       name: testUser.name,
@@ -94,12 +106,15 @@ async function handleLogin(request, env) {
       exp: Math.floor(Date.now() / 1000) + (24 * 60 * 60) // 24 hours
     };
 
+    console.log('Token payload:', tokenPayload);
+
     const token = await generateJWT(tokenPayload, env.JWT_SECRET || 'it-era-admin-secret-2024');
+    console.log('JWT token generated, length:', token.length);
 
     // Store session information via hooks
     await storeSessionInfo(testUser, env);
 
-    return new Response(JSON.stringify({
+    const response = {
       success: true,
       token: token,
       user: {
@@ -109,14 +124,19 @@ async function handleLogin(request, env) {
         role: testUser.role,
         avatar: testUser.avatar
       }
-    }), {
+    };
+    
+    console.log('Login successful, returning response');
+
+    return new Response(JSON.stringify(response), {
       status: 200,
       headers: corsHeaders
     });
 
   } catch (error) {
     console.error('Login error:', error);
-    return createErrorResponse('Login failed', 500);
+    console.error('Error stack:', error.stack);
+    return createErrorResponse('Login failed: ' + error.message, 500);
   }
 }
 
@@ -184,7 +204,7 @@ async function generateJWT(payload, secret) {
     encoder.encode(unsignedToken)
   );
 
-  const encodedSignature = base64urlEncode(new Uint8Array(signature));
+  const encodedSignature = base64urlEncode(Array.from(new Uint8Array(signature)));
   return `${unsignedToken}.${encodedSignature}`;
 }
 
@@ -267,9 +287,17 @@ async function storeSessionInfo(user, env) {
 /**
  * Utility functions
  */
-function base64urlEncode(str) {
-  const encoded = btoa(str);
-  return encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+function base64urlEncode(data) {
+  if (Array.isArray(data)) {
+    // Convert array of bytes to string
+    const str = String.fromCharCode.apply(null, data);
+    const encoded = btoa(str);
+    return encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+  } else {
+    // Handle string data
+    const encoded = btoa(data);
+    return encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+  }
 }
 
 function base64urlDecode(str) {

@@ -1,0 +1,622 @@
+<!-- IT-ERA Universal Contact Form Component -->
+<!-- Include this component in any page that needs a contact form -->
+
+<style>
+.it-contact-form {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.it-contact-form h3 {
+  color: #0056cc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.it-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.it-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.it-form-required {
+  color: #dc3545;
+}
+
+.it-form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #dee2e6;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.it-form-control:focus {
+  outline: none;
+  border-color: #0056cc;
+  box-shadow: 0 0 0 3px rgba(0, 86, 204, 0.1);
+}
+
+.it-form-control.error {
+  border-color: #dc3545;
+}
+
+.it-form-select {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.it-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.it-form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.it-form-checkbox input[type="checkbox"] {
+  margin: 0;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.it-form-checkbox label {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.it-form-checkbox a {
+  color: #0056cc;
+  text-decoration: none;
+}
+
+.it-form-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.it-submit-btn {
+  background: linear-gradient(135deg, #0056cc, #0041a3);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.it-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0041a3, #002d73);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 86, 204, 0.3);
+}
+
+.it-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.it-loading-spinner {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+.it-submit-btn.loading .it-loading-spinner {
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.it-form-messages {
+  margin-top: 1rem;
+}
+
+.it-alert {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.it-alert-success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.it-alert-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.it-form-info {
+  background: #e8f4f8;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #0056cc;
+}
+
+.it-form-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #0056cc;
+  font-size: 1rem;
+}
+
+.it-form-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.it-contact-info {
+  background: #0056cc;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.it-contact-info h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.it-contact-info p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.it-contact-info a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.it-contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .it-contact-form {
+    padding: 1.5rem;
+    margin: 1rem 0.5rem;
+  }
+  
+  .it-contact-form h3 {
+    font-size: 1.3rem;
+  }
+}
+</style>
+
+<div class="it-contact-form" id="it-contact-form">
+  <h3>🎯 Contattaci Ora</h3>
+  
+  <div class="it-form-info">
+    <h4>⚡ Risposta Garantita</h4>
+    <p><strong>Entro 2 ore:</strong> Ti ricontatteremo per confermare la richiesta<br>
+    <strong>Entro 24 ore:</strong> Riceverai un'analisi dettagliata e un preventivo personalizzato</p>
+  </div>
+  
+  <form id="it-contact-form-element" method="POST" action="/api/contact" novalidate>
+    <!-- Hidden field for source tracking -->
+    <input type="hidden" name="src" id="it-form-src" value="">
+    
+    <div class="it-form-group">
+      <label for="it-name">Nome Completo <span class="it-form-required">*</span></label>
+      <input 
+        type="text" 
+        id="it-name" 
+        name="name" 
+        class="it-form-control" 
+        required 
+        minlength="2"
+        maxlength="100"
+        placeholder="Il tuo nome e cognome"
+        autocomplete="name"
+      >
+    </div>
+    
+    <div class="it-form-group">
+      <label for="it-email">Email <span class="it-form-required">*</span></label>
+      <input 
+        type="email" 
+        id="it-email" 
+        name="email" 
+        class="it-form-control" 
+        required
+        maxlength="100"
+        placeholder="nome@esempio.it"
+        autocomplete="email"
+      >
+    </div>
+    
+    <div class="it-form-group">
+      <label for="it-phone">Telefono</label>
+      <input 
+        type="tel" 
+        id="it-phone" 
+        name="phone" 
+        class="it-form-control"
+        maxlength="20"
+        placeholder="es. 039 888 2041 o 340 123 4567"
+        autocomplete="tel"
+      >
+    </div>
+    
+    <div class="it-form-group">
+      <label for="it-city">Città</label>
+      <input 
+        type="text" 
+        id="it-city" 
+        name="city" 
+        class="it-form-control"
+        maxlength="50"
+        placeholder="La tua città"
+        autocomplete="address-level2"
+      >
+    </div>
+    
+    <div class="it-form-group">
+      <label for="it-service">Servizio di Interesse</label>
+      <select id="it-service" name="service" class="it-form-control it-form-select">
+        <option value="">-- Seleziona un servizio --</option>
+        <option value="Assistenza IT">🔧 Assistenza IT Generale</option>
+        <option value="Sicurezza Informatica">🛡️ Sicurezza Informatica</option>
+        <option value="Cloud Storage">☁️ Cloud Storage</option>
+        <option value="Riparazione PC">💻 Riparazione PC/Mac</option>
+        <option value="Rete Aziendale">🌐 Configurazione Rete Aziendale</option>
+        <option value="Backup Dati">💾 Backup e Recupero Dati</option>
+        <option value="Antivirus">🦠 Rimozione Virus/Malware</option>
+        <option value="Consulenza">👨‍💼 Consulenza IT</option>
+        <option value="Preventivo">💰 Richiesta Preventivo</option>
+        <option value="Altro">❓ Altro (specifica nel messaggio)</option>
+      </select>
+    </div>
+    
+    <div class="it-form-group">
+      <label for="it-message">Messaggio <span class="it-form-required">*</span></label>
+      <textarea 
+        id="it-message" 
+        name="message" 
+        class="it-form-control it-form-textarea" 
+        required
+        minlength="10"
+        maxlength="1000"
+        placeholder="Descrivi il tuo problema o la tua richiesta. Più dettagli fornisci, meglio possiamo aiutarti!"
+        rows="5"
+      ></textarea>
+    </div>
+    
+    <div class="it-form-checkbox">
+      <input type="checkbox" id="it-privacy" name="privacy_accepted" required>
+      <label for="it-privacy">
+        Accetto la <a href="/privacy-policy.html" target="_blank">Privacy Policy</a> e acconsento al trattamento dei miei dati personali per rispondere alla mia richiesta. <span class="it-form-required">*</span>
+      </label>
+    </div>
+    
+    <button type="submit" class="it-submit-btn" id="it-submit-btn">
+      <span class="it-loading-spinner"></span>
+      <span class="it-btn-text">🚀 Invia Richiesta</span>
+    </button>
+    
+    <div class="it-form-messages" id="it-form-messages"></div>
+  </form>
+  
+  <!-- Contact info box -->
+  <div class="it-contact-info">
+    <h4>📞 Contatti Diretti</h4>
+    <p><strong>Telefono:</strong> <a href="tel:0398882041">039 888 2041</a></p>
+    <p><strong>Email:</strong> <a href="mailto:info@it-era.it">info@it-era.it</a></p>
+    <p><strong>Indirizzo:</strong> Viale Risorgimento 32, Vimercate MB</p>
+    <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.9;">
+      Assistenza professionale dal 2020 • P.IVA: 10524040966
+    </p>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  // Set source page automatically
+  document.addEventListener('DOMContentLoaded', function() {
+    const srcField = document.getElementById('it-form-src');
+    if (srcField) {
+      srcField.value = window.location.pathname;
+    }
+  });
+  
+  // Form handling
+  const form = document.getElementById('it-contact-form-element');
+  const submitBtn = document.getElementById('it-submit-btn');
+  const btnText = submitBtn.querySelector('.it-btn-text');
+  const messagesContainer = document.getElementById('it-form-messages');
+  
+  // Real-time validation
+  const inputs = form.querySelectorAll('.it-form-control, input[type="checkbox"]');
+  inputs.forEach(input => {
+    input.addEventListener('blur', function() {
+      validateField(input);
+    });
+    
+    input.addEventListener('input', function() {
+      if (input.classList.contains('error')) {
+        validateField(input);
+      }
+    });
+  });
+  
+  function validateField(field) {
+    const value = field.value.trim();
+    let isValid = true;
+    let errorMessage = '';
+    
+    // Reset error state
+    field.classList.remove('error');
+    
+    switch (field.name) {
+      case 'name':
+        if (!value || value.length < 2) {
+          isValid = false;
+          errorMessage = 'Nome obbligatorio (min 2 caratteri)';
+        }
+        break;
+        
+      case 'email':
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!value || !emailRegex.test(value)) {
+          isValid = false;
+          errorMessage = 'Email valida obbligatoria';
+        }
+        break;
+        
+      case 'phone':
+        if (value && !/^[\d\s\+\-\(\)]+$/.test(value)) {
+          isValid = false;
+          errorMessage = 'Numero di telefono non valido';
+        }
+        break;
+        
+      case 'message':
+        if (!value || value.length < 10) {
+          isValid = false;
+          errorMessage = 'Messaggio obbligatorio (min 10 caratteri)';
+        }
+        break;
+        
+      case 'privacy_accepted':
+        if (!field.checked) {
+          isValid = false;
+          errorMessage = 'Devi accettare la privacy policy';
+        }
+        break;
+    }
+    
+    if (!isValid) {
+      field.classList.add('error');
+      showFieldError(field, errorMessage);
+    } else {
+      hideFieldError(field);
+    }
+    
+    return isValid;
+  }
+  
+  function showFieldError(field, message) {
+    // Remove existing error
+    hideFieldError(field);
+    
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'it-field-error';
+    errorDiv.style.cssText = 'color: #dc3545; font-size: 0.875rem; margin-top: 0.25rem;';
+    errorDiv.textContent = message;
+    
+    field.parentNode.appendChild(errorDiv);
+  }
+  
+  function hideFieldError(field) {
+    const existingError = field.parentNode.querySelector('.it-field-error');
+    if (existingError) {
+      existingError.remove();
+    }
+  }
+  
+  function showMessage(message, type = 'success') {
+    messagesContainer.innerHTML = `
+      <div class="it-alert it-alert-${type}">
+        ${message}
+      </div>
+    `;
+    
+    // Scroll to message
+    messagesContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  
+  function setLoading(loading) {
+    submitBtn.disabled = loading;
+    submitBtn.classList.toggle('loading', loading);
+    
+    if (loading) {
+      btnText.textContent = 'Invio in corso...';
+    } else {
+      btnText.textContent = '🚀 Invia Richiesta';
+    }
+  }
+  
+  // Analytics tracking
+  function trackEvent(eventName, data = {}) {
+    try {
+      // Google Analytics 4
+      if (typeof gtag !== 'undefined') {
+        gtag('event', eventName, {
+          event_category: 'Contact Form',
+          ...data
+        });
+      }
+      
+      // Facebook Pixel
+      if (typeof fbq !== 'undefined') {
+        fbq('track', eventName, data);
+      }
+      
+      // Custom tracking
+      if (typeof ITEraTracking !== 'undefined') {
+        ITEraTracking.track(eventName, data);
+      }
+    } catch (error) {
+      console.log('Analytics tracking error:', error);
+    }
+  }
+  
+  // Form submission
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Clear previous messages
+    messagesContainer.innerHTML = '';
+    
+    // Validate all fields
+    let isFormValid = true;
+    inputs.forEach(input => {
+      if (!validateField(input)) {
+        isFormValid = false;
+      }
+    });
+    
+    if (!isFormValid) {
+      showMessage('Per favore correggi gli errori evidenziati.', 'error');
+      return;
+    }
+    
+    // Set loading state
+    setLoading(true);
+    
+    try {
+      // Track form submission attempt
+      trackEvent('form_submit_attempt', {
+        source_page: window.location.pathname,
+        service: form.service.value
+      });
+      
+      // Submit form
+      const formData = new FormData(form);
+      
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: formData
+      });
+      
+      const result = await response.json();
+      
+      if (result.ok) {
+        // Success
+        trackEvent('form_submit_success', {
+          ticket_id: result.ticketId,
+          source_page: window.location.pathname,
+          service: form.service.value
+        });
+        
+        showMessage(`
+          <strong>✅ Richiesta inviata con successo!</strong><br>
+          Il tuo ticket ID è: <strong>${result.ticketId}</strong><br>
+          Ti ricontatteremo entro 2 ore. Controlla anche la tua email!
+        `, 'success');
+        
+        // Reset form
+        form.reset();
+        document.getElementById('it-form-src').value = window.location.pathname;
+        
+        // Hide form after successful submission (optional)
+        setTimeout(() => {
+          form.style.display = 'none';
+        }, 5000);
+        
+      } else {
+        // Error
+        trackEvent('form_submit_error', {
+          error: result.error || 'Unknown error',
+          source_page: window.location.pathname
+        });
+        
+        if (result.errors && result.errors.length > 0) {
+          showMessage(`
+            <strong>Errori di validazione:</strong><br>
+            ${result.errors.map(error => `• ${error}`).join('<br>')}
+          `, 'error');
+        } else {
+          showMessage(`
+            <strong>Errore:</strong> ${result.error || 'Errore sconosciuto'}<br>
+            Per favore riprova tra qualche minuto.
+          `, 'error');
+        }
+      }
+      
+    } catch (error) {
+      console.error('Form submission error:', error);
+      
+      trackEvent('form_submit_error', {
+        error: 'Network error',
+        source_page: window.location.pathname
+      });
+      
+      showMessage(`
+        <strong>Errore di connessione.</strong><br>
+        Per favore controlla la tua connessione e riprova.<br>
+        In alternativa chiamaci al <a href="tel:0398882041">039 888 2041</a>
+      `, 'error');
+    } finally {
+      setLoading(false);
+    }
+  });
+  
+  // Track form view
+  trackEvent('form_view', {
+    source_page: window.location.pathname
+  });
+  
+})();
+</script>

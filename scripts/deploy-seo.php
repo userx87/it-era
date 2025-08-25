@@ -17,7 +17,7 @@ declare(strict_types=1);
 
 class SEODeploymentManager
 {
-    private string $siteUrl = 'https://it-era.pages.dev';
+    private string $siteUrl = 'https://it-era.it';
     private string $environment;
     private bool $dryRun = false;
     private bool $force = false;
@@ -394,7 +394,7 @@ class SEODeploymentManager
         // Simple HTTP request to trigger crawler attention
         // In production, you would use Google Indexing API with proper authentication
         
-        $userAgent = 'IT-ERA-SEO-Bot/1.0 (+https://it-era.pages.dev)';
+        $userAgent = 'IT-ERA-SEO-Bot/1.0 (+https://it-era.it)';
         
         $context = stream_context_create([
             'http' => [
@@ -527,7 +527,7 @@ class SEODeploymentManager
         $defaultOptions = [
             'method' => 'GET',
             'timeout' => 30,
-            'user_agent' => 'IT-ERA-SEO-Bot/1.0 (+https://it-era.pages.dev)'
+            'user_agent' => 'IT-ERA-SEO-Bot/1.0 (+https://it-era.it)'
         ];
         
         $options = array_merge($defaultOptions, $options);

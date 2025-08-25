@@ -136,8 +136,8 @@ await page.goto('localhost:3000'); // ❌ Invalid URL
 **After:**
 ```javascript
 const urls = {
-    production: 'https://it-era.pages.dev',
-    staging: 'https://main.it-era.pages.dev',
+    production: 'https://it-era.it',
+    staging: 'https://main.it-era.it',
     local: 'http://localhost:8080'
 };
 await debugger.navigateToSite(page, 'production'); // ✅ Proper URL handling

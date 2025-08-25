@@ -344,7 +344,7 @@ Update timeout values in `/tests/package.json`:
 ```bash
 # Set test environment
 export NODE_ENV=test
-export TEST_BASE_URL=https://it-era.pages.dev
+export TEST_BASE_URL=https://it-era.it
 export TEST_TIMEOUT=300000
 ```
 

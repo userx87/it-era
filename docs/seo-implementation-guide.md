@@ -30,7 +30,7 @@
 
 ### Architettura SEO del Sito
 ```
-Homepage (it-era.pages.dev)
+Homepage (it-era.it)
 ├── /pages/ (6,019 pagine localizzate)
 │   ├── assistenza-it-{città}.html (2,006 pagine)
 │   ├── cloud-storage-{città}.html (2,006 pagine)
@@ -47,7 +47,7 @@ Homepage (it-era.pages.dev)
 ### 1. Canonical URLs
 **Stato Attuale**: ✅ Implementate su tutte le 6,019 pagine
 ```html
-<link rel="canonical" href="https://it-era.pages.dev/pages/{service}-{city}.html">
+<link rel="canonical" href="https://it-era.it/pages/{service}-{city}.html">
 ```
 
 ### 2. Meta Tags Struttura
@@ -69,7 +69,7 @@ Homepage (it-era.pages.dev)
 <meta property="og:description" content="{Meta Description}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{Canonical URL}">
-<meta property="og:image" content="https://it-era.pages.dev/images/{service}-{city}-og.jpg">
+<meta property="og:image" content="https://it-era.it/images/{service}-{city}-og.jpg">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="IT-ERA">
 ```
@@ -90,7 +90,7 @@ Homepage (it-era.pages.dev)
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://it-era.pages.dev/pages/{service}-{city}.html#LocalBusiness",
+  "@id": "https://it-era.it/pages/{service}-{city}.html#LocalBusiness",
   "name": "IT-ERA - {Service} {City}",
   "address": {
     "@type": "PostalAddress",
@@ -134,7 +134,7 @@ Allow: /servizi/
 Allow: /blog/
 
 # Sitemap
-Sitemap: https://it-era.pages.dev/sitemap.xml
+Sitemap: https://it-era.it/sitemap.xml
 
 # Block admin areas  
 Disallow: /admin/
@@ -452,7 +452,7 @@ python scripts/validate_seo.py
 ### 4. Monitoring Tools Integration
 
 #### A. Google Search Console
-- **Property**: https://it-era.pages.dev/
+- **Property**: https://it-era.it/
 - **Sitemaps submitted**: /sitemap.xml
 - **Coverage monitoring**: Daily
 - **Performance tracking**: Weekly reports

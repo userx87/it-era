@@ -4,7 +4,7 @@
   "errorResponses": 0,
   "chatbotRequestDetails": [
     {
-      "url": "https://it-era.pages.dev/",
+      "url": "https://it-era.it/",
       "method": "GET",
       "type": "document",
       "headers": {
@@ -23,7 +23,7 @@
       "type": "stylesheet",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -37,7 +37,7 @@
       "type": "script",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -50,7 +50,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -65,7 +65,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -80,7 +80,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -95,7 +95,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -106,12 +106,12 @@
       }
     },
     {
-      "url": "https://it-era.pages.dev/favicon.ico",
+      "url": "https://it-era.it/favicon.ico",
       "method": "GET",
       "type": "other",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -123,7 +123,7 @@
   "errorDetails": [],
   "allRequests": [
     {
-      "url": "https://it-era.pages.dev/",
+      "url": "https://it-era.it/",
       "method": "GET",
       "type": "document",
       "headers": {
@@ -142,7 +142,7 @@
       "type": "stylesheet",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -156,7 +156,7 @@
       "type": "image",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -170,7 +170,7 @@
       "type": "image",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -184,7 +184,7 @@
       "type": "image",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -198,7 +198,7 @@
       "type": "image",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -212,7 +212,7 @@
       "type": "image",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -226,7 +226,7 @@
       "type": "stylesheet",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -240,7 +240,7 @@
       "type": "stylesheet",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -254,7 +254,7 @@
       "type": "script",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
@@ -267,7 +267,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -282,7 +282,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -297,7 +297,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -312,7 +312,7 @@
       "method": "GET",
       "type": "font",
       "headers": {
-        "origin": "https://it-era.pages.dev",
+        "origin": "https://it-era.it",
         "sec-ch-ua-platform": "\"macOS\"",
         "referer": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
         "accept-language": "it-IT,it;q=0.9",
@@ -323,12 +323,12 @@
       }
     },
     {
-      "url": "https://it-era.pages.dev/favicon.ico",
+      "url": "https://it-era.it/favicon.ico",
       "method": "GET",
       "type": "other",
       "headers": {
         "sec-ch-ua-platform": "\"macOS\"",
-        "referer": "https://it-era.pages.dev/",
+        "referer": "https://it-era.it/",
         "accept-language": "it-IT,it;q=0.9",
         "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",

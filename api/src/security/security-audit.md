@@ -92,7 +92,7 @@
 
 ### CORS Configuration
 - [x] **Production CORS Settings**
-  - Allowed origins: www.it-era.it, it-era.it, it-era.pages.dev, admin.it-era.it
+  - Allowed origins: www.it-era.it, it-era.it, it-era.it, admin.it-era.it
   - Development origins controlled by environment
   - Credentials allowed with origin validation
   - Exposed headers for rate limiting info

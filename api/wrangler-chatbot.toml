@@ -56,15 +56,30 @@ SWARM_ENABLED = "true"
 AB_TEST_ENABLED = "true"
 SWARM_PERCENTAGE = "50"
 
-# Production secrets (da configurare con wrangler secret put)
-# OPENAI_API_KEY (futuro per AI avanzata)
-# ANTHROPIC_API_KEY (alternativa)
-
-# Production environment (add Teams webhook URL here)
+# Production environment
 [env.production]
 name = "it-era-chatbot-prod"
+
+# KV Namespaces for production
+[[env.production.kv_namespaces]]
+binding = "CHAT_SESSIONS"
+id = "988273308c524f4191ab95ed641dc05b"
+
+[[env.production.kv_namespaces]]
+binding = "SHARED_CONFIG"
+id = "e8bd03a1105a46208000adfc1cc84487"
+
+# Production routes - using wildcard routing to main domain
+[[env.production.routes]]
+pattern = "it-era.it/api*"
+zone_name = "it-era.it"
+
 [env.production.vars]
 ENVIRONMENT = "production"
 MAX_SESSION_DURATION = "1800"
 RATE_LIMIT_MESSAGES = "100"
+SWARM_ENABLED = "true"
+AB_TEST_ENABLED = "true"
+SWARM_PERCENTAGE = "10"
+CUSTOM_DOMAIN = "https://api.it-era.it"
 TEAMS_WEBHOOK_URL = "https://bulltechit.webhook.office.com/webhookb2/621e560e-86d9-478c-acfc-496624a88b79@f6ba30ad-37c0-41bf-a994-e434c59b4b2a/IncomingWebhook/fb2b1700f71c4806bdcbf0fc873952d0/c0aa99b7-8edb-41b4-b139-0ec4dd7864d5/V2l2_rh4MbAzeQQ4SpDifcMFLsktri3ocfMcQGZ6OHUmI1"

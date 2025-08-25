@@ -68,7 +68,7 @@
 - **GitHub Repository:** https://github.com/andreapanzeri/it-era.git (access needed)
 
 ### Live Website Status
-- **URL:** https://it-era.pages.dev
+- **URL:** https://it-era.it
 - **Status:** ✅ Accessible (HTTP 200)
 - **Content:** ⚠️ Cached version (32 bytes - placeholder)
 - **Last Update:** Previous deployment
@@ -118,11 +118,11 @@ git push origin production
 ### Step 3: Verification
 ```bash
 # Check deployment status
-curl -I https://it-era.pages.dev
+curl -I https://it-era.it
 # Test chatbot functionality
-curl -s https://it-era.pages.dev | grep chatbot
+curl -s https://it-era.it | grep chatbot
 # Verify admin panel
-curl -I https://it-era.pages.dev/admin/
+curl -I https://it-era.it/admin/
 ```
 
 ---

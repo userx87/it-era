@@ -1,7 +1,7 @@
 # IT-ERA Admin Panel - Comprehensive Test Report
 
 **Test Date:** August 25, 2025  
-**Test URL:** https://it-era.pages.dev/admin/  
+**Test URL:** https://it-era.it/admin/  
 **Test Environment:** Production  
 **Test Credentials:** admin@it-era.it / admin123!  
 
@@ -49,7 +49,7 @@ sessionStorage.setItem('adminToken', response.token);
 
 ### ✅ Working Navigation
 - **Dashboard:** ✅ Functional (`/admin/dashboard`)
-  - URL: `https://it-era.pages.dev/admin/dashboard`
+  - URL: `https://it-era.it/admin/dashboard`
   - Selector: `a[href*="dashboard"]`
   - Page Title: "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia"
 

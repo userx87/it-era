@@ -7,7 +7,7 @@
 class ITERAChatWidget {
   constructor(options = {}) {
     this.config = {
-      apiEndpoint: options.apiEndpoint || 'https://it-era-email.bulltech.workers.dev/api/chat',
+      apiEndpoint: options.apiEndpoint || 'https://it-era.it/api/chat',
       position: options.position || 'bottom-right',
       primaryColor: options.primaryColor || '#667eea',
       secondaryColor: options.secondaryColor || '#764ba2',
@@ -1175,7 +1175,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Configurazione di default per IT-ERA
   if (typeof window.iteraChatConfig === 'undefined') {
     window.iteraChatConfig = {
-      apiEndpoint: 'https://it-era-chatbot.bulltech.workers.dev/api/chat',
+      apiEndpoint: 'https://it-era.it/api/chat',
       position: 'bottom-right',
       primaryColor: '#667eea',
       secondaryColor: '#764ba2',

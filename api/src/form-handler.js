@@ -6,9 +6,9 @@
 class ITERAFormHandler {
   constructor() {
     // Endpoint Workers.dev con integrazione Resend attiva
-    this.apiEndpoint = 'https://it-era-email.bulltech.workers.dev/api/contact';
-    // Sistema aggiornato con Resend API - Fallback automatico per dominio non verificato
-    // Quando configuri DNS su api.it-era.it, punta a: it-era-email.bulltech.workers.dev
+    this.apiEndpoint = 'https://it-era.it/api/contact';
+    // Now using custom domain it-era.it/api with Cloudflare Workers routing
+    // Full API migration completed to it-era.it domain
     this.isSubmitting = false;
     this.init();
   }

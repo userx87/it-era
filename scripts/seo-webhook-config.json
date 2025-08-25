@@ -1,6 +1,6 @@
 {
   "webhook_secret": "it-era-seo-secret-2024-change-in-production",
-  "site_url": "https://it-era.pages.dev",
+  "site_url": "https://it-era.it",
   "notification_channels": {
     "email": {
       "enabled": true,

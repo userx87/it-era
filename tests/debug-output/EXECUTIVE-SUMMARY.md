@@ -4,7 +4,7 @@
 
 **Issue**: Chatbot is **NOT deployed to production** despite being fully integrated locally.
 
-**Impact**: Production site (https://it-era.pages.dev/) is missing the chatbot functionality completely.
+**Impact**: Production site (https://it-era.it/) is missing the chatbot functionality completely.
 
 ---
 
@@ -53,7 +53,7 @@ git push origin production
 ```
 
 ### **Step 3: Verify Deployment (2-3 minutes later)**
-- Visit https://it-era.pages.dev/
+- Visit https://it-era.it/
 - Look for chatbot button in bottom-right corner
 - Test chatbot functionality
 

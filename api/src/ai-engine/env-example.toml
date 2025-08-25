@@ -11,7 +11,7 @@ main = "src/chatbot/api/chatbot-worker.js"
 OPENROUTER_API_KEY = "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"
 
 # Email System Integration
-EMAIL_API_ENDPOINT = "https://it-era-email.bulltech.workers.dev/api/contact"
+EMAIL_API_ENDPOINT = "https://it-era.it/api/contact"
 
 # Teams Webhook for Escalations
 TEAMS_WEBHOOK_URL = "https://bulltechit.webhook.office.com/webhookb2/621e560e-86d9-478c-acfc-496624a88b79@f6ba30ad-37c0-41bf-a994-e434c59b4b2a/IncomingWebhook/fb2b1700f71c4806bdcbf0fc873952d0/c0aa99b7-8edb-41b4-b139-0ec4dd7864d5/V2l2_rh4MbAzeQQ4SpDifcMFLsktri3ocfMcQGZ6OHUmI1"

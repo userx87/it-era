@@ -4,7 +4,7 @@
 
 The IT-ERA Admin API provides comprehensive endpoints for managing the admin panel, including authentication, content management, user administration, and analytics.
 
-**Base URL:** `https://it-era.pages.dev/admin/api`
+**Base URL:** `https://it-era.it/admin/api`
 
 ## Authentication
 
@@ -19,7 +19,7 @@ Authorization: Bearer <JWT_TOKEN>
 Use the login endpoint to obtain a JWT token:
 
 ```bash
-curl -X POST https://it-era.pages.dev/admin/api/auth/login \
+curl -X POST https://it-era.it/admin/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@it-era.it","password":"admin123"}'
 ```
@@ -535,7 +535,7 @@ X-RateLimit-Reset: 1635789012
 
 ### CORS
 CORS is configured to allow requests from:
-- `https://it-era.pages.dev`
+- `https://it-era.it`
 - `https://www.it-era.it`
 - `https://it-era.it`
 - Development domains (localhost)
@@ -571,20 +571,20 @@ Editor User:
 
 **Login:**
 ```bash
-curl -X POST https://it-era.pages.dev/admin/api/auth/login \
+curl -X POST https://it-era.it/admin/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@it-era.it","password":"admin123"}'
 ```
 
 **Get Dashboard (with token):**
 ```bash
-curl -X GET https://it-era.pages.dev/admin/api/dashboard \
+curl -X GET https://it-era.it/admin/api/dashboard \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
 **Create Post:**
 ```bash
-curl -X POST https://it-era.pages.dev/admin/api/posts \
+curl -X POST https://it-era.it/admin/api/posts \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{

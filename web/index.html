@@ -1133,8 +1133,8 @@
 (function() {
     'use strict';
     
-    // ⚠️ IMPORTANTE: Aggiorna questo endpoint con il tuo worker deployato!
-    const API_ENDPOINT = 'https://it-era-chatbot-prod.bulltech.workers.dev/api/chat';
+    // 🚀 PRODUCTION ENDPOINT - Custom Domain
+    const API_ENDPOINT = 'https://it-era.it/api/chat';
     
     // Configurazione 
     const CONFIG = {
@@ -1147,23 +1147,39 @@
     let chatSession = null;
     let isOpen = false;
     
-    // SIMPLE SECURE MESSAGE FILTER: Same logic as working standalone version
+    // BULLETPROOF SYSTEM PROMPT BLOCKER - NUCLEAR SECURITY LEVEL
     function sanitizeMessage(message) {
+        // 🛡️ NUCLEAR SECURITY: HARDCODED SAFE GREETING - NEVER CHANGED
+        const SAFE_GREETING = "[IT-ERA] Ciao! Sono l'assistente virtuale di IT-ERA. Come posso aiutarti oggi?";
+        
         if (!message || typeof message !== 'string') {
-            return "[IT-ERA] Ciao, come posso aiutarti?";
+            return SAFE_GREETING;
         }
         
-        // ALWAYS allow IT-ERA branded messages (including our greeting)
-        if (message.startsWith('[IT-ERA]')) {
+        // ONLY allow pre-approved IT-ERA messages that we control
+        const APPROVED_MESSAGES = [
+            "[IT-ERA] Ciao! Sono l'assistente virtuale di IT-ERA. Come posso aiutarti oggi?",
+            "[IT-ERA] Grazie per il messaggio. Per assistenza immediata chiama 039 888 2041.",
+            "[IT-ERA] Ti ricontatteremo entro 24 ore. Per urgenze: 039 888 2041",
+            "[IT-ERA] Problema tecnico. Contattaci al 039 888 2041 per assistenza diretta.",
+            "[IT-ERA] Errore di connessione. Chiama 039 888 2041 o scrivi a info@it-era.it"
+        ];
+        
+        // If it's an exact match to approved messages, allow it
+        if (APPROVED_MESSAGES.includes(message)) {
             return message;
         }
         
-        // Check for system prompt indicators that should NEVER be shown to users
-        const systemPromptIndicators = [
+        // NUCLEAR OPTION: Block EVERYTHING that contains ANY instruction-like patterns
+        const BLOCKED_PATTERNS = [
+            'RISPONDI COSÌ',
+            'Qualifica il bisogno',
+            'Presenta la soluzione',
+            'INIZIA LA CONVERSAZIONE',
             'INIZIO:',
             'RISPOSTA TIPO',
-            'SYSTEM_PROMPT', 
-            'Sei l\'assistente virtuale',
+            'SYSTEM_PROMPT',
+            'Sei l\'assistente',
             'REGOLE ASSOLUTE',
             'IDENTITÀ:',
             'generateSystemPrompt',
@@ -1177,20 +1193,43 @@
             'Buongiorno, sono l\'assistente di IT-ERA',
             'Capisco perfettamente il suo problema',
             'RICHIEDI SEMPRE',
-            'Sei pronto',
-            'primo filtro'
+            'primo filtro',
+            '{{history}}',
+            '{{question}}',
+            'professionale urgenza',
+            '1. Qualifica',
+            '2. Presenta',
+            '3. Richiedi'
         ];
         
-        // If message contains any system prompt indicators, replace with safe greeting
-        for (const indicator of systemPromptIndicators) {
-            if (message.includes(indicator)) {
-                console.error('SECURITY ALERT: System prompt exposed in response, using safe fallback');
-                return "[IT-ERA] Ciao, come posso aiutarti?";
+        // Convert to lowercase for case-insensitive matching
+        const lowerMessage = message.toLowerCase();
+        
+        // If ANY blocked pattern is found, use safe greeting
+        for (const pattern of BLOCKED_PATTERNS) {
+            if (lowerMessage.includes(pattern.toLowerCase())) {
+                console.error('🚨 CRITICAL SECURITY: Blocked system prompt pattern:', pattern);
+                return SAFE_GREETING;
             }
         }
         
-        // Message is safe, return it
-        return message;
+        // Additional safety: If message is too long or has instruction-like structure, block it
+        if (message.length > 200 || 
+            message.includes(':') && message.includes('1.') ||
+            message.includes('RISPOND') ||
+            message.includes('QUALIFIC')) {
+            console.error('🚨 CRITICAL SECURITY: Blocked suspicious message structure');
+            return SAFE_GREETING;
+        }
+        
+        // Final safety check: Only allow simple, conversational messages
+        if (message.startsWith('[IT-ERA]') && message.length < 150) {
+            return message;
+        }
+        
+        // Default: Use safe greeting for anything suspicious
+        console.warn('🔒 SECURITY: Using safe fallback for message:', message.substring(0, 50));
+        return SAFE_GREETING;
     }
     
     // Initialize chatbot when DOM is ready
@@ -1293,7 +1332,7 @@
     }
     
     async function startConversation() {
-        // NO TYPING INDICATOR for initialization - greeting is already shown
+        // 🔒 NUCLEAR SECURITY: NEVER show typing or any AI responses on startup
         
         try {
             const response = await fetch(API_ENDPOINT, {
@@ -1314,70 +1353,107 @@
                 console.warn('⚠️ Failed to establish chat session, using local-only mode');
             }
             
-            // CRITICAL: NEVER display any AI response during initialization
-            // The hardcoded greeting is already displayed and sufficient
+            // 🚨 CRITICAL SECURITY RULE: 
+            // NEVER EVER display ANY response from the API during initialization
+            // The hardcoded greeting is already shown and is the ONLY message allowed on startup
+            // Any AI response here would be a system prompt leak - BLOCKED PERMANENTLY
+            
+            // IGNORE any data.response, data.message, or any other AI content
+            // The user sees only our safe hardcoded greeting
             
         } catch (error) {
-            // Silent failure - hardcoded greeting is already shown
-            console.error('🚨 Chatbot initialization error:', error);
-            // Don't show any error messages - just work in local mode
+            // Silent failure - hardcoded greeting is already shown and sufficient
+            console.error('🚨 Chatbot initialization error (expected and handled):', error);
+            // NEVER show error messages to user - just work in local mode
         }
     }
     
-    // NUCLEAR RESPONSE VALIDATOR: Extreme security for AI responses
+    // NUCLEAR RESPONSE VALIDATOR: MAXIMUM SECURITY LOCKDOWN
     function validateResponse(apiResponse) {
         const SAFE_FALLBACK = '[IT-ERA] Grazie per il messaggio. Per assistenza immediata chiama 039 888 2041.';
         const SAFE_OPTIONS = ['📞 Chiama Ora', '📧 Email Info', '💰 Richiedi Preventivo'];
         
-        // Default safe response structure
+        // Default safe response structure - ALWAYS return this for safety
         const safeResult = {
             response: SAFE_FALLBACK,
             options: SAFE_OPTIONS,
             escalate: false
         };
         
-        // Step 1: Basic structure validation
+        // 🚨 EXTREME PARANOIA MODE: Any API response is potentially dangerous
         if (!apiResponse || typeof apiResponse !== 'object') {
             console.error('🚨 SECURITY: Invalid API response structure');
             return safeResult;
         }
         
-        // Step 2: ULTRA-STRICT response validation
+        // 🔒 STEP 1: Run every response through nuclear-level sanitization
         if (apiResponse.response) {
             const sanitized = sanitizeMessage(apiResponse.response);
             
-            // If sanitization returns our fallback, the original was suspicious
-            if (sanitized === '[IT-ERA] Ciao, come posso aiutarti?') {
-                console.error('🚨 CRITICAL: AI response was system prompt - blocked');
+            // If sanitization changed the message, it was suspicious - use safe fallback
+            if (sanitized !== apiResponse.response) {
+                console.error('🚨 CRITICAL SECURITY: AI response was modified by sanitizer - blocked');
                 return safeResult;
             }
             
-            // If it passes all checks, use the sanitized version
-            safeResult.response = sanitized;
+            // Even if it passes sanitization, apply additional security checks
+            const response = apiResponse.response;
+            
+            // Block if contains ANY numbered list (system prompt pattern)
+            if (response.includes('1.') || response.includes('2.') || response.includes('3.')) {
+                console.error('🚨 CRITICAL SECURITY: Response contains numbered list - blocked');
+                return safeResult;
+            }
+            
+            // Block if contains colon-based instructions
+            if (response.includes(':') && (response.includes('qualifica') || response.includes('presenta'))) {
+                console.error('🚨 CRITICAL SECURITY: Response contains instruction pattern - blocked');
+                return safeResult;
+            }
+            
+            // Only allow if it passes ALL security checks AND starts with [IT-ERA]
+            if (sanitized.startsWith('[IT-ERA]') && sanitized.length < 150) {
+                safeResult.response = sanitized;
+            } else {
+                console.error('🚨 CRITICAL SECURITY: Response failed final validation - using safe fallback');
+            }
         }
         
-        // Step 3: Options validation - be very restrictive
+        // 🔒 STEP 2: Options validation - EXTREMELY restrictive
         if (apiResponse.options && Array.isArray(apiResponse.options)) {
             const validatedOptions = [];
             
+            // Only allow maximum 3 options, each heavily validated
             for (let i = 0; i < Math.min(3, apiResponse.options.length); i++) {
                 const option = apiResponse.options[i];
+                
+                // Extreme validation: must be simple, short, safe string
                 if (typeof option === 'string' && 
                     option.length > 3 && 
-                    option.length < 30 && 
+                    option.length < 25 && 
                     !option.includes('RICHIEDI') &&
+                    !option.includes('QUALIFICA') &&
                     !option.includes('professionale') &&
-                    !option.includes('urgenza')) {
+                    !option.includes('urgenza') &&
+                    !option.includes(':') &&
+                    !option.includes('1.') &&
+                    !option.includes('RISPOND')) {
                     
-                    validatedOptions.push(option.replace(/[<>&"']/g, ''));
+                    // Strip all special characters and HTML
+                    const cleanOption = option.replace(/[<>&"'`]/g, '').trim();
+                    if (cleanOption.length > 3) {
+                        validatedOptions.push(cleanOption);
+                    }
                 }
             }
             
+            // Only use validated options if we have some, otherwise keep safe defaults
             if (validatedOptions.length > 0) {
                 safeResult.options = validatedOptions;
             }
         }
         
+        console.log('🔒 Security validation complete. Safe response prepared.');
         return safeResult;
     }
 

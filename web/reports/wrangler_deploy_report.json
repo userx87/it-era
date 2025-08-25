@@ -9,5 +9,5 @@
   "message": "wrangler non disponibile o credenziali mancanti; preparo fallback.",
   "zip_fallback": "web/reports/it-era-static-20250823-174739.zip",
   "md_summary": "web/reports/deploy_md_summary.txt",
-  "sample_urls": ["https://it-era.pages.dev/pages/assistenza-it-lecco.html","https://it-era.pages.dev/pages/assistenza-it-milano.html","https://it-era.pages.dev/pages/sicurezza-informatica-lecco.html","https://it-era.pages.dev/pages/cloud-storage-lecco.html","https://it-era.pages.dev/sitemap.xml"]
+  "sample_urls": ["https://it-era.it/pages/assistenza-it-lecco.html","https://it-era.it/pages/assistenza-it-milano.html","https://it-era.it/pages/sicurezza-informatica-lecco.html","https://it-era.it/pages/cloud-storage-lecco.html","https://it-era.it/sitemap.xml"]
 }

@@ -73,7 +73,7 @@
       "export GITHUB_OWNER=<owner>",
       "export GITHUB_REPO=<repo>",
       "export GITHUB_BRANCH=main",
-      "export SITE_BASE_URL=https://it-era.pages.dev",
+      "export SITE_BASE_URL=https://it-era.it",
       "export BLOG_DIR=web/pages/blog",
       "export SITEMAP_PATH=web/sitemap.xml"
     ],
@@ -99,8 +99,8 @@
     ]
   },
   "api_blog_publish_test": {
-    "endpoint": "POST https://it-era.pages.dev/api/blog/publish",
-    "curl": "curl -sS -X POST https://it-era.pages.dev/api/blog/publish -H 'Authorization: Bearer {{BLOG_API_KEY}}' -H 'Content-Type: application/json' -d '{\\n  \\\"title\\\": \\\"Strategia Backup 3-2-1 per PMI\\\",\\n  \\\"slug\\\": \\\"prova-articolo-lecco\\\",\\n  \\\"content_html\\\": \\\"<h1>Strategia 3-2-1</h1><p>Backup locale + offsite + test periodici.</p>\\\",\\n  \\\"meta\\\": {\\n    \\\"title\\\": \\\"Backup 3-2-1 per PMI a Lecco\\\",\\n    \\\"description\\\": \\\"Come applicare la strategia 3-2-1 per mettere al sicuro i dati aziendali a Lecco (guida pratica).\\\",\\n    \\\"keywords\\\": [\\\"backup lecco\\\", \\\"strategy 3-2-1\\\", \\\"veeam\\\", \\\"disaster recovery\\\"]\\n  },\\n  \\\"schema_jsonld\\\": {\\n    \\\"@context\\\": \\\"https://schema.org\\\",\\n    \\\"@type\\\": \\\"BlogPosting\\\",\\n    \\\"headline\\\": \\\"Backup 3-2-1 per PMI a Lecco\\\",\\n    \\\"datePublished\\\": \\\"2025-08-23\\\"\\n  },\\n  \\\"cover\\\": { \\\"url\\\": \\\"https://it-era.pages.dev/static/images/backup-cover.jpg\\\" },\\n  \\\"commit_message\\\": \\\"feat(blog): publish prova-articolo-lecco\\\"\\n}'"
+    "endpoint": "POST https://it-era.it/api/blog/publish",
+    "curl": "curl -sS -X POST https://it-era.it/api/blog/publish -H 'Authorization: Bearer {{BLOG_API_KEY}}' -H 'Content-Type: application/json' -d '{\\n  \\\"title\\\": \\\"Strategia Backup 3-2-1 per PMI\\\",\\n  \\\"slug\\\": \\\"prova-articolo-lecco\\\",\\n  \\\"content_html\\\": \\\"<h1>Strategia 3-2-1</h1><p>Backup locale + offsite + test periodici.</p>\\\",\\n  \\\"meta\\\": {\\n    \\\"title\\\": \\\"Backup 3-2-1 per PMI a Lecco\\\",\\n    \\\"description\\\": \\\"Come applicare la strategia 3-2-1 per mettere al sicuro i dati aziendali a Lecco (guida pratica).\\\",\\n    \\\"keywords\\\": [\\\"backup lecco\\\", \\\"strategy 3-2-1\\\", \\\"veeam\\\", \\\"disaster recovery\\\"]\\n  },\\n  \\\"schema_jsonld\\\": {\\n    \\\"@context\\\": \\\"https://schema.org\\\",\\n    \\\"@type\\\": \\\"BlogPosting\\\",\\n    \\\"headline\\\": \\\"Backup 3-2-1 per PMI a Lecco\\\",\\n    \\\"datePublished\\\": \\\"2025-08-23\\\"\\n  },\\n  \\\"cover\\\": { \\\"url\\\": \\\"https://it-era.it/static/images/backup-cover.jpg\\\" },\\n  \\\"commit_message\\\": \\\"feat(blog): publish prova-articolo-lecco\\\"\\n}'"
   }
 }
 

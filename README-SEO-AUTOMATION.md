@@ -1,6 +1,6 @@
 # IT-ERA SEO Automation System
 
-Complete automated SEO workflow and CI/CD integration for the IT-ERA website (https://it-era.pages.dev/).
+Complete automated SEO workflow and CI/CD integration for the IT-ERA website (https://it-era.it/).
 
 ## 🚀 Overview
 
@@ -90,7 +90,7 @@ RESTful webhook endpoint for external integrations:
 POST /seo-webhook.php?action=sitemap_update
 
 # Page indexing
-POST /seo-webhook.php?action=page_indexing&urls[]=https://it-era.pages.dev/new-page.html
+POST /seo-webhook.php?action=page_indexing&urls[]=https://it-era.it/new-page.html
 
 # Performance check
 POST /seo-webhook.php?action=performance_check
@@ -117,13 +117,13 @@ cd docker/seo-tools
 docker-compose up -d
 
 # Run SEO analysis
-docker exec it-era-seo-tools seo-analyze https://it-era.pages.dev
+docker exec it-era-seo-tools seo-analyze https://it-era.it
 
 # Run comprehensive audit
-docker exec it-era-seo-tools seo-audit https://it-era.pages.dev
+docker exec it-era-seo-tools seo-audit https://it-era.it
 
 # Run Lighthouse audit
-docker exec it-era-seo-tools lighthouse https://it-era.pages.dev
+docker exec it-era-seo-tools lighthouse https://it-era.it
 
 # Access shell
 docker exec -it it-era-seo-tools shell
@@ -173,10 +173,10 @@ Real-time website monitoring and alerting:
 
 ```bash
 # Full comprehensive monitoring
-php scripts/seo-monitoring.php full https://it-era.pages.dev
+php scripts/seo-monitoring.php full https://it-era.it
 
 # Quick health check
-php scripts/seo-monitoring.php quick https://it-era.pages.dev
+php scripts/seo-monitoring.php quick https://it-era.it
 
 # Generate dashboard data
 php scripts/seo-monitoring.php dashboard
@@ -199,7 +199,7 @@ Create `/scripts/seo-webhook-config.json`:
 ```json
 {
   "webhook_secret": "your-secure-secret-key",
-  "site_url": "https://it-era.pages.dev",
+  "site_url": "https://it-era.it",
   "notification_channels": {
     "email": {
       "enabled": true,
@@ -368,13 +368,13 @@ curl -X POST "http://localhost/seo-webhook.php?action=status_check&secret=your-s
 php scripts/generate_sitemap.php
 
 # Run comprehensive SEO audit
-php scripts/seo-monitoring.php full https://it-era.pages.dev
+php scripts/seo-monitoring.php full https://it-era.it
 
 # Deploy with SEO tasks
 php scripts/deploy-seo.php --environment=production
 
 # Check system health
-php scripts/seo-monitoring.php quick https://it-era.pages.dev
+php scripts/seo-monitoring.php quick https://it-era.it
 ```
 
 ### API Integration Examples
@@ -382,17 +382,17 @@ php scripts/seo-monitoring.php quick https://it-era.pages.dev
 ```bash
 # Trigger sitemap update via webhook
 curl -X POST \
-  "https://it-era.pages.dev/scripts/seo-webhook.php?action=sitemap_update" \
+  "https://it-era.it/scripts/seo-webhook.php?action=sitemap_update" \
   -H "X-Webhook-Secret: your-secret-key" \
   -H "Content-Type: application/json" \
   -d '{"force": true}'
 
 # Request page indexing
 curl -X POST \
-  "https://it-era.pages.dev/scripts/seo-webhook.php?action=page_indexing" \
+  "https://it-era.it/scripts/seo-webhook.php?action=page_indexing" \
   -H "X-Webhook-Secret: your-secret-key" \
   -H "Content-Type: application/json" \
-  -d '{"urls": ["https://it-era.pages.dev/new-service.html"]}'
+  -d '{"urls": ["https://it-era.it/new-service.html"]}'
 ```
 
 ## 🎯 Performance & Optimization

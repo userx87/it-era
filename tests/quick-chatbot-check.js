@@ -5,7 +5,7 @@
 const puppeteer = require('puppeteer');
 
 async function quickChatbotCheck() {
-    console.log('🚀 Quick Chatbot Check: https://it-era.pages.dev/');
+    console.log('🚀 Quick Chatbot Check: https://it-era.it');
     console.log('=' .repeat(50));
     
     const browser = await puppeteer.launch({
@@ -16,9 +16,9 @@ async function quickChatbotCheck() {
     try {
         const page = await browser.newPage();
         
-        // Navigate to production (CORRECT URL)
-        console.log('🌐 Loading production site...');
-        await page.goto('https://it-era.pages.dev/', { 
+        // Navigate to live production domain
+        console.log('🌐 Loading live production site...');
+        await page.goto('https://it-era.it/', { 
             waitUntil: 'networkidle0',
             timeout: 25000 
         });

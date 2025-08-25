@@ -41,7 +41,7 @@ The IT-ERA Chatbot Swarm demonstrates solid infrastructure security foundations,
 ```javascript
 // Verified in chatbot-worker-simple.js:
 ALLOWED_ORIGINS: [
-  'https://it-era.pages.dev',
+  'https://it-era.it',
   'https://www.it-era.it', 
   'https://it-era.it',
   'https://bulltech.it',

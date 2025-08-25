@@ -490,7 +490,7 @@ class SEOOptimizer {
     }
     
     private function generateCanonicalUrl($fileName) {
-        return "https://it-era.pages.dev/pages/{$fileName}";
+        return "https://it-era.it/pages/{$fileName}";
     }
     
     private function generateAltText($src, $fileName) {
@@ -761,7 +761,7 @@ class SEOOptimizer {
         return false;
     }
     
-    public function generateSitemap($directory, $baseUrl = 'https://it-era.pages.dev') {
+    public function generateSitemap($directory, $baseUrl = 'https://it-era.it') {
         echo "🗺️  Generating XML sitemap...\n";
         
         $files = $this->getHtmlFiles($directory);

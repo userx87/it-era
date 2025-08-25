@@ -70,7 +70,7 @@ User Input → Sanitization → Prompt Filter → AI Processing → Secure Respo
 ### Automatic Deployment
 - **Trigger**: Local commit to production branch
 - **Platform**: Cloudflare Pages
-- **Domain**: https://it-era.pages.dev
+- **Domain**: https://it-era.it
 - **Custom Domain**: https://www.it-era.it
 
 ### Deployment Process:
@@ -165,7 +165,7 @@ User Input → Sanitization → Prompt Filter → AI Processing → Secure Respo
 ## 🔗 IMPORTANT LINKS
 
 - **Live Site**: https://www.it-era.it
-- **Staging**: https://it-era.pages.dev  
+- **Staging**: https://it-era.it  
 - **API Endpoint**: Cloudflare Workers
 - **Monitoring**: Cloudflare Analytics
 

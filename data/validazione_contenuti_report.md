@@ -48,7 +48,7 @@
 **Problema**:
 ```html
 <!-- TUTTE le città usano la stessa immagine -->
-<meta property="og:image" content="https://it-era.pages.dev/static/images/it-support-lecco-hero.jpg">
+<meta property="og:image" content="https://it-era.it/static/images/it-support-lecco-hero.jpg">
 ```
 
 **Impatto SEO**: 

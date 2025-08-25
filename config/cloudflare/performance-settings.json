@@ -1,0 +1,76 @@
+{
+  "performance_optimization": {
+    "caching": {
+      "cache_level": "aggressive",
+      "browser_cache_ttl": 31536000,
+      "edge_cache_ttl": 7776000,
+      "development_mode": false,
+      "purge_everything": false,
+      "custom_cache_keys": true
+    },
+    "speed_optimizations": {
+      "auto_minify": {
+        "css": true,
+        "html": true,
+        "js": true
+      },
+      "brotli": true,
+      "early_hints": true,
+      "http2_prioritization": true,
+      "http3": true,
+      "zero_rtt": true,
+      "tiered_cache": true,
+      "argo_smart_routing": false
+    },
+    "polish": {
+      "enabled": true,
+      "webp": true,
+      "lossy": false,
+      "lossless": true
+    },
+    "mirage": {
+      "enabled": true,
+      "description": "Accelerates image delivery on mobile devices"
+    },
+    "rocket_loader": {
+      "enabled": false,
+      "description": "Disabled for better compatibility with IT-ERA scripts"
+    }
+  },
+  "page_rules_performance": [
+    {
+      "url_pattern": "it-era.it/*.css",
+      "settings": {
+        "cache_level": "cache_everything",
+        "edge_cache_ttl": 31536000,
+        "browser_cache_ttl": 31536000
+      }
+    },
+    {
+      "url_pattern": "it-era.it/*.js",
+      "settings": {
+        "cache_level": "cache_everything",
+        "edge_cache_ttl": 31536000,
+        "browser_cache_ttl": 31536000
+      }
+    },
+    {
+      "url_pattern": "it-era.it/*.jpg",
+      "settings": {
+        "cache_level": "cache_everything",
+        "edge_cache_ttl": 31536000,
+        "browser_cache_ttl": 31536000,
+        "polish": "lossy"
+      }
+    },
+    {
+      "url_pattern": "it-era.it/*.png",
+      "settings": {
+        "cache_level": "cache_everything",
+        "edge_cache_ttl": 31536000,
+        "browser_cache_ttl": 31536000,
+        "polish": "lossless"
+      }
+    }
+  ]
+}

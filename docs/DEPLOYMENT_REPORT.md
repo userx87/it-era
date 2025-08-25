@@ -44,14 +44,14 @@ compatibility_flags = ["nodejs_compat"]
 
 [env.production.vars]
 ENVIRONMENT = "production"
-API_URL = "https://it-era.pages.dev"
-ADMIN_URL = "https://it-era.pages.dev/admin"
+API_URL = "https://it-era.it"
+ADMIN_URL = "https://it-era.it/admin"
 ```
 
 ### Environment Variables
 - `ENVIRONMENT`: production
-- `API_URL`: https://it-era.pages.dev
-- `ADMIN_URL`: https://it-era.pages.dev/admin
+- `API_URL`: https://it-era.it
+- `ADMIN_URL`: https://it-era.it/admin
 - `JWT_SECRET`: [CONFIGURED VIA SECRETS]
 
 ## 🧪 Testing Results
@@ -60,7 +60,7 @@ ADMIN_URL = "https://it-era.pages.dev/admin"
 ```bash
 Status: ✅ PASSED (200)
 Headers:
-- access-control-allow-origin: https://it-era.pages.dev
+- access-control-allow-origin: https://it-era.it
 - access-control-allow-credentials: true
 - access-control-allow-headers: Content-Type, Authorization, X-Requested-With
 - access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS

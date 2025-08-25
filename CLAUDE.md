@@ -37,8 +37,8 @@
 ## 🚀 DEPLOYMENT CLOUDFLARE PAGES:
 **Comando Deploy**: `npx wrangler pages deploy web --project-name it-era --commit-dirty=true`
 - **NON usare git push** per deployment
-- **URL Production**: https://it-era.pages.dev
-- **URL Preview**: https://[hash].it-era.pages.dev
+- **URL Production**: https://it-era.it
+- **URL Preview**: https://[hash].it-era.it
 - **Directory**: Sempre deployare la cartella `/web`
 
 ---

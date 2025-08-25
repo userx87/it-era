@@ -226,7 +226,7 @@ headers: {
 ### Domini Autorizzati
 - `https://www.it-era.it`
 - `https://it-era.it`
-- `https://it-era.pages.dev`
+- `https://it-era.it`
 - `http://localhost:3000`
 - `http://localhost:8788`
 

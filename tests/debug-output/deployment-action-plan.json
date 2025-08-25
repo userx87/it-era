@@ -18,12 +18,12 @@
     {
       "step": 3,
       "action": "Verify deployment",
-      "command": "Wait 2-3 minutes and test https://it-era.pages.dev/",
+      "command": "Wait 2-3 minutes and test https://it-era.it/",
       "description": "Check that chatbot appears on production site"
     }
   ],
   "verification": [
-    "Visit https://it-era.pages.dev/",
+    "Visit https://it-era.it/",
     "Look for chatbot button in bottom-right corner",
     "Click chatbot to test functionality",
     "Verify API calls to Cloudflare Worker"

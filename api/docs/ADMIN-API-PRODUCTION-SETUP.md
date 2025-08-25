@@ -9,7 +9,7 @@ This guide covers the complete setup and deployment of the IT-ERA Admin API to p
 1. **Cloudflare Workers Account** with appropriate permissions
 2. **Wrangler CLI** installed and authenticated
 3. **Node.js** 18+ for local testing
-4. **Domain access** for IT-ERA (it-era.pages.dev)
+4. **Domain access** for IT-ERA (it-era.it)
 
 ## Environment Variables & Secrets
 
@@ -51,8 +51,8 @@ These are already configured in the TOML file:
 ```toml
 [env.production.vars]
 ENVIRONMENT = "production"
-API_URL = "https://it-era.pages.dev"
-ADMIN_URL = "https://it-era.pages.dev/admin"
+API_URL = "https://it-era.it"
+ADMIN_URL = "https://it-era.it/admin"
 SERVICE_NAME = "IT-ERA Admin API"
 VERSION = "1.0.0"
 ```
@@ -252,10 +252,10 @@ wrangler deploy --config wrangler-admin-api.toml --env production
 
 ```bash
 # Test health endpoint
-curl https://it-era.pages.dev/admin/api/auth/health
+curl https://it-era.it/admin/api/auth/health
 
 # Test login
-curl -X POST https://it-era.pages.dev/admin/api/auth/login \
+curl -X POST https://it-era.it/admin/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@it-era.it","password":"admin123"}'
 ```
@@ -284,7 +284,7 @@ Verify CORS origins in the worker configuration:
 ```javascript
 const CONFIG = {
   ALLOWED_ORIGINS: [
-    'https://it-era.pages.dev',
+    'https://it-era.it',
     'https://www.it-era.it',
     'https://it-era.it'
     // Remove localhost entries in production
@@ -334,7 +334,7 @@ Set up monitoring for the health endpoint:
 
 ```bash
 # Example with curl and cron
-*/5 * * * * curl -f https://it-era.pages.dev/admin/api/auth/health || echo "API Down"
+*/5 * * * * curl -f https://it-era.it/admin/api/auth/health || echo "API Down"
 ```
 
 ## Performance Optimization

@@ -231,7 +231,7 @@ Global test configuration in `utils/setup.js`:
 
 ```javascript
 global.TEST_CONFIG = {
-  ADMIN_PANEL_URL: 'https://it-era.pages.dev/admin/',
+  ADMIN_PANEL_URL: 'https://it-era.it/admin/',
   API_BASE_URL: 'https://it-era-blog-api.bulltech.workers.dev',
   TEST_USER: {
     email: 'admin@it-era.it',

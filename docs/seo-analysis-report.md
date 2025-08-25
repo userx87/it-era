@@ -70,7 +70,7 @@ Analysis completed on **767 landing pages** across 3 service categories:
 ### 1. Implement Canonical URLs (CRITICAL)
 ```html
 <!-- Add to all 767 pages -->
-<link rel="canonical" href="https://it-era.pages.dev/pages/[page-name].html">
+<link rel="canonical" href="https://it-era.it/pages/[page-name].html">
 ```
 
 ### 2. Complete Open Graph Implementation
@@ -79,8 +79,8 @@ Analysis completed on **767 landing pages** across 3 service categories:
 <meta property="og:title" content="[Page Title]">
 <meta property="og:description" content="[Meta Description]">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://it-era.pages.dev/pages/[page-name].html">
-<meta property="og:image" content="https://it-era.pages.dev/images/[service]-[city]-og.jpg">
+<meta property="og:url" content="https://it-era.it/pages/[page-name].html">
+<meta property="og:image" content="https://it-era.it/images/[service]-[city]-og.jpg">
 <meta property="og:locale" content="it_IT">
 ```
 
@@ -89,7 +89,7 @@ Analysis completed on **767 landing pages** across 3 service categories:
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="[Page Title]">
 <meta name="twitter:description" content="[Meta Description]">
-<meta name="twitter:image" content="https://it-era.pages.dev/images/[service]-[city]-twitter.jpg">
+<meta name="twitter:image" content="https://it-era.it/images/[service]-[city]-twitter.jpg">
 ```
 
 ### 4. Fix Heading Structure
@@ -118,7 +118,7 @@ Replace CSS-styled text with proper semantic headings:
     "addressCountry": "IT"
   },
   "telephone": "+39 012 3456789",
-  "url": "https://it-era.pages.dev/pages/assistenza-it-[city].html",
+  "url": "https://it-era.it/pages/assistenza-it-[city].html",
   "areaServed": "[City], Lombardia",
   "serviceType": ["IT Support", "Cloud Storage", "Cybersecurity"]
 }

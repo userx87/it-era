@@ -15,7 +15,7 @@
     "test": "jest tests/ --verbose",
     "test:vision": "node test-vision.js",
     "test:vision:dev": "CHATBOT_API_URL=http://localhost:8787/api/chat node test-vision.js",
-    "test:vision:prod": "CHATBOT_API_URL=https://it-era-chatbot.bulltech.workers.dev/api/chat node test-vision.js"
+    "test:vision:prod": "CHATBOT_API_URL=https://it-era.it/api/chat node test-vision.js"
   },
   "keywords": [],
   "author": "",

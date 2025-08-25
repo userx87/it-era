@@ -1,0 +1,115 @@
+{
+    "name": "IT-ERA - Assistenza IT e Sicurezza Informatica",
+    "short_name": "IT-ERA",
+    "description": "Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0056cc",
+    "orientation": "portrait",
+    "scope": "/",
+    "categories": ["business", "productivity", "technology"],
+    "lang": "it",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshots/homepage-desktop.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "IT-ERA Homepage Desktop"
+        },
+        {
+            "src": "/screenshots/services-mobile.png",
+            "sizes": "390x844",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "IT-ERA Services Mobile"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Assistenza IT",
+            "short_name": "Assistenza",
+            "description": "Servizi di assistenza IT professionale",
+            "url": "/assistenza-it",
+            "icons": [
+                {
+                    "src": "/icons/support-icon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Sicurezza",
+            "short_name": "Security",
+            "description": "Servizi di sicurezza informatica",
+            "url": "/sicurezza-informatica",
+            "icons": [
+                {
+                    "src": "/icons/security-icon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Cloud Storage",
+            "short_name": "Cloud",
+            "description": "Soluzioni cloud storage aziendali",
+            "url": "/cloud-storage",
+            "icons": [
+                {
+                    "src": "/icons/cloud-icon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Contatti",
+            "short_name": "Contatti",
+            "description": "Contatta IT-ERA per supporto",
+            "url": "/contatti",
+            "icons": [
+                {
+                    "src": "/icons/contact-icon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}

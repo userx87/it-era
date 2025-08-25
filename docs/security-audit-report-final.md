@@ -2,7 +2,7 @@
 
 **Date:** August 25, 2025  
 **Auditor:** Security Assessment Team  
-**Target:** https://it-era.pages.dev/admin/  
+**Target:** https://it-era.it/admin/  
 **API Endpoint:** https://it-era-admin-auth-production.bulltech.workers.dev  
 
 ## Executive Summary

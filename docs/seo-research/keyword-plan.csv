@@ -1,0 +1,106 @@
+keyword,cluster,subcluster,city,intent,priority,page_type,url_target,search_volume,competition,notes,semantic_group,seasonal_boost,industry_focus
+"assistenza informatica milano",assistenza-it,generale,milano,commercial,1,city,/pages/assistenza-it-milano.html,720,high,"Primary Milano service page - tier 1 city",core-service,0,all
+"supporto tecnico milano",assistenza-it,tecnico,milano,commercial,1,city,/pages/assistenza-it-milano.html,450,medium,"Secondary keyword for Milano page",core-service,0,all
+"consulenza informatica milano",assistenza-it,consulenza,milano,commercial,1,city,/pages/assistenza-it-milano.html,380,medium,"B2B focused for Milano",core-service,0,business
+"assistenza computer milano emergenza",assistenza-it,emergenza,milano,transactional,1,city,/pages/assistenza-it-milano.html,180,low,"High-intent emergency keyword",urgency,0,all
+"sistemista milano 24h",assistenza-it,sistemista,milano,transactional,1,city,/pages/assistenza-it-milano.html,120,low,"Professional IT support",professional,0,business
+"assistenza informatica bergamo",assistenza-it,generale,bergamo,commercial,1,city,/pages/assistenza-it-bergamo.html,290,medium,"Tier 1 city - manufacturing focus",core-service,0,manufacturing
+"supporto it bergamo aziende",assistenza-it,aziendale,bergamo,commercial,1,city,/pages/assistenza-it-bergamo.html,95,low,"B2B Bergamo market",business-service,0,business
+"assistenza informatica monza brianza",assistenza-it,generale,monza,commercial,1,city,/pages/assistenza-it-monza.html,240,medium,"Monza e Brianza coverage",core-service,0,all
+"consulenza it monza",assistenza-it,consulenza,monza,commercial,1,city,/pages/assistenza-it-monza.html,140,medium,"Brianza business focus",business-service,0,business
+"assistenza informatica como",assistenza-it,generale,como,commercial,2,city,/pages/assistenza-it-como.html,180,medium,"Lake Como area coverage",core-service,0,tourism
+"sicurezza informatica milano",sicurezza-informatica,generale,milano,commercial,1,city,/pages/sicurezza-informatica-milano.html,680,high,"Primary cybersecurity Milano",cyber-core,0,finance
+"cybersecurity milano aziende",sicurezza-informatica,aziendale,milano,commercial,1,city,/pages/sicurezza-informatica-milano.html,320,high,"Enterprise cybersecurity",cyber-enterprise,0,business
+"protezione ransomware milano",sicurezza-informatica,ransomware,milano,transactional,1,city,/pages/sicurezza-informatica-milano.html,150,medium,"Ransomware protection focus",cyber-threat,+20,all
+"firewall aziendale milano",sicurezza-informatica,firewall,milano,commercial,1,city,/pages/sicurezza-informatica-milano.html,110,medium,"Network security",cyber-infrastructure,0,business
+"penetration test milano",sicurezza-informatica,testing,milano,commercial,2,service,/servizi/penetration-testing,85,low,"Security testing service",cyber-assessment,0,finance
+"sicurezza informatica bergamo",sicurezza-informatica,generale,bergamo,commercial,1,city,/pages/sicurezza-informatica-bergamo.html,180,medium,"Manufacturing cybersecurity",cyber-core,0,manufacturing
+"cybersecurity pmi bergamo",sicurezza-informatica,pmi,bergamo,commercial,1,city,/pages/sicurezza-informatica-bergamo.html,65,low,"SME cybersecurity Bergamo",cyber-sme,0,manufacturing
+"cloud storage milano",cloud-storage,generale,milano,commercial,1,city,/pages/cloud-storage-milano.html,590,high,"Primary cloud storage Milano",cloud-core,0,all
+"backup aziendale milano",cloud-storage,backup,milano,commercial,1,city,/pages/cloud-storage-milano.html,420,medium,"Enterprise backup Milano",cloud-backup,0,business
+"archiviazione dati milano",cloud-storage,archiviazione,milano,commercial,1,city,/pages/cloud-storage-milano.html,280,medium,"Data archival services",cloud-storage,0,all
+"disaster recovery milano",cloud-storage,disaster-recovery,milano,commercial,1,city,/pages/cloud-storage-milano.html,190,medium,"Business continuity",cloud-continuity,+30,business
+"migrazione cloud milano",cloud-storage,migrazione,milano,transactional,1,service,/servizi/migrazione-cloud,160,low,"Cloud migration service",cloud-migration,0,business
+"microsoft 365 milano",cloud-storage,microsoft365,milano,commercial,1,service,/servizi/microsoft-365,140,medium,"Microsoft 365 services",cloud-productivity,0,business
+"backup veeam milano",cloud-storage,veeam,milano,commercial,2,service,/servizi/backup-veeam,95,low,"Veeam backup solutions",cloud-backup,0,business
+"cloud storage bergamo",cloud-storage,generale,bergamo,commercial,1,city,/pages/cloud-storage-bergamo.html,120,medium,"Bergamo cloud services",cloud-core,0,manufacturing
+"assistenza informatica lecco",assistenza-it,generale,lecco,commercial,2,city,/pages/assistenza-it-lecco.html,85,low,"Lecco coverage",core-service,0,tourism
+"supporto tecnico lecco",assistenza-it,tecnico,lecco,commercial,2,city,/pages/assistenza-it-lecco.html,45,low,"Technical support Lecco",core-service,0,all
+"assistenza informatica varese",assistenza-it,generale,varese,commercial,2,city,/pages/assistenza-it-varese.html,110,medium,"Varese province",core-service,0,all
+"consulenza it varese",assistenza-it,consulenza,varese,commercial,2,city,/pages/assistenza-it-varese.html,65,low,"Business IT Varese",business-service,0,business
+"assistenza informatica lodi",assistenza-it,generale,lodi,commercial,2,city,/pages/assistenza-it-lodi.html,48,low,"Lodi coverage",core-service,0,agriculture
+"assistenza informatica pavia",assistenza-it,generale,pavia,commercial,2,city,/pages/assistenza-it-pavia.html,72,low,"Pavia university area",core-service,0,education
+"assistenza informatica cremona",assistenza-it,generale,cremona,commercial,3,city,/pages/assistenza-it-cremona.html,38,low,"Cremona agricultural area",core-service,0,agriculture
+"riparazione computer milano",assistenza-it,riparazione,milano,commercial,2,service,/servizi/riparazione-computer,890,high,"PC repair Milano",repair-service,0,all
+"installazione software milano",assistenza-it,software,milano,commercial,2,service,/servizi/installazione-software,180,medium,"Software installation",software-service,0,business
+"configurazione rete aziendale milano",assistenza-it,networking,milano,commercial,2,service,/servizi/configurazione-reti,120,low,"Network setup",network-service,0,business
+"migrazione server milano",assistenza-it,server,milano,transactional,2,service,/servizi/migrazione-server,95,low,"Server migration",infrastructure,0,business
+"assistenza computer bergamo",assistenza-it,computer,bergamo,commercial,2,city,/pages/assistenza-it-bergamo.html,180,medium,"Computer support Bergamo",repair-service,0,all
+"riparazione pc monza",assistenza-it,riparazione,monza,commercial,2,city,/pages/assistenza-it-monza.html,140,medium,"PC repair Monza Brianza",repair-service,0,all
+"assistenza mac milano",assistenza-it,mac,milano,commercial,2,service,/servizi/assistenza-mac,280,medium,"Apple Mac support",mac-service,0,creative
+"recupero dati milano",assistenza-it,recovery,milano,transactional,1,service,/servizi/recupero-dati,520,high,"Data recovery service",recovery-service,0,all
+"help desk aziendale milano",assistenza-it,helpdesk,milano,commercial,2,service,/servizi/help-desk,85,low,"Corporate help desk",business-service,0,business
+"assistenza server milano",assistenza-it,server,milano,commercial,2,service,/servizi/assistenza-server,160,medium,"Server support",infrastructure,0,business
+"manutenzione computer milano",assistenza-it,manutenzione,milano,commercial,2,service,/servizi/manutenzione-computer,110,medium,"Computer maintenance",maintenance-service,+15,business
+"troubleshooting it milano",assistenza-it,troubleshooting,milano,commercial,3,service,/servizi/troubleshooting,75,low,"IT problem solving",problem-solving,0,business
+"sicurezza informatica como",sicurezza-informatica,generale,como,commercial,2,city,/pages/sicurezza-informatica-como.html,85,low,"Como cybersecurity",cyber-core,0,tourism
+"firewall como",sicurezza-informatica,firewall,como,commercial,3,city,/pages/sicurezza-informatica-como.html,25,low,"Firewall services Como",cyber-infrastructure,0,business
+"antivirus aziendale milano",sicurezza-informatica,antivirus,milano,commercial,2,service,/servizi/antivirus-aziendale,180,medium,"Enterprise antivirus",cyber-protection,0,business
+"formazione cybersecurity milano",sicurezza-informatica,formazione,milano,informational,3,service,/servizi/formazione-cybersecurity,95,low,"Security awareness training",cyber-training,0,business
+"compliance gdpr milano",sicurezza-informatica,gdpr,milano,commercial,2,service,/servizi/compliance-gdpr,140,medium,"GDPR compliance",cyber-compliance,0,business
+"audit sicurezza informatica milano",sicurezza-informatica,audit,milano,commercial,2,service,/servizi/audit-sicurezza,110,low,"Security audit",cyber-assessment,0,business
+"soc 24/7 milano",sicurezza-informatica,soc,milano,commercial,1,service,/servizi/soc-247,65,low,"Security Operations Center",cyber-monitoring,0,enterprise
+"incident response milano",sicurezza-informatica,incident,milano,transactional,2,service,/servizi/incident-response,45,low,"Security incident response",cyber-emergency,+25,all
+"ethical hacking milano",sicurezza-informatica,ethical-hacking,milano,commercial,3,service,/servizi/ethical-hacking,35,low,"Ethical hacking services",cyber-assessment,0,finance
+"vulnerability assessment milano",sicurezza-informatica,vulnerability,milano,commercial,2,service,/servizi/vulnerability-assessment,85,medium,"Security vulnerability testing",cyber-assessment,0,business
+"backup cloud bergamo",cloud-storage,backup,bergamo,commercial,2,city,/pages/cloud-storage-bergamo.html,75,low,"Cloud backup Bergamo",cloud-backup,0,manufacturing
+"archiviazione digitale bergamo",cloud-storage,archiviazione,bergamo,commercial,2,city,/pages/cloud-storage-bergamo.html,45,low,"Digital archiving Bergamo",cloud-storage,0,manufacturing
+"sincronizzazione file milano",cloud-storage,sync,milano,commercial,2,service,/servizi/sincronizzazione-file,160,medium,"File synchronization",cloud-sync,0,business
+"storage aziendale milano",cloud-storage,enterprise,milano,commercial,2,service,/servizi/storage-aziendale,120,medium,"Enterprise storage",cloud-enterprise,0,business
+"backup automatico milano",cloud-storage,automatico,milano,commercial,2,service,/servizi/backup-automatico,200,medium,"Automated backup",cloud-backup,0,business
+"cloud ibrido milano",cloud-storage,ibrido,milano,commercial,3,service,/servizi/cloud-ibrido,85,low,"Hybrid cloud solutions",cloud-hybrid,0,enterprise
+"cloud privato milano",cloud-storage,privato,milano,commercial,3,service,/servizi/cloud-privato,65,low,"Private cloud",cloud-private,0,enterprise
+"sharepoint milano",cloud-storage,sharepoint,milano,commercial,2,service,/servizi/sharepoint,110,medium,"SharePoint services",cloud-productivity,0,business
+"onedrive business milano",cloud-storage,onedrive,milano,commercial,2,service,/servizi/onedrive-business,95,medium,"OneDrive for Business",cloud-productivity,0,business
+"google workspace milano",cloud-storage,google,milano,commercial,2,service,/servizi/google-workspace,140,medium,"Google Workspace",cloud-productivity,0,business
+"assistenza informatica studi medici milano",assistenza-it,healthcare,milano,commercial,2,sector,/settori/studi-medici,120,low,"Healthcare IT support",healthcare-it,0,healthcare
+"sicurezza informatica ospedali milano",sicurezza-informatica,healthcare,milano,commercial,1,sector,/settori/sicurezza-ospedali,85,low,"Hospital cybersecurity",cyber-healthcare,0,healthcare
+"backup cartelle cliniche milano",cloud-storage,healthcare,milano,commercial,1,sector,/settori/backup-sanitario,65,low,"Medical records backup",cloud-healthcare,0,healthcare
+"it sanitario gdpr milano",assistenza-it,gdpr-health,milano,commercial,1,sector,/settori/gdpr-sanitario,95,low,"Healthcare GDPR IT",compliance-health,0,healthcare
+"assistenza informatica studi legali milano",assistenza-it,legal,milano,commercial,2,sector,/settori/studi-legali,90,low,"Legal firms IT support",legal-it,0,legal
+"sicurezza dati avvocati milano",sicurezza-informatica,legal,milano,commercial,1,sector,/settori/sicurezza-legale,55,low,"Legal data security",cyber-legal,0,legal
+"backup studi legali milano",cloud-storage,legal,milano,commercial,2,sector,/settori/backup-legale,40,low,"Legal backup services",cloud-legal,0,legal
+"assistenza it pmi milano",assistenza-it,pmi,milano,commercial,1,sector,/settori/pmi,280,medium,"SME IT support",sme-it,0,business
+"cybersecurity piccole imprese milano",sicurezza-informatica,pmi,milano,commercial,1,sector,/settori/cybersecurity-pmi,140,low,"SME cybersecurity",cyber-sme,0,business
+"cloud storage pmi milano",cloud-storage,pmi,milano,commercial,1,sector,/settori/cloud-pmi,160,medium,"SME cloud storage",cloud-sme,0,business
+"assistenza informatica startup milano",assistenza-it,startup,milano,commercial,2,sector,/settori/startup,95,low,"Startup IT support",startup-it,0,startup
+"it retail milano",assistenza-it,retail,milano,commercial,3,sector,/settori/retail,120,medium,"Retail IT services",retail-it,0,retail
+"pos sicurezza milano",sicurezza-informatica,pos,milano,commercial,2,sector,/settori/pos-sicurezza,65,low,"POS system security",cyber-retail,0,retail
+"backup e-commerce milano",cloud-storage,ecommerce,milano,commercial,2,sector,/settori/backup-ecommerce,85,low,"E-commerce backup",cloud-retail,0,retail
+"assistenza informatica industria milano",assistenza-it,industria,milano,commercial,2,sector,/settori/industria,180,medium,"Manufacturing IT",industrial-it,0,manufacturing
+"cybersecurity ot milano",sicurezza-informatica,ot,milano,commercial,1,sector,/settori/cybersecurity-ot,45,low,"OT cybersecurity",cyber-industrial,0,manufacturing
+"industry 4.0 it milano",assistenza-it,industry40,milano,commercial,2,sector,/settori/industry-40,95,low,"Industry 4.0 IT",industrial-it,0,manufacturing
+"assistenza informatica prezzi milano",assistenza-it,prezzi,milano,commercial,2,pricing,/prezzi/assistenza-it,220,medium,"IT support pricing",pricing,0,all
+"costi consulenza informatica milano",assistenza-it,costi,milano,commercial,2,pricing,/prezzi/consulenza-it,180,medium,"IT consulting costs",pricing,0,business
+"tariffe supporto tecnico milano",assistenza-it,tariffe,milano,commercial,2,pricing,/prezzi/supporto-tecnico,95,low,"Technical support rates",pricing,0,all
+"preventivo assistenza informatica milano",assistenza-it,preventivo,milano,transactional,1,quote,/preventivo/assistenza-it,320,medium,"IT support quote",quote-request,0,all
+"sicurezza informatica costi milano",sicurezza-informatica,costi,milano,commercial,2,pricing,/prezzi/sicurezza-informatica,140,medium,"Cybersecurity costs",pricing,0,business
+"cybersecurity preventivo milano",sicurezza-informatica,preventivo,milano,transactional,1,quote,/preventivo/sicurezza-informatica,85,low,"Cybersecurity quote",quote-request,0,business
+"cloud storage prezzi milano",cloud-storage,prezzi,milano,commercial,2,pricing,/prezzi/cloud-storage,190,medium,"Cloud storage pricing",pricing,0,all
+"backup aziendale costi milano",cloud-storage,costi,milano,commercial,2,pricing,/prezzi/backup-aziendale,110,medium,"Backup costs",pricing,0,business
+"quanto costa assistenza informatica milano",assistenza-it,quanto-costa,milano,informational,2,content,/blog/quanto-costa-assistenza-it,160,low,"Cost information content",informational,0,all
+"migliore assistenza informatica milano",assistenza-it,migliore,milano,informational,2,content,/blog/migliore-assistenza-it-milano,95,low,"Best IT support content",informational,0,all
+"come scegliere assistenza informatica milano",assistenza-it,come-scegliere,milano,informational,3,content,/blog/come-scegliere-assistenza-it,65,low,"How to choose IT support",informational,0,all
+"assistenza informatica milano recensioni",assistenza-it,recensioni,milano,informational,2,content,/recensioni/assistenza-it-milano,120,medium,"IT support reviews",social-proof,0,all
+"it-era vs nexsys milano",assistenza-it,competitor,milano,commercial,3,comparison,/confronto/it-era-vs-nexsys,35,low,"Competitor comparison",competitive,0,all
+"it-era recensioni clienti milano",assistenza-it,brand,milano,informational,2,brand,/recensioni/it-era-milano,85,low,"Brand reputation",social-proof,0,all
+"assistenza computer emergenza milano",assistenza-it,emergenza,milano,transactional,1,urgent,/emergenza/assistenza-computer,180,low,"Emergency computer support",urgency,0,all
+"supporto it 24h milano",assistenza-it,24h,milano,transactional,1,urgent,/supporto-24h/milano,95,low,"24/7 IT support",urgency,0,business
+"intervento urgente computer milano",assistenza-it,urgente,milano,transactional,1,urgent,/intervento-urgente/milano,65,low,"Urgent computer intervention",urgency,+50,all
+"cyber attack recovery milano",sicurezza-informatica,recovery,milano,transactional,1,emergency,/cyber-recovery/milano,25,low,"Cyber attack recovery",cyber-emergency,+75,all
+"ransomware rimozione milano",sicurezza-informatica,ransomware-removal,milano,transactional,1,emergency,/ransomware-removal/milano,45,low,"Ransomware removal",cyber-emergency,+60,all
+"disaster recovery test milano",cloud-storage,dr-test,milano,commercial,2,service,/servizi/disaster-recovery-test,35,low,"DR testing",cloud-continuity,+40,business
+"voice search: assistenza computer vicino a me",assistenza-it,voice-local,all,local,1,local,/trova-assistenza-locale,450,medium,"Voice search local",voice-local,0,all
+"voice search: backup aziendale migliore",cloud-storage,voice-best,all,voice,2,voice,/migliori-servizi-backup,180,low,"Voice search best",voice-commercial,0,business
+"voice search: cybersecurity azienda",sicurezza-informatica,voice-business,all,voice,2,voice,/cybersecurity-aziendale,220,medium,"Voice search business",voice-commercial,0,business
+"voice search: supporto it urgente",assistenza-it,voice-urgent,all,voice,1,voice,/supporto-urgente,95,low,"Voice search urgent",voice-urgent,0,all

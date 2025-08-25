@@ -15,12 +15,12 @@
     "datePublished": "2025-08-23",
     "author": {"@type": "Organization", "name": "IT-ERA Bulltech"},
     "publisher": {"@type": "Organization", "name": "IT-ERA Bulltech"},
-    "image": "https://it-era.pages.dev/static/img/cover/cybersecurity-lecco-2025.jpg"
+    "image": "https://it-era.it/static/img/cover/cybersecurity-lecco-2025.jpg"
   },
   "tags": ["cybersecurity", "lecco", "backup", "watchguard", "bitdefender"],
-  "canonical": "https://it-era.pages.dev/pages/blog/cybersecurity-pmi-lecco-guida-2025.html",
+  "canonical": "https://it-era.it/pages/blog/cybersecurity-pmi-lecco-guida-2025.html",
   "cover": {
-    "url": "https://it-era.pages.dev/static/img/cover/cybersecurity-lecco-2025.jpg",
+    "url": "https://it-era.it/static/img/cover/cybersecurity-lecco-2025.jpg",
     "alt": "Tecnico IT-ERA configura un firewall WatchGuard presso una PMI di Lecco"
   },
   "internal_links": [

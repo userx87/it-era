@@ -2,14 +2,14 @@
   "projectName": "IT-ERA Chatbot",
   "projectPath": "/Users/andreapanzeri/progetti/IT-ERA/api",
   "testType": "frontend",
-  "targetUrl": "https://it-era.pages.dev/",
+  "targetUrl": "https://it-era.it/",
   "apiEndpoint": "https://it-era-chatbot-prod.bulltech.workers.dev/api/chat",
   "testScenarios": [
     {
       "name": "Check Chatbot Presence",
       "description": "Verify if chatbot widget exists on the page",
       "steps": [
-        "Navigate to https://it-era.pages.dev/",
+        "Navigate to https://it-era.it/",
         "Check for element with id 'it-era-chatbot-button'",
         "Check for element with id 'it-era-chatbot-container'"
       ]

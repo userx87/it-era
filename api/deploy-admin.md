@@ -275,7 +275,7 @@ CORS is configured to allow admin panel access:
 
 ## Integration with Admin Panel
 
-The admin panel at https://it-era.pages.dev/admin/ should be configured to use:
+The admin panel at https://it-era.it/admin/ should be configured to use:
 - API Base URL: `https://your-api-url/admin/api`
 - Authentication: JWT tokens in Authorization header
 - CORS: Ensure admin panel domain is allowed

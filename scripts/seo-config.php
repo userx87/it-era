@@ -7,7 +7,7 @@
 return [
     // Site configuration
     'site' => [
-        'url' => 'https://it-era.pages.dev',
+        'url' => 'https://it-era.it',
         'name' => 'IT-ERA - Assistenza Informatica Professionale',
         'description' => 'Servizi di assistenza informatica, sicurezza informatica e cloud storage per aziende e privati in Lombardia',
         'contact' => [

@@ -2,7 +2,7 @@
 
 ## 🚀 Quick Deploy
 
-The authentication endpoint is now ready to deploy and fix the 404 error at `https://it-era.pages.dev/admin/api/auth/login`.
+The authentication endpoint is now ready to deploy and fix the 404 error at `https://it-era.it/admin/api/auth/login`.
 
 ### Step 1: Deploy the Authentication Worker
 
@@ -21,7 +21,7 @@ cd /Users/andreapanzeri/progetti/IT-ERA/api
 node tests/auth-test.js prod
 
 # Manual test with curl
-curl -X POST "https://it-era.pages.dev/admin/api/auth/login" \
+curl -X POST "https://it-era.it/admin/api/auth/login" \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@it-era.it","password":"admin123!"}'
 ```
@@ -87,7 +87,7 @@ wrangler secret put RATE_LIMIT_KEY --name it-era-admin-auth
 ### CORS Configuration
 
 Pre-configured for:
-- Origin: `https://it-era.pages.dev`
+- Origin: `https://it-era.it`
 - Methods: `GET, POST, PUT, DELETE, OPTIONS`
 - Headers: `Content-Type, Authorization, X-Requested-With`
 
@@ -107,22 +107,22 @@ node tests/auth-test.js dev
 
 1. **Login Test:**
    ```bash
-   curl -X POST "https://it-era.pages.dev/admin/api/auth/login" \
+   curl -X POST "https://it-era.it/admin/api/auth/login" \
      -H "Content-Type: application/json" \
      -d '{"email":"admin@it-era.it","password":"admin123!"}'
    ```
 
 2. **Token Verification:**
    ```bash
-   curl -X POST "https://it-era.pages.dev/admin/api/auth/verify" \
+   curl -X POST "https://it-era.it/admin/api/auth/verify" \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer YOUR_TOKEN_HERE"
    ```
 
 3. **CORS Test:**
    ```bash
-   curl -X OPTIONS "https://it-era.pages.dev/admin/api/auth/login" \
-     -H "Origin: https://it-era.pages.dev" \
+   curl -X OPTIONS "https://it-era.it/admin/api/auth/login" \
+     -H "Origin: https://it-era.it" \
      -H "Access-Control-Request-Method: POST"
    ```
 
@@ -162,7 +162,7 @@ node tests/auth-test.js dev
 ### 404 Error Still Occurs
 - Verify the worker is deployed to the correct route
 - Check the Cloudflare Workers dashboard
-- Ensure the route pattern matches: `it-era.pages.dev/admin/api/auth/*`
+- Ensure the route pattern matches: `it-era.it/admin/api/auth/*`
 
 ### Authentication Fails
 - Check JWT_SECRET is properly configured

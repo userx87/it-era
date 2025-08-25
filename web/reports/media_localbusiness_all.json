@@ -62,24 +62,24 @@
       "comune": "Monza",
       "slug": "monza",
       "provincia": "Monza e Brianza",
-      "image_url": "https://it-era.pages.dev/static/images/it-support-monza-hero.svg",
-      "page_url": "https://it-era.pages.dev/pages-draft/assistenza-it-monza.html",
+      "image_url": "https://it-era.it/static/images/it-support-monza-hero.svg",
+      "page_url": "https://it-era.it/pages-draft/assistenza-it-monza.html",
       "alt_text": "Assistenza IT per PMI a Monza - Tecnico IT-ERA al lavoro su server e sistemi informatici"
     },
     {
       "comune": "Arcore",
       "slug": "arcore",
       "provincia": "Monza e Brianza",
-      "image_url": "https://it-era.pages.dev/static/images/it-support-arcore-hero.svg",
-      "page_url": "https://it-era.pages.dev/pages-draft/assistenza-it-arcore.html",
+      "image_url": "https://it-era.it/static/images/it-support-arcore-hero.svg",
+      "page_url": "https://it-era.it/pages-draft/assistenza-it-arcore.html",
       "alt_text": "Assistenza IT per PMI a Arcore - Tecnico IT-ERA al lavoro su server e sistemi informatici"
     },
     {
       "comune": "Milano",
       "slug": "milano",
       "provincia": "Milano",
-      "image_url": "https://it-era.pages.dev/static/images/it-support-milano-hero.svg",
-      "page_url": "https://it-era.pages.dev/pages-draft/assistenza-it-milano.html",
+      "image_url": "https://it-era.it/static/images/it-support-milano-hero.svg",
+      "page_url": "https://it-era.it/pages-draft/assistenza-it-milano.html",
       "alt_text": "Assistenza IT per PMI a Milano - Tecnico IT-ERA al lavoro su server e sistemi informatici"
     }
   ],

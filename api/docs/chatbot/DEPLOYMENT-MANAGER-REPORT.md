@@ -39,7 +39,7 @@ Il sistema chatbot IT-ERA è pronto per il deployment in production. Sono state 
 - **CORS Origins**: Configurati per tutti i domini IT-ERA
   - `https://www.it-era.it`
   - `https://it-era.it`
-  - `https://it-era.pages.dev`
+  - `https://it-era.it`
 - **Environment Variables**: Configurate per dev, staging, production
 
 ### 5. Test Locale Pre-Deployment

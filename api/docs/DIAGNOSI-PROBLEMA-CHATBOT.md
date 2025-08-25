@@ -2,7 +2,7 @@
 
 **Data Analisi**: 2025-08-24  
 **Analista**: Claude Code con Testsprite/Puppeteer  
-**Sito Web**: https://it-era.pages.dev/  
+**Sito Web**: https://it-era.it/  
 **API Chatbot**: https://it-era-chatbot-prod.bulltech.workers.dev/api/chat  
 
 ---
@@ -12,7 +12,7 @@
 ### ❌ **IL CHATBOT NON È INSTALLATO SUL SITO WEB**
 
 Il test con Puppeteer ha confermato che:
-1. **Il codice del chatbot NON è presente** su https://it-era.pages.dev/
+1. **Il codice del chatbot NON è presente** su https://it-era.it/
 2. **Nessun elemento HTML del chatbot** trovato (`#it-era-chatbot-button` non esiste)
 3. **Nessuno script del chatbot** caricato nella pagina
 
@@ -23,7 +23,7 @@ Test API Diretti - TUTTI FUNZIONANTI ✅
 ├── GET /health → 200 OK 
 ├── POST /api/chat (start) → 200 OK con messaggio di benvenuto
 ├── POST /api/chat (message) → 200 OK con risposte corrette
-└── CORS per it-era.pages.dev → Configurato correttamente
+└── CORS per it-era.it → Configurato correttamente
 
 Test Puppeteer sul Sito Live - PROBLEMA TROVATO ❌
 ├── Chatbot button: NON TROVATO
@@ -45,7 +45,7 @@ Test Puppeteer sul Sito Live - PROBLEMA TROVATO ❌
 
 2. **Copiare TUTTO il contenuto del file** (dal commento iniziale fino alla fine)
 
-3. **Incollare il codice nelle pagine del sito** `https://it-era.pages.dev/`
+3. **Incollare il codice nelle pagine del sito** `https://it-era.it/`
    - Posizione: **Prima del tag `</body>`**
    - Applicare a: **TUTTE le pagine del sito**
 
@@ -53,7 +53,7 @@ Test Puppeteer sul Sito Live - PROBLEMA TROVATO ❌
 
 Il chatbot è **completamente funzionante** con:
 - ✅ **Endpoint API**: `https://it-era-chatbot-prod.bulltech.workers.dev/api/chat`
-- ✅ **CORS configurato** per: `https://it-era.pages.dev`
+- ✅ **CORS configurato** per: `https://it-era.it`
 - ✅ **Teams Webhook**: Configurato e funzionante
 - ✅ **Knowledge Base**: Dati IT-ERA integrati
 - ✅ **Fallback System**: Attivo per alta disponibilità
@@ -99,8 +99,8 @@ curl -X POST https://it-era-chatbot-prod.bulltech.workers.dev/api/chat \
 
 ### Test 2: Sito Web con Puppeteer ❌
 ```javascript
-// Test su https://it-era.pages.dev/
-await page.goto('https://it-era.pages.dev/');
+// Test su https://it-era.it/
+await page.goto('https://it-era.it/');
 const chatbotButton = await page.$('#it-era-chatbot-button');
 // Risultato: null ❌ - Non trovato
 ```
@@ -108,10 +108,10 @@ const chatbotButton = await page.$('#it-era-chatbot-button');
 ### Test 3: CORS Configuration ✅
 ```bash
 curl -X POST https://it-era-chatbot-prod.bulltech.workers.dev/api/chat \
-  -H "Origin: https://it-era.pages.dev" \
+  -H "Origin: https://it-era.it" \
   -H "Content-Type: application/json" \
   -d '{"action":"start"}'
-# Risultato: Access-Control-Allow-Origin: https://it-era.pages.dev ✅
+# Risultato: Access-Control-Allow-Origin: https://it-era.it ✅
 ```
 
 ---
@@ -127,7 +127,7 @@ curl -X POST https://it-era-chatbot-prod.bulltech.workers.dev/api/chat \
 
 ### Cosa Fare Ora:
 1. **Installa il codice** dal file `CODICE-COPIA-INCOLLA.html`
-2. **Pubblica le modifiche** su https://it-era.pages.dev/
+2. **Pubblica le modifiche** su https://it-era.it/
 3. **Testa il chatbot** - funzionerà perfettamente!
 
 ---

@@ -60,7 +60,7 @@ class SEOMonitoringSystem
     /**
      * Run comprehensive website monitoring
      */
-    public function runFullMonitoring(string $baseUrl = 'https://it-era.pages.dev'): array
+    public function runFullMonitoring(string $baseUrl = 'https://it-era.it'): array
     {
         $this->logger->log("Starting full SEO monitoring for: {$baseUrl}", SEOErrorHandler::LOG_INFO);
         
@@ -282,7 +282,7 @@ class SEOMonitoringSystem
                 'http' => [
                     'method' => 'GET',
                     'header' => [
-                        'User-Agent: IT-ERA-SEO-Monitor/1.0 (+https://it-era.pages.dev)'
+                        'User-Agent: IT-ERA-SEO-Monitor/1.0 (+https://it-era.it)'
                     ],
                     'timeout' => 30
                 ]
@@ -810,7 +810,7 @@ if (PHP_SAPI === 'cli') {
     $monitor = new SEOMonitoringSystem();
     
     $command = $argv[1] ?? 'help';
-    $url = $argv[2] ?? 'https://it-era.pages.dev';
+    $url = $argv[2] ?? 'https://it-era.it';
     
     switch ($command) {
         case 'full':

@@ -2,7 +2,7 @@
 
 **Test Date:** August 25, 2025  
 **Testing Duration:** 52+ minutes  
-**URLs Tested:** https://it-era.pages.dev (staging), https://www.it-era.it (production - connection issues)  
+**URLs Tested:** https://it-era.it (staging), https://www.it-era.it (production - connection issues)  
 **Test Types:** Comprehensive Production Testing, Emergency Scenarios, Manual Interaction
 
 ---
@@ -11,7 +11,7 @@
 
 ### ✅ **CHATBOT IS OPERATIONAL AND FUNCTIONAL**
 
-The IT-ERA chatbot has been successfully tested on the staging environment (it-era.pages.dev) with comprehensive validation of core functionality, security, and user experience.
+The IT-ERA chatbot has been successfully tested on the staging environment (it-era.it) with comprehensive validation of core functionality, security, and user experience.
 
 ### 📊 **KEY FINDINGS**
 

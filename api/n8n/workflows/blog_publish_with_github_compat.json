@@ -21,7 +21,7 @@
             { "name": "owner", "value": "OWNER_PLACEHOLDER" },
             { "name": "repo", "value": "REPO_PLACEHOLDER" },
             { "name": "branch", "value": "main" },
-            { "name": "baseUrlDomain", "value": "https://it-era.pages.dev" }
+            { "name": "baseUrlDomain", "value": "https://it-era.it" }
           ]
         }
       },

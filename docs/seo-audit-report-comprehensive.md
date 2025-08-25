@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-**Website:** IT-ERA (https://it-era.pages.dev/)  
+**Website:** IT-ERA (https://it-era.it/)  
 **Audit Date:** August 24, 2025  
 **Pages Analyzed:** 6,032 HTML files  
 **Overall SEO Health:** ⚠️ **NEEDS IMPROVEMENT**

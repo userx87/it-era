@@ -30,7 +30,7 @@ Imposta le seguenti variabili in Cloudflare Pages → Settings → Environment V
 - `GITHUB_OWNER`: owner del repo (es. `bulltech-it`)
 - `GITHUB_REPO`: nome repo (es. `it-era-site`)
 - `GITHUB_BRANCH` (opzionale): branch di build (default `main`)
-- `SITE_BASE_URL` (opzionale): base URL del sito (default `https://it-era.pages.dev`)
+- `SITE_BASE_URL` (opzionale): base URL del sito (default `https://it-era.it`)
 - `BLOG_DIR` (opzionale): cartella dei post (default `web/pages/blog`)
 - `SITEMAP_PATH` (opzionale): path della sitemap (default `web/sitemap.xml`)
 
@@ -97,7 +97,7 @@ read -s GITHUB_TOKEN; echo
 export GITHUB_OWNER="<owner>"
 export GITHUB_REPO="<repo>"
 export GITHUB_BRANCH="main"
-export SITE_BASE_URL="https://it-era.pages.dev"
+export SITE_BASE_URL="https://it-era.it"
 export BLOG_DIR="web/pages/blog"
 export SITEMAP_PATH="web/sitemap.xml"
 ```
@@ -133,7 +133,7 @@ Note:
 Esegui una POST verso l’endpoint (sostituisci `{{BLOG_API_KEY}}` con la tua chiave):
 
 ```bash
-curl -sS -X POST "https://it-era.pages.dev/api/blog/publish" \
+curl -sS -X POST "https://it-era.it/api/blog/publish" \
   -H "Authorization: Bearer {{BLOG_API_KEY}}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -151,18 +151,18 @@ curl -sS -X POST "https://it-era.pages.dev/api/blog/publish" \
       "headline": "Backup 3-2-1 per PMI a Lecco",
       "datePublished": "2025-08-23"
     },
-    "cover": { "url": "https://it-era.pages.dev/static/images/backup-cover.jpg" },
+    "cover": { "url": "https://it-era.it/static/images/backup-cover.jpg" },
     "commit_message": "feat(blog): publish prova-articolo-lecco"
   }'
 ```
 
-Risposta attesa: `{"status":"ok","url":"https://it-era.pages.dev/pages/blog/prova-articolo-lecco.html"}`
+Risposta attesa: `{"status":"ok","url":"https://it-era.it/pages/blog/prova-articolo-lecco.html"}`
 
 ## 7) Verifiche post-deploy
 - Repository GitHub: verifica i commit creati su:
   - `web/pages/blog/{slug}.html`
   - `web/sitemap.xml` (dovrebbe includere `<loc>.../{slug}.html</loc>` con `<lastmod>` aggiornato)
-- Sito live: visita `https://it-era.pages.dev/pages/blog/{slug}.html`
+- Sito live: visita `https://it-era.it/pages/blog/{slug}.html`
 
 ## 8) Log & debug
 - Cloudflare Pages → Deployments → apri l’ultimo deployment → “View functions logs” per tracciare richieste e risposte dell’endpoint.

@@ -1,0 +1,1366 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2025-01-25 13:00:00",
+  "containerVersion": {
+    "path": "accounts/123456789/containers/12345678/versions/1",
+    "accountId": "123456789",
+    "containerId": "12345678",
+    "containerVersionId": "1",
+    "name": "IT-ERA Analytics Configuration v1.0",
+    "description": "Complete tracking setup for IT-ERA services across Lombardy",
+    "container": {
+      "path": "accounts/123456789/containers/12345678",
+      "accountId": "123456789",
+      "containerId": "12345678",
+      "name": "IT-ERA Website",
+      "publicId": "GTM-XXXXXX",
+      "usageContext": ["WEB"],
+      "fingerprint": "1736944800000",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/123456789/containers/12345678/workspaces?apiLink=container"
+    },
+    "tag": [
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "1",
+        "name": "GA4 Configuration",
+        "type": "gaawc",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "measurementId",
+            "value": "G-XXXXXXXXXX"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendPageView",
+            "value": "true"
+          },
+          {
+            "type": "LIST",
+            "key": "customParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "custom_map.service"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Service Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "custom_map.city"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{City Name}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "custom_map.region"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Region}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "custom_map.source"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Attribution Source}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800001",
+        "firingTriggerId": ["2", "3", "4", "5", "6", "7", "8", "9"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "2",
+        "name": "IT-ERA Form Submit Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "form_submit"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "form_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Form Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "service"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Service Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "city"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{City Name}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "lead_score"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Lead Score}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "source"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Attribution Source}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800002",
+        "firingTriggerId": ["10"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "3",
+        "name": "IT-ERA Phone Click Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "phone_click"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "phone_number"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Phone Number}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "click_location"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Click Location}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "service_context"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Service Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "urgency_level"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Urgency Level}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "150"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800003",
+        "firingTriggerId": ["11"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "4",
+        "name": "IT-ERA Email Click Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "email_click"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "email_address"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Email Address}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "click_location"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Click Location}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "intent"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Email Intent}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "75"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800004",
+        "firingTriggerId": ["12"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "5",
+        "name": "IT-ERA WhatsApp Click Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "whatsapp_click"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "click_location"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Click Location}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "message_preset"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{WhatsApp Message Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "service_context"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Service Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "100"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800005",
+        "firingTriggerId": ["13"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "6",
+        "name": "IT-ERA Scroll Depth Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "scroll_depth"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "depth_percentage"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Scroll Depth}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "service"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Service Type}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800006",
+        "firingTriggerId": ["14"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "7",
+        "name": "IT-ERA Download Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "download_resource"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "resource_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Resource Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "resource_name"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Resource Name}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "25"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800007",
+        "firingTriggerId": ["15"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "8",
+        "name": "IT-ERA Chatbot Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "chatbot_open"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "service_context"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Service Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "time_on_page"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Time on Page}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800008",
+        "firingTriggerId": ["16"]
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "tagId": "9",
+        "name": "IT-ERA Conversion Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "conversion"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "conversion_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Conversion Type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Conversion Value}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "currency"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "EUR"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800009",
+        "firingTriggerId": ["17"]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "2",
+        "name": "All Pages",
+        "type": "PAGEVIEW",
+        "fingerprint": "1736944800010"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "3",
+        "name": "Assistenza IT Pages",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "assistenza-it"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800011"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "4",
+        "name": "Cloud Storage Pages",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cloud-storage"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800012"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "5",
+        "name": "Sicurezza Informatica Pages",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "sicurezza-informatica"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800013"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "6",
+        "name": "City Pages Milano",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "milano"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800014"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "7",
+        "name": "City Pages Monza",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "monza"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800015"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "8",
+        "name": "City Pages Bergamo",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "bergamo"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800016"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "9",
+        "name": "City Pages Como-Lecco",
+        "type": "PAGEVIEW",
+        "filter": [
+          {
+            "type": "REGEX",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "(como|lecco)"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800017"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "10",
+        "name": "Custom Event - IT-ERA Form Submit",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_form_submit"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800018"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "11",
+        "name": "Custom Event - IT-ERA Phone Click",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_phone_click"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800019"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "12",
+        "name": "Custom Event - IT-ERA Email Click",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_email_click"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800020"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "13",
+        "name": "Custom Event - IT-ERA WhatsApp Click",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_whatsapp_click"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800021"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "14",
+        "name": "Custom Event - IT-ERA Scroll Depth",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_scroll_depth"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800022"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "15",
+        "name": "Custom Event - IT-ERA Download",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_download_resource"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800023"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "16",
+        "name": "Custom Event - IT-ERA Chatbot",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_chatbot_open"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800024"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "triggerId": "17",
+        "name": "Custom Event - IT-ERA Conversion",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "itera_conversion"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1736944800025"
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "1",
+        "name": "Service Type",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  var path = {{Page Path}};\n  if (path.indexOf('assistenza-it') > -1) return 'assistenza_it';\n  if (path.indexOf('cloud-storage') > -1) return 'cloud_storage';\n  if (path.indexOf('sicurezza-informatica') > -1) return 'sicurezza_informatica';\n  if (path.indexOf('contatti') > -1) return 'contatti';\n  return 'homepage';\n}"
+          }
+        ],
+        "fingerprint": "1736944800026"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "2",
+        "name": "City Name",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  var path = {{Page Path}};\n  var match = path.match(/-(\\w+)\\.html$/);\n  if (match) {\n    return match[1].replace(/-/g, ' ').replace(/\\b\\w/g, function(l) { return l.toUpperCase(); });\n  }\n  return null;\n}"
+          }
+        ],
+        "fingerprint": "1736944800027"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "3",
+        "name": "Region",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  var cityRegionMap = {\n    'milano': 'Milano Metro',\n    'monza': 'Monza-Brianza',\n    'bergamo': 'Bergamo',\n    'como': 'Como-Lecco',\n    'lecco': 'Como-Lecco',\n    'vimercate': 'Monza-Brianza'\n  };\n  var city = {{City Name}};\n  if (city) {\n    var cityKey = city.toLowerCase().replace(/\\s+/g, '-');\n    return cityRegionMap[cityKey] || 'Lombardia';\n  }\n  return 'Lombardia';\n}"
+          }
+        ],
+        "fingerprint": "1736944800028"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "4",
+        "name": "Attribution Source",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  // First check URL parameters\n  var urlParams = new URLSearchParams(window.location.search);\n  var srcParam = urlParams.get('src');\n  if (srcParam) return srcParam;\n  \n  var utmSource = urlParams.get('utm_source');\n  if (utmSource) return utmSource;\n  \n  // Referrer-based detection\n  var referrer = document.referrer;\n  if (!referrer) return 'direct';\n  \n  try {\n    var referrerDomain = new URL(referrer).hostname;\n    if (referrerDomain === window.location.hostname) return 'internal';\n    if (referrerDomain.indexOf('google') > -1) return 'organic_google';\n    if (referrerDomain.indexOf('facebook') > -1) return 'social_facebook';\n    if (referrerDomain.indexOf('linkedin') > -1) return 'social_linkedin';\n    return 'referral_' + referrerDomain;\n  } catch (e) {\n    return 'unknown';\n  }\n}"
+          }
+        ],
+        "fingerprint": "1736944800029"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "5",
+        "name": "Form Type",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.form_type}} || 'unknown';\n}"
+          }
+        ],
+        "fingerprint": "1736944800030"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "6",
+        "name": "Lead Score",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.lead_score}} || 0;\n}"
+          }
+        ],
+        "fingerprint": "1736944800031"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "7",
+        "name": "Phone Number",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.phone_number}} || '039-888-2041';\n}"
+          }
+        ],
+        "fingerprint": "1736944800032"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "8",
+        "name": "Click Location",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.click_location}} || 'unknown';\n}"
+          }
+        ],
+        "fingerprint": "1736944800033"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "9",
+        "name": "Urgency Level",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.urgency_level}} || 'normal';\n}"
+          }
+        ],
+        "fingerprint": "1736944800034"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "10",
+        "name": "Email Address",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.email_address}} || 'info@it-era.it';\n}"
+          }
+        ],
+        "fingerprint": "1736944800035"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "11",
+        "name": "Email Intent",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.intent}} || 'general';\n}"
+          }
+        ],
+        "fingerprint": "1736944800036"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "12",
+        "name": "WhatsApp Message Type",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.message_preset}} || 'general_inquiry';\n}"
+          }
+        ],
+        "fingerprint": "1736944800037"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "13",
+        "name": "Scroll Depth",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.depth_percentage}} || 0;\n}"
+          }
+        ],
+        "fingerprint": "1736944800038"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "14",
+        "name": "Resource Type",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.resource_type}} || 'unknown';\n}"
+          }
+        ],
+        "fingerprint": "1736944800039"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "15",
+        "name": "Resource Name",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.resource_name}} || 'unknown';\n}"
+          }
+        ],
+        "fingerprint": "1736944800040"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "16",
+        "name": "Time on Page",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.time_on_page}} || 0;\n}"
+          }
+        ],
+        "fingerprint": "1736944800041"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "17",
+        "name": "Conversion Type",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.conversion_type}} || 'unknown';\n}"
+          }
+        ],
+        "fingerprint": "1736944800042"
+      },
+      {
+        "accountId": "123456789",
+        "containerId": "12345678",
+        "variableId": "18",
+        "name": "Conversion Value",
+        "type": "jsm",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "javascript",
+            "value": "function() {\n  return {{eventData.conversion_value}} || 0;\n}"
+          }
+        ],
+        "fingerprint": "1736944800043"
+      }
+    ],
+    "fingerprint": "1736944800044",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/123456789/containers/12345678/versions/1?apiLink=version"
+  }
+}

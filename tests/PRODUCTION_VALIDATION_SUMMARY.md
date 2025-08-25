@@ -2,7 +2,7 @@
 ## IT-ERA Chatbot System - Live Site Analysis
 
 **Validation Date:** 2025-01-25  
-**Target Site:** https://it-era.pages.dev/  
+**Target Site:** https://it-era.it/  
 **Validator:** Production Validation Specialist  
 
 ---

@@ -214,7 +214,7 @@ Add sections for:
   },
   "telephone": "039 888 2041",
   "email": "info@it-era.it",
-  "url": "https://it-era.pages.dev",
+  "url": "https://it-era.it",
   "areaServed": ["{{CITY}}", "{{REGION}}"],
   "serviceType": ["{{SERVICE_TYPE}}"],
   "hasOfferCatalog": {

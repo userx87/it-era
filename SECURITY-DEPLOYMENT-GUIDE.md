@@ -113,7 +113,7 @@ npx wrangler secret put WEBHOOK_SECRET
 
 ### Staging Environment  
 - **Worker Name**: `it-era-auth-staging`
-- **URL**: `https://auth-staging.it-era.pages.dev`
+- **URL**: `https://auth-staging.it-era.it`
 - **CORS Origins**: Staging domains + production domains
 - **Security Level**: High
 

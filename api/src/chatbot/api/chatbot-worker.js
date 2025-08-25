@@ -35,7 +35,7 @@ const CONFIG = {
   AI_RATE_LIMIT: 10, // AI calls per minute per session
   
   // Email integration (preserved from existing system)
-  EMAIL_API_ENDPOINT: 'https://it-era-email.bulltech.workers.dev/api/contact',
+  EMAIL_API_ENDPOINT: 'https://it-era.it/api/contact',
   
   // Performance settings - OPTIMIZED for speed
   RESPONSE_TIMEOUT: 3000, // 3 seconds max response time (reduced from 8s)
@@ -44,8 +44,8 @@ const CONFIG = {
   
   // CORS settings
   ALLOWED_ORIGINS: [
-    'https://www.it-era.it',
-    'https://it-era.it', 
+    'https://it-era.it',         // Primary domain without www
+    'https://www.it-era.it',     // www variant
     'https://it-era.pages.dev',
     'http://localhost:3000',
     'http://localhost:8788',

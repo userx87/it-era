@@ -80,7 +80,7 @@ apiEndpoint: options.apiEndpoint ||
 Add to `wrangler-chatbot.toml`:
 ```toml
 [env.production.vars]
-ALLOWED_ORIGINS = "https://it-era.it,https://www.it-era.it,https://it-era.pages.dev"
+ALLOWED_ORIGINS = "https://it-era.it,https://www.it-era.it,https://it-era.it"
 ```
 
 ### 3. Configure Monitoring (Recommended)

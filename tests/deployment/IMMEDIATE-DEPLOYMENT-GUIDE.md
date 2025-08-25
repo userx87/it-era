@@ -62,7 +62,7 @@ const CONFIG = {
   
   // CORS settings
   ALLOWED_ORIGINS: [
-    'https://it-era.pages.dev',
+    'https://it-era.it',
     'https://www.it-era.it',
     'https://it-era.it', 
     'https://bulltech.it',

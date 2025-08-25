@@ -26,7 +26,7 @@
   },
   "deploy_data": {
     "status": "success",
-    "domain": "it-era.pages.dev",
+    "domain": "it-era.it",
     "commit_sha": "ec58398a318a91ab85eedd4ade0c2cb66b018415",
     "cache_invalidated": [
       "/pages/*",
@@ -38,132 +38,132 @@
       "comune": "Albino",
       "provincia": "Bergamo",
       "slug": "albino",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-albino.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-albino.html"
     },
     {
       "comune": "Almenno San Bartolomeo",
       "provincia": "Bergamo",
       "slug": "almenno-san-bartolomeo",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-almenno-san-bartolomeo.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-almenno-san-bartolomeo.html"
     },
     {
       "comune": "Alzano Lombardo",
       "provincia": "Bergamo",
       "slug": "alzano-lombardo",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-alzano-lombardo.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-alzano-lombardo.html"
     },
     {
       "comune": "Bergamo",
       "provincia": "Bergamo",
       "slug": "bergamo",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-bergamo.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-bergamo.html"
     },
     {
       "comune": "Caravaggio",
       "provincia": "Bergamo",
       "slug": "caravaggio",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-caravaggio.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-caravaggio.html"
     },
     {
       "comune": "Casnigo",
       "provincia": "Bergamo",
       "slug": "casnigo",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-casnigo.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-casnigo.html"
     },
     {
       "comune": "Castione Della Presolana",
       "provincia": "Bergamo",
       "slug": "castione-della-presolana",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-castione-della-presolana.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-castione-della-presolana.html"
     },
     {
       "comune": "Cazzano Sant'Andrea",
       "provincia": "Bergamo",
       "slug": "cazzano-sant-andrea",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-cazzano-sant-andrea.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-cazzano-sant-andrea.html"
     },
     {
       "comune": "Clusone",
       "provincia": "Bergamo",
       "slug": "clusone",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-clusone.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-clusone.html"
     },
     {
       "comune": "Colzate",
       "provincia": "Bergamo",
       "slug": "colzate",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-colzate.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-colzate.html"
     },
     {
       "comune": "Curno",
       "provincia": "Bergamo",
       "slug": "curno",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-curno.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-curno.html"
     },
     {
       "comune": "Dalmine",
       "provincia": "Bergamo",
       "slug": "dalmine",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-dalmine.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-dalmine.html"
     },
     {
       "comune": "Fiorano Al Serio",
       "provincia": "Bergamo",
       "slug": "fiorano-al-serio",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-fiorano-al-serio.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-fiorano-al-serio.html"
     },
     {
       "comune": "Gandino",
       "provincia": "Bergamo",
       "slug": "gandino",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-gandino.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-gandino.html"
     },
     {
       "comune": "Gazzaniga",
       "provincia": "Bergamo",
       "slug": "gazzaniga",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-gazzaniga.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-gazzaniga.html"
     },
     {
       "comune": "Gorle",
       "provincia": "Bergamo",
       "slug": "gorle",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-gorle.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-gorle.html"
     },
     {
       "comune": "Grassobbio",
       "provincia": "Bergamo",
       "slug": "grassobbio",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-grassobbio.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-grassobbio.html"
     },
     {
       "comune": "Leffe",
       "provincia": "Bergamo",
       "slug": "leffe",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-leffe.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-leffe.html"
     },
     {
       "comune": "Mozzo",
       "provincia": "Bergamo",
       "slug": "mozzo",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-mozzo.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-mozzo.html"
     },
     {
       "comune": "Nembro",
       "provincia": "Bergamo",
       "slug": "nembro",
-      "url_production": "https://it-era.pages.dev/pages/assistenza-it-nembro.html"
+      "url_production": "https://it-era.it/pages/assistenza-it-nembro.html"
     }
   ],
   "test_urls": {
-    "homepage": "https://it-era.pages.dev/",
-    "sitemap": "https://it-era.pages.dev/sitemap.xml",
+    "homepage": "https://it-era.it/",
+    "sitemap": "https://it-era.it/sitemap.xml",
     "sample_pages": [
-      "https://it-era.pages.dev/pages/assistenza-it-lecco.html",
-      "https://it-era.pages.dev/pages/assistenza-it-milano.html",
-      "https://it-era.pages.dev/pages/assistenza-it-monza.html",
-      "https://it-era.pages.dev/pages/assistenza-it-bergamo.html",
-      "https://it-era.pages.dev/pages/assistenza-it-como.html"
+      "https://it-era.it/pages/assistenza-it-lecco.html",
+      "https://it-era.it/pages/assistenza-it-milano.html",
+      "https://it-era.it/pages/assistenza-it-monza.html",
+      "https://it-era.it/pages/assistenza-it-bergamo.html",
+      "https://it-era.it/pages/assistenza-it-como.html"
     ]
   },
   "next_steps": [

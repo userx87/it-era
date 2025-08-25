@@ -72,7 +72,7 @@ php google-indexing.php --recent=7 --verbose
 php google-indexing.php --sitemap --verbose
 
 # Check indexing status
-php google-indexing.php --status=https://it-era.pages.dev/pages/assistenza-it-milano.html
+php google-indexing.php --status=https://it-era.it/pages/assistenza-it-milano.html
 ```
 
 #### 3. SEO Monitoring
@@ -93,7 +93,7 @@ php seo-monitor.php --links --verbose
 php structured-data-generator.php --generate-all --verbose
 
 # Generate for specific page
-php structured-data-generator.php --page=https://it-era.pages.dev/pages/assistenza-it-milano.html
+php structured-data-generator.php --page=https://it-era.it/pages/assistenza-it-milano.html
 ```
 
 #### 5. Generate Meta Tags
@@ -167,7 +167,7 @@ Edit `seo-config.php` to customize:
 ```php
 return [
     'site' => [
-        'url' => 'https://it-era.pages.dev',
+        'url' => 'https://it-era.it',
         'name' => 'IT-ERA - Assistenza Informatica Professionale',
         // ... other settings
     ],

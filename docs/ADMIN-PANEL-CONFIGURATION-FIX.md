@@ -2,7 +2,7 @@
 
 ## 🎯 Issue Summary
 
-The IT-ERA admin panel at `https://it-era.pages.dev/admin/` was unable to connect to the blog API due to missing endpoints and configuration issues.
+The IT-ERA admin panel at `https://it-era.it/admin/` was unable to connect to the blog API due to missing endpoints and configuration issues.
 
 ## ✅ Solution Implemented
 
@@ -101,7 +101,7 @@ curl -X POST "https://it-era-blog-api.bulltech.workers.dev/api/auth/login" \
 ```
 
 ### 3. **Admin Panel Test**
-1. Open `https://it-era.pages.dev/admin/`
+1. Open `https://it-era.it/admin/`
 2. Login with `admin@it-era.it` / `admin123`
 3. Dashboard should load with statistics
 4. All menu items should be accessible
@@ -148,7 +148,7 @@ window.itEraDebug.export()
 
 ### Admin Panel
 - **Status**: ✅ Ready
-- **URL**: https://it-era.pages.dev/admin/
+- **URL**: https://it-era.it/admin/
 - **Features**: All endpoints connected
 - **Debug**: Available with Ctrl+Shift+D
 

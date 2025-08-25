@@ -162,7 +162,7 @@ cd /Users/andreapanzeri/progetti/IT-ERA/api
 
 ### Health Check URL
 ```
-https://it-era.pages.dev/admin/api/auth/health
+https://it-era.it/admin/api/auth/health
 ```
 
 ## 🧪 Testing
@@ -176,15 +176,15 @@ node tests/admin-api-test.js
 ### Manual Testing Examples
 ```bash
 # Health check
-curl https://it-era.pages.dev/admin/api/auth/health
+curl https://it-era.it/admin/api/auth/health
 
 # Login
-curl -X POST https://it-era.pages.dev/admin/api/auth/login \
+curl -X POST https://it-era.it/admin/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"admin@it-era.it","password":"admin123"}'
 
 # Dashboard (with token)
-curl -X GET https://it-era.pages.dev/admin/api/dashboard \
+curl -X GET https://it-era.it/admin/api/dashboard \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 

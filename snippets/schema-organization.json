@@ -1,0 +1,153 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IT-ERA",
+  "alternateName": "IT-ERA Srl",
+  "description": "Partner tecnologico specializzato in assistenza IT, sicurezza informatica e cloud storage per PMI in Lombardia. Supporto 24/7 con SLA garantiti.",
+  "url": "https://it-era.it",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://it-era.it/images/logo-it-era.png",
+    "width": 300,
+    "height": 100
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://it-era.it/images/it-era-team.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+39 039 888 2041",
+    "contactType": "customer service",
+    "availableLanguage": "Italian",
+    "areaServed": "IT-LO"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Viale Risorgimento 32",
+    "addressLocality": "Vimercate",
+    "addressRegion": "Lombardia",
+    "postalCode": "20871",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.6111,
+    "longitude": 9.3667
+  },
+  "email": "info@it-era.it",
+  "foundingDate": "2018",
+  "legalName": "IT-ERA Srl",
+  "taxID": "10524040966",
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Lombardia"
+    }
+  ],
+  "serviceArea": [
+    {
+      "@type": "City",
+      "name": "Milano"
+    },
+    {
+      "@type": "City", 
+      "name": "Monza"
+    },
+    {
+      "@type": "City",
+      "name": "Como"
+    },
+    {
+      "@type": "City",
+      "name": "Bergamo"
+    },
+    {
+      "@type": "City",
+      "name": "Lecco"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi IT per Aziende",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Assistenza IT",
+          "description": "Supporto tecnico professionale 24/7 per sistemi informatici aziendali",
+          "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+          }
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sicurezza Informatica",
+          "description": "Soluzioni di cybersecurity per proteggere i dati aziendali",
+          "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Cloud Storage",
+          "description": "Soluzioni cloud sicure per backup e archiviazione dati",
+          "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VoIP e Telefonia Cloud",
+          "description": "Sistemi telefonici cloud per aziende moderne",
+          "provider": {
+            "@type": "Organization",
+            "name": "IT-ERA"
+          }
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/it-era",
+    "https://www.facebook.com/iteraitaly",
+    "https://twitter.com/IT_ERA_Support"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Marco Colombo"
+      },
+      "reviewBody": "Servizio impeccabile. Hanno risolto tutti i nostri problemi IT in tempi record. Consigliatissimi per PMI."
+    }
+  ]
+}

@@ -80,7 +80,7 @@ curl https://it-era-blog-api.bulltech.workers.dev/api/posts
     "title": "Titolo Principale",
     "seo_title": "SEO Title Ottimizzato",
     "slug": "url-slug-seo",
-    "url": "https://it-era.pages.dev/blog/url-slug-seo.html",
+    "url": "https://it-era.it/blog/url-slug-seo.html",
     "published_date": "2025-08-24",
     "category": "Categoria",
     "tags": ["tag1", "tag2"],

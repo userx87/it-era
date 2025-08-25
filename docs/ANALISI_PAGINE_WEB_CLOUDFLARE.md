@@ -7,7 +7,7 @@
 ## ✅ STATO DEPLOYMENT CLOUDFLARE PAGES
 
 ### 🚀 Sito Live e Funzionante
-- **URL Base**: https://it-era.pages.dev/
+- **URL Base**: https://it-era.it/
 - **Status**: ✅ **ONLINE E ACCESSIBILE**
 - **HTTP Status**: 200 OK
 - **CDN**: Cloudflare Global Network
@@ -83,7 +83,7 @@ permissions-policy: geolocation=(), microphone=(), camera=()
 ```html
 ✅ Title: "Assistenza IT Milano | Help Desk e Supporto Sistemistico PMI | IT-ERA"
 ✅ Description: "Assistenza IT per PMI a Milano: help desk H24, SLA 4 ore..."
-✅ Canonical: https://it-era.pages.dev/pages/assistenza-it-milano.html
+✅ Canonical: https://it-era.it/pages/assistenza-it-milano.html
 ✅ OG Tags: Completi con immagine
 ✅ Twitter Card: summary_large_image
 ```

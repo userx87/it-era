@@ -239,7 +239,7 @@ class SEOWebhookHandler
         
         try {
             $payload = $this->getPayload();
-            $urls = $payload['urls'] ?? ['https://it-era.pages.dev/'];
+            $urls = $payload['urls'] ?? ['https://it-era.it/'];
             
             $results = [];
             
@@ -462,7 +462,7 @@ class SEOWebhookHandler
         try {
             $status = [
                 'timestamp' => date('c'),
-                'site_url' => 'https://it-era.pages.dev',
+                'site_url' => 'https://it-era.it',
                 'webhook_version' => '1.0.0',
                 'services' => [
                     'sitemap' => $this->checkSitemapStatus(),
@@ -577,7 +577,7 @@ class SEOWebhookHandler
      */
     private function submitSitemap(): array
     {
-        $sitemapUrl = 'https://it-era.pages.dev/sitemap.xml';
+        $sitemapUrl = 'https://it-era.it/sitemap.xml';
         $results = [];
         
         $submissions = [
@@ -624,7 +624,7 @@ class SEOWebhookHandler
         
         foreach ($files as $file) {
             if (filemtime($file) > $cutoffTime) {
-                $urls[] = 'https://it-era.pages.dev/' . basename($file);
+                $urls[] = 'https://it-era.it/' . basename($file);
             }
         }
         
@@ -800,7 +800,7 @@ class SEOWebhookHandler
             'http' => [
                 'method' => 'GET',
                 'header' => [
-                    'User-Agent: IT-ERA-SEO-Webhook/1.0 (+https://it-era.pages.dev)',
+                    'User-Agent: IT-ERA-SEO-Webhook/1.0 (+https://it-era.it)',
                     'Accept: text/html,application/xml'
                 ],
                 'timeout' => 30

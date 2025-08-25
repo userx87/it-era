@@ -12,7 +12,7 @@ This guide provides comprehensive instructions for integrating the IT-ERA Admin 
 // config/api.js
 const API_CONFIG = {
   baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://it-era.pages.dev/admin/api'
+    ? 'https://it-era.it/admin/api'
     : 'http://localhost:8787/admin/api',
   timeout: 10000,
   retries: 3
@@ -966,7 +966,7 @@ const config = {
     debug: true
   },
   production: {
-    apiBaseURL: 'https://it-era.pages.dev/admin/api',
+    apiBaseURL: 'https://it-era.it/admin/api',
     debug: false
   }
 };

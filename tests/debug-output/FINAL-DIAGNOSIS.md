@@ -3,7 +3,7 @@
 ## 🚨 **CRITICAL FINDING: CHATBOT IS NOT DEPLOYED**
 
 ### Production Site Analysis Results
-- **Site URL**: https://it-era.pages.dev/
+- **Site URL**: https://it-era.it/
 - **Status**: Site loads correctly, all core functionality working
 - **Issue**: **ZERO chatbot elements found**
 

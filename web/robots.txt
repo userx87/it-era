@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.it-era.it/sitemap.xml
+Sitemap: https://it-era.it/sitemap.xml
 
 # Blog specific rules
 Allow: /blog/

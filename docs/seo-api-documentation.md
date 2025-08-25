@@ -65,7 +65,7 @@ python scripts/fix_seo_critical.py [options]
 | Parametro | Tipo | Default | Descrizione |
 |-----------|------|---------|-------------|
 | `--pages-dir` | str | `/web/pages/` | Directory pagine HTML |
-| `--base-url` | str | `https://it-era.pages.dev/pages/` | URL base canonical |
+| `--base-url` | str | `https://it-era.it/pages/` | URL base canonical |
 | `--dry-run` | bool | `false` | Test mode senza modifiche |
 | `--verbose` | bool | `false` | Output dettagliato |
 | `--service-filter` | str | `all` | Filtra per servizio (assistenza-it, cloud-storage, sicurezza-informatica) |
@@ -261,7 +261,7 @@ python scripts/update_sitemap.py [options]
 | Parametro | Tipo | Default | Descrizione |
 |-----------|------|---------|-------------|
 | `--output-file` | str | `/web/sitemap.xml` | File sitemap output |
-| `--base-url` | str | `https://it-era.pages.dev` | URL base |
+| `--base-url` | str | `https://it-era.it` | URL base |
 | `--include-blog` | bool | `true` | Include pagine blog |
 | `--max-urls` | int | `50000` | Limite massimo URLs |
 
@@ -455,7 +455,7 @@ crontab -e
 #### 2. Sitemap Update Settimanale
 ```cron
 # Ogni lunedì alle 01:00  
-0 1 * * 1 cd /Users/andreapanzeri/progetti/IT-ERA && python scripts/update_sitemap.py && curl -X POST "http://www.google.com/ping?sitemap=https://it-era.pages.dev/sitemap.xml"
+0 1 * * 1 cd /Users/andreapanzeri/progetti/IT-ERA && python scripts/update_sitemap.py && curl -X POST "http://www.google.com/ping?sitemap=https://it-era.it/sitemap.xml"
 ```
 
 #### 3. Audit Mensile Completo
@@ -484,7 +484,7 @@ crontab -e
 ```json
 {
   "seo": {
-    "canonical_base": "https://it-era.pages.dev",
+    "canonical_base": "https://it-era.it",
     "ga_measurement_id": "G-XXXXXXXXXX",
     "meta_robots_default": "index, follow",
     "province_fallback": "Monza e Brianza",
@@ -520,7 +520,7 @@ crontab -e
 ### Environment Variables
 ```bash
 # File: .env
-ITERA_BASE_URL=https://it-era.pages.dev
+ITERA_BASE_URL=https://it-era.it
 ITERA_PHONE=039 888 2041
 ITERA_EMAIL=info@it-era.it
 ITERA_ADDRESS="Viale Risorgimento 32, Vimercate MB"

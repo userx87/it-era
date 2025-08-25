@@ -126,7 +126,7 @@ Serve as IT-ERA's first point of digital customer contact, intelligently handlin
 ### 🔄 **User Journey Flow**
 
 ```
-1. Customer visits it-era.pages.dev
+1. Customer visits it-era.it
    ↓
 2. Clicks chatbot (embedded widget)
    ↓

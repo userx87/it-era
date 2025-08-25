@@ -235,7 +235,7 @@ Examples:
 
 #### 3. URL Structure
 ```
-https://it-era.pages.dev/blog/[category]/[keyword-rich-slug]/
+https://it-era.it/blog/[category]/[keyword-rich-slug]/
 
 Examples:
 ✅ /blog/cloud-storage/backup-aziendale-milano-guida-2025/

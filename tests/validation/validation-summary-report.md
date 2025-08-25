@@ -1,7 +1,7 @@
 # IT-ERA Landing Pages Validation Report
 
 **Date:** August 24, 2025  
-**Site:** https://13d750b1.it-era.pages.dev  
+**Site:** https://13d750b1.it-era.it  
 **Pages Tested:** 10 sample pages from 774 total generated pages  
 
 ## 🎯 Executive Summary

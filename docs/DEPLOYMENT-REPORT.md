@@ -11,9 +11,9 @@ The IT-ERA secure admin panel has been successfully deployed to production with 
 
 ## 🔗 Production URLs
 
-- **Admin Panel:** https://it-era.pages.dev/admin/
+- **Admin Panel:** https://it-era.it/admin/
 - **Authentication API:** https://it-era-admin-auth-production.bulltech.workers.dev
-- **Main Website:** https://it-era.pages.dev
+- **Main Website:** https://it-era.it
 
 ## 🔐 Login Credentials
 

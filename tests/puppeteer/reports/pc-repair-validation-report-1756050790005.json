@@ -1,7 +1,7 @@
 {
   "metadata": {
     "testDate": "2025-08-24T15:53:10.005Z",
-    "baseUrl": "https://65e7c6fa.it-era.pages.dev/pages",
+    "baseUrl": "https://65e7c6fa.it-era.it/pages",
     "pagesValidated": 3,
     "totalTests": 0
   },
@@ -16,7 +16,7 @@
     {
       "page": "riparazione-pc-milano.html",
       "city": "Milano",
-      "url": "https://65e7c6fa.it-era.pages.dev/pages/riparazione-pc-milano.html",
+      "url": "https://65e7c6fa.it-era.it/pages/riparazione-pc-milano.html",
       "timestamp": "2025-08-24T15:53:07.038Z",
       "tests": {},
       "performance": {
@@ -34,7 +34,7 @@
     {
       "page": "riparazione-pc-bergamo.html",
       "city": "Bergamo",
-      "url": "https://65e7c6fa.it-era.pages.dev/pages/riparazione-pc-bergamo.html",
+      "url": "https://65e7c6fa.it-era.it/pages/riparazione-pc-bergamo.html",
       "timestamp": "2025-08-24T15:53:08.000Z",
       "tests": {},
       "performance": {
@@ -52,7 +52,7 @@
     {
       "page": "riparazione-pc-segrate.html",
       "city": "Segrate",
-      "url": "https://65e7c6fa.it-era.pages.dev/pages/riparazione-pc-segrate.html",
+      "url": "https://65e7c6fa.it-era.it/pages/riparazione-pc-segrate.html",
       "timestamp": "2025-08-24T15:53:08.992Z",
       "tests": {},
       "performance": {

@@ -23,7 +23,7 @@ const CONFIG = {
   AI_ENABLED: true, // Can be disabled via env var
   
   // Email integration
-  EMAIL_API_ENDPOINT: 'https://it-era-email.bulltech.workers.dev/api/contact',
+  EMAIL_API_ENDPOINT: 'https://it-era.it/api/contact',
   
   // CORS settings
   ALLOWED_ORIGINS: [

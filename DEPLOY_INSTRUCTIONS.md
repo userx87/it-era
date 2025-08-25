@@ -5,8 +5,8 @@
 Il sito è configurato per il deploy automatico su Cloudflare Pages.
 
 ### URL di Produzione
-- **URL temporaneo**: https://it-era.pages.dev
-- **URL di anteprima ultimo deploy**: https://3590e160.it-era.pages.dev
+- **URL temporaneo**: https://it-era.it
+- **URL di anteprima ultimo deploy**: https://3590e160.it-era.it
 
 ### Comandi Disponibili
 

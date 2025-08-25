@@ -19,7 +19,7 @@ Import del workflow n8n
    - owner: organizzazione o utente GitHub (es. bulltech-it)
    - repo: nome repo collegato a Pages (es. it-era-site)
    - branch: branch di build (es. main)
-   - baseUrlDomain: https://it-era.pages.dev
+   - baseUrlDomain: https://it-era.it
    - sitemapPath: web/sitemap.xml (solo workflow con sitemap)
 3) Salva e attiva il workflow (se vuoi URL pubblico). In fase di test usa l’URL di test del Webhook.
 
@@ -50,16 +50,16 @@ Payload atteso (schema)
 Note SEO
 - meta.keywords: non critico per Google, ma mantenuto per coerenza. Consigliate 3–8 keyword, includendo località (es. “cybersecurity Lecco”).
 - meta.description: 150–160 caratteri, naturale, include 1–2 keyword e la località.
-- canonical: punta a https://it-era.pages.dev/pages/blog/{slug}.html.
+- canonical: punta a https://it-era.it/pages/blog/{slug}.html.
 
 Come testare rapidamente
 1) Avvia il workflow in modalità test, copia l’URL del Webhook (POST).
 2) Esegui una POST con l’esempio incluso:
    - Body JSON: examples/blog_payload_example.json
 3) Il workflow creerà/aggiornerà il file in pages/blog/{slug}.html nel repo GitHub.
-4) Se usi la versione con sitemap: verifica che in web/sitemap.xml compaia una nuova entry <url><loc>https://it-era.pages.dev/pages/blog/{slug}.html</loc>...</url> con lastmod aggiornato.
+4) Se usi la versione con sitemap: verifica che in web/sitemap.xml compaia una nuova entry <url><loc>https://it-era.it/pages/blog/{slug}.html</loc>...</url> con lastmod aggiornato.
 5) Cloudflare Pages effettuerà il rebuild; dopo la build l’articolo sarà disponibile a:
-   https://it-era.pages.dev/pages/blog/{slug}.html
+   https://it-era.it/pages/blog/{slug}.html
 
 Template HTML
 - Il workflow incorpora un template interno; in alternativa, puoi usare templates/blog_post_template.html come riferimento.
@@ -75,7 +75,7 @@ Integrazione con context7 (MCP)
 Aggiornare la sitemap (opzionale)
 - Variante semplice: sitemap generata automaticamente da Pages/build.
 - Variante consigliata (inclusa): usare il workflow “blog_publish_with_github_sitemap.json” che aggiorna automaticamente sitemap.xml nel repo.
-- Dettagli: dopo il commit del post, il workflow legge web/sitemap.xml (se esiste), inserisce/aggiorna l’entry per https://it-era.pages.dev/pages/blog/{slug}.html con lastmod=YYYY-MM-DD, quindi effettua un PUT con commit "chore(sitemap): add/update {slug}".
+- Dettagli: dopo il commit del post, il workflow legge web/sitemap.xml (se esiste), inserisce/aggiorna l’entry per https://it-era.it/pages/blog/{slug}.html con lastmod=YYYY-MM-DD, quindi effettua un PUT con commit "chore(sitemap): add/update {slug}".
 
 Troubleshooting
 - 404 su GET file: è normale al primo publish; il workflow gestisce create vs update.

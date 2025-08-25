@@ -1,5 +1,5 @@
 name = "it-era-chatbot"
-main = "src/chatbot/api/chatbot-worker-simple.js"
+main = "src/chatbot/api/chatbot-worker.js"
 compatibility_date = "2024-01-23"
 
 # Account ID Bulltech

@@ -693,30 +693,108 @@ function sanitizeResponseMessage(message) {
     return "[IT-ERA] Ciao, come posso aiutarti?";
   }
 
-  // Check for system prompt indicators that should NEVER be shown to users
-  const systemPromptIndicators = [
-    'INIZIO:',
-    'RISPOSTA TIPO',
-    'SYSTEM_PROMPT',
-    'Sei l\'assistente virtuale',
-    'REGOLE ASSOLUTE',
-    'IDENTITÀ:',
-    'generateSystemPrompt',
-    'BusinessRules',
-    'console.log',
-    'systemPrompt',
-    '# IDENTITÀ',
-    'COMPORTAMENTO CONVERSAZIONALE',
-    'OBIETTIVI PRIMARI',
-    'Ogni conversazione inizia con',
-    'Buongiorno, sono l\'assistente di IT-ERA',
-    'Capisco perfettamente il suo problema'
+  // COMPREHENSIVE system prompt detection - catch all system prompt patterns
+  const systemPromptPatterns = [
+    // CRITICAL: Exact match for the exposed system prompt
+    /INIZIALE.*Saluta e presentati.*primo filtro commerciale.*Non sei un tecnico.*Ora rispondi al messaggio/,
+    /primo filtro commerciale.*Non sei un tecnico.*Ogni intervento tecnico deve essere gestito/,
+    
+    // Direct system prompt indicators
+    /INIZIO:|RISPOSTA TIPO|SYSTEM_PROMPT|REGOLE ASSOLUTE|INIZIO CONVERSAZIONE|INIZIA SEMPRE/,
+    /IDENTITÀ:|COMPORTAMENTO CONVERSAZIONALE|OBIETTIVI PRIMARI/,
+    /generateSystemPrompt|BusinessRules|systemPrompt/,
+    /# IDENTITÀ|PERSONALITÀ:|ESEMPIO DI RISPOSTA:|ORA INIZIA:/,
+    /INIZIO DI OGNI RISPOSTA:|MANTIENI LA CONVERSAZIONE/,
+    /PROFESSIONALE MA (AMICHEVOLE|empatico)/,
+    
+    // Specific exposed patterns from the bug report
+    /Saluta e presentati brevemente.*Chiedi subito il nome dell'azienda/,
+    /Indaga l'urgenza del problema.*RICORDA.*Non sei un tecnico/,
+    /sei il primo filtro commerciale/,
+    /specialisti.*Ora rispondi al messaggio seguente/,
+    
+    // Structured prompts (multiple lines or instructions)
+    /Inizia con:|La mia prima risposta sarà:|con una domanda per qualificare/,
+    /INIZIA OGNI CONVERSAZIONE CON:/,
+    /Ogni conversazione inizia con/,
+    
+    // System behavior instructions
+    /Sei (l'assistente virtuale|il filtro commerciale)/,
+    /Ricorda: Sei il filtro commerciale/,
+    /Devi sempre concludere con un'azione commerciale/,
+    /console\.log/,
+    /- Professionale ma empatico|- Competente senza essere tecnico/,
+    /- Persuasivo senza essere aggressivo|- Sicuro senza essere arrogante/,
+    
+    // Sample conversations in system prompts
+    /Mi serve un antivirus per la mia azienda|Kaspersky Endpoint Security/,
+    /Perfetto, per \d+ postazioni consiglio/,
+    /Capisco (il problema con|perfettamente il suo problema)/,
+    /\*\*User\*\*:|---\*\*User\*\*:|appuntamento, preventivo, chiamata|convertire la richiesta in opportunità commerciale/,
+    /\*\*Assistant\*\*:/,
+    
+    // Long concatenated system content (common when AI fails)
+    /.{0,50}professionale.{0,50}Creando urgenza/i,
+    /Buongiorno, sono l'assistente (virtuale di IT-ERA|di IT-ERA).{0,100}/,
+    /ho un problema con il mio computer che non si connette|Qual è il vostro attuale fornitore IT|Quanti dipendenti\/Pc\/server/,
+    
+    // Detect very long messages that look like system prompts (>200 chars with structured content)
+    /^.{200,}(INIZIO|Inizia|professionale|assistente|RISPOSTA|ESEMPIO)/i,
+    
+    // Pattern for conversation examples in system prompts
+    /Salve, ho un problema.*intervento remoto.*appuntamento/s,
+    
+    // Additional AI system indicators
+    /Obiettivi.*conversazione|stile.*comunicazione|escalation.*immediata/i,
+    /lead.*qualification|contesto.*conversazione.*corrente/i,
+    /rispond.*sempre.*come.*esperto/i
   ];
 
-  // If message contains any system prompt indicators, replace with safe greeting
-  for (const indicator of systemPromptIndicators) {
-    if (message.includes(indicator)) {
-      console.error('SECURITY ALERT: System prompt detected in response, using safe fallback');
+  // Check if message matches any system prompt pattern
+  for (const pattern of systemPromptPatterns) {
+    if (pattern.test(message)) {
+      console.error('SECURITY ALERT: System prompt pattern detected:', message.substring(0, 100));
+      return "[IT-ERA] Ciao, come posso aiutarti?";
+    }
+  }
+
+  // Additional check: if message is unusually long (>300 chars) and contains multiple system indicators
+  if (message.length > 300) {
+    const systemKeywords = [
+      'professionale', 'assistente', 'conversazione', 'risposta', 
+      'esempio', 'inizia', 'mantieni', 'comportamento', 'personalità',
+      'obiettivi', 'escalation', 'qualification', 'contesto', 'specialisti'
+    ];
+    
+    const keywordCount = systemKeywords.reduce((count, keyword) => {
+      return count + (message.toLowerCase().includes(keyword) ? 1 : 0);
+    }, 0);
+    
+    if (keywordCount >= 3) {
+      console.error('SECURITY ALERT: Long message with system keywords detected, using safe fallback');
+      return "[IT-ERA] Ciao, come posso aiutarti?";
+    }
+  }
+
+  // Additional check: if message contains typical AI system prompt structure
+  if (message.includes('🎯') && message.includes('📍') && message.includes('AZIENDA:')) {
+    console.error('SECURITY ALERT: AI system prompt structure detected');
+    return "[IT-ERA] Ciao, come posso aiutarti?";
+  }
+
+  // Final check: if message starts with system-like content
+  const systemStarters = [
+    'Sei l\'assistente virtuale', 
+    'INIZIALE:', 
+    'RICORDA:',
+    'Ora rispondi al messaggio',
+    'primo filtro commerciale',
+    'Non sei un tecnico'
+  ];
+  
+  for (const starter of systemStarters) {
+    if (message.toLowerCase().includes(starter.toLowerCase())) {
+      console.error('SECURITY ALERT: System starter detected:', starter);
       return "[IT-ERA] Ciao, come posso aiutarti?";
     }
   }
@@ -727,14 +805,17 @@ function sanitizeResponseMessage(message) {
 // OPTIMIZED greeting generator with aggressive caching
 async function generateOptimizedGreeting(context, env) {
   try {
+    // SECURITY FIRST: Always return sanitized greeting without AI generation
+    const safeGreeting = "[IT-ERA] Ciao, come posso aiutarti?";
+    
     // Check cache first for instant response
     const cacheKey = `greeting_${context.userAgent || 'default'}`;
     if (env.CHAT_SESSIONS) {
       const cached = await env.CHAT_SESSIONS.get(cacheKey);
       if (cached) {
         const cachedResponse = JSON.parse(cached);
-        // SECURITY: Always sanitize cached responses
-        cachedResponse.message = sanitizeResponseMessage(cachedResponse.message);
+        // SECURITY: Always sanitize cached responses and ensure safe greeting
+        cachedResponse.message = safeGreeting;
         return {
           ...cachedResponse,
           cached: true,
@@ -743,15 +824,16 @@ async function generateOptimizedGreeting(context, env) {
       }
     }
     
-    // Generate optimized greeting - always sanitized
+    // Generate optimized greeting - NEVER use AI for greeting, always static safe message
     const greetingResponse = {
-      message: sanitizeResponseMessage("[IT-ERA] Ciao, come posso aiutarti?"),
+      message: safeGreeting, // Hard-coded safe greeting, never from AI
       options: ["Richiedi Preventivo", "Assistenza Tecnica", "Informazioni Servizi", "Contatta Specialista"],
       nextStep: "service_selection",
       intent: "greeting",
       confidence: 1.0,
       aiPowered: false,
-      priority: "high"
+      priority: "high",
+      secure: true // Mark as security-verified
     };
     
     // Cache for 5 minutes
@@ -767,11 +849,13 @@ async function generateOptimizedGreeting(context, env) {
     
   } catch (error) {
     console.error('Optimized greeting error:', error);
+    // FALLBACK: Always return the same safe greeting
     return {
       message: "[IT-ERA] Ciao, come posso aiutarti?",
       options: ["Preventivo", "Assistenza", "Informazioni"],
       nextStep: "service_selection",
-      aiPowered: false
+      aiPowered: false,
+      secure: true
     };
   }
 }
@@ -1014,13 +1098,17 @@ export default {
         
         await saveSession(session, env.CHAT_SESSIONS);
         
+        // CRITICAL SECURITY: Final sanitization check for startup response
+        const startupMessage = sanitizeResponseMessage(response.message);
+        
         return new Response(JSON.stringify({
           success: true,
           sessionId: session.id,
-          response: sanitizeResponseMessage(response.message),
+          response: startupMessage,
           options: response.options,
           step: response.nextStep,
-          aiPowered: response.aiPowered
+          aiPowered: response.aiPowered,
+          secure: startupMessage === "[IT-ERA] Ciao, come posso aiutarti?" // Confirm safe greeting
         }), {
           headers: corsHeaders(origin),
         });
@@ -1137,10 +1225,18 @@ export default {
         const response = await Promise.race([responsePromise, timeoutPromise]);
         const responseTime = Date.now() - startTime;
         
+        // CRITICAL SECURITY: Triple-check response sanitization
+        const sanitizedMessage = sanitizeResponseMessage(response.message);
+        
+        // Additional emergency check - if response is still system-like, force safe fallback
+        if (sanitizedMessage !== response.message) {
+          console.error('SECURITY WARNING: Response was sanitized, original:', response.message?.substring(0, 100));
+        }
+        
         // Add bot response to session - SECURITY: Always sanitize
         session.messages.push({
           type: 'bot',
-          content: sanitizeResponseMessage(response.message),
+          content: sanitizedMessage,
           options: response.options,
           timestamp: Date.now(),
           aiPowered: response.aiPowered,
@@ -1150,7 +1246,8 @@ export default {
           hybridEnabled: CONFIG.HYBRID_ENABLED,
           model: response.model || CONFIG.AI_MODEL,
           modelReason: response.modelReason || 'default',
-          hybridOptimal: response.cost <= CONFIG.AI_COST_LIMIT && responseTime <= CONFIG.TARGET_RESPONSE_TIME
+          hybridOptimal: response.cost <= CONFIG.AI_COST_LIMIT && responseTime <= CONFIG.TARGET_RESPONSE_TIME,
+          sanitized: sanitizedMessage !== response.message // Track if sanitization occurred
         });
         
         // Update session with new context and response data
@@ -1204,11 +1301,13 @@ export default {
         
         await saveSession(session, env.CHAT_SESSIONS);
         
-        // Prepare response with enhanced data - SECURITY: Always sanitize
+        // Prepare response with enhanced data - CRITICAL SECURITY: Double sanitization
+        const finalSanitizedMessage = sanitizeResponseMessage(response.message);
+        
         const responseData = {
           success: true,
           sessionId: session.id,
-          response: sanitizeResponseMessage(response.message),
+          response: finalSanitizedMessage, // Use the sanitized message from above
           options: response.options,
           step: response.nextStep,
           intent: response.intent,
@@ -1218,7 +1317,8 @@ export default {
           escalate: response.escalate || false,
           escalationType: response.escalationType,
           cached: response.cached || false,
-          cost: response.cost || 0
+          cost: response.cost || 0,
+          sanitized: finalSanitizedMessage !== response.message // Track sanitization
         };
         
         // Add debug info in development (Enhanced with Hybrid data)

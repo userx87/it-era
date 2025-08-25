@@ -47,8 +47,14 @@ export default {
       // Route handling
       if (path === '/admin/api/auth/login' && request.method === 'POST') {
         return await handleLogin(request, env);
-      } else if (path === '/admin/api/auth/verify' && request.method === 'POST') {
+      } else if (path === '/admin/api/auth/verify' && request.method === 'GET') {
         return await handleVerify(request, env);
+      } else if (path === '/admin/api/posts' && request.method === 'GET') {
+        return await handlePosts(request, env);
+      } else if (path === '/admin/api/dashboard' && request.method === 'GET') {
+        return await handleDashboard(request, env);
+      } else if (path === '/health' && request.method === 'GET') {
+        return await handleHealth(request, env);
       } else {
         return createErrorResponse('Endpoint not found', 404);
       }
@@ -315,6 +321,150 @@ function base64urlDecodeToArrayBuffer(str) {
     bytes[i] = binary.charCodeAt(i);
   }
   return bytes.buffer;
+}
+
+/**
+ * Handle posts API endpoint
+ */
+async function handlePosts(request, env) {
+  try {
+    // Verify authentication
+    const authResult = await verifyAuthHeader(request, env);
+    if (!authResult.success) {
+      return createErrorResponse(authResult.error, 401);
+    }
+
+    // Mock posts data for now
+    const posts = [
+      {
+        id: 1,
+        title: "IT-ERA Services Update",
+        content: "Nuovi servizi disponibili per le aziende di Milano e Lombardia",
+        author: "Admin",
+        date: "2025-01-25",
+        status: "published"
+      },
+      {
+        id: 2,
+        title: "Sicurezza Informatica",
+        content: "Importanza della sicurezza informatica per le PMI",
+        author: "Admin", 
+        date: "2025-01-24",
+        status: "draft"
+      }
+    ];
+
+    return new Response(JSON.stringify({
+      success: true,
+      posts: posts,
+      total: posts.length
+    }), {
+      status: 200,
+      headers: corsHeaders
+    });
+
+  } catch (error) {
+    console.error('Posts API error:', error);
+    return createErrorResponse('Failed to fetch posts', 500);
+  }
+}
+
+/**
+ * Handle dashboard API endpoint
+ */
+async function handleDashboard(request, env) {
+  try {
+    // Verify authentication
+    const authResult = await verifyAuthHeader(request, env);
+    if (!authResult.success) {
+      return createErrorResponse(authResult.error, 401);
+    }
+
+    // Mock dashboard data
+    const dashboardData = {
+      stats: {
+        totalPosts: 2,
+        publishedPosts: 1,
+        draftPosts: 1,
+        totalViews: 1250,
+        newLeads: 15
+      },
+      recentActivity: [
+        { action: "New lead from Milano", timestamp: "2025-01-25T10:30:00Z" },
+        { action: "Post published", timestamp: "2025-01-25T09:15:00Z" },
+        { action: "Admin login", timestamp: "2025-01-25T08:45:00Z" }
+      ],
+      quickActions: [
+        { name: "Create Post", url: "/admin/posts/new" },
+        { name: "View Analytics", url: "/admin/analytics" },
+        { name: "Manage Settings", url: "/admin/settings" }
+      ]
+    };
+
+    return new Response(JSON.stringify({
+      success: true,
+      data: dashboardData
+    }), {
+      status: 200,
+      headers: corsHeaders
+    });
+
+  } catch (error) {
+    console.error('Dashboard API error:', error);
+    return createErrorResponse('Failed to fetch dashboard data', 500);
+  }
+}
+
+/**
+ * Handle health check endpoint
+ */
+async function handleHealth(request, env) {
+  try {
+    const healthData = {
+      status: 'healthy',
+      service: 'IT-ERA Admin API',
+      version: '1.0.0',
+      timestamp: new Date().toISOString(),
+      endpoints: {
+        login: '/admin/api/auth/login',
+        verify: '/admin/api/auth/verify',
+        posts: '/admin/api/posts',
+        dashboard: '/admin/api/dashboard'
+      }
+    };
+
+    return new Response(JSON.stringify(healthData), {
+      status: 200,
+      headers: corsHeaders
+    });
+
+  } catch (error) {
+    console.error('Health check error:', error);
+    return createErrorResponse('Health check failed', 500);
+  }
+}
+
+/**
+ * Verify authorization header and extract user info
+ */
+async function verifyAuthHeader(request, env) {
+  try {
+    const authHeader = request.headers.get('Authorization');
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return { success: false, error: 'Missing or invalid authorization header' };
+    }
+
+    const token = authHeader.substring(7);
+    const verification = await verifyJWT(token, env.JWT_SECRET || 'it-era-admin-secret-2024');
+
+    if (!verification.success) {
+      return { success: false, error: verification.error };
+    }
+
+    return { success: true, user: verification.payload };
+  } catch (error) {
+    return { success: false, error: 'Authentication failed' };
+  }
 }
 
 function createErrorResponse(message, status = 400) {

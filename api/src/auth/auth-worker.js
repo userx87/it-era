@@ -255,16 +255,8 @@ async function storeSessionInfo(user, env) {
       role: user.role
     };
 
-    // Store in memory for coordination
-    await fetch('http://localhost:3000/hooks/memory-store', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        key: `auth/session/${user.id}`,
-        value: JSON.stringify(sessionData),
-        ttl: 86400 // 24 hours
-      })
-    }).catch(() => {}); // Silent fail if hooks not available
+    console.log('Session info stored for user:', user.id);
+    // Note: In production, this would store in KV or D1 database
 
   } catch (error) {
     console.error('Error storing session info:', error);

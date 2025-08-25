@@ -1,7 +1,7 @@
 // Authentication Management
 class AuthManager {
     constructor() {
-        this.token = localStorage.getItem('blog_admin_token');
+        this.token = localStorage.getItem('auth_token');
         this.user = null;
         this.isAuthenticated = false;
     }
@@ -40,7 +40,7 @@ class AuthManager {
     // Login user
     async login(email, password) {
         try {
-            const response = await fetch(`${CONFIG.API_BASE_URL}/auth/login`, {
+            const response = await fetch('/admin/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ class AuthManager {
                 this.user = data.data.user;
                 this.isAuthenticated = true;
                 
-                localStorage.setItem('blog_admin_token', this.token);
+                localStorage.setItem('auth_token', this.token);
                 
                 this.updateUI();
                 this.hideLoginModal();
@@ -78,7 +78,7 @@ class AuthManager {
         this.user = null;
         this.isAuthenticated = false;
         
-        localStorage.removeItem('blog_admin_token');
+        localStorage.removeItem('auth_token');
         
         this.showLoginModal();
         this.updateUI();

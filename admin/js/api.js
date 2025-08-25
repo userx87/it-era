@@ -7,10 +7,17 @@ class APIManager {
 
     // Generic API request
     async request(endpoint, options = {}) {
-        // If it's already a full URL, use it as is
-        const url = endpoint.startsWith('http') ? endpoint : 
-                   endpoint.startsWith('/admin/api') ? endpoint : 
-                   `${this.baseURL}${endpoint}`;
+        // Construct URL properly for admin API endpoints
+        let url;
+        if (endpoint.startsWith('http')) {
+            url = endpoint;
+        } else if (endpoint.startsWith('/admin/api')) {
+            url = endpoint; // Already has correct path
+        } else if (endpoint.startsWith('/admin')) {
+            url = endpoint;
+        } else {
+            url = `${this.baseURL}${endpoint}`;
+        }
         
         const defaultOptions = {
             headers: authManager.getAuthHeaders()
@@ -305,13 +312,11 @@ class APIManager {
 
     // Dashboard API  
     async getDashboard() {
-        const url = CONFIG.ADMIN_API_BASE_URL + '/dashboard';
-        return this.request(url);
+        return this.get('/admin/api/dashboard');
     }
 
     async getStats() {
-        const url = CONFIG.ADMIN_API_BASE_URL + '/stats/overview';
-        return this.request(url);
+        return this.get('/admin/api/stats/overview');
     }
 }
 

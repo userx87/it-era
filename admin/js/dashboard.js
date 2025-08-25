@@ -20,15 +20,15 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Totale Post</div>
-                                <div class="stat-number text-primary">${formatNumber(data.posts?.total || 0)}</div>
+                                <div class="stat-number text-primary">${formatNumber(data.stats?.posts?.total || data.posts?.total || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-file-text fa-2x text-gray-300"></i>
                             </div>
                         </div>
                         <div class="mt-2 text-muted small">
-                            <span class="text-success">${formatNumber(data.posts?.published || 0)} pubblicati</span> •
-                            <span class="text-warning">${formatNumber(data.posts?.draft || 0)} bozze</span>
+                            <span class="text-success">${formatNumber(data.stats?.posts?.published || data.posts?.published || 0)} pubblicati</span> •
+                            <span class="text-warning">${formatNumber(data.stats?.posts?.draft || data.posts?.draft || 0)} bozze</span>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Visualizzazioni</div>
-                                <div class="stat-number text-success">${formatNumber(data.views?.month || 0)}</div>
+                                <div class="stat-number text-success">${formatNumber(data.stats?.views?.month || data.views?.month || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-eye fa-2x text-gray-300"></i>
@@ -59,7 +59,7 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Categorie</div>
-                                <div class="stat-number text-info">${formatNumber(data.categories || 0)}</div>
+                                <div class="stat-number text-info">${formatNumber(data.stats?.categories || data.categories || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-folder fa-2x text-gray-300"></i>
@@ -78,7 +78,7 @@ function renderDashboard(data) {
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="stat-label mb-1">Tag</div>
-                                <div class="stat-number text-warning">${formatNumber(data.tags || 0)}</div>
+                                <div class="stat-number text-warning">${formatNumber(data.stats?.tags || data.tags || 0)}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="bi bi-tags fa-2x text-gray-300"></i>
@@ -103,7 +103,7 @@ function renderDashboard(data) {
                         </button>
                     </div>
                     <div class="card-body">
-                        ${renderRecentPosts(data.recent_posts || [])}
+                        ${renderRecentPosts(data.stats?.recent_posts || data.recent_posts || [])}
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@ function renderDashboard(data) {
             ` : ''}
         </div>
 
-        ${data.posts.monthly.length > 0 ? `
+        ${(data.stats?.posts?.monthly || data.posts?.monthly || []).length > 0 ? `
         <div class="row">
             <div class="col-12 mb-4">
                 <div class="card">
@@ -163,9 +163,9 @@ function renderDashboard(data) {
 
     // Initialize charts
     setTimeout(() => {
-        renderPostStatusChart(data.posts.byStatus);
-        if (data.posts.monthly.length > 0) {
-            renderMonthlyActivityChart(data.posts.monthly);
+        renderPostStatusChart(data.stats?.posts?.byStatus || data.posts?.byStatus || []);
+        if ((data.stats?.posts?.monthly || data.posts?.monthly || []).length > 0) {
+            renderMonthlyActivityChart(data.stats?.posts?.monthly || data.posts?.monthly);
         }
     }, 100);
 }

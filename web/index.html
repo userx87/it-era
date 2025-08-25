@@ -1147,93 +1147,85 @@
     let chatSession = null;
     let isOpen = false;
     
-    // BULLETPROOF SECURITY: Whitelist-based message filtering with multiple layers
+    // ULTRA-SECURE MESSAGE FILTER: Zero tolerance for system prompt leakage
     function sanitizeMessage(message) {
-        // DEFAULT SAFE GREETING - always available
-        const SAFE_DEFAULT = '[IT-ERA] Ciao! Sono l\'assistente virtuale di IT-ERA. Come posso aiutarti oggi?';
+        // ALWAYS SAFE DEFAULT - our branded greeting
+        const SAFE_DEFAULT = '[IT-ERA] Come posso aiutarti con i nostri servizi IT? Chiama il 039 888 2041 per assistenza immediata.';
         
-        if (!message || typeof message !== 'string') {
+        // Step 1: Basic validation
+        if (!message || typeof message !== 'string' || message.length === 0) {
             return SAFE_DEFAULT;
         }
         
-        // LAYER 1: Immediate blacklist - block any AI system patterns
-        const FORBIDDEN_PATTERNS = [
-            // System prompt patterns (comprehensive detection)
-            /IDENTITÀ|COMPORTAMENTO|OBIETTIVI|REGOLE|SYSTEM|PROMPT/i,
-            /professionale.*amichevole.*RICHIEDI|sicura.*Con tono/i,
-            /primo filtro commerciale|Non sei un tecnico/i,
-            /assistente virtuale.*IT-ERA.*sicurezza informatica/i,
-            /generateSystemPrompt|BusinessRules|systemPrompt/i,
-            /INIZIALE|INIZIO:|RISPOSTA TIPO|ESEMPIO:|RISPOSTA:/i,
-            /Buongiorno.*assistente virtuale|Ora rispondi al messaggio/i,
-            /specialisti.*tecnico.*commerciale/i,
-            /conversione.*contatto.*appuntamento/i,
-            /Il tuo messaggio deve essere sempre/i,
+        // Step 2: NUCLEAR OPTION - Block everything suspicious
+        const ULTRA_FORBIDDEN = [
+            // Any AI/system terminology 
+            /IDENTITÀ|COMPORTAMENTO|OBIETTIVI|REGOLE|SYSTEM|PROMPT|ESEMPIO|RISPOSTA|TIPO/i,
+            /professionale|amichevole|commerciale|tecnico|specialisti|conversione/i,
+            /assistente.*virtuale|primo.*filtro|RICHIEDI|urgenza|opportunità/i,
+            /generateSystemPrompt|BusinessRules|systemPrompt|INIZIALE|INIZIO/i,
+            /intercettare|trasformarle|Messaggio iniziale|Con tono|Ora rispondi/i,
+            /Sei pronto|settore|Nome azienda|primo messaggio deve/i,
+            /Il tuo messaggio deve|sempre.*richiedere|Creando urgenza/i,
             
-            // Any message longer than 200 chars with multiple system words
-            /.{200,}/i,
+            // Block messages with instruction patterns
+            /deve essere|sempre|richiedi sempre|primo filtro/i,
+            /buongiorno.*assistente|ciao.*sono.*assistente/i,
             
-            // Suspicious instruction patterns
-            /Con tono.*RICHIEDI SEMPRE/i,
-            /settore.*Nome azienda/i,
-            /Creando urgenza|primo messaggio deve/i
+            // Block long/complex messages (likely system prompts)
+            /.{150,}/i,
+            
+            // Block multiple sentences or structured text
+            /\.\s+[A-Z].*\./i,
+            /:\s*[A-Z]/i,
+            
+            // Block anything with multiple clauses or instructions
+            /,.*,.*,/i,
+            /quindi|pertanto|inoltre|tuttavia/i
         ];
         
-        // Check forbidden patterns first
-        for (const pattern of FORBIDDEN_PATTERNS) {
+        // IMMEDIATE REJECTION of suspicious content
+        for (const pattern of ULTRA_FORBIDDEN) {
             if (pattern.test(message)) {
-                console.error('🚨 SECURITY ALERT: Blocked system prompt exposure');
+                console.error('🚨 CRITICAL SECURITY: System prompt blocked');
                 return SAFE_DEFAULT;
             }
         }
         
-        // LAYER 2: Length and complexity checks
-        if (message.length > 300) {
-            console.error('🚨 SECURITY: Message too long, likely system prompt');
+        // Step 3: LENGTH CHECK - Anything over 100 chars is suspicious
+        if (message.length > 100) {
+            console.error('🚨 SECURITY: Message too long, probably system prompt');
             return SAFE_DEFAULT;
         }
         
-        // LAYER 3: System word density check
-        const SYSTEM_WORDS = [
-            'professionale', 'assistente', 'conversazione', 'risposta', 
-            'esempio', 'identità', 'comportamento', 'regole', 'obiettivi',
-            'commerciale', 'tecnico', 'specialisti', 'conversione', 'urgenza'
+        // Step 4: WORD COUNT - More than 15 words is suspicious  
+        const wordCount = message.trim().split(/\s+/).length;
+        if (wordCount > 15) {
+            console.error('🚨 SECURITY: Too many words, likely system content');
+            return SAFE_DEFAULT;
+        }
+        
+        // Step 5: ONLY ALLOW SIMPLE, SAFE MESSAGES
+        const SIMPLE_SAFE_PATTERNS = [
+            /^(ciao|salve|buongiorno|buonasera)$/i,
+            /^(grazie|ok|bene|perfetto)$/i,
+            /^(assistenza|supporto|aiuto)$/i,
+            /^(preventivo|prezzo|costo)$/i,
+            /^(servizi|informazioni)$/i,
+            /^(contatti|telefono)$/i,
+            /^[IT-ERA]/i  // Our safe branded messages only
         ];
         
-        const lowerMessage = message.toLowerCase();
-        const systemWordCount = SYSTEM_WORDS.filter(word => 
-            lowerMessage.includes(word)).length;
+        // If message doesn't match simple patterns, it's suspicious
+        const isSimpleSafe = SIMPLE_SAFE_PATTERNS.some(pattern => pattern.test(message.trim()));
         
-        if (systemWordCount >= 4) {
-            console.error('🚨 SECURITY: High system word density detected');
+        if (!isSimpleSafe) {
+            console.error('🚨 SECURITY: Message not in safe simple patterns');
             return SAFE_DEFAULT;
         }
         
-        // LAYER 4: Whitelist approach - only allow messages with safe patterns
-        const SAFE_MESSAGE_PATTERNS = [
-            /^ciao|buongiorno|buonasera|salve/i,
-            /assistenza|supporto|aiuto|problema/i,
-            /prezzi|costi|preventivo|offerta/i,
-            /servizi|soluzioni|pacchetti/i,
-            /sicurezza|backup|cloud|server/i,
-            /contatti|telefono|email/i,
-            /grazie|perfetto|ok|bene/i,
-            /^[IT-ERA]/i, // Our safe prefixed messages
-            /informazioni|dettagli|maggiori/i
-        ];
-        
-        const hasValidPattern = SAFE_MESSAGE_PATTERNS.some(pattern => 
-            pattern.test(message));
-        
-        // If message doesn't match any safe pattern and is complex, block it
-        if (!hasValidPattern && message.length > 50 && 
-            (message.includes('.') || message.includes(',') || message.includes(':'))) {
-            console.error('🚨 SECURITY: Message failed whitelist check');
-            return SAFE_DEFAULT;
-        }
-        
-        // LAYER 5: Final clean message (max 200 chars to prevent overflow)
-        return message.slice(0, 200);
+        // Step 6: Final sanitization - remove any HTML/special chars
+        return message.replace(/[<>&"']/g, '').slice(0, 50);
     }
     
     // Initialize chatbot when DOM is ready
@@ -1299,12 +1291,12 @@
         
         // Inizia conversazione se prima volta
         if (!chatSession) {
-            // CRITICAL SECURITY: Always show safe greeting first, regardless of API response
-            addMessage('bot', '[IT-ERA] Ciao, come posso aiutarti?', [
-                "Richiedi Preventivo", 
-                "Assistenza Tecnica", 
-                "Informazioni Servizi", 
-                "Contatta Specialista"
+            // BULLETPROOF: ALWAYS hardcoded greeting, NEVER from AI
+            addMessage('bot', '[IT-ERA] Ciao! Sono l\'assistente virtuale di IT-ERA. Come posso aiutarti oggi?', [
+                "💰 Richiedi Preventivo", 
+                "🆘 Assistenza Urgente", 
+                "📋 Informazioni Servizi", 
+                "📞 Contatta Tecnico"
             ]);
             startConversation();
         }
@@ -1332,7 +1324,7 @@
     }
     
     async function startConversation() {
-        showTyping();
+        // NO TYPING INDICATOR for initialization - greeting is already shown
         
         try {
             const response = await fetch(API_ENDPOINT, {
@@ -1345,72 +1337,85 @@
             });
             
             const data = await response.json();
-            hideTyping();
             
             if (data.success) {
                 chatSession = data.sessionId;
-                // SECURITY: Never use API response for initial greeting
-                // The safe greeting was already displayed in openChat()
                 console.log('✅ Chat session established:', chatSession);
             } else {
-                // Session not established, but greeting is already shown safely
                 console.warn('⚠️ Failed to establish chat session, using local-only mode');
             }
             
+            // CRITICAL: NEVER display any AI response during initialization
+            // The hardcoded greeting is already displayed and sufficient
+            
         } catch (error) {
-            hideTyping();
-            // Only add error message if no messages exist yet
-            const messages = document.getElementById('it-era-messages');
-            if (messages.children.length <= 1) { // Only the initial greeting
-                addMessage('bot', '[IT-ERA] Problemi di connessione. Contattaci al 039 888 2041 o info@it-era.it');
-            }
+            // Silent failure - hardcoded greeting is already shown
             console.error('🚨 Chatbot initialization error:', error);
+            // Don't show any error messages - just work in local mode
         }
     }
     
-    // BULLETPROOF RESPONSE VALIDATOR: Multi-layer security for all AI responses
+    // NUCLEAR RESPONSE VALIDATOR: Extreme security for AI responses
     function validateResponse(apiResponse) {
-        const SAFE_FALLBACK = '[IT-ERA] Come posso aiutarti con i nostri servizi IT?';
+        const SAFE_FALLBACK = '[IT-ERA] Grazie per il messaggio. Per assistenza immediata chiama 039 888 2041.';
+        const SAFE_OPTIONS = ['📞 Chiama Ora', '📧 Email Info', '💰 Richiedi Preventivo'];
         
-        // Validate API response structure first
+        // Default safe response structure
+        const safeResult = {
+            response: SAFE_FALLBACK,
+            options: SAFE_OPTIONS,
+            escalate: false
+        };
+        
+        // Step 1: Basic structure validation
         if (!apiResponse || typeof apiResponse !== 'object') {
             console.error('🚨 SECURITY: Invalid API response structure');
-            return {
-                response: SAFE_FALLBACK,
-                options: ['Preventivo Gratuito', 'Assistenza Tecnica', 'Informazioni Servizi'],
-                escalate: false
-            };
+            return safeResult;
         }
         
-        // Security check on response text
-        let safeResponse = SAFE_FALLBACK;
+        // Step 2: ULTRA-STRICT response validation
         if (apiResponse.response) {
-            safeResponse = sanitizeMessage(apiResponse.response);
-            // Double-check the sanitized message isn't still suspicious
-            if (safeResponse.includes('RICHIEDI') || 
-                safeResponse.includes('professionale') ||
-                safeResponse.includes('primo filtro')) {
-                console.error('🚨 SECURITY: Response still suspicious after sanitization');
-                safeResponse = SAFE_FALLBACK;
+            const sanitized = sanitizeMessage(apiResponse.response);
+            
+            // If sanitization returns our default, the original was suspicious
+            if (sanitized === '[IT-ERA] Come posso aiutarti con i nostri servizi IT? Chiama il 039 888 2041 per assistenza immediata.') {
+                console.error('🚨 CRITICAL: AI response was system prompt - blocked');
+                return safeResult;
+            }
+            
+            // Extra check: if response doesn't start with our brand, it's suspicious
+            if (!sanitized.startsWith('[IT-ERA]')) {
+                console.error('🚨 SECURITY: Response not branded correctly');
+                return safeResult;
+            }
+            
+            // If it passes all checks, use the sanitized version
+            safeResult.response = sanitized;
+        }
+        
+        // Step 3: Options validation - be very restrictive
+        if (apiResponse.options && Array.isArray(apiResponse.options)) {
+            const validatedOptions = [];
+            
+            for (let i = 0; i < Math.min(3, apiResponse.options.length); i++) {
+                const option = apiResponse.options[i];
+                if (typeof option === 'string' && 
+                    option.length > 3 && 
+                    option.length < 30 && 
+                    !option.includes('RICHIEDI') &&
+                    !option.includes('professionale') &&
+                    !option.includes('urgenza')) {
+                    
+                    validatedOptions.push(option.replace(/[<>&"']/g, ''));
+                }
+            }
+            
+            if (validatedOptions.length > 0) {
+                safeResult.options = validatedOptions;
             }
         }
         
-        // Validate options array
-        let safeOptions = ['Preventivo Gratuito', 'Assistenza Tecnica', 'Informazioni Servizi'];
-        if (apiResponse.options && Array.isArray(apiResponse.options)) {
-            safeOptions = apiResponse.options.slice(0, 4).map(option => {
-                if (typeof option === 'string' && option.length < 50) {
-                    return option.replace(/[<>]/g, ''); // Remove potential HTML
-                }
-                return 'Maggiori Informazioni';
-            });
-        }
-        
-        return {
-            response: safeResponse,
-            options: safeOptions,
-            escalate: !!apiResponse.escalate
-        };
+        return safeResult;
     }
 
     async function sendMessage() {
@@ -1463,11 +1468,23 @@
     function addMessage(type, content, options = null) {
         const container = document.getElementById('it-era-messages');
         
-        // FINAL SECURITY LAYER: Sanitize content before DOM insertion
+        // FINAL SECURITY LAYER: Triple-check content before DOM insertion
         let safeContent = content;
         if (type === 'bot') {
-            // For bot messages, double-check content is safe
-            safeContent = sanitizeMessage(content) || '[IT-ERA] Come posso aiutarti?';
+            // For bot messages, apply nuclear security
+            safeContent = sanitizeMessage(content);
+            
+            // FINAL CHECK: If content is suspicious even after sanitization, use emergency fallback
+            if (safeContent.length > 150 || 
+                safeContent.includes('professionale') ||
+                safeContent.includes('RICHIEDI') ||
+                safeContent.includes('intercettare') ||
+                safeContent.includes('opportunità') ||
+                !safeContent.startsWith('[IT-ERA]')) {
+                
+                console.error('🚨 EMERGENCY: Content failed final security check');
+                safeContent = '[IT-ERA] Contattaci al 039 888 2041 per assistenza.';
+            }
         } else {
             // For user messages, basic HTML escape
             safeContent = content.replace(/[<>&"']/g, (char) => {

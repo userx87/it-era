@@ -104,7 +104,7 @@ class AuthManager {
         }
 
         try {
-            const response = await fetch(`${CONFIG.API_BASE_URL}/auth/verify`, {
+            const response = await fetch('/admin/api/auth/verify', {
                 method: 'GET',
                 headers: this.tokenManager.getAuthHeaders(),
                 timeout: 10000 // 10 second timeout
@@ -224,7 +224,7 @@ class AuthManager {
             // Clear any existing authentication data
             this.logout();
 
-            const response = await fetch(`${CONFIG.API_BASE_URL}/auth/login`, {
+            const response = await fetch('/admin/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -451,7 +451,7 @@ class AuthManager {
     // Change password
     async changePassword(currentPassword, newPassword) {
         try {
-            const response = await fetch(`${CONFIG.API_BASE_URL}/auth/change-password`, {
+            const response = await fetch('/admin/api/auth/change-password', {
                 method: 'POST',
                 headers: this.getAuthHeaders(),
                 body: JSON.stringify({
@@ -478,7 +478,7 @@ class AuthManager {
     // Update profile
     async updateProfile(profileData) {
         try {
-            const response = await fetch(`${CONFIG.API_BASE_URL}/auth/profile`, {
+            const response = await fetch('/admin/api/auth/profile', {
                 method: 'PUT',
                 headers: this.getAuthHeaders(),
                 body: JSON.stringify(profileData)

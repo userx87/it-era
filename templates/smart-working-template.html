@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="https://schema.org/Organization" lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Working {{CITY}} | Soluzioni Lavoro Ibrido Sicuro | IT-ERA</title>
+<meta content="Smart Working {{CITY}} ✓ Lavoro ibrido sicuro ✓ VPN aziendale ✓ Desktop remoto ✓ Collaborazione digitale ✓ Sicurezza endpoint" name="description"/>
+<meta content="smart working {{CITY}}, lavoro ibrido, vpn aziendale, desktop remoto, collaborazione, {{REGION}}" name="keywords"/>
+<meta content="IT-ERA" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.it-era.it/smart-working-{{CITY_SLUG}}" rel="canonical"/>
+
+<!-- Open Graph -->
+<meta content="Smart Working {{CITY}} | Soluzioni Lavoro Ibrido Professionale" property="og:title"/>
+<meta content="Abilita il lavoro ibrido sicuro per la tua azienda a {{CITY}}. VPN, desktop remoto, collaborazione digitale." property="og:description"/>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IT-ERA - Smart Working {{CITY}}",
+    "description": "Soluzioni smart working e lavoro ibrido per aziende a {{CITY}}",
+    "url": "https://www.it-era.it",
+    "telephone": "+39 039 888 2041",
+    "email": "info@it-era.it"
+}
+</script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+    --smart-primary: #6c5ce7;
+    --smart-secondary: #5f3dc4;
+    --smart-accent: #74b9ff;
+    --smart-success: #00b894;
+    --smart-warning: #fdcb6e;
+    --smart-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #2d3436;
+    line-height: 1.6;
+    padding-top: 76px;
+}
+
+.hero-section {
+    background: var(--smart-gradient);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.smart-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #f1f3f4;
+}
+
+.smart-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    border-color: var(--smart-primary);
+}
+
+.smart-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: var(--smart-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(108,92,231,0.3);
+}
+
+.workflow-step {
+    background: linear-gradient(135deg, #f8f9ff, #e8ecff);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.workflow-step:hover {
+    border-color: var(--smart-primary);
+    transform: scale(1.02);
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--smart-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-smart {
+    background: var(--smart-gradient);
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(108,92,231,0.3);
+}
+
+.btn-smart:hover {
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(108,92,231,0.4);
+}
+
+.productivity-metric {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.metric-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--smart-primary);
+    margin-bottom: 0.5rem;
+}
+
+.security-badge {
+    background: var(--smart-success);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.tech-item {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+</style>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: var(--smart-primary);">IT</span>-ERA
+</a>
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-primary btn-sm" href="tel:+390398882041">
+🏠 Smart Working
+</a>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item">
+<a class="nav-link" href="#soluzioni">Soluzioni</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#vantaggi">Vantaggi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#prezzi">Prezzi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contatti">Contatti</a>
+</li>
+<li class="nav-item ms-lg-3">
+<a class="btn btn-smart" href="tel:+390398882041">
+📞 039 888 2041
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="container">
+<div class="hero-content">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1 class="display-4 fw-bold mb-4">
+Smart Working<br/>
+Sicuro per {{CITY}}
+</h1>
+<p class="lead mb-4">
+Abilita il lavoro ibrido per la tua azienda con soluzioni sicure e performanti. 
+VPN aziendale, desktop remoto e collaborazione digitale integrata.
+</p>
+<div class="row mb-4">
+<div class="col-4 text-center">
+<div class="h2 mb-0">95%</div>
+<small>Produttività</small>
+</div>
+<div class="col-4 text-center">
+<div class="h2 mb-0">50%</div>
+<small>Costi Ridotti</small>
+</div>
+<div class="col-4 text-center">
+<div class="h2 mb-0">24/7</div>
+<small>Accesso Sicuro</small>
+</div>
+</div>
+<div class="d-flex gap-3 flex-wrap">
+<a href="tel:+390398882041" class="btn btn-light btn-lg">
+<i class="bi bi-laptop me-2"></i>Setup Gratuito
+</a>
+<a href="#soluzioni" class="btn btn-outline-light btn-lg">
+<i class="bi bi-play-circle me-2"></i>Vedi Demo
+</a>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="text-center">
+<img src="/images/smart-working-dashboard.png" alt="Smart Working Dashboard" class="img-fluid" style="max-width: 500px; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.2);"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Solutions Section -->
+<section class="py-5" id="soluzioni">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3">Soluzioni Smart Working</h2>
+<p class="lead text-secondary">Tutto quello che serve per il lavoro ibrido moderno</p>
+</div>
+
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div class="smart-card">
+<div class="smart-icon">
+<i class="bi bi-shield-lock"></i>
+</div>
+<h4 class="mb-3">VPN Aziendale Sicura</h4>
+<p class="text-secondary">
+Accesso sicuro alla rete aziendale da qualsiasi posizione. 
+Crittografia AES-256, autenticazione multi-fattore e monitoring 24/7.
+</p>
+<div class="security-badge mb-3">
+<i class="bi bi-shield-check"></i>
+Bank-Grade Security
+</div>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Crittografia AES-256</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Multi-factor Authentication</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Zero-log policy</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Kill switch automatico</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card">
+<div class="smart-icon">
+<i class="bi bi-display"></i>
+</div>
+<h4 class="mb-3">Desktop Remoto</h4>
+<p class="text-secondary">
+Accesso completo al desktop aziendale da casa. Applicazioni, 
+file e stampanti come se fossi in ufficio.
+</p>
+<div class="security-badge mb-3" style="background: var(--smart-accent);">
+<i class="bi bi-lightning"></i>
+Performance Ottimizzata
+</div>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Windows Virtual Desktop</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Streaming video HD</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Redirection periferiche</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Backup automatico</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card">
+<div class="smart-icon">
+<i class="bi bi-people"></i>
+</div>
+<h4 class="mb-3">Collaborazione Digitale</h4>
+<p class="text-secondary">
+Piattaforma integrata per videocall, chat, condivisione file 
+e gestione progetti con il team distribuito.
+</p>
+<div class="security-badge mb-3" style="background: var(--smart-warning);">
+<i class="bi bi-rocket"></i>
+Produttività +40%
+</div>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Microsoft Teams/Zoom</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Document sharing</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Project management</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Time tracking</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card">
+<div class="smart-icon">
+<i class="bi bi-cloud-arrow-up"></i>
+</div>
+<h4 class="mb-3">Cloud Storage Sicuro</h4>
+<p class="text-secondary">
+Documenti sempre disponibili e sincronizzati su tutti i dispositivi. 
+Backup automatico e versioning completo.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Sincronizzazione real-time</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Versioning automatico</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Condivisione sicura</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Backup geografico</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card">
+<div class="smart-icon">
+<i class="bi bi-laptop"></i>
+</div>
+<h4 class="mb-3">Device Management</h4>
+<p class="text-secondary">
+Gestione centralizzata di laptop, smartphone e tablet aziendali. 
+Sicurezza endpoint e aggiornamenti automatici.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>MDM/MAM completo</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Antivirus centralizzato</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Remote wipe</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Compliance policy</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card">
+<div class="smart-icon">
+<i class="bi bi-headset"></i>
+</div>
+<h4 class="mb-3">Supporto 24/7</h4>
+<p class="text-secondary">
+Assistenza tecnica continua per i lavoratori remoti. 
+Help desk dedicato e risoluzione problemi in tempo reale.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Help desk H24</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Remote assistance</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Training utenti</li>
+<li><i class="bi bi-check2 text-success me-2"></i>SLA garantito</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Benefits Section -->
+<section class="py-5 bg-light" id="vantaggi">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3">Vantaggi dello Smart Working</h2>
+<p class="lead">Risultati concreti per la tua azienda</p>
+</div>
+
+<div class="row">
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="productivity-metric">
+<div class="metric-value">+40%</div>
+<h6>Produttività</h6>
+<p class="text-secondary small mb-0">Dipendenti più motivati e concentrati</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="productivity-metric">
+<div class="metric-value">-50%</div>
+<h6>Costi Ufficio</h6>
+<p class="text-secondary small mb-0">Riduzione spazi fisici e utenze</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="productivity-metric">
+<div class="metric-value">+30%</div>
+<h6>Soddisfazione</h6>
+<p class="text-secondary small mb-0">Work-life balance migliorato</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="productivity-metric">
+<div class="metric-value">-60%</div>
+<h6>Turnover</h6>
+<p class="text-secondary small mb-0">Maggiore retention del personale</p>
+</div>
+</div>
+</div>
+
+<div class="row mt-5">
+<div class="col-lg-6">
+<h3 class="mb-4">Processo di Implementazione</h3>
+<div class="workflow-step">
+<div class="step-number">1</div>
+<h5 class="mt-3">Analisi Esigenze</h5>
+<p class="mb-0 text-secondary">Valutazione infrastructure attuale e requisiti specifici</p>
+</div>
+<div class="workflow-step">
+<div class="step-number">2</div>
+<h5 class="mt-3">Design Architettura</h5>
+<p class="mb-0 text-secondary">Progettazione soluzione personalizzata e sicura</p>
+</div>
+<div class="workflow-step">
+<div class="step-number">3</div>
+<h5 class="mt-3">Deploy & Training</h5>
+<p class="mb-0 text-secondary">Implementazione e formazione team completa</p>
+</div>
+</div>
+<div class="col-lg-6">
+<h3 class="mb-4">Stack Tecnologico</h3>
+<div class="tech-stack">
+<div class="tech-item">
+<i class="bi bi-microsoft" style="color: #0078d4;"></i>
+<span>Microsoft 365</span>
+</div>
+<div class="tech-item">
+<i class="bi bi-shield-check" style="color: #28a745;"></i>
+<span>Cisco AnyConnect</span>
+</div>
+<div class="tech-item">
+<i class="bi bi-camera-video" style="color: #2684ff;"></i>
+<span>Zoom/Teams</span>
+</div>
+<div class="tech-item">
+<i class="bi bi-cloud" style="color: #ff9500;"></i>
+<span>AWS/Azure</span>
+</div>
+<div class="tech-item">
+<i class="bi bi-laptop" style="color: #6f42c1;"></i>
+<span>Intune MDM</span>
+</div>
+<div class="tech-item">
+<i class="bi bi-slack" style="color: #4a154b;"></i>
+<span>Slack/Teams</span>
+</div>
+</div>
+<div class="mt-4">
+<h5>Sicurezza Integrata:</h5>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Zero Trust Architecture</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Endpoint Detection & Response</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Data Loss Prevention</li>
+<li><i class="bi bi-check2 text-success me-2"></i>GDPR Compliance</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pricing Section -->
+<section class="py-5" id="prezzi">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3">Piani Smart Working</h2>
+<p class="lead text-secondary">Soluzioni scalabili per ogni esigenza aziendale</p>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-lg-4 mb-4">
+<div class="smart-card text-center">
+<h4 class="mb-3">Starter</h4>
+<div class="display-5 fw-bold text-primary mb-2">€45</div>
+<div class="text-secondary mb-4">/utente/mese</div>
+<ul class="list-unstyled text-start">
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>VPN sicura illimitata</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Desktop remoto basic</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Cloud storage 100GB</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Supporto 9-18</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Training iniziale</li>
+</ul>
+<p class="small text-secondary">Perfetto per piccoli team fino a 10 utenti</p>
+<button class="btn btn-outline-primary w-100">Scegli Starter</button>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card text-center border-primary">
+<div class="position-absolute top-0 start-50 translate-middle">
+<span class="badge bg-primary">CONSIGLIATO</span>
+</div>
+<h4 class="mb-3">Business</h4>
+<div class="display-5 fw-bold text-primary mb-2">€85</div>
+<div class="text-secondary mb-4">/utente/mese</div>
+<ul class="list-unstyled text-start">
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Tutto del piano Starter</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Desktop remoto avanzato</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Microsoft 365 Business</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Device management</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Supporto H24</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Security monitoring</li>
+</ul>
+<p class="small text-secondary">Ideale per aziende 10-50 dipendenti</p>
+<button class="btn btn-smart w-100">Scegli Business</button>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="smart-card text-center">
+<h4 class="mb-3">Enterprise</h4>
+<div class="display-5 fw-bold text-primary mb-2">€150</div>
+<div class="text-secondary mb-4">/utente/mese</div>
+<ul class="list-unstyled text-start">
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Tutto del piano Business</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Azure Virtual Desktop</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Advanced security</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Compliance tools</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Dedicated support</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Custom integrations</li>
+</ul>
+<p class="small text-secondary">Per organizzazioni 50+ dipendenti</p>
+<button class="btn btn-outline-primary w-100">Scegli Enterprise</button>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-4">
+<p class="text-secondary">
+<i class="bi bi-gift me-2"></i>
+Setup gratuito incluso • Migrazione assistita • Nessun vincolo contrattuale
+</p>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5" id="contatti">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h2 class="display-5 fw-bold mb-4">Inizia la Trasformazione</h2>
+<p class="lead text-secondary mb-4">
+Il nostro team di esperti progetterà la soluzione smart working 
+perfetta per la tua azienda. Consulenza gratuita e setup incluso.
+</p>
+<div class="row">
+<div class="col-md-6 mb-3">
+<div class="d-flex align-items-center">
+<div class="smart-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem;">
+<i class="bi bi-clock"></i>
+</div>
+<div>
+<strong>48 ore</strong><br/>
+<small class="text-secondary">Setup completo</small>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-3">
+<div class="d-flex align-items-center">
+<div class="smart-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem;">
+<i class="bi bi-people"></i>
+</div>
+<div>
+<strong>Training</strong><br/>
+<small class="text-secondary">Team completo</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="bg-light p-4 rounded">
+<h4 class="mb-4">Richiedi Demo Gratuita</h4>
+<form>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Nome" required/>
+</div>
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Azienda"/>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Email" required/>
+</div>
+<div class="col-md-6 mb-3">
+<input type="tel" class="form-control" placeholder="Telefono"/>
+</div>
+</div>
+<div class="mb-3">
+<select class="form-control" required>
+<option value="">Numero dipendenti in smart working</option>
+<option value="1-5">1-5 dipendenti</option>
+<option value="6-20">6-20 dipendenti</option>
+<option value="21-50">21-50 dipendenti</option>
+<option value="50+">Oltre 50 dipendenti</option>
+</select>
+</div>
+<div class="mb-3">
+<select class="form-control">
+<option value="">Situazione attuale</option>
+<option value="nessuna">Nessuna soluzione</option>
+<option value="basica">Soluzioni basic (TeamViewer, etc.)</option>
+<option value="parziale">Soluzioni parziali</option>
+<option value="completa">Soluzione esistente da migliorare</option>
+</select>
+</div>
+<div class="mb-3">
+<textarea class="form-control" placeholder="Descrivi le tue esigenze di smart working..." rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-smart w-100">
+<i class="bi bi-laptop me-2"></i>Richiedi Demo Gratuita
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 mb-4">
+<h5 class="mb-3">IT-ERA Smart Working</h5>
+<p class="text-secondary">
+Specialisti in soluzioni smart working sicure per aziende a {{CITY}} e provincia. 
+Lavoro ibrido moderno con tecnologie enterprise.
+</p>
+</div>
+<div class="col-lg-4 mb-4">
+<h6 class="mb-3">Contatti</h6>
+<div class="text-secondary">
+<div class="mb-2"><i class="bi bi-telephone me-2"></i>+39 039 888 2041</div>
+<div class="mb-2"><i class="bi bi-envelope me-2"></i>info@it-era.it</div>
+<div class="mb-2"><i class="bi bi-geo-alt me-2"></i>Viale Risorgimento 32, Vimercate</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<h6 class="mb-3">Orari Supporto</h6>
+<div class="text-secondary">
+<div class="mb-2">Lun-Ven: 8:00-18:00</div>
+<div class="mb-2">Smart Working: 24/7</div>
+<div class="mb-2">Emergenze: Sempre attivo</div>
+</div>
+</div>
+</div>
+<hr class="my-4"/>
+<div class="text-center">
+<p class="mb-0 text-secondary">© 2025 IT-ERA - P.IVA 10524040966</p>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

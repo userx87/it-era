@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="https://schema.org/Organization" lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Microsoft 365 {{CITY}} | Migrazione e Gestione Office 365 | IT-ERA</title>
+<meta content="Migrazione Microsoft 365 a {{CITY}} ✓ Setup Office 365 ✓ Teams gestito ✓ Email sicura ✓ Collaborazione cloud ✓ Supporto italiano" name="description"/>
+<meta content="microsoft 365 {{CITY}}, office 365, teams, email aziendale, sharepoint, onedrive, {{REGION}}" name="keywords"/>
+<meta content="IT-ERA" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.it-era.it/microsoft-365-{{CITY_SLUG}}" rel="canonical"/>
+
+<!-- Open Graph -->
+<meta content="Microsoft 365 {{CITY}} | Migrazione Office 365 Professionale" property="og:title"/>
+<meta content="Migrazione e gestione Microsoft 365 per aziende a {{CITY}}. Teams, Outlook, SharePoint con supporto italiano." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.it-era.it/images/microsoft-365-{{CITY_SLUG}}.jpg" property="og:image"/>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IT-ERA - Microsoft 365 {{CITY}}",
+    "description": "Servizi di migrazione e gestione Microsoft 365 per aziende a {{CITY}}",
+    "url": "https://www.it-era.it",
+    "telephone": "+39 039 888 2041",
+    "email": "info@it-era.it",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Viale Risorgimento 32",
+        "addressLocality": "Vimercate",
+        "postalCode": "20871",
+        "addressRegion": "MB",
+        "addressCountry": "IT"
+    }
+}
+</script>
+
+<!-- Bootstrap & Fonts -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+    --microsoft-primary: #0078d4;
+    --microsoft-secondary: #106ebe;
+    --microsoft-accent: #0063b1;
+    --microsoft-success: #107c10;
+    --microsoft-warning: #ff8c00;
+    --bg-light: #f8f9fa;
+    --text-dark: #323130;
+    --text-secondary: #605e5c;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding-top: 76px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--microsoft-primary) 0%, var(--microsoft-secondary) 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: var(--microsoft-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-microsoft {
+    background: var(--microsoft-primary);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-microsoft:hover {
+    background: var(--microsoft-secondary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+    height: 100%;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--microsoft-primary);
+    transform: scale(1.05);
+}
+
+.price-tag {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--microsoft-primary);
+    margin: 1rem 0;
+}
+
+.features-grid {
+    background: var(--bg-light);
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.5rem; }
+    .pricing-card.featured { transform: none; }
+}
+</style>
+
+<!-- Include navigation component -->
+<style>
+.navbar {
+    min-height: 76px;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: var(--microsoft-primary);">IT</span>-ERA
+</a>
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-primary btn-sm" href="tel:+390398882041">
+🚀 Microsoft 365
+</a>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item">
+<a class="nav-link" href="#servizi">Servizi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#vantaggi">Vantaggi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#prezzi">Prezzi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contatti">Contatti</a>
+</li>
+<li class="nav-item ms-lg-3">
+<a class="btn btn-microsoft" href="tel:+390398882041">
+📞 039 888 2041
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1 class="hero-title">
+Microsoft 365<br/>
+per {{CITY}}
+</h1>
+<p class="hero-subtitle">
+Migrazione professionale a Office 365 con Teams, SharePoint, Exchange Online. 
+Supporto italiano completo e sicurezza GDPR garantita.
+</p>
+<div class="row mb-4">
+<div class="col-4 text-center">
+<div class="h3 mb-0">48h</div>
+<small>Migrazione</small>
+</div>
+<div class="col-4 text-center">
+<div class="h3 mb-0">99.9%</div>
+<small>Uptime SLA</small>
+</div>
+<div class="col-4 text-center">
+<div class="h3 mb-0">24/7</div>
+<small>Supporto</small>
+</div>
+</div>
+<div class="d-flex gap-3 flex-wrap">
+<a href="tel:+390398882041" class="btn btn-light btn-lg">
+<i class="bi bi-microsoft me-2"></i>Migrazione Gratuita
+</a>
+<a href="#contatti" class="btn btn-outline-light btn-lg">
+<i class="bi bi-calendar-check me-2"></i>Demo Teams
+</a>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="text-center">
+<img src="/images/microsoft-365-dashboard.png" alt="Microsoft 365 Dashboard" class="img-fluid" style="max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" id="servizi">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3">Servizi Microsoft 365</h2>
+<p class="lead text-secondary">Soluzione completa per la produttività aziendale</p>
+</div>
+
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="bi bi-arrow-repeat"></i>
+</div>
+<h4 class="mb-3">Migrazione Email</h4>
+<p class="text-secondary">
+Migrazione completa da qualsiasi sistema email (POP3, IMAP, Exchange) 
+a Exchange Online senza perdita di dati.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Zero downtime garantito</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Backup completo pre-migrazione</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Test e validazione</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="bi bi-people"></i>
+</div>
+<h4 class="mb-3">Teams & Collaborazione</h4>
+<p class="text-secondary">
+Setup e configurazione Microsoft Teams per videocall, chat, 
+condivisione file e collaborazione in tempo reale.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Configurazione canali</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Integrazione telefonia</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Training utenti</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="bi bi-shield-check"></i>
+</div>
+<h4 class="mb-3">Sicurezza & Compliance</h4>
+<p class="text-secondary">
+Configurazione avanzata di sicurezza con Multi-Factor Authentication, 
+Data Loss Prevention e compliance GDPR.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>MFA obbligatorio</li>
+<li><i class="bi bi-check2 text-success me-2"></i>DLP policies</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Audit & reporting</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="bi bi-cloud"></i>
+</div>
+<h4 class="mb-3">SharePoint & OneDrive</h4>
+<p class="text-secondary">
+Creazione intranet aziendale con SharePoint e gestione 
+documenti cloud con OneDrive for Business.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Intranet personalizzata</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Librerie documenti</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Sincronizzazione offline</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="bi bi-graph-up"></i>
+</div>
+<h4 class="mb-3">Power Platform</h4>
+<p class="text-secondary">
+Automazioni business con Power Automate, app personalizzate 
+con Power Apps e analisi dati con Power BI.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Workflow automatici</li>
+<li><i class="bi bi-check2 text-success me-2"></i>App no-code</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Dashboard business</li>
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="bi bi-headset"></i>
+</div>
+<h4 class="mb-3">Supporto Continuo</h4>
+<p class="text-secondary">
+Assistenza tecnica italiana 24/7, formazione utenti, 
+aggiornamenti e ottimizzazioni continue.
+</p>
+<ul class="list-unstyled">
+<li><i class="bi bi-check2 text-success me-2"></i>Supporto in italiano</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Formazione periodica</li>
+<li><i class="bi bi-check2 text-success me-2"></i>Monitoraggio proattivo</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pricing Section -->
+<section class="features-grid" id="prezzi">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="display-4 fw-bold mb-3">Piani Microsoft 365</h2>
+<p class="lead text-secondary">Prezzi trasparenti, nessun costo nascosto</p>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-lg-4 mb-4">
+<div class="pricing-card">
+<h4 class="mb-3">Business Basic</h4>
+<div class="price-tag">€6</div>
+<div class="text-secondary mb-4">/utente/mese</div>
+<ul class="list-unstyled text-start mb-4">
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Exchange Online 50GB</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Microsoft Teams</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>SharePoint 1TB</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>OneDrive 1TB</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Office web</li>
+</ul>
+<div class="text-secondary small">+ Migrazione gratuita</div>
+<button class="btn btn-outline-primary w-100 mt-3">Scegli Basic</button>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="pricing-card featured">
+<div class="position-absolute top-0 start-50 translate-middle">
+<span class="badge bg-primary">PIÙ POPOLARE</span>
+</div>
+<h4 class="mb-3">Business Standard</h4>
+<div class="price-tag">€12.50</div>
+<div class="text-secondary mb-4">/utente/mese</div>
+<ul class="list-unstyled text-start mb-4">
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Tutto del Basic</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Office desktop apps</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Outlook, Word, Excel, PowerPoint</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Teams webinar</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Bookings, Lists</li>
+</ul>
+<div class="text-secondary small">+ Setup assistito + Training</div>
+<button class="btn btn-microsoft w-100 mt-3">Scegli Standard</button>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="pricing-card">
+<h4 class="mb-3">Business Premium</h4>
+<div class="price-tag">€22</div>
+<div class="text-secondary mb-4">/utente/mese</div>
+<ul class="list-unstyled text-start mb-4">
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Tutto del Standard</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Sicurezza avanzata</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Intune device management</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Azure AD Premium</li>
+<li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Information Protection</li>
+</ul>
+<div class="text-secondary small">+ Sicurezza enterprise + Compliance</div>
+<button class="btn btn-outline-primary w-100 mt-3">Scegli Premium</button>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-4">
+<p class="text-secondary">
+<i class="bi bi-info-circle me-2"></i>
+Migrazione gratuita inclusa • Nessun contratto di vincolo • Supporto italiano
+</p>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5" id="contatti">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h2 class="display-5 fw-bold mb-4">Inizia Oggi la Migrazione</h2>
+<p class="lead text-secondary mb-4">
+I nostri esperti Microsoft certificati ti guideranno passo-passo 
+nella migrazione a Office 365. Analisi gratuita e preventivo immediato.
+</p>
+<div class="row">
+<div class="col-md-6 mb-3">
+<div class="d-flex align-items-center">
+<div class="service-icon me-3" style="width: 40px; height: 40px; font-size: 1rem;">
+<i class="bi bi-clock"></i>
+</div>
+<div>
+<strong>48 ore</strong><br/>
+<small class="text-secondary">Migrazione completa</small>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-3">
+<div class="d-flex align-items-center">
+<div class="service-icon me-3" style="width: 40px; height: 40px; font-size: 1rem;">
+<i class="bi bi-shield-check"></i>
+</div>
+<div>
+<strong>Zero rischi</strong><br/>
+<small class="text-secondary">Backup completo</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="bg-light p-4 rounded">
+<h4 class="mb-4">Richiedi Consulenza Gratuita</h4>
+<form>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Nome" required/>
+</div>
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Azienda"/>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Email" required/>
+</div>
+<div class="col-md-6 mb-3">
+<input type="tel" class="form-control" placeholder="Telefono"/>
+</div>
+</div>
+<div class="mb-3">
+<select class="form-control">
+<option value="">Numero utenti da migrare</option>
+<option value="1-10">1-10 utenti</option>
+<option value="11-50">11-50 utenti</option>
+<option value="51-100">51-100 utenti</option>
+<option value="100+">Oltre 100 utenti</option>
+</select>
+</div>
+<div class="mb-3">
+<textarea class="form-control" placeholder="Sistema email attuale (Exchange, Gmail, altro...)" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-microsoft w-100">
+<i class="bi bi-microsoft me-2"></i>Richiedi Consulenza Gratuita
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 mb-4">
+<h5 class="mb-3">IT-ERA Microsoft 365</h5>
+<p class="text-secondary">
+Partner Microsoft specializzato nella migrazione e gestione Office 365 
+per aziende in {{CITY}} e {{REGION}}.
+</p>
+<div class="d-flex gap-3">
+<a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+<a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+</div>
+</div>
+<div class="col-lg-2 mb-4">
+<h6 class="mb-3">Servizi</h6>
+<ul class="list-unstyled">
+<li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Migrazione Email</a></li>
+<li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Microsoft Teams</a></li>
+<li class="mb-2"><a href="#" class="text-secondary text-decoration-none">SharePoint</a></li>
+<li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Supporto 24/7</a></li>
+</ul>
+</div>
+<div class="col-lg-3 mb-4">
+<h6 class="mb-3">Contatti</h6>
+<div class="text-secondary">
+<div class="mb-2"><i class="bi bi-telephone me-2"></i>+39 039 888 2041</div>
+<div class="mb-2"><i class="bi bi-envelope me-2"></i>info@it-era.it</div>
+<div class="mb-2"><i class="bi bi-geo-alt me-2"></i>Viale Risorgimento 32<br/>20871 Vimercate (MB)</div>
+</div>
+</div>
+<div class="col-lg-3 mb-4">
+<h6 class="mb-3">Orari Supporto</h6>
+<div class="text-secondary">
+<div class="mb-2">Lun-Ven: 8:00-18:00</div>
+<div class="mb-2">Emergenze: 24/7</div>
+<div class="mb-2">Email: Sempre attivo</div>
+</div>
+</div>
+</div>
+<hr class="my-4"/>
+<div class="row align-items-center">
+<div class="col-md-6">
+<p class="mb-0 text-secondary">© 2025 IT-ERA - P.IVA 10524040966</p>
+</div>
+<div class="col-md-6 text-md-end">
+<a href="/privacy" class="text-secondary text-decoration-none me-3">Privacy</a>
+<a href="/cookie" class="text-secondary text-decoration-none">Cookie</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

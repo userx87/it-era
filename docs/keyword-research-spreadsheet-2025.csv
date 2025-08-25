@@ -1,0 +1,76 @@
+Category,Keyword,Search Volume,Competition,Commercial Intent,Priority,City Focus,Estimated CPC,Conversion Potential,Implementation Status
+Primary,assistenza informatica Milano,7250,High,High,Ultra High,Milano,€8.50,Very High,Ready
+Primary,assistenza informatica Bergamo,3500,Medium,High,High,Bergamo,€6.20,High,Ready
+Primary,assistenza informatica Monza,2100,Medium,High,High,Monza,€5.80,High,Ready
+Primary,assistenza informatica Como,1800,Low,High,Medium,Como,€4.90,Medium,Planned
+Primary,supporto tecnico computer Milano,4200,Medium,High,Ultra High,Milano,€7.30,Very High,Ready
+Primary,supporto tecnico computer Bergamo,1900,Low,High,High,Bergamo,€5.40,High,Ready
+Primary,riparazione pc Milano,3600,High,High,High,Milano,€9.20,Very High,Ready
+Primary,riparazione pc Bergamo,1400,Medium,High,Medium,Bergamo,€6.80,High,Ready
+Primary,consulenza informatica Milano,2800,Medium,High,Ultra High,Milano,€12.50,Very High,Ready
+Primary,consulenza informatica aziende Milano,1200,Low,Very High,Ultra High,Milano,€15.20,Very High,Planned
+Primary,sistemista informatico Milano,1800,Low,High,High,Milano,€11.80,High,Ready
+Primary,backup aziendale Milano,2200,Medium,Very High,Ultra High,Milano,€14.30,Very High,Ready
+Primary,backup aziendale Bergamo,980,Low,High,High,Bergamo,€9.50,High,Ready
+Primary,cloud storage aziendale Milano,1900,High,Very High,Ultra High,Milano,€16.80,Very High,Ready
+Primary,cloud storage PMI Milano,850,Low,Very High,High,Milano,€18.90,Very High,Planned
+Primary,archiviazione dati Milano,1600,Medium,High,High,Milano,€10.20,High,Ready
+Primary,disaster recovery Milano,1400,Medium,Very High,Ultra High,Milano,€19.50,Very High,Ready
+Primary,cybersecurity Milano,4200,High,Very High,Ultra High,Milano,€22.30,Very High,Ready
+Primary,cybersecurity aziendale Milano,1800,Medium,Very High,Ultra High,Milano,€25.60,Very High,Planned
+Primary,sicurezza informatica Milano,3200,Medium,High,Ultra High,Milano,€13.40,Very High,Ready
+Primary,sicurezza informatica PMI Milano,920,Low,Very High,High,Milano,€16.70,Very High,Planned
+Primary,firewall aziendale Milano,1100,Low,High,High,Milano,€12.90,High,Ready
+
+Long-tail,assistenza informatica Milano emergenza 24h,320,Low,Very High,High,Milano,€28.50,Very High,Planned
+Long-tail,supporto tecnico Milano piccole medie imprese,280,Low,Very High,High,Milano,€24.20,Very High,Planned
+Long-tail,backup aziendale Milano preventivo gratuito,190,Low,Very High,Medium,Milano,€18.80,High,Planned
+Long-tail,cybersecurity Milano certificato ISO,150,Low,Very High,Medium,Milano,€35.60,Very High,Planned
+Long-tail,cloud storage Milano SLA garantito,120,Low,Very High,Medium,Milano,€32.40,Very High,Planned
+Long-tail,disaster recovery Milano tempi ripristino,110,Low,High,Medium,Milano,€26.70,High,Planned
+Long-tail,firewall Milano installazione rapida,85,Low,High,Low,Milano,€19.30,Medium,Future
+Long-tail,sistemista Milano costi fissi mensili,95,Low,Very High,Medium,Milano,€21.80,High,Planned
+
+Question-based,chi fa assistenza informatica a Milano,240,Low,High,Medium,Milano,€12.40,High,Planned
+Question-based,quanto costa supporto IT Milano 2025,180,Low,Very High,Medium,Milano,€15.60,Very High,Planned
+Question-based,come scegliere cloud storage Milano,160,Low,High,Low,Milano,€8.90,Medium,Future
+Question-based,migliore cybersecurity Milano 2025,140,Low,High,Low,Milano,€18.70,High,Future
+Question-based,dove trovare sistemista Milano,130,Low,High,Low,Milano,€11.20,Medium,Future
+Question-based,quale backup aziendale Milano,100,Low,High,Low,Milano,€14.50,Medium,Future
+
+Voice Search,assistenza computer vicino a me,890,Medium,High,Medium,All Cities,€9.80,High,Ready
+Voice Search,supporto IT urgente Milano,220,Low,Very High,High,Milano,€22.90,Very High,Planned
+Voice Search,sistemista bravo Milano,180,Low,High,Medium,Milano,€16.40,High,Planned
+Voice Search,consulente informatico Milano,160,Low,High,Medium,Milano,€19.60,High,Planned
+Voice Search,backup aziendale migliore Milano,140,Low,High,Medium,Milano,€21.30,High,Planned
+Voice Search,cybersecurity azienda Milano,120,Low,Very High,Medium,Milano,€28.70,Very High,Planned
+Voice Search,disaster recovery Milano,100,Low,Very High,Low,Milano,€24.50,High,Future
+Voice Search,firewall configurazione Milano,85,Low,High,Low,Milano,€17.80,Medium,Future
+
+Industry Specific,IT industry 4.0 Milano,280,Medium,High,Medium,Milano,€18.90,High,Planned
+Industry Specific,cybersecurity OT Milano,150,Low,Very High,Medium,Milano,€31.20,Very High,Planned
+Industry Specific,backup dati produzione Milano,120,Low,Very High,Medium,Milano,€26.80,High,Planned
+Industry Specific,IT sanitario GDPR Milano,110,Low,Very High,Low,Milano,€29.40,Very High,Future
+Industry Specific,sicurezza dati pazienti Milano,95,Low,Very High,Low,Milano,€33.60,Very High,Future
+Industry Specific,cybersecurity finanziaria Milano,80,Low,Very High,Low,Milano,€38.90,Very High,Future
+
+Seasonal Q1,budget IT 2025 Milano,450,Low,High,High,Milano,€16.70,High,Ready
+Seasonal Q1,pianificazione sistemi informatici Milano,220,Low,High,Medium,Milano,€21.30,High,Planned
+Seasonal Q1,audit sicurezza informatica Milano,180,Low,Very High,Medium,Milano,€28.50,Very High,Planned
+Seasonal Q2,migrazione cloud Milano,320,Medium,Very High,High,Milano,€24.80,Very High,Planned
+Seasonal Q2,upgrade infrastrutture IT Milano,180,Low,High,Medium,Milano,€19.60,High,Planned
+Seasonal Q2,disaster recovery test Milano,140,Low,High,Medium,Milano,€22.40,High,Planned
+Seasonal Q3,manutenzione server estate Milano,160,Low,High,Low,Milano,€18.90,Medium,Future
+Seasonal Q3,backup vacanze estive Milano,120,Low,High,Low,Milano,€15.60,Medium,Future
+Seasonal Q4,backup fine anno Milano,180,Low,High,Medium,Milano,€17.80,High,Planned
+Seasonal Q4,audit compliance Milano,150,Low,Very High,Medium,Milano,€26.40,Very High,Planned
+
+Competitor,nexsys alternative Milano,90,Low,Very High,Low,Milano,€19.80,High,Future
+Competitor,technoit vs it-era Milano,75,Low,High,Low,Milano,€14.20,Medium,Future
+Competitor,infocamere alternative PMI Milano,65,Low,High,Low,Milano,€16.90,Medium,Future
+
+Pricing,assistenza informatica Milano prezzi 2025,380,Medium,Very High,High,Milano,€13.60,Very High,Planned
+Pricing,supporto tecnico Milano costo orario,280,Low,Very High,Medium,Milano,€11.40,Very High,Planned
+Pricing,consulenza IT Milano tariffe,220,Low,Very High,Medium,Milano,€15.80,Very High,Planned
+Pricing,backup aziendale Milano costi,180,Low,Very High,Medium,Milano,€17.90,High,Planned
+Pricing,cybersecurity Milano preventivo,150,Low,Very High,Medium,Milano,€23.70,Very High,Planned

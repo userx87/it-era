@@ -887,10 +887,50 @@ async function cleanupAISession(sessionId, CHAT_SESSIONS) {
 }
 
 // Main worker handler
+// RESILIENCE MONITORING - Periodic health assessments
+let monitoringInterval;
+
+function startResilienceMonitoring() {
+  if (monitoringInterval) return; // Already started
+  
+  monitoringInterval = setInterval(async () => {
+    try {
+      if (resilienceInitialized) {
+        const health = await healthMonitor.getCurrentHealth();
+        await gracefulDegradation.assessSystemHealth();
+        
+        if (health.status === 'CRITICAL') {
+          logger.error('System health critical - immediate attention required', {
+            criticalServices: health.summary.critical,
+            unhealthyServices: health.summary.unhealthy
+          });
+        }
+      }
+    } catch (error) {
+      logger.error('Health monitoring failed', { error: error.message });
+    }
+  }, 60000); // Every minute
+
+  // Cleanup old logs periodically  
+  setInterval(() => {
+    try {
+      const cleared = logger.clearOldLogs(86400000); // 24 hours
+      if (cleared > 0) {
+        logger.info(`Cleaned up ${cleared} old log entries`);
+      }
+    } catch (error) {
+      logger.error('Log cleanup failed', { error: error.message });
+    }
+  }, 3600000); // Every hour
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const origin = request.headers.get('Origin') || '';
+    
+    // Start resilience monitoring on first request
+    startResilienceMonitoring();
     
     // Health check with Hybrid AI system status
     if (url.pathname === '/health') {

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazie per la tua richiesta | IT-ERA</title>
+    <meta name="description" content="La tua richiesta è stata ricevuta con successo. Il team IT-ERA ti contatterà presto per fornirti la migliore soluzione informatica.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0056cc;
+            --secondary: #00b336;
+            --danger: #dc3545;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .thank-you-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .thank-you-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .thank-you-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .thank-you-title {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-subtitle {
+            color: #6c757d;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .next-steps {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .next-steps h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .emergency-section {
+            background: linear-gradient(135deg, var(--danger), #c82333);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .emergency-section h5 {
+            margin-bottom: 15px;
+        }
+        
+        .action-buttons {
+            margin-top: 40px;
+        }
+        
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 86, 204, 0.3);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn-outline-custom:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-card {
+                padding: 40px 20px;
+                margin: 10px;
+            }
+            
+            .thank-you-title {
+                font-size: 2rem;
+            }
+            
+            .thank-you-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-card">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            
+            <h1 class="thank-you-title">Grazie!</h1>
+            <p class="thank-you-subtitle">
+                La tua richiesta è stata ricevuta con successo. 
+                Il nostro team di esperti la esaminerà e ti contatterà al più presto.
+            </p>
+            
+            <!-- Dynamic content will be populated by JavaScript -->
+            <div id="dynamicContent">
+                <!-- Ticket info will be inserted here -->
+            </div>
+            
+            <div class="next-steps">
+                <h4><i class="fas fa-route me-2"></i>Prossimi Passi</h4>
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div>
+                        <strong>Analisi della richiesta</strong><br>
+                        Il nostro team tecnico analizzerà le tue esigenze specifiche
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div>
+                        <strong>Contatto personalizzato</strong><br>
+                        Ti contatteremo entro 4 ore lavorative per discutere la soluzione
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div>
+                        <strong>Preventivo gratuito</strong><br>
+                        Riceverai un preventivo dettagliato e personalizzato
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div>
+                        <strong>Implementazione</strong><br>
+                        Pianificheremo insieme l'implementazione della soluzione
+                    </div>
+                </div>
+            </div>
+            
+            <div class="emergency-section">
+                <h5><i class="fas fa-exclamation-triangle me-2"></i>Hai un'emergenza informatica?</h5>
+                <p class="mb-3">Per supporto immediato 24/7 chiamaci ora:</p>
+                <a href="tel:+390398882041" class="btn btn-light btn-lg fw-bold">
+                    <i class="fas fa-phone me-2"></i>039 888 2041
+                </a>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="/" class="btn-primary-custom">
+                    <i class="fas fa-home me-2"></i>Torna alla Homepage
+                </a>
+                <a href="/pages/assistenza-it.html" class="btn-outline-custom">
+                    <i class="fas fa-cogs me-2"></i>I Nostri Servizi
+                </a>
+            </div>
+            
+            <div class="mt-4">
+                <small class="text-muted">
+                    <i class="fas fa-envelope me-1"></i>
+                    Puoi anche contattarci via email: 
+                    <a href="mailto:info@it-era.it" class="text-primary">info@it-era.it</a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Parse URL parameters for dynamic content
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const ticketId = urlParams.get('ticket');
+            const service = urlParams.get('service');
+            const urgency = urlParams.get('urgency');
+            
+            // If we have ticket information, display it
+            if (ticketId) {
+                const dynamicContent = document.getElementById('dynamicContent');
+                
+                let ticketHtml = `
+                    <div class="alert alert-success mb-4">
+                        <h5><i class="fas fa-ticket-alt me-2"></i>Dettagli Richiesta</h5>
+                        <p class="mb-2"><strong>Ticket ID:</strong> ${ticketId}</p>
+                `;
+                
+                if (service) {
+                    ticketHtml += `<p class="mb-2"><strong>Servizio:</strong> ${service}</p>`;
+                }
+                
+                if (urgency === 'urgente') {
+                    ticketHtml += `
+                        <div class="alert alert-warning mt-3 mb-0">
+                            <strong>🚨 Richiesta Urgente</strong><br>
+                            Ti contatteremo entro 15 minuti!
+                        </div>
+                    `;
+                    
+                    // Update next steps for urgent requests
+                    const nextSteps = document.querySelector('.next-steps');
+                    nextSteps.innerHTML = `
+                        <h4><i class="fas fa-bolt me-2"></i>Gestione Urgente</h4>
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div>
+                                <strong>Notifica immediata</strong><br>
+                                Il team di emergenza è stato allertato
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div>
+                                <strong>Contatto rapido</strong><br>
+                                Ti chiameremo entro 15 minuti
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div>
+                                <strong>Intervento immediato</strong><br>
+                                Supporto remoto o intervento on-site se necessario
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                ticketHtml += '</div>';
+                dynamicContent.innerHTML = ticketHtml;
+            }
+            
+            // Track page view
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: 'Thank You Page',
+                    page_location: window.location.href,
+                    ticket_id: ticketId,
+                    service: service
+                });
+            }
+        });
+    </script>
+</body>
+</html>

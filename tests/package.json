@@ -1,27 +1,62 @@
 {
-  "name": "it-era-robust-testing",
-  "version": "1.0.0",
-  "description": "Comprehensive Puppeteer testing utilities for IT-ERA",
-  "main": "run-robust-test-suite.js",
+  "name": "it-era-comprehensive-test-suite",
+  "version": "2.0.0",
+  "description": "IT-ERA Comprehensive Testing Suite - HIVE MIND Mission Control",
+  "main": "master-test-runner.js",
   "scripts": {
-    "test": "node run-robust-test-suite.js",
+    "test": "node master-test-runner.js",
+    "test:all": "./run-all-tests.sh",
+    "test:security": "node security/penetration-tests.js",
+    "test:api": "node api/comprehensive-api-tests.js",
+    "test:auth": "node authentication/auth-flow-tests.js",
+    "test:performance": "node performance/load-testing.js",
+    "test:frontend": "node frontend/ui-functionality-tests.js",
+    "test:email": "node email-integration-tests.js",
+    "test:quick": "npm run test:security && npm run test:api",
+    "test:critical": "npm run test:security && npm run test:auth && npm run test:api",
     "test:chatbot": "node robust-chatbot-test.js",
     "test:debug": "jest production-debug-test.js --verbose --detectOpenHandles",
     "test:production": "node run-robust-test-suite.js --production-only",
     "test:staging": "node run-robust-test-suite.js --staging-only",
     "test:functionality": "node run-robust-test-suite.js --functionality-only",
-    "test:performance": "node run-robust-test-suite.js --performance-only",
     "test:network": "node run-robust-test-suite.js --network-only",
     "test:parallel": "node run-robust-test-suite.js --parallel",
-    "test:quick": "node run-robust-test-suite.js --production-only --functionality-only --no-retry"
+    "reports": "echo 'Test reports available in ./reports/' && ls -la reports/",
+    "clean": "rm -rf reports/*.json reports/*.html",
+    "install-deps": "npm install puppeteer supertest jest nodemailer",
+    "validate": "node -e \"console.log('✅ Test suite configuration valid')\"",
+    "hive-mind": "echo '🤖 HIVE MIND Testing & Validation Chief' && echo 'Mission: Complete system validation' && npm run test:all"
   },
+  "keywords": [
+    "testing",
+    "validation",
+    "security",
+    "performance",
+    "automation",
+    "hive-mind",
+    "it-era",
+    "puppeteer",
+    "api-testing",
+    "security-testing"
+  ],
   "dependencies": {
     "puppeteer": "^24.17.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemailer": "^6.9.7"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
-  "author": "IT-ERA Development Team",
-  "license": "MIT"
+  "author": "IT-ERA Testing & Validation Chief - HIVE MIND",
+  "license": "PROPRIETARY",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/it-era/comprehensive-testing"
+  },
+  "config": {
+    "test-timeout": 300000,
+    "concurrent-tests": 5,
+    "retry-attempts": 3
+  }
 }

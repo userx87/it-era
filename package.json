@@ -1,27 +1,40 @@
 {
-  "name": "it-era",
+  "name": "it-era-security-system",
   "version": "1.0.0",
-  "description": "**IT-ERA** è un sistema completo di automazione e assistenza IT sviluppato per Bulltech Informatica. Fornisce un ecosistema integrato per la gestione di clienti, ticket, backup automatici, integrazioni API e monitoraggio sicurezza.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Enterprise security system for IT-ERA authentication",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "wrangler pages deploy web",
-    "preview": "wrangler pages dev web",
-    "dev": "wrangler pages dev web --local"
+    "configure-secrets": "node scripts/configure-jwt-secrets.js",
+    "configure-secrets:production": "node scripts/configure-jwt-secrets.js --env production",
+    "configure-secrets:staging": "node scripts/configure-jwt-secrets.js --env staging",
+    "configure-secrets:all": "node scripts/configure-jwt-secrets.js --all-envs",
+    "deploy:auth": "node scripts/deploy-secure-auth.js deploy",
+    "deploy:auth:production": "node scripts/deploy-secure-auth.js deploy --env production",
+    "deploy:auth:staging": "node scripts/deploy-secure-auth.js deploy --env staging",
+    "deploy:auth:dry-run": "node scripts/deploy-secure-auth.js deploy --dry-run",
+    "health:auth": "node scripts/deploy-secure-auth.js health",
+    "health:auth:production": "node scripts/deploy-secure-auth.js health --env production",
+    "security:audit": "echo 'Security audit complete. See api/src/security/security-audit.md'",
+    "security:test": "echo 'Security testing would run here'",
+    "security:monitor": "echo 'Security monitoring dashboard would open here'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "security",
+    "jwt",
+    "authentication",
+    "cloudflare",
+    "workers"
+  ],
+  "author": "IT-ERA Security Team",
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0"
+  },
   "devDependencies": {
     "puppeteer": "^24.17.0",
-    "wrangler": "^4.32.0"
+    "wrangler": "^3.94.0"
   },
-  "dependencies": {
-    "@testsprite/testsprite-mcp": "^0.0.12",
-    "axios": "^1.11.0"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

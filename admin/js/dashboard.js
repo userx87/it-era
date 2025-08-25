@@ -1,352 +1,674 @@
-// Dashboard rendering and functionality
-function renderDashboard(data) {
-    const content = `
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2"><i class="bi bi-speedometer2 me-2"></i>Dashboard</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-                <div class="btn-group me-2">
-                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="loadDashboard()">
-                        <i class="bi bi-arrow-clockwise me-1"></i>Aggiorna
-                    </button>
-                </div>
-            </div>
-        </div>
+/**
+ * IT-ERA Admin Panel - Dashboard Management
+ * 
+ * Dashboard with real-time statistics, activity monitoring,
+ * system status, and quick access to management functions.
+ */
 
-        <!-- Summary Cards -->
-        <div class="row mb-4">
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card stat-card stat-posts">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="stat-label mb-1">Totale Post</div>
-                                <div class="stat-number text-primary">${formatNumber(data.stats?.posts?.total || data.posts?.total || 0)}</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="bi bi-file-text fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                        <div class="mt-2 text-muted small">
-                            <span class="text-success">${formatNumber(data.stats?.posts?.published || data.posts?.published || 0)} pubblicati</span> •
-                            <span class="text-warning">${formatNumber(data.stats?.posts?.draft || data.posts?.draft || 0)} bozze</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card stat-card stat-views">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="stat-label mb-1">Visualizzazioni</div>
-                                <div class="stat-number text-success">${formatNumber(data.stats?.views?.month || data.views?.month || 0)}</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="bi bi-eye fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                        <div class="mt-2 text-muted small">
-                            Post pubblicati
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card stat-card stat-categories">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="stat-label mb-1">Categorie</div>
-                                <div class="stat-number text-info">${formatNumber(data.stats?.categories || data.categories || 0)}</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="bi bi-folder fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                        <div class="mt-2 text-muted small">
-                            Attive
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card stat-card stat-tags">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="stat-label mb-1">Tag</div>
-                                <div class="stat-number text-warning">${formatNumber(data.stats?.tags || data.tags || 0)}</div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="bi bi-tags fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                        <div class="mt-2 text-muted small">
-                            Totali
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Recent Posts -->
-            <div class="col-lg-8 mb-4">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Post Recenti</h5>
-                        <button class="btn btn-sm btn-outline-primary" onclick="loadPosts()">
-                            Vedi tutti
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        ${renderRecentPosts(data.stats?.recent_posts || data.recent_posts || [])}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quick Stats -->
-            <div class="col-lg-4 mb-4">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Statistiche Post</h5>
-                    </div>
-                    <div class="card-body">
-                        <canvas id="postsStatusChart" style="height: 200px;"></canvas>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Popular Posts -->
-
-            <!-- Webhook Activity -->
-            ${data.webhooks && data.webhooks.length > 0 ? `
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title mb-0">Attività Webhook</h5>
-                        <button class="btn btn-sm btn-outline-secondary" onclick="loadWebhooks()">
-                            Dettagli
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        ${renderWebhookActivity(data.webhooks)}
-                    </div>
-                </div>
-            </div>
-            ` : ''}
-        </div>
-
-        ${(data.stats?.posts?.monthly || data.posts?.monthly || []).length > 0 ? `
-        <div class="row">
-            <div class="col-12 mb-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Attività Mensile</h5>
-                    </div>
-                    <div class="card-body">
-                        <canvas id="monthlyActivityChart" style="height: 300px;"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-        ` : ''}
-    `;
-
-    document.getElementById('mainContent').innerHTML = content;
-
-    // Initialize charts
-    setTimeout(() => {
-        renderPostStatusChart(data.stats?.posts?.byStatus || data.posts?.byStatus || []);
-        if ((data.stats?.posts?.monthly || data.posts?.monthly || []).length > 0) {
-            renderMonthlyActivityChart(data.stats?.posts?.monthly || data.posts?.monthly);
-        }
-    }, 100);
-}
-
-function renderRecentPosts(posts) {
-    if (posts.length === 0) {
-        return '<p class="text-muted text-center py-3">Nessun post trovato</p>';
+class DashboardManager {
+    constructor() {
+        this.stats = {};
+        this.activities = [];
+        this.systemStatus = {};
+        
+        // Refresh intervals
+        this.statsRefreshInterval = 30000; // 30 seconds
+        this.activityRefreshInterval = 60000; // 1 minute
+        this.statusRefreshInterval = 120000; // 2 minutes
+        
+        // Timers
+        this.timers = {
+            stats: null,
+            activity: null,
+            status: null
+        };
+        
+        // Chart instances
+        this.charts = {};
+        
+        this.init();
     }
 
-    return `
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <tbody>
-                    ${posts.map(post => `
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-1">
-                                            <a href="#" onclick="editPost(${post.id})" class="text-decoration-none">
-                                                ${post.title}
-                                            </a>
-                                        </h6>
-                                        <small class="text-muted">
-                                            di ${post.author_name} • 
-                                            ${formatDate(post.published_at || post.created_at, true)}
-                                        </small>
-                                        ${post.service_category ? `<br><small>${getServiceBadge(post.service_category)}</small>` : ''}
-                                    </div>
-                                    <div class="text-end">
-                                        ${getStatusBadge(post.status)}
-                                        ${post.view_count > 0 ? `<br><small class="text-muted">${formatNumber(post.view_count)} views</small>` : ''}
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    `).join('')}
-                </tbody>
-            </table>
-        </div>
-    `;
-}
+    /**
+     * Initialize dashboard manager
+     */
+    init() {
+        console.info('DashboardManager: Initializing dashboard system');
+        
+        this.setupEventListeners();
+        this.loadInitialData();
+        this.setupRefreshTimers();
+        this.setupAuthenticationHandler();
+    }
 
-function renderPopularPosts(posts) {
-    return `
-        <div class="list-group list-group-flush">
-            ${posts.map((post, index) => `
-                <div class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="me-auto">
-                        <span class="badge bg-primary rounded-pill me-2">${index + 1}</span>
-                        <strong>${post.title}</strong>
-                        <br>
-                        <small class="text-muted">${formatDate(post.published_at)}</small>
+    /**
+     * Setup event listeners
+     */
+    setupEventListeners() {
+        // Navigation clicks
+        document.addEventListener('click', (e) => {
+            if (e.target.matches('[data-section]')) {
+                e.preventDefault();
+                this.showSection(e.target.dataset.section);
+            }
+        });
+
+        // Login form submission
+        document.addEventListener('submit', (e) => {
+            if (e.target.id === 'loginForm') {
+                e.preventDefault();
+                this.handleLogin(e.target);
+            }
+        });
+
+        // Logout
+        document.addEventListener('click', (e) => {
+            if (e.target.id === 'logoutBtn') {
+                e.preventDefault();
+                this.handleLogout();
+            }
+        });
+
+        // Refresh buttons
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('refresh-stats')) {
+                this.loadStats();
+            }
+            if (e.target.classList.contains('refresh-activity')) {
+                this.loadRecentActivity();
+            }
+        });
+
+        // Window focus events for real-time updates
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                this.loadStats();
+                this.loadRecentActivity();
+            }
+        });
+    }
+
+    /**
+     * Setup authentication handler
+     */
+    setupAuthenticationHandler() {
+        // Check authentication on load
+        if (securityGuard.isAuthenticated()) {
+            this.showAdminInterface();
+        } else {
+            this.showAuthModal();
+        }
+    }
+
+    /**
+     * Setup refresh timers
+     */
+    setupRefreshTimers() {
+        // Only set up timers if user is authenticated
+        if (!securityGuard.isAuthenticated()) {
+            return;
+        }
+
+        this.timers.stats = setInterval(() => {
+            if (!document.hidden) {
+                this.loadStats();
+            }
+        }, this.statsRefreshInterval);
+
+        this.timers.activity = setInterval(() => {
+            if (!document.hidden) {
+                this.loadRecentActivity();
+            }
+        }, this.activityRefreshInterval);
+
+        this.timers.status = setInterval(() => {
+            if (!document.hidden) {
+                this.loadSystemStatus();
+            }
+        }, this.statusRefreshInterval);
+    }
+
+    /**
+     * Load initial dashboard data
+     */
+    async loadInitialData() {
+        if (!securityGuard.isAuthenticated()) {
+            return;
+        }
+
+        try {
+            this.showLoading('dashboardSection', true);
+            
+            await Promise.all([
+                this.loadStats(),
+                this.loadRecentActivity(),
+                this.loadSystemStatus()
+            ]);
+            
+            this.updateDashboardDisplay();
+            
+        } catch (error) {
+            console.error('DashboardManager: Failed to load initial data:', error);
+            this.showError('Errore durante il caricamento del dashboard');
+        } finally {
+            this.showLoading('dashboardSection', false);
+        }
+    }
+
+    /**
+     * Load dashboard statistics
+     */
+    async loadStats() {
+        try {
+            const response = await securityGuard.makeSecureRequest('/dashboard/stats');
+            
+            if (response.success) {
+                this.stats = response.data || {};
+                this.updateStatsDisplay();
+            } else {
+                throw new Error(response.error || 'Errore durante il caricamento delle statistiche');
+            }
+        } catch (error) {
+            console.error('DashboardManager: Failed to load stats:', error);
+            // Don't show error for background refreshes
+        }
+    }
+
+    /**
+     * Load recent activity
+     */
+    async loadRecentActivity() {
+        try {
+            const response = await securityGuard.makeSecureRequest('/dashboard/activity');
+            
+            if (response.success) {
+                this.activities = response.data || [];
+                this.updateActivityDisplay();
+            } else {
+                throw new Error(response.error || 'Errore durante il caricamento dell\'attività');
+            }
+        } catch (error) {
+            console.error('DashboardManager: Failed to load activity:', error);
+        }
+    }
+
+    /**
+     * Load system status
+     */
+    async loadSystemStatus() {
+        try {
+            const response = await securityGuard.makeSecureRequest('/dashboard/status');
+            
+            if (response.success) {
+                this.systemStatus = response.data || {};
+                this.updateSystemStatusDisplay();
+            } else {
+                throw new Error(response.error || 'Errore durante il caricamento dello stato sistema');
+            }
+        } catch (error) {
+            console.error('DashboardManager: Failed to load system status:', error);
+        }
+    }
+
+    /**
+     * Update dashboard display
+     */
+    updateDashboardDisplay() {
+        this.updateStatsDisplay();
+        this.updateActivityDisplay();
+        this.updateSystemStatusDisplay();
+        this.updateUserInfo();
+    }
+
+    /**
+     * Update statistics display
+     */
+    updateStatsDisplay() {
+        // Update stat cards
+        const statCards = {
+            totalPosts: { element: 'totalPosts', value: this.stats.posts_count || 0 },
+            totalMedia: { element: 'totalMedia', value: this.stats.media_count || 0 },
+            totalUsers: { element: 'totalUsers', value: this.stats.users_count || 0 },
+            storageUsage: { element: 'storageUsage', value: this.formatStorageUsage(this.stats.storage_used || 0) }
+        };
+
+        Object.entries(statCards).forEach(([key, config]) => {
+            const element = document.getElementById(config.element);
+            if (element) {
+                this.animateCounterTo(element, config.value);
+            }
+        });
+    }
+
+    /**
+     * Update activity display
+     */
+    updateActivityDisplay() {
+        const container = document.getElementById('recentActivity');
+        if (!container) return;
+
+        if (this.activities.length === 0) {
+            container.innerHTML = `
+                <div class="text-center py-4">
+                    <i class="fas fa-clock fa-2x text-muted mb-2"></i>
+                    <p class="text-muted">Nessuna attività recente</p>
+                </div>
+            `;
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="activity-list">
+                ${this.activities.slice(0, 10).map(activity => `
+                    <div class="activity-item d-flex align-items-start mb-3">
+                        <div class="activity-icon me-3">
+                            <i class="${this.getActivityIcon(activity.type)} text-${this.getActivityColor(activity.type)}"></i>
+                        </div>
+                        <div class="activity-content flex-grow-1">
+                            <div class="activity-text">
+                                ${this.formatActivityText(activity)}
+                            </div>
+                            <div class="activity-meta">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>
+                                    ${this.formatRelativeTime(activity.created_at)}
+                                    ${activity.user ? `• ${activity.user.name}` : ''}
+                                    ${activity.ip_address ? `• ${activity.ip_address}` : ''}
+                                </small>
+                            </div>
+                        </div>
                     </div>
-                    <span class="badge bg-success rounded-pill">${formatNumber(post.view_count)} views</span>
-                </div>
-            `).join('')}
-        </div>
-    `;
-}
-
-function renderServiceStats(services) {
-    return services.map(service => {
-        const serviceConfig = CONFIG.SERVICES[service.service_category];
-        return `
-            <div class="d-flex justify-content-between align-items-center mb-2">
-                <div>
-                    <i class="${serviceConfig?.icon || 'bi-circle'} me-2" style="color: ${serviceConfig?.color || '#6c757d'}"></i>
-                    ${serviceConfig?.name || service.service_category}
-                </div>
-                <span class="badge bg-secondary">${service.count}</span>
+                `).join('')}
+                
+                ${this.activities.length > 10 ? `
+                    <div class="text-center mt-3">
+                        <button class="btn btn-sm btn-outline-secondary" onclick="dashboardManager.viewAllActivity()">
+                            Vedi tutte le attività
+                        </button>
+                    </div>
+                ` : ''}
             </div>
         `;
-    }).join('');
-}
+    }
 
-function renderWebhookActivity(webhooks) {
-    return `
-        <div class="list-group list-group-flush">
-            ${webhooks.slice(0, 5).map(webhook => {
-                const isSuccess = webhook.status === 'processed';
-                return `
-                    <div class="list-group-item d-flex justify-content-between align-items-center py-2">
-                        <div>
-                            <i class="bi ${isSuccess ? 'bi-check-circle text-success' : 'bi-x-circle text-danger'} me-2"></i>
-                            <strong>${webhook.webhook_type}</strong>
-                            ${webhook.error_message ? `<br><small class="text-danger">${webhook.error_message}</small>` : ''}
-                        </div>
-                        <small class="text-muted">${formatDate(webhook.created_at, true)}</small>
-                    </div>
-                `;
-            }).join('')}
-        </div>
-    `;
-}
-
-function renderPostStatusChart(statusData) {
-    const ctx = document.getElementById('postsStatusChart');
-    if (!ctx) return;
-
-    const labels = statusData.map(item => CONFIG.POST_STATUSES[item.status]?.name || item.status);
-    const data = statusData.map(item => item.count);
-    const colors = statusData.map(item => {
-        switch(item.status) {
-            case 'published': return '#28a745';
-            case 'draft': return '#6c757d';
-            case 'scheduled': return '#fd7e14';
-            case 'archived': return '#6f42c1';
-            default: return '#17a2b8';
+    /**
+     * Update system status display
+     */
+    updateSystemStatusDisplay() {
+        // This would typically show system health, server status, etc.
+        // For now, we'll just log the status
+        if (Object.keys(this.systemStatus).length > 0) {
+            console.info('DashboardManager: System status updated', this.systemStatus);
         }
-    });
+    }
 
-    new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            labels: labels,
-            datasets: [{
-                data: data,
-                backgroundColor: colors,
-                borderWidth: 0
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        padding: 15,
-                        fontSize: 12
-                    }
+    /**
+     * Update user info in navigation
+     */
+    updateUserInfo() {
+        const userElement = document.getElementById('currentUser');
+        if (userElement && this.stats.current_user) {
+            userElement.textContent = this.stats.current_user.name || 'Admin';
+        }
+    }
+
+    /**
+     * Handle login
+     */
+    async handleLogin(form) {
+        try {
+            this.showLoginLoading(true);
+            
+            const formData = new FormData(form);
+            const credentials = {
+                email: formData.get('email'),
+                password: formData.get('password'),
+                rememberMe: formData.get('rememberMe') === 'on'
+            };
+            
+            const result = await securityGuard.login(credentials);
+            
+            if (result.success) {
+                this.showAdminInterface();
+                this.loadInitialData();
+                this.setupRefreshTimers();
+                this.showSuccess('Login effettuato con successo');
+            }
+            
+        } catch (error) {
+            console.error('DashboardManager: Login failed:', error);
+            this.showLoginError(error.message);
+        } finally {
+            this.showLoginLoading(false);
+        }
+    }
+
+    /**
+     * Handle logout
+     */
+    async handleLogout() {
+        try {
+            await securityGuard.logout();
+        } catch (error) {
+            console.error('DashboardManager: Logout failed:', error);
+        }
+        
+        this.clearRefreshTimers();
+        this.showAuthModal();
+    }
+
+    /**
+     * Show admin interface
+     */
+    showAdminInterface() {
+        document.getElementById('adminInterface').classList.remove('d-none');
+        
+        const authModal = bootstrap.Modal.getInstance(document.getElementById('authModal'));
+        if (authModal) {
+            authModal.hide();
+        }
+    }
+
+    /**
+     * Show authentication modal
+     */
+    showAuthModal() {
+        document.getElementById('adminInterface').classList.add('d-none');
+        
+        const authModal = new bootstrap.Modal(document.getElementById('authModal'));
+        authModal.show();
+    }
+
+    /**
+     * Show login loading state
+     */
+    showLoginLoading(show) {
+        const loginDiv = document.getElementById('auth-login');
+        const loadingDiv = document.getElementById('auth-loading');
+        
+        if (show) {
+            loginDiv.classList.add('d-none');
+            loadingDiv.classList.remove('d-none');
+        } else {
+            loginDiv.classList.remove('d-none');
+            loadingDiv.classList.add('d-none');
+        }
+    }
+
+    /**
+     * Show login error
+     */
+    showLoginError(message) {
+        const errorDiv = document.getElementById('loginError');
+        if (errorDiv) {
+            errorDiv.textContent = message;
+            errorDiv.classList.remove('d-none');
+        }
+    }
+
+    /**
+     * Show section
+     */
+    showSection(sectionName) {
+        // Hide all sections
+        document.querySelectorAll('.admin-section').forEach(section => {
+            section.classList.add('d-none');
+        });
+        
+        // Show requested section
+        const targetSection = document.getElementById(`${sectionName}Section`);
+        if (targetSection) {
+            targetSection.classList.remove('d-none');
+        }
+        
+        // Update navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        const activeLink = document.querySelector(`[data-section="${sectionName}"]`);
+        if (activeLink) {
+            activeLink.classList.add('active');
+        }
+        
+        // Initialize section-specific functionality
+        this.initializeSection(sectionName);
+    }
+
+    /**
+     * Initialize section-specific functionality
+     */
+    initializeSection(sectionName) {
+        switch (sectionName) {
+            case 'posts':
+                if (window.postsManager && !window.postsManager.initialized) {
+                    window.postsManager.loadInitialData();
+                    window.postsManager.initialized = true;
                 }
+                break;
+                
+            case 'media':
+                if (window.mediaManager && !window.mediaManager.initialized) {
+                    window.mediaManager.loadInitialData();
+                    window.mediaManager.initialized = true;
+                }
+                break;
+                
+            case 'users':
+                if (window.usersManager && !window.usersManager.initialized) {
+                    window.usersManager.loadInitialData();
+                    window.usersManager.initialized = true;
+                }
+                break;
+                
+            case 'settings':
+                if (window.settingsManager && !window.settingsManager.initialized) {
+                    window.settingsManager.loadInitialData();
+                    window.settingsManager.initialized = true;
+                }
+                break;
+        }
+    }
+
+    /**
+     * View all activity
+     */
+    viewAllActivity() {
+        // This would typically open a dedicated activity log page
+        alert('Funzionalità in sviluppo: Log completo delle attività');
+    }
+
+    /**
+     * Activity helpers
+     */
+    getActivityIcon(type) {
+        const icons = {
+            login: 'fas fa-sign-in-alt',
+            logout: 'fas fa-sign-out-alt',
+            create: 'fas fa-plus',
+            update: 'fas fa-edit',
+            delete: 'fas fa-trash',
+            upload: 'fas fa-upload',
+            download: 'fas fa-download',
+            settings: 'fas fa-cog',
+            error: 'fas fa-exclamation-triangle'
+        };
+        
+        return icons[type] || 'fas fa-info';
+    }
+
+    getActivityColor(type) {
+        const colors = {
+            login: 'success',
+            logout: 'secondary',
+            create: 'primary',
+            update: 'info',
+            delete: 'danger',
+            upload: 'success',
+            download: 'info',
+            settings: 'warning',
+            error: 'danger'
+        };
+        
+        return colors[type] || 'primary';
+    }
+
+    formatActivityText(activity) {
+        const templates = {
+            login: 'Accesso effettuato',
+            logout: 'Disconnessione',
+            create: `Creato ${activity.resource_type || 'elemento'}: ${activity.resource_name || ''}`,
+            update: `Aggiornato ${activity.resource_type || 'elemento'}: ${activity.resource_name || ''}`,
+            delete: `Eliminato ${activity.resource_type || 'elemento'}: ${activity.resource_name || ''}`,
+            upload: `Caricato file: ${activity.resource_name || ''}`,
+            download: `Scaricato file: ${activity.resource_name || ''}`,
+            settings: 'Modificate impostazioni sistema',
+            error: `Errore: ${activity.message || ''}`
+        };
+        
+        return templates[activity.type] || activity.message || 'Attività sconosciuta';
+    }
+
+    /**
+     * Utility functions
+     */
+    formatStorageUsage(bytes) {
+        if (bytes === 0) return '0 GB';
+        
+        const k = 1024;
+        const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+    }
+
+    formatRelativeTime(dateString) {
+        const date = new Date(dateString);
+        const now = new Date();
+        const diffInSeconds = Math.floor((now - date) / 1000);
+        
+        if (diffInSeconds < 60) {
+            return 'Pochi secondi fa';
+        } else if (diffInSeconds < 3600) {
+            const minutes = Math.floor(diffInSeconds / 60);
+            return `${minutes} minuto${minutes > 1 ? 'i' : ''} fa`;
+        } else if (diffInSeconds < 86400) {
+            const hours = Math.floor(diffInSeconds / 3600);
+            return `${hours} ora${hours > 1 ? 'e' : ''} fa`;
+        } else {
+            const days = Math.floor(diffInSeconds / 86400);
+            if (days < 7) {
+                return `${days} giorno${days > 1 ? 'i' : ''} fa`;
+            } else {
+                return date.toLocaleDateString('it-IT', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
             }
         }
-    });
-}
+    }
 
-function renderMonthlyActivityChart(monthlyData) {
-    const ctx = document.getElementById('monthlyActivityChart');
-    if (!ctx) return;
+    animateCounterTo(element, targetValue) {
+        const currentValue = parseInt(element.textContent.replace(/[^\d]/g, '')) || 0;
+        
+        if (typeof targetValue === 'string') {
+            element.textContent = targetValue;
+            return;
+        }
+        
+        const duration = 1000; // 1 second
+        const startTime = performance.now();
+        
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            const easedProgress = 1 - Math.pow(1 - progress, 3); // Ease out cubic
+            const currentNumber = Math.floor(currentValue + (targetValue - currentValue) * easedProgress);
+            
+            element.textContent = currentNumber.toLocaleString('it-IT');
+            
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+        
+        requestAnimationFrame(animate);
+    }
 
-    const labels = monthlyData.map(item => {
-        const [year, month] = item.month.split('-');
-        const date = new Date(year, month - 1);
-        return date.toLocaleDateString(CONFIG.DATE_LOCALE, { month: 'short', year: '2-digit' });
-    });
+    clearRefreshTimers() {
+        Object.values(this.timers).forEach(timer => {
+            if (timer) {
+                clearInterval(timer);
+            }
+        });
+        
+        this.timers = {
+            stats: null,
+            activity: null,
+            status: null
+        };
+    }
 
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: labels.reverse(),
-            datasets: [
-                {
-                    label: 'Post Creati',
-                    data: monthlyData.map(item => item.posts_created).reverse(),
-                    borderColor: CONFIG.COLORS.PRIMARY,
-                    backgroundColor: CONFIG.COLORS.PRIMARY + '20',
-                    fill: true,
-                    tension: 0.4
-                },
-                {
-                    label: 'Post Pubblicati',
-                    data: monthlyData.map(item => item.posts_published).reverse(),
-                    borderColor: CONFIG.COLORS.SUCCESS,
-                    backgroundColor: CONFIG.COLORS.SUCCESS + '20',
-                    fill: true,
-                    tension: 0.4
-                }
-            ]
-        },
-        options: {
-            ...CONFIG.CHART_OPTIONS,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        precision: 0
-                    }
-                }
+    showLoading(containerId, show) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        if (show) {
+            container.style.position = 'relative';
+            const overlay = document.createElement('div');
+            overlay.className = 'loading-overlay';
+            overlay.innerHTML = `
+                <div class="text-center">
+                    <div class="spinner-border mb-3" role="status"></div>
+                    <div>Caricamento dashboard...</div>
+                </div>
+            `;
+            container.appendChild(overlay);
+        } else {
+            const overlay = container.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.remove();
             }
         }
-    });
+    }
+
+    showSuccess(message) {
+        this.showAlert(message, 'success');
+    }
+
+    showError(message) {
+        this.showAlert(message, 'danger');
+    }
+
+    showAlert(message, type) {
+        if (window.securityGuard) {
+            securityGuard.showAlert(message, type);
+        } else {
+            alert(message);
+        }
+    }
+
+    /**
+     * Cleanup on destroy
+     */
+    destroy() {
+        this.clearRefreshTimers();
+    }
 }
+
+// Global function for section navigation (used by onclick handlers)
+function showSection(sectionName) {
+    if (window.dashboardManager) {
+        window.dashboardManager.showSection(sectionName);
+    }
+}
+
+// Initialize dashboard when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    // Global dashboard manager instance
+    window.dashboardManager = new DashboardManager();
+});
+
+console.info('DashboardManager: Dashboard system initialized successfully');

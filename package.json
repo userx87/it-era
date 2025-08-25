@@ -17,11 +17,11 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "puppeteer": "^24.17.0",
     "wrangler": "^4.32.0"
   },
   "dependencies": {
     "@testsprite/testsprite-mcp": "^0.0.12",
-    "axios": "^1.11.0",
-    "puppeteer": "^24.17.0"
+    "axios": "^1.11.0"
   }
 }

@@ -29,10 +29,22 @@ export class ConversationDesigner {
         id: 'greeting',
         triggers: ['start', 'ciao', 'salve', 'buongiorno', 'buonasera', 'hey'],
         response: {
-          message: "Ciao! Sono l'assistente virtuale di IT-ERA 👋\n\nSiamo specializzati in soluzioni IT complete per aziende. Come posso aiutarti oggi?",
+          message: "[IT-ERA] Ciao, come posso aiutarti?",
           options: ["Preventivo", "Assistenza Tecnica", "Info Servizi", "Parlare con Umano"],
           nextSteps: ['service_inquiry', 'support_request', 'general_info', 'escalation'],
           collectData: false
+        }
+      },
+
+      emergency_detection: {
+        id: 'emergency_detection',
+        triggers: ['server crash', 'emergenza', 'urgente', 'tutto fermo', 'bloccato', 'down', 'non funziona niente', 'sistema fermo'],
+        response: {
+          message: "[IT-ERA] EMERGENZA RILEVATA! Ti trasferisco IMMEDIATAMENTE al nostro team di supporto.\n\n📞 CHIAMA SUBITO: 039 888 2041\n\nUn tecnico ti risponderà entro 2 minuti per risolvere il problema!",
+          escalate: true,
+          priority: 'emergency',
+          skipQualification: true,
+          immediateEscalation: true
         }
       },
 
@@ -40,10 +52,20 @@ export class ConversationDesigner {
         id: 'service_inquiry', 
         triggers: ['preventivo', 'servizi', 'cosa fate', 'soluzioni', 'offerta'],
         response: {
-          message: "Perfetto! IT-ERA offre servizi IT completi:\n\n🌐 **Siti Web** (€2.500-€15.000)\n🛒 **E-commerce** (€5.000-€25.000)\n📱 **App Mobile** (€10.000-€50.000)\n☁️ **Server & Cloud** (€150-€2.000/mese)\n🔒 **Cybersecurity** (€100-€800/mese)\n🔧 **Assistenza IT** (€80-€200/ora)\n\nDi quale servizio hai bisogno?",
+          message: "[IT-ERA] Perfetto! IT-ERA offre servizi IT completi:\n\n🌐 **Siti Web** (€2.500-€15.000)\n🛒 **E-commerce** (€5.000-€25.000)\n📱 **App Mobile** (€10.000-€50.000)\n☁️ **Server & Cloud** (€150-€2.000/mese)\n🔒 **Cybersecurity** (€100-€800/mese)\n🔧 **Assistenza IT** (€80-€200/ora)\n\n💡 Per casi urgenti chiama: 039 888 2041\n\nDi quale servizio hai bisogno?",
           options: ["Sito Web", "E-commerce", "App Mobile", "Server/Cloud", "Cybersecurity", "Assistenza IT"],
           nextSteps: ['service_detail', 'service_detail', 'service_detail', 'service_detail', 'service_detail', 'service_detail'],
           collectData: false
+        }
+      },
+
+      roi_inquiry: {
+        id: 'roi_inquiry',
+        triggers: ['roi', 'ritorno investimento', 'commercialista', 'budget', 'costi', 'risparmio', 'convenienza'],
+        response: {
+          message: "[IT-ERA] Ecco i numeri concreti del ROI:\n\n💰 **RISPARMIO IMMEDIATO:**\n• Sito web professionale: €15.000/anno risparmio marketing\n• E-commerce: +280% vendite online (media clienti)\n• Server cloud: -€8.400/anno vs server fisico\n• Cybersecurity: -€45.000 costo medio breach\n\n📈 **TEMPI DI RIENTRO:**\n• Sito web: 3-4 mesi\n• E-commerce: 2-3 mesi\n• Digitalizzazione completa: 4-6 mesi\n\n🎯 **ROI 3 ANNI: +340% medio**\n\n📞 Per analisi dettagliata: 039 888 2041",
+          options: ["Calcolo Personalizzato", "Case Study", "Preventivo", "Consulenza"],
+          nextSteps: ['business_qualification', 'case_studies', 'service_inquiry', 'human_escalation']
         }
       },
 
@@ -59,7 +81,7 @@ export class ConversationDesigner {
       business_qualification: {
         id: 'business_qualification',
         response: {
-          message: "Ottimo! Per prepararti un preventivo personalizzato, dimmi:",
+          message: "[IT-ERA] Ottimo! Per prepararti un preventivo personalizzato, dimmi:",
           questions: [
             {
               field: 'company_name',
@@ -115,7 +137,7 @@ export class ConversationDesigner {
       contact_collection: {
         id: 'contact_collection',
         response: {
-          message: "Perfetto! Ho tutte le informazioni per il tuo progetto. Per inviarti il preventivo personalizzato:",
+          message: "[IT-ERA] Perfetto! Ho tutte le informazioni per il tuo progetto. Per inviarti il preventivo personalizzato:",
           questions: [
             {
               field: 'contact_name',
@@ -144,7 +166,7 @@ export class ConversationDesigner {
       escalation_preparation: {
         id: 'escalation_preparation',
         response: {
-          message: "Grazie! I tuoi dati sono stati registrati.\n\n✅ **Progetto**: {service_type}\n✅ **Azienda**: {company_name}\n✅ **Settore**: {sector}\n✅ **Budget**: {budget_range}\n✅ **Timeline**: {timeline}\n\n🎯 **Prossimi passi:**\n• Analisi dettagliata del progetto\n• Preventivo personalizzato\n• Chiamata per approfondire\n\nTi contatteremo entro 2 ore lavorative!",
+          message: "[IT-ERA] Grazie! I tuoi dati sono stati registrati.\n\n✅ **Progetto**: {service_type}\n✅ **Azienda**: {company_name}\n✅ **Settore**: {sector}\n✅ **Budget**: {budget_range}\n✅ **Timeline**: {timeline}\n\n🎯 **Prossimi passi:**\n• Analisi dettagliata del progetto\n• Preventivo personalizzato\n• Chiamata per approfondire\n\n📞 Ti contatteremo entro 2 ore lavorative!\n📞 Per urgenze immediate: 039 888 2041",
           escalate: true,
           collectData: true
         }
@@ -154,7 +176,7 @@ export class ConversationDesigner {
         id: 'support_request',
         triggers: ['assistenza', 'supporto', 'problema', 'aiuto', 'non funziona'],
         response: {
-          message: "Ti aiuto con l'assistenza tecnica! 🔧\n\nDi che tipo di supporto hai bisogno?",
+          message: "[IT-ERA] Ti aiuto con l'assistenza tecnica! 🔧\n\n📞 Per EMERGENZE: 039 888 2041 (risposta immediata)\n\nDi che tipo di supporto hai bisogno?",
           options: ["Problema Urgente", "Manutenzione Sito", "Email/Server", "Consulenza", "Altro"],
           nextSteps: ['support_detail', 'support_detail', 'support_detail', 'support_detail', 'support_detail'],
           collectData: true,
@@ -189,7 +211,7 @@ export class ConversationDesigner {
         id: 'general_info',
         triggers: ['informazioni', 'chi siete', 'cosa fate', 'dove siete'],
         response: {
-          message: "**IT-ERA** è un'azienda specializzata in soluzioni IT per aziende in Lombardia.\n\n🎯 **La nostra missione**: Digitalizzare le PMI italiane con soluzioni su misura.\n\n💼 **Servizi principali**:\n• Siti web e e-commerce professionali\n• App mobile native\n• Infrastrutture cloud e server\n• Cybersecurity aziendale\n• Assistenza IT completa\n\n📍 **Operiamo in**: Lombardia (on-site) e tutta Italia (remoto)\n\nVuoi sapere di più su qualche servizio specifico?",
+          message: "[IT-ERA] **IT-ERA** è un'azienda specializzata in soluzioni IT per aziende in Lombardia.\n\n🎯 **La nostra missione**: Digitalizzare le PMI italiane con soluzioni su misura.\n\n💼 **Servizi principali**:\n• Siti web e e-commerce professionali\n• App mobile native\n• Infrastrutture cloud e server\n• Cybersecurity aziendale\n• Assistenza IT completa\n\n📍 **Sede**: Viale Risorgimento 32, Vimercate MB\n📞 **Tel**: 039 888 2041\n📧 **Email**: info@it-era.it\n\n🌐 **Operiamo in**: Lombardia (on-site) e tutta Italia (remoto)\n\nVuoi sapere di più su qualche servizio specifico?",
           options: ["Preventivo Personalizzato", "Portfolio Progetti", "Assistenza", "Contatti"],
           nextSteps: ['service_inquiry', 'portfolio_request', 'support_request', 'contact_info']
         }
@@ -207,7 +229,7 @@ export class ConversationDesigner {
         id: 'human_escalation',
         triggers: ['umano', 'persona', 'operatore', 'parlare con qualcuno', 'chiamate'],
         response: {
-          message: "Certamente! Ti metto subito in contatto con un nostro consulente.\n\n📞 **Preferisci che ti chiamiamo o vuoi inviarci una email?**",
+          message: "[IT-ERA] Certamente! Ti metto subito in contatto con un nostro consulente.\n\n📞 **Chiama direttamente: 039 888 2041**\n\n**Preferisci che ti chiamiamo o vuoi inviarci una email?**",
           options: ["Chiamatemi Subito", "Invio Email", "Entrambi"],
           escalate: true,
           priority: 'high',
@@ -257,6 +279,14 @@ export class ConversationDesigner {
       urgent: {
         patterns: ['urgente', 'subito', 'immediato', 'critico', 'emergency'],
         confidence: 0.95
+      },
+      emergency: {
+        patterns: ['server crash', 'emergenza', 'tutto fermo', 'bloccato', 'down', 'non funziona niente', 'sistema fermo'],
+        confidence: 1.0
+      },
+      roi_inquiry: {
+        patterns: ['roi', 'ritorno investimento', 'commercialista', 'risparmio', 'convenienza', 'rientro', 'budget'],
+        confidence: 0.9
       },
       human_request: {
         patterns: ['umano', 'persona', 'operatore', 'parlare', 'chiamare', 'telefono'],
@@ -313,6 +343,11 @@ export class ConversationDesigner {
     try {
       const context = { ...conversationContext };
       
+      // CRITICAL: Check for emergency keywords first
+      if (this.isEmergencyMessage(message)) {
+        return this.handleEmergencyResponse();
+      }
+      
       // Intent recognition
       const intents = this.recognizeIntents(message);
       const primaryIntent = intents[0];
@@ -343,6 +378,30 @@ export class ConversationDesigner {
       console.error('Conversation processing error:', error);
       return this.getFallbackResponse();
     }
+  }
+
+  /**
+   * Check if message contains emergency keywords
+   */
+  isEmergencyMessage(message) {
+    const emergencyKeywords = ['server crash', 'emergenza', 'urgente', 'tutto fermo', 'bloccato', 'down', 'non funziona niente', 'sistema fermo', 'critical', 'critico'];
+    const msg = message.toLowerCase();
+    return emergencyKeywords.some(keyword => msg.includes(keyword));
+  }
+
+  /**
+   * Handle emergency response
+   */
+  handleEmergencyResponse() {
+    return {
+      message: "[IT-ERA] 🚨 EMERGENZA RILEVATA! Ti trasferisco IMMEDIATAMENTE al nostro team di supporto.\n\n📞 CHIAMA SUBITO: 039 888 2041\n\nUn tecnico ti risponderà entro 2 minuti per risolvere il problema!",
+      escalate: true,
+      priority: 'emergency',
+      intent: 'emergency',
+      confidence: 1.0,
+      skipQualification: true,
+      immediateEscalation: true
+    };
   }
 
   /**
@@ -491,7 +550,7 @@ export class ConversationDesigner {
     
     if (!serviceInfo) {
       return {
-        message: aiResponse?.message || "Di quale servizio vorresti saperne di più?",
+        message: aiResponse?.message || "[IT-ERA] Di quale servizio vorresti saperne di più?\n\n📞 Per urgenze: 039 888 2041",
         options: ["Sito Web", "E-commerce", "App Mobile", "Server/Cloud"],
         nextStep: 'service_inquiry'
       };
@@ -502,7 +561,7 @@ export class ConversationDesigner {
     ).join('\n\n') || '';
     
     return {
-      message: `Ecco i dettagli per **${serviceInfo.name}**:\n\n${serviceInfo.description}\n\n${types}\n\nTi interessa un preventivo personalizzato?`,
+      message: `[IT-ERA] Ecco i dettagli per **${serviceInfo.name}**:\n\n${serviceInfo.description}\n\n${types}\n\n📞 Per urgenze: 039 888 2041\n\nTi interessa un preventivo personalizzato?`,
       options: ["Sì, preventivo", "Più dettagli", "Altri servizi", "Assistenza umana"],
       nextStep: 'business_qualification',
       collectData: true
@@ -523,19 +582,19 @@ export class ConversationDesigner {
     
     const qualificationResponses = {
       high_priority: {
-        message: "Perfetto! Il tuo progetto ha caratteristiche molto interessanti e crediamo di poterti offrire un'ottima soluzione.\n\n🚀 **Prossimo step**: Un nostro consulente senior ti contatterà per approfondire i dettagli e fornirti un preventivo su misura.\n\nPer completare, ho bisogno dei tuoi dati di contatto:",
+        message: "[IT-ERA] Perfetto! Il tuo progetto ha caratteristiche molto interessanti e crediamo di poterti offrire un'ottima soluzione.\n\n💰 **ROI previsto**: +340% in 3 anni\n💸 **Rientro investimento**: 3-4 mesi\n💼 **Risparmio annuo**: €15.000-45.000\n\n🚀 **Prossimo step**: Un nostro consulente senior ti contatterà per approfondire i dettagli e fornirti un preventivo su misura.\n\n📞 Per urgenze: 039 888 2041\n\nPer completare, ho bisogno dei tuoi dati di contatto:",
         escalate: true,
         priority: 'high',
         nextStep: 'contact_collection'
       },
       medium_priority: {
-        message: "Ottimo progetto! Abbiamo sicuramente l'esperienza per realizzarlo al meglio.\n\n📋 Per prepararti un preventivo dettagliato, raccogli i tuoi dati di contatto e ti invieremo tutto via email:",
+        message: "[IT-ERA] Ottimo progetto! Abbiamo sicuramente l'esperienza per realizzarlo al meglio.\n\n💰 **ROI previsto**: +280% in 3 anni\n💸 **Rientro investimento**: 4-5 mesi\n💼 **Risparmio annuo**: €8.000-25.000\n\n📋 Per prepararti un preventivo dettagliato, raccogli i tuoi dati di contatto e ti invieremo tutto via email:\n\n📞 Per urgenze: 039 888 2041",
         escalate: false,
         priority: 'medium', 
         nextStep: 'contact_collection'
       },
       low_priority: {
-        message: "Interessante! È un progetto che possiamo sicuramente seguire.\n\n📧 Ti invieremo informazioni dettagliate via email con alcuni esempi simili e un preventivo indicativo:",
+        message: "[IT-ERA] Interessante! È un progetto che possiamo sicuramente seguire.\n\n💰 **ROI previsto**: +180% in 3 anni\n💸 **Rientro investimento**: 5-6 mesi\n💼 **Risparmio annuo**: €5.000-15.000\n\n📧 Ti invieremo informazioni dettagliate via email con alcuni esempi simili e un preventivo indicativo:\n\n📞 Per urgenze: 039 888 2041",
         escalate: false,
         priority: 'low',
         nextStep: 'contact_collection'
@@ -553,7 +612,7 @@ export class ConversationDesigner {
     
     if (faqs.length === 0) {
       return {
-        message: "Non ho trovato informazioni specifiche per la tua domanda. Vuoi che ti metta in contatto con un nostro esperto?",
+        message: "[IT-ERA] Non ho trovato informazioni specifiche per la tua domanda. Vuoi che ti metta in contatto con un nostro esperto?\n\n📞 **Chiama direttamente: 039 888 2041**",
         options: ["Sì, contatto umano", "Altre domande", "Preventivo"],
         nextStep: 'human_escalation'
       };
@@ -561,7 +620,7 @@ export class ConversationDesigner {
     
     const bestFaq = faqs[0];
     return {
-      message: `${bestFaq.answer}\n\nHai altre domande o vuoi procedere con un preventivo?`,
+      message: `[IT-ERA] ${bestFaq.answer}\n\n📞 Per urgenze: 039 888 2041\n\nHai altre domande o vuoi procedere con un preventivo?`,
       options: ["Preventivo", "Altre domande", "Parlare con esperto"],
       nextStep: 'follow_up'
     };
@@ -572,10 +631,10 @@ export class ConversationDesigner {
    */
   async handleEscalation(escalation, context) {
     const escalationResponses = {
-      explicit_human_request: "Perfetto! Ti metto subito in contatto con uno dei nostri consulenti.\n\n📞 Preferisci essere contattato via telefono o email?",
-      high_value_lead: "Il tuo progetto ha caratteristiche molto interessanti! Un nostro senior consultant ti contatterà personalmente.\n\n⚡ Raccogliendo i tuoi dati ti contatteremo entro 2 ore.",
-      long_conversation: "Vedo che abbiamo parlato di diversi aspetti. Per fornirti il supporto migliore, ti metto in contatto con un nostro specialista.",
-      repeated_misunderstanding: "Scusa se non riesco a essere di aiuto come vorrei. Ti collego con un nostro esperto umano che saprà assisterti meglio."
+      explicit_human_request: "[IT-ERA] Perfetto! Ti metto subito in contatto con uno dei nostri consulenti.\n\n📞 **Chiama direttamente: 039 888 2041**\n\nPreferisci essere contattato via telefono o email?",
+      high_value_lead: "[IT-ERA] Il tuo progetto ha caratteristiche molto interessanti! Un nostro senior consultant ti contatterà personalmente.\n\n📞 **Per urgenze immediate: 039 888 2041**\n⚡ Raccogliendo i tuoi dati ti contatteremo entro 2 ore.",
+      long_conversation: "[IT-ERA] Vedo che abbiamo parlato di diversi aspetti. Per fornirti il supporto migliore, ti metto in contatto con un nostro specialista.\n\n📞 **Chiama direttamente: 039 888 2041**",
+      repeated_misunderstanding: "[IT-ERA] Ti collego con un nostro esperto umano che saprà assisterti meglio.\n\n📞 **Chiama direttamente: 039 888 2041**"
     };
     
     return {
@@ -665,7 +724,7 @@ export class ConversationDesigner {
    */
   getFallbackResponse() {
     return {
-      message: "Scusa, c'è stato un piccolo problema. Puoi ripetere la domanda o preferisci parlare direttamente con un nostro consulente?",
+      message: "[IT-ERA] C'è stato un piccolo problema. Puoi ripetere la domanda o preferisci parlare direttamente con un nostro consulente?\n\n📞 **Per assistenza immediata: 039 888 2041**",
       options: ["Riprova", "Consulente Umano", "Menu Principale"],
       nextStep: 'retry',
       escalate: false

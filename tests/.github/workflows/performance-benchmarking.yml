@@ -1,0 +1,632 @@
+name: 📊 Performance Benchmarking & Load Testing
+
+on:
+  schedule:
+    # Run performance tests daily at 2 AM CET
+    - cron: '0 2 * * *'
+  push:
+    branches: [main, production]
+    paths:
+      - 'api/**'
+      - 'web/**'
+  workflow_dispatch:
+    inputs:
+      test_intensity:
+        description: 'Test Intensity Level'
+        required: true
+        default: 'medium'
+        type: choice
+        options:
+          - light
+          - medium
+          - heavy
+          - stress
+      duration_minutes:
+        description: 'Test Duration (minutes)'
+        required: false
+        default: '10'
+        type: number
+      concurrent_users:
+        description: 'Concurrent Users'
+        required: false
+        default: '50'
+        type: number
+
+env:
+  NODE_VERSION: '18'
+  CHATBOT_API_PROD: 'https://it-era-chatbot-prod.bulltech.workers.dev'
+  EMAIL_API_PROD: 'https://it-era-email.bulltech.workers.dev'
+  TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK_URL }}
+  
+  # Test configuration
+  TEST_INTENSITY: ${{ github.event.inputs.test_intensity || 'medium' }}
+  TEST_DURATION: ${{ github.event.inputs.duration_minutes || '10' }}
+  CONCURRENT_USERS: ${{ github.event.inputs.concurrent_users || '50' }}
+
+jobs:
+  # ===============================
+  # BASELINE PERFORMANCE TESTS
+  # ===============================
+  baseline-performance:
+    name: 📈 Baseline Performance Tests
+    runs-on: ubuntu-latest
+
+    outputs:
+      avg_response_time: ${{ steps.baseline.outputs.avg_response_time }}
+      p95_response_time: ${{ steps.baseline.outputs.p95_response_time }}
+      error_rate: ${{ steps.baseline.outputs.error_rate }}
+      requests_per_second: ${{ steps.baseline.outputs.requests_per_second }}
+
+    steps:
+      - name: 📋 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 📈 Run baseline performance tests
+        id: baseline
+        run: |
+          echo "📈 Starting baseline performance tests..."
+          
+          cat > performance-test.js << 'EOF'
+          const https = require('https');
+          const http = require('http');
+          
+          class PerformanceTester {
+            constructor(baseUrl, testDuration = 60000) {
+              this.baseUrl = baseUrl;
+              this.testDuration = testDuration;
+              this.results = {
+                requests: 0,
+                successes: 0,
+                errors: 0,
+                responseTimes: [],
+                startTime: Date.now()
+              };
+            }
+            
+            async makeRequest(endpoint, method = 'GET', data = null) {
+              return new Promise((resolve) => {
+                const startTime = Date.now();
+                const url = new URL(endpoint, this.baseUrl);
+                const client = url.protocol === 'https:' ? https : http;
+                
+                const options = {
+                  hostname: url.hostname,
+                  port: url.port || (url.protocol === 'https:' ? 443 : 80),
+                  path: url.pathname + url.search,
+                  method: method,
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Origin': 'https://it-era.it',
+                    'User-Agent': 'Performance-Test/1.0'
+                  }
+                };
+                
+                const req = client.request(options, (res) => {
+                  let data = '';
+                  res.on('data', (chunk) => data += chunk);
+                  res.on('end', () => {
+                    const responseTime = Date.now() - startTime;
+                    this.results.requests++;
+                    this.results.responseTimes.push(responseTime);
+                    
+                    if (res.statusCode >= 200 && res.statusCode < 400) {
+                      this.results.successes++;
+                    } else {
+                      this.results.errors++;
+                    }
+                    
+                    resolve({
+                      statusCode: res.statusCode,
+                      responseTime,
+                      success: res.statusCode >= 200 && res.statusCode < 400
+                    });
+                  });
+                });
+                
+                req.on('error', () => {
+                  const responseTime = Date.now() - startTime;
+                  this.results.requests++;
+                  this.results.errors++;
+                  this.results.responseTimes.push(responseTime);
+                  resolve({ statusCode: 0, responseTime, success: false });
+                });
+                
+                if (data && method === 'POST') {
+                  req.write(JSON.stringify(data));
+                }
+                
+                req.end();
+              });
+            }
+            
+            async runTest() {
+              console.log(`🚀 Starting performance test for ${this.testDuration/1000}s`);
+              const endTime = Date.now() + this.testDuration;
+              const testPromises = [];
+              
+              // Test scenarios
+              const scenarios = [
+                { endpoint: '/health', method: 'GET', weight: 0.2 },
+                { endpoint: '/api/chat', method: 'POST', data: { message: 'performance test', sessionId: 'perf-test-' + Date.now() }, weight: 0.6 },
+                { endpoint: '/api', method: 'GET', weight: 0.2 }
+              ];
+              
+              while (Date.now() < endTime) {
+                for (const scenario of scenarios) {
+                  if (Math.random() < scenario.weight) {
+                    testPromises.push(this.makeRequest(scenario.endpoint, scenario.method, scenario.data));
+                  }
+                }
+                
+                // Throttle requests to avoid overwhelming
+                await new Promise(resolve => setTimeout(resolve, 100));
+                
+                // Batch process completed requests
+                if (testPromises.length > 100) {
+                  await Promise.allSettled(testPromises.splice(0, 50));
+                }
+              }
+              
+              // Wait for remaining requests
+              await Promise.allSettled(testPromises);
+              
+              return this.calculateStats();
+            }
+            
+            calculateStats() {
+              const times = this.results.responseTimes.sort((a, b) => a - b);
+              const totalTime = Date.now() - this.results.startTime;
+              
+              return {
+                totalRequests: this.results.requests,
+                successfulRequests: this.results.successes,
+                failedRequests: this.results.errors,
+                errorRate: (this.results.errors / this.results.requests * 100).toFixed(2),
+                avgResponseTime: (times.reduce((a, b) => a + b, 0) / times.length).toFixed(2),
+                medianResponseTime: times[Math.floor(times.length / 2)],
+                p95ResponseTime: times[Math.floor(times.length * 0.95)],
+                p99ResponseTime: times[Math.floor(times.length * 0.99)],
+                requestsPerSecond: (this.results.requests / (totalTime / 1000)).toFixed(2),
+                testDuration: (totalTime / 1000).toFixed(2)
+              };
+            }
+          }
+          
+          // Run tests
+          async function runPerformanceTests() {
+            console.log('🤖 Testing Chatbot API...');
+            const chatbotTester = new PerformanceTester('${CHATBOT_API_PROD}', ${TEST_DURATION} * 60 * 1000);
+            const chatbotStats = await chatbotTester.runTest();
+            
+            console.log('📧 Testing Email API...');
+            const emailTester = new PerformanceTester('${EMAIL_API_PROD}', ${TEST_DURATION} * 60 * 1000);
+            const emailStats = await emailTester.runTest();
+            
+            console.log('\n📊 CHATBOT API RESULTS:');
+            console.log(`Total Requests: ${chatbotStats.totalRequests}`);
+            console.log(`Successful: ${chatbotStats.successfulRequests}`);
+            console.log(`Failed: ${chatbotStats.failedRequests}`);
+            console.log(`Error Rate: ${chatbotStats.errorRate}%`);
+            console.log(`Avg Response Time: ${chatbotStats.avgResponseTime}ms`);
+            console.log(`95th Percentile: ${chatbotStats.p95ResponseTime}ms`);
+            console.log(`Requests/Second: ${chatbotStats.requestsPerSecond}`);
+            
+            console.log('\n📧 EMAIL API RESULTS:');
+            console.log(`Total Requests: ${emailStats.totalRequests}`);
+            console.log(`Successful: ${emailStats.successfulRequests}`);
+            console.log(`Failed: ${emailStats.failedRequests}`);
+            console.log(`Error Rate: ${emailStats.errorRate}%`);
+            console.log(`Avg Response Time: ${emailStats.avgResponseTime}ms`);
+            console.log(`95th Percentile: ${emailStats.p95ResponseTime}ms`);
+            console.log(`Requests/Second: ${emailStats.requestsPerSecond}`);
+            
+            // Export results for GitHub Actions
+            const fs = require('fs');
+            const results = {
+              timestamp: new Date().toISOString(),
+              testDuration: ${TEST_DURATION},
+              chatbot: chatbotStats,
+              email: emailStats
+            };
+            
+            fs.writeFileSync('performance-results.json', JSON.stringify(results, null, 2));
+            
+            // Set outputs for next job
+            console.log(`\n::set-output name=avg_response_time::${chatbotStats.avgResponseTime}`);
+            console.log(`::set-output name=p95_response_time::${chatbotStats.p95ResponseTime}`);
+            console.log(`::set-output name=error_rate::${chatbotStats.errorRate}`);
+            console.log(`::set-output name=requests_per_second::${chatbotStats.requestsPerSecond}`);
+          }
+          
+          runPerformanceTests().catch(console.error);
+          EOF
+          
+          node performance-test.js
+
+      - name: 📤 Upload performance results
+        uses: actions/upload-artifact@v4
+        with:
+          name: baseline-performance-results-${{ github.run_number }}
+          path: performance-results.json
+          retention-days: 30
+
+  # ===============================
+  # LOAD TESTING
+  # ===============================
+  load-testing:
+    name: 🚀 Load Testing
+    runs-on: ubuntu-latest
+    needs: baseline-performance
+
+    steps:
+      - name: 📋 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🚀 Run load testing
+        run: |
+          echo "🚀 Starting load testing with ${{ env.CONCURRENT_USERS }} concurrent users..."
+          
+          cat > load-test.js << 'EOF'
+          const cluster = require('cluster');
+          const numCPUs = require('os').cpus().length;
+          const https = require('https');
+          
+          if (cluster.isMaster) {
+            console.log(`🚀 Load test starting with ${numCPUs} workers`);
+            console.log(`Target: ${{ env.CONCURRENT_USERS }} concurrent users`);
+            console.log(`Duration: ${{ env.TEST_DURATION }} minutes`);
+            
+            const results = {
+              totalRequests: 0,
+              totalSuccesses: 0,
+              totalErrors: 0,
+              responseTimes: [],
+              startTime: Date.now()
+            };
+            
+            // Spawn workers
+            for (let i = 0; i < Math.min(numCPUs, 4); i++) {
+              const worker = cluster.fork();
+              worker.on('message', (msg) => {
+                if (msg.type === 'result') {
+                  results.totalRequests += msg.data.requests;
+                  results.totalSuccesses += msg.data.successes;
+                  results.totalErrors += msg.data.errors;
+                  results.responseTimes.push(...msg.data.responseTimes);
+                }
+              });
+            }
+            
+            // Handle worker exits
+            cluster.on('exit', (worker, code, signal) => {
+              console.log(`Worker ${worker.process.pid} died`);
+            });
+            
+            // Stop test after duration
+            setTimeout(() => {
+              console.log('🛑 Stopping load test...');
+              
+              Object.keys(cluster.workers).forEach((id) => {
+                cluster.workers[id].kill();
+              });
+              
+              // Calculate final stats
+              const totalTime = Date.now() - results.startTime;
+              const times = results.responseTimes.sort((a, b) => a - b);
+              
+              console.log('\n📊 LOAD TEST RESULTS:');
+              console.log(`Duration: ${(totalTime / 1000).toFixed(2)}s`);
+              console.log(`Total Requests: ${results.totalRequests}`);
+              console.log(`Successful: ${results.totalSuccesses}`);
+              console.log(`Failed: ${results.totalErrors}`);
+              console.log(`Error Rate: ${(results.totalErrors / results.totalRequests * 100).toFixed(2)}%`);
+              console.log(`Avg Response Time: ${(times.reduce((a, b) => a + b, 0) / times.length).toFixed(2)}ms`);
+              console.log(`95th Percentile: ${times[Math.floor(times.length * 0.95)] || 0}ms`);
+              console.log(`Requests/Second: ${(results.totalRequests / (totalTime / 1000)).toFixed(2)}`);
+              
+              // Save results
+              const fs = require('fs');
+              fs.writeFileSync('load-test-results.json', JSON.stringify({
+                timestamp: new Date().toISOString(),
+                duration: totalTime / 1000,
+                totalRequests: results.totalRequests,
+                successfulRequests: results.totalSuccesses,
+                failedRequests: results.totalErrors,
+                errorRate: (results.totalErrors / results.totalRequests * 100).toFixed(2),
+                avgResponseTime: (times.reduce((a, b) => a + b, 0) / times.length).toFixed(2),
+                p95ResponseTime: times[Math.floor(times.length * 0.95)] || 0,
+                requestsPerSecond: (results.totalRequests / (totalTime / 1000)).toFixed(2)
+              }, null, 2));
+              
+              process.exit(0);
+            }, ${{ env.TEST_DURATION }} * 60 * 1000);
+            
+          } else {
+            // Worker process
+            const workerId = cluster.worker.id;
+            const results = { requests: 0, successes: 0, errors: 0, responseTimes: [] };
+            
+            async function makeRequest() {
+              const startTime = Date.now();
+              
+              return new Promise((resolve) => {
+                const data = JSON.stringify({
+                  message: `Load test message from worker ${workerId}`,
+                  sessionId: `load-test-${workerId}-${Date.now()}`
+                });
+                
+                const options = {
+                  hostname: 'it-era-chatbot-prod.bulltech.workers.dev',
+                  port: 443,
+                  path: '/api/chat',
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Origin': 'https://it-era.it',
+                    'Content-Length': Buffer.byteLength(data)
+                  }
+                };
+                
+                const req = https.request(options, (res) => {
+                  let responseData = '';
+                  res.on('data', (chunk) => responseData += chunk);
+                  res.on('end', () => {
+                    const responseTime = Date.now() - startTime;
+                    results.requests++;
+                    results.responseTimes.push(responseTime);
+                    
+                    if (res.statusCode >= 200 && res.statusCode < 400) {
+                      results.successes++;
+                    } else {
+                      results.errors++;
+                    }
+                    
+                    resolve();
+                  });
+                });
+                
+                req.on('error', () => {
+                  results.requests++;
+                  results.errors++;
+                  results.responseTimes.push(Date.now() - startTime);
+                  resolve();
+                });
+                
+                req.write(data);
+                req.end();
+              });
+            }
+            
+            // Run continuous requests
+            async function runLoad() {
+              while (true) {
+                const promises = [];
+                
+                // Create batch of concurrent requests
+                for (let i = 0; i < Math.ceil(${{ env.CONCURRENT_USERS }} / numCPUs); i++) {
+                  promises.push(makeRequest());
+                }
+                
+                await Promise.allSettled(promises);
+                
+                // Send results to master every 1000 requests
+                if (results.requests % 1000 === 0) {
+                  process.send({ type: 'result', data: { ...results } });
+                }
+                
+                // Small delay to prevent overwhelming
+                await new Promise(resolve => setTimeout(resolve, 100));
+              }
+            }
+            
+            runLoad();
+          }
+          EOF
+          
+          node load-test.js
+
+      - name: 📤 Upload load test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: load-test-results-${{ github.run_number }}
+          path: load-test-results.json
+          retention-days: 30
+
+  # ===============================
+  # STRESS TESTING
+  # ===============================
+  stress-testing:
+    name: 💥 Stress Testing
+    runs-on: ubuntu-latest
+    if: env.TEST_INTENSITY == 'stress' || github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: 💥 Run stress tests
+        run: |
+          echo "💥 Starting stress testing..."
+          echo "⚠️  This test will push the system to its limits"
+          
+          # Gradually increase load
+          for load_level in 100 200 300 500; do
+            echo "🔄 Testing with $load_level requests/minute..."
+            
+            for i in $(seq 1 $load_level); do
+              (curl -s -X POST \
+                -H "Content-Type: application/json" \
+                -H "Origin: https://it-era.it" \
+                -d "{\"message\":\"stress test $i\",\"sessionId\":\"stress-$load_level-$i\"}" \
+                "${{ env.CHATBOT_API_PROD }}/api/chat" > /dev/null) &
+              
+              # Small delay to spread requests
+              sleep 0.1
+            done
+            
+            # Wait for this batch to complete
+            wait
+            
+            echo "✅ Completed $load_level requests batch"
+            sleep 30  # Recovery time between batches
+          done
+          
+          echo "💥 Stress testing completed"
+
+  # ===============================
+  # PERFORMANCE ANALYSIS
+  # ===============================
+  performance-analysis:
+    name: 📊 Performance Analysis
+    runs-on: ubuntu-latest
+    needs: [baseline-performance, load-testing, stress-testing]
+    if: always() && needs.baseline-performance.result == 'success'
+
+    steps:
+      - name: 📋 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📥 Download test results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*-performance-results-*'
+          path: test-results/
+
+      - name: 📥 Download load test results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*-load-test-results-*'
+          path: test-results/
+        continue-on-error: true
+
+      - name: 📊 Analyze performance trends
+        run: |
+          echo "📊 Analyzing performance trends..."
+          
+          cat > performance-analysis.md << EOF
+          # 📊 IT-ERA Performance Analysis Report
+          
+          **Test Date:** $(date -u)  
+          **Test Intensity:** ${{ env.TEST_INTENSITY }}  
+          **Test Duration:** ${{ env.TEST_DURATION }} minutes  
+          **Concurrent Users:** ${{ env.CONCURRENT_USERS }}  
+          
+          ## 📈 Baseline Performance Results
+          
+          ### Chatbot API Performance
+          - **Average Response Time:** ${{ needs.baseline-performance.outputs.avg_response_time }}ms
+          - **95th Percentile Response Time:** ${{ needs.baseline-performance.outputs.p95_response_time }}ms
+          - **Error Rate:** ${{ needs.baseline-performance.outputs.error_rate }}%
+          - **Requests per Second:** ${{ needs.baseline-performance.outputs.requests_per_second }}
+          
+          ## 🎯 Performance Benchmarks
+          
+          | Metric | Target | Actual | Status |
+          |--------|--------|--------|--------|
+          | Avg Response Time | < 2000ms | ${{ needs.baseline-performance.outputs.avg_response_time }}ms | ${{ needs.baseline-performance.outputs.avg_response_time < '2000' && '✅ Pass' || '⚠️ Review' }} |
+          | 95th Percentile | < 5000ms | ${{ needs.baseline-performance.outputs.p95_response_time }}ms | ${{ needs.baseline-performance.outputs.p95_response_time < '5000' && '✅ Pass' || '⚠️ Review' }} |
+          | Error Rate | < 1% | ${{ needs.baseline-performance.outputs.error_rate }}% | ${{ needs.baseline-performance.outputs.error_rate < '1' && '✅ Pass' || '⚠️ Review' }} |
+          | Throughput | > 10 RPS | ${{ needs.baseline-performance.outputs.requests_per_second }} RPS | ${{ needs.baseline-performance.outputs.requests_per_second > '10' && '✅ Pass' || '⚠️ Review' }} |
+          
+          ## 🚀 Load Testing Results
+          
+          ${{ needs.load-testing.result == 'success' && 'Load testing completed successfully' || 'Load testing was skipped or failed' }}
+          
+          ## 💥 Stress Testing Results
+          
+          ${{ needs.stress-testing.result == 'success' && 'Stress testing completed - system handled maximum load' || 'Stress testing was skipped' }}
+          
+          ## 📋 Performance Recommendations
+          
+          ${{ needs.baseline-performance.outputs.avg_response_time > '2000' && '- ⚠️ Consider optimizing response times (current: ' + needs.baseline-performance.outputs.avg_response_time + 'ms)' || '' }}
+          ${{ needs.baseline-performance.outputs.error_rate > '1' && '- ⚠️ Investigate error rate (current: ' + needs.baseline-performance.outputs.error_rate + '%)' || '' }}
+          ${{ needs.baseline-performance.outputs.requests_per_second < '10' && '- ⚠️ Consider scaling improvements (current: ' + needs.baseline-performance.outputs.requests_per_second + ' RPS)' || '' }}
+          
+          ## 🔧 Optimization Opportunities
+          
+          - **Caching:** Implement response caching for common queries
+          - **CDN:** Leverage Cloudflare's edge caching
+          - **Database:** Optimize D1 database queries
+          - **AI Model:** Consider model optimization or caching
+          - **Worker Resources:** Monitor Worker CPU and memory usage
+          
+          ## 📈 Historical Comparison
+          
+          *Historical data will be available after multiple test runs*
+          
+          ---
+          *Generated by IT-ERA Performance Testing Pipeline*
+          EOF
+
+      - name: 📤 Upload performance analysis
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-analysis-${{ github.run_number }}
+          path: performance-analysis.md
+          retention-days: 90
+
+      - name: 📢 Send performance report
+        if: env.TEAMS_WEBHOOK != ''
+        run: |
+          # Determine overall performance status
+          avg_time=${{ needs.baseline-performance.outputs.avg_response_time }}
+          error_rate=${{ needs.baseline-performance.outputs.error_rate }}
+          
+          if (( $(echo "$avg_time < 2000" | bc -l) )) && (( $(echo "$error_rate < 1" | bc -l) )); then
+            status_emoji="✅"
+            status_text="Excellent Performance"
+            theme_color="28a745"
+          elif (( $(echo "$avg_time < 3000" | bc -l) )) && (( $(echo "$error_rate < 2" | bc -l) )); then
+            status_emoji="⚠️"
+            status_text="Good Performance"
+            theme_color="ffc107"
+          else
+            status_emoji="❌"
+            status_text="Performance Issues"
+            theme_color="dc3545"
+          fi
+          
+          webhook_payload='{
+            "@type": "MessageCard",
+            "@context": "http://schema.org/extensions",
+            "summary": "IT-ERA Performance Report",
+            "themeColor": "'$theme_color'",
+            "sections": [{
+              "activityTitle": "'$status_emoji' IT-ERA Performance Report",
+              "activitySubtitle": "Status: '$status_text'",
+              "facts": [
+                {"name": "📊 Avg Response Time:", "value": "${{ needs.baseline-performance.outputs.avg_response_time }}ms"},
+                {"name": "📈 95th Percentile:", "value": "${{ needs.baseline-performance.outputs.p95_response_time }}ms"},
+                {"name": "❌ Error Rate:", "value": "${{ needs.baseline-performance.outputs.error_rate }}%"},
+                {"name": "🚀 Requests/Second:", "value": "${{ needs.baseline-performance.outputs.requests_per_second }}"},
+                {"name": "⚡ Test Intensity:", "value": "${{ env.TEST_INTENSITY }}"},
+                {"name": "🕐 Duration:", "value": "${{ env.TEST_DURATION }} minutes"},
+                {"name": "📅 Date:", "value": "'$(date -u)'"}
+              ]
+            }],
+            "potentialAction": [{
+              "@type": "OpenUri",
+              "name": "View Full Report",
+              "targets": [{"os": "default", "uri": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}]
+            }]
+          }'
+          
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d "$webhook_payload" \
+            "${{ env.TEAMS_WEBHOOK }}"

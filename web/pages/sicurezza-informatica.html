@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sicurezza Informatica | Protezione Cyber e Antimalware | IT-ERA</title>
+<meta content="Servizi di sicurezza informatica professionale: protezione antimalware, firewall, backup sicuro, compliance GDPR. SOC 24/7 per la tua azienda." name="description"/>
+<meta content="sicurezza informatica, cybersecurity, antimalware, firewall, protezione dati" name="keywords"/>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- SEO Critical Tags -->
+<link href="https://it-era.pages.dev/pages/sicurezza-informatica.html" rel="canonical"/>
+<!-- Open Graph Tags -->
+<meta content="Sicurezza Informatica | Protezione Cyber e Antimalware | IT-ERA" property="og:title"/>
+<meta content="Servizi di sicurezza informatica professionale: protezione antimalware, firewall, backup sicuro, compliance GDPR. SOC 24/7 per la tua azienda." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://it-era.pages.dev/pages/sicurezza-informatica.html" property="og:url"/>
+<meta content="https://it-era.pages.dev/images/cybersecurity-og.jpg" property="og:image"/>
+<meta content="it_IT" property="og:locale"/>
+<meta content="IT-ERA" property="og:site_name"/>
+<!-- Additional SEO -->
+<meta content="index, follow" name="robots"/>
+<meta content="index, follow" name="googlebot"/>
+<style>
+        :root {
+            --primary-color: #dc3545;
+            --primary-dark: #c82333;
+            --secondary-color: #6c757d;
+            --accent-color: #20c997;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 76px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none"><circle cx="200" cy="200" r="300" fill="rgba(255,255,255,0.03)"/><circle cx="800" cy="600" r="400" fill="rgba(255,255,255,0.03)"/></svg>');
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .badge-custom {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+        
+        .security-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(220,53,69,0.1);
+            border: none;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .security-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(220,53,69,0.15);
+        }
+        
+        .security-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .threat-alert {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .threat-alert::before {
+            content: '⚠️';
+            font-size: 3rem;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            opacity: 0.3;
+        }
+        
+        .stats-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary-custom {
+            background: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary-custom:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(220,53,69,0.3);
+        }
+        
+        /* Navbar fixes */
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            z-index: 1030;
+        }
+        
+        .compliance-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0 40px;
+            }
+            
+            body {
+                padding-top: 60px;
+            }
+        }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand fw-bold" href="/">
+<span style="color: #0056cc;">IT</span>-ERA
+</a>
+<!-- Emergency CTA for Mobile -->
+<div class="d-lg-none ms-auto me-2">
+<a class="btn btn-danger btn-sm" href="tel:+390398882041">
+🚨 Emergenza
+</a>
+</div>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<!-- Services Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+Servizi
+</a>
+<ul class="dropdown-menu">
+<li class="dropdown-header text-muted small">ASSISTENZA IMMEDIATA</li>
+<li><a class="dropdown-item" href="/pages/assistenza-it.html">
+🔧 Assistenza IT <span class="badge bg-danger ms-2">15min</span>
+</a></li>
+<li><a class="dropdown-item" href="/pages/sicurezza-informatica.html">
+🛡️ Sicurezza Informatica
+</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">SOLUZIONI CLOUD</li>
+<li><a class="dropdown-item" href="/pages/cloud-storage.html">
+☁️ Cloud Storage
+</a></li>
+<li><a class="dropdown-item" href="/pages/backup-automatico.html">
+💾 Backup Automatico
+</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li class="dropdown-header text-muted small">PACCHETTI SPECIALI</li>
+<li><a class="dropdown-item" href="/pages/all-inclusive-pmi.html">
+⭐ All-Inclusive PMI <span class="badge bg-success ms-2">-30%</span>
+</a></li>
+</ul>
+</li>
+<!-- Industry Sectors Dropdown -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+Settori
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/pages/settori-pmi-startup.html">
+🏢 PMI e Startup
+</a></li>
+<li><a class="dropdown-item" href="/pages/settori-studi-medici.html">
+⚕️ Studi Medici
+</a></li>
+<li><a class="dropdown-item" href="/pages/settori-commercialisti.html">
+📊 Commercialisti
+</a></li>
+<li><a class="dropdown-item" href="/pages/settori-studi-legali.html">
+⚖️ Studi Legali
+</a></li>
+</ul>
+</li>
+<!-- Why IT-ERA -->
+<li class="nav-item">
+<a class="nav-link" href="/pages/perche-it-era.html">Perché IT-ERA</a>
+</li>
+<!-- Blog -->
+<li class="nav-item">
+<a class="nav-link" href="/blog/">📝 Blog</a>
+</li>
+<!-- Contact -->
+<li class="nav-item">
+<a class="nav-link" href="/pages/contatti.html">Contatti</a>
+</li>
+<!-- Primary CTA Button -->
+<li class="nav-item ms-lg-3">
+<a class="btn btn-primary" href="tel:+390398882041">
+📞 039 888 2041
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<main id="main-content">
+<!-- Header Section -->
+<div class="hero-section">
+<div class="container hero-content">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="mb-4">
+<span class="badge-custom">SOC 24/7</span>
+<span class="badge-custom">GDPR Compliance</span>
+<span class="badge-custom">ISO 27001</span>
+<span class="badge-custom">€250/mese</span>
+</div>
+<h1 class="display-4 fw-bold mb-4">
+Sicurezza Informatica Avanzata
+</h1>
+<p class="lead mb-4">
+Proteggi la tua azienda da ransomware, malware e attacchi cyber con soluzioni di sicurezza enterprise. 
+SOC 24/7 e compliance garantita.
+</p>
+<div class="d-flex flex-wrap gap-3">
+<a class="btn btn-light btn-lg px-4" href="#servizi">
+<i class="fas fa-shield-alt me-2"></i>I Nostri Servizi
+</a>
+<a class="btn btn-outline-light btn-lg px-4" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>Audit Gratuito
+</a>
+</div>
+</div>
+<div class="col-lg-6 text-center">
+<div class="position-relative">
+<i class="fas fa-shield-alt" style="font-size: 12rem; opacity: 0.3;"></i>
+<div class="position-absolute top-50 start-50 translate-middle">
+<i class="fas fa-lock text-white" style="font-size: 4rem;"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Threat Alert -->
+<div class="container">
+<div class="threat-alert">
+<div class="row align-items-center">
+<div class="col-md-8">
+<h4 class="mb-2">⚠️ ALLARME RANSOMWARE 2024</h4>
+<p class="mb-0">Gli attacchi ransomware sono aumentati del 340% nel 2024. Il 70% delle PMI colpite chiude entro 6 mesi. <strong>Proteggi la tua azienda OGGI.</strong></p>
+</div>
+<div class="col-md-4 text-end">
+<a class="btn btn-light btn-lg" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>Audit Gratuito
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Stats Section -->
+<section class="py-5" style="background: white;">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">24/7</div>
+<p class="mb-0 text-muted">SOC Monitoraggio</p>
+</div>
+</div>
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">99.9%</div>
+<p class="mb-0 text-muted">Protezione Efficace</p>
+</div>
+</div>
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">0</div>
+<p class="mb-0 text-muted">Ransomware Riusciti</p>
+</div>
+</div>
+<div class="col-md-3">
+<div class="stats-card">
+<div class="stats-number">GDPR</div>
+<p class="mb-0 text-muted">Compliance Totale</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" id="servizi" style="background: var(--light-bg);">
+<div class="container">
+<div class="text-center mb-5">
+<h2>Soluzioni di Sicurezza Complete</h2>
+<p class="lead text-muted">Protezione enterprise per aziende di ogni dimensione</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6">
+<div class="security-card text-center">
+<div class="security-icon mx-auto">
+<i class="fas fa-shield-virus"></i>
+</div>
+<h3>Antimalware Avanzato</h3>
+<p class="text-muted mb-4">Protezione multi-layer contro virus, ransomware, spyware con AI e machine learning.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Scansione in tempo reale</li>
+<li><i class="fas fa-check text-success me-2"></i>Protezione ransomware</li>
+<li><i class="fas fa-check text-success me-2"></i>Quarantena automatica</li>
+<li><i class="fas fa-check text-success me-2"></i>Report settimanali</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="security-card text-center">
+<div class="security-icon mx-auto">
+<i class="fas fa-firewall"></i>
+</div>
+<h3>Firewall Gestito</h3>
+<p class="text-muted mb-4">Firewall WatchGuard con UTM completo: antivirus, anti-spam, controllo applicazioni.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>UTM completo</li>
+<li><i class="fas fa-check text-success me-2"></i>IPS/IDS avanzato</li>
+<li><i class="fas fa-check text-success me-2"></i>Content filtering</li>
+<li><i class="fas fa-check text-success me-2"></i>Configurazione zero-touch</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="security-card text-center">
+<div class="security-icon mx-auto">
+<i class="fas fa-user-shield"></i>
+</div>
+<h3>Endpoint Protection</h3>
+<p class="text-muted mb-4">Protezione completa di workstation, server e dispositivi mobili con controllo centralized.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>EDR avanzato</li>
+<li><i class="fas fa-check text-success me-2"></i>Device control</li>
+<li><i class="fas fa-check text-success me-2"></i>Application whitelisting</li>
+<li><i class="fas fa-check text-success me-2"></i>Patch management</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="security-card text-center">
+<div class="security-icon mx-auto">
+<i class="fas fa-envelope-open-text"></i>
+</div>
+<h3>Email Security</h3>
+<p class="text-muted mb-4">Protezione avanzata email contro phishing, spam e allegati malevoli con sandbox analysis.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Anti-phishing AI</li>
+<li><i class="fas fa-check text-success me-2"></i>Sandbox analysis</li>
+<li><i class="fas fa-check text-success me-2"></i>Link protection</li>
+<li><i class="fas fa-check text-success me-2"></i>DKIM/SPF setup</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="security-card text-center">
+<div class="security-icon mx-auto">
+<i class="fas fa-database"></i>
+</div>
+<h3>Backup Sicuro</h3>
+<p class="text-muted mb-4">Backup immutabile con tecnologia Veeam, test di restore automatici e disaster recovery.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Backup immutabile</li>
+<li><i class="fas fa-check text-success me-2"></i>Test restore automatici</li>
+<li><i class="fas fa-check text-success me-2"></i>Replica offsite</li>
+<li><i class="fas fa-check text-success me-2"></i>Recovery point < 1h</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="security-card text-center">
+<div class="security-icon mx-auto">
+<i class="fas fa-clipboard-check"></i>
+</div>
+<h3>GDPR Compliance</h3>
+<p class="text-muted mb-4">Audit, documentazione e implementazione per la completa conformità GDPR e ISO 27001.</p>
+<ul class="list-unstyled text-start">
+<li><i class="fas fa-check text-success me-2"></i>Privacy impact assessment</li>
+<li><i class="fas fa-check text-success me-2"></i>Registro trattamenti</li>
+<li><i class="fas fa-check text-success me-2"></i>Procedure breach</li>
+<li><i class="fas fa-check text-success me-2"></i>Formazione staff</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Compliance Section -->
+<section class="py-5" style="background: white;">
+<div class="container">
+<div class="text-center mb-5">
+<h2>Compliance e Certificazioni</h2>
+<p class="lead text-muted">Conformità garantita agli standard di sicurezza più rigorosi</p>
+</div>
+<div class="row justify-content-center">
+<div class="col-md-8 text-center">
+<div class="compliance-badge">GDPR Compliant</div>
+<div class="compliance-badge">ISO 27001</div>
+<div class="compliance-badge">NIS2 Ready</div>
+<div class="compliance-badge">SOC 2 Type II</div>
+<div class="compliance-badge">DORA Compliant</div>
+<div class="compliance-badge">Cyber Essentials</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pricing Section -->
+<section class="py-5" id="prezzi" style="background: var(--light-bg);">
+<div class="container">
+<div class="text-center mb-5">
+<h2>Piani Sicurezza IT</h2>
+<p class="lead text-muted">Scegli il livello di protezione più adatto alla tua azienda</p>
+</div>
+<div class="row g-4 justify-content-center">
+<div class="col-lg-4">
+<div class="security-card">
+<h3 class="text-center">Security Essential</h3>
+<div class="text-center">
+<div class="price h2 text-danger">€150<small class="fs-6 text-muted">/mese</small></div>
+</div>
+<p class="text-muted mb-4 text-center">Per PMI fino a 10 utenti</p>
+<ul class="list-unstyled mb-4">
+<li><i class="fas fa-check text-success me-2"></i>Antimalware endpoint</li>
+<li><i class="fas fa-check text-success me-2"></i>Firewall base</li>
+<li><i class="fas fa-check text-success me-2"></i>Email protection</li>
+<li><i class="fas fa-check text-success me-2"></i>Backup cloud</li>
+<li><i class="fas fa-times text-muted me-2"></i>SOC 24/7</li>
+<li><i class="fas fa-times text-muted me-2"></i>Compliance GDPR</li>
+</ul>
+<button class="btn btn-outline-danger btn-lg w-100">Inizia Oggi</button>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="security-card" style="border: 3px solid var(--primary-color);">
+<div class="text-center mb-3">
+<span class="badge bg-danger px-3 py-2">PIÙ RICHIESTO</span>
+</div>
+<h3 class="text-center">Security Pro</h3>
+<div class="text-center">
+<div class="price h2 text-danger">€250<small class="fs-6 text-muted">/mese</small></div>
+</div>
+<p class="text-muted mb-4 text-center">Ideale per PMI fino a 50 utenti</p>
+<ul class="list-unstyled mb-4">
+<li><i class="fas fa-check text-success me-2"></i>Tutto di Essential +</li>
+<li><i class="fas fa-check text-success me-2"></i>SOC 24/7 monitoraggio</li>
+<li><i class="fas fa-check text-success me-2"></i>EDR avanzato</li>
+<li><i class="fas fa-check text-success me-2"></i>GDPR compliance</li>
+<li><i class="fas fa-check text-success me-2"></i>Vulnerability scanning</li>
+<li><i class="fas fa-check text-success me-2"></i>Incident response</li>
+</ul>
+<button class="btn btn-primary-custom btn-lg w-100">Attiva Ora</button>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="security-card">
+<h3 class="text-center">Security Enterprise</h3>
+<div class="text-center">
+<div class="price h2 text-danger">€450<small class="fs-6 text-muted">/mese</small></div>
+</div>
+<p class="text-muted mb-4 text-center">Per aziende con oltre 50 utenti</p>
+<ul class="list-unstyled mb-4">
+<li><i class="fas fa-check text-success me-2"></i>Tutto di Pro +</li>
+<li><i class="fas fa-check text-success me-2"></i>SIEM completo</li>
+<li><i class="fas fa-check text-success me-2"></i>Threat hunting</li>
+<li><i class="fas fa-check text-success me-2"></i>Penetration testing</li>
+<li><i class="fas fa-check text-success me-2"></i>ISO 27001 support</li>
+<li><i class="fas fa-check text-success me-2"></i>CISO as-a-Service</li>
+</ul>
+<button class="btn btn-outline-danger btn-lg w-100">Contatta Team</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5" style="background: var(--primary-color); color: white;">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<h2>Non Aspettare il Primo Attacco</h2>
+<p class="lead mb-4">Richiedi un audit di sicurezza gratuito e scopri le vulnerabilità della tua infrastruttura IT. I nostri esperti cybersecurity ti forniranno un piano di protezione personalizzato.</p>
+</div>
+<div class="col-lg-4 text-end">
+<a class="btn btn-light btn-lg me-3" href="tel:+390398882041">
+<i class="fas fa-phone me-2"></i>Audit Gratuito
+</a>
+<a class="btn btn-outline-light btn-lg" href="/pages/contatti.html">
+<i class="fas fa-envelope me-2"></i>Richiedi Info
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5 mt-5">
+<div class="container">
+<div class="row">
+<div class="col-md-3 mb-4">
+<h5><i class="fas fa-cogs me-2"></i>IT-ERA</h5>
+<p>Il tuo partner tecnologico di fiducia per soluzioni IT innovative e affidabili.</p>
+<div class="contact-info">
+<p><i class="fas fa-map-marker-alt me-2"></i>Viale Risorgimento 32, Vimercate MB</p>
+<p><i class="fas fa-phone me-2"></i>039 888 2041</p>
+<p><i class="fas fa-envelope me-2"></i>info@it-era.it</p>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+<h5>Servizi</h5>
+<ul class="list-unstyled">
+<li><a class="text-white-50" href="/pages/assistenza-it.html">Assistenza IT</a></li>
+<li><a class="text-white-50" href="/pages/cloud-storage.html">Cloud Storage</a></li>
+<li><a class="text-white-50" href="/pages/sicurezza-informatica.html">Sicurezza Informatica</a></li>
+<li><a class="text-white-50" href="/pages/backup-automatico.html">Backup & DR</a></li>
+<li><a class="text-white-50" href="/pages/voip-telefonia.html">VoIP & Telefonia</a></li>
+<li><a class="text-white-50" href="/pages/firewall-watchguard.html">Firewall Solutions</a></li>
+</ul>
+</div>
+<div class="col-md-3 mb-4">
+</div>
+<div class="col-md-3 mb-4">
+<h5>Seguici</h5>
+<div class="social-links mb-3">
+<a class="text-white-50 me-3" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+<a class="text-white-50 me-3" href="#"><i class="fab fa-facebook fa-lg"></i></a>
+<li><a class="text-white-50 me-3" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+</div>
+<p class="text-white-50 small">
+© 2024 IT-ERA. Tutti i diritti riservati.<br/>
+<a class="text-white-50" href="/privacy">Privacy Policy</a> | 
+<a class="text-white-50" href="/cookie">Cookie Policy</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IT-ERA - Sicurezza Informatica",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vimercate",
+        "addressRegion": "Lombardia",
+        "addressCountry": "IT",
+        "streetAddress": "Viale Risorgimento 32"
+    },
+    "telephone": "+39 039 888 2041",
+    "email": "info@it-era.it",
+    "url": "https://it-era.pages.dev/pages/sicurezza-informatica.html",
+    "areaServed": "Lombardia",
+    "serviceType": ["Sicurezza Informatica", "Cybersecurity", "Protezione Ransomware", "GDPR Compliance"],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87"
+    }
+}
+</script>
+</body>
+</html>

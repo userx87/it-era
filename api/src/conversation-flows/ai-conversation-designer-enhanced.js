@@ -698,8 +698,8 @@ RICORDA: Ogni conversazione è un'opportunità per mostrare competenza, creare f
   generateGreetingResponse(context) {
     const geographic = this.detectGeographic(context.currentMessage || '', context);
     
-    let greeting = "👋 Ciao! Sono l'assistente virtuale di **IT-ERA**";
-    let serviceIntro = "Siamo specializzati in soluzioni IT complete per aziende della Brianza.";
+    let greeting = "[IT-ERA] Benvenuto! Siamo il vostro partner tecnologico di fiducia, specializzato in soluzioni IT avanzate per aziende";
+    let serviceIntro = "Il nostro team è pronto ad assistervi con competenza e professionalità in tutta la Brianza.";
     
     if (geographic.zone) {
       const zoneConfig = this.geographicPersonalization[geographic.zone];

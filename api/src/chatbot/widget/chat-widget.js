@@ -7,12 +7,12 @@
 class ITERAChatWidget {
   constructor(options = {}) {
     this.config = {
-      apiEndpoint: options.apiEndpoint || 'https://it-era-chatbot.bulltech.workers.dev/api/chat',
+      apiEndpoint: options.apiEndpoint || 'https://it-era-email.bulltech.workers.dev/api/chat',
       position: options.position || 'bottom-right',
       primaryColor: options.primaryColor || '#667eea',
       secondaryColor: options.secondaryColor || '#764ba2',
       autoOpen: options.autoOpen || false,
-      greeting: options.greeting || "Ciao! Come posso aiutarti?",
+      greeting: options.greeting || "[IT-ERA] Ciao, come posso aiutarti?",
       companyName: options.companyName || 'IT-ERA',
       ...options
     };
@@ -684,6 +684,42 @@ class ITERAChatWidget {
         background: linear-gradient(135deg, #fff3e0, #ffffff);
       }
       
+      /* CRITICAL: Emergency message styling */
+      .itera-chat-message.emergency-critical {
+        animation: emergency-pulse 2s infinite;
+      }
+      
+      .itera-chat-message.emergency-critical .itera-chat-message-content {
+        border: 2px solid #dc3545;
+        border-left: 5px solid #dc3545;
+        background: linear-gradient(135deg, #ffebee, #ffffff);
+        box-shadow: 0 4px 20px rgba(220, 53, 69, 0.3);
+        font-weight: 600;
+      }
+      
+      .itera-chat-message.emergency-critical .itera-chat-option {
+        background: #dc3545;
+        color: white;
+        font-weight: 600;
+        border: none;
+        animation: emergency-button-pulse 1.5s infinite;
+      }
+      
+      .itera-chat-message.emergency-critical .itera-chat-option:hover {
+        background: #c82333;
+        transform: scale(1.05);
+      }
+      
+      @keyframes emergency-pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+      
+      @keyframes emergency-button-pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.8; }
+      }
+      
       /* Mobile responsive */
       @media (max-width: 480px) {
         .itera-chat-window {
@@ -785,27 +821,100 @@ class ITERAChatWidget {
   }
   
   async startConversation() {
+    // Show immediate fallback while initializing
+    this.showLoading(true);
+    
     try {
+      // OPTIMIZED with timeout handling
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 2000); // 2s timeout
+      
       const response = await fetch(this.config.apiEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          action: 'start'
-        })
+          action: 'start',
+          userAgent: navigator.userAgent,
+          timestamp: Date.now()
+        }),
+        signal: controller.signal
       });
       
+      clearTimeout(timeoutId);
       const result = await response.json();
       
       if (result.success) {
         this.sessionId = result.sessionId;
-        this.addBotMessage(result.response, result.options);
+        
+        // SECURITY CRITICAL: Sanitize response to prevent system prompt exposure
+        const sanitizedResponse = this.sanitizeResponse(result.response);
+        this.addBotMessage(sanitizedResponse, result.options);
+        
+        // Track performance
+        if (result.responseTime) {
+          this.conversationMetrics.averageResponseTime = result.responseTime;
+        }
+      } else {
+        throw new Error('Server returned error');
       }
     } catch (error) {
       console.error('Chat start error:', error);
-      this.addBotMessage('Scusa, c\'è stato un errore. Riprova più tardi.');
+      
+      // PROFESSIONAL FALLBACK with [IT-ERA] prefix
+      if (error.name === 'AbortError') {
+        this.addBotMessage('[IT-ERA] Il sistema sta caricando. Nel frattempo, come possiamo assistervi?', 
+                          ['Richiedi Preventivo', 'Assistenza Tecnica', 'Contatta Direttamente']);
+      } else {
+        this.addBotMessage('[IT-ERA] Benvenuto! Il nostro team è a vostra disposizione per qualsiasi esigenza IT. Come possiamo supportarvi?', 
+                          ['Preventivo Gratuito', 'Assistenza Immediata', 'Chiamata Diretta']);
+      }
+      
+      // Generate a local session ID
+      this.sessionId = `local_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    } finally {
+      this.showLoading(false);
     }
+  }
+
+  /**
+   * SECURITY CRITICAL: Sanitize responses to prevent system prompt exposure
+   */
+  sanitizeResponse(message) {
+    if (!message || typeof message !== 'string') {
+      return "[IT-ERA] Ciao, come posso aiutarti?";
+    }
+    
+    // Check for system prompt indicators that should NEVER be shown to users
+    const systemPromptIndicators = [
+      'INIZIO:',
+      'RISPOSTA TIPO',
+      'SYSTEM_PROMPT', 
+      'Sei l\'assistente virtuale',
+      'REGOLE ASSOLUTE',
+      'IDENTITÀ:',
+      'generateSystemPrompt',
+      'BusinessRules',
+      'console.log',
+      'systemPrompt',
+      '# IDENTITÀ',
+      'COMPORTAMENTO CONVERSAZIONALE',
+      'OBIETTIVI PRIMARI',
+      'Ogni conversazione inizia con',
+      'Buongiorno, sono l\'assistente di IT-ERA',
+      'Capisco perfettamente il suo problema'
+    ];
+    
+    // If message contains any system prompt indicators, replace with safe greeting
+    for (const indicator of systemPromptIndicators) {
+      if (message.includes(indicator)) {
+        console.error('SECURITY ALERT: System prompt exposed in response, using safe fallback');
+        return "[IT-ERA] Ciao, come posso aiutarti?";
+      }
+    }
+    
+    return message;
   }
   
   async sendMessage() {
@@ -823,8 +932,8 @@ class ITERAChatWidget {
     this.addUserMessage(message);
     this.conversationMetrics.messageCount++;
     
-    // Show enhanced loading with AI context
-    this.showEnhancedLoading(true, 'L\'assistente AI sta elaborando...');
+    // Show enhanced loading with professional messaging
+    this.showEnhancedLoading(true, '[IT-ERA] Il nostro sistema sta elaborando la vostra richiesta...');
     
     const startTime = Date.now();
     
@@ -872,15 +981,15 @@ class ITERAChatWidget {
         }
         
       } else {
-        this.addBotMessage('Scusa, non ho capito bene. Puoi ripetere in modo diverso?', 
-                          ['Preventivo', 'Assistenza', 'Parlare con umano']);
+        this.addBotMessage('[IT-ERA] Non ho compreso completamente la vostra richiesta. Potete specificare meglio come possiamo assistervi?', 
+                          ['Richiedi Preventivo', 'Supporto Tecnico', 'Contatta Specialista']);
       }
       
     } catch (error) {
       console.error('Enhanced chat error:', error);
       this.addBotMessage(
-        'C\'è stato un problema di connessione. Proviamo con un operatore umano?',
-        ['Operatore Umano', 'Riprova', 'Email Diretto']
+        '[IT-ERA] Stiamo riscontrando un rallentamento temporaneo. Il nostro team tecnico è comunque disponibile per assistervi immediatamente.',
+        ['Contatta Specialista', 'Riprova Messaggio', 'Chiamata Diretta']
       );
       this.showEscalationOptions();
     } finally {
@@ -909,6 +1018,11 @@ class ITERAChatWidget {
     if (result.escalate) messageClasses += ' escalation';
     if (result.cached) messageClasses += ' cached';
     
+    // CRITICAL: Emergency message styling
+    if (result.emergency || result.priority === 'immediate' || result.bypassedAllFlows) {
+      messageClasses += ' emergency-critical';
+    }
+    
     messageDiv.className = messageClasses;
     
     let optionsHtml = '';
@@ -917,7 +1031,7 @@ class ITERAChatWidget {
         <div class="itera-chat-options">
           ${result.options.map((option, index) => `
             <button class="itera-chat-option" data-option="${option}" data-index="${index}">
-              ${this.addEmojiToOption(option, result.intent)}
+              ${option}
             </button>
           `).join('')}
         </div>
@@ -938,7 +1052,7 @@ class ITERAChatWidget {
     
     messageDiv.innerHTML = `
       <div class="itera-chat-message-content">
-        ${this.formatMessageText(result.response)}
+        ${this.formatMessageText(this.sanitizeResponse(result.response))}
         ${metadataHtml}
       </div>
       ${optionsHtml}

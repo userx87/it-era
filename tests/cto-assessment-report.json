@@ -1,0 +1,618 @@
+{
+  "testProfile": {
+    "name": "Ing. Roberto Ferrari",
+    "company": "TechInnovate SPA",
+    "employees": 50,
+    "location": "Milano",
+    "budget": "€50,000+",
+    "expertise": "Kubernetes, Docker, CI/CD, Cloud Architecture",
+    "personality": "Highly technical, tests knowledge depth, uses Italian technical jargon"
+  },
+  "executionTimestamp": "2025-08-25T09:17:20.406Z",
+  "phases": [
+    {
+      "phase": "Initial Credibility",
+      "results": [
+        {
+          "id": "greeting_technical",
+          "message": "Buonasera, sono Ing. Roberto Ferrari, CTO di TechInnovate SPA a Milano. Gestisco un'infrastruttura con 50+ dipendenti e sto valutando una migrazione verso Kubernetes. Prima di procedere, vorrei capire il vostro livello di competenza tecnica. Che esperienza avete con container orchestration e microservizi?",
+          "expectedElements": [
+            "Riconoscimento del livello tecnico",
+            "Menzione di competenze K8s/Docker",
+            "Approccio professionale enterprise",
+            "Domande di approfondimento"
+          ],
+          "difficulty": "medium",
+          "category": "credibility_check",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 87.5,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 83.75,
+            "feedback": [
+              "✅ Buona competenza tecnica dimostrata",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 411,
+          "timestamp": "2025-08-25T09:16:56.985Z"
+        },
+        {
+          "id": "quick_technical_filter",
+          "message": "Avete esperienza con Helm charts e gestione dei secrets in ambiente Kubernetes? E con CI/CD usando GitLab CI o Jenkins?",
+          "expectedElements": [
+            "Conoscenza specifica di Helm",
+            "Gestione sicura dei secrets",
+            "CI/CD pipeline experience",
+            "Best practices mention"
+          ],
+          "difficulty": "high",
+          "category": "technical_depth",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 62.5,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 76.25,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 161,
+          "timestamp": "2025-08-25T09:16:59.147Z"
+        }
+      ],
+      "overallScore": 80
+    },
+    {
+      "phase": "Architectural Knowledge",
+      "results": [
+        {
+          "id": "k8s_architecture",
+          "message": "La nostra architettura attuale è basata su VM tradizionali. Stiamo considerando un approccio ibrido con K8s on-premises e cloud. Che strategia consigliereste per gestire service mesh, ingress controller e storage persistente? Avete esperienza con Istio o Linkerd?",
+          "expectedElements": [
+            "Service mesh comparison",
+            "Ingress controller options (nginx, traefik)",
+            "Persistent storage solutions",
+            "Hybrid cloud strategies",
+            "Migration planning"
+          ],
+          "difficulty": "very_high",
+          "category": "architecture",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 50,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 72.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 132,
+          "timestamp": "2025-08-25T09:17:01.280Z"
+        },
+        {
+          "id": "security_compliance",
+          "message": "Essendo nel settore finanziario, dobbiamo rispettare GDPR e PCI-DSS. Come gestite la sicurezza in Kubernetes? Quali sono le vostre best practices per network policies, RBAC e audit logging?",
+          "expectedElements": [
+            "Compliance understanding",
+            "K8s security features",
+            "Network policies expertise",
+            "RBAC implementation",
+            "Audit mechanisms"
+          ],
+          "difficulty": "very_high",
+          "category": "security",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "🔒 **Sicurezza Informatica - La nostra specializzazione**\n\n**🛡️ Partner WatchGuard Certificato**\n• Firewall next-generation per PMI\n• VPN aziendali sicure\n• Web filtering e controllo accessi\n• Monitoraggio sicurezza 24/7\n• **Da €2.500** (firewall completo)\n\n**🦠 Protezione Antivirus Enterprise**\n• Gestione centralizzata multi-postazione\n• Protezione email e server\n• **Da €8/postazione/mese**\n\n**🔍 Security Assessment**\n• Audit vulnerabilità completo\n• Test penetration di base\n• **€1.200 - €3.000**\n\nPer un preventivo preciso → **Sopralluogo GRATUITO**",
+            "options": [
+              "🛡️ Firewall WatchGuard",
+              "🦠 Antivirus aziendale",
+              "🔍 Audit sicurezza",
+              "💰 Preventivo gratuito"
+            ],
+            "intent": "sicurezza",
+            "confidence": 0.8,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 70,
+              "communication": 60,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 70.5,
+            "feedback": [],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 142,
+          "timestamp": "2025-08-25T09:17:03.423Z"
+        },
+        {
+          "id": "performance_monitoring",
+          "message": "Attualmente usiamo Prometheus + Grafana per monitoring. In ambiente containerizzato, che approccio consigliate per observability? Jaeger per tracing, Fluentd per logging? E per l'autoscaling basato su metriche custom?",
+          "expectedElements": [
+            "Observability stack knowledge",
+            "Tracing solutions comparison",
+            "Logging aggregation",
+            "Custom metrics HPA",
+            "Performance optimization"
+          ],
+          "difficulty": "very_high",
+          "category": "monitoring",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 50,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 72.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 140,
+          "timestamp": "2025-08-25T09:17:05.564Z"
+        }
+      ],
+      "overallScore": 71.83333333333333
+    },
+    {
+      "phase": "Problem Solving",
+      "results": [
+        {
+          "id": "disaster_recovery",
+          "message": "Scenario critico: abbiamo un cluster K8s multi-zone che sta subendo un'interruzione su due zone su tre. I nostri servizi critici sono configurati con anti-affinity rules. Come gestireste questa situazione per garantire business continuity? E che backup strategy consigliate per etcd?",
+          "expectedElements": [
+            "Multi-zone failure handling",
+            "Anti-affinity understanding",
+            "Business continuity planning",
+            "etcd backup strategies",
+            "Emergency procedures"
+          ],
+          "difficulty": "extreme",
+          "category": "crisis_management",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "💾 **Backup e Disaster Recovery**\n\n**☁️ Backup Cloud Automatizzato**\n• Backup incrementale sicuro\n• Crittografia end-to-end\n• Test recovery mensili\n• **Da €50/mese per 100GB**\n\n**🔄 Disaster Recovery Plan**\n• Piano continuità operativa\n• RTO/RPO definiti\n• Procedure recovery documentate\n• **Preventivo su progetto**\n\n**📊 Assessment Dati GRATUITO**\n• Analisi dati critici\n• Identificazione vulnerabilità\n• Piano backup personalizzato\n\n*Non rischiare di perdere anni di lavoro!*",
+            "options": [
+              "☁️ Backup cloud",
+              "🔄 Disaster recovery",
+              "📊 Assessment gratuito",
+              "💰 Preventivo backup"
+            ],
+            "intent": "backup",
+            "confidence": 0.8,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 60,
+              "communication": 60,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 67.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "❌ Gestione escalation inadeguata per scenario critico"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 143,
+          "timestamp": "2025-08-25T09:17:07.708Z"
+        },
+        {
+          "id": "resource_optimization",
+          "message": "Il nostro cluster sta consumando più risorse del previsto. Sospettiamo memory leaks in alcuni microservizi Java e problemi di resource limits. Che tooling usate per profiling e optimization? E come gestite JVM tuning in containers?",
+          "expectedElements": [
+            "Memory profiling tools",
+            "JVM container optimization",
+            "Resource limits best practices",
+            "Performance debugging",
+            "Cost optimization strategies"
+          ],
+          "difficulty": "very_high",
+          "category": "optimization",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 50,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 72.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 133,
+          "timestamp": "2025-08-25T09:17:09.842Z"
+        }
+      ],
+      "overallScore": 70
+    },
+    {
+      "phase": "Business Acumen",
+      "results": [
+        {
+          "id": "cost_benefit_analysis",
+          "message": "Budget disponibile: €50k per la migrazione iniziale, poi €8k/mese per maintenance. Potete fornire un breakdown dettagliato dei costi? Include licensing (se necessario), training del team, downtime stimato e ROI timeline?",
+          "expectedElements": [
+            "Detailed cost breakdown",
+            "Training considerations",
+            "Downtime estimation",
+            "ROI analysis",
+            "Long-term cost planning"
+          ],
+          "difficulty": "high",
+          "category": "commercial",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 50,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 72.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 138,
+          "timestamp": "2025-08-25T09:17:11.980Z"
+        },
+        {
+          "id": "timeline_planning",
+          "message": "Timeline critico: dobbiamo completare la migrazione entro Q2 2024. Abbiamo 3 team di sviluppo, 2 DevOps engineer e 1 system admin. È fattibile? Che approach consigliate: big-bang migration o strangler pattern?",
+          "expectedElements": [
+            "Timeline assessment",
+            "Resource evaluation",
+            "Migration strategies",
+            "Team training plan",
+            "Risk mitigation"
+          ],
+          "difficulty": "high",
+          "category": "project_management",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 50,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 72.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 134,
+          "timestamp": "2025-08-25T09:17:14.115Z"
+        }
+      ],
+      "overallScore": 72.5
+    },
+    {
+      "phase": "Escalation Handling",
+      "results": [
+        {
+          "id": "complex_scenario",
+          "message": "Scenario complesso: stiamo pianificando una migrazione da bare-metal a cloud ibrido (AWS + on-premises) con requisiti di latenza < 10ms per alcune applicazioni trading. Serve consulenza specialistica per network architecture, SD-WAN integration e real-time data synchronization. Quando possiamo avere un technical meeting con i vostri solution architects?",
+          "expectedElements": [
+            "Recognition of complexity",
+            "Escalation to specialists",
+            "Meeting scheduling",
+            "Technical expertise acknowledgment",
+            "Enterprise-level handling"
+          ],
+          "difficulty": "extreme",
+          "category": "escalation",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "👋 **Ciao! Sono l'assistente virtuale IT-ERA**\n\n**IT-ERA è il brand di Bulltech** specializzato in servizi IT per aziende della Brianza.\n\n🏢 **Siamo a Vimercate (MB)** con oltre 10 anni di esperienza.\n\n**Come posso aiutarti oggi?**",
+            "options": [
+              "🔒 Sicurezza informatica",
+              "🛠️ Assistenza IT",
+              "💾 Backup e recovery",
+              "🔧 Riparazione hardware",
+              "💰 Preventivo gratuito",
+              "📞 Contatti"
+            ],
+            "intent": "generale",
+            "confidence": 0.5,
+            "escalate": false,
+            "priority": "medium",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 60,
+              "communication": 100,
+              "escalation": 50,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 75.5,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto",
+              "❌ Gestione escalation inadeguata per scenario critico",
+              "✅ Comunicazione professionale appropriata"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 145,
+          "timestamp": "2025-08-25T09:17:16.262Z"
+        },
+        {
+          "id": "immediate_support",
+          "message": "URGENTE: abbiamo un issue critico in produzione. Uno dei nostri nodi K8s non risponde e i pods non si stanno reschedulando correttamente. Avete supporto 24/7? Possiamo avere assistenza immediata?",
+          "expectedElements": [
+            "Emergency response",
+            "24/7 support availability",
+            "Immediate escalation",
+            "Clear next steps",
+            "Professional urgency handling"
+          ],
+          "difficulty": "extreme",
+          "category": "emergency",
+          "response": {
+            "success": true,
+            "sessionId": "chat_1756113416776_oj4dlg2r1",
+            "response": "🚨 **EMERGENZA IT - Intervento Immediato**\n\n**📞 CHIAMA SUBITO: 039 888 2041**\n\n⚡ **Interveniamo rapidamente per:**\n• Server down o sistemi bloccanti\n• Attacchi malware/ransomware\n• Perdita dati critica\n• Problemi rete aziendale\n\n⏱️ **Tempi di intervento:**\n• **Zona Vimercate/Monza:** 2-4 ore\n• **Clienti con contratto:** Priorità assoluta\n• **Weekend/sera:** Maggiorazione 30-50%\n\n*Reperibilità attiva per emergenze!*",
+            "options": [
+              "📞 Chiama ora: 039 888 2041",
+              "💥 Server down",
+              "🦠 Attacco malware",
+              "💾 Perdita dati",
+              "🌐 Rete non funziona"
+            ],
+            "intent": "emergenza",
+            "confidence": 0.9,
+            "escalate": true,
+            "priority": "high",
+            "source": "fallback",
+            "cost": 0,
+            "usedAI": false
+          },
+          "analysis": {
+            "scores": {
+              "technicalAccuracy": 50,
+              "communication": 60,
+              "escalation": 100,
+              "performance": 100,
+              "completeness": 100
+            },
+            "totalScore": 77,
+            "feedback": [
+              "❌ Risposta tecnicamente insufficiente per un CTO esperto"
+            ],
+            "strengths": [],
+            "weaknesses": []
+          },
+          "responseTime": 142,
+          "timestamp": "2025-08-25T09:17:18.405Z"
+        }
+      ],
+      "overallScore": 76.25
+    }
+  ],
+  "overallAssessment": {
+    "score": 74.11666666666666,
+    "grade": "C"
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "area": "Technical Knowledge",
+      "recommendation": "Migliorare la knowledge base con contenuti tecnici specifici su Kubernetes, Docker, DevOps practices e cloud architecture"
+    },
+    {
+      "priority": "HIGH",
+      "area": "Escalation Logic",
+      "recommendation": "Implementare regole di escalation più aggressive per scenari enterprise e utenti con profilo tecnico senior"
+    }
+  ],
+  "technicalVerdict": {
+    "score": 74.11666666666666,
+    "grade": "C",
+    "verdict": "CONDIZIONALMENTE APPROVATO: Competenza di base presente ma necessari miglioramenti per scenari enterprise complessi. Richiede training aggiuntivo prima del deployment.",
+    "ctoApproval": true,
+    "readyForEnterprise": false
+  }
+}

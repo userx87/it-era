@@ -5,8 +5,22 @@ class APIManager {
         this.adminBaseURL = CONFIG.ADMIN_API_BASE_URL;
     }
 
-    // Generic API request
+    // SECURE API request with enhanced authentication validation
     async request(endpoint, options = {}) {
+        // SECURITY CHECK: Ensure authentication before ANY API request
+        if (!authManager.isAuthenticated || !authManager.token) {
+            console.error('APIManager: No authentication - blocking API request');
+            authManager.logout();
+            throw new Error('Authentication required. Please login again.');
+        }
+
+        // Validate JWT token before request
+        if (!authManager.validateJWT() || authManager.isTokenExpired()) {
+            console.error('APIManager: Invalid or expired token - blocking API request');
+            authManager.logout();
+            throw new Error('Session expired. Please login again.');
+        }
+
         // Construct URL properly for admin API endpoints
         let url;
         if (endpoint.startsWith('http')) {
@@ -20,7 +34,13 @@ class APIManager {
         }
         
         const defaultOptions = {
-            headers: authManager.getAuthHeaders()
+            headers: {
+                ...authManager.getAuthHeaders(),
+                'X-Requested-With': 'XMLHttpRequest', // CSRF protection
+                'X-Admin-Panel': 'IT-ERA-Admin-v1', // Additional security header
+            },
+            credentials: 'include', // Include cookies for additional security
+            timeout: 30000 // 30 second timeout
         };
 
         const config = {
@@ -33,19 +53,31 @@ class APIManager {
         };
 
         try {
+            console.log(`APIManager: Making ${config.method || 'GET'} request to: ${url}`);
             const response = await fetch(url, config);
             
-            if (response.status === 401) {
+            // Handle authentication errors
+            if (response.status === 401 || response.status === 403) {
+                console.error('APIManager: Authentication failed - status:', response.status);
                 authManager.logout();
-                throw new Error('Session expired. Please login again.');
+                throw new Error('Session expired or access denied. Please login again.');
+            }
+
+            // Handle other HTTP errors
+            if (!response.ok) {
+                const errorText = await response.text();
+                let errorMessage;
+                try {
+                    const errorData = JSON.parse(errorText);
+                    errorMessage = errorData.error || errorData.message || `HTTP error! status: ${response.status}`;
+                } catch (e) {
+                    errorMessage = `HTTP error! status: ${response.status} - ${errorText}`;
+                }
+                throw new Error(errorMessage);
             }
 
             const data = await response.json();
-            
-            if (!response.ok) {
-                throw new Error(data.error || `HTTP error! status: ${response.status}`);
-            }
-
+            console.log(`APIManager: Request successful for: ${url}`);
             return data;
         } catch (error) {
             console.error('API request failed:', error);

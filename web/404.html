@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pagina Non Trovata - 404 | IT-ERA</title>
+<meta content="Pagina non trovata. Torna alla homepage di IT-ERA per scoprire i nostri servizi IT professionali per aziende in Lombardia." name="description"/>
+<meta content="noindex, nofollow" name="robots"/>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        :root {
+            --primary-color: #0d6efd;
+            --primary-dark: #0a58ca;
+            --secondary-color: #6c757d;
+            --accent-color: #20c997;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .error-container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-container::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 100px;
+            height: 100px;
+            background: rgba(13,110,253,0.1);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .error-number {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .error-icon {
+            font-size: 4rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            opacity: 0.7;
+        }
+        
+        .countdown {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin: 30px 0;
+        }
+        
+        .btn-primary-custom {
+            background: var(--primary-color);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .btn-primary-custom:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(13,110,253,0.3);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .btn-outline-custom:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .suggestions {
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .suggestions h5 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .suggestions li {
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .suggestions li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .suggestions a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .suggestions a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 5rem;
+            }
+            
+            .error-container {
+                padding: 40px 20px;
+                margin: 20px;
+            }
+            
+            .btn-primary-custom,
+            .btn-outline-custom {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+        
+        /* Animation */
+        @keyframes bounce {
+            0%, 20%, 60%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            80% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .error-icon {
+            animation: bounce 2s infinite;
+        }
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="error-container">
+<div class="error-icon">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<div class="error-number">404</div>
+<h1 class="h3 mb-3">Pagina Non Trovata</h1>
+<p class="lead text-muted mb-4">
+Oops! La pagina che stavi cercando non esiste più o è stata spostata.
+</p>
+
+<div class="countdown" id="countdown">
+Reindirizzamento automatico alla homepage in <span id="timer">5</span> secondi...
+</div>
+
+<div class="mb-4">
+<a href="/" class="btn-primary-custom">
+<i class="fas fa-home me-2"></i>Torna alla Homepage
+</a>
+<a href="/pages/contatti.html" class="btn-outline-custom">
+<i class="fas fa-envelope me-2"></i>Contattaci
+</a>
+</div>
+
+<div class="suggestions">
+<h5><i class="fas fa-lightbulb me-2"></i>Potresti essere interessato a:</h5>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li><a href="/pages/assistenza-it.html">Assistenza IT Professionale</a></li>
+<li><a href="/pages/sicurezza-informatica.html">Sicurezza Informatica</a></li>
+<li><a href="/pages/cloud-storage.html">Cloud Storage Aziendale</a></li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li><a href="/pages/perche-it-era.html">Perché Scegliere IT-ERA</a></li>
+<li><a href="/blog/">Blog e Risorse IT</a></li>
+<li><a href="tel:+390398882041">Assistenza Urgente: 039 888 2041</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row mt-5">
+<div class="col-md-4 text-center mb-4">
+<div class="h5 text-primary">
+<i class="fas fa-phone fa-2x mb-3"></i>
+<br>Chiamaci
+</div>
+<p class="text-muted">
+<strong>039 888 2041</strong><br>
+Supporto 24/7
+</p>
+</div>
+<div class="col-md-4 text-center mb-4">
+<div class="h5 text-primary">
+<i class="fas fa-envelope fa-2x mb-3"></i>
+<br>Email
+</div>
+<p class="text-muted">
+<strong>info@it-era.it</strong><br>
+Risposta in 2 ore
+</p>
+</div>
+<div class="col-md-4 text-center mb-4">
+<div class="h5 text-primary">
+<i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+<br>Ufficio
+</div>
+<p class="text-muted">
+<strong>Vimercate (MB)</strong><br>
+Viale Risorgimento 32
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Auto redirect countdown
+let timeLeft = 5;
+const timerElement = document.getElementById('timer');
+
+const countdown = setInterval(() => {
+    timeLeft--;
+    timerElement.textContent = timeLeft;
+    
+    if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = '/';
+    }
+}, 1000);
+
+// Track 404 errors
+if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view', {
+        page_title: '404 Error',
+        page_location: window.location.href,
+        custom_parameter: 'error_404'
+    });
+}
+</script>
+
+</body>
+</html>

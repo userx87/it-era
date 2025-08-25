@@ -1,33 +1,25 @@
 {
-  "name": "it-era-template-tests",
+  "name": "it-era-robust-testing",
   "version": "1.0.0",
-  "description": "Comprehensive test suite for IT-ERA landing page templates",
-  "main": "run-all-tests.js",
+  "description": "Comprehensive Puppeteer testing utilities for IT-ERA",
+  "main": "run-robust-test-suite.js",
   "scripts": {
-    "test": "node run-all-tests.js",
-    "test:templates": "node templates-test-suite.js",
-    "test:performance": "node performance-test.js",
-    "test:accessibility": "node accessibility-test.js",
-    "install-deps": "npm install jsdom puppeteer axios"
+    "test": "node run-robust-test-suite.js",
+    "test:chatbot": "node robust-chatbot-test.js",
+    "test:production": "node run-robust-test-suite.js --production-only",
+    "test:staging": "node run-robust-test-suite.js --staging-only",
+    "test:functionality": "node run-robust-test-suite.js --functionality-only",
+    "test:performance": "node run-robust-test-suite.js --performance-only",
+    "test:network": "node run-robust-test-suite.js --network-only",
+    "test:parallel": "node run-robust-test-suite.js --parallel",
+    "test:quick": "node run-robust-test-suite.js --production-only --functionality-only --no-retry"
   },
-  "keywords": [
-    "testing",
-    "seo",
-    "accessibility",
-    "performance",
-    "wcag",
-    "templates"
-  ],
-  "author": "IT-ERA Testing Suite",
-  "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.2",
-    "jsdom": "^23.0.1"
-  },
-  "devDependencies": {
     "puppeteer": "^24.17.0"
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "author": "IT-ERA Development Team",
+  "license": "MIT"
 }

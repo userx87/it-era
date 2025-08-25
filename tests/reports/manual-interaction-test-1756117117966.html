@@ -1,0 +1,157 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Manual Chatbot Interaction Test Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            .header { background: #007bff; color: white; padding: 20px; border-radius: 8px; text-align: center; }
+            .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+            .stat-card { background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .pass { color: #28a745; }
+            .fail { color: #dc3545; }
+            .warning { color: #ffc107; }
+            .section { background: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .step { margin: 10px 0; padding: 10px; background: #f8f9fa; border-radius: 4px; }
+            .step.success { border-left: 4px solid #28a745; }
+            .step.fail { border-left: 4px solid #dc3545; }
+            .screenshot { max-width: 300px; margin: 10px; border: 1px solid #ddd; border-radius: 4px; }
+            table { width: 100%; border-collapse: collapse; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background: #f2f2f2; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>👨‍💻 Manual Chatbot Interaction Test</h1>
+                <p>URL: https://it-era.pages.dev</p>
+                <p>Generated: 2025-08-25T10:18:37.948Z</p>
+            </div>
+            
+            <div class="summary">
+                <div class="stat-card">
+                    <h3>4</h3>
+                    <p>Total Steps</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="pass">
+                        4
+                    </h3>
+                    <p>Successful Steps</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="pass">
+                        ✅
+                    </h3>
+                    <p>Chatbot Detected</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="fail">
+                        ❌
+                    </h3>
+                    <p>Greeting Found</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="pass">
+                        ✅
+                    </h3>
+                    <p>Phone Visible</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📋 Step-by-Step Log</h2>
+                
+                    <div class="step success">
+                        <strong>Step 1: Page Load</strong><br>
+                        <small>Time: 12:17:57</small><br>
+                        Status: ✅<br>
+                        Details: Title: IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia
+                    </div>
+                
+                    <div class="step success">
+                        <strong>Step 2: Element Inspection</strong><br>
+                        <small>Time: 12:18:03</small><br>
+                        Status: ✅<br>
+                        Details: Found 10 elements
+                    </div>
+                
+                    <div class="step success">
+                        <strong>Step 3: Chatbot Interaction</strong><br>
+                        <small>Time: 12:18:07</small><br>
+                        Status: ✅<br>
+                        Details: Successfully opened chatbot
+                    </div>
+                
+                    <div class="step success">
+                        <strong>Step 4: Content Analysis</strong><br>
+                        <small>Time: 12:18:07</small><br>
+                        Status: ✅<br>
+                        Details: Greeting: false, Phone: true
+                    </div>
+                
+            </div>
+            
+            <div class="section">
+                <h2>📷 Screenshots</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+                    
+                        <div>
+                            <h4>01-page-loaded</h4>
+                            <img src="/Users/andreapanzeri/progetti/IT-ERA/tests/screenshots/manual-interaction/01-page-loaded.png" class="screenshot" alt="01-page-loaded">
+                        </div>
+                    
+                        <div>
+                            <h4>02-after-wait</h4>
+                            <img src="/Users/andreapanzeri/progetti/IT-ERA/tests/screenshots/manual-interaction/02-after-wait.png" class="screenshot" alt="02-after-wait">
+                        </div>
+                    
+                        <div>
+                            <h4>03-interaction-2</h4>
+                            <img src="/Users/andreapanzeri/progetti/IT-ERA/tests/screenshots/manual-interaction/03-interaction-2.png" class="screenshot" alt="03-interaction-2">
+                        </div>
+                    
+                        <div>
+                            <h4>04-final-state</h4>
+                            <img src="/Users/andreapanzeri/progetti/IT-ERA/tests/screenshots/manual-interaction/04-final-state.png" class="screenshot" alt="04-final-state">
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🎯 Manual Inspection Checklist</h2>
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <td>Chatbot widget visible</td>
+                        <td class="pass">✅ DETECTED</td>
+                        <td>Automatic detection result</td>
+                    </tr>
+                    <tr>
+                        <td>IT-ERA greeting message</td>
+                        <td class="fail">❌ NOT FOUND</td>
+                        <td>Looking for "[IT-ERA] Ciao, come posso aiutarti?"</td>
+                    </tr>
+                    <tr>
+                        <td>Emergency phone number</td>
+                        <td class="pass">✅ VISIBLE</td>
+                        <td>Should show 039 888 2041</td>
+                    </tr>
+                    <tr>
+                        <td>Chat functionality</td>
+                        <td class="warning">⏳ MANUAL CHECK REQUIRED</td>
+                        <td>Requires manual testing of actual conversation</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    </html>
+    

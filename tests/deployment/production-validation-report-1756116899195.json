@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-08-25T10:14:56.696Z",
+  "production_urls": [
+    {
+      "url": "https://www.it-era.it",
+      "error": "net::ERR_CONNECTION_RESET at https://www.it-era.it",
+      "page_status": "failed",
+      "timestamp": "2025-08-25T10:14:57.998Z"
+    },
+    {
+      "url": "https://www.it-era.it/pages/assistenza-it-milano.html",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it/pages/assistenza-it-milano.html",
+      "page_status": "failed",
+      "timestamp": "2025-08-25T10:14:58.185Z"
+    },
+    {
+      "url": "https://www.it-era.it/pages/cloud-storage-milano.html",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it/pages/cloud-storage-milano.html",
+      "page_status": "failed",
+      "timestamp": "2025-08-25T10:14:58.408Z"
+    },
+    {
+      "url": "https://www.it-era.it/pages/sicurezza-informatica-milano.html",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it/pages/sicurezza-informatica-milano.html",
+      "page_status": "failed",
+      "timestamp": "2025-08-25T10:14:58.573Z"
+    }
+  ],
+  "performance_metrics": {
+    "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it"
+  },
+  "functionality_tests": {
+    "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it",
+    "test_passed": false
+  },
+  "security_validation": {
+    "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it"
+  },
+  "deployment_status": {
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://chatbot-worker.it-era.workers.dev"
+  }
+}

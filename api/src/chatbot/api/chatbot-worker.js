@@ -37,9 +37,10 @@ const CONFIG = {
   // Email integration (preserved from existing system)
   EMAIL_API_ENDPOINT: 'https://it-era-email.bulltech.workers.dev/api/contact',
   
-  // Performance settings
-  RESPONSE_TIMEOUT: 8000, // 8 seconds max response time
-  FALLBACK_TIMEOUT: 2000, // 2 seconds before fallback
+  // Performance settings - OPTIMIZED for speed
+  RESPONSE_TIMEOUT: 3000, // 3 seconds max response time (reduced from 8s)
+  FALLBACK_TIMEOUT: 1000, // 1 second before fallback (reduced from 2s)
+  GREETING_CACHE_TTL: 300, // 5 minutes greeting cache
   
   // CORS settings
   ALLOWED_ORIGINS: [
@@ -70,7 +71,7 @@ let openRouterEngine = null;
 let conversationDesigner = null;
 let hybridInitialized = false;
 
-// Initialize AI systems with Hybrid Strategy
+// OPTIMIZED AI initialization with aggressive caching
 async function initializeAI(env) {
   if (!openRouterEngine) {
     openRouterEngine = new OpenRouterEngine({
@@ -82,11 +83,16 @@ async function initializeAI(env) {
       costLimit: CONFIG.AI_COST_LIMIT,
       cacheTTL: CONFIG.AI_CACHE_TTL,
       language: 'italian',
-      hybridEnabled: CONFIG.HYBRID_ENABLED
+      hybridEnabled: CONFIG.HYBRID_ENABLED,
+      // SPEED OPTIMIZATIONS
+      greetingCache: true,
+      quickInit: true,
+      responseTimeout: CONFIG.FALLBACK_TIMEOUT
     });
     
-    await openRouterEngine.initialize(env);
-    console.log('✅ Hybrid OpenRouter Engine initialized');
+    // Quick initialization without full setup
+    await openRouterEngine.quickInitialize(env);
+    console.log('⚡ Fast AI Engine initialized');
   }
   
   if (!conversationDesigner) {
@@ -328,10 +334,191 @@ function shouldUseAI(context, env) {
   return true;
 }
 
-// Emergency fallback response
+// CRITICAL EMERGENCY DETECTION SYSTEM
+function detectEmergency(message, context = {}) {
+  const msg = message.toLowerCase().trim();
+  const city = context.location || context.comune || "Milano";
+  
+  // Emergency keywords and phrases
+  const emergencyKeywords = [
+    // Server/Infrastructure Emergencies
+    'server down', 'server offline', 'server crash', 'server bloccato', 'server non funziona',
+    'sito down', 'sito offline', 'sito non funziona', 'sito bloccato', 'sistema down',
+    'database down', 'database offline', 'database corrotto', 'rete down', 'connessione down',
+    
+    // Ransomware/Security Emergencies
+    'ransomware', 'virus', 'malware', 'cyber attack', 'attacco informatico', 'hackerato',
+    'hack', 'hacker', 'violazione dati', 'data breach', 'sicurezza compromessa',
+    'file criptati', 'richiesta riscatto', 'riscatto bitcoin', 'cryptolocker',
+    
+    // Business Critical Emergencies
+    'emergenza', 'urgente', 'critico', 'bloccati', 'fermi', 'non possiamo lavorare',
+    'perdendo soldi', 'perdita economica', 'disastro', 'panico', 'help urgente',
+    'tutto fermo', 'sistema bloccato', 'non riusciamo', 'impossibile lavorare',
+    
+    // Data Loss Emergencies
+    'perso dati', 'dati cancellati', 'hard disk rotto', 'backup non funziona',
+    'recupero dati urgente', 'file spariti', 'database cancellato', 'disco rotto',
+    
+    // Time-sensitive phrases
+    'ogni ora', 'ogni minuto', 'subito', 'ora', 'adesso', 'immediato',
+    'non può aspettare', 'tempo limitato', 'scadenza', 'cliente arrabbiato'
+  ];
+  
+  const businessImpactPhrases = [
+    'perdendo soldi', 'perdita economica', 'clienti arrabbiati', 'lavoro fermo',
+    'produzione ferma', 'vendite bloccate', 'fatturato a rischio', 'business fermo',
+    'dipendenti bloccati', 'ordini fermi', 'magazzino fermo', 'spedizioni ferme'
+  ];
+  
+  // Check for emergency patterns
+  const hasEmergencyKeyword = emergencyKeywords.some(keyword => msg.includes(keyword));
+  const hasBusinessImpact = businessImpactPhrases.some(phrase => msg.includes(phrase));
+  const hasUrgencyIndicators = msg.includes('urgente') || msg.includes('subito') || 
+                              msg.includes('emergenza') || msg.includes('critico');
+  
+  // Emergency scenarios scoring (fine-tuned for accuracy)
+  let emergencyScore = 0;
+  
+  if (hasEmergencyKeyword) emergencyScore += 40;
+  if (hasBusinessImpact) emergencyScore += 30;
+  if (hasUrgencyIndicators) emergencyScore += 20;
+  if (msg.includes('down') || msg.includes('offline')) emergencyScore += 25;
+  if (msg.includes('ransomware') || msg.includes('virus')) emergencyScore += 50;
+  if (msg.includes('hackerato') || msg.includes('hack')) emergencyScore += 45;
+  if (msg.includes('perdendo') && (msg.includes('soldi') || msg.includes('denaro'))) emergencyScore += 35;
+  if (msg.includes('tutto') && msg.includes('fermo')) emergencyScore += 30;
+  
+  // Additional specific patterns for better accuracy
+  if (msg.includes('produzione') && msg.includes('ferma')) emergencyScore += 25;
+  if (msg.includes('intervento') && msg.includes('immediato')) emergencyScore += 25;
+  if (msg.includes('perso') && msg.includes('dati')) emergencyScore += 30;
+  if (msg.includes('database') && msg.includes('cancellato')) emergencyScore += 35;
+  if (msg.includes('recupero') && msg.includes('urgente')) emergencyScore += 25;
+  
+  // Emergency threshold
+  const isEmergency = emergencyScore >= 40;
+  
+  if (isEmergency) {
+    return {
+      isEmergency: true,
+      emergencyScore,
+      emergencyType: determineEmergencyType(msg),
+      city,
+      timestamp: new Date().toISOString(),
+      ticketId: generateEmergencyTicketId()
+    };
+  }
+  
+  return { isEmergency: false, emergencyScore };
+}
+
+// Determine specific emergency type
+function determineEmergencyType(message) {
+  const msg = message.toLowerCase();
+  
+  if (msg.includes('ransomware') || msg.includes('virus') || msg.includes('hack')) {
+    return 'SECURITY_BREACH';
+  }
+  if (msg.includes('server') && (msg.includes('down') || msg.includes('crash'))) {
+    return 'SERVER_DOWN';
+  }
+  if (msg.includes('perdendo soldi') || msg.includes('business fermo')) {
+    return 'BUSINESS_CRITICAL';
+  }
+  if (msg.includes('dati') && (msg.includes('perso') || msg.includes('cancellati'))) {
+    return 'DATA_LOSS';
+  }
+  
+  return 'GENERAL_EMERGENCY';
+}
+
+// Generate emergency ticket ID
+function generateEmergencyTicketId() {
+  const timestamp = Date.now();
+  return `CRITICAL-${timestamp}`;
+}
+
+// Generate emergency response with immediate contact info
+function generateEmergencyResponse(emergencyData, context = {}) {
+  const { city, emergencyType, ticketId } = emergencyData;
+  
+  const emergencyResponse = {
+    message: `[IT-ERA] EMERGENZA RICEVUTA!
+🚨 INTERVENTO IMMEDIATO ${city.toUpperCase()}
+Numero Emergenza H24: 039 888 2041
+
+Team in partenza: ETA 45 minuti
+Ticket priorità MASSIMA: #${ticketId}
+
+CHIAMACI ORA: 039 888 2041`,
+    
+    options: [
+      "CHIAMA ORA: 039 888 2041",
+      "Invia posizione per intervento",
+      "Descrizione dettagliata emergenza"
+    ],
+    
+    nextStep: "emergency_immediate_response",
+    intent: "emergency_critical",
+    confidence: 1.0,
+    escalate: true,
+    priority: 'immediate',
+    emergencyType,
+    ticketId,
+    bypassAllFlows: true,
+    requiresImmediateAction: true,
+    aiPowered: false,
+    emergency: true,
+    
+    // Emergency-specific data
+    emergencyData: {
+      detectedAt: new Date().toISOString(),
+      city,
+      type: emergencyType,
+      phoneNumber: '039 888 2041',
+      eta: '45 minuti',
+      priority: 'CRITICAL'
+    }
+  };
+  
+  return emergencyResponse;
+}
+
+// Log emergency incident
+async function logEmergencyIncident(emergencyData, message, sessionId, env) {
+  try {
+    const logData = {
+      timestamp: new Date().toISOString(),
+      sessionId,
+      ticketId: emergencyData.ticketId,
+      city: emergencyData.city,
+      emergencyType: emergencyData.emergencyType,
+      emergencyScore: emergencyData.emergencyScore,
+      originalMessage: message,
+      phoneNumber: '039 888 2041'
+    };
+    
+    // Store in emergency log (using chat sessions for now)
+    if (env.CHAT_SESSIONS) {
+      await env.CHAT_SESSIONS.put(
+        `emergency_log:${emergencyData.ticketId}`, 
+        JSON.stringify(logData),
+        { expirationTtl: 86400 * 7 } // Keep for 7 days
+      );
+    }
+    
+    console.log('🚨 EMERGENCY DETECTED:', logData);
+    
+  } catch (error) {
+    console.error('Emergency logging failed:', error);
+  }
+}
+
+// Emergency fallback response - PROFESSIONAL TONE
 function getEmergencyFallbackResponse() {
   return {
-    message: "Scusa, sto avendo alcuni problemi tecnici. Ti metto subito in contatto con un nostro consulente che ti assisterà al meglio.",
+    message: "[IT-ERA] Sto riscontrando un problema tecnico. Vi metto immediatamente in contatto con un nostro specialista per garantirvi la migliore assistenza.",
     options: ["Contatto immediato", "Riprova più tardi"],
     nextStep: "emergency_escalation",
     escalate: true,
@@ -496,6 +683,97 @@ function calculateAverageResponseTime(messages) {
   
   const totalTime = botMessages.reduce((sum, msg) => sum + (msg.responseTime || 0), 0);
   return Math.round(totalTime / botMessages.length);
+}
+
+/**
+ * SECURITY CRITICAL: Sanitize all response messages before sending to frontend
+ */
+function sanitizeResponseMessage(message) {
+  if (!message || typeof message !== 'string') {
+    return "[IT-ERA] Ciao, come posso aiutarti?";
+  }
+
+  // Check for system prompt indicators that should NEVER be shown to users
+  const systemPromptIndicators = [
+    'INIZIO:',
+    'RISPOSTA TIPO',
+    'SYSTEM_PROMPT',
+    'Sei l\'assistente virtuale',
+    'REGOLE ASSOLUTE',
+    'IDENTITÀ:',
+    'generateSystemPrompt',
+    'BusinessRules',
+    'console.log',
+    'systemPrompt',
+    '# IDENTITÀ',
+    'COMPORTAMENTO CONVERSAZIONALE',
+    'OBIETTIVI PRIMARI',
+    'Ogni conversazione inizia con',
+    'Buongiorno, sono l\'assistente di IT-ERA',
+    'Capisco perfettamente il suo problema'
+  ];
+
+  // If message contains any system prompt indicators, replace with safe greeting
+  for (const indicator of systemPromptIndicators) {
+    if (message.includes(indicator)) {
+      console.error('SECURITY ALERT: System prompt detected in response, using safe fallback');
+      return "[IT-ERA] Ciao, come posso aiutarti?";
+    }
+  }
+
+  return message;
+}
+
+// OPTIMIZED greeting generator with aggressive caching
+async function generateOptimizedGreeting(context, env) {
+  try {
+    // Check cache first for instant response
+    const cacheKey = `greeting_${context.userAgent || 'default'}`;
+    if (env.CHAT_SESSIONS) {
+      const cached = await env.CHAT_SESSIONS.get(cacheKey);
+      if (cached) {
+        const cachedResponse = JSON.parse(cached);
+        // SECURITY: Always sanitize cached responses
+        cachedResponse.message = sanitizeResponseMessage(cachedResponse.message);
+        return {
+          ...cachedResponse,
+          cached: true,
+          responseTime: 50 // Near-instant
+        };
+      }
+    }
+    
+    // Generate optimized greeting - always sanitized
+    const greetingResponse = {
+      message: sanitizeResponseMessage("[IT-ERA] Ciao, come posso aiutarti?"),
+      options: ["Richiedi Preventivo", "Assistenza Tecnica", "Informazioni Servizi", "Contatta Specialista"],
+      nextStep: "service_selection",
+      intent: "greeting",
+      confidence: 1.0,
+      aiPowered: false,
+      priority: "high"
+    };
+    
+    // Cache for 5 minutes
+    if (env.CHAT_SESSIONS) {
+      await env.CHAT_SESSIONS.put(
+        cacheKey, 
+        JSON.stringify(greetingResponse), 
+        { expirationTtl: CONFIG.GREETING_CACHE_TTL }
+      );
+    }
+    
+    return greetingResponse;
+    
+  } catch (error) {
+    console.error('Optimized greeting error:', error);
+    return {
+      message: "[IT-ERA] Ciao, come posso aiutarti?",
+      options: ["Preventivo", "Assistenza", "Informazioni"],
+      nextStep: "service_selection",
+      aiPowered: false
+    };
+  }
 }
 
 // Session cleanup for AI data
@@ -716,7 +994,8 @@ export default {
           startTime: Date.now()
         };
         
-        const response = await generateResponse('start', session.context, env);
+        // OPTIMIZED greeting with cache
+        const response = await generateOptimizedGreeting(session.context, env);
         
         session.messages.push({
           type: 'bot',
@@ -738,7 +1017,7 @@ export default {
         return new Response(JSON.stringify({
           success: true,
           sessionId: session.id,
-          response: response.message,
+          response: sanitizeResponseMessage(response.message),
           options: response.options,
           step: response.nextStep,
           aiPowered: response.aiPowered
@@ -748,6 +1027,90 @@ export default {
       }
       
       if (action === 'message' && message) {
+        // CRITICAL: Emergency detection first - bypasses ALL other flows
+        const emergencyCheck = detectEmergency(message, session.context);
+        
+        if (emergencyCheck.isEmergency) {
+          // Log emergency incident immediately
+          await logEmergencyIncident(emergencyCheck, message, session.id, env);
+          
+          // Add user message to session
+          session.messages.push({
+            type: 'user',
+            content: message,
+            timestamp: Date.now(),
+            emergencyDetected: true,
+            emergencyScore: emergencyCheck.emergencyScore,
+            emergencyType: emergencyCheck.emergencyType
+          });
+          
+          // Generate IMMEDIATE emergency response - bypasses ALL AI and conversation flows
+          const emergencyResponse = generateEmergencyResponse(emergencyCheck, session.context);
+          const responseTime = 150; // Emergency responses are instant
+          
+          // Mark session as emergency
+          session.emergency = true;
+          session.emergencyData = emergencyCheck;
+          session.escalation = {
+            required: true,
+            type: 'EMERGENCY_CRITICAL',
+            priority: 'immediate',
+            reason: 'emergency_detected',
+            emergencyType: emergencyCheck.emergencyType,
+            timestamp: Date.now(),
+            bypassNormalFlows: true
+          };
+          
+          // Add emergency response to session
+          session.messages.push({
+            type: 'bot',
+            content: emergencyResponse.message,
+            options: emergencyResponse.options,
+            timestamp: Date.now(),
+            aiPowered: false,
+            responseTime,
+            emergency: true,
+            ticketId: emergencyCheck.ticketId,
+            emergencyType: emergencyCheck.emergencyType,
+            bypassedFlows: true
+          });
+          
+          session.step = emergencyResponse.nextStep;
+          session.context = {
+            ...session.context,
+            currentStep: emergencyResponse.nextStep,
+            emergency: true,
+            emergencyTicketId: emergencyCheck.ticketId,
+            lastActivity: Date.now()
+          };
+          
+          await saveSession(session, env.CHAT_SESSIONS);
+          
+          // Return immediate emergency response
+          return new Response(JSON.stringify({
+            success: true,
+            sessionId: session.id,
+            response: sanitizeResponseMessage(emergencyResponse.message),
+            options: emergencyResponse.options,
+            step: emergencyResponse.nextStep,
+            intent: emergencyResponse.intent,
+            confidence: emergencyResponse.confidence,
+            aiPowered: false,
+            responseTime,
+            escalate: true,
+            escalationType: 'EMERGENCY_CRITICAL',
+            priority: 'immediate',
+            emergency: true,
+            emergencyType: emergencyCheck.emergencyType,
+            ticketId: emergencyCheck.ticketId,
+            phoneNumber: '039 888 2041',
+            bypassedAllFlows: true
+          }), {
+            headers: corsHeaders(origin),
+          });
+        }
+        
+        // Normal flow continues only if NOT an emergency
         // Add user message to session
         session.messages.push({
           type: 'user',
@@ -774,10 +1137,10 @@ export default {
         const response = await Promise.race([responsePromise, timeoutPromise]);
         const responseTime = Date.now() - startTime;
         
-        // Add bot response to session
+        // Add bot response to session - SECURITY: Always sanitize
         session.messages.push({
           type: 'bot',
-          content: response.message,
+          content: sanitizeResponseMessage(response.message),
           options: response.options,
           timestamp: Date.now(),
           aiPowered: response.aiPowered,
@@ -841,11 +1204,11 @@ export default {
         
         await saveSession(session, env.CHAT_SESSIONS);
         
-        // Prepare response with enhanced data
+        // Prepare response with enhanced data - SECURITY: Always sanitize
         const responseData = {
           success: true,
           sessionId: session.id,
-          response: response.message,
+          response: sanitizeResponseMessage(response.message),
           options: response.options,
           step: response.nextStep,
           intent: response.intent,

@@ -26,6 +26,21 @@
 - **Email**: info@it-era.it
 - **P.IVA**: 10524040966
 
+## 🚨 REGOLE CRITICHE IT-ERA (SEMPRE VERIFICARE):
+1. **Menu Navigazione**: TUTTE le pagine devono avere menu IDENTICO con tutti i link funzionanti al 100%
+2. **Link Admin**: Ogni link nel pannello admin deve essere completamente funzionante
+3. **Telefono Unificato**: 039 888 2041 deve essere identico su tutte le 13,519 pagine
+4. **Settori Menu**: Deve contenere tutti e 4 i settori con link corretti (PMI, Medici, Commercialisti, Legali)
+5. **Test Browser**: Configurazione Puppeteer ottimizzata - no pagine vuote, typing veloce
+6. **Consistency Check**: Verificare sempre consistenza navigazione prima di deploy
+
+## 🚀 DEPLOYMENT CLOUDFLARE PAGES:
+**Comando Deploy**: `npx wrangler pages deploy web --project-name it-era --commit-dirty=true`
+- **NON usare git push** per deployment
+- **URL Production**: https://it-era.pages.dev
+- **URL Preview**: https://[hash].it-era.pages.dev
+- **Directory**: Sempre deployare la cartella `/web`
+
 ---
 
 # Claude Code Configuration - SPARC Development Environment

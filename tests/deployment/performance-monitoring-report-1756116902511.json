@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-08-25T10:14:59.932Z",
+  "performance_data": [
+    {
+      "url": "https://www.it-era.it",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it",
+      "timestamp": "2025-08-25T10:15:01.452Z"
+    },
+    {
+      "url": "https://www.it-era.it/pages/assistenza-it-milano.html",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it/pages/assistenza-it-milano.html",
+      "timestamp": "2025-08-25T10:15:01.667Z"
+    },
+    {
+      "url": "https://www.it-era.it/pages/cloud-storage-bergamo.html",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it/pages/cloud-storage-bergamo.html",
+      "timestamp": "2025-08-25T10:15:01.953Z"
+    },
+    {
+      "url": "https://www.it-era.it/pages/sicurezza-informatica-monza.html",
+      "error": "net::ERR_CONNECTION_REFUSED at https://www.it-era.it/pages/sicurezza-informatica-monza.html",
+      "timestamp": "2025-08-25T10:15:02.479Z"
+    }
+  ],
+  "resource_usage": {},
+  "response_times": {},
+  "bottleneck_analysis": {},
+  "optimization_recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Monitoring",
+      "recommendation": "Implement real-time performance monitoring",
+      "implementation": "Add performance tracking to chatbot worker and frontend",
+      "expected_improvement": "Proactive issue detection and resolution"
+    }
+  ]
+}

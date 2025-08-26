@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ruv-swarm",
+      "mcp__claude-flow",
+      "Bash(npm install:*)",
+      "WebFetch(domain:support.google.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(pip3 install:*)",
+      "Bash(brew install:*)",
+      "Bash(gcloud auth:*)",
+      "Bash(pipx install:*)",
+      "Bash(gcloud services enable:*)",
+      "Bash(pipx:*)",
+      "Bash(gcloud projects:*)",
+      "Bash(source:*)",
+      "Bash(gcloud config set:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp:*)",
+      "Bash(gcloud analytics properties:*)",
+      "Bash(find:*)"
+    ],
+    "deny": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "claude-flow",
+    "ruv-swarm"
+  ]
+}

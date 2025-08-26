@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # IT-ERA Cloudflare Configuration Validation Script
-# HIVESTORM Task #2 - Production Deployment Validation
+# Tests all critical redirects and SEO configurations
 
 set -e
 

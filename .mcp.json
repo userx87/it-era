@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "claude-flow": {
+      "command": "npx",
+      "args": [
+        "claude-flow@alpha",
+        "mcp",
+        "start"
+      ],
+      "type": "stdio"
+    },
+    "ruv-swarm": {
+      "command": "npx",
+      "args": [
+        "ruv-swarm@latest",
+        "mcp",
+        "start"
+      ],
+      "type": "stdio"
+    },
+    "testsprite": {
+      "command": "npx",
+      "args": [
+        "@testsprite/testsprite-mcp"
+      ],
+      "type": "stdio",
+      "env": {
+        "TESTSPRITE_API_KEY": "sk-user-ZXxkpDLoM9HQU4S38hjZPsBOpPN_RJsYmfZNLsjBaQUVS2ezBZJyFy2V5fPy9IB2NZRWbxP1Yv5ZcjB3BkI3Nb2luAkAtwth0ie920TJS7JLTV9QRnnEKt5cffmOdztt4LY"
+      }
+    }
+  }
+}

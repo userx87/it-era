@@ -3,6 +3,10 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://it-era.it/sitemap.xml
+Sitemap: https://it-era.it/sitemap.php
+
+# Additional search engines  
+Sitemap: https://a5e3801f.it-era.pages.dev/sitemap.xml
 
 # Blog specific rules
 Allow: /blog/

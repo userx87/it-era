@@ -1,2 +1,68 @@
-name = "it-era"
-pages_build_output_dir = "web"
+name = "it-era-main"
+main = "src/index.js"
+compatibility_date = "2024-01-23"
+
+# Account ID Bulltech
+account_id = "2842eac6595a0ac8086c76cee3409a24"
+
+# Site directory for Cloudflare Pages
+[[pages]]
+directory = "web"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "SITE_CONFIG"
+id = "{{SITE_CONFIG_KV_ID}}"
+
+[[kv_namespaces]]
+binding = "ANALYTICS_KV" 
+id = "ad59b007da2043f5be9d8a4140d73f2b"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "{{ENVIRONMENT}}"
+SITE_URL = "{{SITE_URL}}"
+GA4_ID = "G-T5VWN9EH21"
+GTM_ID = "GTM-KPF3JZT"
+
+# Development environment
+[env.development]
+name = "it-era-main-dev"
+vars = { 
+  ENVIRONMENT = "development",
+  SITE_URL = "http://localhost:3000"
+}
+
+# Staging environment  
+[env.staging]
+name = "it-era-main-staging"
+vars = { 
+  ENVIRONMENT = "staging",
+  SITE_URL = "https://{{PREVIEW_URL}}.pages.dev"
+}
+
+# Production environment
+[env.production]
+name = "it-era-main"
+vars = {
+  ENVIRONMENT = "production",
+  SITE_URL = "https://it-era.it"
+}
+
+# Production KV Namespaces
+[[env.production.kv_namespaces]]
+binding = "SITE_CONFIG"
+id = "{{SITE_CONFIG_KV_ID}}"
+
+[[env.production.kv_namespaces]]
+binding = "ANALYTICS_KV" 
+id = "ad59b007da2043f5be9d8a4140d73f2b"
+
+# Build configuration
+[build]
+command = "npm run build"
+cwd = "."
+watch_dir = "src"
+
+[build.upload]
+format = "modules"

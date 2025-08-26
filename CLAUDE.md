@@ -9,6 +9,15 @@
 - **Applicazione**: Python script applica a tutte le 1,544 pagine
 - **⚠️ MAI modificare direttamente nelle pagine, usa sempre i componenti centrali**
 
+### Google Analytics 4 + GTM Tracking (AUTOMATICO!)
+**GA4 e GTM sono componenti AUTOMATICI integrati su tutte le pagine:**
+- **GA4 ID**: `G-T5VWN9EH21` - Tracking principale IT-ERA
+- **GTM Container**: `GTM-KPF3JZT` - Tag Manager configurato
+- **Script PHP Cron**: `/scripts/cron-ga4-integrator.php` - Integrazione automatica giornaliera
+- **Funzionamento**: Ogni giorno alle 2:00 AM verifica e aggiunge tracking su nuove pagine
+- **⚠️ IMPORTANTE**: Oltre al menu, VA SEMPRE INSERITO il tag GA4+GTM in ogni nuova pagina
+- **Controllo automatico**: `if GA4 presente = skip | else = aggiungi codice tracking`
+
 ### Sistema Template con Placeholder
 **Template usano {{CITY}} come placeholder principale:**
 - `{{CITY}}` - Nome città (es: Milano, Monza, Como)

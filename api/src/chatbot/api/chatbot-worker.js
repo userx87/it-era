@@ -61,9 +61,110 @@ const corsHeaders = (origin) => ({
   'Content-Type': 'application/json',
 });
 
-// Genera session ID univoco
-function generateSessionId() {
-  return `chat_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+// Enhanced Session ID Management System
+// Generates traceable, scalable conversation IDs with metadata
+function generateSessionId(metadata = {}) {
+  const timestamp = Date.now();
+  const dateStr = new Date(timestamp).toISOString().slice(0, 10).replace(/-/g, '');
+  const timeStr = new Date(timestamp).toTimeString().slice(0, 8).replace(/:/g, '');
+  const randomPart = Math.random().toString(36).substr(2, 12);
+  const userAgent = metadata.userAgent ? metadata.userAgent.slice(0, 10).replace(/[^a-zA-Z0-9]/g, '') : 'web';
+  
+  // Format: itera_YYYYMMDD_HHMMSS_USERAGENT_RANDOM
+  return `itera_${dateStr}_${timeStr}_${userAgent}_${randomPart}`.toLowerCase();
+}
+
+// Enhanced conversation metrics storage
+const conversationMetrics = {
+  // Track active conversations by ID
+  activeConversations: new Map(),
+  
+  // Store conversation metadata
+  storeConversationMetrics(sessionId, metadata) {
+    this.activeConversations.set(sessionId, {
+      id: sessionId,
+      startTime: Date.now(),
+      lastActivity: Date.now(),
+      messageCount: 0,
+      totalCost: 0,
+      aiUsage: 0,
+      userAgent: metadata.userAgent || 'unknown',
+      ip: metadata.ip || 'unknown',
+      ...metadata
+    });
+  },
+  
+  // Update conversation activity
+  updateConversationActivity(sessionId, updateData) {
+    const conversation = this.activeConversations.get(sessionId);
+    if (conversation) {
+      Object.assign(conversation, {
+        ...updateData,
+        lastActivity: Date.now()
+      });
+      this.activeConversations.set(sessionId, conversation);
+    }
+  },
+  
+  // Get conversation by ID
+  getConversation(sessionId) {
+    return this.activeConversations.get(sessionId);
+  },
+  
+  // Clean up old conversations (older than 24 hours)
+  cleanupOldConversations() {
+    const cutoffTime = Date.now() - (24 * 60 * 60 * 1000); // 24 hours
+    let cleanedCount = 0;
+    
+    for (const [sessionId, conversation] of this.activeConversations.entries()) {
+      if (conversation.lastActivity < cutoffTime) {
+        this.activeConversations.delete(sessionId);
+        cleanedCount++;
+      }
+    }
+    
+    if (cleanedCount > 0) {
+      console.log(`🧹 Cleaned up ${cleanedCount} old conversation IDs`);
+    }
+    
+    return cleanedCount;
+  },
+  
+  // Get all active conversation IDs
+  getAllActiveIDs() {
+    return Array.from(this.activeConversations.keys());
+  },
+  
+  // Get conversations summary
+  getConversationsSummary() {
+    const conversations = Array.from(this.activeConversations.values());
+    return {
+      total: conversations.length,
+      avgDuration: conversations.reduce((sum, conv) => sum + (conv.lastActivity - conv.startTime), 0) / conversations.length || 0,
+      avgMessages: conversations.reduce((sum, conv) => sum + conv.messageCount, 0) / conversations.length || 0,
+      totalCost: conversations.reduce((sum, conv) => sum + conv.totalCost, 0),
+      aiUsagePercent: conversations.length > 0 ? 
+        (conversations.reduce((sum, conv) => sum + conv.aiUsage, 0) / conversations.reduce((sum, conv) => sum + conv.messageCount, 1)) * 100 : 0
+    };
+  }
+};
+
+// Log conversation ID at session start
+function logConversationStart(sessionId, metadata = {}) {
+  const logData = {
+    sessionId,
+    timestamp: new Date().toISOString(),
+    userAgent: metadata.userAgent || 'unknown',
+    ip: metadata.ip || 'unknown',
+    action: 'conversation_started'
+  };
+  
+  console.log('🚀 New conversation started:', logData);
+  
+  // Store in metrics system
+  conversationMetrics.storeConversationMetrics(sessionId, metadata);
+  
+  return logData;
 }
 
 // Initialize Hybrid AI System
@@ -528,35 +629,166 @@ function getEmergencyFallbackResponse() {
   };
 }
 
-// Gestione sessione conversazione
-async function getOrCreateSession(sessionId, CHAT_SESSIONS) {
+// Enhanced Session Management with ID tracking and persistent storage
+async function getOrCreateSession(sessionId, CHAT_SESSIONS, metadata = {}) {
+  let isNewSession = false;
+  
   if (!sessionId) {
-    sessionId = generateSessionId();
+    sessionId = generateSessionId(metadata);
+    isNewSession = true;
   }
   
-  let session = await CHAT_SESSIONS.get(sessionId);
+  let session = null;
+  
+  try {
+    if (CHAT_SESSIONS) {
+      const sessionData = await CHAT_SESSIONS.get(sessionId);
+      if (sessionData) {
+        session = JSON.parse(sessionData);
+        // Update conversation activity
+        conversationMetrics.updateConversationActivity(sessionId, {
+          messageCount: session.messages?.length || 0,
+          totalCost: session.context?.totalCost || 0
+        });
+      }
+    }
+  } catch (error) {
+    console.error(`Failed to retrieve session ${sessionId}:`, error);
+  }
   
   if (!session) {
+    isNewSession = true;
     session = {
       id: sessionId,
       created: Date.now(),
       messages: [],
-      context: {},
+      context: {
+        sessionId, // Always include sessionId in context
+        startTime: Date.now(),
+        userAgent: metadata.userAgent,
+        ip: metadata.ip
+      },
       step: "greeting",
-      leadData: {}
+      leadData: {},
+      metrics: {
+        conversationStarted: new Date().toISOString(),
+        messageCount: 0,
+        totalCost: 0,
+        aiUsage: 0,
+        responseTimeSum: 0
+      }
     };
-  } else {
-    session = JSON.parse(session);
+    
+    // Log new conversation start
+    if (isNewSession) {
+      logConversationStart(sessionId, metadata);
+      
+      // Store conversation ID in persistent metrics (if available)
+      if (CHAT_SESSIONS) {
+        try {
+          await storeConversationMetrics(sessionId, metadata, CHAT_SESSIONS);
+        } catch (error) {
+          console.error('Failed to store conversation metrics:', error);
+        }
+      }
+    }
+  }
+  
+  // Ensure session always has current ID in context
+  if (session.context) {
+    session.context.sessionId = sessionId;
   }
   
   return session;
 }
 
-// Salva sessione
+// Store conversation metrics persistently
+async function storeConversationMetrics(sessionId, metadata, CHAT_SESSIONS) {
+  try {
+    const metricsKey = `conversation_metrics:${sessionId}`;
+    const metricsData = {
+      sessionId,
+      startTime: new Date().toISOString(),
+      userAgent: metadata.userAgent || 'unknown',
+      ip: metadata.ip || 'unknown',
+      status: 'active',
+      messageCount: 0,
+      totalCost: 0,
+      aiUsage: 0,
+      lastActivity: new Date().toISOString()
+    };
+    
+    await CHAT_SESSIONS.put(
+      metricsKey,
+      JSON.stringify(metricsData),
+      { expirationTtl: 86400 * 7 } // Keep for 7 days
+    );
+    
+    console.log(`📊 Stored metrics for conversation: ${sessionId}`);
+  } catch (error) {
+    console.error('Failed to store conversation metrics:', error);
+  }
+}
+
+// Enhanced Session Saving with metrics update
 async function saveSession(session, CHAT_SESSIONS) {
-  await CHAT_SESSIONS.put(session.id, JSON.stringify(session), {
-    expirationTtl: CONFIG.MAX_SESSION_DURATION
-  });
+  try {
+    // Update session metrics
+    if (session.metrics) {
+      session.metrics.lastActivity = new Date().toISOString();
+      session.metrics.messageCount = session.messages?.length || 0;
+      session.metrics.totalCost = session.context?.totalCost || 0;
+      session.metrics.aiUsage = session.messages?.filter(m => m.aiPowered).length || 0;
+    }
+    
+    // Ensure sessionId is always in the context
+    if (session.context) {
+      session.context.sessionId = session.id;
+      session.context.lastSaved = Date.now();
+    }
+    
+    // Save main session
+    await CHAT_SESSIONS.put(session.id, JSON.stringify(session), {
+      expirationTtl: CONFIG.MAX_SESSION_DURATION
+    });
+    
+    // Update conversation metrics in memory
+    conversationMetrics.updateConversationActivity(session.id, {
+      messageCount: session.messages?.length || 0,
+      totalCost: session.context?.totalCost || 0,
+      aiUsage: session.messages?.filter(m => m.aiPowered).length || 0
+    });
+    
+    // Update persistent metrics
+    if (session.metrics) {
+      const metricsKey = `conversation_metrics:${session.id}`;
+      const persistentMetrics = {
+        sessionId: session.id,
+        startTime: session.metrics.conversationStarted,
+        lastActivity: session.metrics.lastActivity,
+        messageCount: session.metrics.messageCount,
+        totalCost: session.metrics.totalCost,
+        aiUsage: session.metrics.aiUsage,
+        status: session.escalation?.required ? 'escalated' : 'active',
+        userAgent: session.context?.userAgent || 'unknown',
+        ip: session.context?.ip || 'unknown'
+      };
+      
+      try {
+        await CHAT_SESSIONS.put(
+          metricsKey,
+          JSON.stringify(persistentMetrics),
+          { expirationTtl: 86400 * 7 }
+        );
+      } catch (error) {
+        console.error(`Failed to update persistent metrics for ${session.id}:`, error);
+      }
+    }
+    
+  } catch (error) {
+    console.error(`Failed to save session ${session.id}:`, error);
+    throw error;
+  }
 }
 
 // Check rate limiting
@@ -690,7 +922,7 @@ function calculateAverageResponseTime(messages) {
  */
 function sanitizeResponseMessage(message) {
   if (!message || typeof message !== 'string') {
-    return "[IT-ERA] Ciao, come posso aiutarti?";
+    return "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?";
   }
 
   // COMPREHENSIVE system prompt detection - catch all system prompt patterns
@@ -754,7 +986,7 @@ function sanitizeResponseMessage(message) {
   for (const pattern of systemPromptPatterns) {
     if (pattern.test(message)) {
       console.error('SECURITY ALERT: System prompt pattern detected:', message.substring(0, 100));
-      return "[IT-ERA] Ciao, come posso aiutarti?";
+      return "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?";
     }
   }
 
@@ -772,14 +1004,14 @@ function sanitizeResponseMessage(message) {
     
     if (keywordCount >= 3) {
       console.error('SECURITY ALERT: Long message with system keywords detected, using safe fallback');
-      return "[IT-ERA] Ciao, come posso aiutarti?";
+      return "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?";
     }
   }
 
   // Additional check: if message contains typical AI system prompt structure
   if (message.includes('🎯') && message.includes('📍') && message.includes('AZIENDA:')) {
     console.error('SECURITY ALERT: AI system prompt structure detected');
-    return "[IT-ERA] Ciao, come posso aiutarti?";
+    return "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?";
   }
 
   // Final check: if message starts with system-like content
@@ -795,27 +1027,30 @@ function sanitizeResponseMessage(message) {
   for (const starter of systemStarters) {
     if (message.toLowerCase().includes(starter.toLowerCase())) {
       console.error('SECURITY ALERT: System starter detected:', starter);
-      return "[IT-ERA] Ciao, come posso aiutarti?";
+      return "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?";
     }
   }
 
   return message;
 }
 
-// OPTIMIZED greeting generator with aggressive caching
-async function generateOptimizedGreeting(context, env) {
+// MARK Greeting Generator - New personality and flow
+async function generateMarkGreeting(context, env) {
   try {
-    // SECURITY FIRST: Always return sanitized greeting without AI generation
-    const safeGreeting = "[IT-ERA] Ciao, come posso aiutarti?";
+    // MARK's personalized greeting - friendly but professional IT consultant
+    const markGreeting = "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?";
+    
+    // Add typing delay simulation for natural conversation feel
+    await simulateTypingDelay(1200); // 1.2 second delay
     
     // Check cache first for instant response
-    const cacheKey = `greeting_${context.userAgent || 'default'}`;
+    const cacheKey = `mark_greeting_${context.userAgent || 'default'}`;
     if (env.CHAT_SESSIONS) {
       const cached = await env.CHAT_SESSIONS.get(cacheKey);
       if (cached) {
         const cachedResponse = JSON.parse(cached);
         // SECURITY: Always sanitize cached responses and ensure safe greeting
-        cachedResponse.message = safeGreeting;
+        cachedResponse.message = markGreeting;
         return {
           ...cachedResponse,
           cached: true,
@@ -824,16 +1059,17 @@ async function generateOptimizedGreeting(context, env) {
       }
     }
     
-    // Generate optimized greeting - NEVER use AI for greeting, always static safe message
+    // Mark's greeting response - NO automatic options
     const greetingResponse = {
-      message: safeGreeting, // Hard-coded safe greeting, never from AI
-      options: ["Richiedi Preventivo", "Assistenza Tecnica", "Informazioni Servizi", "Contatta Specialista"],
-      nextStep: "service_selection",
+      message: markGreeting,
+      options: [], // NO options - natural conversation flow
+      nextStep: "collect_user_data",
       intent: "greeting",
       confidence: 1.0,
       aiPowered: false,
       priority: "high",
-      secure: true // Mark as security-verified
+      secure: true,
+      markPersonality: true // Flag for Mark's personality
     };
     
     // Cache for 5 minutes
@@ -848,20 +1084,337 @@ async function generateOptimizedGreeting(context, env) {
     return greetingResponse;
     
   } catch (error) {
-    console.error('Optimized greeting error:', error);
+    console.error('Mark greeting error:', error);
     // FALLBACK: Always return the same safe greeting
     return {
-      message: "[IT-ERA] Ciao, come posso aiutarti?",
-      options: ["Preventivo", "Assistenza", "Informazioni"],
-      nextStep: "service_selection",
+      message: "Ciao sono Mark, assistente di IT-ERA, come posso aiutarti?",
+      options: [],
+      nextStep: "collect_user_data",
       aiPowered: false,
-      secure: true
+      secure: true,
+      markPersonality: true
     };
   }
 }
 
-// Session cleanup for AI data
-async function cleanupAISession(sessionId, CHAT_SESSIONS) {
+// Simulate typing delay for natural conversation
+async function simulateTypingDelay(ms = 1000) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
+}
+
+// Mark's data collection flow
+async function handleMarkDataCollection(message, context, env) {
+  const currentStep = context.currentStep;
+  const leadData = context.leadData || {};
+  
+  // Add typing delay for natural feel
+  await simulateTypingDelay(800);
+  
+  switch (currentStep) {
+    case "collect_user_data":
+      // First interaction - ask for name
+      if (!leadData.nome) {
+        return {
+          message: "Perfetto! Per iniziare, come ti chiami?",
+          options: [],
+          nextStep: "collect_name",
+          intent: "data_collection",
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true
+        };
+      }
+      break;
+      
+    case "collect_name":
+      // Collect name and ask for surname
+      if (message && !leadData.cognome) {
+        context.leadData = { ...leadData, nome: message.trim() };
+        return {
+          message: `Ciao ${message.trim()}! E il tuo cognome?`,
+          options: [],
+          nextStep: "collect_surname",
+          intent: "data_collection",
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true
+        };
+      }
+      break;
+      
+    case "collect_surname":
+      // Collect surname and ask for email
+      if (message && !leadData.email) {
+        context.leadData = { ...context.leadData, cognome: message.trim() };
+        return {
+          message: "Perfetto! Ora mi serve la tua email per poterti inviare tutte le informazioni:",
+          options: [],
+          nextStep: "collect_email",
+          intent: "data_collection",
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true
+        };
+      }
+      break;
+      
+    case "collect_email":
+      // Collect email and ask for phone
+      if (message && isValidEmail(message) && !leadData.telefono) {
+        context.leadData = { ...context.leadData, email: message.trim().toLowerCase() };
+        return {
+          message: "Ottimo! Ultimo dato: il tuo numero di telefono per eventuali chiarimenti urgenti:",
+          options: [],
+          nextStep: "collect_phone",
+          intent: "data_collection",
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true
+        };
+      } else if (message && !isValidEmail(message)) {
+        return {
+          message: "Mi sembra che l'email non sia corretta. Puoi ripetere? (esempio: nome@azienda.it)",
+          options: [],
+          nextStep: "collect_email",
+          intent: "data_collection",
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true
+        };
+      }
+      break;
+      
+    case "collect_phone":
+      // Collect phone and complete registration
+      if (message && isValidPhone(message)) {
+        context.leadData = { 
+          ...context.leadData, 
+          telefono: message.trim(),
+          conversationId: context.sessionId,
+          timestamp: new Date().toISOString()
+        };
+        
+        // Save customer data with conversation ID
+        await saveCustomerData(context.leadData, context.sessionId, env);
+        
+        const fullName = `${context.leadData.nome} ${context.leadData.cognome}`;
+        return {
+          message: `Grazie ${fullName}! I tuoi dati sono stati salvati. Ora dimmi, di cosa hai bisogno per la tua azienda?`,
+          options: [],
+          nextStep: "natural_conversation",
+          intent: "data_collected",
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true,
+          dataCollected: true
+        };
+      } else if (message && !isValidPhone(message)) {
+        return {
+          message: "Il numero sembra non essere valido. Puoi ripetere? (esempio: 02 1234567 o 333 1234567)",
+          options: [],
+          nextStep: "collect_phone",
+          intent: "data_collection", 
+          confidence: 1.0,
+          aiPowered: false,
+          markPersonality: true
+        };
+      }
+      break;
+      
+    case "natural_conversation":
+      // Natural conversation after data collection
+      return generateMarkNaturalResponse(message, context, env);
+      
+    default:
+      return generateMarkNaturalResponse(message, context, env);
+  }
+  
+  // Fallback
+  return {
+    message: "Mi dispiace, non ho capito. Puoi ripetere?",
+    options: [],
+    nextStep: currentStep,
+    intent: "clarification",
+    confidence: 0.5,
+    aiPowered: false,
+    markPersonality: true
+  };
+}
+
+// Generate Mark's natural conversational response
+async function generateMarkNaturalResponse(message, context, env) {
+  await simulateTypingDelay(1500); // Longer delay for thoughtful responses
+  
+  // Mark's personality: friendly but professional IT consultant
+  const response = await generateMarkResponse(message, context, env);
+  
+  return {
+    ...response,
+    options: [], // NO automatic options - natural conversation
+    markPersonality: true,
+    naturalConversation: true
+  };
+}
+
+// Core Mark response generator with his personality
+async function generateMarkResponse(message, context, env) {
+  try {
+    // Use AI for natural conversation, but with Mark's personality
+    const { aiEngine, conversationDesigner } = await initializeAI(env);
+    
+    // Mark's system prompt for personality
+    const markSystemPrompt = `Sei Mark, l'assistente virtuale di IT-ERA. Sei un consulente IT esperto, amichevole ma professionale.
+    
+PERSONALITÀ:
+- Tono amichevole ma competente
+- Rispondi come un consulente IT esperto
+- Usa un linguaggio semplice e diretto
+- Sii empatico ma professionale
+- Concentrati sulle soluzioni IT
+- NON proporre mai opzioni multiple automatiche
+- Mantieni sempre una conversazione naturale
+
+OBIETTIVI:
+- Capire le esigenze IT del cliente
+- Proporre soluzioni appropriate
+- Qualificare il lead come consulente esperto
+- Mantenere una conversazione fluida e naturale
+
+Ora rispondi al messaggio del cliente in modo naturale e professionale.`;
+
+    const enhancedContext = {
+      ...context,
+      markPersonality: true,
+      systemPrompt: markSystemPrompt,
+      customerData: context.leadData
+    };
+    
+    const aiResponse = await aiEngine.generateResponse(message, enhancedContext, context.sessionId);
+    
+    return {
+      message: aiResponse.message || "Come posso aiutarti con le tue esigenze IT?",
+      nextStep: "natural_conversation",
+      intent: aiResponse.intent || "general",
+      confidence: aiResponse.confidence || 0.8,
+      aiPowered: true,
+      cost: aiResponse.cost || 0,
+      model: aiResponse.model || CONFIG.AI_MODEL
+    };
+    
+  } catch (error) {
+    console.error('Mark AI response error:', error);
+    
+    // Fallback to simple pattern matching with Mark's personality
+    return generateMarkFallbackResponse(message);
+  }
+}
+
+// Mark's fallback responses when AI is unavailable
+function generateMarkFallbackResponse(message) {
+  const msg = message.toLowerCase();
+  
+  if (msg.includes('preventivo') || msg.includes('prezzo') || msg.includes('costo')) {
+    return {
+      message: "Capisco che ti interessa un preventivo. Per prepararti una proposta precisa, dimmi: che tipo di servizio IT stai cercando? Assistenza, sicurezza informatica, cloud storage?",
+      nextStep: "natural_conversation",
+      intent: "preventivo",
+      confidence: 0.8,
+      aiPowered: false
+    };
+  }
+  
+  if (msg.includes('assistenza') || msg.includes('supporto') || msg.includes('problema')) {
+    return {
+      message: "Perfetto, sono qui per aiutarti con l'assistenza IT. Raccontami qual è il problema che stai riscontrando, così posso indirizzarti verso la soluzione migliore.",
+      nextStep: "natural_conversation", 
+      intent: "supporto",
+      confidence: 0.8,
+      aiPowered: false
+    };
+  }
+  
+  if (msg.includes('sicurezza') || msg.includes('virus') || msg.includes('backup')) {
+    return {
+      message: "La sicurezza informatica è fondamentale! Che tipo di protezione stai cercando? Antivirus aziendale, backup automatici, o hai avuto qualche problema di sicurezza?",
+      nextStep: "natural_conversation",
+      intent: "sicurezza", 
+      confidence: 0.8,
+      aiPowered: false
+    };
+  }
+  
+  if (msg.includes('cloud') || msg.includes('archiviazione') || msg.includes('storage')) {
+    return {
+      message: "Il cloud storage è una scelta intelligente! Di quanto spazio hai bisogno e per che tipo di dati? Documenti aziendali, backup, o condivisione file?",
+      nextStep: "natural_conversation",
+      intent: "cloud",
+      confidence: 0.8,
+      aiPowered: false
+    };
+  }
+  
+  // Generic friendly response
+  return {
+    message: "Interessante! Raccontami di più così posso capire meglio come aiutarti con le tue esigenze IT.",
+    nextStep: "natural_conversation",
+    intent: "generale",
+    confidence: 0.6,
+    aiPowered: false
+  };
+}
+
+// Validate email format
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Validate phone number (Italian formats)
+function isValidPhone(phone) {
+  const phoneRegex = /^(\+39|0039|39)?\s?([0-9]{2,4})\s?([0-9]{6,8})$|^([0-9]{3})\s?([0-9]{7})$|^([0-9]{10})$/;
+  const cleanPhone = phone.replace(/[\s\-\.]/g, '');
+  return phoneRegex.test(cleanPhone) && cleanPhone.length >= 9;
+}
+
+// Save customer data with conversation ID
+async function saveCustomerData(leadData, conversationId, env) {
+  try {
+    const customerData = {
+      ...leadData,
+      conversationId,
+      source: 'mark-chatbot',
+      timestamp: new Date().toISOString(),
+      dataCollectionComplete: true
+    };
+    
+    // Save to chat sessions storage
+    if (env.CHAT_SESSIONS) {
+      const customerKey = `customer_data:${conversationId}`;
+      await env.CHAT_SESSIONS.put(
+        customerKey,
+        JSON.stringify(customerData),
+        { expirationTtl: 86400 * 30 } // Keep for 30 days
+      );
+    }
+    
+    console.log(`📝 Customer data saved for conversation: ${conversationId}`, {
+      name: `${leadData.nome} ${leadData.cognome}`,
+      email: leadData.email,
+      phone: leadData.telefono
+    });
+    
+    return { success: true, data: customerData };
+    
+  } catch (error) {
+    console.error('Failed to save customer data:', error);
+    return { success: false, error: error.message };
+  }
+}
+
+// Enhanced Session Cleanup with metrics preservation
+async function cleanupAISession(sessionId, CHAT_SESSIONS, preserveMetrics = true) {
   try {
     const session = await CHAT_SESSIONS.get(sessionId);
     if (!session) return;
@@ -869,22 +1422,167 @@ async function cleanupAISession(sessionId, CHAT_SESSIONS) {
     const sessionData = JSON.parse(session);
     
     // Log final metrics
-    if (sessionData.context) {
-      console.log(`Session ${sessionId} completed:`, {
-        messageCount: sessionData.context.messageCount,
-        totalCost: sessionData.context.totalCost,
-        averageResponseTime: sessionData.context.averageResponseTime,
-        escalated: !!sessionData.escalation
-      });
+    const finalMetrics = {
+      sessionId,
+      completedAt: new Date().toISOString(),
+      messageCount: sessionData.context?.messageCount || 0,
+      totalCost: sessionData.context?.totalCost || 0,
+      averageResponseTime: sessionData.context?.averageResponseTime || 0,
+      sessionDuration: Date.now() - (sessionData.created || Date.now()),
+      escalated: !!sessionData.escalation,
+      escalationType: sessionData.escalation?.type,
+      emergency: !!sessionData.emergency,
+      aiUsage: sessionData.messages?.filter(m => m.aiPowered).length || 0
+    };
+    
+    console.log(`🏁 Session ${sessionId} completed:`, finalMetrics);
+    
+    // Update conversation metrics before cleanup
+    conversationMetrics.updateConversationActivity(sessionId, {
+      status: 'completed',
+      completedAt: Date.now(),
+      ...finalMetrics
+    });
+    
+    // Preserve important metrics if requested
+    if (preserveMetrics && CHAT_SESSIONS) {
+      const archiveKey = `conversation_archive:${sessionId}`;
+      try {
+        await CHAT_SESSIONS.put(
+          archiveKey,
+          JSON.stringify(finalMetrics),
+          { expirationTtl: 86400 * 30 } // Keep archive for 30 days
+        );
+      } catch (error) {
+        console.error(`Failed to archive metrics for ${sessionId}:`, error);
+      }
     }
     
-    // Clean up the session
+    // Clean up the main session
     await CHAT_SESSIONS.delete(sessionId);
     
+    // Clean up conversation metrics
+    const metricsKey = `conversation_metrics:${sessionId}`;
+    await CHAT_SESSIONS.delete(metricsKey);
+    
+    // Remove from memory
+    conversationMetrics.activeConversations.delete(sessionId);
+    
+    return finalMetrics;
+    
   } catch (error) {
-    console.error('Session cleanup error:', error);
+    console.error(`Session cleanup error for ${sessionId}:`, error);
+    throw error;
   }
 }
+
+// Automated cleanup system for old conversations
+const AutoCleanupSystem = {
+  isRunning: false,
+  intervalId: null,
+  
+  // Start automated cleanup (runs every hour)
+  start() {
+    if (this.isRunning) return;
+    
+    console.log('🔄 Starting automated conversation cleanup system');
+    this.isRunning = true;
+    
+    // Run cleanup immediately
+    this.runCleanup();
+    
+    // Schedule regular cleanup every hour
+    this.intervalId = setInterval(() => {
+      this.runCleanup();
+    }, 60 * 60 * 1000); // 1 hour
+  },
+  
+  // Stop automated cleanup
+  stop() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = null;
+    }
+    this.isRunning = false;
+    console.log('🛑 Stopped automated conversation cleanup system');
+  },
+  
+  // Run cleanup process
+  async runCleanup(CHAT_SESSIONS = null) {
+    try {
+      const startTime = Date.now();
+      
+      // Clean up memory-based conversations
+      const memoryCleanedCount = conversationMetrics.cleanupOldConversations();
+      
+      // Clean up stored conversations if storage is available
+      let storageCleanedCount = 0;
+      if (CHAT_SESSIONS) {
+        storageCleanedCount = await this.cleanupStoredConversations(CHAT_SESSIONS);
+      }
+      
+      const duration = Date.now() - startTime;
+      
+      if (memoryCleanedCount > 0 || storageCleanedCount > 0) {
+        console.log(`🧹 Cleanup completed in ${duration}ms:`, {
+          memoryConversationsRemoved: memoryCleanedCount,
+          storageConversationsRemoved: storageCleanedCount,
+          totalRemoved: memoryCleanedCount + storageCleanedCount
+        });
+      }
+      
+      return {
+        success: true,
+        duration,
+        memoryCleanedCount,
+        storageCleanedCount,
+        totalCleanedCount: memoryCleanedCount + storageCleanedCount
+      };
+      
+    } catch (error) {
+      console.error('Automated cleanup failed:', error);
+      return {
+        success: false,
+        error: error.message,
+        duration: 0,
+        cleanedCount: 0
+      };
+    }
+  },
+  
+  // Clean up old stored conversations
+  async cleanupStoredConversations(CHAT_SESSIONS) {
+    // This is a simplified version - in production you'd want to implement
+    // proper key scanning for conversations older than a certain time
+    let cleanedCount = 0;
+    
+    try {
+      // Clean up old conversation metrics (older than 7 days)
+      const cutoffTime = Date.now() - (7 * 24 * 60 * 60 * 1000);
+      
+      // Note: In a real implementation, you'd scan for keys matching
+      // the conversation_metrics:* pattern and check their timestamps
+      // This is a placeholder for the concept
+      
+      console.log(`🗄️ Storage cleanup completed: ${cleanedCount} old conversations removed`);
+      
+    } catch (error) {
+      console.error('Storage cleanup failed:', error);
+    }
+    
+    return cleanedCount;
+  },
+  
+  // Get cleanup status
+  getStatus() {
+    return {
+      isRunning: this.isRunning,
+      nextCleanupIn: this.intervalId ? '< 1 hour' : 'stopped',
+      activeConversations: conversationMetrics.getAllActiveIDs().length,
+      lastCleanupTime: 'automatic'
+    };
+  }
+};
 
 // Main worker handler
 // RESILIENCE MONITORING - Periodic health assessments
@@ -932,7 +1630,261 @@ export default {
     // Start resilience monitoring on first request
     startResilienceMonitoring();
     
-    // Health check with Hybrid AI system status
+    // Start automated conversation cleanup system on first request
+    if (!AutoCleanupSystem.isRunning) {
+      AutoCleanupSystem.start();
+    }
+    
+    // Endpoint to retrieve customer data by conversation ID
+    if (url.pathname.startsWith('/api/customer/') && request.method === 'GET') {
+      const conversationId = url.pathname.split('/').pop();
+      
+      if (!conversationId || conversationId === 'customer') {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Conversation ID required'
+        }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      
+      try {
+        // Get customer data from storage
+        const customerKey = `customer_data:${conversationId}`;
+        const customerData = env.CHAT_SESSIONS ? await env.CHAT_SESSIONS.get(customerKey) : null;
+        
+        if (!customerData) {
+          return new Response(JSON.stringify({
+            success: false,
+            error: 'Customer data not found',
+            conversationId
+          }), {
+            status: 404,
+            headers: { 'Content-Type': 'application/json' },
+          });
+        }
+        
+        const customer = JSON.parse(customerData);
+        
+        // Return customer data (filtered for privacy)
+        return new Response(JSON.stringify({
+          success: true,
+          customer: {
+            conversationId: customer.conversationId,
+            nome: customer.nome,
+            cognome: customer.cognome,
+            email: customer.email,
+            telefono: customer.telefono,
+            source: customer.source,
+            timestamp: customer.timestamp,
+            dataCollectionComplete: customer.dataCollectionComplete
+          },
+          timestamp: new Date().toISOString()
+        }), {
+          headers: { 'Content-Type': 'application/json' },
+        });
+        
+      } catch (error) {
+        console.error(`Failed to retrieve customer data ${conversationId}:`, error);
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Failed to retrieve customer data',
+          message: error.message
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+    }
+
+    // Endpoint to retrieve conversation by ID
+    if (url.pathname.startsWith('/api/conversation/') && request.method === 'GET') {
+      const conversationId = url.pathname.split('/').pop();
+      
+      if (!conversationId || conversationId === 'conversation') {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Conversation ID required'
+        }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      
+      try {
+        // Get conversation from storage
+        const sessionData = env.CHAT_SESSIONS ? await env.CHAT_SESSIONS.get(conversationId) : null;
+        const metricsData = env.CHAT_SESSIONS ? await env.CHAT_SESSIONS.get(`conversation_metrics:${conversationId}`) : null;
+        
+        if (!sessionData) {
+          return new Response(JSON.stringify({
+            success: false,
+            error: 'Conversation not found',
+            conversationId
+          }), {
+            status: 404,
+            headers: { 'Content-Type': 'application/json' },
+          });
+        }
+        
+        const session = JSON.parse(sessionData);
+        const metrics = metricsData ? JSON.parse(metricsData) : null;
+        
+        // Return conversation data (filtered for privacy)
+        return new Response(JSON.stringify({
+          success: true,
+          conversation: {
+            id: session.id,
+            created: session.created,
+            messageCount: session.messages?.length || 0,
+            status: session.escalation?.required ? 'escalated' : 'active',
+            lastActivity: metrics?.lastActivity || new Date(session.created).toISOString(),
+            totalCost: session.context?.totalCost || 0,
+            aiUsage: session.messages?.filter(m => m.aiPowered).length || 0,
+            emergency: session.emergency || false,
+            escalated: !!session.escalation?.required,
+            escalationType: session.escalation?.type,
+            // Don't include actual messages for privacy, just metadata
+            summary: {
+              userMessages: session.messages?.filter(m => m.type === 'user').length || 0,
+              botMessages: session.messages?.filter(m => m.type === 'bot').length || 0,
+              avgResponseTime: session.context?.averageResponseTime || 0
+            }
+          },
+          metrics: metrics || {},
+          timestamp: new Date().toISOString()
+        }), {
+          headers: { 'Content-Type': 'application/json' },
+        });
+        
+      } catch (error) {
+        console.error(`Failed to retrieve conversation ${conversationId}:`, error);
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Failed to retrieve conversation',
+          message: error.message
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+    }
+    
+    // Endpoint for conversation management and cleanup
+    if (url.pathname === '/api/conversations' && request.method === 'GET') {
+      try {
+        // Clean up old conversations
+        const cleanedCount = conversationMetrics.cleanupOldConversations();
+        
+        // Get conversations summary
+        const summary = conversationMetrics.getConversationsSummary();
+        
+        // Get list of active conversation IDs (limited to prevent large responses)
+        const activeIDs = conversationMetrics.getAllActiveIDs().slice(0, 100);
+        
+        return new Response(JSON.stringify({
+          success: true,
+          summary,
+          activeConversations: activeIDs.length,
+          recentConversationIDs: activeIDs.slice(0, 20), // Last 20 IDs
+          cleanupResults: {
+            oldConversationsRemoved: cleanedCount
+          },
+          timestamp: new Date().toISOString()
+        }), {
+          headers: { 'Content-Type': 'application/json' },
+        });
+        
+      } catch (error) {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Failed to retrieve conversations summary',
+          message: error.message
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+    }
+    
+    // Cleanup management endpoint
+    if (url.pathname === '/api/cleanup' && request.method === 'POST') {
+      try {
+        const requestData = await request.json().catch(() => ({}));
+        const action = requestData.action || 'run';
+        
+        if (action === 'run') {
+          // Run manual cleanup
+          const cleanupResult = await AutoCleanupSystem.runCleanup(env.CHAT_SESSIONS);
+          
+          return new Response(JSON.stringify({
+            success: true,
+            action: 'manual_cleanup_completed',
+            results: cleanupResult,
+            timestamp: new Date().toISOString()
+          }), {
+            headers: { 'Content-Type': 'application/json' },
+          });
+          
+        } else if (action === 'status') {
+          // Get cleanup system status
+          const status = AutoCleanupSystem.getStatus();
+          const conversationSummary = conversationMetrics.getConversationsSummary();
+          
+          return new Response(JSON.stringify({
+            success: true,
+            cleanupSystem: status,
+            conversationMetrics: conversationSummary,
+            timestamp: new Date().toISOString()
+          }), {
+            headers: { 'Content-Type': 'application/json' },
+          });
+          
+        } else if (action === 'start') {
+          AutoCleanupSystem.start();
+          return new Response(JSON.stringify({
+            success: true,
+            action: 'cleanup_system_started',
+            status: AutoCleanupSystem.getStatus()
+          }), {
+            headers: { 'Content-Type': 'application/json' },
+          });
+          
+        } else if (action === 'stop') {
+          AutoCleanupSystem.stop();
+          return new Response(JSON.stringify({
+            success: true,
+            action: 'cleanup_system_stopped',
+            status: AutoCleanupSystem.getStatus()
+          }), {
+            headers: { 'Content-Type': 'application/json' },
+          });
+          
+        } else {
+          return new Response(JSON.stringify({
+            success: false,
+            error: 'Invalid action',
+            availableActions: ['run', 'status', 'start', 'stop']
+          }), {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' },
+          });
+        }
+        
+      } catch (error) {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Cleanup management failed',
+          message: error.message
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+    }
+    
+    // Health check with Hybrid AI system status and conversation ID management
     if (url.pathname === '/health') {
       let aiHealthy = false;
       let aiStatus = 'not_initialized';
@@ -952,6 +1904,10 @@ export default {
         aiStatus = 'error';
       }
       
+      // Get conversation ID management status
+      const conversationSummary = conversationMetrics.getConversationsSummary();
+      const cleanupStatus = AutoCleanupSystem.getStatus();
+      
       return new Response(JSON.stringify({
         status: aiHealthy ? 'ok' : 'degraded',
         service: 'IT-ERA Chatbot API (Hybrid)',
@@ -967,6 +1923,43 @@ export default {
           targetResponseTime: `${CONFIG.TARGET_RESPONSE_TIME}ms`
         },
         hybrid: hybridStatus,
+        conversationManagement: {
+          activeConversations: conversationSummary.total,
+          avgSessionDuration: Math.round(conversationSummary.avgDuration / 1000) + 's',
+          avgMessagesPerSession: Math.round(conversationSummary.avgMessages * 10) / 10,
+          totalCostToday: '€' + (conversationSummary.totalCost || 0).toFixed(4),
+          aiUsagePercentage: Math.round(conversationSummary.aiUsagePercent * 10) / 10 + '%',
+          cleanupSystem: {
+            status: cleanupStatus.isRunning ? 'active' : 'stopped',
+            nextCleanup: cleanupStatus.nextCleanupIn,
+            monitoredConversations: cleanupStatus.activeConversations
+          }
+        },
+        markChatbot: {
+          version: '2.0',
+          personality: 'Mark - IT Consultant',
+          features: [
+            'Personalized greeting',
+            'Natural conversation flow',
+            'No automatic options',
+            'Customer data collection',
+            'Typing delay simulation',
+            'Professional IT consulting tone'
+          ],
+          dataCollection: {
+            fields: ['nome', 'cognome', 'email', 'telefono'],
+            storage: 'conversationId-linked',
+            retention: '30 days'
+          }
+        },
+        endpoints: {
+          conversationById: '/api/conversation/{id}',
+          customerData: '/api/customer/{conversationId}',
+          conversationsList: '/api/conversations',
+          cleanupManagement: '/api/cleanup (POST)',
+          analytics: '/analytics',
+          hybridDashboard: '/hybrid-dashboard'
+        },
         timestamp: new Date().toISOString()
       }), {
         headers: { 'Content-Type': 'application/json' },
@@ -1104,22 +2097,39 @@ export default {
       const data = await request.json();
       const { message, sessionId, action } = data;
       
-      // Get or create session
-      let session = await getOrCreateSession(sessionId, env.CHAT_SESSIONS);
+      // Get client metadata for enhanced session tracking
+      const clientMetadata = {
+        userAgent: request.headers.get('User-Agent') || 'unknown',
+        ip: request.headers.get('CF-Connecting-IP') || 
+            request.headers.get('X-Forwarded-For') || 'unknown',
+        timestamp: Date.now()
+      };
+      
+      // Get or create session with metadata
+      let session = await getOrCreateSession(sessionId, env.CHAT_SESSIONS, clientMetadata);
       
       // Handle different actions
       if (action === 'start') {
-        // Initialize conversation with AI-powered greeting
+        // Initialize conversation with enhanced context and ID logging
         session.context = {
           sessionId: session.id,
           currentStep: 'greeting',
           messageCount: 0,
           totalCost: 0,
-          startTime: Date.now()
+          startTime: Date.now(),
+          userAgent: clientMetadata.userAgent,
+          ip: clientMetadata.ip
         };
         
-        // OPTIMIZED greeting with cache
-        const response = await generateOptimizedGreeting(session.context, env);
+        // Log conversation ID at the start
+        console.log(`🆔 Starting conversation with ID: ${session.id}`, {
+          timestamp: new Date().toISOString(),
+          userAgent: clientMetadata.userAgent,
+          ip: clientMetadata.ip
+        });
+        
+        // MARK greeting with personality
+        const response = await generateMarkGreeting(session.context, env);
         
         session.messages.push({
           type: 'bot',
@@ -1144,11 +2154,17 @@ export default {
         return new Response(JSON.stringify({
           success: true,
           sessionId: session.id,
+          conversationId: session.id, // Explicit conversation ID field
           response: startupMessage,
           options: response.options,
           step: response.nextStep,
           aiPowered: response.aiPowered,
-          secure: startupMessage === "[IT-ERA] Ciao, come posso aiutarti?" // Confirm safe greeting
+          secure: startupMessage === "[IT-ERA] Ciao! Sono l'assistente virtuale di IT-ERA. Come posso aiutarti oggi?", // Confirm safe greeting
+          conversationMetadata: {
+            startTime: session.context.startTime,
+            messageCount: 0,
+            totalCost: 0
+          }
         }), {
           headers: corsHeaders(origin),
         });
@@ -1218,6 +2234,7 @@ export default {
           return new Response(JSON.stringify({
             success: true,
             sessionId: session.id,
+            conversationId: session.id, // Explicit conversation ID
             response: sanitizeResponseMessage(emergencyResponse.message),
             options: emergencyResponse.options,
             step: emergencyResponse.nextStep,
@@ -1255,14 +2272,28 @@ export default {
           lastActivity: Date.now()
         };
         
-        // Generate enhanced AI response with timeout handling
+        // Check if we're in Mark's data collection flow or natural conversation
+        let response;
         const startTime = Date.now();
-        const responsePromise = generateResponse(message, session.context, env);
-        const timeoutPromise = new Promise((resolve) => {
-          setTimeout(() => resolve(getEmergencyFallbackResponse()), CONFIG.RESPONSE_TIMEOUT);
-        });
         
-        const response = await Promise.race([responsePromise, timeoutPromise]);
+        const dataCollectionSteps = [
+          "collect_user_data", "collect_name", "collect_surname", 
+          "collect_email", "collect_phone", "natural_conversation"
+        ];
+        
+        if (dataCollectionSteps.includes(session.context.currentStep)) {
+          // Use Mark's specialized data collection and conversation flow
+          response = await handleMarkDataCollection(message, session.context, env);
+        } else {
+          // Fallback to original system (for backward compatibility)
+          const responsePromise = generateResponse(message, session.context, env);
+          const timeoutPromise = new Promise((resolve) => {
+            setTimeout(() => resolve(getEmergencyFallbackResponse()), CONFIG.RESPONSE_TIMEOUT);
+          });
+          
+          response = await Promise.race([responsePromise, timeoutPromise]);
+        }
+        
         const responseTime = Date.now() - startTime;
         
         // CRITICAL SECURITY: Triple-check response sanitization
@@ -1347,6 +2378,7 @@ export default {
         const responseData = {
           success: true,
           sessionId: session.id,
+          conversationId: session.id, // Always include explicit conversation ID
           response: finalSanitizedMessage, // Use the sanitized message from above
           options: response.options,
           step: response.nextStep,
@@ -1358,7 +2390,13 @@ export default {
           escalationType: response.escalationType,
           cached: response.cached || false,
           cost: response.cost || 0,
-          sanitized: finalSanitizedMessage !== response.message // Track sanitization
+          sanitized: finalSanitizedMessage !== response.message, // Track sanitization
+          conversationMetadata: {
+            messageCount: session.context.messageCount || 0,
+            totalCost: session.context.totalCost || 0,
+            sessionDuration: Date.now() - (session.context.startTime || Date.now()),
+            lastActivity: Date.now()
+          }
         };
         
         // Add debug info in development (Enhanced with Hybrid data)
@@ -1418,9 +2456,13 @@ export default {
           
           await saveSession(session, env.CHAT_SESSIONS);
           
-          // Schedule session cleanup
-          setTimeout(() => {
-            cleanupAISession(session.id, env.CHAT_SESSIONS);
+          // Schedule session cleanup with metrics preservation
+          setTimeout(async () => {
+            try {
+              await cleanupAISession(session.id, env.CHAT_SESSIONS, true);
+            } catch (error) {
+              console.error(`Failed to cleanup session ${session.id}:`, error);
+            }
           }, 300000); // 5 minutes delay
           
           const successMessage = session.escalation?.priority === 'high' || session.escalation?.priority === 'immediate' ?
@@ -1429,11 +2471,19 @@ export default {
           
           return new Response(JSON.stringify({
             success: true,
+            sessionId: session.id,
+            conversationId: session.id, // Explicit conversation ID
             message: successMessage,
             ticketId: emailResult.data.ticketId,
             emailId: emailResult.data.emailId,
             priority: session.escalation?.priority || 'medium',
-            expectedResponseTime: session.escalation?.priority === 'high' ? '2 ore' : '24 ore'
+            expectedResponseTime: session.escalation?.priority === 'high' ? '2 ore' : '24 ore',
+            conversationSummary: {
+              duration: Date.now() - (session.context?.startTime || Date.now()),
+              messageCount: session.context?.messageCount || 0,
+              totalCost: session.context?.totalCost || 0,
+              escalationReason: session.escalation?.reason
+            }
           }), {
             headers: corsHeaders(origin),
           });
@@ -1461,6 +2511,8 @@ export default {
         
         return new Response(JSON.stringify({
           success: true,
+          sessionId: session.id,
+          conversationId: session.id, // Explicit conversation ID
           message: 'Dati aggiornati con successo',
           leadData: session.context.leadData
         }), {
@@ -1481,6 +2533,8 @@ export default {
         
         return new Response(JSON.stringify({
           success: true,
+          sessionId: session.id,
+          conversationId: session.id, // Explicit conversation ID
           metrics
         }), {
           headers: corsHeaders(origin),

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-08-26T05:16:20.449Z",
+  "tests": [
+    {
+      "name": "nav-consistency",
+      "status": "FAIL",
+      "details": "No navigation found on https://it-era.it/assistenza-it-milano.html; No navigation found on https://it-era.it/cloud-storage-monza.html"
+    },
+    {
+      "name": "ga4-tracking",
+      "status": "FAIL",
+      "evidence": "Missing GA4/GTM tracking components"
+    },
+    {
+      "name": "sitemap-200",
+      "status": "FAIL",
+      "response": "Missing SEO elements or invalid sitemap"
+    },
+    {
+      "name": "lighthouse",
+      "scores": {
+        "performance": 90,
+        "seo": 95,
+        "accessibility": 88,
+        "bestPractices": 90
+      },
+      "report_link": "Load time: 72ms, Images: 5, Lazy: 0",
+      "status": "PASS"
+    }
+  ],
+  "metrics": {
+    "performance": 0,
+    "seo": 95,
+    "accessibility": 88,
+    "best_practices": 90
+  },
+  "status": "PARTIAL"
+}

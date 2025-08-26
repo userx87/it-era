@@ -1,0 +1,328 @@
+<!-- IT-ERA Google Analytics 4 & GTM Tracking -->
+<!-- HIVESTORM Task #7: Universal analytics tracking for all 1,427 pages -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  
+  // GDPR Consent Configuration
+  gtag('consent', 'default', {
+    'analytics_storage': 'granted',
+    'ad_storage': 'denied',
+    'functionality_storage': 'granted',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted'
+  });
+  
+  gtag('js', new Date());
+  
+  // Configure GA4
+  gtag('config', 'G-XXXXXXXXX', {
+    // GDPR Compliance
+    'cookie_flags': 'SameSite=Strict;Secure',
+    'allow_google_signals': false,
+    'allow_ad_personalization_signals': false,
+    
+    // Enhanced measurement
+    'enhanced_measurement': true,
+    
+    // Cross-domain tracking
+    'linker': {
+      'domains': ['it-era.it', 'www.it-era.it'],
+      'accept_incoming': true
+    },
+    
+    // Custom dimensions
+    'custom_map': {
+      'custom_dimension_1': 'service_type',
+      'custom_dimension_2': 'city',
+      'custom_dimension_3': 'page_category',
+      'custom_dimension_4': 'lead_source'
+    }
+  });
+  
+  // Page-specific tracking
+  (function() {
+    var pathname = window.location.pathname;
+    var serviceType = 'general';
+    var city = 'Unknown';
+    var pageCategory = 'other';
+    
+    // Detect service type
+    if (pathname.includes('assistenza-it')) serviceType = 'assistenza-it';
+    else if (pathname.includes('sicurezza-informatica')) serviceType = 'sicurezza-informatica';
+    else if (pathname.includes('cloud-storage')) serviceType = 'cloud-storage';
+    
+    // Extract city from URL pattern
+    var cityMatch = pathname.match(/-([\w-]+)\.html$/);
+    if (cityMatch) {
+      city = cityMatch[1].split('-').map(function(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }).join(' ');
+    }
+    
+    // Determine page category
+    if (pathname.includes('/pages/')) pageCategory = 'service_page';
+    else if (pathname === '/' || pathname === '/index.html') pageCategory = 'homepage';
+    
+    // Enhanced page view with service data
+    gtag('event', 'page_view', {
+      'service_type': serviceType,
+      'city': city,
+      'page_category': pageCategory,
+      'page_title': document.title,
+      'page_location': window.location.href
+    });
+    
+    // Service view tracking for ecommerce
+    if (serviceType !== 'general') {
+      var serviceValues = {
+        'assistenza-it': { value: 290, category: 'IT Support' },
+        'sicurezza-informatica': { value: 899, category: 'Cybersecurity' },
+        'cloud-storage': { value: 50, category: 'Cloud Services' }
+      };
+      
+      var config = serviceValues[serviceType];
+      if (config) {
+        gtag('event', 'view_item', {
+          'currency': 'EUR',
+          'value': config.value,
+          'items': [{
+            'item_id': serviceType + '-' + city.toLowerCase().replace(/ /g, '-'),
+            'item_name': config.category + ' - ' + city,
+            'item_category': config.category,
+            'price': config.value,
+            'quantity': 1
+          }]
+        });
+      }
+    }
+  })();
+</script>
+
+<!-- Contact Form Event Tracking -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Service detection for current page
+  var getCurrentPageData = function() {
+    var pathname = window.location.pathname;
+    var serviceType = 'general';
+    var city = 'Unknown';
+    
+    if (pathname.includes('assistenza-it')) serviceType = 'assistenza-it';
+    else if (pathname.includes('sicurezza-informatica')) serviceType = 'sicurezza-informatica';
+    else if (pathname.includes('cloud-storage')) serviceType = 'cloud-storage';
+    
+    var cityMatch = pathname.match(/-([\w-]+)\.html$/);
+    if (cityMatch) {
+      city = cityMatch[1].split('-').map(function(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }).join(' ');
+    }
+    
+    return { serviceType: serviceType, city: city };
+  };
+  
+  var pageData = getCurrentPageData();
+  var serviceValues = {
+    'assistenza-it': 290,
+    'sicurezza-informatica': 899,
+    'cloud-storage': 50
+  };
+  
+  // Track phone clicks
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href^="tel:"]');
+    if (link) {
+      var phone = link.getAttribute('href').replace('tel:', '');
+      
+      // Track phone click event
+      gtag('event', 'phone_click', {
+        'phone_number': phone,
+        'service_type': pageData.serviceType,
+        'city': pageData.city
+      });
+      
+      // Track as conversion
+      gtag('event', 'generate_lead', {
+        'currency': 'EUR',
+        'value': serviceValues[pageData.serviceType] || 100,
+        'lead_type': 'phone_call',
+        'service_type': pageData.serviceType,
+        'city': pageData.city,
+        'phone_number': phone
+      });
+    }
+  });
+  
+  // Track email clicks
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href^="mailto:"]');
+    if (link) {
+      var email = link.getAttribute('href').replace('mailto:', '');
+      
+      gtag('event', 'email_click', {
+        'email_address': email,
+        'service_type': pageData.serviceType,
+        'city': pageData.city
+      });
+    }
+  });
+  
+  // Track contact forms
+  var forms = document.querySelectorAll('form[id*="contact"], form[data-form-type]');
+  forms.forEach(function(form) {
+    var formStarted = false;
+    
+    // Track form start on first input focus
+    var inputs = form.querySelectorAll('input, textarea, select');
+    inputs.forEach(function(input) {
+      input.addEventListener('focus', function() {
+        if (!formStarted) {
+          formStarted = true;
+          gtag('event', 'form_start', {
+            'form_id': form.id,
+            'service_type': pageData.serviceType,
+            'city': pageData.city
+          });
+        }
+      });
+    });
+    
+    // Track form submission
+    form.addEventListener('submit', function(e) {
+      var formData = new FormData(form);
+      var data = {};
+      for (var pair of formData.entries()) {
+        data[pair[0]] = pair[1];
+      }
+      
+      // Track form submission
+      gtag('event', 'form_submit', {
+        'form_id': form.id,
+        'form_type': form.dataset.formType || 'contact',
+        'service_type': pageData.serviceType,
+        'city': pageData.city,
+        'company_name': data.azienda || '',
+        'urgency': data.urgenza || 'normale'
+      });
+      
+      // Track as lead generation (conversion)
+      gtag('event', 'generate_lead', {
+        'currency': 'EUR',
+        'value': serviceValues[pageData.serviceType] || 100,
+        'lead_type': 'contact_form',
+        'service_type': pageData.serviceType,
+        'city': pageData.city,
+        'form_id': form.id,
+        'urgency': data.urgenza || 'normale'
+      });
+      
+      // Enhanced ecommerce - track as purchase
+      gtag('event', 'purchase', {
+        'transaction_id': 'lead-' + Date.now(),
+        'currency': 'EUR',
+        'value': serviceValues[pageData.serviceType] || 100,
+        'items': [{
+          'item_id': pageData.serviceType + '-' + pageData.city.toLowerCase().replace(/ /g, '-'),
+          'item_name': (pageData.serviceType === 'assistenza-it' ? 'IT Support' : 
+                      pageData.serviceType === 'sicurezza-informatica' ? 'Cybersecurity' : 
+                      'Cloud Services') + ' Lead - ' + pageData.city,
+          'item_category': pageData.serviceType === 'assistenza-it' ? 'IT Support' : 
+                          pageData.serviceType === 'sicurezza-informatica' ? 'Cybersecurity' : 
+                          'Cloud Services',
+          'price': serviceValues[pageData.serviceType] || 100,
+          'quantity': 1
+        }]
+      });
+    });
+  });
+  
+  // Track scroll depth
+  var scrollDepthTracked = [];
+  var trackScrollDepth = function() {
+    var scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    var milestones = [25, 50, 75, 90];
+    
+    milestones.forEach(function(milestone) {
+      if (scrollPercent >= milestone && scrollDepthTracked.indexOf(milestone) === -1) {
+        scrollDepthTracked.push(milestone);
+        gtag('event', 'scroll', {
+          'scroll_depth': milestone,
+          'service_type': pageData.serviceType,
+          'city': pageData.city
+        });
+      }
+    });
+  };
+  
+  var scrollTimeout;
+  window.addEventListener('scroll', function() {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(trackScrollDepth, 100);
+  });
+  
+  // Track chatbot events (if chatbot exists)
+  if (window.ITERAChatbot) {
+    // Override chatbot open function to track
+    var originalOpen = window.ITERAChatbot.open;
+    window.ITERAChatbot.open = function() {
+      gtag('event', 'chatbot_open', {
+        'service_type': pageData.serviceType,
+        'city': pageData.city
+      });
+      return originalOpen.apply(this, arguments);
+    };
+    
+    // Track chatbot messages via custom event
+    document.addEventListener('chatbot_message_sent', function(e) {
+      gtag('event', 'chatbot_message', {
+        'service_type': pageData.serviceType,
+        'city': pageData.city,
+        'message_length': e.detail.messageLength || 0
+      });
+    });
+  }
+});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtag/js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Structured Data for Analytics -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "IT-ERA",
+  "url": "https://it-era.it",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://it-era.it/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "IT-ERA",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+39-039-888-2041",
+      "contactType": "customer service",
+      "availableLanguage": ["Italian"],
+      "areaServed": "IT"
+    }
+  }
+}
+</script>

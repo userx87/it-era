@@ -1,36 +1,41 @@
+# Cloudflare Pages Headers - DEVI Security Implementation
+# Generated: Minimal security headers for IT-ERA
+
 /*
-  X-Frame-Options: SAMEORIGIN
+  # HSTS - Strict Transport Security (1 year)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  
+  # Content Type Protection
   X-Content-Type-Options: nosniff
+  
+  # Frame Protection
+  X-Frame-Options: DENY
+  
+  # XSS Protection
   X-XSS-Protection: 1; mode=block
+  
+  # Referrer Policy
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Permissions Policy (restrict access to sensitive APIs)
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+  
+  # CSP - Content Security Policy (minimal but functional)
+  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; connect-src 'self' https:; font-src 'self' https:
 
-/*.html
-  Cache-Control: public, max-age=3600
-
-/static/*
+# Static assets caching
+/assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-/*.css
-  Cache-Control: public, max-age=31536000
+/images/*
+  Cache-Control: public, max-age=2592000
 
-/*.js
-  Cache-Control: public, max-age=31536000
+/css/*
+  Cache-Control: public, max-age=604800
 
-/*.jpg
-  Cache-Control: public, max-age=31536000
+/js/*
+  Cache-Control: public, max-age=604800
 
-/*.jpeg
-  Cache-Control: public, max-age=31536000
-
-/*.png
-  Cache-Control: public, max-age=31536000
-
-/*.gif
-  Cache-Control: public, max-age=31536000
-
-/*.svg
-  Cache-Control: public, max-age=31536000
-
-/*.webp
-  Cache-Control: public, max-age=31536000
+# HTML pages
+/*.html
+  Cache-Control: public, max-age=3600

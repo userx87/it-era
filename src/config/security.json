@@ -1,0 +1,31 @@
+{
+  "headers": {
+    "security": {
+      "strict_transport_security": "max-age=31536000; includeSubDomains; preload",
+      "x_content_type_options": "nosniff",
+      "x_frame_options": "DENY",
+      "x_xss_protection": "1; mode=block",
+      "referrer_policy": "strict-origin-when-cross-origin",
+      "permissions_policy": "geolocation=(), microphone=(), camera=()",
+      "content_security_policy": "default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; connect-src 'self' https:"
+    },
+    "performance": {
+      "cache_control": "public, max-age=31536000, immutable",
+      "expires": "Thu, 31 Dec 2025 23:59:59 GMT"
+    }
+  },
+  "environment": {
+    "production": {
+      "domain": "it-era.it",
+      "hsts_max_age": "31536000"
+    },
+    "staging": {
+      "domain": "staging.it-era.it",
+      "hsts_max_age": "86400"
+    },
+    "development": {
+      "domain": "localhost",
+      "hsts_max_age": "0"
+    }
+  }
+}

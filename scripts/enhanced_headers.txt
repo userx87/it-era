@@ -1,0 +1,73 @@
+# Enhanced Cloudflare Headers Configuration for SEO Optimization
+
+# EXISTING HEADERS ENHANCED + SEO ADDITIONS
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' *.googleapis.com *.jsdelivr.net *.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:;
+
+# SEO-CRITICAL: Staging Environment Protection
+/*.pages.dev/*
+  X-Robots-Tag: noindex, nofollow, nosnippet, noarchive
+  X-Canonical-URL: https://it-era.it/
+
+# HTML Pages - SEO Optimized Caching
+/*.html
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Vary: Accept-Encoding
+
+# SEO Files - Optimized Caching
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml
+
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain
+
+/ads.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain
+
+# Static Assets - Long-term Caching
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - Optimized Caching
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.gif
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *

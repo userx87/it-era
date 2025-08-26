@@ -1,0 +1,31 @@
+name = "it-era-contact-system"
+main = "contact-handler.js"
+compatibility_date = "2024-01-15"
+
+# Environment variables for production
+[env.production]
+route = "it-era.it/api/contact"
+vars = { ENVIRONMENT = "production" }
+
+# Environment variables for development  
+[env.development]
+route = "*.it-era-dev.workers.dev"
+vars = { ENVIRONMENT = "development" }
+
+# Secrets (set via wrangler secret put)
+# RESEND_API_KEY - Resend.com API key
+
+# KV namespace for contact logs (optional)
+[[kv_namespaces]]
+binding = "CONTACT_LOGS"
+id = "contact_logs"
+preview_id = "contact_logs_preview"
+
+# Custom domains
+[[routes]]
+pattern = "it-era.it/api/contact"
+zone_name = "it-era.it"
+
+[[routes]]
+pattern = "www.it-era.it/api/contact"
+zone_name = "it-era.it"

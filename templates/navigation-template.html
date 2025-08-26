@@ -1,3 +1,29 @@
+
+<!-- Google Analytics 4 - IT-ERA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VWN9EH21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-T5VWN9EH21", {
+    page_title: document.title,
+    page_location: window.location.href,
+    custom_map: {
+      "custom_parameter_1": "service_type",
+      "custom_parameter_2": "city_name"
+    }
+  });
+  
+  // IT-ERA Enhanced Events
+  gtag("event", "page_view", {
+    event_category: "engagement",
+    event_label: window.location.pathname,
+    service_type: document.querySelector("h1") ? document.querySelector("h1").textContent.includes("Assistenza") ? "assistenza-it" : 
+                  document.querySelector("h1").textContent.includes("Sicurezza") ? "sicurezza-informatica" :
+                  document.querySelector("h1").textContent.includes("Cloud") ? "cloud-storage" : "general" : "general"
+  });
+</script>
+<!-- End Google Analytics 4 -->
 <!-- Standardized Navigation Template for IT-ERA Sector Pages -->
 <!-- Bootstrap 5.3.2 Responsive Navigation with Complete Service & Sector Dropdowns -->
 

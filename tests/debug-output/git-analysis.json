@@ -1,6 +1,0 @@
-{
-  "currentBranch": "production",
-  "hasUncommittedChanges": true,
-  "uncommittedFiles": 246,
-  "lastCommit": "a67de2cb Fix authentication endpoint URLs - resolve Unexpected token error"
-}

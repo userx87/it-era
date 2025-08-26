@@ -1,27 +1,7 @@
-# robots.txt - IT-ERA Srl
-# Generated: DEVI-Minimal Implementation
-
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /test
 
-# Sitemap reference
 Sitemap: https://it-era.it/sitemap.xml
-
-# Block admin areas
-Disallow: /admin/
-Disallow: /api/
-Disallow: /temp/
-Disallow: /*.log
-
-# Allow important pages
-Allow: /assistenza-it/
-Allow: /sicurezza-informatica/
-Allow: /cloud-storage/
-Allow: /backup-disaster-recovery/
-
-# Crawl delay for respectful crawling
-Crawl-delay: 1
-
-# Block specific user agents if needed
-# User-agent: BadBot
-# Disallow: /

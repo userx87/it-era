@@ -1,139 +1,83 @@
 /**
- * IT-ERA Analytics - Minimal GA4 Loader
- * Conditional loading only in production with valid GA_MEASUREMENT_ID
- * @version 1.0.0
+ * IT-ERA Analytics Library
+ * Conditional GA4 injection for production environments
  */
 
-// Production environment detection
-const isProduction = () => {
-  if (typeof window === 'undefined') return false;
-  const hostname = window.location?.hostname;
-  return hostname === 'it-era.it' || hostname === 'www.it-era.it';
-};
-
-// Environment variable detection (Vite/Webpack/etc.)
-const getGAId = () => {
-  // Check multiple possible env variable names
-  if (typeof import !== 'undefined' && import.meta?.env) {
-    return import.meta.env.VITE_GA_MEASUREMENT_ID || 
-           import.meta.env.GA_MEASUREMENT_ID ||
-           import.meta.env.GOOGLE_ANALYTICS_ID;
-  }
-  
-  if (typeof process !== 'undefined' && process.env) {
-    return process.env.VITE_GA_MEASUREMENT_ID || 
-           process.env.GA_MEASUREMENT_ID ||
-           process.env.GOOGLE_ANALYTICS_ID;
-  }
-  
-  // Fallback to hardcoded for IT-ERA production
-  if (isProduction()) {
-    return 'G-T5VWN9EH21';
-  }
-  
-  return null;
-};
-
-/**
- * Inject Google Tag (gtag) script conditionally
- * Only loads in production environment with valid GA ID
- * @param {string} id - GA4 Measurement ID (optional, auto-detected)
- */
 export function injectGtag(id) {
-  // Skip if not browser environment
-  if (typeof window === 'undefined' || typeof document === 'undefined') {
-    console.log('[Analytics] Skipping: Not browser environment');
-    return;
-  }
+  if (typeof window === 'undefined' || !id) return;
+  if (document.getElementById('ga-script')) return;
   
-  // Skip if script already loaded
-  if (document.getElementById('ga-script')) {
-    console.log('[Analytics] GA4 already loaded');
-    return;
-  }
+  const script = document.createElement('script');
+  script.id = 'ga-script';
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+  document.head.appendChild(script);
   
-  // Get GA ID (parameter or auto-detect)
-  const gaId = id || getGAId();
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
   
-  // Skip if no valid GA ID
-  if (!gaId) {
-    console.log('[Analytics] Skipping: No GA4 ID found');
-    return;
-  }
-  
-  // Skip in development (unless forced)
-  if (!isProduction() && !window.FORCE_ANALYTICS) {
-    console.log('[Analytics] Skipping: Development environment');
-    return;
-  }
-  
-  try {
-    // Create and inject script
-    const script = document.createElement('script');
-    script.id = 'ga-script';
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
-    document.head.appendChild(script);
-    
-    // Initialize dataLayer and gtag
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
+  gtag('js', new Date());
+  gtag('config', id, {
+    anonymize_ip: true,
+    cookie_flags: 'SameSite=None;Secure',
+    custom_map: {
+      'custom_parameter_1': 'service_type',
+      'custom_parameter_2': 'city_target'
     }
-    window.gtag = gtag;
-    
-    // Configure GA4
-    gtag('js', new Date());
-    gtag('config', gaId, {
-      anonymize_ip: true,
-      allow_google_signals: false,
-      send_page_view: true
-    });
-    
-    console.log(`[Analytics] GA4 loaded: ${gaId}`);
-    
-    // Track initial page view
-    gtag('event', 'page_view', {
-      page_title: document.title,
-      page_location: window.location.href
-    });
-    
-  } catch (error) {
-    console.error('[Analytics] Error loading GA4:', error);
-  }
+  });
 }
 
-/**
- * Track custom events (if GA4 is loaded)
- * @param {string} eventName - Event name
- * @param {object} parameters - Event parameters
- */
 export function trackEvent(eventName, parameters = {}) {
   if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', eventName, parameters);
-  }
-}
-
-/**
- * Track page views (for SPA navigation)
- * @param {string} pageTitle - Page title
- * @param {string} pageLocation - Page URL
- */
-export function trackPageView(pageTitle, pageLocation) {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('config', getGAId(), {
-      page_title: pageTitle,
-      page_location: pageLocation
+    window.gtag('event', eventName, {
+      event_category: parameters.category || 'engagement',
+      event_label: parameters.label || '',
+      value: parameters.value || 1,
+      custom_parameter_1: parameters.service_type || '',
+      custom_parameter_2: parameters.city_target || '',
+      ...parameters
     });
   }
 }
 
-// Auto-initialize on script load (optional)
-if (typeof window !== 'undefined' && document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    injectGtag();
-  });
-} else if (typeof window !== 'undefined') {
-  // DOM already loaded
-  setTimeout(injectGtag, 100);
+export function trackConversion(conversionId, conversionLabel, value = 1) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      send_to: `${conversionId}/${conversionLabel}`,
+      value: value,
+      currency: 'EUR'
+    });
+  }
+}
+
+// Initialize analytics for IT-ERA production
+export function initITERAAnalytics() {
+  if (typeof window !== 'undefined' && 
+      (window.location.hostname === 'it-era.it' || 
+       window.location.hostname.includes('it-era'))) {
+    injectGtag('G-T5VWN9EH21');
+    
+    // Track page view with city context
+    const cityMatch = window.location.pathname.match(/\/([^\/]+)\/[^\/]+$/);
+    const city = cityMatch ? cityMatch[1] : '';
+    
+    trackEvent('page_view', {
+      page_title: document.title,
+      page_location: window.location.href,
+      city_target: city,
+      service_type: getServiceTypeFromPath(window.location.pathname)
+    });
+  }
+}
+
+function getServiceTypeFromPath(pathname) {
+  if (pathname.includes('assistenza-it')) return 'assistenza-it';
+  if (pathname.includes('sicurezza-informatica')) return 'sicurezza-informatica';
+  if (pathname.includes('cloud-storage')) return 'cloud-storage';
+  if (pathname.includes('commercialisti')) return 'settore-commercialisti';
+  if (pathname.includes('studi-legali')) return 'settore-legali';
+  if (pathname.includes('medici')) return 'settore-medici';
+  if (pathname.includes('pmi')) return 'settore-pmi';
+  return 'generic';
 }

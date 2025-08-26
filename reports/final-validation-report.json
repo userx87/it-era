@@ -1,0 +1,132 @@
+{
+  "tests": [
+    {
+      "name": "nav-consistency",
+      "status": "PASS",
+      "details": "Homepage navigation contains 19 working links with proper structure"
+    },
+    {
+      "name": "ga4-network",
+      "status": "FAIL",
+      "evidence": "No GA4 tracking requests detected - GA4 integration needs verification"
+    },
+    {
+      "name": "sitemap-200",
+      "status": "PASS",
+      "response": {
+        "status": 200,
+        "hasUrlSet": true,
+        "size": 301705,
+        "message": "Sitemap is accessible and contains proper XML structure"
+      }
+    },
+    {
+      "name": "robots-200",
+      "status": "PASS",
+      "content": {
+        "status": 200,
+        "hasSitemap": true,
+        "size": 1942,
+        "message": "Robots.txt is accessible and contains sitemap reference"
+      }
+    },
+    {
+      "name": "lighthouse",
+      "status": "PARTIAL",
+      "scores": {
+        "performance": "Not tested due to dependency issues",
+        "seo": "Not tested due to dependency issues"
+      },
+      "note": "Manual testing required for Lighthouse scores"
+    },
+    {
+      "name": "qa-puppeteer",
+      "status": "MIXED",
+      "checks": {
+        "homepage": {
+          "h1": true,
+          "meta": true,
+          "wordcount": false,
+          "nav": true,
+          "errors": false,
+          "ga4": false
+        },
+        "service_pages": {
+          "status": "404_NOT_FOUND",
+          "issue": "Service pages return 404 - URL structure may have changed"
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "all_tests_pass": false,
+    "critical_issues": 3,
+    "warnings": 2,
+    "qa_score": "60%"
+  },
+  "critical_findings": [
+    {
+      "issue": "Service pages return 404",
+      "impact": "High",
+      "pages_affected": [
+        "/assistenza-informatica-bergamo.html",
+        "/sicurezza-informatica-milano.html",
+        "/cloud-storage-monza.html",
+        "/riparazione-pc-como.html"
+      ],
+      "recommendation": "Verify URL structure and page deployment"
+    },
+    {
+      "issue": "GA4 tracking not detected",
+      "impact": "Medium",
+      "details": "Neither gtag function nor dataLayer detected on pages",
+      "recommendation": "Implement GA4 tracking code (G-T5VWN9EH21) and GTM (GTM-KPF3JZT)"
+    },
+    {
+      "issue": "Homepage word count below threshold",
+      "impact": "Low",
+      "current": 340,
+      "threshold": 350,
+      "recommendation": "Add 10+ words of relevant content to homepage"
+    }
+  ],
+  "successful_validations": [
+    {
+      "test": "Sitemap availability",
+      "result": "✅ PASS - XML sitemap accessible at /sitemap.xml"
+    },
+    {
+      "test": "Robots.txt",
+      "result": "✅ PASS - Robots.txt accessible and contains sitemap reference"
+    },
+    {
+      "test": "Homepage structure",
+      "result": "✅ PASS - H1 tag present, meta description within limits, navigation working"
+    }
+  ],
+  "recommendations": {
+    "immediate": [
+      "Fix 404 errors on service pages",
+      "Implement GA4 tracking code on all pages",
+      "Add canonical URLs to all pages"
+    ],
+    "short_term": [
+      "Increase homepage content to meet 350+ word threshold",
+      "Run proper Lighthouse audit for performance scores",
+      "Implement structured data markup"
+    ],
+    "monitoring": [
+      "Set up automated testing for service page availability",
+      "Monitor GA4 tracking implementation",
+      "Track Core Web Vitals performance"
+    ]
+  },
+  "test_summary": {
+    "pages_tested": 5,
+    "tests_passed": 3,
+    "tests_failed": 3,
+    "critical_issues_found": 3,
+    "warnings": 2,
+    "overall_health": "NEEDS_ATTENTION"
+  }
+}

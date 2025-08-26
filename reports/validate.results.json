@@ -1,0 +1,67 @@
+{
+  "tests": [
+    {
+      "name": "sitemap-200",
+      "status": "FAIL",
+      "response": {
+        "status": 0,
+        "headers": [
+          "HTTP/2 200 \r",
+          "date: Tue, 26 Aug 2025 07:18:00 GMT\r",
+          "content-type: application/xml\r",
+          "access-control-allow-origin: *\r",
+          "cache-control: public, max-age=0, must-revalidate\r",
+          "etag: \"f5c94b3ca3faf8ac44f439b14d1ce632\"\r",
+          "permissions-policy: geolocation=(), microphone=(), camera=()\r",
+          "referrer-policy: strict-origin-when-cross-origin\r",
+          "x-content-type-options: nosniff\r",
+          "x-frame-options: SAMEORIGIN\r"
+        ],
+        "curl_exit_code": 0
+      }
+    },
+    {
+      "name": "robots-200",
+      "status": "FAIL",
+      "content": {
+        "status": 0,
+        "headers": [
+          "HTTP/2 200 \r",
+          "date: Tue, 26 Aug 2025 07:18:00 GMT\r",
+          "content-type: text/plain; charset=utf-8\r",
+          "content-length: 1068\r",
+          "access-control-allow-origin: *\r",
+          "cache-control: public, max-age=14400, must-revalidate\r",
+          "etag: \"7b86b735e04f852e624f52d9a08585ae\"\r",
+          "permissions-policy: geolocation=(), microphone=(), camera=()\r",
+          "referrer-policy: strict-origin-when-cross-origin\r",
+          "x-content-type-options: nosniff\r"
+        ],
+        "curl_exit_code": 0
+      }
+    },
+    {
+      "name": "qa-puppeteer",
+      "status": "FAIL",
+      "error": "Command failed: node scripts/qa-puppeteer.js\n❌ Error validating https://it-era.it/: Failed to validate https://it-era.it/: page.waitForTimeout is not a function\n❌ Error validating https://it-era.it/assistenza-informatica-bergamo.html: Failed to validate https://it-era.it/assistenza-informatica-bergamo.html: page.waitForTimeout is not a function\n❌ Error validating https://it-era.it/sicurezza-informatica-milano.html: Failed to validate https://it-era.it/sicurezza-informatica-milano.html: page.waitForTimeout is not a function\n❌ Error validating https://it-era.it/cloud-storage-monza.html: Failed to validate https://it-era.it/cloud-storage-monza.html: page.waitForTimeout is not a function\n❌ Error validating https://it-era.it/riparazione-pc-como.html: Failed to validate https://it-era.it/riparazione-pc-como.html: page.waitForTimeout is not a function\n"
+    },
+    {
+      "name": "playwright-suite",
+      "status": "FAIL",
+      "error": "Command failed: node scripts/playwright-validator.js\n"
+    },
+    {
+      "name": "lighthouse",
+      "status": "FAIL",
+      "error": "Command failed: node scripts/lighthouse-validator.js\n❌ Error auditing https://it-era.it/: lighthouse is not a function\n❌ Error auditing https://it-era.it/assistenza-informatica-bergamo.html: lighthouse is not a function\n❌ Error auditing https://it-era.it/sicurezza-informatica-milano.html: lighthouse is not a function\n"
+    }
+  ],
+  "metrics": {
+    "all_tests_pass": false,
+    "critical_issues": 4,
+    "warnings": 0,
+    "qa_score": "0%",
+    "execution_time": 39
+  },
+  "summary": {}
+}

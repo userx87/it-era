@@ -1,102 +1,56 @@
-{
-  "canonical_links": [
-    {
-      "id": "home",
-      "label": "Home",
-      "url": "/",
-      "active": true,
-      "priority": 1
-    },
-    {
-      "id": "pmi",
-      "label": "PMI",
-      "url": "/settore-pmi/",
-      "dropdown": [
-        {"label": "Assistenza IT PMI", "url": "/settore-pmi/assistenza-it/"},
-        {"label": "Sicurezza Informatica PMI", "url": "/settore-pmi/sicurezza-informatica/"},
-        {"label": "Cloud Solutions PMI", "url": "/settore-pmi/cloud-storage/"}
-      ],
-      "priority": 2
-    },
-    {
-      "id": "medici",
-      "label": "Medici",
-      "url": "/settore-medici/",
-      "dropdown": [
-        {"label": "Software Medicale", "url": "/settore-medici/software-medicale/"},
-        {"label": "Privacy GDPR Medici", "url": "/settore-medici/privacy-gdpr/"},
-        {"label": "Backup Cartelle Cliniche", "url": "/settore-medici/backup-cartelle/"}
-      ],
-      "priority": 3
-    },
-    {
-      "id": "commercialisti",
-      "label": "Commercialisti",
-      "url": "/settore-commercialisti/",
-      "dropdown": [
-        {"label": "Software Gestionale", "url": "/settore-commercialisti/software-gestionale/"},
-        {"label": "Sicurezza Dati Fiscali", "url": "/settore-commercialisti/sicurezza-dati/"},
-        {"label": "Cloud Accounting", "url": "/settore-commercialisti/cloud-accounting/"}
-      ],
-      "priority": 4
-    },
-    {
-      "id": "legali",
-      "label": "Legali",
-      "url": "/settore-legali/",
-      "dropdown": [
-        {"label": "Software Legale", "url": "/settore-legali/software-legale/"},
-        {"label": "Privacy Studi Legali", "url": "/settore-legali/privacy-studi/"},
-        {"label": "Archivio Digitale", "url": "/settore-legali/archivio-digitale/"}
-      ],
-      "priority": 5
-    },
-    {
-      "id": "chi-siamo",
-      "label": "Chi Siamo",
-      "url": "/chi-siamo/",
-      "priority": 6
-    },
-    {
-      "id": "contatti",
-      "label": "Contatti",
-      "url": "/contatti/",
-      "priority": 7,
-      "cta": true
-    }
-  ],
-  "services_menu": [
-    {
-      "id": "assistenza-it",
-      "label": "Assistenza IT",
-      "url": "/assistenza-it/",
-      "icon": "🔧",
-      "color": "#0056cc",
-      "description": "Assistenza tecnica professionale"
-    },
-    {
-      "id": "sicurezza-informatica",
-      "label": "Sicurezza Informatica",
-      "url": "/sicurezza-informatica/",
-      "icon": "🛡️",
-      "color": "#dc3545",
-      "description": "Protezione completa dei sistemi"
-    },
-    {
-      "id": "cloud-storage",
-      "label": "Cloud Storage",
-      "url": "/cloud-storage/",
-      "icon": "☁️",
-      "color": "#17a2b8",
-      "description": "Soluzioni cloud sicure"
-    },
-    {
-      "id": "backup-recovery",
-      "label": "Backup & Recovery",
-      "url": "/backup-disaster-recovery/",
-      "icon": "💾",
-      "color": "#28a745",
-      "description": "Protezione e ripristino dati"
-    }
-  ]
-}
+[
+  {
+    "label": "Commercialisti",
+    "href": "/pages/settori-commercialisti",
+    "order": 10,
+    "intent": "settore"
+  },
+  {
+    "label": "Studi Legali",
+    "href": "/pages/settori-studi-legali",
+    "order": 20,
+    "intent": "settore"
+  },
+  {
+    "label": "PMI",
+    "href": "/pages/settori-pmi",
+    "order": 30,
+    "intent": "settore"
+  },
+  {
+    "label": "Medici",
+    "href": "/pages/settori-medici",
+    "order": 40,
+    "intent": "settore"
+  },
+  {
+    "label": "Assistenza IT",
+    "href": "/assistenza-it",
+    "order": 50,
+    "intent": "servizio"
+  },
+  {
+    "label": "Sicurezza Informatica",
+    "href": "/sicurezza-informatica",
+    "order": 60,
+    "intent": "servizio"
+  },
+  {
+    "label": "Cloud Storage",
+    "href": "/cloud-storage",
+    "order": 70,
+    "intent": "servizio"
+  },
+  {
+    "label": "Blog",
+    "href": "/blog",
+    "order": 90,
+    "intent": "contenuti"
+  },
+  {
+    "label": "Contatti",
+    "href": "/contatti",
+    "order": 99,
+    "intent": "cta"
+  }
+]

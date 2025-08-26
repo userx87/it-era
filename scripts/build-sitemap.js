@@ -1,181 +1,196 @@
 #!/usr/bin/env node
 /**
- * IT-ERA Sitemap Builder - Minimal Implementation
- * Generates sitemap.xml from existing pages structure
- * @version 1.0.0 - DEVI Minimal
+ * IT-ERA Sitemap Generator
+ * Generates XML sitemap for all pages and services
  */
 
-import { readdir, writeFile, stat } from 'fs/promises';
-import { join, extname } from 'path';
+const fs = require('fs');
+const path = require('path');
+const config = require('../src/config/integrations.json');
 
-const SITE_URL = 'https://it-era.it';
-const OUTPUT_FILE = './public/sitemap.xml';
-const WEB_DIR = './web';
-
-// Priority mapping for different page types
-const PRIORITIES = {
-  'index.html': '1.0',
-  'assistenza-it': '0.9',
-  'sicurezza-informatica': '0.9',
-  'cloud-storage': '0.9',
-  'backup-disaster-recovery': '0.8',
-  'settore-': '0.8',
-  'contatti': '0.7',
-  'chi-siamo': '0.7',
-  default: '0.6'
-};
-
-// Get priority based on filename/path
-function getPriority(filePath) {
-  const fileName = filePath.toLowerCase();
-  
-  for (const [key, priority] of Object.entries(PRIORITIES)) {
-    if (fileName.includes(key)) {
-      return priority;
-    }
+class ITERASitemapGenerator {
+  constructor() {
+    this.baseUrl = 'https://it-era.it';
+    this.outputPath = path.join(__dirname, '../public/sitemap.xml');
+    this.urls = [];
+    this.priorities = config.seo.sitemap.priority;
   }
-  
-  return PRIORITIES.default;
-}
 
-// Convert file path to URL
-function pathToUrl(filePath) {
-  let url = filePath
-    .replace(/\\/g, '/')  // Windows path fix
-    .replace(/^\.\/web\//, '/')  // Remove web prefix
-    .replace(/\/index\.html$/, '/')  // index.html -> /
-    .replace(/\.html$/, '');  // Remove .html extension
-  
-  // Ensure starts with /
-  if (!url.startsWith('/')) {
-    url = '/' + url;
+  addUrl(url, priority = 0.5, changefreq = 'weekly', lastmod = null) {
+    this.urls.push({
+      url: url.startsWith('http') ? url : `${this.baseUrl}${url}`,
+      priority,
+      changefreq,
+      lastmod: lastmod || new Date().toISOString().split('T')[0]
+    });
   }
-  
-  // Fix double slashes
-  url = url.replace(/\/+/g, '/');
-  
-  return url === '/' ? '/' : url + '/';
-}
 
-// Recursively scan directory for HTML files
-async function scanDirectory(dir, files = []) {
-  try {
-    const entries = await readdir(dir, { withFileTypes: true });
-    
-    for (const entry of entries) {
-      const fullPath = join(dir, entry.name);
-      
-      if (entry.isDirectory()) {
-        // Skip certain directories
-        if (['node_modules', '.git', 'temp', 'logs'].includes(entry.name)) {
-          continue;
-        }
-        
-        await scanDirectory(fullPath, files);
-      } else if (entry.isFile() && extname(entry.name) === '.html') {
-        // Skip certain files
-        if (['404.html', 'test.html', 'demo.html'].includes(entry.name)) {
-          continue;
-        }
-        
-        const stats = await stat(fullPath);
-        files.push({
-          path: fullPath,
-          url: pathToUrl(fullPath),
-          priority: getPriority(fullPath),
-          lastmod: stats.mtime.toISOString().split('T')[0]  // YYYY-MM-DD format
-        });
-      }
-    }
-  } catch (error) {
-    console.warn(`Warning: Could not scan directory ${dir}:`, error.message);
+  generateStaticPages() {
+    // Homepage
+    this.addUrl('/', this.priorities.homepage, 'weekly');
+
+    // Main service pages
+    const services = [
+      '/assistenza-it',
+      '/sicurezza-informatica', 
+      '/cloud-storage',
+      '/backup-disaster-recovery',
+      '/voip-telefonia-cloud',
+      '/microsoft-365',
+      '/firewall-watchguard',
+      '/gdpr-compliance',
+      '/smart-working',
+      '/riparazione-pc'
+    ];
+
+    services.forEach(service => {
+      this.addUrl(service, this.priorities.services, 'weekly');
+    });
+
+    // Sector pages
+    const sectors = [
+      '/pages/settori-commercialisti',
+      '/pages/settori-studi-legali', 
+      '/pages/settori-medici',
+      '/pages/settori-pmi'
+    ];
+
+    sectors.forEach(sector => {
+      this.addUrl(sector, this.priorities.sectors, 'weekly');
+    });
+
+    // General pages
+    const pages = [
+      '/contatti',
+      '/blog',
+      '/privacy-policy',
+      '/cookie-policy'
+    ];
+
+    pages.forEach(page => {
+      this.addUrl(page, 0.6, 'monthly');
+    });
   }
-  
-  return files;
-}
 
-// Generate XML sitemap
-function generateSitemapXML(urls) {
-  const header = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
-  
-  const footer = `</urlset>`;
-  
-  const urlElements = urls
-    .sort((a, b) => parseFloat(b.priority) - parseFloat(a.priority))  // Sort by priority desc
-    .map(({ url, priority, lastmod }) => `  <url>
-    <loc>${SITE_URL}${url}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <priority>${priority}</priority>
-    <changefreq>weekly</changefreq>
-  </url>`)
-    .join('\n');
-  
-  return header + '\n' + urlElements + '\n' + footer;
-}
+  generateCityPages() {
+    const cities = [
+      'milano', 'monza', 'bergamo', 'brescia', 'como', 'varese', 'lecco',
+      'cremona', 'mantova', 'pavia', 'sondrio', 'lodi', 'vimercate', 
+      'seregno', 'desio', 'limbiate', 'nova-milanese', 'cesano-maderno',
+      'seveso', 'carate-brianza', 'besana-in-brianza', 'triuggio',
+      'lissone', 'muggio', 'vedano-al-lambro', 'biassono', 'macherio'
+    ];
 
-// Main execution
-async function buildSitemap() {
-  try {
-    console.log('🔍 Scanning for HTML files...');
-    
-    const files = await scanDirectory(WEB_DIR);
-    
-    if (files.length === 0) {
-      throw new Error('No HTML files found in web directory');
-    }
-    
-    console.log(`📄 Found ${files.length} HTML files`);
-    
-    // Generate sitemap
-    const sitemapXML = generateSitemapXML(files);
-    
-    // Write to file
-    await writeFile(OUTPUT_FILE, sitemapXML, 'utf8');
-    
-    console.log(`✅ Sitemap generated: ${OUTPUT_FILE}`);
-    console.log(`📊 Total URLs: ${files.length}`);
-    
-    // Show top URLs for verification
-    console.log('\n🔝 Top priority URLs:');
-    files
-      .sort((a, b) => parseFloat(b.priority) - parseFloat(a.priority))
-      .slice(0, 10)
-      .forEach(({ url, priority }) => {
-        console.log(`   ${url} (${priority})`);
+    const services = [
+      'assistenza-it', 'sicurezza-informatica', 'cloud-storage',
+      'backup-disaster-recovery', 'voip-telefonia-cloud', 'microsoft-365'
+    ];
+
+    cities.forEach(city => {
+      services.forEach(service => {
+        this.addUrl(`/${service}/${city}`, this.priorities.cities, 'monthly');
       });
+
+      // Sector pages per city
+      const sectors = ['commercialisti', 'studi-legali', 'medici', 'pmi'];
+      sectors.forEach(sector => {
+        this.addUrl(`/${sector}/${city}`, this.priorities.sectors, 'monthly');
+      });
+    });
+  }
+
+  generateBlogPages() {
+    // Blog main page
+    this.addUrl('/blog', this.priorities.blog, 'weekly');
+    
+    // Sample blog posts (extend with real blog posts)
+    const blogPosts = [
+      '/blog/sicurezza-informatica-pmi',
+      '/blog/backup-disaster-recovery-guida',
+      '/blog/cloud-storage-vantaggi',
+      '/blog/cybersecurity-studi-legali',
+      '/blog/gdpr-compliance-checklist'
+    ];
+
+    blogPosts.forEach(post => {
+      this.addUrl(post, this.priorities.blog, 'monthly');
+    });
+  }
+
+  generateXML() {
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+    this.urls.forEach(urlObj => {
+      xml += '  <url>\n';
+      xml += `    <loc>${urlObj.url}</loc>\n`;
+      xml += `    <lastmod>${urlObj.lastmod}</lastmod>\n`;
+      xml += `    <changefreq>${urlObj.changefreq}</changefreq>\n`;
+      xml += `    <priority>${urlObj.priority}</priority>\n`;
+      xml += '  </url>\n';
+    });
+
+    xml += '</urlset>';
+    return xml;
+  }
+
+  async build() {
+    console.log('🗺️  Building IT-ERA sitemap...');
+    
+    try {
+      // Generate all URL types
+      this.generateStaticPages();
+      this.generateCityPages();
+      this.generateBlogPages();
+
+      // Generate XML
+      const xml = this.generateXML();
+
+      // Ensure public directory exists
+      const publicDir = path.dirname(this.outputPath);
+      if (!fs.existsSync(publicDir)) {
+        fs.mkdirSync(publicDir, { recursive: true });
+      }
+
+      // Write sitemap
+      fs.writeFileSync(this.outputPath, xml, 'utf8');
+
+      console.log(`✅ Sitemap generated: ${this.urls.length} URLs`);
+      console.log(`📍 Output: ${this.outputPath}`);
       
-  } catch (error) {
-    console.error('❌ Sitemap generation failed:', error.message);
-    process.exit(1);
-  }
-}
+      // Generate sitemap index if needed
+      this.generateSitemapIndex();
 
-// Validation mode
-async function validateSitemap() {
-  try {
-    const { readFile } = await import('fs/promises');
-    const sitemap = await readFile(OUTPUT_FILE, 'utf8');
-    
-    // Basic XML validation
-    if (!sitemap.includes('<?xml') || !sitemap.includes('<urlset')) {
-      throw new Error('Invalid XML format');
+    } catch (error) {
+      console.error('❌ Sitemap generation failed:', error);
+      process.exit(1);
     }
-    
-    const urlCount = (sitemap.match(/<url>/g) || []).length;
-    console.log(`✅ Sitemap validation passed: ${urlCount} URLs`);
-    
-  } catch (error) {
-    console.error('❌ Sitemap validation failed:', error.message);
-    process.exit(1);
+  }
+
+  generateSitemapIndex() {
+    // For large sites, split into multiple sitemaps
+    if (this.urls.length > 50000) {
+      console.log('⚠️  Large sitemap detected. Consider splitting into multiple files.');
+    }
+
+    // Generate robots.txt reference
+    const robotsPath = path.join(__dirname, '../public/robots.txt');
+    let robotsContent = `User-agent: *\n`;
+    robotsContent += `Allow: /\n`;
+    robotsContent += `Disallow: /admin\n`;
+    robotsContent += `Disallow: /api\n`;
+    robotsContent += `Disallow: /test\n\n`;
+    robotsContent += `Sitemap: ${this.baseUrl}/sitemap.xml\n`;
+
+    fs.writeFileSync(robotsPath, robotsContent, 'utf8');
+    console.log(`✅ Robots.txt updated: ${robotsPath}`);
   }
 }
 
-// CLI handling
-const args = process.argv.slice(2);
-
-if (args.includes('--validate')) {
-  validateSitemap();
-} else {
-  buildSitemap();
+// CLI execution
+if (require.main === module) {
+  const generator = new ITERASitemapGenerator();
+  generator.build();
 }
+
+module.exports = ITERASitemapGenerator;

@@ -1,0 +1,238 @@
+{
+  "tests": [
+    {
+      "name": "sitemap-200",
+      "status": "PASS",
+      "response": {
+        "status": 200,
+        "hasUrlSet": true,
+        "size": 301705
+      }
+    },
+    {
+      "name": "robots-200",
+      "status": "PASS",
+      "content": {
+        "status": 200,
+        "hasSitemap": true,
+        "size": 1942
+      }
+    },
+    {
+      "name": "page-validation-_",
+      "url": "https://it-era.it/",
+      "status": "FAIL",
+      "checks": {
+        "h1": true,
+        "meta": true,
+        "wordcount": false,
+        "nav": true,
+        "errors": false,
+        "ga4": false
+      },
+      "details": {
+        "h1": {
+          "present": true,
+          "count": 1,
+          "text": "Il Partner IT che la Tua Azienda Merita"
+        },
+        "metaDescription": {
+          "present": true,
+          "content": "IT-ERA: Il partner tecnologico di fiducia per PMI in Lombardia. Assistenza IT 24/7, Cloud Storage, Cybersecurity, VoIP. SLA garantiti e supporto in 15 minuti.",
+          "length": 158
+        },
+        "wordCount": 340,
+        "navigation": {
+          "navElementsCount": 1,
+          "navLinksCount": 19,
+          "hasWorkingLinks": true
+        },
+        "ga4": {
+          "gtagPresent": false,
+          "dataLayerPresent": false,
+          "trackingIdFound": false,
+          "gtmFound": false
+        },
+        "title": "IT-ERA | Assistenza IT e Sicurezza Informatica per Aziende in Lombardia",
+        "canonical": null
+      },
+      "consoleErrors": 1,
+      "ga4NetworkRequests": 0,
+      "screenshot": "https___it_era_it_.png"
+    },
+    {
+      "name": "page-validation-_assistenza_informatica_bergamo_html",
+      "url": "https://it-era.it/assistenza-informatica-bergamo.html",
+      "status": "FAIL",
+      "checks": {
+        "h1": true,
+        "meta": false,
+        "wordcount": false,
+        "nav": false,
+        "errors": false,
+        "ga4": false
+      },
+      "details": {
+        "h1": {
+          "present": true,
+          "count": 1,
+          "text": "Pagina Non Trovata"
+        },
+        "metaDescription": {
+          "present": true,
+          "content": "La pagina che stai cercando non esiste. Torna alla home di IT-ERA o contattaci per assistenza IT immediata.",
+          "length": 107
+        },
+        "wordCount": 69,
+        "navigation": {
+          "navElementsCount": 0,
+          "navLinksCount": 0,
+          "hasWorkingLinks": false
+        },
+        "ga4": {
+          "gtagPresent": false,
+          "dataLayerPresent": false,
+          "trackingIdFound": false,
+          "gtmFound": false
+        },
+        "title": "Pagina Non Trovata | IT-ERA",
+        "canonical": null
+      },
+      "consoleErrors": 1,
+      "ga4NetworkRequests": 0,
+      "screenshot": "https___it_era_it_assistenza_informatica_bergamo_html.png"
+    },
+    {
+      "name": "page-validation-_sicurezza_informatica_milano_html",
+      "url": "https://it-era.it/sicurezza-informatica-milano.html",
+      "status": "FAIL",
+      "checks": {
+        "h1": true,
+        "meta": false,
+        "wordcount": false,
+        "nav": false,
+        "errors": false,
+        "ga4": false
+      },
+      "details": {
+        "h1": {
+          "present": true,
+          "count": 1,
+          "text": "Pagina Non Trovata"
+        },
+        "metaDescription": {
+          "present": true,
+          "content": "La pagina che stai cercando non esiste. Torna alla home di IT-ERA o contattaci per assistenza IT immediata.",
+          "length": 107
+        },
+        "wordCount": 69,
+        "navigation": {
+          "navElementsCount": 0,
+          "navLinksCount": 0,
+          "hasWorkingLinks": false
+        },
+        "ga4": {
+          "gtagPresent": false,
+          "dataLayerPresent": false,
+          "trackingIdFound": false,
+          "gtmFound": false
+        },
+        "title": "Pagina Non Trovata | IT-ERA",
+        "canonical": null
+      },
+      "consoleErrors": 1,
+      "ga4NetworkRequests": 0,
+      "screenshot": "https___it_era_it_sicurezza_informatica_milano_html.png"
+    },
+    {
+      "name": "page-validation-_cloud_storage_monza_html",
+      "url": "https://it-era.it/cloud-storage-monza.html",
+      "status": "FAIL",
+      "checks": {
+        "h1": true,
+        "meta": false,
+        "wordcount": false,
+        "nav": false,
+        "errors": false,
+        "ga4": false
+      },
+      "details": {
+        "h1": {
+          "present": true,
+          "count": 1,
+          "text": "Pagina Non Trovata"
+        },
+        "metaDescription": {
+          "present": true,
+          "content": "La pagina che stai cercando non esiste. Torna alla home di IT-ERA o contattaci per assistenza IT immediata.",
+          "length": 107
+        },
+        "wordCount": 69,
+        "navigation": {
+          "navElementsCount": 0,
+          "navLinksCount": 0,
+          "hasWorkingLinks": false
+        },
+        "ga4": {
+          "gtagPresent": false,
+          "dataLayerPresent": false,
+          "trackingIdFound": false,
+          "gtmFound": false
+        },
+        "title": "Pagina Non Trovata | IT-ERA",
+        "canonical": null
+      },
+      "consoleErrors": 1,
+      "ga4NetworkRequests": 0,
+      "screenshot": "https___it_era_it_cloud_storage_monza_html.png"
+    },
+    {
+      "name": "page-validation-_riparazione_pc_como_html",
+      "url": "https://it-era.it/riparazione-pc-como.html",
+      "status": "FAIL",
+      "checks": {
+        "h1": true,
+        "meta": false,
+        "wordcount": false,
+        "nav": false,
+        "errors": false,
+        "ga4": false
+      },
+      "details": {
+        "h1": {
+          "present": true,
+          "count": 1,
+          "text": "Pagina Non Trovata"
+        },
+        "metaDescription": {
+          "present": true,
+          "content": "La pagina che stai cercando non esiste. Torna alla home di IT-ERA o contattaci per assistenza IT immediata.",
+          "length": 107
+        },
+        "wordCount": 69,
+        "navigation": {
+          "navElementsCount": 0,
+          "navLinksCount": 0,
+          "hasWorkingLinks": false
+        },
+        "ga4": {
+          "gtagPresent": false,
+          "dataLayerPresent": false,
+          "trackingIdFound": false,
+          "gtmFound": false
+        },
+        "title": "Pagina Non Trovata | IT-ERA",
+        "canonical": null
+      },
+      "consoleErrors": 1,
+      "ga4NetworkRequests": 0,
+      "screenshot": "https___it_era_it_riparazione_pc_como_html.png"
+    }
+  ],
+  "metrics": {
+    "all_tests_pass": false,
+    "critical_issues": 5,
+    "warnings": 5,
+    "qa_score": "29%"
+  }
+}

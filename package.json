@@ -32,7 +32,10 @@
     "deploy:auth:staging": "node scripts/deploy-secure-auth.js deploy --env staging",
     "deploy:auth:dry-run": "node scripts/deploy-secure-auth.js deploy --dry-run",
     "health:auth": "node scripts/deploy-secure-auth.js health",
-    "health:auth:production": "node scripts/deploy-secure-auth.js health --env production"
+    "health:auth:production": "node scripts/deploy-secure-auth.js health --env production",
+    "qa": "npm run lint && npm run test && npm run e2e && npm run lighthouse",
+    "qa:puppeteer": "node scripts/qa-puppeteer.js",
+    "validate": "node scripts/validate-templates.js"
   },
   "keywords": [
     "security",
@@ -47,8 +50,16 @@
     "@cloudflare/workers-types": "^4.20241218.0"
   },
   "devDependencies": {
+    "chrome-launcher": "^1.2.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "lighthouse": "^12.8.1",
+    "playwright": "^1.55.0",
     "puppeteer": "^24.17.0",
-    "wrangler": "^3.94.0"
+    "wrangler": "^3.94.0",
+    "http-server": "^14.1.1",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10"
   },
   "engines": {
     "node": ">=18.0.0"

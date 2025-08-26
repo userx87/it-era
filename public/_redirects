@@ -1,0 +1,50 @@
+# IT-ERA Critical URL Structure Fix
+# Redirect legacy /web/ URLs to clean structure
+
+# Primary fix for generated pages
+/web/pages-generated/* /pages/:splat 301
+
+# General web prefix removal
+/web/* /:splat 301
+
+# Homepage
+/ /index.html 200
+
+# Main service pages (clean URLs)
+/assistenza-it /templates/assistenza-it-template.html 200
+/sicurezza-informatica /templates/sicurezza-informatica-template-redesigned.html 200
+/cloud-storage /templates/cloud-storage-template-optimized.html 200
+/backup-disaster-recovery /templates/backup-disaster-recovery-template.html 200
+/voip-telefonia-cloud /templates/voip-telefonia-cloud-template.html 200
+/microsoft-365 /templates/microsoft-365-template.html 200
+/firewall-watchguard /templates/firewall-watchguard-template.html 200
+/gdpr-compliance /templates/gdpr-compliance-template.html 200
+/smart-working /templates/smart-working-template.html 200
+/riparazione-pc /templates/riparazione-pc-template.html 200
+
+# Sector pages
+/pages/settori-commercialisti /pages/settori-commercialisti.html 200
+/pages/settori-studi-legali /pages/settori-studi-legali.html 200
+/pages/settori-medici /pages/settori-medici.html 200
+/pages/settori-pmi /pages/settori-pmi.html 200
+
+# Contact and legal pages
+/contatti /pages/contatti.html 200
+/privacy-policy /pages/privacy-policy.html 200
+/cookie-policy /pages/cookie-policy.html 200
+
+# Blog
+/blog /pages/blog/index.html 200
+/blog/* /pages/blog/:splat 200
+
+# Legacy redirects (301 permanent)
+/servizi /assistenza-it 301
+/assistenza /assistenza-it 301
+/backup /backup-disaster-recovery 301
+/sicurezza /sicurezza-informatica 301
+/microsoft /microsoft-365 301
+/office365 /microsoft-365 301
+/supporto-it /assistenza-it 301
+
+# 404 fallback
+/* /404.html 404

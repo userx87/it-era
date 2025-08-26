@@ -17,8 +17,10 @@ class ITERASitemapGenerator {
   }
 
   addUrl(url, priority = 0.5, changefreq = 'weekly', lastmod = null) {
+    // Remove /web/ prefix from URLs for clean SEO-friendly structure
+    const cleanUrl = url.replace(/^\/web\//, '/');
     this.urls.push({
-      url: url.startsWith('http') ? url : `${this.baseUrl}${url}`,
+      url: cleanUrl.startsWith('http') ? cleanUrl : `${this.baseUrl}${cleanUrl}`,
       priority,
       changefreq,
       lastmod: lastmod || new Date().toISOString().split('T')[0]

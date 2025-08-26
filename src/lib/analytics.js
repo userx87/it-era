@@ -7,6 +7,8 @@ export function injectGtag(id) {
   if (typeof window === 'undefined' || !id) return;
   if (document.getElementById('ga-script')) return;
   
+  console.log("GA4 init - ID:", id);
+  
   const script = document.createElement('script');
   script.id = 'ga-script';
   script.async = true;
@@ -26,6 +28,21 @@ export function injectGtag(id) {
       'custom_parameter_2': 'city_target'
     }
   });
+
+  // GA4 Network Fix: Retry logic with forced page_view
+  let retries = 0;
+  const checkGtag = setInterval(() => {
+    if (window.gtag || retries > 10) {
+      clearInterval(checkGtag);
+      if (window.gtag) {
+        gtag("event", "page_view", {debug_mode: true});
+        console.log("GA4 page_view sent");
+      } else {
+        console.warn("GA4 gtag not available after retries");
+      }
+    }
+    retries++;
+  }, 100);
 }
 
 export function trackEvent(eventName, parameters = {}) {

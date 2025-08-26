@@ -1,6 +1,10 @@
 # Cloudflare Pages Redirects
 # Usa 200 per rewrite (mantiene URL), 301 per redirect permanente
 
+# URL Structure Fix - Critical SEO redirects
+/web/pages-generated/* /pages/:splat 301
+/web/* /:splat 301
+
 # Homepage
 / /index.html 200
 

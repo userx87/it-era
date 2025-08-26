@@ -42,6 +42,12 @@
     "intent": "servizio"
   },
   {
+    "label": "Lombardia",
+    "href": "/pages/lombardia-servizi",
+    "order": 80,
+    "intent": "regionale"
+  },
+  {
     "label": "Blog",
     "href": "/blog",
     "order": 90,

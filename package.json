@@ -33,6 +33,8 @@
     "deploy:auth:dry-run": "node scripts/deploy-secure-auth.js deploy --dry-run",
     "health:auth": "node scripts/deploy-secure-auth.js health",
     "health:auth:production": "node scripts/deploy-secure-auth.js health --env production",
+    "generate:lombardia": "python3 scripts/generate_lombardia_pages.py",
+    "generate:lombardia:test": "python3 scripts/generate_lombardia_pages.py --dry-run --limit 5",
     "qa": "npm run lint && npm run test && npm run e2e && npm run lighthouse",
     "qa:puppeteer": "node scripts/qa-puppeteer.js",
     "validate": "node scripts/validate-templates.js"

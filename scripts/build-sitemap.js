@@ -66,7 +66,8 @@ class ITERASitemapGenerator {
       '/contatti',
       '/blog',
       '/privacy-policy',
-      '/cookie-policy'
+      '/cookie-policy',
+      '/pages/lombardia-servizi'
     ];
 
     pages.forEach(page => {
@@ -99,6 +100,24 @@ class ITERASitemapGenerator {
         this.addUrl(`/${sector}/${city}`, this.priorities.sectors, 'monthly');
       });
     });
+  }
+
+  generateLombardyPages() {
+    // Scan for generated Lombardy city pages
+    const pagesDir = path.join(__dirname, '../web/pages-generated');
+    
+    if (fs.existsSync(pagesDir)) {
+      const files = fs.readdirSync(pagesDir);
+      files.forEach(file => {
+        if (file.startsWith('servizi-') && file.endsWith('.html')) {
+          const pagePath = `/pages-generated/${file.replace('.html', '')}`;
+          this.addUrl(pagePath, this.priorities.cities || 0.6, 'monthly');
+        }
+      });
+      console.log(`✅ Added ${files.length} generated Lombardy pages to sitemap`);
+    } else {
+      console.log('ℹ️  No generated Lombardy pages found yet');
+    }
   }
 
   generateBlogPages() {
@@ -143,6 +162,7 @@ class ITERASitemapGenerator {
       // Generate all URL types
       this.generateStaticPages();
       this.generateCityPages();
+      this.generateLombardyPages();
       this.generateBlogPages();
 
       // Generate XML

@@ -1,0 +1,77 @@
+{
+  "tests": [
+    {
+      "name": "url-structure",
+      "status": "PASS",
+      "details": "5/5 pages accessible",
+      "duration": 346,
+      "failures": []
+    },
+    {
+      "name": "redirects-301",
+      "status": "PASS",
+      "evidence": "1 redirect scenarios working correctly",
+      "duration": 18,
+      "failures": []
+    },
+    {
+      "name": "sitemap-valid",
+      "status": "PASS",
+      "urls_checked": 100,
+      "valid_urls": 100,
+      "duration": 41,
+      "failures": []
+    },
+    {
+      "name": "ga4-network",
+      "status": "FAIL",
+      "ga4_found": false,
+      "gtm_found": false,
+      "duration": 17,
+      "details": [
+        "Page not accessible: HTTP 308"
+      ]
+    },
+    {
+      "name": "lighthouse",
+      "status": "FAIL",
+      "scores": {
+        "seo": 0,
+        "performance": 85
+      },
+      "checks": [],
+      "issues": [
+        "Page not accessible: HTTP 308"
+      ],
+      "duration": 26
+    }
+  ],
+  "metrics": {
+    "all_critical_fixed": false,
+    "url_issues": 0,
+    "ga4_firing": false,
+    "sitemap_valid_urls": 100,
+    "lighthouse_scores": {
+      "seo": 0,
+      "performance": 85
+    },
+    "redirects_working": 1
+  },
+  "timestamp": "2025-08-26T09:58:53.251Z",
+  "environment": {
+    "production_url": "https://it-era.it",
+    "test_pages": [
+      "/pages/assistenza-it.html",
+      "/pages/sicurezza-informatica.html",
+      "/pages/cloud-storage.html",
+      "/pages/voip-telefonia.html",
+      "/pages/backup-automatico.html"
+    ],
+    "redirect_tests": [
+      {
+        "old": "/pages/assistenza-it.html",
+        "expected": "/pages/assistenza-it"
+      }
+    ]
+  }
+}

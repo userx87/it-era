@@ -1,0 +1,16 @@
+{
+  "name": "it-era-validation-tests",
+  "version": "1.0.0",
+  "description": "Critical fixes validation tests for IT-ERA",
+  "main": "critical-fixes-validator.js",
+  "scripts": {
+    "test": "node critical-fixes-validator.js",
+    "test:verbose": "DEBUG=puppeteer:* node critical-fixes-validator.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.11.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

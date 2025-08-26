@@ -1,0 +1,102 @@
+{
+  "validation_timestamp": "2025-08-26T10:10:00Z",
+  "validation_agent": "tester-agent",
+  "task_id": "validate-lombardia",
+  "tests": [
+    {
+      "name": "page-count",
+      "description": "Count generated service pages with servizi-* pattern",
+      "status": "FAIL",
+      "expected": ">=12 cities",
+      "actual": "0 servizi-*.html files found",
+      "details": {
+        "servizi_pattern_count": 0,
+        "total_generated_pages": 1400,
+        "lombardia_specific_pages": 1,
+        "found_pages": ["assistenza-it-romano-di-lombardia.html"]
+      },
+      "count": 0
+    },
+    {
+      "name": "puppeteer-smoke",
+      "description": "Smoke test for 10 sample cities",
+      "status": "PARTIAL",
+      "expected": "10 cities tested successfully",
+      "actual": "1 city available for testing",
+      "details": {
+        "available_cities": ["romano-di-lombardia"],
+        "missing_cities": ["milano", "bergamo", "brescia", "como", "cremona", "mantova", "pavia", "sondrio", "varese"],
+        "puppeteer_error": "Connection issues with headless browser",
+        "manual_check_needed": true
+      },
+      "cities_tested": 1
+    },
+    {
+      "name": "indice-links",
+      "description": "Verify regional index exists and links work",
+      "status": "FAIL",
+      "expected": "lombardia-servizi.html exists with working links",
+      "actual": "File not found",
+      "details": {
+        "index_file": "web/pages/lombardia-servizi.html",
+        "file_exists": false,
+        "reason": "Regional index not yet created"
+      },
+      "broken_links": "unknown"
+    },
+    {
+      "name": "sitemap",
+      "description": "Validate sitemap contains Lombardia URLs",
+      "status": "PASS",
+      "expected": "Sitemap accessible and contains Lombardia entries",
+      "actual": "200 OK, 1+ Lombardia entry found",
+      "details": {
+        "sitemap_url": "https://it-era.it/sitemap.xml",
+        "http_status": 200,
+        "lombardia_entries": 1,
+        "xml_valid": true
+      },
+      "urls": 1
+    },
+    {
+      "name": "menu",
+      "description": "Check navigation contains regional index link",
+      "status": "PARTIAL",
+      "expected": "Navigation contains lombardia-servizi link",
+      "actual": "Navigation exists but needs verification",
+      "details": {
+        "navigation_file": "web/components/navigation-optimized.html",
+        "lombardia_link_present": "needs_verification",
+        "menu_structure": "unified_component"
+      },
+      "correct": "unknown"
+    }
+  ],
+  "metrics": {
+    "pages_generated": 1400,
+    "lombardia_pages": 1,
+    "servizi_pattern_pages": 0,
+    "pages_missing_after": 11,
+    "sitemap_urls": 1,
+    "validation_coverage": "20%"
+  },
+  "recommendations": [
+    "Generate pages for major Lombardy cities (Milano, Bergamo, Brescia, etc.)",
+    "Create regional index file lombardia-servizi.html",
+    "Update navigation component to include regional index link",
+    "Implement proper servizi-*.html naming pattern",
+    "Run full Puppeteer tests once more pages are available"
+  ],
+  "critical_issues": [
+    "Only 1 out of expected 12+ Lombardy city pages generated",
+    "No servizi-*.html pattern files found",
+    "Regional index file missing",
+    "Insufficient page coverage for validation"
+  ],
+  "next_steps": [
+    "Generate pages for all major Lombardy cities",
+    "Create and populate regional index",
+    "Update navigation menu",
+    "Re-run validation with full page set"
+  ]
+}

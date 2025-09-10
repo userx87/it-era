@@ -92,6 +92,9 @@ function processTemplate(content, metadata) {
   processed = processed.replace(/src="\/(?!\/)/g, `src="${basePath}/`);
   processed = processed.replace(/url\(\/(?!\/)/g, `url(${basePath}/`);
 
+  // Replace main.css with combined.min.css for complete styling
+  processed = processed.replace(/\/css\/main\.css/g, '/css/combined.min.css');
+
   // Remove empty CSS/JS references
   processed = processed.replace(/<link[^>]*href="[^"]*\/\.css"[^>]*>/g, '');
   processed = processed.replace(/<script[^>]*src="[^"]*\/\.js"[^>]*><\/script>/g, '');

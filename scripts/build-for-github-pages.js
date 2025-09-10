@@ -91,9 +91,13 @@ function processTemplate(content, metadata) {
   processed = processed.replace(/href="\/(?!\/)/g, `href="${basePath}/`);
   processed = processed.replace(/src="\/(?!\/)/g, `src="${basePath}/`);
   processed = processed.replace(/url\(\/(?!\/)/g, `url(${basePath}/`);
+  processed = processed.replace(/content="\/(?!\/)/g, `content="${basePath}/`);
 
   // Replace main.css with combined.min.css for complete styling
   processed = processed.replace(/\/css\/main\.css/g, '/css/combined.min.css');
+
+  // Fix double base path issues
+  processed = processed.replace(/\/it-era\/it-era\//g, '/it-era/');
 
   // Remove empty CSS/JS references
   processed = processed.replace(/<link[^>]*href="[^"]*\/\.css"[^>]*>/g, '');

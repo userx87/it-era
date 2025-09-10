@@ -1,0 +1,287 @@
+<!-- IT-ERA Analytics Component -->
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VWN9EH21"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Configure GA4
+    gtag('config', 'G-T5VWN9EH21', {
+        page_title: document.title,
+        page_location: window.location.href,
+        custom_map: {
+            'custom_parameter_1': 'service_type',
+            'custom_parameter_2': 'page_category',
+            'custom_parameter_3': 'user_type'
+        },
+        // Enhanced ecommerce for service tracking
+        send_page_view: true,
+        // Privacy settings
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+    });
+    
+    // Track initial page view with enhanced data
+    gtag('event', 'page_view', {
+        event_category: 'engagement',
+        event_label: window.location.pathname,
+        service_type: document.querySelector('meta[name="service-type"]')?.content || 'general',
+        page_category: document.querySelector('meta[name="page-category"]')?.content || 'service',
+        user_type: 'visitor'
+    });
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPF3JZT');</script>
+
+<!-- Enhanced Analytics Tracking -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Enhanced interaction tracking
+    function trackInteraction(action, label, value = null, category = 'engagement') {
+        if (typeof gtag !== 'undefined') {
+            const eventData = {
+                event_category: category,
+                event_label: label,
+                page_location: window.location.href,
+                page_title: document.title
+            };
+            
+            if (value !== null) {
+                eventData.value = value;
+            }
+            
+            // Add custom dimensions
+            eventData.service_type = document.querySelector('meta[name="service-type"]')?.content || 'general';
+            eventData.page_category = document.querySelector('meta[name="page-category"]')?.content || 'service';
+            
+            gtag('event', action, eventData);
+        }
+        
+        // Console log for debugging (remove in production)
+        if (window.location.hostname === 'localhost' || window.location.hostname.includes('dev')) {
+            console.log('Analytics Event:', action, label, value, category);
+        }
+    }
+    
+    // Phone call tracking
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            const phoneNumber = this.getAttribute('href').replace('tel:', '');
+            const context = this.getAttribute('data-cta') || 'unknown';
+            trackInteraction('phone_call', context, phoneNumber, 'conversion');
+        });
+    });
+    
+    // Email click tracking
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            const email = this.getAttribute('href').replace('mailto:', '');
+            const context = this.getAttribute('data-cta') || 'unknown';
+            trackInteraction('email_click', context, email, 'conversion');
+        });
+    });
+    
+    // WhatsApp click tracking
+    document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(link => {
+        link.addEventListener('click', function() {
+            const context = this.getAttribute('data-cta') || 'unknown';
+            trackInteraction('whatsapp_click', context, null, 'conversion');
+        });
+    });
+    
+    // CTA button tracking
+    document.querySelectorAll('[data-cta]').forEach(element => {
+        element.addEventListener('click', function() {
+            const ctaName = this.getAttribute('data-cta');
+            const ctaType = this.tagName.toLowerCase();
+            trackInteraction('cta_click', ctaName, ctaType, 'engagement');
+        });
+    });
+    
+    // Form submission tracking
+    document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', function() {
+            const formId = this.id || 'unknown-form';
+            trackInteraction('form_start', formId, null, 'conversion');
+        });
+    });
+    
+    // External link tracking
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+        if (!link.href.includes(window.location.hostname)) {
+            link.addEventListener('click', function() {
+                const domain = new URL(this.href).hostname;
+                trackInteraction('external_link', domain, this.href, 'engagement');
+            });
+        }
+    });
+    
+    // Scroll depth tracking
+    let maxScroll = 0;
+    const scrollMilestones = [25, 50, 75, 90, 100];
+    let trackedMilestones = new Set();
+    
+    function trackScrollDepth() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        
+        if (scrollPercent > maxScroll) {
+            maxScroll = scrollPercent;
+            
+            scrollMilestones.forEach(milestone => {
+                if (scrollPercent >= milestone && !trackedMilestones.has(milestone)) {
+                    trackedMilestones.add(milestone);
+                    trackInteraction('scroll_depth', `${milestone}%`, milestone, 'engagement');
+                }
+            });
+        }
+    }
+    
+    // Throttled scroll tracking
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(trackScrollDepth, 250);
+    });
+    
+    // Time on page tracking
+    let startTime = Date.now();
+    let timeTracked = false;
+    
+    // Track engagement milestones
+    const timeouts = [
+        { time: 30000, label: '30_seconds' },
+        { time: 60000, label: '1_minute' },
+        { time: 180000, label: '3_minutes' },
+        { time: 300000, label: '5_minutes' }
+    ];
+    
+    timeouts.forEach(({ time, label }) => {
+        setTimeout(() => {
+            trackInteraction('time_on_page', label, Math.round(time / 1000), 'engagement');
+        }, time);
+    });
+    
+    // Track on page unload
+    window.addEventListener('beforeunload', function() {
+        const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+        trackInteraction('time_on_page', 'total_time', timeOnPage, 'engagement');
+    });
+    
+    // Page visibility tracking
+    let visibilityStart = Date.now();
+    let totalVisibleTime = 0;
+    
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            totalVisibleTime += Date.now() - visibilityStart;
+        } else {
+            visibilityStart = Date.now();
+        }
+    });
+    
+    // Track visible time on unload
+    window.addEventListener('beforeunload', function() {
+        if (!document.hidden) {
+            totalVisibleTime += Date.now() - visibilityStart;
+        }
+        const visibleSeconds = Math.round(totalVisibleTime / 1000);
+        trackInteraction('visible_time', 'total_visible', visibleSeconds, 'engagement');
+    });
+    
+    // Error tracking
+    window.addEventListener('error', function(e) {
+        trackInteraction('javascript_error', e.message, e.filename + ':' + e.lineno, 'error');
+    });
+    
+    // Performance tracking
+    window.addEventListener('load', function() {
+        setTimeout(() => {
+            if ('performance' in window) {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+                const domContentLoaded = perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart;
+                
+                if (loadTime > 0) {
+                    trackInteraction('page_load_time', Math.round(loadTime) + 'ms', loadTime, 'performance');
+                }
+                
+                if (domContentLoaded > 0) {
+                    trackInteraction('dom_content_loaded', Math.round(domContentLoaded) + 'ms', domContentLoaded, 'performance');
+                }
+                
+                // Core Web Vitals tracking
+                if ('web-vitals' in window) {
+                    // This would require the web-vitals library
+                    // getCLS(metric => trackInteraction('cls', metric.value, metric.value, 'performance'));
+                    // getFID(metric => trackInteraction('fid', metric.value, metric.value, 'performance'));
+                    // getLCP(metric => trackInteraction('lcp', metric.value, metric.value, 'performance'));
+                }
+            }
+        }, 0);
+    });
+    
+    // Service-specific tracking
+    const serviceType = document.querySelector('meta[name="service-type"]')?.content;
+    if (serviceType) {
+        trackInteraction('service_page_view', serviceType, null, 'service');
+    }
+    
+    // Device and browser tracking
+    const deviceInfo = {
+        userAgent: navigator.userAgent,
+        language: navigator.language,
+        platform: navigator.platform,
+        cookieEnabled: navigator.cookieEnabled,
+        onLine: navigator.onLine,
+        screenResolution: screen.width + 'x' + screen.height,
+        viewportSize: window.innerWidth + 'x' + window.innerHeight
+    };
+    
+    // Track device info once per session
+    if (!sessionStorage.getItem('device_tracked')) {
+        trackInteraction('device_info', deviceInfo.platform, JSON.stringify(deviceInfo), 'technical');
+        sessionStorage.setItem('device_tracked', 'true');
+    }
+    
+    // Export tracking function for external use
+    window.ITERA = window.ITERA || {};
+    window.ITERA.trackInteraction = trackInteraction;
+});
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPF3JZT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- Hotjar Tracking (Optional) -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3456789,hjsv:6}; // Replace with actual Hotjar ID
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- Microsoft Clarity (Optional) -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "abcdefghij"); // Replace with actual Clarity ID
+</script>

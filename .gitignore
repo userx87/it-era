@@ -21,3 +21,4 @@ logs/*
 *.local
 .env
 .env.*
+.vercel

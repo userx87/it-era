@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <%- include('partials/head-scripts') %>
+</head>
+<body class="<%= currentPath.replace('/', '') || 'servizi' %>">
+    <% if (env === 'development') { %>
+    <%- include('partials/dev-toolbar') %>
+    <% } %>
+
+    <%- include('partials/header') %>
+
+    <main class="main-content">
+
+<section class="page-header">
+    <div class="container">
+        <h1>Servizi IT Professionali</h1>
+        <p class="page-description">
+            Soluzioni complete per la digitalizzazione e sicurezza della tua azienda
+        </p>
+    </div>
+</section>
+
+<section class="services-detailed">
+    <div class="container">
+        <div class="service-section" id="assistenza">
+            <h2>🔧 Assistenza Tecnica</h2>
+            <div class="service-content">
+                <div class="service-description">
+                    <p>Supporto tecnico completo per tutti i tuoi sistemi IT</p>
+                    <ul>
+                        <li>Assistenza on-site e remota</li>
+                        <li>Manutenzione preventiva</li>
+                        <li>Troubleshooting avanzato</li>
+                        <li>Gestione infrastrutture</li>
+                    </ul>
+                </div>
+                <div class="service-cta">
+                    <a href="tel:0398882041" class="btn btn-primary">Richiedi Assistenza</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="service-section" id="cybersecurity">
+            <h2>🔒 Cybersecurity</h2>
+            <div class="service-content">
+                <div class="service-description">
+                    <p>Protezione avanzata contro le minacce informatiche</p>
+                    <ul>
+                        <li>Firewall enterprise</li>
+                        <li>Antivirus avanzato</li>
+                        <li>Monitoraggio 24/7</li>
+                        <li>Audit di sicurezza</li>
+                    </ul>
+                </div>
+                <div class="service-cta">
+                    <a href="tel:0398882041" class="btn btn-primary">Richiedi Consulenza</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <%- include('partials/body-scripts') %>
+</body>
+</html>

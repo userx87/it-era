@@ -1,1 +1,3 @@
-(eval):1: command not found: python
+Vercel CLI 44.7.3
+Retrieving project…
+Error: request to https://api.vercel.com/teams/team_f0PLxPFVfZUk3oZ4uUyQEx3Y?teamId=team_f0PLxPFVfZUk3oZ4uUyQEx3Y failed, reason: Client network socket disconnected before secure TLS connection was established

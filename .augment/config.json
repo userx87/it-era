@@ -1,0 +1,123 @@
+{
+  "project": {
+    "name": "IT-ERA",
+    "description": "Sistema di sicurezza informatica e assistenza IT per aziende in Lombardia",
+    "type": "web-application",
+    "domain": "cybersecurity-it-support",
+    "version": "1.0.0"
+  },
+  "workspace": {
+    "root": ".",
+    "include": [
+      "web/**/*.html",
+      "web/**/*.js",
+      "web/**/*.css",
+      "scripts/**/*.py",
+      "scripts/**/*.js",
+      "components/**/*.html",
+      "templates/**/*.html",
+      "config/**/*.json",
+      "config/**/*.py",
+      "admin/**/*.html",
+      "admin/**/*.js",
+      "tests/**/*.js",
+      "tests/**/*.spec.js",
+      "package.json",
+      "README.md"
+    ],
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "*.log",
+      "*.tmp",
+      ".DS_Store"
+    ]
+  },
+  "context": {
+    "company": {
+      "name": "IT-ERA",
+      "phone": "039 888 2041",
+      "email": "info@it-era.it",
+      "address": "Viale Risorgimento 32, Vimercate MB",
+      "coverage": "Lombardia",
+      "responseTime": "15 minuti garantiti"
+    },
+    "services": [
+      "Assistenza IT 24/7",
+      "Cybersecurity e Sicurezza Informatica", 
+      "Cloud Storage e Backup",
+      "VoIP e Centralino Cloud",
+      "Soluzioni per Studi Medici",
+      "Soluzioni per Studi Legali",
+      "Riparazione PC",
+      "Backup e Disaster Recovery",
+      "Firewall WatchGuard",
+      "Microsoft 365",
+      "GDPR Compliance",
+      "Smart Working"
+    ],
+    "technologies": [
+      "HTML5",
+      "JavaScript ES6+",
+      "Python",
+      "Cloudflare Workers",
+      "OpenAI GPT-4",
+      "Tawk.to Chat",
+      "Google Analytics",
+      "Bootstrap",
+      "Node.js",
+      "Jest Testing",
+      "Playwright E2E",
+      "Lighthouse Performance"
+    ],
+    "architecture": {
+      "frontend": "Static HTML/JS with dynamic components",
+      "backend": "Cloudflare Workers + Python scripts",
+      "ai": "OpenAI GPT-4 integration with custom chatbot",
+      "deployment": "Cloudflare Pages",
+      "testing": "Jest + Playwright + Lighthouse",
+      "monitoring": "Google Analytics + Custom tracking"
+    }
+  },
+  "rules": [
+    "Always maintain IT-ERA branding and professional tone",
+    "Ensure 15-minute response time guarantee is prominently displayed",
+    "Include emergency contact 039 888 2041 in critical sections",
+    "Maintain GDPR compliance for medical and legal sectors",
+    "Optimize for Lombardy region SEO keywords",
+    "Integrate with existing OpenAI GPT-4 chatbot system",
+    "Follow existing code patterns and architecture",
+    "Test all changes with existing test suite",
+    "Maintain mobile-first responsive design",
+    "Ensure accessibility compliance"
+  ],
+  "ai": {
+    "model": "claude-3-5-sonnet-20241022",
+    "temperature": 0.7,
+    "maxTokens": 4000,
+    "systemPrompt": "You are an expert developer working on IT-ERA, a cybersecurity and IT support company in Lombardia, Italy. Always maintain professional Italian business communication, ensure emergency contact visibility, and integrate seamlessly with existing OpenAI GPT-4 chatbot system."
+  },
+  "integrations": {
+    "openai": {
+      "enabled": true,
+      "configPath": "web/js/ai-config.js",
+      "chatbotPath": "web/js/smart-chatbot.js"
+    },
+    "tawk": {
+      "enabled": true,
+      "integration": "Enhanced with AI processing"
+    },
+    "analytics": {
+      "enabled": true,
+      "provider": "Google Analytics",
+      "trackingEvents": true
+    }
+  },
+  "commands": {
+    "build": "npm run build",
+    "test": "npm test",
+    "deploy": "npm run deploy",
+    "lint": "npm run lint",
+    "e2e": "npm run e2e"
+  }
+}

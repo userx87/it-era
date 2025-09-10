@@ -1,0 +1,55 @@
+# IT-ERA Cloudflare Pages Redirects
+# SEO-friendly redirects and emergency contact optimization
+
+# Emergency Contact Redirects - High Priority
+/emergenza              /contatti.html                    302
+/supporto-urgente       /contatti.html                    302
+/chiamata-emergenza     tel:+390398882041                 302
+/telefono               tel:+390398882041                 302
+
+# Service Redirects - SEO Optimization
+/assistenza-it          /assistenza-it-aziendale-lombardia.html    301
+/sicurezza              /sicurezza-informatica-bergamo.html       301
+/cloud                  /cloud-storage-milano.html                301
+/backup                 /backup-disaster-recovery-milano.html     301
+
+# Sector Redirects
+/medici                 /it-studi-medici-lombardia.html          301
+/commercialisti         /settori-commercialisti.html             301
+/avvocati               /it-studi-legali-lombardia.html          301
+/legali                 /it-studi-legali-lombardia.html          301
+/pmi                    /settori-pmi-startup.html                301
+
+# City-Specific Redirects for Local SEO
+/milano                 /assistenza-it-milano.html               301
+/bergamo                /assistenza-it-bergamo.html              301
+/brescia                /assistenza-it-brescia.html              301
+/monza                  /assistenza-it-monza.html                301
+/como                   /assistenza-it-como.html                 301
+
+# Legacy URL Redirects
+/pages/*                /:splat                                   301
+/old-site/*             /:splat                                   301
+/wp-content/*           /                                         301
+/wordpress/*            /                                         301
+
+# Common Typos and Variations
+/contatto               /contatti.html                            301
+/contato                /contatti.html                            301
+/assistenza             /assistenza-it-aziendale-lombardia.html  301
+/sicurezza-informatica  /sicurezza-informatica-bergamo.html      301
+
+# Social Media and Marketing Redirects
+/facebook               https://www.facebook.com/itera.it        302
+/linkedin               https://www.linkedin.com/company/it-era  302
+/whatsapp               https://wa.me/390398882041                302
+
+# API and Technical Redirects
+/api/v1/*               /api/:splat                               301
+/admin                  /admin/                                   301
+
+# SEO-Friendly Trailing Slash Handling
+/*                      /:splat/                                  301!
+
+# Fallback for 404s - Route to Homepage with Emergency Contact
+/*                      /index.html                               404

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Flow Dashboard - IT-ERA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --danger-color: #e74c3c;
+            --dark-color: #34495e;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .status-active { background-color: var(--success-color); color: white; }
+        .status-running { background-color: var(--secondary-color); color: white; }
+        .status-completed { background-color: var(--success-color); color: white; }
+        .status-failed { background-color: var(--danger-color); color: white; }
+        .status-ended { background-color: #6c757d; color: white; }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+        }
+        
+        .workflow-progress {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e9ecef;
+            overflow: hidden;
+        }
+        
+        .workflow-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary-color), var(--success-color));
+            transition: width 0.3s ease;
+        }
+        
+        .memory-item {
+            border-left: 4px solid var(--secondary-color);
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .btn-claude-flow {
+            background: linear-gradient(135deg, var(--secondary-color), #2980b9);
+            border: none;
+            color: white;
+            border-radius: 25px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-claude-flow:hover {
+            background: linear-gradient(135deg, #2980b9, var(--secondary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+            color: white;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <i class="fas fa-robot me-2"></i>
+                Claude Flow Dashboard
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-home me-1"></i>
+                    IT-ERA Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h1 class="h3 mb-1">Claude Flow Dashboard</h1>
+                        <p class="text-muted">Gestione avanzata AI e automazione per IT-ERA</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-claude-flow me-2" onclick="createSession()">
+                            <i class="fas fa-plus me-2"></i>
+                            Nuova Sessione
+                        </button>
+                        <button class="btn btn-outline-secondary" onclick="refreshDashboard()">
+                            <i class="fas fa-sync-alt me-2"></i>
+                            Aggiorna
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Status -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cogs fa-2x mb-2"></i>
+                        <h5 class="card-title">Sistema</h5>
+                        <p class="card-text" id="systemStatus">
+                            <span class="loading-spinner"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-play-circle fa-2x mb-2"></i>
+                        <h5 class="card-title">Sessioni Attive</h5>
+                        <p class="card-text" id="activeSessions">
+                            <span class="loading-spinner"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tasks fa-2x mb-2"></i>
+                        <h5 class="card-title">Workflow Attivi</h5>
+                        <p class="card-text" id="activeWorkflows">
+                            <span class="loading-spinner"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-memory fa-2x mb-2"></i>
+                        <h5 class="card-title">Memoria</h5>
+                        <p class="card-text" id="memoryUsage">
+                            <span class="loading-spinner"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Tabs -->
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="sessions-tab" data-bs-toggle="tab" data-bs-target="#sessions" type="button" role="tab">
+                            <i class="fas fa-play-circle me-2"></i>
+                            Sessioni
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="workflows-tab" data-bs-toggle="tab" data-bs-target="#workflows" type="button" role="tab">
+                            <i class="fas fa-tasks me-2"></i>
+                            Workflow
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="memory-tab" data-bs-toggle="tab" data-bs-target="#memory" type="button" role="tab">
+                            <i class="fas fa-memory me-2"></i>
+                            Memoria
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="analytics-tab" data-bs-toggle="tab" data-bs-target="#analytics" type="button" role="tab">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            Analytics
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="mainTabContent">
+                    <!-- Sessions Tab -->
+                    <div class="tab-pane fade show active" id="sessions" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-play-circle me-2"></i>
+                                    Sessioni Claude Flow
+                                </h5>
+                                <button class="btn btn-sm btn-claude-flow" onclick="createSession()">
+                                    <i class="fas fa-plus me-1"></i>
+                                    Nuova Sessione
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div id="sessionsList">
+                                    <div class="text-center py-4">
+                                        <span class="loading-spinner"></span>
+                                        <p class="mt-2 text-muted">Caricamento sessioni...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workflows Tab -->
+                    <div class="tab-pane fade" id="workflows" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <i class="fas fa-list me-2"></i>
+                                            Workflow Disponibili
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="availableWorkflows">
+                                            <div class="text-center py-4">
+                                                <span class="loading-spinner"></span>
+                                                <p class="mt-2 text-muted">Caricamento workflow...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <i class="fas fa-running me-2"></i>
+                                            Workflow in Esecuzione
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="runningWorkflows">
+                                            <div class="text-center py-4">
+                                                <span class="loading-spinner"></span>
+                                                <p class="mt-2 text-muted">Caricamento workflow attivi...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memory Tab -->
+                    <div class="tab-pane fade" id="memory" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-memory me-2"></i>
+                                    Sistema Memoria
+                                </h5>
+                                <div>
+                                    <input type="text" class="form-control d-inline-block" style="width: 300px;" 
+                                           placeholder="Cerca nella memoria..." id="memorySearch">
+                                    <button class="btn btn-claude-flow ms-2" onclick="searchMemory()">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="memoryContent">
+                                    <div class="text-center py-4">
+                                        <span class="loading-spinner"></span>
+                                        <p class="mt-2 text-muted">Caricamento memoria...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Tab -->
+                    <div class="tab-pane fade" id="analytics" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-chart-bar me-2"></i>
+                                    Analytics e Metriche
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="analyticsContent">
+                                    <div class="text-center py-4">
+                                        <span class="loading-spinner"></span>
+                                        <p class="mt-2 text-muted">Caricamento analytics...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Create Session Modal -->
+    <div class="modal fade" id="createSessionModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-plus me-2"></i>
+                        Crea Nuova Sessione
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="createSessionForm">
+                        <div class="mb-3">
+                            <label for="sessionName" class="form-label">Nome Sessione</label>
+                            <input type="text" class="form-control" id="sessionName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sessionDescription" class="form-label">Descrizione</label>
+                            <textarea class="form-control" id="sessionDescription" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                    <button type="button" class="btn btn-claude-flow" onclick="submitCreateSession()">
+                        <i class="fas fa-plus me-2"></i>
+                        Crea Sessione
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Execute Workflow Modal -->
+    <div class="modal fade" id="executeWorkflowModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-play me-2"></i>
+                        Esegui Workflow
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="executeWorkflowForm">
+                        <div class="mb-3">
+                            <label for="workflowName" class="form-label">Workflow</label>
+                            <select class="form-select" id="workflowName" required>
+                                <option value="">Seleziona workflow...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="workflowSession" class="form-label">Sessione</label>
+                            <select class="form-select" id="workflowSession">
+                                <option value="">Crea nuova sessione</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                    <button type="button" class="btn btn-claude-flow" onclick="submitExecuteWorkflow()">
+                        <i class="fas fa-play me-2"></i>
+                        Esegui
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/claude-flow/claude-flow-dashboard.js"></script>
+</body>
+</html>

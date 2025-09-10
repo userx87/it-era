@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-09-10T12:47:40.259Z",
+  "duration": 9140,
+  "stats": {
+    "startTime": 1757508451119,
+    "totalPages": 1561,
+    "pagesProcessed": 1561,
+    "pagesConverted": 1561,
+    "pagesSkipped": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "successRate": "100.0%"
+}

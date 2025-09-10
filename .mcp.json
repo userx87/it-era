@@ -27,6 +27,13 @@
       "env": {
         "TESTSPRITE_API_KEY": "sk-user-ZXxkpDLoM9HQU4S38hjZPsBOpPN_RJsYmfZNLsjBaQUVS2ezBZJyFy2V5fPy9IB2NZRWbxP1Yv5ZcjB3BkI3Nb2luAkAtwth0ie920TJS7JLTV9QRnnEKt5cffmOdztt4LY"
       }
+    },
+    "context7": {
+      "command": "node",
+      "args": [
+        "node_modules/@upstash/context7-mcp/dist/index.js"
+      ],
+      "type": "stdio"
     }
   }
 }

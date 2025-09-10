@@ -1,0 +1,12 @@
+
+Ottimizza le performance del sito IT-ERA:
+
+1. Minimizza CSS e JavaScript
+2. Ottimizza immagini e risorse
+3. Migliora Core Web Vitals
+4. Ottimizza caricamento chatbot AI
+5. Riduce bundle size
+6. Implementa lazy loading
+
+Target: Lighthouse score >90 per tutte le metriche
+        

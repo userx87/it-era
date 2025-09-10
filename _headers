@@ -1,0 +1,117 @@
+# IT-ERA Cloudflare Pages Security Headers
+# Optimized for performance, security, and SEO
+
+/*
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://embed.tawk.to https://va.tawk.to; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https: blob:; connect-src 'self' https://api.openai.com https://www.google-analytics.com https://va.tawk.to wss://va.tawk.to; frame-src https://embed.tawk.to; object-src 'none'; base-uri 'self'; form-action 'self' mailto:
+  
+  # Performance Headers
+  Cache-Control: public, max-age=31536000, immutable
+  
+  # IT-ERA Branding
+  X-Powered-By: IT-ERA Lombardia
+  X-Emergency-Contact: 039-888-2041
+
+# HTML Pages - Shorter cache for dynamic content
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  
+# CSS Files - Long cache with versioning
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: text/css; charset=utf-8
+  
+# JavaScript Files - Long cache with versioning
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/javascript; charset=utf-8
+  
+# Images - Long cache
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+  
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+  
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
+  
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/svg+xml
+  
+# Fonts - Long cache
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff2
+  
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff
+  
+# API Endpoints - No cache
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  
+# Service Worker - Short cache
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+  
+# Manifest - Short cache
+/manifest.json
+  Cache-Control: public, max-age=3600, must-revalidate
+  
+# Sitemap - Daily cache
+/sitemap.xml
+  Cache-Control: public, max-age=86400, must-revalidate
+  Content-Type: application/xml
+  
+# Robots - Daily cache
+/robots.txt
+  Cache-Control: public, max-age=86400, must-revalidate
+  Content-Type: text/plain
+
+# Emergency Contact Pages - Immediate cache invalidation
+/contatti.html
+  Cache-Control: public, max-age=1800, must-revalidate
+  X-Emergency-Priority: high
+  
+# Service Pages - Moderate cache
+/assistenza-it-*
+  Cache-Control: public, max-age=7200, must-revalidate
+  
+/sicurezza-informatica-*
+  Cache-Control: public, max-age=7200, must-revalidate
+  
+/cloud-storage-*
+  Cache-Control: public, max-age=7200, must-revalidate
+
+# Sector Pages - Moderate cache
+/it-studi-*
+  Cache-Control: public, max-age=7200, must-revalidate
+  
+/settori-*
+  Cache-Control: public, max-age=7200, must-revalidate
+
+# Admin Pages - No cache, extra security
+/admin/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Robots-Tag: noindex, nofollow
+  X-Frame-Options: DENY
+  
+# Error Pages
+/404.html
+  Cache-Control: public, max-age=3600
+  
+/500.html
+  Cache-Control: public, max-age=3600

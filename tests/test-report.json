@@ -1,0 +1,200 @@
+{
+  "timestamp": "2025-09-10T10:25:16.892Z",
+  "baseUrl": "https://it-rgxoa648j-andreas-projects-d0af77c4.vercel.app",
+  "tests": [
+    {
+      "name": "Page: Homepage",
+      "status": "PASS",
+      "details": {
+        "loadTime": "2091ms",
+        "title": "Login – Vercel",
+        "status": 200,
+        "brokenImages": 0
+      },
+      "timestamp": "2025-09-10T10:25:21.256Z"
+    },
+    {
+      "name": "Page: Services",
+      "status": "PASS",
+      "details": {
+        "loadTime": "2526ms",
+        "title": "Login – Vercel",
+        "status": 200,
+        "brokenImages": 0
+      },
+      "timestamp": "2025-09-10T10:25:23.787Z"
+    },
+    {
+      "name": "Page: Contact",
+      "status": "PASS",
+      "details": {
+        "loadTime": "1908ms",
+        "title": "Login – Vercel",
+        "status": 200,
+        "brokenImages": 0
+      },
+      "timestamp": "2025-09-10T10:25:25.700Z"
+    },
+    {
+      "name": "City Page: milano",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "cityNameFound": true
+      },
+      "timestamp": "2025-09-10T10:25:27.733Z"
+    },
+    {
+      "name": "City Page: bergamo",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "cityNameFound": true
+      },
+      "timestamp": "2025-09-10T10:25:29.393Z"
+    },
+    {
+      "name": "City Page: brescia",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "cityNameFound": true
+      },
+      "timestamp": "2025-09-10T10:25:31.320Z"
+    },
+    {
+      "name": "City Page: como",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "cityNameFound": true
+      },
+      "timestamp": "2025-09-10T10:25:33.192Z"
+    },
+    {
+      "name": "Navigation Links",
+      "status": "PASS",
+      "details": {
+        "totalLinks": 1,
+        "testedLinks": 1
+      },
+      "timestamp": "2025-09-10T10:25:35.204Z"
+    },
+    {
+      "name": "Responsive: Mobile",
+      "status": "PASS",
+      "details": {
+        "viewport": "375x667",
+        "horizontalScroll": false,
+        "navigationVisible": true
+      },
+      "timestamp": "2025-09-10T10:25:37.128Z"
+    },
+    {
+      "name": "Responsive: Tablet",
+      "status": "PASS",
+      "details": {
+        "viewport": "768x1024",
+        "horizontalScroll": false,
+        "navigationVisible": true
+      },
+      "timestamp": "2025-09-10T10:25:38.907Z"
+    },
+    {
+      "name": "Responsive: Desktop",
+      "status": "PASS",
+      "details": {
+        "viewport": "1920x1080",
+        "horizontalScroll": false,
+        "navigationVisible": true
+      },
+      "timestamp": "2025-09-10T10:25:40.724Z"
+    },
+    {
+      "name": "Performance Metrics",
+      "status": "PASS",
+      "details": {
+        "domContentLoaded": 0.20000000298023224,
+        "loadComplete": 0.29999999701976776,
+        "firstPaint": 524,
+        "firstContentfulPaint": 524
+      },
+      "timestamp": "2025-09-10T10:25:42.475Z"
+    },
+    {
+      "name": "SEO Elements",
+      "status": "PASS",
+      "details": {
+        "title": "Login – Vercel",
+        "description": "",
+        "keywords": "",
+        "ogTitle": "Overview – Vercel",
+        "ogDescription": "",
+        "canonical": "https://vercel.com/login",
+        "h1Count": 1,
+        "h2Count": 0,
+        "imgWithoutAlt": 0
+      },
+      "timestamp": "2025-09-10T10:25:44.213Z"
+    },
+    {
+      "name": "Static Assets",
+      "status": "PASS",
+      "details": {
+        "cssFiles": 14,
+        "jsFiles": 94,
+        "brokenAssets": 0
+      },
+      "timestamp": "2025-09-10T10:25:46.209Z"
+    }
+  ],
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "warnings": 5,
+    "successRate": "100%",
+    "productionReady": true
+  },
+  "performance": {
+    "domContentLoaded": 0.20000000298023224,
+    "loadComplete": 0.29999999701976776,
+    "firstPaint": 524,
+    "firstContentfulPaint": 524
+  },
+  "issues": [
+    {
+      "severity": "WARNING",
+      "title": "Title mismatch on Homepage",
+      "description": "Expected: \"IT-ERA - Assistenza IT Professionale in Lombardia\", Got: \"Login – Vercel\"",
+      "timestamp": "2025-09-10T10:25:21.256Z"
+    },
+    {
+      "severity": "WARNING",
+      "title": "Title mismatch on Services",
+      "description": "Expected: \"Servizi IT Professionali - IT-ERA\", Got: \"Login – Vercel\"",
+      "timestamp": "2025-09-10T10:25:23.784Z"
+    },
+    {
+      "severity": "WARNING",
+      "title": "Title mismatch on Contact",
+      "description": "Expected: \"Contatti - IT-ERA Assistenza IT\", Got: \"Login – Vercel\"",
+      "timestamp": "2025-09-10T10:25:25.697Z"
+    },
+    {
+      "severity": "WARNING",
+      "title": "SEO: Title too short",
+      "description": "Page title should be at least 30 characters",
+      "timestamp": "2025-09-10T10:25:44.213Z"
+    },
+    {
+      "severity": "WARNING",
+      "title": "SEO: Description too short",
+      "description": "Meta description should be at least 120 characters",
+      "timestamp": "2025-09-10T10:25:44.213Z"
+    }
+  ],
+  "recommendations": [
+    "Address SEO issues to improve search engine ranking"
+  ]
+}

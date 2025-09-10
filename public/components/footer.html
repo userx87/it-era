@@ -1,0 +1,216 @@
+<!-- IT-ERA Footer Component -->
+<footer class="bg-gray-900 text-white py-16" role="contentinfo">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Company Info -->
+            <div class="lg:col-span-1">
+                <div class="flex items-center mb-6">
+                    <span class="text-3xl font-bold text-primary-500">IT-</span>
+                    <span class="text-3xl font-bold text-white">ERA</span>
+                </div>
+                <p class="text-gray-300 mb-6 max-w-md">
+                    Il partner tecnologico di fiducia per oltre 500 aziende in Lombardia.
+                    Assistenza informatica professionale con supporto 24/7 e risoluzione problemi in 2 ore.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://linkedin.com/company/it-era" 
+                       class="text-gray-400 hover:text-white transition-colors" 
+                       target="_blank" 
+                       rel="noopener"
+                       aria-label="Seguici su LinkedIn">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://facebook.com/itera.it" 
+                       class="text-gray-400 hover:text-white transition-colors" 
+                       target="_blank" 
+                       rel="noopener"
+                       aria-label="Seguici su Facebook">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com/itera.it" 
+                       class="text-gray-400 hover:text-white transition-colors" 
+                       target="_blank" 
+                       rel="noopener"
+                       aria-label="Seguici su Instagram">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Servizi</h3>
+                <ul class="space-y-3">
+                    <li><a href="/assistenza-informatica" class="text-gray-300 hover:text-white transition-colors">Assistenza IT</a></li>
+                    <li><a href="/sicurezza-informatica" class="text-gray-300 hover:text-white transition-colors">Sicurezza Informatica</a></li>
+                    <li><a href="/cloud-storage" class="text-gray-300 hover:text-white transition-colors">Cloud Storage</a></li>
+                    <li><a href="/backup-disaster-recovery" class="text-gray-300 hover:text-white transition-colors">Backup & Recovery</a></li>
+                    <li><a href="/voip-telefonia" class="text-gray-300 hover:text-white transition-colors">VoIP & Telefonia</a></li>
+                    <li><a href="/microsoft-365" class="text-gray-300 hover:text-white transition-colors">Microsoft 365</a></li>
+                </ul>
+            </div>
+
+            <!-- Sectors -->
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Settori</h3>
+                <ul class="space-y-3">
+                    <li><a href="/settori/pmi-startup" class="text-gray-300 hover:text-white transition-colors">PMI e Startup</a></li>
+                    <li><a href="/settori/studi-medici" class="text-gray-300 hover:text-white transition-colors">Studi Medici</a></li>
+                    <li><a href="/settori/commercialisti" class="text-gray-300 hover:text-white transition-colors">Commercialisti</a></li>
+                    <li><a href="/settori/studi-legali" class="text-gray-300 hover:text-white transition-colors">Studi Legali</a></li>
+                    <li><a href="/settori/industria-40" class="text-gray-300 hover:text-white transition-colors">Industria 4.0</a></li>
+                    <li><a href="/settori/retail-gdo" class="text-gray-300 hover:text-white transition-colors">Retail e GDO</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Contatti</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-primary-500 mt-1 mr-3"></i>
+                        <div>
+                            <div class="font-medium">Sede Operativa</div>
+                            <div class="text-gray-300 text-sm">
+                                Viale Risorgimento 32<br>
+                                20871 Vimercate (MB)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-primary-500 mr-3"></i>
+                        <div>
+                            <div class="font-medium">Telefono</div>
+                            <a href="tel:+390398882041" 
+                               class="text-accent-500 hover:text-accent-400 transition-colors font-semibold"
+                               onclick="gtag('event', 'phone_call', { event_category: 'engagement', event_label: 'footer-phone' });">
+                                039 888 2041
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-primary-500 mr-3"></i>
+                        <div>
+                            <div class="font-medium">Email</div>
+                            <a href="mailto:info@it-era.it" 
+                               class="text-gray-300 hover:text-white transition-colors"
+                               onclick="gtag('event', 'email_click', { event_category: 'engagement', event_label: 'footer-email' });">
+                                info@it-era.it
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-primary-500 mr-3"></i>
+                        <div>
+                            <div class="font-medium">Orari</div>
+                            <div class="text-gray-300 text-sm">
+                                Lun-Ven: 8:00-18:00<br>
+                                <span class="text-accent-500 font-semibold">Emergenze: 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Contact Banner -->
+        <div class="bg-accent-500 rounded-2xl p-6 mb-8 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-xl font-bold mb-2">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        Emergenza IT?
+                    </h4>
+                    <p class="text-white/90">
+                        Supporto immediato 24 ore su 24, 7 giorni su 7
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+390398882041" 
+                       class="bg-white text-accent-500 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors"
+                       onclick="gtag('event', 'phone_call', { event_category: 'engagement', event_label: 'footer-emergency' });">
+                        <i class="fas fa-phone mr-2"></i>
+                        039 888 2041
+                    </a>
+                    <a href="https://wa.me/390398882041" 
+                       class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition-colors"
+                       target="_blank"
+                       rel="noopener"
+                       onclick="gtag('event', 'whatsapp_click', { event_category: 'engagement', event_label: 'footer-whatsapp' });">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    <p>&copy; 2024 IT-ERA. Tutti i diritti riservati.</p>
+                    <p class="mt-1">
+                        P.IVA: 03847350963 | 
+                        <a href="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a> | 
+                        <a href="/cookie-policy" class="hover:text-white transition-colors">Cookie Policy</a> | 
+                        <a href="/termini-servizio" class="hover:text-white transition-colors">Termini di Servizio</a>
+                    </p>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="text-gray-400 text-sm">
+                        <span>Certificazioni:</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="/images/certifications/microsoft-partner.png" 
+                             alt="Microsoft Partner" 
+                             class="h-8 opacity-70 hover:opacity-100 transition-opacity"
+                             loading="lazy">
+                        <img src="/images/certifications/watchguard-partner.png" 
+                             alt="WatchGuard Partner" 
+                             class="h-8 opacity-70 hover:opacity-100 transition-opacity"
+                             loading="lazy">
+                        <img src="/images/certifications/gdpr-compliant.png" 
+                             alt="GDPR Compliant" 
+                             class="h-8 opacity-70 hover:opacity-100 transition-opacity"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IT-ERA",
+        "url": "https://it-era.it",
+        "logo": "https://it-era.it/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+39-039-888-2041",
+            "contactType": "customer service",
+            "availableLanguage": "Italian",
+            "areaServed": "IT"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Viale Risorgimento 32",
+            "addressLocality": "Vimercate",
+            "addressRegion": "Lombardia",
+            "postalCode": "20871",
+            "addressCountry": "IT"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/it-era",
+            "https://facebook.com/itera.it",
+            "https://instagram.com/itera.it"
+        ]
+    }
+    </script>
+</footer>

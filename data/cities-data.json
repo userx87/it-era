@@ -1,0 +1,218 @@
+{
+  "lombardy_cities": {
+    "major_cities": [
+      {
+        "slug": "milano",
+        "name": "Milano",
+        "province": "Milano",
+        "population": 1396059,
+        "description": "Capitale economica d'Italia e centro finanziario della Lombardia",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "15 minuti",
+        "coverage_area": "Milano e hinterland",
+        "specializations": ["Aziende multinazionali", "Startup innovative", "Settore finanziario"]
+      },
+      {
+        "slug": "bergamo",
+        "name": "Bergamo", 
+        "province": "Bergamo",
+        "population": 120287,
+        "description": "Importante centro industriale e commerciale della Lombardia",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "20 minuti",
+        "coverage_area": "Bergamo e provincia",
+        "specializations": ["Industria manifatturiera", "PMI", "Settore tessile"]
+      },
+      {
+        "slug": "brescia",
+        "name": "Brescia",
+        "province": "Brescia", 
+        "population": 196745,
+        "description": "Centro industriale e metallurgico della Lombardia orientale",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "25 minuti",
+        "coverage_area": "Brescia e provincia",
+        "specializations": ["Industria metallurgica", "Meccanica di precisione", "Automotive"]
+      },
+      {
+        "slug": "como",
+        "name": "Como",
+        "province": "Como",
+        "population": 84834,
+        "description": "Centro turistico e industriale sul Lago di Como",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "30 minuti", 
+        "coverage_area": "Como e provincia",
+        "specializations": ["Industria tessile", "Turismo", "Settore alberghiero"]
+      },
+      {
+        "slug": "varese",
+        "name": "Varese",
+        "province": "Varese",
+        "population": 80544,
+        "description": "Importante centro industriale e commerciale del nord Lombardia",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "30 minuti",
+        "coverage_area": "Varese e provincia", 
+        "specializations": ["Industria aeronautica", "Meccanica", "Settore chimico"]
+      },
+      {
+        "slug": "monza",
+        "name": "Monza",
+        "province": "Monza e Brianza",
+        "population": 123598,
+        "description": "Centro industriale e commerciale della Brianza",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "20 minuti",
+        "coverage_area": "Monza, Brianza e provincia",
+        "specializations": ["Industria del mobile", "Automotive", "Tecnologia"]
+      },
+      {
+        "slug": "pavia",
+        "name": "Pavia",
+        "province": "Pavia",
+        "population": 72773,
+        "description": "Centro universitario e agricolo della Lombardia meridionale",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "35 minuti",
+        "coverage_area": "Pavia e provincia",
+        "specializations": ["Settore universitario", "Agricoltura", "Ricerca scientifica"]
+      },
+      {
+        "slug": "cremona", 
+        "name": "Cremona",
+        "province": "Cremona",
+        "population": 72077,
+        "description": "Centro agricolo e industriale della pianura padana",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "40 minuti",
+        "coverage_area": "Cremona e provincia",
+        "specializations": ["Industria alimentare", "Agricoltura", "Liuteria"]
+      },
+      {
+        "slug": "mantova",
+        "name": "Mantova", 
+        "province": "Mantova",
+        "population": 49490,
+        "description": "Centro storico e industriale della Lombardia orientale",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "45 minuti",
+        "coverage_area": "Mantova e provincia",
+        "specializations": ["Industria chimica", "Agricoltura", "Turismo culturale"]
+      },
+      {
+        "slug": "lecco",
+        "name": "Lecco",
+        "province": "Lecco", 
+        "population": 48131,
+        "description": "Centro industriale e turistico sul Lago di Como",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "35 minuti",
+        "coverage_area": "Lecco e provincia",
+        "specializations": ["Industria siderurgica", "Meccanica", "Turismo"]
+      },
+      {
+        "slug": "lodi",
+        "name": "Lodi",
+        "province": "Lodi",
+        "population": 45863,
+        "description": "Centro agricolo e industriale della bassa Lombardia",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "40 minuti",
+        "coverage_area": "Lodi e provincia", 
+        "specializations": ["Industria alimentare", "Agricoltura", "Logistica"]
+      },
+      {
+        "slug": "sondrio",
+        "name": "Sondrio",
+        "province": "Sondrio",
+        "population": 21876,
+        "description": "Centro montano e turistico della Valtellina",
+        "services": ["assistenza-it", "sicurezza-informatica", "cloud-storage", "backup-disaster-recovery", "microsoft-365", "voip-centralino"],
+        "response_time": "50 minuti",
+        "coverage_area": "Sondrio e Valtellina",
+        "specializations": ["Turismo montano", "Industria alimentare", "Energia rinnovabile"]
+      }
+    ],
+    "service_templates": {
+      "assistenza-it": {
+        "title": "Assistenza IT {city} | Supporto Tecnico IT-ERA",
+        "description": "Assistenza IT professionale a {city}. Supporto tecnico 24/7, manutenzione sistemi e consulenza informatica per aziende in {province}.",
+        "keywords": "assistenza IT {city}, supporto tecnico {city}, consulenza informatica {province}",
+        "services": [
+          "Assistenza tecnica on-site",
+          "Supporto remoto 24/7", 
+          "Manutenzione preventiva",
+          "Consulenza IT strategica",
+          "Gestione infrastrutture",
+          "Troubleshooting avanzato"
+        ]
+      },
+      "sicurezza-informatica": {
+        "title": "Sicurezza Informatica {city} | Cybersecurity IT-ERA",
+        "description": "Sicurezza informatica avanzata a {city}. Protezione cyber, firewall, antivirus enterprise e monitoraggio 24/7 per aziende in {province}.",
+        "keywords": "sicurezza informatica {city}, cybersecurity {city}, firewall {province}",
+        "services": [
+          "Firewall enterprise",
+          "Antivirus avanzato",
+          "Monitoraggio 24/7",
+          "Audit sicurezza",
+          "Formazione cybersecurity",
+          "Incident response"
+        ]
+      },
+      "cloud-storage": {
+        "title": "Cloud Storage {city} | Soluzioni Cloud IT-ERA", 
+        "description": "Cloud storage aziendale a {city}. Backup cloud, sincronizzazione dati e accesso remoto sicuro per aziende in {province}.",
+        "keywords": "cloud storage {city}, backup cloud {city}, archiviazione dati {province}",
+        "services": [
+          "Backup automatico",
+          "Sincronizzazione real-time",
+          "Accesso remoto sicuro",
+          "Disaster recovery",
+          "Migrazione cloud",
+          "Storage scalabile"
+        ]
+      },
+      "backup-disaster-recovery": {
+        "title": "Backup e Disaster Recovery {city} | IT-ERA",
+        "description": "Backup e disaster recovery a {city}. Protezione dati, ripristino rapido e continuità operativa per aziende in {province}.",
+        "keywords": "backup {city}, disaster recovery {city}, protezione dati {province}",
+        "services": [
+          "Backup automatizzato",
+          "Disaster recovery plan",
+          "Ripristino rapido",
+          "Test di recovery",
+          "Backup incrementale",
+          "Archiviazione sicura"
+        ]
+      },
+      "microsoft-365": {
+        "title": "Microsoft 365 {city} | Implementazione IT-ERA",
+        "description": "Microsoft 365 a {city}. Implementazione, migrazione e gestione completa Office 365 per aziende in {province}.",
+        "keywords": "microsoft 365 {city}, office 365 {city}, email aziendale {province}",
+        "services": [
+          "Implementazione M365",
+          "Migrazione email",
+          "Configurazione Teams",
+          "Gestione licenze",
+          "Formazione utenti",
+          "Supporto continuo"
+        ]
+      },
+      "voip-centralino": {
+        "title": "VoIP Centralino {city} | Telefonia Cloud IT-ERA",
+        "description": "VoIP e centralino cloud a {city}. Telefonia aziendale avanzata, call center e comunicazioni unificate per aziende in {province}.",
+        "keywords": "voip {city}, centralino cloud {city}, telefonia aziendale {province}",
+        "services": [
+          "Centralino cloud",
+          "VoIP aziendale", 
+          "Call center",
+          "Comunicazioni unificate",
+          "Telefonia mobile",
+          "Integrazione CRM"
+        ]
+      }
+    }
+  }
+}

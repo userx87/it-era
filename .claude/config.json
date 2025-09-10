@@ -1,0 +1,58 @@
+{
+  "project": "it-era",
+  "autoSave": true,
+  "hooks": {
+    "preEdit": "npx claude-flow@alpha hooks pre-edit --file \"$FILE\" --memory-key \"edit/pre/$TIMESTAMP\"",
+    "postEdit": "npx claude-flow@alpha hooks post-edit --file \"$FILE\" --memory-key \"edit/post/$TIMESTAMP\"",
+    "preBash": "npx claude-flow@alpha hooks pre-command --command \"$COMMAND\" --memory-key \"bash/pre/$TIMESTAMP\"",
+    "postBash": "npx claude-flow@alpha hooks post-command --command \"$COMMAND\" --output \"$OUTPUT\" --memory-key \"bash/post/$TIMESTAMP\"",
+    "preTask": "npx claude-flow@alpha hooks pre-task --task \"$TASK\" --memory-key \"task/start/$TIMESTAMP\"",
+    "postTask": "npx claude-flow@alpha hooks post-task --task \"$TASK\" --memory-key \"task/complete/$TIMESTAMP\"",
+    "sessionStart": "npx claude-flow@alpha session start --auto-memory true",
+    "sessionEnd": "npx claude-flow@alpha session end --export-memory true"
+  },
+  "memory": {
+    "autoSaveInterval": 300,
+    "namespaces": [
+      "edits",
+      "commands", 
+      "tasks",
+      "decisions",
+      "state",
+      "config"
+    ],
+    "persistence": {
+      "local": ".claude/memory-backup.json",
+      "remote": "claude-flow-cloud"
+    }
+  },
+  "tracking": {
+    "trackEdits": true,
+    "trackCommands": true,
+    "trackTasks": true,
+    "trackDecisions": true,
+    "trackErrors": true
+  },
+  "patterns": [
+    {
+      "match": "GA4|GTM|analytics",
+      "action": "save",
+      "namespace": "config/analytics"
+    },
+    {
+      "match": "deploy|wrangler|cloudflare",
+      "action": "save",
+      "namespace": "deployment"
+    },
+    {
+      "match": "error|bug|fix",
+      "action": "save",
+      "namespace": "issues"
+    },
+    {
+      "match": "TODO|FIXME|NOTE",
+      "action": "save",
+      "namespace": "todos"
+    }
+  ]
+}

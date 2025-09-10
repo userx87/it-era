@@ -1,0 +1,2239 @@
+========================
+CODE SNIPPETS
+========================
+TITLE: Start VuePress Development Server
+DESCRIPTION: Starts the local development server for VuePress, allowing you to preview your site in real-time as you make changes. Requires dependencies to be installed.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/vuepress/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: Starts the Remix application in development mode. The server automatically rebuilds assets when files change.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/02-remix-basics-mjs/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: Starts the Remix application in development mode. The server automatically rebuilds assets when files change.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/03-with-pnpm/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: Starts the Remix application in development mode. The server automatically rebuilds assets when files change.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/01-remix-basics/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Run Hexo Server
+DESCRIPTION: Starts the Hexo development server, allowing you to preview your blog locally. The server automatically watches for changes and reloads the browser.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v6/source/_posts/hello-world.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+hexo server
+```
+
+----------------------------------------
+
+TITLE: Run Hexo Server
+DESCRIPTION: This command starts the Hexo development server, allowing you to preview your site locally. It watches for changes and automatically reloads the browser.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v5/source/_posts/hello-world.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+hexo server
+```
+
+----------------------------------------
+
+TITLE: Run Hexo Server
+DESCRIPTION: This command starts the Hexo development server, allowing you to preview your site locally. It watches for changes and automatically reloads the browser.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hexo/source/_posts/hello-world.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+hexo server
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: Starts the Remix application in development mode. The server automatically rebuilds assets when files change.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/04-with-npm9-linked/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Install and Run Hydrogen v2 Locally
+DESCRIPTION: Commands to set up and run a Hydrogen v2 storefront locally. This includes installing project dependencies and starting the development server.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hydrogen-2/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Run Hexo Server
+DESCRIPTION: This command starts the Hexo development server, allowing you to preview your site locally. It watches for changes and automatically reloads the browser.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/07-hexo-node/source/_posts/hello-world.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+hexo server
+```
+
+----------------------------------------
+
+TITLE: Set Up Svelte Project with Vite
+DESCRIPTION: This snippet shows the command-line steps to create a new Svelte project using Vite, install dependencies, and start the development server.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/svelte/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm create vite@latest my-svelte-project
+cd my-svelte-project
+npm install
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Run SolidStart Development Server
+DESCRIPTION: Starts the development server for a SolidStart project. This command is typically run after installing dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/solidstart-1/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies and Run Preact App
+DESCRIPTION: Commands to install project dependencies using npm and start the Preact application with hot reloading. Also includes commands for building the production version and serving it locally.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/preact/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# test the production build locally
+npm run serve
+
+# run tests with jest and enzyme
+npm run test
+```
+
+----------------------------------------
+
+TITLE: Deploy Hexo Site
+DESCRIPTION: Deploys your generated static files to a remote hosting service. This command simplifies the deployment process for Hexo blogs.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v6/source/_posts/hello-world.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+hexo deploy
+```
+
+----------------------------------------
+
+TITLE: Deploy Hexo Site
+DESCRIPTION: This command deploys your generated Hexo site to a remote hosting service. Configuration for deployment is usually done in the _config.yml file.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hexo/source/_posts/hello-world.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+hexo deploy
+```
+
+----------------------------------------
+
+TITLE: Deploy Hexo Site
+DESCRIPTION: This command deploys your generated Hexo site to a remote hosting service. Configuration for deployment is usually done in the _config.yml file.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v5/source/_posts/hello-world.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+hexo deploy
+```
+
+----------------------------------------
+
+TITLE: Develop Gatsby Site Locally
+DESCRIPTION: After creating a new Gatsby site, this command navigates into the project directory and starts the local development server. This allows you to see your site in real-time as you make changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/gatsby-v5-pathPrefix/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+cd my-gatsby-site/
+
+```
+
+LANGUAGE: shell
+CODE:
+```
+npm run develop
+```
+
+----------------------------------------
+
+TITLE: Develop Gatsby Site Locally
+DESCRIPTION: After creating a new Gatsby site, this command navigates into the project directory and starts the local development server. This allows you to see your site in real-time as you make changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/gatsby-v5/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+cd my-gatsby-site/
+
+```
+
+LANGUAGE: shell
+CODE:
+```
+npm run develop
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies and Start Development Server
+DESCRIPTION: Instructions for installing project dependencies using npm and starting the development server with Rollup. The app will be accessible at localhost:5000.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/19-yarn-v2/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+cd svelte-app
+npm install
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Deploy Hexo Site
+DESCRIPTION: This command deploys your generated Hexo site to a remote hosting service. Configuration for deployment is usually done in the _config.yml file.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/07-hexo-node/source/_posts/hello-world.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+hexo deploy
+```
+
+----------------------------------------
+
+TITLE: Create and Configure New Remix Project
+DESCRIPTION: Demonstrates creating a new Remix project and copying an existing 'app' folder into it for deployment using a template. This involves navigating directories, removing the default app, and copying the custom app folder.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/01-remix-basics/README.md#_snippet_3
+
+LANGUAGE: sh
+CODE:
+```
+cd ..
+npx create-remix@latest
+cd my-new-remix-app
+rm -rf app
+cp -R ../my-old-remix-app/app app
+```
+
+----------------------------------------
+
+TITLE: Start SvelteKit Development Server
+DESCRIPTION: This command starts the SvelteKit development server. You can optionally include the `--open` flag to automatically launch the application in your default web browser.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/sveltekit-1/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+pnpm run dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+pnpm run dev -- --open
+```
+
+----------------------------------------
+
+TITLE: Create and Configure New Remix Project
+DESCRIPTION: Demonstrates creating a new Remix project and copying an existing 'app' folder into it for deployment using a template. This involves navigating directories, removing the default app, and copying the custom app folder.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/02-remix-basics-mjs/README.md#_snippet_3
+
+LANGUAGE: sh
+CODE:
+```
+cd ..
+npx create-remix@latest
+cd my-new-remix-app
+rm -rf app
+cp -R ../my-old-remix-app/app app
+```
+
+----------------------------------------
+
+TITLE: Create and Configure New Remix Project
+DESCRIPTION: Demonstrates creating a new Remix project and copying an existing 'app' folder into it for deployment using a template. This involves navigating directories, removing the default app, and copying the custom app folder.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/03-with-pnpm/README.md#_snippet_3
+
+LANGUAGE: sh
+CODE:
+```
+cd ..
+npx create-remix@latest
+cd my-new-remix-app
+rm -rf app
+cp -R ../my-old-remix-app/app app
+```
+
+----------------------------------------
+
+TITLE: Start VitePress Development Server
+DESCRIPTION: Starts the local development server for the VitePress project, allowing for live preview and hot-reloading during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/vitepress/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+----------------------------------------
+
+TITLE: Create and Configure New Remix Project
+DESCRIPTION: Demonstrates creating a new Remix project and copying an existing 'app' folder into it for deployment using a template. This involves navigating directories, removing the default app, and copying the custom app folder.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/04-with-npm9-linked/README.md#_snippet_3
+
+LANGUAGE: sh
+CODE:
+```
+cd ..
+npx create-remix@latest
+cd my-new-remix-app
+rm -rf app
+cp -R ../my-old-remix-app/app app
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: This command starts the local development server for the Remix application, allowing you to preview changes in real-time.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/remix/README.md#_snippet_3
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Start VitePress Development Server
+DESCRIPTION: Starts the local development server for the VitePress project, allowing for live preview and hot-reloading during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/vitepress/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+----------------------------------------
+
+TITLE: Start Remix Application in Production Mode
+DESCRIPTION: Runs the built Remix application in production mode. This is typically used after the build process.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/02-remix-basics-mjs/README.md#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Start Remix Application in Production Mode
+DESCRIPTION: Runs the built Remix application in production mode. This is typically used after the build process.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/03-with-pnpm/README.md#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Start Docusaurus Development Server
+DESCRIPTION: Navigates to the newly created website directory and starts the local development server. The site will be available at http://localhost:3000/ and reloads automatically on changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/docusaurus-2/docs/intro.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+cd my-website
+npm run start
+```
+
+----------------------------------------
+
+TITLE: Start Remix Application in Production Mode
+DESCRIPTION: Runs the built Remix application in production mode. This is typically used after the build process.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/01-remix-basics/README.md#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Start Remix Application in Production Mode
+DESCRIPTION: Runs the built Remix application in production mode. This is typically used after the build process.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/04-with-npm9-linked/README.md#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Start Development Server
+DESCRIPTION: Commands to start the development server using npm, yarn, or pnpm.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/xmcp/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+----------------------------------------
+
+TITLE: Run Next.js Development Server
+DESCRIPTION: Commands to start the Next.js development server using different package managers. This allows for local development and testing of the Next.js application.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/storybook-v7/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+pnpm dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+bun dev
+```
+
+----------------------------------------
+
+TITLE: Run Nitro Development Server
+DESCRIPTION: Starts the development server for a Nitro project after installing dependencies. This command is typically run using npm, pnpm, or yarn.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/nitro/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Clone and Install Stencil Component Starter
+DESCRIPTION: This snippet shows how to clone the Stencil component starter repository, navigate into the new directory, remove the default origin, install dependencies, and start the development server.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/stencil-v4/readme.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+git clone https://github.com/ionic-team/stencil-component-starter.git my-component
+cd my-component
+git remote rm origin
+npm install
+npm start
+```
+
+----------------------------------------
+
+TITLE: Run Next.js Development Server
+DESCRIPTION: Commands to start the Next.js development server using different package managers. This allows for local development and testing of the Next.js application.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/41-turborepo-supporting-corepack-home/apps/docs/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+pnpm dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+bun dev
+```
+
+----------------------------------------
+
+TITLE: Create New Hexo Post
+DESCRIPTION: This command creates a new post using the Hexo CLI. It takes the post title as an argument and generates the necessary file structure for a new blog entry.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v6/source/_posts/hello-world.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+hexo new "My New Post"
+```
+
+----------------------------------------
+
+TITLE: Initialize Vercel Project
+DESCRIPTION: Commands to initialize a new Vercel project using the CLI. You can pick an example interactively or specify a particular example and optionally a project name.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+vercel init
+vercel init <example>
+vercel init <example> <name>
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: This command starts the local development server for the Remix application, allowing you to preview changes in real-time.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-vite/05-custom-entry-server/README.md#_snippet_3
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Run Development Server (Next.js)
+DESCRIPTION: Commands to start the Next.js development server using different package managers. This allows for local development and testing of the application.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/nextjs/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+pnpm dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+bun dev
+```
+
+----------------------------------------
+
+TITLE: download Usage Example - JavaScript
+DESCRIPTION: An example showing how to use the download utility to create a filesystem from a Files object at a specified work path, potentially with meta information for optimized downloads.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/DEVELOPING_A_RUNTIME.md#_snippet_17
+
+LANGUAGE: javascript
+CODE:
+```
+await download(files, workPath, meta);
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies
+DESCRIPTION: This command installs all the necessary Node.js dependencies required for the Eleventy blog project to function correctly.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-2/README.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Install Node.js Dependencies
+DESCRIPTION: Installs all the necessary Node.js packages for the Eleventy project. This command reads the package.json file to fetch dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/eleventy/README.md#_snippet_2
+
+LANGUAGE: Shell
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Create New Hexo Post
+DESCRIPTION: This command creates a new post in your Hexo project. It takes the title of the post as an argument.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v5/source/_posts/hello-world.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+hexo new "My New Post"
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies with PNPM
+DESCRIPTION: Installs all the necessary project dependencies using the PNPM package manager. This is a standard first step for setting up or running a Node.js-based project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/astro/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+pnpm install
+```
+
+----------------------------------------
+
+TITLE: Create Gatsby Site with Minimal Starter
+DESCRIPTION: This command uses the Gatsby CLI to generate a new Gatsby site, specifically utilizing the minimal starter template. It's the first step in setting up a new Gatsby project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/gatsby-v5-pathPrefix/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+# create a new Gatsby site using the minimal starter
+
+```
+
+LANGUAGE: shell
+CODE:
+```
+npm init gatsby
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies
+DESCRIPTION: This command installs all the necessary Node.js dependencies required for the Eleventy blog project to function correctly.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-v0/README.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Install Node.js
+DESCRIPTION: Installs Node.js on OS X using Homebrew.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+brew install node
+```
+
+----------------------------------------
+
+TITLE: Start Docusaurus Development Server
+DESCRIPTION: Starts the local development server to preview the Docusaurus site in real-time.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/docusaurus-v1/website/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+# Start the site
+$ yarn start
+```
+
+----------------------------------------
+
+TITLE: Create Gatsby Site with Minimal Starter
+DESCRIPTION: This command uses the Gatsby CLI to generate a new Gatsby site, specifically utilizing the minimal starter template. It's the first step in setting up a new Gatsby project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/gatsby-v5/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+# create a new Gatsby site using the minimal starter
+
+```
+
+LANGUAGE: shell
+CODE:
+```
+npm init gatsby
+```
+
+----------------------------------------
+
+TITLE: Run Next.js Development Server
+DESCRIPTION: Commands to start the Next.js development server using different package managers. This allows for local development and testing of the Next.js application.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/41-turborepo-supporting-corepack-home/apps/web/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+yarn dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+pnpm dev
+```
+
+LANGUAGE: bash
+CODE:
+```
+bun dev
+```
+
+----------------------------------------
+
+TITLE: Create New Hexo Post
+DESCRIPTION: This command creates a new post in your Hexo project. It takes the title of the post as an argument.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hexo/source/_posts/hello-world.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+hexo new "My New Post"
+```
+
+----------------------------------------
+
+TITLE: Generate Hexo Static Files
+DESCRIPTION: This command generates the static files for your Hexo site, which are typically placed in the public directory and ready for deployment.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v5/source/_posts/hello-world.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+hexo generate
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies
+DESCRIPTION: This command installs all the necessary Node.js dependencies for the Remix project, as defined in the project's package.json file.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/remix/README.md#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Start Local Development Server with PNPM
+DESCRIPTION: Starts a local development server, typically at http://localhost:3000, allowing you to preview your Astro site during development. Changes are usually reflected live without a full page reload.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/astro/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+pnpm run dev
+```
+
+----------------------------------------
+
+TITLE: Initialize Ionic Angular Project with CLI
+DESCRIPTION: This command uses the Ionic CLI to start a new Ionic Angular project with a 'tabs' template. It then navigates into the newly created project directory. Ensure you have Node.js and npm installed to use npx.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/ionic-angular/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npx @ionic/cli start [project-name] tabs --type angular && cd [project-name]
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies
+DESCRIPTION: Installs project-specific dependencies, including Brunch plugins.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Generate Hexo Static Files
+DESCRIPTION: This command generates the static files for your Hexo site, which are typically placed in the public directory and ready for deployment.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hexo/source/_posts/hello-world.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+hexo generate
+```
+
+----------------------------------------
+
+TITLE: Serve Eleventy Locally
+DESCRIPTION: This command builds the Eleventy site and starts a local development server, allowing you to preview your blog in real-time as you make changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-2/README.md#_snippet_4
+
+LANGUAGE: bash
+CODE:
+```
+npx eleventy --serve
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies
+DESCRIPTION: This command installs all the necessary Node.js dependencies for the Remix project, as defined in the project's package.json file.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-vite/05-custom-entry-server/README.md#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Storybook In-depth Guides
+DESCRIPTION: Offers access to in-depth guides and best practices for using Storybook, contributed by leading teams in the industry.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/fixtures/unit/commands/build/storybook-with-middleware/stories/Introduction.mdx#_snippet_8
+
+LANGUAGE: markdown
+CODE:
+```
+In-depth guides
+Best practices from leading teams
+```
+
+----------------------------------------
+
+TITLE: Initialize Hexo Project with CLI
+DESCRIPTION: This command initializes a new Hexo project using the Hexo Command Line Interface. Ensure Hexo is installed globally before running this command.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hexo/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+hexo init project-name
+```
+
+----------------------------------------
+
+TITLE: Serve Eleventy Locally
+DESCRIPTION: This command builds the Eleventy site and starts a local development server, allowing you to preview your blog in real-time as you make changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-v0/README.md#_snippet_4
+
+LANGUAGE: bash
+CODE:
+```
+npx eleventy --serve
+```
+
+----------------------------------------
+
+TITLE: Deploy with Vercel CLI
+DESCRIPTION: These commands demonstrate how to install the Vercel CLI globally and then initiate a deployment of the current project to Vercel.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/remix/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm i -g vercel
+vercel
+```
+
+----------------------------------------
+
+TITLE: Install VuePress Dependencies
+DESCRIPTION: Installs the necessary project dependencies for VuePress using Yarn. This is a prerequisite for running the development server or building the project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/vuepress/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+yarn install
+```
+
+----------------------------------------
+
+TITLE: Start Development Server
+DESCRIPTION: Starts the Brunch development server, which watches for changes and rebuilds the project continuously. It also launches an HTTP server with pushState support.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_4
+
+LANGUAGE: bash
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Create New Hexo Post
+DESCRIPTION: This command creates a new post in your Hexo project. It takes the title of the post as an argument.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/07-hexo-node/source/_posts/hello-world.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+hexo new "My New Post"
+```
+
+----------------------------------------
+
+TITLE: Next.js Page Component Example
+DESCRIPTION: An example of a Next.js page component written in TypeScript. This file, typically located in the 'app' directory, defines the content and structure of a page that auto-updates during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/storybook-v7/README.md#_snippet_1
+
+LANGUAGE: typescript
+CODE:
+```
+app/page.tsx
+```
+
+----------------------------------------
+
+TITLE: Start Production Development Server with PNPM
+DESCRIPTION: Starts a development server specifically for the production build, usually running on http://localhost:3000. This can be helpful for debugging production-specific issues locally.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/astro/README.md#_snippet_4
+
+LANGUAGE: bash
+CODE:
+```
+pnpm run start
+```
+
+----------------------------------------
+
+TITLE: Start Gatsby Development Server
+DESCRIPTION: After creating a Gatsby site and navigating into its directory, this command starts the development server. It allows for real-time updates as you edit your code.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/gatsby/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+cd my-gatsby-site/
+npm run develop
+```
+
+----------------------------------------
+
+TITLE: Local Development Setup with pnpm
+DESCRIPTION: This code block provides the necessary commands to clone the Vercel repository, install dependencies using pnpm, build the project, lint, and run unit tests. It's the initial setup for contributing to the project locally.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+git clone https://github.com/vercel/vercel
+cd vercel
+corepack enable
+pnpm install
+pnpm build
+pnpm lint
+pnpm test-unit
+```
+
+----------------------------------------
+
+TITLE: Deploy with Vercel CLI
+DESCRIPTION: These commands demonstrate how to install the Vercel CLI globally and then initiate a deployment of the current project to Vercel.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-vite/05-custom-entry-server/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm i -g vercel
+vercel
+```
+
+----------------------------------------
+
+TITLE: Start Nuxt Development Server
+DESCRIPTION: Starts the Nuxt development server, typically accessible at http://localhost:3000. This command is used for local development and testing.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/nuxtjs/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Generate Hexo Static Files
+DESCRIPTION: This command generates the static files for your Hexo site, which are typically placed in the public directory and ready for deployment.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/07-hexo-node/source/_posts/hello-world.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+hexo generate
+```
+
+----------------------------------------
+
+TITLE: Build Remix Application for Production
+DESCRIPTION: Builds the Remix application for production deployment. This command generates optimized assets and server code.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/02-remix-basics-mjs/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm run build
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies with Yarn
+DESCRIPTION: Installs the necessary project dependencies using the Yarn package manager. This is a prerequisite for running the development server or building the project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/vitepress/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+yarn install
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies with Yarn
+DESCRIPTION: Installs the necessary project dependencies using the Yarn package manager. This is a prerequisite for running the development server or building the project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/vitepress/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+yarn install
+```
+
+----------------------------------------
+
+TITLE: Next.js Page Component Example
+DESCRIPTION: An example of a Next.js page component written in TypeScript. This file, typically located in the 'app' directory (e.g., app/page.tsx), is where the main content of the page is defined and can be edited for auto-updates during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/41-turborepo-supporting-corepack-home/apps/docs/README.md#_snippet_1
+
+LANGUAGE: typescript
+CODE:
+```
+app/page.tsx
+```
+
+----------------------------------------
+
+TITLE: Next.js Page Component Example
+DESCRIPTION: An example of a Next.js page component written in TypeScript. This file, typically located in the 'app' directory (e.g., app/page.tsx), is where the main content of the page is defined and can be edited for auto-updates during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/41-turborepo-supporting-corepack-home/apps/web/README.md#_snippet_1
+
+LANGUAGE: typescript
+CODE:
+```
+app/page.tsx
+```
+
+----------------------------------------
+
+TITLE: Build Remix Application for Production
+DESCRIPTION: Builds the Remix application for production deployment. This command generates optimized assets and server code.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/01-remix-basics/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm run build
+```
+
+----------------------------------------
+
+TITLE: Clone Eleventy Repository
+DESCRIPTION: Clones the Eleventy base blog repository to start a new project. This is the initial step to set up a local Eleventy site.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/eleventy/README.md#_snippet_0
+
+LANGUAGE: Shell
+CODE:
+```
+git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+```
+
+----------------------------------------
+
+TITLE: Install Brunch New Project
+DESCRIPTION: Creates a new Brunch project using the ES6 skeleton.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+brunch new dir -s es6
+```
+
+----------------------------------------
+
+TITLE: Start Development Server
+DESCRIPTION: Starts the development server for the Polymer application. The app will be served at http://127.0.0.1:8081 and will provide basic URL routing.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/polymer-v3/README.md#_snippet_2
+
+LANGUAGE: Shell
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Build Remix Application for Production
+DESCRIPTION: Builds the Remix application for production deployment. This command generates optimized assets and server code.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/03-with-pnpm/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm run build
+```
+
+----------------------------------------
+
+TITLE: Storybook In-depth Guides
+DESCRIPTION: Offers access to in-depth guides and best practices for using Storybook, contributed by leading teams in the industry.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/storybook/stories/Introduction.mdx#_snippet_8
+
+LANGUAGE: markdown
+CODE:
+```
+In-depth guides
+Best practices from leading teams
+```
+
+----------------------------------------
+
+TITLE: Build SolidStart Project for Deployment
+DESCRIPTION: Builds the SolidStart project for deployment. This process utilizes the Vercel Adapter for SolidStart.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/solidstart-1/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm run build
+```
+
+----------------------------------------
+
+TITLE: Build Remix Application for Production
+DESCRIPTION: Builds the Remix application for production deployment. This command generates optimized assets and server code.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/04-with-npm9-linked/README.md#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm run build
+```
+
+----------------------------------------
+
+TITLE: Generate Hexo Static Files
+DESCRIPTION: Generates the static files for your Hexo blog, which are typically placed in the 'public' directory. These files are ready to be deployed to any static hosting service.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hexo-v6/source/_posts/hello-world.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+hexo generate
+```
+
+----------------------------------------
+
+TITLE: Angular CLI: Serve Application
+DESCRIPTION: Starts the Angular development server for live reloading. Navigate to http://localhost:4200/ to view the application.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/angular/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+ng serve
+```
+
+----------------------------------------
+
+TITLE: Angular CLI: Help
+DESCRIPTION: Displays help information for the Angular CLI, including command references and usage examples.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/angular/README.md#_snippet_5
+
+LANGUAGE: bash
+CODE:
+```
+ng help
+```
+
+----------------------------------------
+
+TITLE: Eleventy Configuration Example
+DESCRIPTION: This snippet shows a typical Eleventy configuration file, `.eleventy.js`, where you can customize site settings, template formats, and more.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-2/README.md#_snippet_7
+
+LANGUAGE: javascript
+CODE:
+```
+// Example content of .eleventy.js
+module.exports = function(eleventyConfig) {
+  // Add custom collections, filters, shortcodes, etc.
+  // Configure template formats
+  eleventyConfig.setTemplateFormats(['njk', 'md', 'html', 'liquid', 'css', 'png']);
+
+  // Copy static assets
+  eleventyConfig.addPassthroughCopy('images');
+
+  return {
+    dir: {
+      input: '.',
+      output: '_site'
+    }
+  };
+};
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies and Start Dev Server
+DESCRIPTION: Commands to install project dependencies and start the local development server for a Hydrogen project. This allows for real-time updates during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hydrogen/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Get Help with Astro CLI using PNPM
+DESCRIPTION: Displays help information for the Astro CLI, providing details on available commands and their usage. This is essential for understanding the full capabilities of the Astro build tool.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/astro/README.md#_snippet_6
+
+LANGUAGE: bash
+CODE:
+```
+pnpm run astro --help
+```
+
+----------------------------------------
+
+TITLE: Create and Setup Svelte App
+DESCRIPTION: This snippet demonstrates how to create a new Svelte application from a template using degit, navigate into the project directory, and install dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/svelte-v3/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npx degit sveltejs/template svelte-app
+cd svelte-app
+npm install
+```
+
+----------------------------------------
+
+TITLE: Start Stencil Development Server
+DESCRIPTION: Starts the development server for a Stencil application. This allows for live reloading and testing during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/stencil-v1/readme.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Create and Setup Svelte App
+DESCRIPTION: This snippet demonstrates how to create a new Svelte application from a template using degit, navigate into the project directory, and install dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/svelte-v4/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npx degit sveltejs/template svelte-app
+cd svelte-app
+npm install
+```
+
+----------------------------------------
+
+TITLE: Install Polymer CLI
+DESCRIPTION: Installs the Polymer CLI globally using npm. This is a prerequisite for initializing projects from the Polymer starter kit.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/polymer-v3/README.md#_snippet_0
+
+LANGUAGE: Shell
+CODE:
+```
+npm install -g polymer-cli@next
+```
+
+----------------------------------------
+
+TITLE: Install Brunch Globally
+DESCRIPTION: Installs the Brunch build tool globally.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+npm install -g brunch
+```
+
+----------------------------------------
+
+TITLE: Eleventy Configuration Example
+DESCRIPTION: This snippet shows a typical Eleventy configuration file, `.eleventy.js`, where you can customize site settings, template formats, and more.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-v0/README.md#_snippet_7
+
+LANGUAGE: javascript
+CODE:
+```
+// Example content of .eleventy.js
+module.exports = function(eleventyConfig) {
+  // Add custom collections, filters, shortcodes, etc.
+  // Configure template formats
+  eleventyConfig.setTemplateFormats(['njk', 'md', 'html', 'liquid', 'css', 'png']);
+
+  // Copy static assets
+  eleventyConfig.addPassthroughCopy('images');
+
+  return {
+    dir: {
+      input: '.',
+      output: '_site'
+    }
+  };
+};
+```
+
+----------------------------------------
+
+TITLE: Install Nuxt Dependencies
+DESCRIPTION: Installs project dependencies using yarn, npm, or pnpm. Ensure you have the respective package manager installed.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/nuxtjs/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+# yarn
+yarn
+
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
+```
+
+----------------------------------------
+
+TITLE: Run Eleventy Build
+DESCRIPTION: This command executes the Eleventy static site generator to build your blog, creating the final static files for deployment.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-v0/README.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+npx eleventy
+```
+
+----------------------------------------
+
+TITLE: Install Vue.js Dependencies
+DESCRIPTION: Installs the necessary dependencies for the Vue.js project using Yarn. This is a prerequisite for running the application locally.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/vue/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+yarn install
+```
+
+----------------------------------------
+
+TITLE: Run Hydrogen Development Server
+DESCRIPTION: Commands to install dependencies and start the local development server for a Hydrogen application. This allows for real-time updates and testing during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/hydrogen/test/fixtures/demo-store-js/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Start Nuxt 3 Development Server
+DESCRIPTION: Starts the Nuxt 3 development server, typically accessible at http://localhost:3000. This command is used for local development and testing.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/nuxt-v3/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+----------------------------------------
+
+TITLE: Run Hydrogen Development Server
+DESCRIPTION: Commands to install dependencies and start the local development server for a Hydrogen application. This allows for real-time updates and testing during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/hydrogen/test/fixtures/demo-store-ts/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: Run Eleventy Build
+DESCRIPTION: This command executes the Eleventy static site generator to build your blog, creating the final static files for deployment.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-2/README.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+npx eleventy
+```
+
+----------------------------------------
+
+TITLE: Initialize New Blitz.js Project
+DESCRIPTION: This command uses npx to create a new Blitz.js project. It's the standard way to start a new application with the Blitz.js framework.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/blitzjs/README.md#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npx blitz new
+```
+
+----------------------------------------
+
+TITLE: Install Hugo from Source using Go Modules
+DESCRIPTION: This snippet demonstrates how to fetch, build, and install Hugo from its GitHub repository using Go Modules. It requires Git and a recent version of Go (1.11+). The process involves cloning the repository, navigating into the directory, and running 'go install'. It also notes a substitution for Windows users.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/08-hugo/README.md#_snippet_0
+
+LANGUAGE: Bash
+CODE:
+```
+mkdir $HOME/src
+cd $HOME/src
+git clone https://github.com/gohugoio/hugo.git
+cd hugo
+go install
+```
+
+----------------------------------------
+
+TITLE: Install External Component as devDependency
+DESCRIPTION: Command to install an external Svelte component as a dev dependency, ensuring it gets bundled and compiled with the application.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/sapper-v0/README.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+npm install -D @sveltejs/svelte-virtual-list
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies for Nuxt 3
+DESCRIPTION: Installs project dependencies using various package managers (npm, pnpm, yarn, bun). Ensure you have the chosen package manager installed before running these commands.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/nuxt-v3/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+----------------------------------------
+
+TITLE: Clone Eleventy Base Blog Repository
+DESCRIPTION: This command clones the Eleventy base blog starter repository to your local machine, allowing you to start building your blog.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-2/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+```
+
+----------------------------------------
+
+TITLE: Create and Setup Svelte App
+DESCRIPTION: This snippet shows how to create a new Svelte application using degit and navigate into the project directory. It requires Node.js to be installed.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/19-yarn-v2/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npx degit sveltejs/template svelte-app
+cd svelte-app
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies with npm
+DESCRIPTION: Installs all project dependencies using npm. This is a prerequisite for running the development server or building the project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/vue-v3/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Install Babel Stage 0 Preset
+DESCRIPTION: Installs the Babel preset for stage 0 features, allowing the use of proposed JavaScript features.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_6
+
+LANGUAGE: bash
+CODE:
+```
+npm install --save-dev babel-preset-stage-0
+```
+
+----------------------------------------
+
+TITLE: Install Hexo Landscape Theme
+DESCRIPTION: Installs the Hexo Landscape theme by cloning the repository into the themes directory. Requires Git.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/07-hexo-node/themes/landscape/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+```
+
+----------------------------------------
+
+TITLE: Install Sanity CLI Dependencies
+DESCRIPTION: Installs the necessary dependencies for the Sanity CLI to manage the content studio. This is a prerequisite for local development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/sanity/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx @sanity/cli install
+```
+
+----------------------------------------
+
+TITLE: Deploy Hydrogen v2 with Vercel CLI
+DESCRIPTION: Instructions for deploying a Hydrogen v2 storefront using the Vercel CLI. This involves installing the Vercel CLI globally and then running the deploy command.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hydrogen-2/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm i -g vercel
+vercel
+```
+
+----------------------------------------
+
+TITLE: Start Development Server with npm
+DESCRIPTION: Starts the development server using npm, which processes PostCSS and scripts. This command is used for local development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/08-hugo/themes/ananke/src/readme.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Develop Gatsby Site
+DESCRIPTION: Navigates into the newly created Gatsby project directory and starts the development server, allowing for live preview of changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/fixtures/unit/vercel-build-gatsby/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+cd my-default-starter/
+gatsby develop
+```
+
+----------------------------------------
+
+TITLE: Vercel CLI Usage Examples
+DESCRIPTION: Demonstrates common commands for interacting with the Vercel CLI, such as deploying projects and managing environments.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/zola-v0/themes/feather/content/my-first-post.md#_snippet_37
+
+LANGUAGE: bash
+CODE:
+```
+vercel deploy --prod
+vercel env add production NODE_ENV production
+vercel rm --yes --prod my-project
+```
+
+----------------------------------------
+
+TITLE: Storybook Documentation Link
+DESCRIPTION: Provides a link to the official Storybook documentation, covering configuration, customization, and extension of Storybook features.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/fixtures/unit/commands/build/storybook-with-middleware/stories/Introduction.mdx#_snippet_7
+
+LANGUAGE: markdown
+CODE:
+```
+Storybook documentation
+Configure, customize, and extend
+```
+
+----------------------------------------
+
+TITLE: Create Turborepo Starter
+DESCRIPTION: Initializes a new Turborepo project using the official starter template. This command sets up the monorepo structure and installs necessary dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/43-turborepo-with-comments-in-turbo-json/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx create-turbo@latest
+```
+
+----------------------------------------
+
+TITLE: Create Turborepo Starter
+DESCRIPTION: Initializes a new Turborepo project using the official starter template. This command sets up the monorepo structure and installs necessary dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/41-turborepo-supporting-corepack-home/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx create-turbo@latest
+```
+
+----------------------------------------
+
+TITLE: Start Local Development Server
+DESCRIPTION: Starts a local development server for the website. Changes are reflected live without needing a server restart.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/docusaurus-v2/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+yarn start
+```
+
+----------------------------------------
+
+TITLE: Start Development Server
+DESCRIPTION: Starts the development server, which processes PostCSS and scripts. This command is used for active development to see changes in real-time.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/hugo/themes/ananke/src/readme.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Clone Eleventy Base Blog Repository
+DESCRIPTION: This command clones the Eleventy base blog starter repository to your local machine, allowing you to start building your blog.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-v0/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+```
+
+----------------------------------------
+
+TITLE: Start Development Server
+DESCRIPTION: Starts the development server, which processes PostCSS and scripts. This command is used for active development to see changes in real-time.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/hugo-v0/themes/ananke/src/readme.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Start Local Development Server
+DESCRIPTION: Starts a local development server for the website. Changes are reflected live without needing a server restart.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/22-docusaurus-2-build-fail/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+yarn start
+```
+
+----------------------------------------
+
+TITLE: Start Development Server
+DESCRIPTION: Starts the development server for the Ember application, allowing for live reloading and testing.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/ember-v5/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+npm run start
+```
+
+----------------------------------------
+
+TITLE: Start Parcel Dev Server
+DESCRIPTION: Starts the Parcel development server for a web application. This command allows for hot reloading and automatic updates in the browser as code changes are made.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/parcel/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+yarn start
+```
+
+LANGUAGE: bash
+CODE:
+```
+npm start
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies with Yarn
+DESCRIPTION: Installs all necessary project dependencies using Yarn. This is the first step before running any other commands.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/docusaurus-v2/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+yarn
+```
+
+----------------------------------------
+
+TITLE: Storybook GitHub Project
+DESCRIPTION: Links to the Storybook GitHub repository, allowing users to view the source code, contribute, and report issues.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/fixtures/unit/commands/build/storybook-with-middleware/stories/Introduction.mdx#_snippet_9
+
+LANGUAGE: markdown
+CODE:
+```
+GitHub project
+View the source and add issues
+```
+
+----------------------------------------
+
+TITLE: Create Turborepo Starter
+DESCRIPTION: Initializes a new Turborepo project using the official starter template. This command sets up the monorepo structure and installs necessary dependencies.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/42-turborepo-not-supporting-corepack-home/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx create-turbo@latest
+```
+
+----------------------------------------
+
+TITLE: Install @vercel/client
+DESCRIPTION: Installs the @vercel/client package using npm. This is the first step to using the Vercel client in your Node.js project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/client/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm install @vercel/client
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies (npm)
+DESCRIPTION: Installs the project's dependencies using npm. This is a prerequisite for running the development server or building the project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-react-router/03-react-router-custom-entry-server/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Initialize Polymer Project
+DESCRIPTION: Initializes a new project from the Polymer 3 starter kit template. This involves creating a directory, navigating into it, and running the polymer init command.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/polymer-v3/README.md#_snippet_1
+
+LANGUAGE: Shell
+CODE:
+```
+mkdir my-app
+cd my-app
+polymer init polymer-3-starter-kit
+```
+
+----------------------------------------
+
+TITLE: Start Remix Development Server
+DESCRIPTION: Starts the Remix application in development mode. The server rebuilds assets automatically when files change.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/remix/test/fixtures-legacy/12-remix-v2/README.md#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm run dev
+```
+
+----------------------------------------
+
+TITLE: glob and download Example - JavaScript
+DESCRIPTION: An example demonstrating the combined use of download and glob. It first downloads all files and then uses glob to return a Files representation of the entire directory.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/DEVELOPING_A_RUNTIME.md#_snippet_19
+
+LANGUAGE: javascript
+CODE:
+```
+const { glob, download } = require('@vercel/build-utils');
+
+exports.build = ({ files, workPath }) => {
+  await download(files, workPath);
+  return glob('**', workPath);
+};
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies (npm)
+DESCRIPTION: Installs the project's dependencies using npm. This is a prerequisite for running the development server or building the project.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/react-router/README.md#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm install
+```
+
+----------------------------------------
+
+TITLE: Start Local Development Server with Yarn
+DESCRIPTION: Starts a local development server for the website. This command also automatically opens the website in your default browser, allowing for live preview of changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/23-docusaurus/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+$ yarn start
+```
+
+----------------------------------------
+
+TITLE: Build Hydrogen Project for Production
+DESCRIPTION: Builds the Shopify Hydrogen project for production deployment using Yarn.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/hydrogen/test/fixtures/hello-world-js/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+yarn build
+```
+
+----------------------------------------
+
+TITLE: Deploy React App to Vercel
+DESCRIPTION: Deploys the initialized React application to Vercel. This command assumes the Vercel CLI is installed and configured.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/cli/test/dev/fixtures/04-create-react-app/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+vercel
+```
+
+----------------------------------------
+
+TITLE: Deploying a Vercel Project
+DESCRIPTION: This snippet demonstrates how to deploy a project using the Vercel CLI. It requires the Vercel CLI to be installed and authenticated.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/zola-v0/themes/feather/content/my-first-post.md#_snippet_4
+
+LANGUAGE: bash
+CODE:
+```
+vercel deploy
+
+```
+
+----------------------------------------
+
+TITLE: Develop Gatsby Site
+DESCRIPTION: Navigates into the newly created Gatsby project directory and starts the development server, allowing for live preview of changes.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/05-zero-config-gatsby/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+cd my-default-starter/
+gatsby develop
+```
+
+----------------------------------------
+
+TITLE: Serve Vue.js for Development
+DESCRIPTION: Compiles the Vue.js application and starts a development server with hot-reloading enabled. This allows for rapid iteration during development.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/vue/README.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+yarn serve
+```
+
+----------------------------------------
+
+TITLE: Build for Production
+DESCRIPTION: Builds a minified version of the project for production deployment.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/build-utils/test/fixtures/04-zero-config-brunch/README.md#_snippet_5
+
+LANGUAGE: bash
+CODE:
+```
+npm run build
+```
+
+----------------------------------------
+
+TITLE: Integrating Vercel with a React Application
+DESCRIPTION: This example demonstrates a basic setup for a React application intended for deployment on Vercel. It includes a simple component.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/zola-v0/themes/feather/content/my-first-post.md#_snippet_43
+
+LANGUAGE: JavaScript
+CODE:
+```
+import React from 'react';
+
+function HomePage() {
+  return (
+    <div>
+      <h1>Welcome to Vercel!</h1>
+      <p>This is a simple React page.</p>
+    </div>
+  );
+}
+
+export default HomePage;
+```
+
+----------------------------------------
+
+TITLE: Navigate to Project Directory
+DESCRIPTION: This command changes the current directory to the cloned Eleventy blog project, enabling you to access and modify project files.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/packages/static-build/test/fixtures/eleventy-v0/README.md#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+cd my-blog-name
+```
+
+----------------------------------------
+
+TITLE: Run Server Transports
+DESCRIPTION: Commands to run the server using HTTP or STDIO transports, or a general start script.
+
+SOURCE: https://github.com/vercel/vercel/blob/main/examples/xmcp/README.md#_snippet_3
+
+LANGUAGE: bash
+CODE:
+```
+# HTTP Transport
+node dist/http.js
+
+# STDIO Transport
+node dist/stdio.js
+
+# General start script
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```

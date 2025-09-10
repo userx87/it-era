@@ -1,0 +1,57 @@
+{
+  "projectName": "IT-ERA",
+  "description": "Assistenza IT Professionale in Lombardia - Serverless su Vercel",
+  "defaultAgent": "IT-ERA-Orchestrator",
+  "autoLoadKnowledge": true,
+  "knowledgeBase": {
+    "autoIndex": [
+      "README.md",
+      "vercel.json", 
+      "package.json",
+      "api/**/*",
+      "views/**/*",
+      "config/**/*",
+      "data/**/*",
+      ".amazonq/**/*"
+    ],
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "dist/**",
+      "build/**"
+    ]
+  },
+  "agents": {
+    "orchestrator": "IT-ERA-Orchestrator",
+    "vercel": "EspertoVercel", 
+    "seo": "SEO-Master",
+    "content": "Content-Manager",
+    "performance": "Performance-Guru",
+    "testing": "Test-Engineer",
+    "devops": "DevOps-Pro",
+    "security": "Security-Auditor"
+  },
+  "workflows": {
+    "standard": ["Security-Auditor", "Test-Engineer", "Content-Manager+SEO-Master+Performance-Guru", "Test-Engineer", "DevOps-Pro+EspertoVercel"],
+    "hotfix": ["Security-Auditor", "Test-Engineer", "DevOps-Pro"],
+    "content": ["Content-Manager", "SEO-Master", "Test-Engineer", "DevOps-Pro"],
+    "performance": ["Performance-Guru", "Test-Engineer", "DevOps-Pro"]
+  },
+  "context7": {
+    "enabled": true,
+    "priority": "critical",
+    "docs": [
+      "vercel-context7-docs.txt",
+      "seo-context7-docs.txt", 
+      "performance-context7-docs.txt",
+      "testing-context7-docs.txt"
+    ]
+  },
+  "quickCommands": {
+    "deploy": "/agent EspertoVercel deploy automatico",
+    "workflow": "/agent IT-ERA-Orchestrator workflow standard",
+    "seo": "/agent SEO-Master ottimizza SEO",
+    "test": "/agent Test-Engineer run all tests",
+    "security": "/agent Security-Auditor audit completo"
+  }
+}

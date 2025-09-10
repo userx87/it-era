@@ -1,0 +1,344 @@
+/*!
+ * IT-ERA Tailwind CSS - Unified Professional Design System
+ * Version: 3.0.0 - Full Tailwind Conversion
+ * Author: IT-ERA Development Team
+ */
+
+/* ============================================
+   TAILWIND CSS BASE + CUSTOM UTILITIES
+   ============================================ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Base styles that complement Tailwind */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utilities that extend Tailwind */
+@layer utilities {
+  /* Gradient backgrounds */
+  .bg-gradient-it-primary {
+    background: linear-gradient(135deg, #0056cc 0%, #1d4ed8 100%);
+  }
+  
+  .bg-gradient-it-hero {
+    background: linear-gradient(135deg, #1e40af 0%, #0056cc 50%, #1d4ed8 100%);
+  }
+  
+  .bg-gradient-it-subtle {
+    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  }
+
+  /* Text gradients */
+  .text-gradient-it {
+    background: linear-gradient(135deg, #0056cc 0%, #1d4ed8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Custom shadows */
+  .shadow-it-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 86, 204, 0.1), 0 2px 4px -1px rgba(0, 86, 204, 0.06);
+  }
+  
+  .shadow-it-medium {
+    box-shadow: 0 10px 15px -3px rgba(0, 86, 204, 0.1), 0 4px 6px -2px rgba(0, 86, 204, 0.05);
+  }
+  
+  .shadow-it-large {
+    box-shadow: 0 20px 25px -5px rgba(0, 86, 204, 0.1), 0 10px 10px -5px rgba(0, 86, 204, 0.04);
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 86, 204, 0.15), 0 10px 10px -5px rgba(0, 86, 204, 0.08);
+  }
+
+  /* Focus states for accessibility */
+  .focus-it {
+    @apply focus:outline-none focus:ring-4 focus:ring-blue-200 focus:ring-opacity-50;
+  }
+
+  /* Custom animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+  }
+
+  /* Responsive text utilities */
+  .text-responsive-xl {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+  
+  .text-responsive-lg {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+  
+  .text-responsive-md {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  /* Container utilities */
+  .container-it {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-it-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-it-wide {
+    @apply max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  .section-padding-sm {
+    @apply py-8 md:py-12 lg:py-16;
+  }
+  
+  .section-padding-lg {
+    @apply py-20 md:py-24 lg:py-32;
+  }
+}
+
+/* ============================================
+   KEYFRAMES FOR ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   COMPONENT CLASSES (Tailwind-based)
+   ============================================ */
+
+/* Button Components */
+.btn-it-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-sm hover:shadow-md;
+}
+
+.btn-it-secondary {
+  @apply inline-flex items-center justify-center px-6 py-3 border-2 border-blue-600 text-base font-semibold rounded-lg text-blue-600 bg-white hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200;
+}
+
+.btn-it-outline {
+  @apply inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base font-semibold rounded-lg text-white bg-transparent hover:bg-white hover:text-blue-600 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50 transition-all duration-200;
+}
+
+.btn-it-ghost {
+  @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-lg text-gray-700 bg-transparent hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 transition-all duration-200;
+}
+
+/* Card Components */
+.card-it {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-all duration-300 hover-lift;
+}
+
+.card-it-featured {
+  @apply bg-white rounded-xl shadow-md border border-blue-100 p-8 hover:shadow-lg transition-all duration-300 hover-lift relative overflow-hidden;
+}
+
+.card-it-featured::before {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600;
+}
+
+/* Form Components */
+.input-it {
+  @apply w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 placeholder-gray-500;
+}
+
+.textarea-it {
+  @apply w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 placeholder-gray-500 resize-vertical;
+}
+
+.label-it {
+  @apply block text-sm font-semibold text-gray-700 mb-2;
+}
+
+/* Navigation Components */
+.nav-link-it {
+  @apply text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 px-3 py-2 rounded-md hover:bg-gray-50;
+}
+
+.nav-link-it-active {
+  @apply text-blue-600 font-semibold bg-blue-50 px-3 py-2 rounded-md;
+}
+
+/* Hero Components */
+.hero-it {
+  @apply relative bg-gradient-it-hero text-white section-padding-lg overflow-hidden;
+}
+
+.hero-it::before {
+  content: '';
+  @apply absolute inset-0 bg-black bg-opacity-10;
+}
+
+/* Section Components */
+.section-it {
+  @apply section-padding;
+}
+
+.section-it-gray {
+  @apply section-padding bg-gray-50;
+}
+
+.section-it-blue {
+  @apply section-padding bg-blue-50;
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  .container-it {
+    @apply px-4;
+  }
+  
+  .section-padding {
+    @apply py-12;
+  }
+  
+  .text-responsive-xl {
+    @apply text-2xl;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .container-it {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-it {
+    @apply px-8;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================ */
+
+/* Screen reader only content */
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+}
+
+.sr-only.focus\:not-sr-only:focus {
+  @apply static w-auto h-auto p-1 m-0 overflow-visible whitespace-normal;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-it-primary {
+    @apply border-2 border-blue-800;
+  }
+  
+  .card-it {
+    @apply border-2 border-gray-300;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+  
+  body {
+    @apply text-black bg-white;
+  }
+  
+  .btn-it-primary,
+  .btn-it-secondary {
+    @apply border border-black text-black bg-white;
+  }
+}

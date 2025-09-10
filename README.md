@@ -86,7 +86,20 @@ vercel dev
 open http://localhost:3000
 ```
 
-### **🌐 Deploy to Vercel:**
+### **🌐 Deploy Options:**
+
+#### **GitHub Pages (Automatic):**
+```bash
+# Automatic deployment on push to main
+git push origin main
+
+# Manual trigger
+gh workflow run "🚀 Deploy IT-ERA Website to GitHub Pages"
+
+# Live at: https://userx87.github.io/it-era
+```
+
+#### **Vercel:**
 ```bash
 # Deploy to production
 npm run deploy
@@ -95,6 +108,16 @@ vercel --prod
 
 # Deploy preview
 vercel
+
+# Live at: https://it-era.vercel.app
+```
+
+#### **Cloudflare Pages:**
+```bash
+# Deploy using script
+./scripts/cloudflare-deploy.sh
+
+# Live at: https://it-era.pages.dev
 ```
 
 ---

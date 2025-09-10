@@ -1,265 +1,21 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servizi IT Professionali - IT-ERA | IT-ERA</title>
-    <meta name="description" content="Scopri i nostri servizi IT: assistenza tecnica, sicurezza informatica, cloud computing e digitalizzazione aziendale.">
-    <meta name="keywords" content="servizi IT, assistenza tecnica, sicurezza informatica, cloud computing">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Servizi IT Professionali - IT-ERA | IT-ERA">
-    <meta property="og:description" content="Scopri i nostri servizi IT: assistenza tecnica, sicurezza informatica, cloud computing e digitalizzazione aziendale.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://userx87.github.io/it-era/servizi.html">
-    <meta property="og:image" content="/it-era/images/og-image.jpg">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Servizi IT Professionali - IT-ERA | IT-ERA">
-    <meta name="twitter:description" content="Scopri i nostri servizi IT: assistenza tecnica, sicurezza informatica, cloud computing e digitalizzazione aziendale.">
-    <meta name="twitter:image" content="/it-era/images/og-image.jpg">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/it-era/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/it-era/apple-touch-icon.png">
-    <!-- ============================================
-         ANALYTICS & TRACKING (HEAD SECTION)
-         ============================================ -->
+#!/usr/bin/env node
 
-    <!-- Google Tag Manager (Place immediately after opening <head> tag) -->
-    <!--
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-    -->
+const fs = require('fs');
+const path = require('path');
 
-    <!-- Google Analytics 4 (Alternative to GTM) -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID', {
-        'page_title': 'IT-ERA Servizi',
-        'page_location': window.location.href,
-        'content_group1': 'Servizi'
-      });
-    </script>
-    -->
+// Pagine da completare
+const PAGES_TO_COMPLETE = [
+    '_site/contatti.html',
+    '_site/settori/pmi-startup.html',
+    '_site/settori/studi-medici.html',
+    '_site/settori/commercialisti.html',
+    '_site/settori/studi-legali.html',
+    '_site/settori/industria-40.html',
+    '_site/settori/retail-gdo.html'
+];
 
-    <!-- CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/it-era/css/tailwind-config.js"></script>
-    <link rel="stylesheet" href="/it-era/css/it-era-tailwind.css">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Assistenza Informatica Professionale",
-        "description": "Servizi completi di assistenza IT per aziende: supporto tecnico, sicurezza informatica, cloud computing e digitalizzazione.",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "IT-ERA",
-            "url": "https://userx87.github.io/it-era/"
-        },
-        "areaServed": {"@type": "State", "name": "Lombardia"},
-        "serviceType": "IT Support",
-        "category": "Computer Services",
-        "offers": {
-            "@type": "Offer",
-            "description": "Assistenza IT professionale 24/7",
-            "priceRange": "€€"
-        }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://userx87.github.io/it-era/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Servizi",
-                "item": "https://userx87.github.io/it-era/servizi.html"
-            }
-        ]
-    }
-    </script>
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/it-era/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <!--
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    -->
-
-    <!-- Skip to main content -->
-    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
-
-    <!-- Modern Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200/50">
-      <nav class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
-          <!-- Logo -->
-          <div class="flex items-center space-x-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl flex items-center justify-center">
-              <span class="text-white font-bold text-xl">IT</span>
-            </div>
-            <div class="hidden sm:block">
-              <h1 class="text-2xl font-bold text-neutral-900">IT-ERA</h1>
-              <p class="text-sm text-neutral-600 -mt-1">Assistenza IT Professionale</p>
-            </div>
-          </div>
-
-          <!-- Desktop Navigation -->
-          <div class="hidden lg:flex items-center space-x-8">
-            <a href="/it-era/" class="text-neutral-700 hover:text-brand-600 transition-colors">Home</a>
-            <a href="/it-era/servizi.html" class="text-brand-600 font-semibold">Servizi</a>
-            <a href="/it-era/contatti.html" class="text-neutral-700 hover:text-brand-600 transition-colors">Contatti</a>
-            <div class="relative group">
-              <button class="text-neutral-700 hover:text-brand-600 transition-colors flex items-center space-x-1">
-                <span>Settori</span>
-                <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <!-- Modern Dropdown -->
-              <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-neutral-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div class="p-2">
-                  <a href="/it-era/settori/pmi-startup.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">PMI e Startup</a>
-                  <a href="/it-era/settori/studi-medici.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Studi Medici</a>
-                  <a href="/it-era/settori/commercialisti.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Commercialisti</a>
-                  <a href="/it-era/settori/studi-legali.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Studi Legali</a>
-                  <a href="/it-era/settori/industria-40.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Industria 4.0</a>
-                  <a href="/it-era/settori/retail-gdo.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Retail e GDO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CTA Section -->
-          <div class="hidden lg:flex items-center space-x-4">
-            <a href="tel:+390398882041" class="flex items-center space-x-2 text-brand-600 hover:text-brand-700 font-semibold">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-              </svg>
-              <span>039 888 2041</span>
-            </a>
-            <a href="/it-era/contatti.html" class="btn-primary btn-sm">
-              Contattaci
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <div class="lg:hidden">
-            <button id="mobile-menu-button" class="p-2 rounded-xl text-neutral-700 hover:bg-neutral-100 transition-colors" aria-label="Menu">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="lg:hidden hidden border-t border-neutral-200 bg-white/95 backdrop-blur-xl">
-          <div class="p-4 space-y-2">
-            <a href="/it-era/" class="block px-4 py-3 text-neutral-700 hover:bg-neutral-100 rounded-xl transition-colors">Home</a>
-            <a href="/it-era/servizi.html" class="block px-4 py-3 text-brand-600 bg-brand-50 rounded-xl font-semibold">Servizi</a>
-            <a href="/it-era/contatti.html" class="block px-4 py-3 text-neutral-700 hover:bg-neutral-100 rounded-xl transition-colors">Contatti</a>
-
-            <div class="pt-2">
-              <p class="px-4 py-2 text-xs font-semibold text-neutral-500 uppercase tracking-wider">Settori</p>
-              <a href="/it-era/settori/pmi-startup.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">PMI e Startup</a>
-              <a href="/it-era/settori/studi-medici.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Studi Medici</a>
-              <a href="/it-era/settori/commercialisti.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Commercialisti</a>
-              <a href="/it-era/settori/studi-legali.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Studi Legali</a>
-              <a href="/it-era/settori/industria-40.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Industria 4.0</a>
-              <a href="/it-era/settori/retail-gdo.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Retail e GDO</a>
-            </div>
-
-            <div class="pt-4 border-t border-neutral-200">
-              <a href="tel:+390398882041" class="block px-4 py-3 text-brand-600 font-semibold hover:bg-brand-50 rounded-xl transition-colors">
-                📞 039 888 2041
-              </a>
-              <a href="/it-era/contatti.html" class="block mt-2 btn-primary w-full text-center">
-                Contattaci Ora
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- Main Content -->
-    <main id="main-content" role="main">
-    <div class="pt-20">
-      <div class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-center mb-12">I Nostri Servizi IT</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-4">🔧 Assistenza Tecnica</h2>
-            <ul class="space-y-3 text-gray-700">
-              <li>• Help desk e supporto remoto</li>
-              <li>• Riparazione hardware e software</li>
-              <li>• Manutenzione preventiva</li>
-              <li>• Gestione reti aziendali</li>
-            </ul>
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-4">🔒 Sicurezza Informatica</h2>
-            <ul class="space-y-3 text-gray-700">
-              <li>• Firewall e antivirus aziendali</li>
-              <li>• Backup automatici</li>
-              <li>• Protezione da ransomware</li>
-              <li>• Audit di sicurezza</li>
-            </ul>
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-4">☁️ Cloud Computing</h2>
-            <ul class="space-y-3 text-gray-700">
-              <li>• Migrazione al cloud</li>
-              <li>• Microsoft 365</li>
-              <li>• Server virtuali</li>
-              <li>• Disaster recovery</li>
-            </ul>
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-4">📞 VoIP e Telefonia</h2>
-            <ul class="space-y-3 text-gray-700">
-              <li>• Centralini VoIP</li>
-              <li>• Telefonia aziendale</li>
-              <li>• Videoconferenze</li>
-              <li>• Integrazione sistemi</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    </main>
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Modern Footer -->
+// Footer moderno
+const MODERN_FOOTER = `    <!-- Modern Footer -->
     <footer class="bg-neutral-900 text-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <!-- Main Footer Content -->
@@ -278,7 +34,7 @@
             <p class="text-neutral-300 mb-8 leading-relaxed text-lg max-w-md">
               Assistenza informatica professionale per aziende in Lombardia. Soluzioni IT innovative e supporto 24/7 per far crescere il tuo business.
             </p>
-
+            
             <!-- Emergency Contact -->
             <div class="p-6 bg-danger-900/30 border border-danger-800/50 rounded-2xl backdrop-blur-sm">
               <div class="flex items-center mb-3">
@@ -291,7 +47,7 @@
               <p class="text-neutral-400 text-sm mt-1">Disponibile 24/7</p>
             </div>
           </div>
-
+          
           <!-- Services -->
           <div>
             <h4 class="text-xl font-bold text-white mb-6">Servizi</h4>
@@ -362,7 +118,7 @@
             </ul>
           </div>
         </div>
-
+        
         <!-- Bottom Footer -->
         <div class="border-t border-gray-800 mt-12 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
@@ -377,8 +133,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>`;
 
+// Chatbot moderno
+const MODERN_CHATBOT = `    
     <!-- Modern Chatbot Widget -->
     <div id="chatbot-widget" class="fixed bottom-8 right-8 z-50">
       <!-- Chatbot Button -->
@@ -389,7 +147,7 @@
         <!-- Notification Badge -->
         <div class="absolute -top-2 -right-2 w-6 h-6 bg-danger-500 text-white text-xs rounded-full flex items-center justify-center animate-pulse font-bold">!</div>
       </button>
-
+      
       <!-- Chatbot Popup -->
       <div id="chatbot-popup" class="absolute bottom-20 right-0 w-96 bg-white rounded-3xl shadow-2xl border border-neutral-200 hidden transform transition-all duration-300 scale-95 opacity-0">
         <!-- Header -->
@@ -409,7 +167,7 @@
             </button>
           </div>
         </div>
-
+        
         <!-- Content -->
         <div class="p-6">
           <!-- Welcome Message -->
@@ -419,7 +177,7 @@
               <p class="text-neutral-700 text-sm mt-1">Come posso aiutarti oggi?</p>
             </div>
           </div>
-
+          
           <!-- Quick Actions -->
           <div class="space-y-3">
             <a href="tel:+390398882041" class="block w-full bg-danger-500 hover:bg-danger-600 text-white text-center py-4 px-6 rounded-2xl font-semibold transition-colors duration-200 transform hover:scale-105">
@@ -432,7 +190,7 @@
               📋 Scopri Tutti i Servizi
             </a>
           </div>
-
+          
           <!-- Trust Badge -->
           <div class="mt-6 text-center">
             <div class="inline-flex items-center px-4 py-2 bg-success-100 text-success-700 rounded-full text-sm font-medium">
@@ -444,8 +202,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>`;
 
+// JavaScript moderno
+const MODERN_JAVASCRIPT = `
     <!-- Modern JavaScript -->
     <script>
     // Modern IT-ERA Website Interactions
@@ -453,17 +213,17 @@
         // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
+        
         if (mobileMenuButton && mobileMenu) {
             mobileMenuButton.addEventListener('click', function() {
                 const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-
+                
                 // Toggle menu visibility
                 mobileMenu.classList.toggle('hidden');
-
+                
                 // Update aria-expanded
                 mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-
+                
                 // Toggle icon with smooth animation
                 const icon = mobileMenuButton.querySelector('svg');
                 if (mobileMenu.classList.contains('hidden')) {
@@ -473,16 +233,16 @@
                 }
             });
         }
-
+        
         // Modern Chatbot Functionality
         const chatbotButton = document.getElementById('chatbot-button');
         const chatbotPopup = document.getElementById('chatbot-popup');
         const chatbotClose = document.getElementById('chatbot-close');
-
+        
         if (chatbotButton && chatbotPopup) {
             chatbotButton.addEventListener('click', function() {
                 const isHidden = chatbotPopup.classList.contains('hidden');
-
+                
                 if (isHidden) {
                     chatbotPopup.classList.remove('hidden');
                     setTimeout(() => {
@@ -498,7 +258,7 @@
                 }
             });
         }
-
+        
         if (chatbotClose && chatbotPopup) {
             chatbotClose.addEventListener('click', function() {
                 chatbotPopup.classList.add('scale-95', 'opacity-0');
@@ -508,7 +268,7 @@
                 }, 300);
             });
         }
-
+        
         // Close chatbot when clicking outside
         document.addEventListener('click', function(event) {
             const chatbotWidget = document.getElementById('chatbot-widget');
@@ -525,7 +285,148 @@
 
         console.log('🎨 IT-ERA Modern Design System loaded successfully!');
     });
-    </script>
+    </script>`;
 
-</body>
-</html>
+class ModernDesignCompleter {
+    constructor() {
+        this.results = {
+            timestamp: new Date().toISOString(),
+            completedPages: [],
+            errors: [],
+            summary: {
+                totalPages: PAGES_TO_COMPLETE.length,
+                successfulCompletions: 0,
+                failedCompletions: 0
+            }
+        };
+    }
+
+    // Legge un file
+    readFile(filePath) {
+        try {
+            return fs.readFileSync(filePath, 'utf8');
+        } catch (error) {
+            throw new Error(`Cannot read file ${filePath}: ${error.message}`);
+        }
+    }
+
+    // Scrive un file
+    writeFile(filePath, content) {
+        try {
+            fs.writeFileSync(filePath, content, 'utf8');
+        } catch (error) {
+            throw new Error(`Cannot write file ${filePath}: ${error.message}`);
+        }
+    }
+
+    // Completa una singola pagina
+    completePage(filePath) {
+        console.log(`📄 Completing: ${filePath}`);
+        
+        try {
+            let content = this.readFile(filePath);
+            let updated = false;
+
+            // 1. Sostituisce footer vecchio con moderno
+            const footerRegex = /<footer[\s\S]*?<\/footer>/;
+            if (footerRegex.test(content)) {
+                content = content.replace(footerRegex, MODERN_FOOTER);
+                updated = true;
+                console.log('  ✅ Updated footer with modern design');
+            }
+
+            // 2. Aggiunge chatbot e JavaScript prima di </body>
+            if (content.includes('</body>')) {
+                content = content.replace(
+                    /\s*<\/body>/,
+                    MODERN_CHATBOT + MODERN_JAVASCRIPT + '\n\n</body>'
+                );
+                updated = true;
+                console.log('  ✅ Added modern chatbot and JavaScript');
+            }
+
+            if (updated) {
+                this.writeFile(filePath, content);
+                this.results.completedPages.push({
+                    path: filePath,
+                    success: true,
+                    changes: ['Footer', 'Chatbot', 'JavaScript']
+                });
+                this.results.summary.successfulCompletions++;
+                console.log(`  ✅ Successfully completed ${filePath}`);
+            } else {
+                console.log(`  ⚠️  No completions needed for ${filePath}`);
+            }
+
+        } catch (error) {
+            console.log(`  ❌ Failed to complete ${filePath}: ${error.message}`);
+            this.results.errors.push({
+                path: filePath,
+                error: error.message
+            });
+            this.results.summary.failedCompletions++;
+        }
+    }
+
+    // Completa tutte le pagine
+    completeAllPages() {
+        console.log('🎨 COMPLETING MODERN DESIGN FOR ALL PAGES');
+        console.log('==========================================\n');
+
+        PAGES_TO_COMPLETE.forEach(pagePath => {
+            if (fs.existsSync(pagePath)) {
+                this.completePage(pagePath);
+            } else {
+                console.log(`  ⚠️  File not found: ${pagePath}`);
+                this.results.errors.push({
+                    path: pagePath,
+                    error: 'File not found'
+                });
+                this.results.summary.failedCompletions++;
+            }
+            console.log('');
+        });
+
+        this.printSummary();
+    }
+
+    // Stampa riassunto finale
+    printSummary() {
+        console.log('🏆 MODERN DESIGN COMPLETION SUMMARY');
+        console.log('===================================');
+        console.log(`🎯 Total Pages: ${this.results.summary.totalPages}`);
+        console.log(`✅ Successful Completions: ${this.results.summary.successfulCompletions}`);
+        console.log(`❌ Failed Completions: ${this.results.summary.failedCompletions}`);
+
+        if (this.results.completedPages.length > 0) {
+            console.log('\n📄 SUCCESSFULLY COMPLETED PAGES:');
+            this.results.completedPages.forEach(page => {
+                console.log(`  ✅ ${page.path}`);
+                console.log(`     Changes: ${page.changes.join(', ')}`);
+            });
+        }
+
+        if (this.results.errors.length > 0) {
+            console.log('\n⚠️  ERRORS:');
+            this.results.errors.forEach(error => {
+                console.log(`  ❌ ${error.path}: ${error.error}`);
+            });
+        }
+
+        const successRate = Math.round((this.results.summary.successfulCompletions / this.results.summary.totalPages) * 100);
+        
+        if (successRate >= 90) {
+            console.log('\n🎉 EXCELLENT! Modern design completed successfully for all pages.');
+        } else if (successRate >= 70) {
+            console.log('\n✅ GOOD! Modern design completed for most pages with some issues.');
+        } else {
+            console.log('\n⚠️  NEEDS ATTENTION! Several pages failed to complete.');
+        }
+
+        console.log(`\n🌐 Completion finished at: ${this.results.timestamp}`);
+    }
+}
+
+// Esegui il completamento del design moderno
+const completer = new ModernDesignCompleter();
+completer.completeAllPages();

@@ -1,0 +1,98 @@
+{
+  "task_info": {
+    "name": "apply_media_and_localbusiness_all",
+    "environment": "production",
+    "timestamp": "2025-08-23T13:55:52.519789",
+    "version": "1.0"
+  },
+  "input_data": {
+    "comuni_csv": "/Users/andreapanzeri/progetti/IT-ERA/data/comuni_preview.csv",
+    "total_comuni": 52,
+    "base_image": "it-support-lecco-hero.svg"
+  },
+  "results": {
+    "images": {
+      "created": 50,
+      "source": "web/static/images/it-support-lecco-hero.svg",
+      "pattern": "it-support-{slug}-hero.svg",
+      "total_size_mb": 0.04
+    },
+    "html_updates": {
+      "pages_processed": 52,
+      "pages_updated": 51,
+      "modifications": [
+        "og:image URLs aggiornate da lecco a città-specifica",
+        "JSON-LD image references aggiornate",
+        "Meta robots cambiato da 'index' a 'noindex,follow' (draft)",
+        "LocalBusiness JSON-LD completamente arricchito",
+        "addressRegion standardizzato a 'Lombardia'",
+        "openingHours, sameAs, serviceType aggiunti",
+        "Alt text SEO-optimized generato"
+      ]
+    },
+    "json_ld_enhancements": {
+      "localbusiness_updated": 51,
+      "new_fields": [
+        "email",
+        "openingHours",
+        "sameAs",
+        "serviceType",
+        "description"
+      ],
+      "standardized_fields": {
+        "addressRegion": "Lombardia (tutte le città)",
+        "areaServed": "[città, provincia] (personalizzato)",
+        "image": "Città-specifico per ogni comune"
+      }
+    }
+  },
+  "quality_gates": {
+    "robots_meta": "noindex,follow mantenuto per tutte le pagine draft",
+    "no_production_deploy": "CONFERMATO - nessun file toccato in /pages/",
+    "canonical_urls": "Mantenute invariate",
+    "meta_robots_check": "PASSED - tutte le pagine draft con noindex"
+  },
+  "file_locations": {
+    "updated_pages": "web/pages-draft/assistenza-it-*.html",
+    "new_images": "web/static/images/it-support-*-hero.svg",
+    "report_file": "web/reports/media_localbusiness_all.json"
+  },
+  "sample_cities": [
+    {
+      "comune": "Monza",
+      "slug": "monza",
+      "provincia": "Monza e Brianza",
+      "image_url": "https://it-era.it/static/images/it-support-monza-hero.svg",
+      "page_url": "https://it-era.it/pages-draft/assistenza-it-monza.html",
+      "alt_text": "Assistenza IT per PMI a Monza - Tecnico IT-ERA al lavoro su server e sistemi informatici"
+    },
+    {
+      "comune": "Arcore",
+      "slug": "arcore",
+      "provincia": "Monza e Brianza",
+      "image_url": "https://it-era.it/static/images/it-support-arcore-hero.svg",
+      "page_url": "https://it-era.it/pages-draft/assistenza-it-arcore.html",
+      "alt_text": "Assistenza IT per PMI a Arcore - Tecnico IT-ERA al lavoro su server e sistemi informatici"
+    },
+    {
+      "comune": "Milano",
+      "slug": "milano",
+      "provincia": "Milano",
+      "image_url": "https://it-era.it/static/images/it-support-milano-hero.svg",
+      "page_url": "https://it-era.it/pages-draft/assistenza-it-milano.html",
+      "alt_text": "Assistenza IT per PMI a Milano - Tecnico IT-ERA al lavoro su server e sistemi informatici"
+    }
+  ],
+  "next_steps": [
+    "Validazione qualità su campione pagine aggiornate",
+    "Test rich snippets con Google Schema Testing Tool",
+    "Controllo PageSpeed Insights su 2-3 città campione",
+    "Se validazione OK: promozione da /pages-draft a /pages",
+    "Update sitemap.xml e deploy production"
+  ],
+  "warnings": [
+    "Tutte le pagine in /pages-draft hanno meta robots='noindex,follow'",
+    "Nessuna promozione automatica in produzione eseguita",
+    "Validazione utente necessaria prima del deploy"
+  ]
+}

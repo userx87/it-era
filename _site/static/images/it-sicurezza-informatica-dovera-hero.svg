@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="title-sicurezza-informatica-dovera">
+  <title id="title-sicurezza-informatica-dovera">Sicurezza Informatica Dovera - Protezione cybersecurity professionale per PMI</title>
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  <rect x="50" y="80" width="180" height="140" fill="#dc3545" rx="8"/>
+  <rect x="60" y="90" width="160" height="120" fill="#b02a37"/>
+  <circle cx="300" cy="150" r="100" fill="#ffc107" opacity="0.3"/>
+  <path d="M260 150 L300 110 L340 150 L300 190 Z" fill="#ffc107"/>
+  <rect x="370" y="100" width="180" height="120" fill="#17a2b8" rx="8"/>
+  <rect x="380" y="110" width="160" height="100" fill="#138496"/>
+  <text x="300" y="280" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">Sicurezza Informatica</text>
+  <text x="300" y="310" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">Firewall WatchGuard per PMI Dovera</text>
+  <text x="300" y="330" font-family="Arial" font-size="14" fill="#dc3545" text-anchor="middle">Da 39€/mese</text>
+</svg>

@@ -1,0 +1,67 @@
+# IT-ERA Redirects Configuration
+
+# Force HTTPS
+http://it-era.it/* https://it-era.it/:splat 301!
+http://www.it-era.it/* https://it-era.it/:splat 301!
+https://www.it-era.it/* https://it-era.it/:splat 301!
+
+# SEO-friendly redirects
+/home https://it-era.it/ 301
+/homepage https://it-era.it/ 301
+/index https://it-era.it/ 301
+
+# Service redirects
+/assistenza https://it-era.it/assistenza-informatica.html 301
+/sicurezza https://it-era.it/sicurezza-informatica.html 301
+/cloud https://it-era.it/cloud-storage-milano.html 301
+/microsoft https://it-era.it/microsoft-365-milano.html 301
+
+# Old sector pages to new sector pages
+/settori-commercialisti.html /settori/commercialisti.html 301
+/settori-industria.html /settori/industria-40.html 301
+/settori-pmi-startup.html /settori/pmi-startup.html 301
+/settori-retail.html /settori/retail-gdo.html 301
+/settori-studi-legali.html /settori/studi-legali.html 301
+/settori-studi-medici.html /settori/studi-medici.html 301
+
+# Old service pages to new service pages
+/cybersecurity-sicurezza-informatica-aziende.html /sicurezza-informatica.html 301
+/it-studi-legali-lombardia.html /settori/studi-legali.html 301
+/it-studi-medici-lombardia.html /settori/studi-medici.html 301
+
+# Contact redirects
+/contact https://it-era.it/contatti.html 301
+/telefono https://it-era.it/contatti.html 301
+
+# Legacy URL redirects (if any)
+/old-assistenza-it/* /assistenza-it-:city.html 301
+/old-sicurezza/* /sicurezza-informatica-:city.html 301
+
+# Fix for missing service pages - redirect to working alternatives
+# /assistenza-it-aziendale-lombardia.html /pages/assistenza-it-milano.html 302 (now has dedicated page)
+/sicurezza-informatica-bergamo.html /pages/assistenza-it-bergamo.html 302
+/cloud-storage-milano.html /pages/assistenza-it-milano.html 302
+
+# Fix for missing city pages - redirect to existing ones
+/assistenza-it-brescia.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-cremona.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-mantova.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-pavia.html /pages/assistenza-it-milano.html 302
+/assistenza-it-sondrio.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-varese.html /pages/assistenza-it-milano.html 302
+
+# API routes
+/api/* /.netlify/functions/:splat 200
+
+# SPA fallback for dynamic content
+/admin/* /admin/index.html 200
+/dashboard/* /dashboard/index.html 200
+
+# Error pages
+/404 /404.html 404
+/* /404.html 404
+
+# Prerender for SEO (if using SPA)
+/assistenza-it-* /assistenza-it-:city.html 200
+/sicurezza-informatica-* /sicurezza-informatica-:city.html 200
+/cloud-storage-* /cloud-storage-:city.html 200

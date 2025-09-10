@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://it-era.vercel.app/sitemap.xml
+
+# Disallow admin/dev paths
+Disallow: /api/
+Disallow: /dev/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /servizi
+Allow: /contatti
+Allow: /assistenza-it-*

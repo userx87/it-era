@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Repair Template Validator - IT-ERA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f8f9fa;
+        }
+        .test-card {
+            background: white;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .test-card.success {
+            border-color: #28a745;
+            box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+        }
+        .test-card.error {
+            border-color: #dc3545;
+            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2);
+        }
+        .test-result {
+            font-family: monospace;
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .page-preview {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            height: 300px;
+            width: 100%;
+            margin: 15px 0;
+        }
+        .status-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+    </style>
+
+<!-- Google Analytics 4 - IT-ERA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5VWN9EH21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-T5VWN9EH21", {
+    page_title: document.title,
+    page_location: window.location.href,
+    custom_map: {
+      "custom_parameter_1": "service_type",
+      "custom_parameter_2": "city_name"
+    }
+  });
+  
+  // IT-ERA Enhanced Events
+  gtag("event", "page_view", {
+    event_category: "engagement",
+    event_label: window.location.pathname,
+    service_type: document.querySelector("h1") ? document.querySelector("h1").textContent.includes("Assistenza") ? "assistenza-it" : 
+                  document.querySelector("h1").textContent.includes("Sicurezza") ? "sicurezza-informatica" :
+                  document.querySelector("h1").textContent.includes("Cloud") ? "cloud-storage" : "general" : "general"
+  });
+</script>
+<!-- End Google Analytics 4 -->
+
+<!-- Google Tag Manager - IT-ERA -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-KPF3JZT");</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) - IT-ERA -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPF3JZT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h1 class="display-4">
+                <i class="fas fa-laptop-medical text-primary me-3"></i>
+                PC Repair Template Validator
+            </h1>
+            <p class="lead text-muted">Testing generated pages for Milano, Segrate, and Bergamo</p>
+            <p class="text-muted">
+                <i class="fas fa-info-circle me-2"></i>
+                This tool validates the generated PC repair template pages for functionality, accessibility, and SEO compliance.
+            </p>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <button id="runAllTests" class="btn btn-primary btn-lg w-100">
+                    <i class="fas fa-play me-2"></i>Run All Tests
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button id="testFunctionality" class="btn btn-outline-primary btn-lg w-100">
+                    <i class="fas fa-cogs me-2"></i>Test Functionality
+                </button>
+            </div>
+            <div class="col-md-4">
+                <button id="testResponsive" class="btn btn-outline-success btn-lg w-100">
+                    <i class="fas fa-mobile-alt me-2"></i>Test Responsive
+                </button>
+            </div>
+        </div>
+
+        <div id="globalResults" class="alert alert-info d-none">
+            <h4><i class="fas fa-chart-bar me-2"></i>Global Test Results</h4>
+            <div id="globalSummary"></div>
+        </div>
+
+        <div class="row">
+            <!-- Milano Test Card -->
+            <div class="col-lg-4 mb-4">
+                <div class="test-card" id="milano-card">
+                    <div class="position-relative">
+                        <span class="status-badge badge bg-secondary">Ready</span>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <i class="fas fa-city me-2 text-primary"></i>Milano
+                            </h3>
+                            <p class="card-text">Testing riparazione-pc-milano.html</p>
+                            
+                            <!-- Page Preview -->
+                            <iframe id="milano-preview" class="page-preview d-none" src="riparazione-pc-milano.html"></iframe>
+                            
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="btn btn-sm btn-outline-primary" onclick="testPage('milano')">
+                                    <i class="fas fa-test-tube me-1"></i>Test Page
+                                </button>
+                                <button class="btn btn-sm btn-outline-success" onclick="previewPage('milano')">
+                                    <i class="fas fa-eye me-1"></i>Preview
+                                </button>
+                                <a href="riparazione-pc-milano.html" target="_blank" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-external-link-alt me-1"></i>Open
+                                </a>
+                            </div>
+                            
+                            <div id="milano-results" class="test-result d-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segrate Test Card -->
+            <div class="col-lg-4 mb-4">
+                <div class="test-card" id="segrate-card">
+                    <div class="position-relative">
+                        <span class="status-badge badge bg-secondary">Ready</span>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <i class="fas fa-city me-2 text-success"></i>Segrate
+                            </h3>
+                            <p class="card-text">Testing riparazione-pc-segrate.html</p>
+                            
+                            <!-- Page Preview -->
+                            <iframe id="segrate-preview" class="page-preview d-none" src="riparazione-pc-segrate.html"></iframe>
+                            
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="btn btn-sm btn-outline-primary" onclick="testPage('segrate')">
+                                    <i class="fas fa-test-tube me-1"></i>Test Page
+                                </button>
+                                <button class="btn btn-sm btn-outline-success" onclick="previewPage('segrate')">
+                                    <i class="fas fa-eye me-1"></i>Preview
+                                </button>
+                                <a href="riparazione-pc-segrate.html" target="_blank" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-external-link-alt me-1"></i>Open
+                                </a>
+                            </div>
+                            
+                            <div id="segrate-results" class="test-result d-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bergamo Test Card -->
+            <div class="col-lg-4 mb-4">
+                <div class="test-card" id="bergamo-card">
+                    <div class="position-relative">
+                        <span class="status-badge badge bg-secondary">Ready</span>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <i class="fas fa-city me-2 text-warning"></i>Bergamo
+                            </h3>
+                            <p class="card-text">Testing riparazione-pc-bergamo.html</p>
+                            
+                            <!-- Page Preview -->
+                            <iframe id="bergamo-preview" class="page-preview d-none" src="riparazione-pc-bergamo.html"></iframe>
+                            
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="btn btn-sm btn-outline-primary" onclick="testPage('bergamo')">
+                                    <i class="fas fa-test-tube me-1"></i>Test Page
+                                </button>
+                                <button class="btn btn-sm btn-outline-success" onclick="previewPage('bergamo')">
+                                    <i class="fas fa-eye me-1"></i>Preview
+                                </button>
+                                <a href="riparazione-pc-bergamo.html" target="_blank" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-external-link-alt me-1"></i>Open
+                                </a>
+                            </div>
+                            
+                            <div id="bergamo-results" class="test-result d-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-clipboard-check me-2"></i>Validation Checklist</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Template Functionality</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>All placeholders replaced</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Meta tags correctly populated</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Navigation menu works</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Contact form functional</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Responsive design active</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Content Quality</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>City-specific content</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>SEO optimization</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Structured data present</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Chatbot integration</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Performance optimized</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const cities = ['milano', 'segrate', 'bergamo'];
+        let testResults = {};
+
+        function previewPage(city) {
+            const preview = document.getElementById(`${city}-preview`);
+            const card = document.getElementById(`${city}-card`);
+            
+            if (preview.classList.contains('d-none')) {
+                preview.classList.remove('d-none');
+                card.querySelector('.status-badge').textContent = 'Previewing';
+                card.querySelector('.status-badge').className = 'status-badge badge bg-info';
+            } else {
+                preview.classList.add('d-none');
+                card.querySelector('.status-badge').textContent = 'Ready';
+                card.querySelector('.status-badge').className = 'status-badge badge bg-secondary';
+            }
+        }
+
+        async function testPage(city) {
+            const card = document.getElementById(`${city}-card`);
+            const resultsDiv = document.getElementById(`${city}-results`);
+            const statusBadge = card.querySelector('.status-badge');
+            
+            // Update UI
+            statusBadge.textContent = 'Testing...';
+            statusBadge.className = 'status-badge badge bg-warning';
+            resultsDiv.innerHTML = 'Running tests...';
+            resultsDiv.classList.remove('d-none');
+
+            try {
+                // Simulate testing by loading the page and checking elements
+                const tests = await runPageTests(city);
+                testResults[city] = tests;
+                
+                displayTestResults(city, tests);
+                
+                // Update card status
+                const allPassed = tests.every(t => t.passed);
+                if (allPassed) {
+                    statusBadge.textContent = 'All Tests Passed';
+                    statusBadge.className = 'status-badge badge bg-success';
+                    card.classList.add('success');
+                } else {
+                    statusBadge.textContent = 'Some Tests Failed';
+                    statusBadge.className = 'status-badge badge bg-danger';
+                    card.classList.add('error');
+                }
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="text-danger">Error running tests: ${error.message}</div>`;
+                statusBadge.textContent = 'Test Error';
+                statusBadge.className = 'status-badge badge bg-danger';
+                card.classList.add('error');
+            }
+        }
+
+        async function runPageTests(city) {
+            return new Promise((resolve) => {
+                // Create a hidden iframe to test the page
+                const iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                iframe.src = `riparazione-pc-${city}.html`;
+                document.body.appendChild(iframe);
+                
+                iframe.onload = () => {
+                    try {
+                        const doc = iframe.contentDocument || iframe.contentWindow.document;
+                        const tests = [];
+                        
+                        // Test 1: Title contains city name
+                        const title = doc.title;
+                        tests.push({
+                            name: 'Page Title',
+                            passed: title.includes(city.charAt(0).toUpperCase() + city.slice(1)),
+                            message: title ? `Found: "${title}"` : 'No title found'
+                        });
+
+                        // Test 2: Meta description exists
+                        const metaDesc = doc.querySelector('meta[name="description"]');
+                        tests.push({
+                            name: 'Meta Description',
+                            passed: metaDesc && metaDesc.content.length > 50,
+                            message: metaDesc ? `${metaDesc.content.length} characters` : 'Not found'
+                        });
+
+                        // Test 3: Navigation menu
+                        const navbar = doc.querySelector('.navbar');
+                        const dropdowns = doc.querySelectorAll('.dropdown-menu');
+                        tests.push({
+                            name: 'Navigation Menu',
+                            passed: navbar && dropdowns.length >= 3,
+                            message: `Found ${dropdowns.length} dropdown menus`
+                        });
+
+                        // Test 4: Contact form
+                        const contactForm = doc.getElementById('contactForm');
+                        const requiredFields = doc.querySelectorAll('input[required], select[required]');
+                        tests.push({
+                            name: 'Contact Form',
+                            passed: contactForm && requiredFields.length >= 3,
+                            message: `Form with ${requiredFields.length} required fields`
+                        });
+
+                        // Test 5: Responsive classes
+                        const responsiveElements = doc.querySelectorAll('[class*="col-"], [class*="d-lg-"], [class*="d-md-"]');
+                        tests.push({
+                            name: 'Responsive Design',
+                            passed: responsiveElements.length > 10,
+                            message: `${responsiveElements.length} responsive elements`
+                        });
+
+                        // Test 6: Bootstrap loaded
+                        const bootstrapCSS = doc.querySelector('link[href*="bootstrap"]');
+                        const bootstrapJS = doc.querySelector('script[src*="bootstrap"]');
+                        tests.push({
+                            name: 'Bootstrap Framework',
+                            passed: bootstrapCSS && bootstrapJS,
+                            message: bootstrapCSS && bootstrapJS ? 'CSS and JS loaded' : 'Missing resources'
+                        });
+
+                        // Test 7: City-specific content
+                        const cityName = city.charAt(0).toUpperCase() + city.slice(1);
+                        const bodyText = doc.body.textContent || '';
+                        const cityMentions = (bodyText.match(new RegExp(cityName, 'g')) || []).length;
+                        tests.push({
+                            name: 'City-specific Content',
+                            passed: cityMentions >= 10,
+                            message: `City mentioned ${cityMentions} times`
+                        });
+
+                        // Test 8: Structured data
+                        const structuredData = doc.querySelector('script[type="application/ld+json"]');
+                        tests.push({
+                            name: 'Structured Data',
+                            passed: structuredData && structuredData.textContent.includes('LocalBusiness'),
+                            message: structuredData ? 'LocalBusiness schema found' : 'No structured data'
+                        });
+
+                        // Test 9: Chatbot integration
+                        const chatbotScript = Array.from(doc.scripts).find(script => 
+                            script.textContent.includes('ITERA_CHATBOT_CONFIG')
+                        );
+                        tests.push({
+                            name: 'Chatbot Integration',
+                            passed: !!chatbotScript,
+                            message: chatbotScript ? 'Chatbot config found' : 'No chatbot integration'
+                        });
+
+                        // Test 10: Accessibility features
+                        const skipLink = doc.querySelector('.skip-link');
+                        const ariaLabels = doc.querySelectorAll('[aria-label], [aria-labelledby]');
+                        tests.push({
+                            name: 'Accessibility',
+                            passed: skipLink && ariaLabels.length > 0,
+                            message: `Skip link: ${!!skipLink}, ARIA labels: ${ariaLabels.length}`
+                        });
+
+                        document.body.removeChild(iframe);
+                        resolve(tests);
+                        
+                    } catch (error) {
+                        document.body.removeChild(iframe);
+                        resolve([{
+                            name: 'Test Error',
+                            passed: false,
+                            message: error.message
+                        }]);
+                    }
+                };
+            });
+        }
+
+        function displayTestResults(city, tests) {
+            const resultsDiv = document.getElementById(`${city}-results`);
+            const passed = tests.filter(t => t.passed).length;
+            const total = tests.length;
+            
+            let html = `<div class="mb-3"><strong>Test Results: ${passed}/${total} passed (${Math.round(passed/total*100)}%)</strong></div>`;
+            
+            tests.forEach(test => {
+                const icon = test.passed ? 
+                    '<i class="fas fa-check-circle text-success"></i>' : 
+                    '<i class="fas fa-times-circle text-danger"></i>';
+                
+                html += `
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="me-2">${icon}</div>
+                        <div class="flex-grow-1">
+                            <strong>${test.name}:</strong> ${test.message}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            resultsDiv.innerHTML = html;
+        }
+
+        async function runAllTests() {
+            const globalResults = document.getElementById('globalResults');
+            const globalSummary = document.getElementById('globalSummary');
+            const runButton = document.getElementById('runAllTests');
+            
+            runButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Running Tests...';
+            runButton.disabled = true;
+
+            for (const city of cities) {
+                await testPage(city);
+            }
+            
+            // Show global results
+            let totalTests = 0;
+            let totalPassed = 0;
+            
+            Object.values(testResults).forEach(cityTests => {
+                totalTests += cityTests.length;
+                totalPassed += cityTests.filter(t => t.passed).length;
+            });
+            
+            const successRate = Math.round((totalPassed / totalTests) * 100);
+            
+            globalSummary.innerHTML = `
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h5 class="text-primary">${cities.length}</h5>
+                            <small>Pages Tested</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h5 class="text-success">${totalPassed}</h5>
+                            <small>Tests Passed</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h5 class="text-warning">${totalTests - totalPassed}</h5>
+                            <small>Tests Failed</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h5 class="${successRate >= 90 ? 'text-success' : successRate >= 70 ? 'text-warning' : 'text-danger'}">${successRate}%</h5>
+                            <small>Success Rate</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    ${successRate >= 90 ? 
+                        '<div class="alert alert-success mb-0"><i class="fas fa-check-circle me-2"></i>All pages are production-ready!</div>' :
+                        '<div class="alert alert-warning mb-0"><i class="fas fa-exclamation-triangle me-2"></i>Some issues found. Review failed tests above.</div>'
+                    }
+                </div>
+            `;
+            
+            globalResults.classList.remove('d-none');
+            
+            runButton.innerHTML = '<i class="fas fa-check me-2"></i>Tests Complete';
+            runButton.disabled = false;
+        }
+
+        function testFunctionality() {
+            // Test specific functionality like forms, navigation, etc.
+            alert('Functionality testing would check form submissions, navigation clicks, mobile menu, etc.');
+        }
+
+        function testResponsive() {
+            // Test responsive behavior at different screen sizes
+            alert('Responsive testing would simulate different viewport sizes and check layout adaptation.');
+        }
+
+        // Event listeners
+        document.getElementById('runAllTests').addEventListener('click', runAllTests);
+        document.getElementById('testFunctionality').addEventListener('click', testFunctionality);
+        document.getElementById('testResponsive').addEventListener('click', testResponsive);
+    </script>
+</body>
+</html>

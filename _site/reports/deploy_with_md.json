@@ -1,0 +1,106 @@
+{
+  "status": {
+    "published_pages": 764,
+    "robots_index_applied": false,
+    "sitemap_path": "web/sitemap.xml",
+    "sitemap_checksum_sha1": "2186b2177651f43bf760520468750ccfda7f9b32",
+    "drafts_intact": true,
+    "deploy_previous": {
+      "method": "git",
+      "status": "warning",
+      "message": "push failed: no remote origin"
+    }
+  },
+  "deploy_options": {
+    "git_remote": {
+      "prerequisites": ["git inizializzato", "remote origin configurato", "permessi push"],
+      "commands": [
+        "git remote add origin https://github.com/<org>/<repo>.git",
+        "git branch -M main",
+        "git add web/pages web/sitemap.xml",
+        "git -c user.name='IT-ERA Bot' -c user.email='bot@it-era.local' commit -m 'Promote V3 drafts & sitemap'",
+        "git push -u origin main"
+      ]
+    },
+    "cloudflare_pages_cli": {
+      "prerequisites": ["npm i -g wrangler", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID", "<project_name>"],
+      "env": [
+        "export CLOUDFLARE_API_TOKEN={{CF_API_TOKEN}}",
+        "export CLOUDFLARE_ACCOUNT_ID={{CF_ACCOUNT_ID}}"
+      ],
+      "commands": [
+        "wrangler pages project create <project_name> --production-branch=main || true",
+        "wrangler pages deploy ./web --project-name=<project_name> --branch=main --functions=./functions"
+      ]
+    },
+    "dashboard_manual": {
+      "steps": [
+        "Apri Cloudflare Dashboard → Pages",
+        "Crea/Apri progetto <project_name>",
+        "Sorgente: collega repo (branch main) oppure carica cartella ./web come static upload",
+        "Assicurati che /pages/ e /sitemap.xml siano inclusi"
+      ]
+    }
+  },
+  "commands_ready": {
+    "verify": [
+      "ls -1 web/pages | wc -l",
+      "shasum web/sitemap.xml",
+      "grep -liR --include='*.html' -E '<meta[^>]*(name=\"robots\"[^>]*content=\"index,follow\"|content=\"index,follow\"[^>]*name=\"robots\")' web/pages | wc -l"
+    ],
+    "quick_links": [
+      "web/sitemap.xml",
+      "web/pages/assistenza-it-abbadia-lariana.html",
+      "web/pages/assistenza-it-abbiategrasso.html",
+      "web/pages/assistenza-it-agnadello.html"
+    ]
+  },
+"notes": [
+    "Istruzioni estratte da api/deploy_claudeflare.md",
+    "Per deploy via wrangler servono {{CF_API_TOKEN}} e {{CF_ACCOUNT_ID}} impostati nell'ambiente",
+    "Per deploy via git configurare origin e push su main",
+    "Wrangler: supportata impostazione secrets/variabili per production e preview via 'wrangler pages secret put' con read -s + printf"
+  ],
+"wrangler_secrets_setup": {
+    "auth": [
+      "wrangler login",
+      "export CLOUDFLARE_API_TOKEN={{CF_API_TOKEN}}",
+      "export CLOUDFLARE_ACCOUNT_ID={{CF_ACCOUNT_ID}}"
+    ],
+    "secure_input": [
+      "read -s BLOG_API_KEY; echo",
+      "read -s GITHUB_TOKEN; echo",
+      "export GITHUB_OWNER=<owner>",
+      "export GITHUB_REPO=<repo>",
+      "export GITHUB_BRANCH=main",
+      "export SITE_BASE_URL=https://it-era.it",
+      "export BLOG_DIR=web/pages/blog",
+      "export SITEMAP_PATH=web/sitemap.xml"
+    ],
+    "put_production": [
+      "printf '%s' "$BLOG_API_KEY" | wrangler pages secret put BLOG_API_KEY --project-name=<project_name> --env=production",
+      "printf '%s' "$GITHUB_TOKEN" | wrangler pages secret put GITHUB_TOKEN --project-name=<project_name> --env=production",
+      "printf '%s' "$GITHUB_OWNER" | wrangler pages secret put GITHUB_OWNER --project-name=<project_name> --env=production",
+      "printf '%s' "$GITHUB_REPO"  | wrangler pages secret put GITHUB_REPO  --project-name=<project_name> --env=production",
+      "printf '%s' "$GITHUB_BRANCH"| wrangler pages secret put GITHUB_BRANCH --project-name=<project_name> --env=production",
+      "printf '%s' "$SITE_BASE_URL"| wrangler pages secret put SITE_BASE_URL --project-name=<project_name> --env=production",
+      "printf '%s' "$BLOG_DIR"     | wrangler pages secret put BLOG_DIR     --project-name=<project_name> --env=production",
+      "printf '%s' "$SITEMAP_PATH" | wrangler pages secret put SITEMAP_PATH --project-name=<project_name> --env=production"
+    ],
+    "put_preview": [
+      "printf '%s' "$BLOG_API_KEY" | wrangler pages secret put BLOG_API_KEY --project-name=<project_name> --env=preview",
+      "printf '%s' "$GITHUB_TOKEN" | wrangler pages secret put GITHUB_TOKEN --project-name=<project_name> --env=preview",
+      "printf '%s' "$GITHUB_OWNER" | wrangler pages secret put GITHUB_OWNER --project-name=<project_name> --env=preview",
+      "printf '%s' "$GITHUB_REPO"  | wrangler pages secret put GITHUB_REPO  --project-name=<project_name> --env=preview",
+      "printf '%s' "$GITHUB_BRANCH"| wrangler pages secret put GITHUB_BRANCH --project-name=<project_name> --env=preview",
+      "printf '%s' "$SITE_BASE_URL"| wrangler pages secret put SITE_BASE_URL --project-name=<project_name> --env=preview",
+      "printf '%s' "$BLOG_DIR"     | wrangler pages secret put BLOG_DIR     --project-name=<project_name> --env=preview",
+      "printf '%s' "$SITEMAP_PATH" | wrangler pages secret put SITEMAP_PATH --project-name=<project_name> --env=preview"
+    ]
+  },
+  "api_blog_publish_test": {
+    "endpoint": "POST https://it-era.it/api/blog/publish",
+    "curl": "curl -sS -X POST https://it-era.it/api/blog/publish -H 'Authorization: Bearer {{BLOG_API_KEY}}' -H 'Content-Type: application/json' -d '{\\n  \\\"title\\\": \\\"Strategia Backup 3-2-1 per PMI\\\",\\n  \\\"slug\\\": \\\"prova-articolo-lecco\\\",\\n  \\\"content_html\\\": \\\"<h1>Strategia 3-2-1</h1><p>Backup locale + offsite + test periodici.</p>\\\",\\n  \\\"meta\\\": {\\n    \\\"title\\\": \\\"Backup 3-2-1 per PMI a Lecco\\\",\\n    \\\"description\\\": \\\"Come applicare la strategia 3-2-1 per mettere al sicuro i dati aziendali a Lecco (guida pratica).\\\",\\n    \\\"keywords\\\": [\\\"backup lecco\\\", \\\"strategy 3-2-1\\\", \\\"veeam\\\", \\\"disaster recovery\\\"]\\n  },\\n  \\\"schema_jsonld\\\": {\\n    \\\"@context\\\": \\\"https://schema.org\\\",\\n    \\\"@type\\\": \\\"BlogPosting\\\",\\n    \\\"headline\\\": \\\"Backup 3-2-1 per PMI a Lecco\\\",\\n    \\\"datePublished\\\": \\\"2025-08-23\\\"\\n  },\\n  \\\"cover\\\": { \\\"url\\\": \\\"https://it-era.it/static/images/backup-cover.jpg\\\" },\\n  \\\"commit_message\\\": \\\"feat(blog): publish prova-articolo-lecco\\\"\\n}'"
+  }
+}
+

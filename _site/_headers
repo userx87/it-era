@@ -1,0 +1,64 @@
+/*
+  # Security Headers - IT-ERA Optimized
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  
+  # Performance Headers
+  Cache-Control: public, max-age=31536000, immutable
+  X-Robots-Tag: index, follow
+  
+  # CSP - Enhanced for IT-ERA
+  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://embed.tawk.to https://va.tawk.to https://www.googletagmanager.com https://www.google-analytics.com https://api.openai.com https://js.stripe.com https://checkout.stripe.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com https://embed.tawk.to; img-src 'self' https: data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://embed.tawk.to; connect-src 'self' https: https://api.openai.com https://www.google-analytics.com https://www.googletagmanager.com https://embed.tawk.to https://va.tawk.to; font-src 'self' https: https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; frame-src 'self' https://js.stripe.com https://checkout.stripe.com https://embed.tawk.to https://www.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'none'
+
+# Static Assets - Long Cache
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: text/css
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/javascript
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/svg+xml
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff2
+
+# HTML Pages - Short Cache
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+# API Endpoints - No Cache
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+# Sitemap and Robots
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain

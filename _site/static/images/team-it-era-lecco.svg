@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  <!-- Team members silhouettes -->
+  <circle cx="150" cy="150" r="40" fill="#0066cc"/>
+  <ellipse cx="150" cy="250" rx="60" ry="80" fill="#0066cc"/>
+  <circle cx="300" cy="140" r="40" fill="#0066cc"/>
+  <ellipse cx="300" cy="240" rx="60" ry="80" fill="#0066cc"/>
+  <circle cx="450" cy="150" r="40" fill="#0066cc"/>
+  <ellipse cx="450" cy="250" rx="60" ry="80" fill="#0066cc"/>
+  <!-- Background elements -->
+  <rect x="50" y="320" width="500" height="60" fill="#e9ecef" rx="4"/>
+  <text x="300" y="355" font-family="Arial" font-size="20" fill="#333" text-anchor="middle">Team IT-ERA Bulltech</text>
+</svg>

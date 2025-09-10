@@ -76,6 +76,12 @@ function processTemplate(content, metadata) {
   // Remove any remaining Handlebars expressions
   processed = processed.replace(/\{\{[^}]*\}\}/g, '');
 
+  // Remove empty lines created by template removal
+  processed = processed.replace(/^\s*<link[^>]*href="[^"]*\{\{[^}]*\}\}[^"]*"[^>]*>\s*$/gm, '');
+  processed = processed.replace(/^\s*<script[^>]*src="[^"]*\{\{[^}]*\}\}[^"]*"[^>]*>\s*$/gm, '');
+  processed = processed.replace(/class="\s*"/g, '');
+  processed = processed.replace(/class=""/g, '');
+
   // Clean up empty lines and extra whitespace
   processed = processed.replace(/^\s*\n/gm, '');
   processed = processed.replace(/\n\s*\n\s*\n/g, '\n\n');

@@ -86,10 +86,15 @@ function processTemplate(content, metadata) {
   processed = processed.replace(/^\s*\n/gm, '');
   processed = processed.replace(/\n\s*\n\s*\n/g, '\n\n');
 
-  // Fix relative paths for GitHub Pages
-  processed = processed.replace(/href="\/(?!\/)/g, 'href="./');
-  processed = processed.replace(/src="\/(?!\/)/g, 'src="./');
-  processed = processed.replace(/url\(\/(?!\/)/g, 'url(./');
+  // Fix relative paths for GitHub Pages (use base path)
+  const basePath = '/it-era';
+  processed = processed.replace(/href="\/(?!\/)/g, `href="${basePath}/`);
+  processed = processed.replace(/src="\/(?!\/)/g, `src="${basePath}/`);
+  processed = processed.replace(/url\(\/(?!\/)/g, `url(${basePath}/`);
+
+  // Remove empty CSS/JS references
+  processed = processed.replace(/<link[^>]*href="[^"]*\/\.css"[^>]*>/g, '');
+  processed = processed.replace(/<script[^>]*src="[^"]*\/\.js"[^>]*><\/script>/g, '');
 
   return processed;
 }
@@ -101,13 +106,13 @@ function getStaticHeader() {
       <nav class="container mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center">
-            <img src="./images/logo-it-era.png" alt="IT-ERA Logo" class="h-10 w-auto">
+            <img src="/it-era/images/logo-it-era.png" alt="IT-ERA Logo" class="h-10 w-auto">
             <span class="ml-3 text-xl font-bold text-gray-900">IT-ERA</span>
           </div>
           <div class="hidden md:flex space-x-6">
-            <a href="./" class="text-gray-700 hover:text-blue-600">Home</a>
-            <a href="./servizi.html" class="text-gray-700 hover:text-blue-600">Servizi</a>
-            <a href="./contatti.html" class="text-gray-700 hover:text-blue-600">Contatti</a>
+            <a href="/it-era/" class="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="/it-era/servizi.html" class="text-gray-700 hover:text-blue-600">Servizi</a>
+            <a href="/it-era/contatti.html" class="text-gray-700 hover:text-blue-600">Contatti</a>
           </div>
           <div class="md:hidden">
             <button class="text-gray-700">
@@ -135,9 +140,9 @@ function getStaticFooter() {
           <div>
             <h4 class="text-md font-semibold mb-4">Servizi</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a href="./servizi.html" class="hover:text-white">Assistenza IT</a></li>
-              <li><a href="./servizi.html" class="hover:text-white">Sicurezza Informatica</a></li>
-              <li><a href="./servizi.html" class="hover:text-white">Cloud Computing</a></li>
+              <li><a href="/it-era/servizi.html" class="hover:text-white">Assistenza IT</a></li>
+              <li><a href="/it-era/servizi.html" class="hover:text-white">Sicurezza Informatica</a></li>
+              <li><a href="/it-era/servizi.html" class="hover:text-white">Cloud Computing</a></li>
             </ul>
           </div>
           <div>
@@ -190,10 +195,10 @@ function getHomepageContent() {
           Supporto informatico 24/7 per la tua azienda. Risolviamo i tuoi problemi IT in tempi record.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="./contatti.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          <a href="/it-era/contatti.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
             Contattaci Ora
           </a>
-          <a href="./servizi.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+          <a href="/it-era/servizi.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
             I Nostri Servizi
           </a>
         </div>

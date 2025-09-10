@@ -1,3 +1,5 @@
 GitHub Pages Deployment Trigger
-Timestamp: 2025-01-10 - CSS Paths Fixed
+Timestamp: 2025-01-10 17:09 - CSS Paths Fixed + Workflows Added
 Status: Ready for deployment
+Workflows: github-pages-simple.yml active
+CSS: All paths corrected with /it-era/ prefix

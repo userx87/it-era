@@ -20,6 +20,34 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/it-era/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/it-era/apple-touch-icon.png">
+    <!-- ============================================
+         ANALYTICS & TRACKING (HEAD SECTION)
+         ============================================ -->
+
+    <!-- Google Tag Manager (Place immediately after opening <head> tag) -->
+    <!--
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+
+    <!-- Google Analytics 4 (Alternative to GTM) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID', {
+        'page_title': 'IT-ERA Homepage',
+        'page_location': window.location.href,
+        'content_group1': 'Homepage'
+      });
+    </script>
+    -->
+
     <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/it-era/css/tailwind-config.js"></script>
@@ -102,7 +130,13 @@
         gtag('config', 'GA_MEASUREMENT_ID');
     </script>
 </head>
-<body >
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <!--
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    -->
+
     <!-- Skip to main content -->
     <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
     <!-- Modern Header -->
@@ -599,9 +633,6 @@
         </div>
       </div>
     </footer>
-        </div>
-      </div>
-    </footer>
 
     <!-- Modern Chatbot Widget -->
     <div id="chatbot-widget" class="fixed bottom-8 right-8 z-50">
@@ -832,81 +863,219 @@
     });
     </script>
 
-    <!-- Chatbot Widget -->
-    <div id="it-era-chatbot" class="fixed bottom-6 right-6 z-50">
-        <button id="chatbot-toggle" class="w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group">
-            <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-            </svg>
-            <span class="absolute -top-2 -right-2 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center animate-pulse">!</span>
-        </button>
 
-        <!-- Chatbot Popup -->
-        <div id="chatbot-popup" class="absolute bottom-16 right-0 w-80 bg-white rounded-lg shadow-xl border border-gray-200 hidden">
-            <div class="p-4 bg-blue-600 text-white rounded-t-lg">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                        <span class="font-semibold">Assistenza IT-ERA</span>
-                    </div>
-                    <button id="chatbot-close" class="text-white hover:text-gray-200">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="p-4">
-                <div class="mb-4">
-                    <div class="bg-gray-100 rounded-lg p-3 mb-3">
-                        <p class="text-sm text-gray-700">👋 Ciao! Sono l'assistente virtuale di IT-ERA. Come posso aiutarti?</p>
-                    </div>
-                </div>
-                <div class="space-y-2">
-                    <a href="tel:+390398882041" class="block w-full bg-red-500 hover:bg-red-600 text-white text-center py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
-                        🚨 Emergenza IT - Chiama Ora
-                    </a>
-                    <a href="/it-era/contatti.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
-                        💬 Richiedi Preventivo
-                    </a>
-                    <a href="/it-era/servizi.html" class="block w-full bg-gray-600 hover:bg-gray-700 text-white text-center py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
-                        📋 Scopri i Servizi
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
+    <!-- ============================================
+         ANALYTICS & TRACKING SCRIPTS
+         ============================================ -->
+
+    <!-- Google Analytics 4 -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
-    // Chatbot functionality
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
+    <!-- Google Tag Manager -->
+    <!--
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+
+    <!-- Facebook Pixel -->
+    <!--
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    -->
+
+    <!-- Microsoft Clarity -->
+    <!--
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+    </script>
+    -->
+
+    <!-- Hotjar Tracking Code -->
+    <!--
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:YOUR_HOTJAR_ID,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    -->
+
+    <!-- LinkedIn Insight Tag -->
+    <!--
+    <script type="text/javascript">
+    _linkedin_partner_id = "YOUR_PARTNER_ID";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=YOUR_PARTNER_ID&fmt=gif" />
+    </noscript>
+    -->
+
+    <!-- Custom Analytics Events -->
+    <script>
+    // Custom event tracking for IT-ERA
     document.addEventListener('DOMContentLoaded', function() {
-        const chatbotToggle = document.getElementById('chatbot-toggle');
-        const chatbotPopup = document.getElementById('chatbot-popup');
-        const chatbotClose = document.getElementById('chatbot-close');
+        // Track phone clicks
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                // gtag('event', 'phone_call', { 'event_category': 'contact' });
+                console.log('Phone call tracked:', this.href);
+            });
+        });
 
-        if (chatbotToggle && chatbotPopup) {
-            chatbotToggle.addEventListener('click', function() {
-                chatbotPopup.classList.toggle('hidden');
+        // Track contact form submissions
+        document.querySelectorAll('form').forEach(function(form) {
+            form.addEventListener('submit', function() {
+                // gtag('event', 'form_submit', { 'event_category': 'contact' });
+                console.log('Form submission tracked');
+            });
+        });
+
+        // Track chatbot interactions
+        const chatbotButton = document.getElementById('chatbot-button');
+        if (chatbotButton) {
+            chatbotButton.addEventListener('click', function() {
+                // gtag('event', 'chatbot_open', { 'event_category': 'engagement' });
+                console.log('Chatbot interaction tracked');
             });
         }
 
-        if (chatbotClose && chatbotPopup) {
-            chatbotClose.addEventListener('click', function() {
-                chatbotPopup.classList.add('hidden');
+        // Track service page visits
+        document.querySelectorAll('a[href*="/servizi"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                // gtag('event', 'services_view', { 'event_category': 'navigation' });
+                console.log('Services page visit tracked');
             });
-        }
-
-        // Close chatbot when clicking outside
-        document.addEventListener('click', function(event) {
-            const chatbotContainer = document.getElementById('it-era-chatbot');
-            if (chatbotContainer && !chatbotContainer.contains(event.target)) {
-                chatbotPopup.classList.add('hidden');
-            }
         });
     });
     </script>
-    
-    <!-- Claude Flow Scripts (if enabled) -->
-    <script src="/it-era/claude-flow/claude-flow-dashboard.js"></script>
+
+    <!-- ============================================
+         THIRD-PARTY INTEGRATIONS
+         ============================================ -->
+
+    <!-- Tawk.to Live Chat (Alternative to custom chatbot) -->
+    <!--
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/YOUR_TAWK_ID/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    -->
+
+    <!-- Calendly Inline Widget -->
+    <!--
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    -->
+
+    <!-- Crisp Chat -->
+    <!--
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="YOUR_CRISP_ID";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    -->
+
+    <!-- ============================================
+         PERFORMANCE & SEO
+         ============================================ -->
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "IT-ERA",
+      "description": "Assistenza informatica professionale per aziende in Lombardia",
+      "url": "https://userx87.github.io/it-era/",
+      "telephone": "+39-039-888-2041",
+      "email": "info@it-era.it",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vimercate",
+        "addressRegion": "Lombardia",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.6167",
+        "longitude": "9.3667"
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "serviceArea": {
+        "@type": "State",
+        "name": "Lombardia"
+      },
+      "priceRange": "€€",
+      "image": "https://userx87.github.io/it-era/images/logo-it-era.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/it-era",
+        "https://www.facebook.com/itera.assistenza"
+      ]
+    }
+    </script>
+
+    <!-- Service Worker for PWA (Optional) -->
+    <!--
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/it-era/sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful');
+          }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+    </script>
+    -->
+
 </body>
 </html>

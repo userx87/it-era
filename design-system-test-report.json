@@ -1,0 +1,252 @@
+{
+  "timestamp": "2025-09-10T15:45:48.659Z",
+  "summary": {
+    "totalPages": 0,
+    "cssFilesLoaded": 4,
+    "cssFilesFailed": 0,
+    "responsiveBreakpoints": 0,
+    "interactiveComponents": 15,
+    "accessibilityScore": 73
+  },
+  "cssTests": [
+    {
+      "path": "/styles.css",
+      "type": "CSS",
+      "url": "https://userx87.github.io/it-era/styles.css",
+      "status": 200,
+      "success": true,
+      "loadTime": 36,
+      "size": "7053"
+    },
+    {
+      "path": "/css/enhanced-chatbot.min.css",
+      "type": "CSS",
+      "url": "https://userx87.github.io/it-era/css/enhanced-chatbot.min.css",
+      "status": 200,
+      "success": true,
+      "loadTime": 33,
+      "size": "7630"
+    },
+    {
+      "path": "/css/assistenza-informatica.css",
+      "type": "CSS",
+      "url": "https://userx87.github.io/it-era/css/assistenza-informatica.css",
+      "status": 200,
+      "success": true,
+      "loadTime": 17,
+      "size": "8800"
+    },
+    {
+      "path": "/css/styles.css",
+      "type": "CSS",
+      "url": "https://userx87.github.io/it-era/css/styles.css",
+      "status": 200,
+      "success": true,
+      "loadTime": 21,
+      "size": "10285"
+    }
+  ],
+  "responsivityTests": [
+    {
+      "type": "CSS Analysis",
+      "totalRules": 196,
+      "mediaQueries": 9,
+      "colorVariables": 27,
+      "fontFamilies": [
+        "var(--font)",
+        "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}.chatbot-toggle{width:60px",
+        "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+      ],
+      "breakpoints": [
+        480,
+        640,
+        768,
+        1024
+      ],
+      "animations": 44,
+      "score": 87
+    }
+  ],
+  "componentTests": [
+    {
+      "file": "index.html",
+      "components": {
+        "buttons": 1,
+        "forms": 0,
+        "inputs": 0,
+        "modals": 0,
+        "dropdowns": 0,
+        "chatbot": 1,
+        "navigation": 1
+      },
+      "total": 3,
+      "score": 55
+    },
+    {
+      "file": "servizi.html",
+      "components": {
+        "buttons": 1,
+        "forms": 0,
+        "inputs": 0,
+        "modals": 0,
+        "dropdowns": 0,
+        "chatbot": 1,
+        "navigation": 1
+      },
+      "total": 3,
+      "score": 55
+    },
+    {
+      "file": "contatti.html",
+      "components": {
+        "buttons": 2,
+        "forms": 1,
+        "inputs": 4,
+        "modals": 0,
+        "dropdowns": 0,
+        "chatbot": 1,
+        "navigation": 1
+      },
+      "total": 9,
+      "score": 100
+    }
+  ],
+  "accessibilityTests": [
+    {
+      "file": "index.html",
+      "altTexts": {
+        "total": 1,
+        "withAlt": 1
+      },
+      "headingStructure": {
+        "headings": [
+          {
+            "level": 1,
+            "count": 1
+          },
+          {
+            "level": 2,
+            "count": 2
+          },
+          {
+            "level": 3,
+            "count": 4
+          },
+          {
+            "level": 4,
+            "count": 3
+          },
+          {
+            "level": 5,
+            "count": 0
+          },
+          {
+            "level": 6,
+            "count": 0
+          }
+        ],
+        "valid": true,
+        "h1Count": 1
+      },
+      "ariaLabels": 0,
+      "focusableElements": 0,
+      "semanticElements": 7,
+      "langAttribute": 1,
+      "score": 75
+    },
+    {
+      "file": "servizi.html",
+      "altTexts": {
+        "total": 1,
+        "withAlt": 1
+      },
+      "headingStructure": {
+        "headings": [
+          {
+            "level": 1,
+            "count": 1
+          },
+          {
+            "level": 2,
+            "count": 4
+          },
+          {
+            "level": 3,
+            "count": 1
+          },
+          {
+            "level": 4,
+            "count": 3
+          },
+          {
+            "level": 5,
+            "count": 0
+          },
+          {
+            "level": 6,
+            "count": 0
+          }
+        ],
+        "valid": true,
+        "h1Count": 1
+      },
+      "ariaLabels": 0,
+      "focusableElements": 0,
+      "semanticElements": 4,
+      "langAttribute": 1,
+      "score": 72
+    },
+    {
+      "file": "contatti.html",
+      "altTexts": {
+        "total": 1,
+        "withAlt": 1
+      },
+      "headingStructure": {
+        "headings": [
+          {
+            "level": 1,
+            "count": 1
+          },
+          {
+            "level": 2,
+            "count": 2
+          },
+          {
+            "level": 3,
+            "count": 1
+          },
+          {
+            "level": 4,
+            "count": 3
+          },
+          {
+            "level": 5,
+            "count": 0
+          },
+          {
+            "level": 6,
+            "count": 0
+          }
+        ],
+        "valid": true,
+        "h1Count": 1
+      },
+      "ariaLabels": 0,
+      "focusableElements": 0,
+      "semanticElements": 4,
+      "langAttribute": 1,
+      "score": 72
+    }
+  ],
+  "performanceMetrics": [],
+  "issues": [],
+  "recommendations": [
+    {
+      "category": "Accessibility",
+      "priority": "High",
+      "issue": "Low accessibility score: 73/100",
+      "solution": "Add missing alt texts, ARIA labels, and improve semantic structure"
+    }
+  ]
+}

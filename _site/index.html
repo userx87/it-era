@@ -105,86 +105,92 @@
 <body >
     <!-- Skip to main content -->
     <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
-    <!-- Header -->
-    <header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100">
-      <nav class="container-it">
-        <div class="flex items-center justify-between h-16">
+    <!-- Modern Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200/50">
+      <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
           <!-- Logo -->
-          <div class="flex items-center space-x-3">
-            <img src="/it-era/images/logo-it-era.png" alt="IT-ERA Logo" class="h-10 w-auto">
-            <span class="text-xl font-bold text-gray-900 tracking-tight">IT-ERA</span>
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl flex items-center justify-center">
+              <span class="text-white font-bold text-xl">IT</span>
+            </div>
+            <div class="hidden sm:block">
+              <h1 class="text-2xl font-bold text-neutral-900">IT-ERA</h1>
+              <p class="text-sm text-neutral-600 -mt-1">Assistenza IT Professionale</p>
+            </div>
           </div>
 
           <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center space-x-1">
-            <a href="/it-era/" class="nav-link-it-active">Home</a>
-            <a href="/it-era/servizi.html" class="nav-link-it">Servizi</a>
-            <a href="/it-era/contatti.html" class="nav-link-it">Contatti</a>
+          <div class="hidden lg:flex items-center space-x-8">
+            <a href="/it-era/" class="text-brand-600 font-semibold">Home</a>
+            <a href="/it-era/servizi.html" class="text-neutral-700 hover:text-brand-600 transition-colors">Servizi</a>
+            <a href="/it-era/contatti.html" class="text-neutral-700 hover:text-brand-600 transition-colors">Contatti</a>
             <div class="relative group">
-              <button class="nav-link-it flex items-center space-x-1" aria-expanded="false">
+              <button class="text-neutral-700 hover:text-brand-600 transition-colors flex items-center space-x-1">
                 <span>Settori</span>
                 <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-              <!-- Dropdown Menu -->
-              <div class="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div class="py-2">
-                  <a href="/it-era/settori/pmi-startup.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">PMI e Startup</a>
-                  <a href="/it-era/settori/studi-medici.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Studi Medici</a>
-                  <a href="/it-era/settori/commercialisti.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Commercialisti</a>
-                  <a href="/it-era/settori/studi-legali.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Studi Legali</a>
-                  <a href="/it-era/settori/industria-40.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Industria 4.0</a>
-                  <a href="/it-era/settori/retail-gdo.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Retail e GDO</a>
+              <!-- Modern Dropdown -->
+              <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-neutral-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div class="p-2">
+                  <a href="/it-era/settori/pmi-startup.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">PMI e Startup</a>
+                  <a href="/it-era/settori/studi-medici.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Studi Medici</a>
+                  <a href="/it-era/settori/commercialisti.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Commercialisti</a>
+                  <a href="/it-era/settori/studi-legali.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Studi Legali</a>
+                  <a href="/it-era/settori/industria-40.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Industria 4.0</a>
+                  <a href="/it-era/settori/retail-gdo.html" class="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 rounded-xl transition-colors">Retail e GDO</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CTA Button Desktop -->
-          <div class="hidden md:flex items-center space-x-4">
-            <a href="tel:+390398882041" class="text-blue-600 hover:text-blue-700 font-semibold text-sm">
-              📞 039 888 2041
+          <!-- CTA Section -->
+          <div class="hidden lg:flex items-center space-x-4">
+            <a href="tel:+390398882041" class="flex items-center space-x-2 text-brand-600 hover:text-brand-700 font-semibold">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span>039 888 2041</span>
             </a>
-            <a href="/it-era/contatti.html" class="btn-it-primary text-sm px-4 py-2">
+            <a href="/it-era/contatti.html" class="btn-primary btn-sm">
               Contattaci
             </a>
           </div>
 
           <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button id="mobile-menu-button" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" aria-label="Apri menu di navigazione" aria-expanded="false">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <div class="lg:hidden">
+            <button id="mobile-menu-button" class="p-2 rounded-xl text-neutral-700 hover:bg-neutral-100 transition-colors" aria-label="Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
           </div>
         </div>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white">
-          <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="/it-era/" class="block px-3 py-2 text-base font-semibold text-blue-600 bg-blue-50 rounded-md">Home</a>
-            <a href="/it-era/servizi.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Servizi</a>
-            <a href="/it-era/contatti.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Contatti</a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden border-t border-neutral-200 bg-white/95 backdrop-blur-xl">
+          <div class="p-4 space-y-2">
+            <a href="/it-era/" class="block px-4 py-3 text-brand-600 font-semibold bg-brand-50 rounded-xl">Home</a>
+            <a href="/it-era/servizi.html" class="block px-4 py-3 text-neutral-700 hover:bg-neutral-100 rounded-xl transition-colors">Servizi</a>
+            <a href="/it-era/contatti.html" class="block px-4 py-3 text-neutral-700 hover:bg-neutral-100 rounded-xl transition-colors">Contatti</a>
 
-            <!-- Mobile Settori Submenu -->
             <div class="pt-2">
-              <div class="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">Settori</div>
-              <a href="/it-era/settori/pmi-startup.html" class="block px-6 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">PMI e Startup</a>
-              <a href="/it-era/settori/studi-medici.html" class="block px-6 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Studi Medici</a>
-              <a href="/it-era/settori/commercialisti.html" class="block px-6 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Commercialisti</a>
-              <a href="/it-era/settori/studi-legali.html" class="block px-6 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Studi Legali</a>
-              <a href="/it-era/settori/industria-40.html" class="block px-6 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Industria 4.0</a>
-              <a href="/it-era/settori/retail-gdo.html" class="block px-6 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Retail e GDO</a>
+              <p class="px-4 py-2 text-xs font-semibold text-neutral-500 uppercase tracking-wider">Settori</p>
+              <a href="/it-era/settori/pmi-startup.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">PMI e Startup</a>
+              <a href="/it-era/settori/studi-medici.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Studi Medici</a>
+              <a href="/it-era/settori/commercialisti.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Commercialisti</a>
+              <a href="/it-era/settori/studi-legali.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Studi Legali</a>
+              <a href="/it-era/settori/industria-40.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Industria 4.0</a>
+              <a href="/it-era/settori/retail-gdo.html" class="block px-6 py-2 text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-colors">Retail e GDO</a>
             </div>
 
-            <!-- Mobile CTA -->
-            <div class="pt-4 border-t border-gray-100">
-              <a href="tel:+390398882041" class="block px-3 py-2 text-base font-semibold text-blue-600 hover:bg-blue-50 rounded-md">
+            <div class="pt-4 border-t border-neutral-200">
+              <a href="tel:+390398882041" class="block px-4 py-3 text-brand-600 font-semibold hover:bg-brand-50 rounded-xl transition-colors">
                 📞 039 888 2041
               </a>
-              <a href="/it-era/contatti.html" class="block mt-2 mx-3 btn-it-primary text-center">
+              <a href="/it-era/contatti.html" class="block mt-2 btn-primary w-full text-center">
                 Contattaci Ora
               </a>
             </div>
@@ -194,424 +200,480 @@
     </header>
     <!-- Main Content -->
     <main id="main-content" role="main">
-    <!-- Hero Section -->
-    <section class="hero-it mt-16 relative overflow-hidden">
-      <!-- Background Pattern -->
-      <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800"></div>
-      <div class="absolute inset-0 bg-black bg-opacity-10"></div>
-      <div class="absolute inset-0 opacity-10">
-        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-              <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
-            </pattern>
-          </defs>
-          <rect width="100" height="100" fill="url(#grid)"/>
-        </svg>
+    <!-- Modern Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-50 via-white to-brand-50">
+      <!-- Background Elements -->
+      <div class="absolute inset-0">
+        <!-- Geometric Shapes -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-brand-100 rounded-full opacity-60 animate-pulse"></div>
+        <div class="absolute bottom-20 right-20 w-24 h-24 bg-brand-200 rounded-2xl opacity-40 rotate-45 animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 right-10 w-16 h-16 bg-brand-300 rounded-full opacity-30 animate-pulse" style="animation-delay: 2s;"></div>
+
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 opacity-5">
+          <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <pattern id="hero-grid" width="4" height="4" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="0.5" fill="currentColor"/>
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#hero-grid)" class="text-brand-600"/>
+          </svg>
+        </div>
       </div>
 
-      <!-- Content -->
-      <div class="relative z-10 container-it text-center">
-        <div class="max-w-4xl mx-auto">
-          <!-- Badge -->
-          <div class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full text-white text-sm font-medium mb-8 animate-fade-in">
-            <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-            Assistenza IT 24/7 Attiva
+      <!-- Hero Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <!-- Status Badge -->
+        <div class="inline-flex items-center px-6 py-3 bg-success-100 text-success-700 rounded-full text-sm font-semibold mb-8 animate-fade-in">
+          <div class="w-2 h-2 bg-success-500 rounded-full mr-3 animate-pulse"></div>
+          Assistenza IT 24/7 Attiva
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-tight animate-slide-up">
+          Assistenza IT
+          <span class="block text-brand-600">Professionale</span>
+          <span class="block text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-600 mt-2">in Lombardia</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-xl md:text-2xl text-neutral-600 mb-12 max-w-4xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.2s;">
+          Supporto informatico 24/7 per la tua azienda. Risolviamo i tuoi problemi IT in tempi record con soluzioni professionali e innovative.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-slide-up" style="animation-delay: 0.4s;">
+          <a href="/it-era/contatti.html" class="btn-primary btn-lg group" aria-label="Contatta IT-ERA per assistenza">
+            <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            Contattaci Ora
+          </a>
+          <a href="/it-era/servizi.html" class="btn-secondary btn-lg group" aria-label="Scopri i servizi IT-ERA">
+            <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Scopri i Servizi
+          </a>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in" style="animation-delay: 0.6s;">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-neutral-900 mb-1">Certificati Microsoft</h3>
+            <p class="text-sm text-neutral-600">Partner ufficiale</p>
           </div>
-
-          <!-- Main Heading -->
-          <h1 class="text-responsive-xl font-bold mb-6 leading-tight animate-slide-up">
-            Assistenza IT Professionale<br>
-            <span class="text-blue-200">in Lombardia</span>
-          </h1>
-
-          <!-- Subtitle -->
-          <p class="text-responsive-md mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.2s;">
-            Supporto informatico 24/7 per la tua azienda. Risolviamo i tuoi problemi IT in tempi record con soluzioni professionali e innovative.
-          </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-slide-up" style="animation-delay: 0.4s;">
-            <a href="/it-era/contatti.html" class="btn-it-secondary bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200" aria-label="Vai alla pagina contatti per richiedere assistenza">
-              <span class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-                Contattaci Ora
-              </span>
-            </a>
-            <a href="/it-era/servizi.html" class="btn-it-outline px-8 py-4 text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200" aria-label="Scopri tutti i nostri servizi IT">
-              <span class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                I Nostri Servizi
-              </span>
-            </a>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-neutral-900 mb-1">15+ Anni Esperienza</h3>
+            <p class="text-sm text-neutral-600">Nel settore IT</p>
           </div>
-
-          <!-- Trust Indicators -->
-          <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-blue-200 animate-fade-in" style="animation-delay: 0.6s;">
-            <div class="flex items-center space-x-2">
-              <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
-              <span class="text-sm font-medium">Certificati Microsoft</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span class="text-sm font-medium">15+ Anni Esperienza</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span class="text-sm font-medium">500+ Clienti Soddisfatti</span>
-            </div>
+            <h3 class="font-semibold text-neutral-900 mb-1">500+ Clienti</h3>
+            <p class="text-sm text-neutral-600">Soddisfatti</p>
           </div>
         </div>
       </div>
 
-      <!-- Floating Elements -->
-      <div class="absolute top-20 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full animate-pulse hidden lg:block"></div>
-      <div class="absolute bottom-20 right-10 w-16 h-16 bg-blue-300 bg-opacity-20 rounded-full animate-pulse hidden lg:block" style="animation-delay: 1s;"></div>
-      <div class="absolute top-1/2 left-20 w-12 h-12 bg-blue-200 bg-opacity-15 rounded-full animate-pulse hidden lg:block" style="animation-delay: 2s;"></div>
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
     </section>
-    <!-- Services Preview -->
-    <section class="section-it bg-gray-50">
-      <div class="container-it">
+    <!-- Modern Services Section -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-16">
-          <h2 class="text-responsive-lg font-bold text-gray-900 mb-4">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
             I Nostri Servizi
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Soluzioni IT complete per far crescere la tua azienda con tecnologie all'avanguardia e supporto professionale
+          <p class="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+            Soluzioni IT complete per far crescere la tua azienda con tecnologie all'avanguardia e supporto professionale 24/7
           </p>
         </div>
 
         <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <!-- Service 1: Assistenza Tecnica -->
-          <div class="card-it text-center group">
-            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card-service group">
+            <div class="w-20 h-20 bg-gradient-to-br from-brand-100 to-brand-200 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-10 h-10 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Assistenza Tecnica</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              Supporto IT completo per la tua azienda con interventi rapidi e risolutivi. Risolviamo ogni problema tecnico.
+            <h3 class="text-2xl font-bold text-neutral-900 mb-4">Assistenza Tecnica</h3>
+            <p class="text-neutral-600 mb-8 leading-relaxed">
+              Supporto IT completo per la tua azienda con interventi rapidi e risolutivi. Risolviamo ogni problema tecnico con professionalità.
             </p>
-            <div class="flex items-center justify-center space-x-4 text-sm text-gray-500">
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                24/7
-              </span>
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Remoto
-              </span>
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                On-site
-              </span>
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span class="px-3 py-1 bg-success-100 text-success-700 rounded-full text-sm font-medium">24/7</span>
+              <span class="px-3 py-1 bg-brand-100 text-brand-700 rounded-full text-sm font-medium">Remoto</span>
+              <span class="px-3 py-1 bg-warning-100 text-warning-700 rounded-full text-sm font-medium">On-site</span>
             </div>
+            <a href="/it-era/servizi.html" class="text-brand-600 font-semibold hover:text-brand-700 transition-colors group-hover:underline">
+              Scopri di più →
+            </a>
           </div>
 
-          <!-- Service 2: Sicurezza Informatica -->
-          <div class="card-it-featured text-center group">
-            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <!-- Service 2: Sicurezza Informatica (Featured) -->
+          <div class="card-featured group">
+            <div class="absolute top-6 right-6 bg-brand-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+              PIÙ RICHIESTO
+            </div>
+            <div class="w-20 h-20 bg-gradient-to-br from-brand-500 to-brand-600 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
               </svg>
             </div>
-            <div class="absolute top-4 right-4 bg-blue-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
-              PIÙ RICHIESTO
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Sicurezza Informatica</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              Protezione avanzata contro cyber minacce e backup automatici dei dati. La tua sicurezza è la nostra priorità.
+            <h3 class="text-2xl font-bold text-neutral-900 mb-4">Sicurezza Informatica</h3>
+            <p class="text-neutral-600 mb-8 leading-relaxed">
+              Protezione avanzata contro cyber minacce e backup automatici dei dati. La tua sicurezza è la nostra priorità assoluta.
             </p>
-            <div class="flex items-center justify-center space-x-4 text-sm text-gray-500">
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Firewall
-              </span>
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Backup
-              </span>
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                GDPR
-              </span>
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span class="px-3 py-1 bg-danger-100 text-danger-700 rounded-full text-sm font-medium">Firewall</span>
+              <span class="px-3 py-1 bg-success-100 text-success-700 rounded-full text-sm font-medium">Backup</span>
+              <span class="px-3 py-1 bg-brand-100 text-brand-700 rounded-full text-sm font-medium">GDPR</span>
             </div>
+            <a href="/it-era/servizi.html" class="text-brand-600 font-semibold hover:text-brand-700 transition-colors group-hover:underline">
+              Scopri di più →
+            </a>
           </div>
 
           <!-- Service 3: Cloud Computing -->
-          <div class="card-it text-center group">
-            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors duration-300">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="card-service group">
+            <div class="w-20 h-20 bg-gradient-to-br from-brand-100 to-brand-200 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-10 h-10 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Cloud Computing</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              Migrazione al cloud e gestione infrastrutture moderne e scalabili. Il futuro è nel cloud.
+            <h3 class="text-2xl font-bold text-neutral-900 mb-4">Cloud Computing</h3>
+            <p class="text-neutral-600 mb-8 leading-relaxed">
+              Migrazione al cloud e gestione infrastrutture moderne e scalabili. Il futuro della tua azienda è nel cloud.
             </p>
-            <div class="flex items-center justify-center space-x-4 text-sm text-gray-500">
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Azure
-              </span>
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                AWS
-              </span>
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Google
-              </span>
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Azure</span>
+              <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">AWS</span>
+              <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Google</span>
             </div>
+            <a href="/it-era/servizi.html" class="text-brand-600 font-semibold hover:text-brand-700 transition-colors group-hover:underline">
+              Scopri di più →
+            </a>
           </div>
         </div>
 
-        <!-- CTA Button -->
-        <div class="text-center mt-12">
-          <a href="/it-era/servizi.html" class="btn-it-primary px-8 py-4 text-lg">
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+          <a href="/it-era/servizi.html" class="btn-primary btn-lg group">
             Scopri Tutti i Servizi
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </a>
         </div>
       </div>
     </section>
-    <!-- Contact CTA -->
-    <section class="section-it bg-gradient-to-br from-blue-600 to-blue-800 text-white relative overflow-hidden">
-      <!-- Background Pattern -->
-      <div class="absolute inset-0 opacity-10">
-        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <pattern id="cta-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <circle cx="10" cy="10" r="1" fill="currentColor"/>
-            </pattern>
-          </defs>
-          <rect width="100" height="100" fill="url(#cta-grid)"/>
-        </svg>
+    <!-- Modern CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-brand-600 via-brand-700 to-brand-800 text-white relative overflow-hidden">
+      <!-- Background Elements -->
+      <div class="absolute inset-0">
+        <div class="absolute top-10 left-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div class="container-it text-center relative z-10">
-        <div class="max-w-4xl mx-auto">
-          <!-- Emergency Badge -->
-          <div class="inline-flex items-center px-4 py-2 bg-red-500 bg-opacity-20 rounded-full text-red-200 text-sm font-medium mb-6">
-            <span class="w-2 h-2 bg-red-400 rounded-full mr-2 animate-pulse"></span>
-            Emergenza IT? Chiamaci subito!
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
+        <!-- Emergency Badge -->
+        <div class="inline-flex items-center px-6 py-3 bg-danger-500/20 border border-danger-400/30 rounded-full text-danger-200 text-sm font-semibold mb-8 backdrop-blur-sm">
+          <div class="w-3 h-3 bg-danger-400 rounded-full mr-3 animate-pulse"></div>
+          Emergenza IT? Chiamaci subito!
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          Hai bisogno di
+          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white to-brand-200">assistenza IT?</span>
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="text-xl md:text-2xl text-brand-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+          Contattaci per una consulenza gratuita. I nostri esperti sono pronti ad aiutarti 24/7 con soluzioni immediate.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <a href="tel:+390398882041" class="group bg-white text-brand-600 px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center" aria-label="Chiama IT-ERA per emergenza">
+            <div class="w-12 h-12 bg-success-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+            </div>
+            <div class="text-left">
+              <div class="text-sm text-neutral-600">Chiamata Gratuita</div>
+              <div class="font-bold">039 888 2041</div>
+            </div>
+          </a>
+
+          <a href="/it-era/contatti.html" class="btn-outline btn-lg group">
+            <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            Richiedi Preventivo
+          </a>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="text-center p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+            <div class="text-4xl font-bold text-white mb-2">< 2h</div>
+            <div class="text-brand-200 font-medium">Tempo di Risposta</div>
+            <div class="text-sm text-brand-300 mt-1">Garantito 24/7</div>
           </div>
-
-          <h2 class="text-responsive-lg font-bold mb-6">
-            Hai bisogno di assistenza IT?
-          </h2>
-          <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contattaci per una consulenza gratuita. I nostri esperti sono pronti ad aiutarti 24/7.
-          </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:+390398882041" class="btn-it-secondary bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200" aria-label="Chiama IT-ERA al numero 039 888 2041">
-              <span class="flex items-center">
-                <svg class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                </svg>
-                📞 039 888 2041
-              </span>
-            </a>
-            <a href="/it-era/contatti.html" class="btn-it-outline px-8 py-4 text-lg font-semibold">
-              <span class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-                Richiedi Preventivo
-              </span>
-            </a>
+          <div class="text-center p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+            <div class="text-4xl font-bold text-white mb-2">24/7</div>
+            <div class="text-brand-200 font-medium">Supporto Attivo</div>
+            <div class="text-sm text-brand-300 mt-1">Sempre disponibili</div>
           </div>
-
-          <!-- Trust Indicators -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            <div class="text-center">
-              <div class="text-2xl font-bold text-white mb-1">< 2h</div>
-              <div class="text-sm text-blue-200">Tempo di Risposta</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-white mb-1">24/7</div>
-              <div class="text-sm text-blue-200">Supporto Attivo</div>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl font-bold text-white mb-1">500+</div>
-              <div class="text-sm text-blue-200">Clienti Soddisfatti</div>
-            </div>
+          <div class="text-center p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+            <div class="text-4xl font-bold text-white mb-2">500+</div>
+            <div class="text-brand-200 font-medium">Clienti Soddisfatti</div>
+            <div class="text-sm text-brand-300 mt-1">In tutta la Lombardia</div>
           </div>
         </div>
       </div>
     </section>
     </main>
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-      <div class="container-it py-16">
+    <!-- Modern Footer -->
+    <footer class="bg-neutral-900 text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <!-- Main Footer Content -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
           <!-- Company Info -->
-          <div class="lg:col-span-1">
-            <div class="flex items-center space-x-3 mb-6">
-              <img src="/it-era/images/logo-it-era.png" alt="IT-ERA Logo" class="h-8 w-auto">
-              <span class="text-xl font-bold">IT-ERA</span>
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-4 mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-600 rounded-3xl flex items-center justify-center">
+                <span class="text-white font-bold text-2xl">IT</span>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">IT-ERA</h3>
+                <p class="text-neutral-400">Assistenza IT Professionale</p>
+              </div>
             </div>
-            <p class="text-gray-400 mb-6 leading-relaxed">
-              Assistenza informatica professionale per aziende in Lombardia. Soluzioni IT innovative e supporto 24/7.
+            <p class="text-neutral-300 mb-8 leading-relaxed text-lg max-w-md">
+              Assistenza informatica professionale per aziende in Lombardia. Soluzioni IT innovative e supporto 24/7 per far crescere il tuo business.
             </p>
-            <div class="flex space-x-4">
-              <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+            <!-- Social Links -->
+            <div class="flex space-x-4 mb-8">
+              <a href="#" class="w-12 h-12 bg-neutral-800 rounded-2xl flex items-center justify-center text-neutral-400 hover:bg-brand-600 hover:text-white transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
-              <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              <a href="#" class="w-12 h-12 bg-neutral-800 rounded-2xl flex items-center justify-center text-neutral-400 hover:bg-brand-600 hover:text-white transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                 </svg>
               </a>
-              <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-200">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <a href="#" class="w-12 h-12 bg-neutral-800 rounded-2xl flex items-center justify-center text-neutral-400 hover:bg-brand-600 hover:text-white transition-all duration-300 hover:scale-110">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.012.001z"/>
                 </svg>
               </a>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="p-6 bg-danger-900/30 border border-danger-800/50 rounded-2xl backdrop-blur-sm">
+              <div class="flex items-center mb-3">
+                <div class="w-3 h-3 bg-danger-500 rounded-full mr-3 animate-pulse"></div>
+                <span class="text-danger-400 font-semibold">Emergenza IT</span>
+              </div>
+              <a href="tel:+390398882041" class="text-white font-bold text-xl hover:text-danger-200 transition-colors">
+                📞 039 888 2041
+              </a>
+              <p class="text-neutral-400 text-sm mt-1">Disponibile 24/7</p>
             </div>
           </div>
 
           <!-- Services -->
           <div>
-            <h4 class="text-lg font-semibold mb-6">Servizi</h4>
-            <ul class="space-y-3">
-              <li><a href="/it-era/servizi.html" class="text-gray-400 hover:text-white transition-colors duration-200 flex items-center">
-                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
+            <h4 class="text-xl font-bold text-white mb-6">Servizi</h4>
+            <ul class="space-y-4">
+              <li><a href="/it-era/servizi.html" class="text-neutral-300 hover:text-brand-400 transition-colors duration-200 flex items-center group">
+                <div class="w-2 h-2 bg-brand-500 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                 Assistenza IT
               </a></li>
-              <li><a href="/it-era/servizi.html" class="text-gray-400 hover:text-white transition-colors duration-200 flex items-center">
-                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
+              <li><a href="/it-era/servizi.html" class="text-neutral-300 hover:text-brand-400 transition-colors duration-200 flex items-center group">
+                <div class="w-2 h-2 bg-brand-500 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                 Sicurezza Informatica
               </a></li>
-              <li><a href="/it-era/servizi.html" class="text-gray-400 hover:text-white transition-colors duration-200 flex items-center">
-                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
+              <li><a href="/it-era/servizi.html" class="text-neutral-300 hover:text-brand-400 transition-colors duration-200 flex items-center group">
+                <div class="w-2 h-2 bg-brand-500 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                 Cloud Computing
               </a></li>
-              <li><a href="/it-era/servizi.html" class="text-gray-400 hover:text-white transition-colors duration-200 flex items-center">
-                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
+              <li><a href="/it-era/servizi.html" class="text-neutral-300 hover:text-brand-400 transition-colors duration-200 flex items-center group">
+                <div class="w-2 h-2 bg-brand-500 rounded-full mr-3 group-hover:scale-125 transition-transform"></div>
                 Consulenza IT
               </a></li>
             </ul>
           </div>
 
-          <!-- Settori -->
-          <div>
-            <h4 class="text-lg font-semibold mb-6">Settori</h4>
-            <ul class="space-y-3">
-              <li><a href="/it-era/settori/pmi-startup.html" class="text-gray-400 hover:text-white transition-colors duration-200">PMI e Startup</a></li>
-              <li><a href="/it-era/settori/studi-medici.html" class="text-gray-400 hover:text-white transition-colors duration-200">Studi Medici</a></li>
-              <li><a href="/it-era/settori/commercialisti.html" class="text-gray-400 hover:text-white transition-colors duration-200">Commercialisti</a></li>
-              <li><a href="/it-era/settori/studi-legali.html" class="text-gray-400 hover:text-white transition-colors duration-200">Studi Legali</a></li>
-              <li><a href="/it-era/settori/industria-40.html" class="text-gray-400 hover:text-white transition-colors duration-200">Industria 4.0</a></li>
-            </ul>
-          </div>
-
           <!-- Contact Info -->
           <div>
-            <h4 class="text-lg font-semibold mb-6">Contatti</h4>
-            <ul class="space-y-4">
-              <li class="flex items-center">
-                <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
-                <a href="tel:+390398882041" class="text-gray-400 hover:text-white transition-colors duration-200">039 888 2041</a>
+            <h4 class="text-xl font-bold text-white mb-6">Contatti</h4>
+            <ul class="space-y-6">
+              <li>
+                <div class="flex items-center mb-2">
+                  <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="tel:+390398882041" class="text-white font-semibold hover:text-brand-400 transition-colors text-lg">039 888 2041</a>
+                    <p class="text-neutral-400 text-sm">Chiamata gratuita</p>
+                  </div>
+                </div>
               </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                <a href="mailto:info@it-era.it" class="text-gray-400 hover:text-white transition-colors duration-200">info@it-era.it</a>
+              <li>
+                <div class="flex items-center mb-2">
+                  <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="mailto:info@it-era.it" class="text-white font-semibold hover:text-brand-400 transition-colors">info@it-era.it</a>
+                    <p class="text-neutral-400 text-sm">Risposta in 24h</p>
+                  </div>
+                </div>
               </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <span class="text-gray-400">Vimercate, Lombardia</span>
+              <li>
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="text-white font-semibold">Vimercate, Lombardia</span>
+                    <p class="text-neutral-400 text-sm">Servizio in tutta la regione</p>
+                  </div>
+                </div>
               </li>
             </ul>
-
-            <!-- Emergency Contact -->
-            <div class="mt-6 p-4 bg-red-900 bg-opacity-50 rounded-lg border border-red-800">
-              <div class="flex items-center mb-2">
-                <svg class="w-4 h-4 mr-2 text-red-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-red-400 font-semibold text-sm">Emergenza IT</span>
-              </div>
-              <a href="tel:+390398882041" class="text-white font-bold hover:text-red-200 transition-colors duration-200">
-                📞 039 888 2041
-              </a>
-            </div>
           </div>
         </div>
 
         <!-- Bottom Footer -->
-        <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="border-t border-neutral-800 mt-16 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="text-gray-400 text-sm mb-4 md:mb-0">
+            <div class="text-neutral-400 text-sm mb-4 md:mb-0">
               &copy; 2025 IT-ERA. Tutti i diritti riservati. | P.IVA: 12345678901
             </div>
-            <div class="flex space-x-6 text-sm">
-              <a href="/it-era/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
-              <a href="/it-era/cookie.html" class="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</a>
-              <a href="/it-era/termini.html" class="text-gray-400 hover:text-white transition-colors duration-200">Termini di Servizio</a>
+            <div class="flex space-x-8 text-sm">
+              <a href="/it-era/privacy.html" class="text-neutral-400 hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/it-era/cookie.html" class="text-neutral-400 hover:text-white transition-colors">Cookie Policy</a>
+              <a href="/it-era/termini.html" class="text-neutral-400 hover:text-white transition-colors">Termini di Servizio</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <!-- JavaScript -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modern Chatbot Widget -->
+    <div id="chatbot-widget" class="fixed bottom-8 right-8 z-50">
+      <!-- Chatbot Button -->
+      <button id="chatbot-button" class="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center group transform hover:scale-105">
+        <svg class="w-8 h-8 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        </svg>
+        <!-- Notification Badge -->
+        <div class="absolute -top-2 -right-2 w-6 h-6 bg-danger-500 text-white text-xs rounded-full flex items-center justify-center animate-pulse font-bold">!</div>
+      </button>
+
+      <!-- Chatbot Popup -->
+      <div id="chatbot-popup" class="absolute bottom-20 right-0 w-96 bg-white rounded-3xl shadow-2xl border border-neutral-200 hidden transform transition-all duration-300 scale-95 opacity-0">
+        <!-- Header -->
+        <div class="p-6 bg-gradient-to-r from-brand-500 to-brand-600 text-white rounded-t-3xl">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-3 h-3 bg-success-400 rounded-full animate-pulse"></div>
+              <div>
+                <h3 class="font-bold">Assistenza IT-ERA</h3>
+                <p class="text-sm text-brand-100">Online ora</p>
+              </div>
+            </div>
+            <button id="chatbot-close" class="text-white hover:text-brand-200 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+          <!-- Welcome Message -->
+          <div class="mb-6">
+            <div class="bg-neutral-100 rounded-2xl p-4 mb-4">
+              <p class="text-neutral-700 text-sm">👋 Ciao! Sono l'assistente virtuale di IT-ERA.</p>
+              <p class="text-neutral-700 text-sm mt-1">Come posso aiutarti oggi?</p>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="space-y-3">
+            <a href="tel:+390398882041" class="block w-full bg-danger-500 hover:bg-danger-600 text-white text-center py-4 px-6 rounded-2xl font-semibold transition-colors duration-200 transform hover:scale-105">
+              🚨 Emergenza IT - Chiama Ora
+            </a>
+            <a href="/it-era/contatti.html" class="block w-full bg-brand-500 hover:bg-brand-600 text-white text-center py-4 px-6 rounded-2xl font-semibold transition-colors duration-200 transform hover:scale-105">
+              💬 Richiedi Preventivo Gratuito
+            </a>
+            <a href="/it-era/servizi.html" class="block w-full bg-neutral-600 hover:bg-neutral-700 text-white text-center py-4 px-6 rounded-2xl font-semibold transition-colors duration-200 transform hover:scale-105">
+              📋 Scopri Tutti i Servizi
+            </a>
+          </div>
+
+          <!-- Trust Badge -->
+          <div class="mt-6 text-center">
+            <div class="inline-flex items-center px-4 py-2 bg-success-100 text-success-700 rounded-full text-sm font-medium">
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              Risposta garantita in 2 ore
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modern JavaScript -->
     <script>
-    // Mobile Menu Toggle
+    // Modern IT-ERA Website Interactions
     document.addEventListener('DOMContentLoaded', function() {
+        // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -625,7 +687,7 @@
                 // Update aria-expanded
                 mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
 
-                // Toggle icon
+                // Toggle icon with smooth animation
                 const icon = mobileMenuButton.querySelector('svg');
                 if (mobileMenu.classList.contains('hidden')) {
                     icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
@@ -634,6 +696,55 @@
                 }
             });
         }
+
+        // Modern Chatbot Functionality
+        const chatbotButton = document.getElementById('chatbot-button');
+        const chatbotPopup = document.getElementById('chatbot-popup');
+        const chatbotClose = document.getElementById('chatbot-close');
+
+        if (chatbotButton && chatbotPopup) {
+            chatbotButton.addEventListener('click', function() {
+                const isHidden = chatbotPopup.classList.contains('hidden');
+
+                if (isHidden) {
+                    chatbotPopup.classList.remove('hidden');
+                    setTimeout(() => {
+                        chatbotPopup.classList.remove('scale-95', 'opacity-0');
+                        chatbotPopup.classList.add('scale-100', 'opacity-100');
+                    }, 10);
+                } else {
+                    chatbotPopup.classList.add('scale-95', 'opacity-0');
+                    chatbotPopup.classList.remove('scale-100', 'opacity-100');
+                    setTimeout(() => {
+                        chatbotPopup.classList.add('hidden');
+                    }, 300);
+                }
+            });
+        }
+
+        if (chatbotClose && chatbotPopup) {
+            chatbotClose.addEventListener('click', function() {
+                chatbotPopup.classList.add('scale-95', 'opacity-0');
+                chatbotPopup.classList.remove('scale-100', 'opacity-100');
+                setTimeout(() => {
+                    chatbotPopup.classList.add('hidden');
+                }, 300);
+            });
+        }
+
+        // Close chatbot when clicking outside
+        document.addEventListener('click', function(event) {
+            const chatbotWidget = document.getElementById('chatbot-widget');
+            if (chatbotWidget && !chatbotWidget.contains(event.target)) {
+                if (chatbotPopup && !chatbotPopup.classList.contains('hidden')) {
+                    chatbotPopup.classList.add('scale-95', 'opacity-0');
+                    chatbotPopup.classList.remove('scale-100', 'opacity-100');
+                    setTimeout(() => {
+                        chatbotPopup.classList.add('hidden');
+                    }, 300);
+                }
+            }
+        });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -649,36 +760,75 @@
             });
         });
 
-        // Add scroll effect to header
+        // Modern Header Scroll Effects
         const header = document.querySelector('header');
         if (header) {
             window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    header.classList.add('backdrop-blur-lg', 'bg-white/95');
+                if (window.scrollY > 50) {
+                    header.classList.add('bg-white/95');
+                    header.classList.remove('bg-white/80');
                 } else {
-                    header.classList.remove('backdrop-blur-lg', 'bg-white/95');
+                    header.classList.add('bg-white/80');
+                    header.classList.remove('bg-white/95');
                 }
             });
         }
 
-        // Animate elements on scroll
+        // Modern Intersection Observer for Animations
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate-fade-in');
+
+                    // Add staggered animation for cards
+                    if (entry.target.classList.contains('card-service') || entry.target.classList.contains('card-featured')) {
+                        const cards = entry.target.parentElement.children;
+                        Array.from(cards).forEach((card, index) => {
+                            setTimeout(() => {
+                                card.style.animationDelay = `${index * 0.1}s`;
+                                card.classList.add('animate-slide-up');
+                            }, index * 100);
+                        });
+                    }
                 }
             });
         }, observerOptions);
 
-        // Observe all cards and sections
-        document.querySelectorAll('.card-it, .card-it-featured, section').forEach(el => {
+        // Observe modern components
+        document.querySelectorAll('.card-service, .card-featured, section').forEach(el => {
             observer.observe(el);
         });
+
+        // Add hover effects to buttons
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.02)';
+            });
+
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Performance optimization: Preload critical resources
+        const preloadLinks = [
+            '/it-era/servizi.html',
+            '/it-era/contatti.html'
+        ];
+
+        preloadLinks.forEach(link => {
+            const linkElement = document.createElement('link');
+            linkElement.rel = 'prefetch';
+            linkElement.href = link;
+            document.head.appendChild(linkElement);
+        });
+
+        console.log('🎨 IT-ERA Modern Design System loaded successfully!');
     });
     </script>
 

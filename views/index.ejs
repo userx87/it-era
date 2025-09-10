@@ -16,10 +16,12 @@
     <meta property="og:locale" content="it_IT">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/css/design-system.css">
+    <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <%- include('partials/head-scripts') %>
 </head>
@@ -30,103 +32,132 @@
 
     <%- include('partials/header') %>
 
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Assistenza IT Professionale<br>
-                <span class="highlight">in Lombardia</span>
-            </h1>
-            <p class="hero-description">
-                Supporto tecnico 24/7, cybersecurity avanzata e soluzioni IT su misura 
-                per la tua azienda. Interventi rapidi in tutta la Lombardia.
-            </p>
-            <div class="hero-actions">
-                <a href="tel:0398882041" class="btn btn-primary">
-                    📞 Chiama Ora: 039 888 2041
-                </a>
-                <a href="/servizi" class="btn btn-secondary">
-                    Scopri i Servizi
-                </a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="/images/hero-it-support.jpg" alt="Assistenza IT Professionale" loading="lazy">
-        </div>
-    </div>
-</section>
-
-<section class="services-preview">
-    <div class="container">
-        <h2 class="section-title">I Nostri Servizi</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3>Assistenza Tecnica</h3>
-                <p>Supporto on-site e remoto per tutti i tuoi sistemi IT</p>
-                <a href="/servizi#assistenza" class="service-link">Scopri di più →</a>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">🔒</div>
-                <h3>Cybersecurity</h3>
-                <p>Protezione avanzata contro minacce informatiche</p>
-                <a href="/servizi#cybersecurity" class="service-link">Scopri di più →</a>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">☁️</div>
-                <h3>Cloud Storage</h3>
-                <p>Soluzioni cloud sicure e scalabili per la tua azienda</p>
-                <a href="/servizi#cloud" class="service-link">Scopri di più →</a>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">💾</div>
-                <h3>Backup & Recovery</h3>
-                <p>Protezione dati e disaster recovery professionale</p>
-                <a href="/servizi#backup" class="service-link">Scopri di più →</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="coverage-area">
-    <div class="container">
-        <h2 class="section-title">Copertura Lombardia</h2>
-        <p class="section-description">
-            Interventi rapidi in tutte le principali città lombarde
+<section class="hero animate-fadeInUp">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            Assistenza IT Professionale<br>
+            <span style="color: var(--it-blue-400);">in Lombardia</span>
+        </h1>
+        <p class="hero-subtitle">
+            Trasformiamo le sfide IT in opportunità di crescita. Supporto 24/7, 
+            cybersecurity avanzata e soluzioni innovative per PMI lombarde.
         </p>
-        <div class="cities-grid">
-            <a href="/assistenza-it-milano" class="city-card">
-                <h3>Milano</h3>
-                <span class="response-time">15 min</span>
+        <div class="cta-buttons">
+            <a href="tel:0398882041" class="btn btn-primary btn-lg">
+                📞 Richiedi Consulenza Gratuita
             </a>
-            <a href="/assistenza-it-bergamo" class="city-card">
-                <h3>Bergamo</h3>
-                <span class="response-time">20 min</span>
+            <a href="/servizi" class="btn btn-secondary btn-lg">
+                Scopri i Servizi
             </a>
-            <a href="/assistenza-it-brescia" class="city-card">
-                <h3>Brescia</h3>
-                <span class="response-time">25 min</span>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-xl">
+    <h2 class="text-center mb-xl">I Nostri Servizi IT</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="service-card animate-fadeInUp">
+            <div class="service-icon">🔧</div>
+            <h3 class="service-title">Assistenza Tecnica</h3>
+            <p class="service-description">Supporto on-site e remoto 24/7 per tutti i sistemi IT aziendali</p>
+            <a href="/servizi#assistenza" class="btn btn-primary">Scopri di più</a>
+        </div>
+        
+        <div class="service-card animate-fadeInUp">
+            <div class="service-icon">🔒</div>
+            <h3 class="service-title">Cybersecurity</h3>
+            <p class="service-description">Protezione avanzata contro minacce digitali e backup sicuri</p>
+            <a href="/servizi#cybersecurity" class="btn btn-primary">Scopri di più</a>
+        </div>
+        
+        <div class="service-card animate-fadeInUp">
+            <div class="service-icon">☁️</div>
+            <h3 class="service-title">Cloud Solutions</h3>
+            <p class="service-description">Migrazione cloud sicura e gestione ottimizzata delle risorse</p>
+            <a href="/servizi#cloud" class="btn btn-primary">Scopri di più</a>
+        </div>
+        
+        <div class="service-card animate-fadeInUp">
+            <div class="service-icon">📧</div>
+            <h3 class="service-title">Microsoft 365</h3>
+            <p class="service-description">Implementazione completa e supporto specializzato M365</p>
+            <a href="/servizi#microsoft365" class="btn btn-primary">Scopri di più</a>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="stats-grid">
+        <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Aziende Servite</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">Uptime Garantito</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Supporto Continuo</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">2h</span>
+            <span class="stat-label">Tempo Intervento</span>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-xl">
+    <h2 class="text-center mb-xl">Copertura Lombardia</h2>
+    <p class="text-center mb-lg" style="color: var(--it-gray-600);">
+        Interventi rapidi in tutte le principali città lombarde
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-4">
+        <a href="/assistenza-it-milano" class="card text-center">
+            <h3>Milano</h3>
+            <span class="badge badge-success">15 min</span>
+        </a>
+        <a href="/assistenza-it-bergamo" class="card text-center">
+            <h3>Bergamo</h3>
+            <span class="badge badge-success">20 min</span>
+        </a>
+        <a href="/assistenza-it-brescia" class="card text-center">
+            <h3>Brescia</h3>
+            <span class="badge badge-success">25 min</span>
+        </a>
+        <a href="/assistenza-it-como" class="card text-center">
+            <h3>Como</h3>
+            <span class="badge badge-success">30 min</span>
+        </a>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container text-center">
+        <h2 class="cta-title">Pronto a Trasformare la Tua IT?</h2>
+        <p class="cta-subtitle">
+            Contattaci per una consulenza gratuita e scopri come possiamo aiutare la tua azienda a crescere
+        </p>
+        <div class="cta-buttons">
+            <a href="tel:0398882041" class="btn btn-primary btn-lg">
+                📞 Chiama Ora: 039 888 2041
             </a>
-            <a href="/assistenza-it-como" class="city-card">
-                <h3>Como</h3>
-                <span class="response-time">30 min</span>
+            <a href="/contatti" class="btn btn-secondary btn-lg">
+                Richiedi Preventivo
             </a>
         </div>
     </div>
 </section>
 
 <% if (env === 'development') { %>
-<section class="dev-info">
-    <div class="container">
+<section class="container mt-xl">
+    <div class="card">
         <h3>🔧 Development Info</h3>
-        <div class="dev-grid">
-            <a href="/health" class="dev-link">Health Check</a>
-            <a href="/api/cities" class="dev-link">Cities API</a>
-            <a href="/dev/info" class="dev-link">Server Info</a>
-            <a href="/dev/reload" class="dev-link">Reload Data</a>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-md">
+            <a href="/health" class="btn btn-secondary">Health Check</a>
+            <a href="/api/cities" class="btn btn-secondary">Cities API</a>
+            <a href="/dev/info" class="btn btn-secondary">Server Info</a>
+            <a href="/dev/reload" class="btn btn-secondary">Reload Data</a>
         </div>
     </div>
 </section>

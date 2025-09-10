@@ -23,6 +23,72 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/it-era/styles.css">
     <link rel="stylesheet" href="/it-era/css/enhanced-chatbot.min.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://userx87.github.io/it-era/#organization",
+        "name": "IT-ERA",
+        "alternateName": "IT-ERA Assistenza Informatica",
+        "description": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+        "url": "https://userx87.github.io/it-era/",
+        "logo": "https://userx87.github.io/it-era/images/logo-it-era.png",
+        "image": "https://userx87.github.io/it-era/images/og-image.jpg",
+        "telephone": "+39 039 888 2041",
+        "email": "info@it-era.it",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via Roma",
+            "addressLocality": "Vimercate",
+            "addressRegion": "Lombardia",
+            "postalCode": "20871",
+            "addressCountry": "IT"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.6311",
+            "longitude": "9.3678"
+        },
+        "areaServed": [
+            {"@type": "State", "name": "Lombardia"},
+            {"@type": "City", "name": "Milano"},
+            {"@type": "City", "name": "Bergamo"},
+            {"@type": "City", "name": "Vimercate"},
+            {"@type": "City", "name": "Monza"}
+        ],
+        "serviceType": [
+            "Assistenza Informatica",
+            "Supporto IT",
+            "Sicurezza Informatica",
+            "Cloud Computing",
+            "Consulenza IT",
+            "Cybersecurity"
+        ],
+        "priceRange": "€€",
+        "openingHours": ["Mo-Fr 09:00-18:00"],
+        "sameAs": [
+            "https://www.facebook.com/itera",
+            "https://www.linkedin.com/company/it-era",
+            "https://www.instagram.com/itera"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://userx87.github.io/it-era/#website",
+        "url": "https://userx87.github.io/it-era/",
+        "name": "IT-ERA - Assistenza Informatica Lombardia",
+        "description": "Assistenza informatica professionale per aziende in Lombardia",
+        "publisher": {
+            "@id": "https://userx87.github.io/it-era/#organization"
+        }
+    }
+    </script>
     
     <!-- Preload critical resources -->
     <link rel="preload" href="/it-era/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
@@ -53,8 +119,8 @@
             <a href="/it-era/contatti.html" class="text-gray-700 hover:text-blue-600">Contatti</a>
           </div>
           <div class="md:hidden">
-            <button class="text-gray-700">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button class="text-gray-700" aria-label="Apri menu di navigazione" aria-expanded="false">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
@@ -74,10 +140,10 @@
           Supporto informatico 24/7 per la tua azienda. Risolviamo i tuoi problemi IT in tempi record.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/it-era/contatti.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          <a href="/it-era/contatti.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" aria-label="Vai alla pagina contatti per richiedere assistenza">
             Contattaci Ora
           </a>
-          <a href="/it-era/servizi.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+          <a href="/it-era/servizi.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition" aria-label="Scopri tutti i nostri servizi IT">
             I Nostri Servizi
           </a>
         </div>
@@ -111,7 +177,7 @@
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-6">Hai bisogno di assistenza IT?</h2>
         <p class="text-xl text-gray-600 mb-8">Contattaci per una consulenza gratuita</p>
-        <a href="tel:+390398882041" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        <a href="tel:+390398882041" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition" aria-label="Chiama IT-ERA al numero 039 888 2041">
           📞 039 888 2041
         </a>
       </div>

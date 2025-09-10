@@ -18,4 +18,93 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Settori Pages -->
+  <url>
+    <loc>https://userx87.github.io/it-era/settori/pmi-startup.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/settori/studi-medici.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/settori/commercialisti.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/settori/studi-legali.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/settori/industria-40.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/settori/retail-gdo.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/ransomware-protezione-completa-2024.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/cloud-backup-veeam-guida-completa.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/firewall-watchguard-configurazione-ottimale.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/gestione-remota-it-best-practices.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/rete-aziendale-setup-professionale.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/ai-sicurezza-informatica-trend-2024.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://userx87.github.io/it-era/blog/gdpr-compliance-checklist-pmi.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>

@@ -5,7 +5,8 @@
   "main": "api/index.js",
   "scripts": {
     "dev": "vercel dev",
-    "build": "echo 'Build completed'",
+    "build": "node scripts/build-for-github-pages.js",
+    "build:github-pages": "node scripts/build-for-github-pages.js",
     "start": "node api/index.js",
     "test": "jest",
     "test:claude-flow": "jest tests/claude-flow --verbose",

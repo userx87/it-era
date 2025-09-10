@@ -85,26 +85,16 @@ jobs:
           fi
         done
 
-    - name: 🛠️ Prepare deployment files
+    - name: 🛠️ Build site for GitHub Pages
       run: |
-        echo "🛠️ Preparing files for GitHub Pages deployment..."
-        
-        # Create deployment directory
-        mkdir -p _site
-        
-        # Copy public directory contents
-        cp -r public/* _site/
-        
-        # Create .nojekyll to bypass Jekyll processing
-        touch _site/.nojekyll
-        
-        # Update base URLs for GitHub Pages
-        find _site -name "*.html" -type f -exec sed -i 's|href="/|href="./|g' {} \;
-        find _site -name "*.html" -type f -exec sed -i 's|src="/|src="./|g' {} \;
-        
-        # Update API endpoints for static deployment
-        find _site -name "*.js" -type f -exec sed -i 's|/api/|./api/|g' {} \;
-        
+        echo "🛠️ Building site for GitHub Pages deployment..."
+
+        # Make build script executable
+        chmod +x scripts/build-for-github-pages.js
+
+        # Run the build script
+        node scripts/build-for-github-pages.js
+
         # Create a simple API mock for static deployment
         mkdir -p _site/api
         cat > _site/api/health.json << EOF
@@ -112,36 +102,12 @@ jobs:
           "status": "ok",
           "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
           "version": "static-deployment",
-          "environment": "github-pages"
+          "environment": "github-pages",
+          "site_url": "${{ env.SITE_URL }}"
         }
         EOF
-        
-        # Generate sitemap for GitHub Pages
-        cat > _site/sitemap.xml << EOF
-        <?xml version="1.0" encoding="UTF-8"?>
-        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-          <url>
-            <loc>${{ env.SITE_URL }}/</loc>
-            <lastmod>$(date -u +%Y-%m-%d)</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-          </url>
-          <url>
-            <loc>${{ env.SITE_URL }}/servizi.html</loc>
-            <lastmod>$(date -u +%Y-%m-%d)</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-          </url>
-          <url>
-            <loc>${{ env.SITE_URL }}/contatti.html</loc>
-            <lastmod>$(date -u +%Y-%m-%d)</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.7</priority>
-          </url>
-        </urlset>
-        EOF
-        
-        echo "✅ Deployment files prepared"
+
+        echo "✅ Site build completed"
 
     - name: 📊 Generate deployment report
       run: |

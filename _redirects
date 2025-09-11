@@ -1,55 +1,67 @@
-# IT-ERA Cloudflare Pages Redirects
-# SEO-friendly redirects and emergency contact optimization
+# IT-ERA Redirects Configuration
 
-# Emergency Contact Redirects - High Priority
-/emergenza              /contatti.html                    302
-/supporto-urgente       /contatti.html                    302
-/chiamata-emergenza     tel:+390398882041                 302
-/telefono               tel:+390398882041                 302
+# Force HTTPS
+http://it-era.it/* https://it-era.it/:splat 301!
+http://www.it-era.it/* https://it-era.it/:splat 301!
+https://www.it-era.it/* https://it-era.it/:splat 301!
 
-# Service Redirects - SEO Optimization
-/assistenza-it          /assistenza-it-aziendale-lombardia.html    301
-/sicurezza              /sicurezza-informatica-bergamo.html       301
-/cloud                  /cloud-storage-milano.html                301
-/backup                 /backup-disaster-recovery-milano.html     301
+# SEO-friendly redirects
+/home https://it-era.it/ 301
+/homepage https://it-era.it/ 301
+/index https://it-era.it/ 301
 
-# Sector Redirects
-/medici                 /it-studi-medici-lombardia.html          301
-/commercialisti         /settori-commercialisti.html             301
-/avvocati               /it-studi-legali-lombardia.html          301
-/legali                 /it-studi-legali-lombardia.html          301
-/pmi                    /settori-pmi-startup.html                301
+# Service redirects
+/assistenza https://it-era.it/assistenza-informatica.html 301
+/sicurezza https://it-era.it/sicurezza-informatica.html 301
+/cloud https://it-era.it/cloud-storage-milano.html 301
+/microsoft https://it-era.it/microsoft-365-milano.html 301
 
-# City-Specific Redirects for Local SEO
-/milano                 /assistenza-it-milano.html               301
-/bergamo                /assistenza-it-bergamo.html              301
-/brescia                /assistenza-it-brescia.html              301
-/monza                  /assistenza-it-monza.html                301
-/como                   /assistenza-it-como.html                 301
+# Old sector pages to new sector pages
+/settori-commercialisti.html /settori/commercialisti.html 301
+/settori-industria.html /settori/industria-40.html 301
+/settori-pmi-startup.html /settori/pmi-startup.html 301
+/settori-retail.html /settori/retail-gdo.html 301
+/settori-studi-legali.html /settori/studi-legali.html 301
+/settori-studi-medici.html /settori/studi-medici.html 301
 
-# Legacy URL Redirects
-/pages/*                /:splat                                   301
-/old-site/*             /:splat                                   301
-/wp-content/*           /                                         301
-/wordpress/*            /                                         301
+# Old service pages to new service pages
+/cybersecurity-sicurezza-informatica-aziende.html /sicurezza-informatica.html 301
+/it-studi-legali-lombardia.html /settori/studi-legali.html 301
+/it-studi-medici-lombardia.html /settori/studi-medici.html 301
 
-# Common Typos and Variations
-/contatto               /contatti.html                            301
-/contato                /contatti.html                            301
-/assistenza             /assistenza-it-aziendale-lombardia.html  301
-/sicurezza-informatica  /sicurezza-informatica-bergamo.html      301
+# Contact redirects
+/contact https://it-era.it/contatti.html 301
+/telefono https://it-era.it/contatti.html 301
 
-# Social Media and Marketing Redirects
-/facebook               https://www.facebook.com/itera.it        302
-/linkedin               https://www.linkedin.com/company/it-era  302
-/whatsapp               https://wa.me/390398882041                302
+# Legacy URL redirects (if any)
+/old-assistenza-it/* /assistenza-it-:city.html 301
+/old-sicurezza/* /sicurezza-informatica-:city.html 301
 
-# API and Technical Redirects
-/api/v1/*               /api/:splat                               301
-/admin                  /admin/                                   301
+# Fix for missing service pages - redirect to working alternatives
+# /assistenza-it-aziendale-lombardia.html /pages/assistenza-it-milano.html 302 (now has dedicated page)
+/sicurezza-informatica-bergamo.html /pages/assistenza-it-bergamo.html 302
+/cloud-storage-milano.html /pages/assistenza-it-milano.html 302
 
-# SEO-Friendly Trailing Slash Handling
-/*                      /:splat/                                  301!
+# Fix for missing city pages - redirect to existing ones
+/assistenza-it-brescia.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-cremona.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-mantova.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-pavia.html /pages/assistenza-it-milano.html 302
+/assistenza-it-sondrio.html /pages/assistenza-it-bergamo.html 302
+/assistenza-it-varese.html /pages/assistenza-it-milano.html 302
 
-# Fallback for 404s - Route to Homepage with Emergency Contact
-/*                      /index.html                               404
+# API routes
+/api/* /.netlify/functions/:splat 200
+
+# SPA fallback for dynamic content
+/admin/* /admin/index.html 200
+/dashboard/* /dashboard/index.html 200
+
+# Error pages
+/404 /404.html 404
+/* /404.html 404
+
+# Prerender for SEO (if using SPA)
+/assistenza-it-* /assistenza-it-:city.html 200
+/sicurezza-informatica-* /sicurezza-informatica-:city.html 200
+/cloud-storage-* /cloud-storage-:city.html 200

@@ -1,24 +1,26 @@
-# deps e build
-node_modules/
-api/node_modules/
-dist/
-.build/
-.cache/
-.tmp/
+# Development files (moved to development/)
+development/node_modules/
+development/tools/
+development/logs/
 
-# CF/Wrangler cache
-.wrangler/
-.worker/
-functions/.wrangler/
-
-# sistema & IDE
-.DS_Store
+# Temporary files
+*.tmp
 *.log
-logs/*
-!.gitkeep
+.DS_Store
+Thumbs.db
 
-# varii
-*.local
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build files
+dist/
+build/
+.cache/
+
+# Environment files
 .env
-.env.*
-.vercel
+.env.local
+.env.production

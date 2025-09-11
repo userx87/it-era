@@ -52,62 +52,26 @@ class SettoriNavigationUnifier {
             let content = this.readFile(filePath);
             let updated = false;
 
-            // 1. Aggiorna logo con design moderno
-            const oldLogoPattern = /<div class="flex items-center">\s*<a href="\/" class="text-2xl font-bold text-primary-500" aria-label="IT-ERA Homepage">\s*IT-<span class="text-gray-900">ERA<\/span>\s*<\/a>\s*<\/div>/s;
-            const newLogo = `<div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">IT</span>
-                    </div>
-                    <div class="hidden sm:block">
-                        <h1 class="text-2xl font-bold text-neutral-900">IT-ERA</h1>
-                        <p class="text-sm text-neutral-600 -mt-1">Assistenza IT Professionale</p>
-                    </div>
-                </div>`;
-
-            if (oldLogoPattern.test(content)) {
-                content = content.replace(oldLogoPattern, newLogo);
-                updated = true;
-                console.log('  ✅ Updated logo with modern design');
-            }
-
-            // 2. Aggiorna link navigation principali
-            content = content.replace(
-                /<a href="\/chi-siamo" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">Chi Siamo<\/a>/g,
-                '<a href="/it-era/" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">Home</a>'
-            );
-            content = content.replace(
-                /<a href="\/blog" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">Blog<\/a>/g,
-                '<a href="/it-era/servizi.html" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">Servizi</a>'
-            );
-            content = content.replace(
-                /<a href="\/contatti" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">Contatti<\/a>/g,
-                '<a href="/it-era/contatti.html" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">Contatti</a>'
-            );
-
-            // 3. Aggiorna link settori nel dropdown
-            content = content.replace(/href="\/settori\/pmi-startup"/g, 'href="/it-era/settori/pmi-startup.html"');
-            content = content.replace(/href="\/settori\/studi-medici"/g, 'href="/it-era/settori/studi-medici.html"');
-            content = content.replace(/href="\/settori\/commercialisti"/g, 'href="/it-era/settori/commercialisti.html"');
-            content = content.replace(/href="\/settori\/studi-legali"/g, 'href="/it-era/settori/studi-legali.html"');
-            content = content.replace(/href="\/settori\/industria-40"/g, 'href="/it-era/settori/industria-40.html"');
-            content = content.replace(/href="\/settori\/retail-gdo"/g, 'href="/it-era/settori/retail-gdo.html"');
-
-            // 4. Aggiorna link servizi nel dropdown
+            // 1. Aggiorna link servizi nel dropdown
             content = content.replace(/href="\/assistenza-informatica"/g, 'href="/it-era/servizi.html"');
             content = content.replace(/href="\/sicurezza-informatica"/g, 'href="/it-era/servizi.html"');
             content = content.replace(/href="\/assistenza-server"/g, 'href="/it-era/servizi.html"');
             content = content.replace(/href="\/assistenza-email"/g, 'href="/it-era/servizi.html"');
 
-            // 5. Aggiorna link mobile menu
-            content = content.replace(/href="\/assistenza-informatica"/g, 'href="/it-era/servizi.html"');
+            // 2. Aggiorna link mobile menu se presenti
             content = content.replace(/href="\/contatti"/g, 'href="/it-era/contatti.html"');
 
-            if (updated || content.includes('/it-era/')) {
+            // 3. Verifica se ci sono stati cambiamenti
+            if (content.includes('/it-era/')) {
+                updated = true;
+            }
+
+            if (updated) {
                 this.writeFile(filePath, content);
                 this.results.unifiedPages.push({
                     path: filePath,
                     success: true,
-                    changes: ['Logo', 'Navigation links', 'Dropdown links', 'Mobile menu']
+                    changes: ['Navigation links', 'Dropdown links', 'Mobile menu']
                 });
                 this.results.summary.successfulUnifications++;
                 console.log(`  ✅ Successfully unified ${filePath}`);

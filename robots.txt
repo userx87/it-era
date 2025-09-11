@@ -2,41 +2,11 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://userx87.github.io/it-era/sitemap.xml
+Sitemap: http://it-era.it/sitemap.xml
 
-# Disallow admin and private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /_site/
+# Disallow development files
+Disallow: /swarm/
 Disallow: /node_modules/
-Disallow: /.git/
-Disallow: /api/
-Disallow: /dev/
-Disallow: /_next/
-
-# Allow important directories
-Allow: /css/
-Allow: /js/
-Allow: /images/
-Allow: /fonts/
-Allow: /blog/
-Allow: /settori/
-Allow: /servizi
-Allow: /contatti
-Allow: /assistenza-it-*
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
-
-# Specific rules for major search engines
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /*.md$

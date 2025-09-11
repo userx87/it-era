@@ -26,6 +26,8 @@
     "swarm:status": "node swarm/cli.js status",
     "swarm:implement-seo": "node swarm/cli.js implement-seo",
     "swarm:create-pages": "node swarm/cli.js create-pages",
+    "swarm:create-all-seo": "node create-all-seo-pages.js",
+    "swarm:create-all-seo-deploy": "node create-all-seo-pages.js --deploy",
     "swarm:schedule": "node swarm/cli.js schedule"
   },
   "keywords": [

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richiedi Preventivo - IT-ERA | Preventivo Gratuito</title>
+    <meta name="description" content="Richiedi un preventivo gratuito per i servizi IT di IT-ERA. Assistenza informatica personalizzata per la tua azienda.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/css/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/css/it-era-tailwind.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200/50">
+        <!-- Navigation content here -->
+    </header>
+    
+    <!-- Main Content -->
+    <main class="pt-20">
+        <section class="py-20 bg-gradient-to-br from-brand-50 to-brand-100">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold text-neutral-900 mb-6">Richiedi Preventivo Gratuito</h1>
+                <p class="text-xl text-neutral-700 mb-8">Ottieni una consulenza personalizzata per le tue esigenze IT</p>
+            </div>
+        </section>
+        
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Tipo di Servizio</label>
+                            <select class="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:ring-2 focus:ring-brand-500">
+                                <option>Assistenza Tecnica</option>
+                                <option>Sicurezza Informatica</option>
+                                <option>Cloud Computing</option>
+                                <option>Reti Aziendali</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Descrizione Esigenze</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:ring-2 focus:ring-brand-500" placeholder="Descrivi le tue esigenze IT..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full btn-primary">Richiedi Preventivo Gratuito</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

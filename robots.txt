@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: http://it-era.it/sitemap.xml
+
+# Disallow development files
+Disallow: /swarm/
+Disallow: /node_modules/
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /*.md$

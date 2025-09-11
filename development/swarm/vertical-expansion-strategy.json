@@ -1,0 +1,67 @@
+{
+  "expansion": {
+    "studi-medici": {
+      "additionalKeywords": [
+        "software gestionale medico Milano",
+        "sicurezza dati sanitari Milano",
+        "GDPR sanità Milano",
+        "telemedicina IT Milano",
+        "cartella clinica elettronica Milano"
+      ],
+      "pages": 8,
+      "estimatedTraffic": 1200
+    },
+    "studi-legali": {
+      "additionalKeywords": [
+        "software gestionale avvocati Milano",
+        "sicurezza dati legali Milano",
+        "digitalizzazione studio legale Milano",
+        "backup documenti legali Milano",
+        "compliance IT studi legali Milano"
+      ],
+      "pages": 8,
+      "estimatedTraffic": 1100
+    },
+    "commercialisti": {
+      "additionalKeywords": [
+        "software contabile cloud Milano",
+        "sicurezza dati fiscali Milano",
+        "digitalizzazione commercialisti Milano",
+        "backup dati contabili Milano",
+        "fatturazione elettronica Milano"
+      ],
+      "pages": 8,
+      "estimatedTraffic": 1300
+    },
+    "pmi-startup": {
+      "additionalKeywords": [
+        "IT startup Milano",
+        "infrastruttura IT PMI Milano",
+        "cloud per startup Milano",
+        "sicurezza informatica PMI Milano",
+        "consulenza IT piccole imprese Milano"
+      ],
+      "pages": 10,
+      "estimatedTraffic": 1600
+    },
+    "e-commerce": {
+      "description": "New vertical sector",
+      "keywords": [
+        "sicurezza e-commerce Milano",
+        "hosting e-commerce Milano",
+        "backup negozi online Milano",
+        "PCI compliance Milano",
+        "performance e-commerce Milano"
+      ],
+      "pages": 8,
+      "estimatedTraffic": 1400
+    }
+  },
+  "summary": {
+    "totalSectors": 5,
+    "totalNewPages": 42,
+    "totalEstimatedTraffic": 6600,
+    "averageConversionRate": 3.2,
+    "estimatedLeads": 211
+  }
+}

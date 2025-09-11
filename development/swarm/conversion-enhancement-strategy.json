@@ -1,0 +1,83 @@
+{
+  "conversionFunnels": {
+    "seo_direct_conversion": {
+      "path": "SEO Page → Contact Form",
+      "currentRate": 1.5,
+      "targetRate": 3,
+      "optimizations": [
+        "Improve form placement",
+        "Add social proof",
+        "Simplify form fields",
+        "Add urgency elements"
+      ]
+    },
+    "seo_service_conversion": {
+      "path": "SEO Page → Service Page → Contact Form",
+      "currentRate": 2.2,
+      "targetRate": 4,
+      "optimizations": [
+        "Improve internal linking",
+        "Add related service suggestions",
+        "Enhance service page CTAs",
+        "Add comparison tables"
+      ]
+    },
+    "seo_phone_conversion": {
+      "path": "SEO Page → Phone Call",
+      "currentRate": 0.8,
+      "targetRate": 1.5,
+      "optimizations": [
+        "Make phone number more prominent",
+        "Add click-to-call buttons",
+        "Include business hours",
+        "Add emergency contact option"
+      ]
+    }
+  },
+  "trustSignals": {
+    "certifications": [
+      "ISO 27001 certification badge",
+      "Microsoft Partner logo",
+      "Google Partner badge",
+      "Industry association memberships"
+    ],
+    "socialProof": [
+      "Client testimonials",
+      "Case study previews",
+      "Number of clients served",
+      "Years in business"
+    ],
+    "guarantees": [
+      "Free initial consultation",
+      "Response time guarantees",
+      "Satisfaction guarantee",
+      "No long-term contracts"
+    ]
+  },
+  "urgencyElements": {
+    "scarcity": [
+      "Limited consultation slots",
+      "Seasonal promotions",
+      "Early bird discounts"
+    ],
+    "timeBasedOffers": [
+      "Free audit this month",
+      "Quick response guarantee",
+      "Same-day consultation available"
+    ]
+  },
+  "personalization": {
+    "dynamicContent": [
+      "Service-specific CTAs",
+      "Location-based contact info",
+      "Industry-specific messaging",
+      "Return visitor recognition"
+    ],
+    "behavioralTriggers": [
+      "Exit-intent popups",
+      "Scroll-based CTAs",
+      "Time-on-page triggers",
+      "Page visit frequency"
+    ]
+  }
+}

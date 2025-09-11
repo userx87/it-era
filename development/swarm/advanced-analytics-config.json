@@ -1,0 +1,127 @@
+{
+  "googleAnalytics4": {
+    "configuration": {
+      "measurementId": "G-XXXXXXXXXX",
+      "enhancedMeasurement": true,
+      "customDimensions": [
+        {
+          "name": "page_category",
+          "scope": "event"
+        },
+        {
+          "name": "target_keyword",
+          "scope": "event"
+        },
+        {
+          "name": "user_journey_stage",
+          "scope": "event"
+        },
+        {
+          "name": "traffic_source_detail",
+          "scope": "event"
+        },
+        {
+          "name": "conversion_path",
+          "scope": "event"
+        }
+      ],
+      "customMetrics": [
+        {
+          "name": "page_value",
+          "scope": "event"
+        },
+        {
+          "name": "engagement_score",
+          "scope": "event"
+        },
+        {
+          "name": "lead_quality_score",
+          "scope": "event"
+        }
+      ]
+    },
+    "events": {
+      "seoPageView": {
+        "name": "seo_page_view",
+        "parameters": [
+          "page_category",
+          "target_keyword",
+          "page_value"
+        ]
+      },
+      "serviceInterest": {
+        "name": "service_interest",
+        "parameters": [
+          "service_type",
+          "engagement_level",
+          "time_on_page"
+        ]
+      },
+      "leadGeneration": {
+        "name": "generate_lead",
+        "parameters": [
+          "lead_source",
+          "form_type",
+          "lead_value"
+        ]
+      },
+      "phoneCall": {
+        "name": "phone_call",
+        "parameters": [
+          "call_source",
+          "call_duration",
+          "call_outcome"
+        ]
+      }
+    },
+    "audiences": [
+      "SEO traffic visitors",
+      "High-intent users",
+      "Converted leads",
+      "Return visitors",
+      "Mobile users"
+    ]
+  },
+  "searchConsoleIntegration": {
+    "dataImport": "Daily automated import",
+    "keywordTracking": "All target keywords",
+    "performanceMetrics": [
+      "Impressions",
+      "Clicks",
+      "CTR",
+      "Average position"
+    ],
+    "alerts": [
+      "Significant ranking changes",
+      "Indexing issues",
+      "Core Web Vitals problems",
+      "Manual actions"
+    ]
+  },
+  "customDashboards": {
+    "seoPerformance": {
+      "metrics": [
+        "Organic traffic growth",
+        "Keyword ranking improvements",
+        "Page performance comparison",
+        "Conversion attribution"
+      ]
+    },
+    "businessImpact": {
+      "metrics": [
+        "Lead generation trends",
+        "Revenue attribution",
+        "Customer acquisition cost",
+        "ROI calculation"
+      ]
+    },
+    "technicalSeo": {
+      "metrics": [
+        "Core Web Vitals",
+        "Page speed trends",
+        "Indexing status",
+        "Crawl errors"
+      ]
+    }
+  }
+}

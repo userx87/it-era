@@ -1,0 +1,117 @@
+{
+  "realTimeMetrics": {
+    "coreWebVitals": {
+      "LCP": {
+        "target": "<2.5s",
+        "alertThreshold": ">3.0s"
+      },
+      "FID": {
+        "target": "<100ms",
+        "alertThreshold": ">150ms"
+      },
+      "CLS": {
+        "target": "<0.1",
+        "alertThreshold": ">0.15"
+      }
+    },
+    "customMetrics": {
+      "timeToInteractive": {
+        "target": "<3.0s",
+        "alertThreshold": ">4.0s"
+      },
+      "firstContentfulPaint": {
+        "target": "<1.5s",
+        "alertThreshold": ">2.0s"
+      },
+      "speedIndex": {
+        "target": "<2.0s",
+        "alertThreshold": ">3.0s"
+      }
+    }
+  },
+  "monitoringTools": {
+    "realUserMonitoring": {
+      "tool": "Chrome UX Report + Custom RUM",
+      "frequency": "continuous",
+      "metrics": [
+        "Core Web Vitals",
+        "Custom business metrics"
+      ]
+    },
+    "syntheticMonitoring": {
+      "tool": "PageSpeed Insights API + GTmetrix",
+      "frequency": "daily",
+      "locations": [
+        "Milan",
+        "Rome",
+        "Naples"
+      ],
+      "devices": [
+        "Desktop",
+        "Mobile",
+        "Tablet"
+      ]
+    },
+    "uptimeMonitoring": {
+      "tool": "UptimeRobot",
+      "frequency": "1 minute",
+      "alertChannels": [
+        "Email",
+        "Slack",
+        "SMS"
+      ]
+    }
+  },
+  "performanceOptimization": {
+    "imageOptimization": {
+      "formats": [
+        "WebP",
+        "AVIF fallback"
+      ],
+      "compression": "Lossless for logos, 85% for photos",
+      "lazyLoading": "Intersection Observer API",
+      "responsiveImages": "srcset with multiple breakpoints"
+    },
+    "codeOptimization": {
+      "css": [
+        "Minification",
+        "Critical CSS inlining",
+        "Unused CSS removal"
+      ],
+      "javascript": [
+        "Minification",
+        "Tree shaking",
+        "Code splitting"
+      ],
+      "html": [
+        "Minification",
+        "Gzip compression",
+        "Brotli compression"
+      ]
+    },
+    "caching": {
+      "browser": "Aggressive caching for static assets",
+      "cdn": "CloudFlare with Italian edge locations",
+      "server": "Redis for dynamic content caching"
+    }
+  },
+  "alerting": {
+    "performanceAlerts": [
+      "Core Web Vitals degradation",
+      "Page load time increase >20%",
+      "Conversion rate drop >15%",
+      "Organic traffic drop >25%"
+    ],
+    "businessAlerts": [
+      "Lead generation below target",
+      "Keyword ranking drops",
+      "Competitor activity changes",
+      "Technical SEO issues"
+    ],
+    "escalationProcedure": {
+      "level1": "Automated alerts to development team",
+      "level2": "Manager notification after 30 minutes",
+      "level3": "Executive escalation after 2 hours"
+    }
+  }
+}

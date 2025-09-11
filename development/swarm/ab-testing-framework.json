@@ -1,0 +1,126 @@
+{
+  "testingPlatform": "Google Optimize",
+  "testCategories": {
+    "headlines": {
+      "priority": "high",
+      "impact": "high",
+      "tests": [
+        {
+          "name": "H1_keyword_placement",
+          "hypothesis": "Leading with location increases local relevance",
+          "variants": [
+            "Sicurezza Informatica Milano | IT-ERA",
+            "Milano: Sicurezza Informatica Professionale | IT-ERA",
+            "Protezione IT a Milano | Sicurezza Informatica | IT-ERA"
+          ],
+          "metric": "conversion_rate",
+          "duration": "4 weeks",
+          "trafficSplit": "25/25/25/25"
+        }
+      ]
+    },
+    "ctas": {
+      "priority": "high",
+      "impact": "very_high",
+      "tests": [
+        {
+          "name": "primary_cta_text",
+          "hypothesis": "Action-oriented CTAs outperform generic ones",
+          "variants": [
+            "Richiedi Preventivo Gratuito",
+            "Ottieni Consulenza Gratuita",
+            "Parla con un Esperto",
+            "Proteggi la Tua Azienda Ora"
+          ],
+          "metric": "click_through_rate",
+          "duration": "3 weeks",
+          "trafficSplit": "25/25/25/25"
+        },
+        {
+          "name": "cta_placement",
+          "hypothesis": "Multiple CTA placements increase conversions",
+          "variants": [
+            "Single CTA (hero only)",
+            "Dual CTA (hero + end)",
+            "Triple CTA (hero + middle + end)",
+            "Sticky CTA + dual placement"
+          ],
+          "metric": "conversion_rate",
+          "duration": "4 weeks",
+          "trafficSplit": "25/25/25/25"
+        }
+      ]
+    },
+    "forms": {
+      "priority": "medium",
+      "impact": "high",
+      "tests": [
+        {
+          "name": "form_length",
+          "hypothesis": "Shorter forms increase completion rates",
+          "variants": [
+            "3 fields (name, email, phone)",
+            "4 fields (+ company)",
+            "5 fields (+ service interest)",
+            "6 fields (+ message)"
+          ],
+          "metric": "form_completion_rate",
+          "duration": "3 weeks",
+          "trafficSplit": "25/25/25/25"
+        }
+      ]
+    },
+    "socialProof": {
+      "priority": "medium",
+      "impact": "medium",
+      "tests": [
+        {
+          "name": "testimonial_placement",
+          "hypothesis": "Testimonials near CTAs increase trust",
+          "variants": [
+            "No testimonials",
+            "Testimonials in sidebar",
+            "Testimonials before CTA",
+            "Testimonials after benefits"
+          ],
+          "metric": "conversion_rate",
+          "duration": "4 weeks",
+          "trafficSplit": "25/25/25/25"
+        }
+      ]
+    }
+  },
+  "testingProtocol": {
+    "minimumSampleSize": 1000,
+    "statisticalSignificance": 95,
+    "minimumDetectableEffect": 10,
+    "testDuration": {
+      "minimum": "2 weeks",
+      "maximum": "6 weeks",
+      "recommended": "4 weeks"
+    },
+    "successCriteria": {
+      "primary": "Conversion rate improvement",
+      "secondary": [
+        "Click-through rate",
+        "Engagement time",
+        "Bounce rate"
+      ],
+      "businessImpact": "Revenue per visitor increase"
+    }
+  },
+  "testPrioritization": {
+    "factors": {
+      "potentialImpact": 0.4,
+      "implementationEase": 0.2,
+      "trafficVolume": 0.2,
+      "strategicAlignment": 0.1,
+      "riskLevel": 0.1
+    },
+    "scoringMatrix": {
+      "high": "8-10 points",
+      "medium": "5-7 points",
+      "low": "1-4 points"
+    }
+  }
+}

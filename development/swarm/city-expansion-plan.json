@@ -1,0 +1,72 @@
+{
+  "totalCities": 5,
+  "totalNewPages": 125,
+  "cityStrategies": {
+    "bergamo": {
+      "keywords": [
+        "sicurezza informatica Bergamo",
+        "assistenza tecnica Bergamo",
+        "cloud computing Bergamo",
+        "consulenza IT Bergamo",
+        "firewall aziendali Bergamo"
+      ],
+      "pages": 30,
+      "estimatedTraffic": 1800,
+      "businessPotential": "high",
+      "localCompetitors": 2
+    },
+    "brescia": {
+      "keywords": [
+        "sicurezza informatica Brescia",
+        "assistenza tecnica Brescia",
+        "cloud computing Brescia",
+        "reti aziendali Brescia",
+        "backup disaster recovery Brescia"
+      ],
+      "pages": 35,
+      "estimatedTraffic": 2100,
+      "businessPotential": "high",
+      "localCompetitors": 3
+    },
+    "como": {
+      "keywords": [
+        "sicurezza informatica Como",
+        "assistenza tecnica Como",
+        "cloud computing Como",
+        "consulenza IT Como"
+      ],
+      "pages": 20,
+      "estimatedTraffic": 1200,
+      "businessPotential": "medium",
+      "localCompetitors": 1
+    },
+    "monza": {
+      "keywords": [
+        "sicurezza informatica Monza",
+        "assistenza tecnica Monza",
+        "cloud computing Monza",
+        "reti aziendali Monza",
+        "consulenza IT Monza"
+      ],
+      "pages": 25,
+      "estimatedTraffic": 1500,
+      "businessPotential": "high",
+      "localCompetitors": 2
+    },
+    "varese": {
+      "keywords": [
+        "sicurezza informatica Varese",
+        "assistenza tecnica Varese",
+        "cloud computing Varese",
+        "consulenza IT Varese"
+      ],
+      "pages": 15,
+      "estimatedTraffic": 900,
+      "businessPotential": "medium",
+      "localCompetitors": 1
+    }
+  },
+  "totalEstimatedTraffic": 7500,
+  "totalEstimatedLeads": 150,
+  "implementationTimeline": "8 weeks"
+}

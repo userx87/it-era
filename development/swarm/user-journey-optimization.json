@@ -1,0 +1,123 @@
+{
+  "journeyMaps": {
+    "seo_to_conversion": {
+      "stages": [
+        {
+          "stage": "awareness",
+          "touchpoint": "SEO page landing",
+          "userIntent": "information_seeking",
+          "optimizations": [
+            "Clear value proposition",
+            "Trust signals (certifications, testimonials)",
+            "Easy navigation to related services"
+          ]
+        },
+        {
+          "stage": "consideration",
+          "touchpoint": "Service exploration",
+          "userIntent": "solution_evaluation",
+          "optimizations": [
+            "Detailed service descriptions",
+            "Case studies and success stories",
+            "Comparison with alternatives"
+          ]
+        },
+        {
+          "stage": "decision",
+          "touchpoint": "Contact/quote request",
+          "userIntent": "purchase_ready",
+          "optimizations": [
+            "Multiple contact options",
+            "Clear pricing information",
+            "Urgency and scarcity elements"
+          ]
+        }
+      ],
+      "conversionPaths": [
+        "SEO page → Contact form (direct)",
+        "SEO page → Service page → Contact form",
+        "SEO page → About page → Contact form",
+        "SEO page → Phone call (immediate)"
+      ]
+    }
+  },
+  "pageOptimizations": {
+    "seoPages": {
+      "aboveFold": [
+        "Clear headline with target keyword",
+        "Compelling value proposition",
+        "Primary CTA button",
+        "Trust indicators (certifications, awards)"
+      ],
+      "content": [
+        "Structured content with H2/H3 headings",
+        "Benefits-focused copy",
+        "Social proof elements",
+        "FAQ section addressing objections"
+      ],
+      "conversion": [
+        "Multiple CTA placements",
+        "Contact form integration",
+        "Phone number prominence",
+        "Live chat availability"
+      ]
+    },
+    "servicePages": {
+      "enhancements": [
+        "SEO page cross-references",
+        "Related service suggestions",
+        "Detailed process explanations",
+        "Pricing transparency"
+      ]
+    },
+    "contactPages": {
+      "optimizations": [
+        "Service-specific contact forms",
+        "Multiple contact methods",
+        "Response time expectations",
+        "Next steps clarification"
+      ]
+    }
+  },
+  "conversionOptimization": {
+    "formOptimization": {
+      "fields": [
+        "Name (required)",
+        "Email (required)",
+        "Phone (required)",
+        "Company (optional)",
+        "Service interest (dropdown)",
+        "Message (optional)"
+      ],
+      "design": [
+        "Single column layout",
+        "Clear field labels",
+        "Progress indicators for multi-step",
+        "Error message clarity"
+      ],
+      "psychology": [
+        "Social proof near form",
+        "Security badges",
+        "Free consultation emphasis",
+        "No obligation messaging"
+      ]
+    },
+    "ctaOptimization": {
+      "primary": "Richiedi Consulenza Gratuita",
+      "secondary": "Chiama Ora",
+      "tertiary": "Scarica Brochure",
+      "placement": [
+        "Hero section (above fold)",
+        "After benefits section",
+        "End of content",
+        "Sticky header/footer"
+      ],
+      "design": [
+        "Contrasting colors",
+        "Action-oriented text",
+        "Appropriate sizing",
+        "Mobile optimization"
+      ]
+    }
+  }
+}

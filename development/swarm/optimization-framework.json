@@ -1,0 +1,52 @@
+{
+  "analysisFrequency": "weekly",
+  "optimizationAreas": {
+    "content": {
+      "checks": [
+        "Keyword density optimization",
+        "Content freshness",
+        "User engagement metrics",
+        "Semantic keyword coverage"
+      ],
+      "actions": [
+        "Update content based on performance",
+        "Add related keywords",
+        "Improve readability",
+        "Enhance user experience"
+      ]
+    },
+    "technical": {
+      "checks": [
+        "Page speed optimization",
+        "Core Web Vitals",
+        "Mobile responsiveness",
+        "Schema markup validation"
+      ],
+      "actions": [
+        "Optimize images and assets",
+        "Improve server response time",
+        "Fix mobile usability issues",
+        "Update schema markup"
+      ]
+    },
+    "links": {
+      "checks": [
+        "Internal linking optimization",
+        "External link opportunities",
+        "Anchor text distribution",
+        "Link equity flow"
+      ],
+      "actions": [
+        "Add strategic internal links",
+        "Build quality backlinks",
+        "Optimize anchor text",
+        "Fix broken links"
+      ]
+    }
+  },
+  "prioritization": {
+    "high": "Issues affecting rankings or traffic",
+    "medium": "Optimization opportunities",
+    "low": "Nice-to-have improvements"
+  }
+}

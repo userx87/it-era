@@ -1,0 +1,71 @@
+{
+  "linkingArchitecture": {
+    "type": "hub_and_spoke_with_clusters",
+    "hubPages": [
+      "/",
+      "/servizi/",
+      "/servizi/sicurezza-informatica/",
+      "/servizi/assistenza-tecnica/",
+      "/servizi/cloud-computing/",
+      "/servizi/reti-aziendali/"
+    ],
+    "spokePages": "SEO-generated pages",
+    "clusterConnections": "Related service pages within categories"
+  },
+  "linkingRules": {
+    "seoToHub": {
+      "description": "SEO pages link to category hub pages",
+      "anchorTextStrategy": "keyword_variation",
+      "linkPlacement": "contextual_within_content",
+      "frequency": "2-3 links per page"
+    },
+    "hubToSeo": {
+      "description": "Hub pages link to relevant SEO pages",
+      "anchorTextStrategy": "exact_match_keywords",
+      "linkPlacement": "dedicated_sections",
+      "frequency": "5-8 links per hub page"
+    },
+    "seoToSeo": {
+      "description": "Related SEO pages link to each other",
+      "anchorTextStrategy": "semantic_keywords",
+      "linkPlacement": "related_services_section",
+      "frequency": "3-5 links per page"
+    },
+    "conversionLinks": {
+      "description": "All pages link to conversion points",
+      "anchorTextStrategy": "action_oriented",
+      "linkPlacement": "multiple_strategic_locations",
+      "frequency": "2-4 conversion links per page"
+    }
+  },
+  "anchorTextOptimization": {
+    "distribution": {
+      "exactMatch": "20%",
+      "partialMatch": "30%",
+      "brandedTerms": "25%",
+      "genericTerms": "15%",
+      "nakedUrls": "10%"
+    },
+    "examples": {
+      "exactMatch": "sicurezza informatica Milano",
+      "partialMatch": "servizi di sicurezza informatica",
+      "branded": "IT-ERA sicurezza informatica",
+      "generic": "scopri di più",
+      "naked": "https://it-era.it/servizi/sicurezza-informatica/"
+    }
+  },
+  "linkEquityFlow": {
+    "priority": [
+      "Homepage → Category hubs",
+      "Category hubs → High-value SEO pages",
+      "SEO pages → Conversion pages",
+      "Related SEO pages → Cross-linking"
+    ],
+    "optimization": [
+      "Minimize link depth (max 3 clicks from homepage)",
+      "Distribute link equity evenly within categories",
+      "Prioritize high-converting pages",
+      "Regular link audit and optimization"
+    ]
+  }
+}

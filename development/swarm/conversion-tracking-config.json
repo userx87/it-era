@@ -1,0 +1,116 @@
+{
+  "conversionGoals": {
+    "primary": {
+      "contactFormSubmission": {
+        "value": 100,
+        "trackingMethod": "form_submit_event",
+        "attribution": "first_click",
+        "qualificationCriteria": "complete_form_with_valid_email"
+      },
+      "phoneCallConversion": {
+        "value": 150,
+        "trackingMethod": "call_tracking_number",
+        "attribution": "last_click",
+        "qualificationCriteria": "call_duration_over_60_seconds"
+      },
+      "quoteRequest": {
+        "value": 200,
+        "trackingMethod": "form_submit_event",
+        "attribution": "data_driven",
+        "qualificationCriteria": "detailed_project_information"
+      }
+    },
+    "secondary": {
+      "newsletterSignup": {
+        "value": 25,
+        "trackingMethod": "form_submit_event",
+        "attribution": "first_click"
+      },
+      "brochureDownload": {
+        "value": 50,
+        "trackingMethod": "file_download_event",
+        "attribution": "last_click"
+      },
+      "servicePageVisit": {
+        "value": 10,
+        "trackingMethod": "page_view_event",
+        "attribution": "linear"
+      }
+    }
+  },
+  "attributionModeling": {
+    "model": "data_driven",
+    "lookbackWindow": 30,
+    "includeDirectTraffic": false,
+    "crossDeviceTracking": true,
+    "customAttribution": {
+      "seoSpecific": {
+        "firstTouch": "SEO page discovery",
+        "middleTouch": "Service exploration",
+        "lastTouch": "Conversion action",
+        "assistedConversions": "Multi-page journey tracking"
+      }
+    }
+  },
+  "conversionFunnels": {
+    "seoToLead": {
+      "steps": [
+        "SEO page landing",
+        "Content engagement (60s+)",
+        "Service page visit",
+        "Contact form view",
+        "Form submission"
+      ],
+      "expectedConversionRates": [
+        100,
+        45,
+        25,
+        15,
+        3.75
+      ]
+    },
+    "seoToCall": {
+      "steps": [
+        "SEO page landing",
+        "Phone number view",
+        "Click-to-call action",
+        "Successful connection"
+      ],
+      "expectedConversionRates": [
+        100,
+        30,
+        8,
+        1.5
+      ]
+    }
+  },
+  "leadQualification": {
+    "scoringCriteria": {
+      "companySize": {
+        "weight": 0.3,
+        "scale": "1-10 employees: 5, 11-50: 8, 50+: 10"
+      },
+      "serviceInterest": {
+        "weight": 0.25,
+        "scale": "Basic: 5, Advanced: 8, Enterprise: 10"
+      },
+      "urgency": {
+        "weight": 0.2,
+        "scale": "Future: 3, 3-6 months: 7, Immediate: 10"
+      },
+      "budget": {
+        "weight": 0.15,
+        "scale": "<5k: 3, 5-20k: 7, 20k+: 10"
+      },
+      "engagement": {
+        "weight": 0.1,
+        "scale": "Single page: 3, Multiple: 7, Return: 10"
+      }
+    },
+    "qualificationThresholds": {
+      "hot": 8.5,
+      "warm": 6,
+      "cold": 4
+    }
+  }
+}

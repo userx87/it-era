@@ -1,0 +1,407 @@
+{
+  "totalNewPages": 40,
+  "estimatedTraffic": 8000,
+  "estimatedLeads": 160,
+  "implementationTime": "6 weeks",
+  "pageTypes": {
+    "detailed_service_pages": 25,
+    "local_landing_pages": 10,
+    "comparison_pages": 5
+  },
+  "contentClusters": {
+    "sicurezza-informatica": {
+      "pillarPage": "sicurezza-informatica/index.html",
+      "supportingPages": [
+        {
+          "keyword": "consulenza cybersecurity Milano",
+          "filename": "consulenza-cybersecurity-milano.html",
+          "contentType": "consulting_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "sicurezza informatica PMI Milano",
+          "filename": "sicurezza-informatica-pmi-milano.html",
+          "contentType": "vertical_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "protezione ransomware Milano",
+          "filename": "protezione-ransomware-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "compliance GDPR Milano",
+          "filename": "compliance-gdpr-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "security assessment Milano",
+          "filename": "security-assessment-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "incident response Milano",
+          "filename": "incident-response-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "vulnerability assessment Milano",
+          "filename": "vulnerability-assessment-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "security awareness training Milano",
+          "filename": "security-awareness-training-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "endpoint protection Milano",
+          "filename": "endpoint-protection-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "network security Milano",
+          "filename": "network-security-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/sicurezza-informatica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        }
+      ]
+    },
+    "assistenza-tecnica": {
+      "pillarPage": "assistenza-tecnica/index.html",
+      "supportingPages": [
+        {
+          "keyword": "supporto IT remoto Milano",
+          "filename": "supporto-it-remoto-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "manutenzione server Milano",
+          "filename": "manutenzione-server-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "gestione infrastruttura IT Milano",
+          "filename": "gestione-infrastruttura-it-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "troubleshooting informatico Milano",
+          "filename": "troubleshooting-informatico-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "assistenza hardware Milano",
+          "filename": "assistenza-hardware-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "supporto software Milano",
+          "filename": "supporto-software-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "help desk aziendale Milano",
+          "filename": "help-desk-aziendale-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "manutenzione preventiva IT Milano",
+          "filename": "manutenzione-preventiva-it-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/assistenza-tecnica/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        }
+      ]
+    },
+    "cloud-computing": {
+      "pillarPage": "cloud-computing/index.html",
+      "supportingPages": [
+        {
+          "keyword": "migrazione cloud Milano",
+          "filename": "migrazione-cloud-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "cloud ibrido Milano",
+          "filename": "cloud-ibrido-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "backup cloud Milano",
+          "filename": "backup-cloud-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "disaster recovery cloud Milano",
+          "filename": "disaster-recovery-cloud-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "cloud security Milano",
+          "filename": "cloud-security-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "cloud storage aziendale Milano",
+          "filename": "cloud-storage-aziendale-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "virtualizzazione server Milano",
+          "filename": "virtualizzazione-server-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "cloud computing PMI Milano",
+          "filename": "cloud-computing-pmi-milano.html",
+          "contentType": "vertical_page",
+          "internalLinks": [
+            "/cloud-computing/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        }
+      ]
+    },
+    "reti-aziendali": {
+      "pillarPage": "reti-aziendali/index.html",
+      "supportingPages": [
+        {
+          "keyword": "progettazione reti Milano",
+          "filename": "progettazione-reti-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "installazione wifi aziendale Milano",
+          "filename": "installazione-wifi-aziendale-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "configurazione firewall Milano",
+          "filename": "configurazione-firewall-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "gestione rete aziendale Milano",
+          "filename": "gestione-rete-aziendale-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "cablaggio strutturato Milano",
+          "filename": "cablaggio-strutturato-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "rete wireless sicura Milano",
+          "filename": "rete-wireless-sicura-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "monitoraggio rete Milano",
+          "filename": "monitoraggio-rete-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        },
+        {
+          "keyword": "ottimizzazione banda Milano",
+          "filename": "ottimizzazione-banda-milano.html",
+          "contentType": "service_page",
+          "internalLinks": [
+            "/reti-aziendali/index.html",
+            "/servizi/index.html",
+            "/contatti.html",
+            "/chi-siamo.html"
+          ]
+        }
+      ]
+    }
+  }
+}

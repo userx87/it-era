@@ -1,0 +1,61 @@
+{
+  "strategy": {
+    "consulenza-it": {
+      "description": "IT Consulting Services",
+      "keywords": [
+        "consulenza informatica Milano",
+        "consulente IT Milano",
+        "strategia digitale Milano",
+        "trasformazione digitale Milano",
+        "audit IT Milano",
+        "pianificazione IT Milano",
+        "governance IT Milano",
+        "consulenza tecnologica Milano"
+      ],
+      "pages": 15,
+      "targetBranch": "feature/consulenza-it-isolated",
+      "estimatedTraffic": 2400,
+      "businessValue": "very_high",
+      "averageProjectValue": 15000
+    },
+    "formazione-it": {
+      "description": "IT Training Services",
+      "keywords": [
+        "formazione informatica Milano",
+        "corsi IT aziendali Milano",
+        "training cybersecurity Milano",
+        "formazione cloud Milano",
+        "corsi Microsoft Milano",
+        "training tecnico Milano"
+      ],
+      "pages": 12,
+      "targetBranch": "feature/formazione-it-isolated",
+      "estimatedTraffic": 1800,
+      "businessValue": "high",
+      "averageProjectValue": 8000
+    },
+    "outsourcing-it": {
+      "description": "IT Outsourcing Services",
+      "keywords": [
+        "outsourcing IT Milano",
+        "gestione IT esternalizzata Milano",
+        "CTO as a Service Milano",
+        "managed services IT Milano",
+        "IT service provider Milano"
+      ],
+      "pages": 10,
+      "targetBranch": "feature/outsourcing-it-isolated",
+      "estimatedTraffic": 1500,
+      "businessValue": "very_high",
+      "averageProjectValue": 25000
+    }
+  },
+  "summary": {
+    "categories": 3,
+    "totalPages": 37,
+    "totalKeywords": 63,
+    "estimatedTraffic": 5700,
+    "estimatedLeads": 114,
+    "totalBusinessValue": 1440000
+  }
+}

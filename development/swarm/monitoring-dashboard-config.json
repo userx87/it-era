@@ -1,0 +1,66 @@
+{
+  "title": "IT-ERA SEO Swarm Performance Dashboard",
+  "sections": {
+    "overview": {
+      "metrics": [
+        "Total organic traffic",
+        "Keyword rankings improved",
+        "Conversion rate",
+        "Average position"
+      ]
+    },
+    "traffic": {
+      "charts": [
+        "Organic traffic trend",
+        "Traffic by page",
+        "Traffic by keyword",
+        "Geographic distribution"
+      ]
+    },
+    "rankings": {
+      "tables": [
+        "Keyword position changes",
+        "New keyword rankings",
+        "Competitor comparison",
+        "SERP features captured"
+      ]
+    },
+    "performance": {
+      "metrics": [
+        "Core Web Vitals scores",
+        "Page speed trends",
+        "Mobile usability",
+        "Indexing status"
+      ]
+    },
+    "conversions": {
+      "funnels": [
+        "SEO to lead conversion",
+        "Page engagement metrics",
+        "Form completion rates",
+        "Phone call tracking"
+      ]
+    }
+  },
+  "alerts": [
+    "Ranking drops > 5 positions",
+    "Traffic drops > 20%",
+    "Core Web Vitals issues",
+    "Indexing problems",
+    "Conversion rate drops"
+  ],
+  "reportingSchedule": {
+    "daily": [
+      "Traffic overview",
+      "Ranking changes"
+    ],
+    "weekly": [
+      "Performance summary",
+      "Conversion analysis"
+    ],
+    "monthly": [
+      "Comprehensive SEO report",
+      "ROI analysis"
+    ]
+  }
+}

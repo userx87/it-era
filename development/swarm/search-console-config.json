@@ -1,0 +1,23 @@
+{
+  "property": "https://it-era.it",
+  "verification": "google-site-verification=XXXXXXXXX",
+  "sitemapSubmission": [
+    "https://it-era.it/sitemap.xml",
+    "https://it-era.it/seo-pages-sitemap.xml"
+  ],
+  "monitoringQueries": [
+    "sicurezza informatica Milano",
+    "firewall aziendali Milano",
+    "antivirus enterprise Milano",
+    "backup disaster recovery Milano",
+    "audit sicurezza Milano",
+    "penetration testing Milano"
+  ],
+  "alerts": {
+    "indexingIssues": true,
+    "crawlErrors": true,
+    "securityIssues": true,
+    "manualActions": true,
+    "coreWebVitals": true
+  }
+}

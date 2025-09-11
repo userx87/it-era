@@ -1,0 +1,35 @@
+{
+  "tools": {
+    "primary": "SEMrush API",
+    "secondary": "Ahrefs API",
+    "backup": "SERPWatcher"
+  },
+  "trackingFrequency": "daily",
+  "keywordGroups": {
+    "sicurezza-informatica-milano": {
+      "keywords": [
+        "sicurezza informatica Milano",
+        "cybersecurity Milano",
+        "protezione dati Milano",
+        "firewall aziendali Milano",
+        "antivirus enterprise Milano"
+      ],
+      "targetPage": "/servizi/sicurezza-informatica/sicurezza-informatica-milano.html",
+      "currentPositions": {},
+      "targetPositions": {
+        "average": 5,
+        "best": 1
+      }
+    }
+  },
+  "competitors": [
+    "technoit-milano.it",
+    "informatica-bergamo.com",
+    "cloudtech-lombardia.it"
+  ],
+  "alerts": {
+    "positionDrop": 5,
+    "newRankings": true,
+    "competitorMovement": true
+  }
+}

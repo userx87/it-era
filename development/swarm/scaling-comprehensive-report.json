@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-09-11T12:45:25.584Z",
+  "summary": {
+    "totalNewPages": 244,
+    "totalNewKeywords": 244,
+    "estimatedMonthlyTraffic": 28800,
+    "estimatedMonthlyLeads": 576,
+    "estimatedAnnualRevenue": 2880000,
+    "implementationTimeline": "12 weeks"
+  },
+  "phases": {
+    "phase2a_category_expansion": {
+      "pages": 40,
+      "traffic": 8000,
+      "leads": 160,
+      "timeline": "6 weeks",
+      "priority": "high"
+    },
+    "phase2b_geographic_expansion": {
+      "pages": 125,
+      "traffic": 7500,
+      "leads": 150,
+      "timeline": "8 weeks",
+      "priority": "high"
+    },
+    "phase2c_new_categories": {
+      "pages": 37,
+      "traffic": 5700,
+      "leads": 114,
+      "timeline": "6 weeks",
+      "priority": "medium"
+    },
+    "phase2d_vertical_expansion": {
+      "pages": 42,
+      "traffic": 6600,
+      "leads": 132,
+      "timeline": "8 weeks",
+      "priority": "medium"
+    }
+  },
+  "resourceRequirements": {
+    "contentCreation": "120 hours",
+    "seoOptimization": "80 hours",
+    "technicalImplementation": "60 hours",
+    "qualityAssurance": "40 hours",
+    "deployment": "20 hours",
+    "totalHours": 320,
+    "estimatedCost": 32000
+  },
+  "expectedROI": {
+    "investmentCost": 32000,
+    "annualRevenue": 2880000,
+    "roi": "8900%",
+    "paybackPeriod": "2 weeks",
+    "breakEvenPoint": "1 month"
+  },
+  "riskAssessment": {
+    "technical": "low",
+    "market": "low",
+    "competition": "medium",
+    "resources": "medium",
+    "timeline": "medium"
+  },
+  "successMetrics": {
+    "organic_traffic_growth": "1200% increase",
+    "keyword_rankings": "244 new rankings",
+    "lead_generation": "576 monthly leads",
+    "market_coverage": "100% Lombardy coverage",
+    "competitive_advantage": "first-mover in AI SEO"
+  }
+}

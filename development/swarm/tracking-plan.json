@@ -1,0 +1,55 @@
+{
+  "objectives": [
+    "Track organic traffic growth from SEO pages",
+    "Monitor keyword ranking improvements",
+    "Measure lead generation from SEO content",
+    "Analyze user behavior on SEO pages",
+    "Optimize conversion paths"
+  ],
+  "events": {
+    "seo_page_view": {
+      "description": "User views an SEO-generated page",
+      "parameters": [
+        "seo_page_category",
+        "target_keyword",
+        "page_branch"
+      ],
+      "frequency": "Every page view"
+    },
+    "generate_lead": {
+      "description": "User submits a contact form",
+      "parameters": [
+        "form_type",
+        "page_category",
+        "value"
+      ],
+      "frequency": "Form submissions"
+    },
+    "phone_call": {
+      "description": "User clicks phone number",
+      "parameters": [
+        "phone_number",
+        "page_category",
+        "value"
+      ],
+      "frequency": "Phone link clicks"
+    }
+  },
+  "goals": {
+    "organic_traffic_growth": {
+      "target": "400 monthly visits per page",
+      "measurement": "GA4 organic traffic reports",
+      "timeline": "3 months"
+    },
+    "lead_generation": {
+      "target": "8-12 leads per month per page",
+      "measurement": "Form submission events",
+      "timeline": "2 months"
+    },
+    "keyword_rankings": {
+      "target": "Top 10 for primary keywords",
+      "measurement": "Search Console + rank tracking tools",
+      "timeline": "4-6 months"
+    }
+  }
+}

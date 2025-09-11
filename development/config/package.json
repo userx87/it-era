@@ -34,7 +34,12 @@
     "branch:assistenza": "git checkout feature/assistenza-tecnica",
     "branch:cloud": "git checkout feature/cloud-computing",
     "branch:shop": "git checkout feature/shop",
-    "branch:main": "git checkout main"
+    "branch:main": "git checkout main",
+    "instructions:sicurezza": "git checkout feature/sicurezza-informatica && cat README-sicurezza-informatica.md",
+    "instructions:assistenza": "git checkout feature/assistenza-tecnica && cat README-assistenza-tecnica.md",
+    "instructions:cloud": "git checkout feature/cloud-computing && cat README-cloud-computing.md",
+    "instructions:reti": "git checkout feature/reti-aziendali && cat README-reti-aziendali.md",
+    "instructions:shop": "git checkout feature/shop && cat README-shop.md"
   },
   "keywords": [
     "it-era",

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-09-11T08:32:35.566Z",
+  "totalPages": 20,
+  "pagesByCategory": {
+    "sicurezza-informatica": 7,
+    "cloud-computing": 7,
+    "assistenza-tecnica": 6
+  },
+  "pagesByBranch": {
+    "feature/sicurezza-informatica-isolated": 7,
+    "feature/cloud-computing-isolated": 7,
+    "feature/assistenza-tecnica-isolated": 6
+  },
+  "seoMetrics": {
+    "averageKeywordDensity": 0.02,
+    "schemaMarkupCoverage": 1,
+    "internalLinksPerPage": 5,
+    "averageContentLength": 2500
+  },
+  "estimatedTraffic": 35750
+}

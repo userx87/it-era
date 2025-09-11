@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-09-11T08:32:35.563Z",
+  "totalPages": 20,
+  "successfulDeployments": 0,
+  "failedDeployments": 20,
+  "testResults": {
+    "seoCompliance": [],
+    "pageSpeed": [],
+    "mobileResponsiveness": [],
+    "schemaValidation": [],
+    "internalLinks": []
+  },
+  "summary": {
+    "averageScore": null,
+    "highQualityPages": 0,
+    "qualityRate": null,
+    "totalIssues": 0
+  },
+  "deployedPages": [],
+  "detailedTestResults": []
+}

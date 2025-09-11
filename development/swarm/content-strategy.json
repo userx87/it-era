@@ -1,0 +1,424 @@
+{
+  "priorityPages": [
+    {
+      "keyword": "sicurezza informatica Lombardia",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 2400,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "sicurezza informatica Lombardia",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 2400,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "sicurezza informatica Lombardia",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 2400,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "sicurezza informatica Lombardia",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 2400,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "sicurezza informatica Lombardia",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 2400,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "sicurezza informatica Milano",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "local_service_page",
+      "estimatedTraffic": 1800,
+      "difficulty": "medium"
+    },
+    {
+      "keyword": "microsoft 365 Lombardia",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1800,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "microsoft 365 Lombardia",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1800,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "microsoft 365 Lombardia",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1800,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "microsoft 365 Lombardia",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1800,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "microsoft 365 Lombardia",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1800,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "assistenza informatica Lombardia",
+      "category": "assistenza-tecnica",
+      "priority": "high",
+      "targetBranch": "feature/assistenza-tecnica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1600,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "assistenza informatica Lombardia",
+      "category": "assistenza-tecnica",
+      "priority": "high",
+      "targetBranch": "feature/assistenza-tecnica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1600,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "assistenza informatica Lombardia",
+      "category": "assistenza-tecnica",
+      "priority": "high",
+      "targetBranch": "feature/assistenza-tecnica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1600,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "assistenza informatica Lombardia",
+      "category": "assistenza-tecnica",
+      "priority": "high",
+      "targetBranch": "feature/assistenza-tecnica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1600,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "assistenza informatica Lombardia",
+      "category": "assistenza-tecnica",
+      "priority": "high",
+      "targetBranch": "feature/assistenza-tecnica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1600,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "microsoft 365 Milano",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "local_service_page",
+      "estimatedTraffic": 1350,
+      "difficulty": "medium"
+    },
+    {
+      "keyword": "sicurezza informatica",
+      "category": "sicurezza-informatica",
+      "priority": "high",
+      "targetBranch": "feature/sicurezza-informatica-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1200,
+      "difficulty": "very_hard"
+    },
+    {
+      "keyword": "assistenza informatica Milano",
+      "category": "assistenza-tecnica",
+      "priority": "high",
+      "targetBranch": "feature/assistenza-tecnica-isolated",
+      "contentType": "local_service_page",
+      "estimatedTraffic": 1200,
+      "difficulty": "hard"
+    },
+    {
+      "keyword": "cloud computing Lombardia",
+      "category": "cloud-computing",
+      "priority": "high",
+      "targetBranch": "feature/cloud-computing-isolated",
+      "contentType": "standard_service_page",
+      "estimatedTraffic": 1200,
+      "difficulty": "very_hard"
+    }
+  ],
+  "contentClusters": {
+    "sicurezza-informatica": [
+      {
+        "keyword": "sicurezza informatica Lombardia",
+        "category": "sicurezza-informatica",
+        "type": "regional_service",
+        "searchVolume": 2400,
+        "competition": 0.7,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "sicurezza informatica Lombardia",
+        "category": "sicurezza-informatica",
+        "type": "regional_service",
+        "searchVolume": 2400,
+        "competition": 0.7,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "sicurezza informatica Lombardia",
+        "category": "sicurezza-informatica",
+        "type": "regional_service",
+        "searchVolume": 2400,
+        "competition": 0.7,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "sicurezza informatica Lombardia",
+        "category": "sicurezza-informatica",
+        "type": "regional_service",
+        "searchVolume": 2400,
+        "competition": 0.7,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "sicurezza informatica Lombardia",
+        "category": "sicurezza-informatica",
+        "type": "regional_service",
+        "searchVolume": 2400,
+        "competition": 0.7,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "sicurezza informatica Milano",
+        "category": "sicurezza-informatica",
+        "type": "local_service",
+        "searchVolume": 1800,
+        "competition": 0.49,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "medium"
+      },
+      {
+        "keyword": "sicurezza informatica",
+        "category": "sicurezza-informatica",
+        "type": "generic_service",
+        "searchVolume": 1200,
+        "competition": 0.7,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      }
+    ],
+    "cloud-computing": [
+      {
+        "keyword": "microsoft 365 Lombardia",
+        "category": "cloud-computing",
+        "type": "regional_service",
+        "searchVolume": 1800,
+        "competition": 0.6,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "microsoft 365 Lombardia",
+        "category": "cloud-computing",
+        "type": "regional_service",
+        "searchVolume": 1800,
+        "competition": 0.6,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "microsoft 365 Lombardia",
+        "category": "cloud-computing",
+        "type": "regional_service",
+        "searchVolume": 1800,
+        "competition": 0.6,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "microsoft 365 Lombardia",
+        "category": "cloud-computing",
+        "type": "regional_service",
+        "searchVolume": 1800,
+        "competition": 0.6,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "microsoft 365 Lombardia",
+        "category": "cloud-computing",
+        "type": "regional_service",
+        "searchVolume": 1800,
+        "competition": 0.6,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "microsoft 365 Milano",
+        "category": "cloud-computing",
+        "type": "local_service",
+        "searchVolume": 1350,
+        "competition": 0.42,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "medium"
+      },
+      {
+        "keyword": "cloud computing Lombardia",
+        "category": "cloud-computing",
+        "type": "regional_service",
+        "searchVolume": 1200,
+        "competition": 0.9,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      }
+    ],
+    "assistenza-tecnica": [
+      {
+        "keyword": "assistenza informatica Lombardia",
+        "category": "assistenza-tecnica",
+        "type": "regional_service",
+        "searchVolume": 1600,
+        "competition": 0.8,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "assistenza informatica Lombardia",
+        "category": "assistenza-tecnica",
+        "type": "regional_service",
+        "searchVolume": 1600,
+        "competition": 0.8,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "assistenza informatica Lombardia",
+        "category": "assistenza-tecnica",
+        "type": "regional_service",
+        "searchVolume": 1600,
+        "competition": 0.8,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "assistenza informatica Lombardia",
+        "category": "assistenza-tecnica",
+        "type": "regional_service",
+        "searchVolume": 1600,
+        "competition": 0.8,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "assistenza informatica Lombardia",
+        "category": "assistenza-tecnica",
+        "type": "regional_service",
+        "searchVolume": 1600,
+        "competition": 0.8,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "very_hard"
+      },
+      {
+        "keyword": "assistenza informatica Milano",
+        "category": "assistenza-tecnica",
+        "type": "local_service",
+        "searchVolume": 1200,
+        "competition": 0.56,
+        "businessIntent": "medium",
+        "priority": "high",
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "internalLinkingStrategy": {
+    "hubPages": [
+      "servizi",
+      "chi-siamo",
+      "contatti"
+    ],
+    "categoryHubs": [
+      "sicurezza-informatica",
+      "assistenza-tecnica",
+      "cloud-computing"
+    ],
+    "linkingRules": [
+      "Service pages link to category hub",
+      "Category hubs link to main services page",
+      "Local pages link to service pages"
+    ]
+  },
+  "localSEOStrategy": {
+    "napConsistency": "IT-ERA, Via Example 123, Milano, 20100, +39 02 1234567",
+    "localKeywords": [
+      "Milano",
+      "Bergamo",
+      "Brescia",
+      "Monza-Brianza",
+      "Como"
+    ],
+    "schemaMarkup": [
+      "LocalBusiness",
+      "Service",
+      "Organization"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "it-era",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-homepage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userx87/it-era.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/userx87/it-era/issues"
+  },
+  "homepage": "https://github.com/userx87/it-era#readme",
+  "dependencies": {
+    "puppeteer": "^24.20.0"
+  }
+}

@@ -1,0 +1,284 @@
+/*!
+ * IT-ERA Separated Components CSS
+ * Modular component styles for better maintainability
+ */
+
+/* ============================================
+   NAVIGATION COMPONENTS
+   ============================================ */
+
+/* Navigation Links */
+.nav-link {
+  color: #525252;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #0056cc;
+}
+
+.nav-link.active {
+  color: #0056cc;
+  font-weight: 600;
+}
+
+/* Mobile Navigation Links */
+.mobile-nav-link {
+  display: block;
+  padding: 12px 16px;
+  color: #525252;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+  background-color: #f5f5f5;
+}
+
+.mobile-nav-link.active {
+  color: #0056cc;
+  font-weight: 600;
+  background-color: #f0f7ff;
+}
+
+/* ============================================
+   BUTTON COMPONENTS
+   ============================================ */
+
+/* Base Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 86, 204, 0.2);
+}
+
+/* Primary Button */
+.btn-primary {
+  padding: 16px 32px;
+  color: white;
+  background-color: #0056cc;
+  box-shadow: 0 10px 15px -3px rgba(0, 86, 204, 0.1), 0 4px 6px -2px rgba(0, 86, 204, 0.05);
+  transform: translateY(0);
+}
+
+.btn-primary:hover {
+  background-color: #0043a3;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 86, 204, 0.1), 0 10px 10px -5px rgba(0, 86, 204, 0.04);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  padding: 14px 30px;
+  color: #0056cc;
+  background-color: white;
+  border: 2px solid #0056cc;
+  box-shadow: 0 4px 6px -1px rgba(0, 86, 204, 0.1), 0 2px 4px -1px rgba(0, 86, 204, 0.06);
+}
+
+.btn-secondary:hover {
+  background-color: #0056cc;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 86, 204, 0.1), 0 4px 6px -2px rgba(0, 86, 204, 0.05);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  border-radius: 12px;
+}
+
+.btn-lg {
+  padding: 20px 40px;
+  font-size: 1.125rem;
+  border-radius: 20px;
+}
+
+/* ============================================
+   CARD COMPONENTS
+   ============================================ */
+
+/* Service Card */
+.card-service {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f5f5f5;
+}
+
+.card-service:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+}
+
+/* ============================================
+   FORM COMPONENTS
+   ============================================ */
+
+/* Input Field */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #0056cc;
+  box-shadow: 0 0 0 3px rgba(0, 86, 204, 0.1);
+}
+
+/* Form Label */
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #404040;
+  margin-bottom: 8px;
+}
+
+/* ============================================
+   UTILITY COMPONENTS
+   ============================================ */
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-primary {
+  background-color: #e0efff;
+  color: #003785;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: #14532d;
+}
+
+/* ============================================
+   ANIMATION COMPONENTS
+   ============================================ */
+
+/* Fade In Animation */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slide Up Animation */
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(20px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+/* Hide on Mobile */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Hide on Desktop */
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY COMPONENTS
+   ============================================ */
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus Visible */
+.focus-visible:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 86, 204, 0.2);
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link:focus {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #0056cc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  z-index: 50;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

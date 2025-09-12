@@ -226,49 +226,216 @@
     </header>
     <!-- Main Content -->
     <main id="main-content" role="main">
-    <div class="pt-20">
-      <div class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-center mb-12">I Nostri Servizi IT</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            <h2 class="text-2xl font-bold mb-4">🔧 Assistenza Tecnica</h2>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <!-- Status Badge -->
+          <div class="inline-flex items-center px-6 py-3 bg-white/20 text-white rounded-full text-sm font-semibold mb-8">
+            <div class="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+            Assistenza IT Professionale 24/7
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <span class="block">Servizi IT Completi</span>
+            <span class="block text-yellow-300">per Aziende Milano</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <strong>Assistenza informatica aziende</strong> con intervento in 2 ore.
+            Sicurezza IT, cloud computing e supporto tecnico specializzato per far crescere il tuo business.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+            <a href="/contatti.html" class="btn-primary btn-lg bg-white text-blue-600 hover:bg-neutral-100 group">
+              <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+              <span class="font-bold">Consulenza Gratuita</span>
+            </a>
+            <a href="tel:+390398882041" class="btn-secondary btn-lg border-white text-white hover:bg-white hover:text-blue-600">
+              <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <div class="text-left">
+                <div class="font-bold">Emergenza IT</div>
+                <div class="text-sm">039 888 2041</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+            <div class="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <svg class="w-8 h-8 text-green-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <div>
+                <div class="font-bold text-lg">500+</div>
+                <div class="text-sm text-blue-200">Aziende servite</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <svg class="w-8 h-8 text-yellow-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+              </svg>
+              <div>
+                <div class="font-bold text-lg">2h</div>
+                <div class="text-sm text-blue-200">Tempo intervento</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <svg class="w-8 h-8 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <div class="font-bold text-lg">24/7</div>
+                <div class="text-sm text-blue-200">Supporto attivo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-6">
+            Servizi IT Specializzati per Aziende
+          </h2>
+          <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Soluzioni complete per la digitalizzazione e la sicurezza informatica della tua azienda
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Assistenza Tecnica -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-100">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-neutral-900">Assistenza Informatica Aziende</h3>
+                <p class="text-sm text-blue-600 font-semibold">Intervento garantito in 2 ore</p>
+              </div>
+            </div>
             <ul class="space-y-3 text-gray-700 mb-6">
-              <li>• Help desk e supporto remoto 24/7</li>
-              <li>• Riparazione hardware e software</li>
-              <li>• Manutenzione preventiva programmata</li>
-              <li>• Gestione reti aziendali</li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Help desk aziendale 24/7</strong> - Supporto remoto immediato</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Manutenzione sistemi IT</strong> preventiva e correttiva</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Gestione reti aziendali</strong> e infrastrutture IT</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Risoluzione problemi IT</strong> in tempi record</span>
+              </li>
             </ul>
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 mb-6">
+              <div class="flex items-center text-blue-800">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-semibold">Riduzione downtime del 90% garantita</span>
+              </div>
+            </div>
             <div class="flex flex-col sm:flex-row gap-3">
-              <a href="/contatti.html" class="btn-primary btn-sm flex-1 text-center">
-                Richiedi Supporto
+              <a href="/contatti.html" class="btn-primary btn-sm flex-1 text-center group">
+                <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+                Supporto Immediato
               </a>
-              <a href="tel:+390398882041" class="btn-secondary btn-sm flex-1 text-center">
+              <a href="tel:+390398882041" class="btn-secondary btn-sm flex-1 text-center group">
+                <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
                 Emergenza 24/7
               </a>
             </div>
           </div>
-          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            <h2 class="text-2xl font-bold mb-4">🔒 Sicurezza Informatica</h2>
-            <ul class="space-y-3 text-gray-700 mb-6">
-              <li>• Firewall e antivirus enterprise</li>
-              <li>• Backup automatici e disaster recovery</li>
-              <li>• Protezione avanzata da ransomware</li>
-              <li>• Audit di sicurezza e penetration test</li>
-            </ul>
-            <div class="flex flex-col gap-3">
-              <div class="flex flex-col sm:flex-row gap-3">
-                <a href="/contatti.html" class="btn-primary btn-sm flex-1 text-center">
-                  Audit Gratuito
-                </a>
-                <a href="tel:+390398882041" class="btn-secondary btn-sm flex-1 text-center">
-                  Emergenza Sicurezza
-                </a>
-              </div>
-              <a href="/servizi/sicurezza-informatica/" class="inline-flex items-center justify-center text-brand-600 hover:text-brand-700 font-semibold transition-colors py-2">
-                Scopri tutti i servizi di sicurezza
-                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          <!-- Sicurezza Informatica -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-100">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                 </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-neutral-900">Sicurezza Informatica Aziende</h3>
+                <p class="text-sm text-red-600 font-semibold">Protezione completa da cyber attacchi</p>
+              </div>
+            </div>
+            <ul class="space-y-3 text-gray-700 mb-6">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Protezione ransomware</strong> e malware avanzati</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Firewall enterprise</strong> e monitoraggio 24/7</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Backup automatici</strong> e disaster recovery</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Audit sicurezza</strong> e penetration test</span>
+              </li>
+            </ul>
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-4 mb-6">
+              <div class="flex items-center text-red-800">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-semibold">99.9% protezione da cyber attacchi</span>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="/contatti.html" class="btn-primary btn-sm flex-1 text-center group">
+                <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Audit Sicurezza Gratuito
+              </a>
+              <a href="tel:+390398882041" class="btn-secondary btn-sm flex-1 text-center group">
+                <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                Emergenza Cyber
               </a>
             </div>
           </div>
@@ -308,7 +475,190 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-gradient-to-br from-neutral-50 to-blue-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-6">
+            Pacchetti Servizi IT per Aziende
+          </h2>
+          <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Soluzioni complete e scalabili per ogni esigenza aziendale
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Pacchetto Base -->
+          <div class="bg-white rounded-2xl shadow-lg p-8 border border-neutral-200 hover:shadow-xl transition-all duration-300">
+            <div class="text-center mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-neutral-900 mb-2">Supporto Base</h3>
+              <p class="text-neutral-600 mb-4">Ideale per PMI fino a 10 dipendenti</p>
+              <div class="text-4xl font-bold text-green-600 mb-2">€299</div>
+              <div class="text-sm text-neutral-500">/mese</div>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Help desk 8h/5gg</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Manutenzione preventiva</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Backup settimanale</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Antivirus aziendale</span>
+              </li>
+            </ul>
+            <a href="/contatti.html" class="btn-primary w-full text-center block">
+              Richiedi Preventivo
+            </a>
+          </div>
+
+          <!-- Pacchetto Professional (Evidenziato) -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 border-2 border-blue-500 hover:shadow-2xl transition-all duration-300 relative">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span class="bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold">PIÙ RICHIESTO</span>
+            </div>
+            <div class="text-center mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-neutral-900 mb-2">Supporto Professional</h3>
+              <p class="text-neutral-600 mb-4">Perfetto per aziende 10-50 dipendenti</p>
+              <div class="text-4xl font-bold text-blue-600 mb-2">€599</div>
+              <div class="text-sm text-neutral-500">/mese</div>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span><strong>Help desk 24/7</strong></span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Intervento in 2 ore</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Backup giornaliero</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Sicurezza avanzata</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Cloud computing</span>
+              </li>
+            </ul>
+            <a href="/contatti.html" class="btn-primary w-full text-center block bg-blue-600 hover:bg-blue-700">
+              Richiedi Preventivo
+            </a>
+          </div>
+
+          <!-- Pacchetto Enterprise -->
+          <div class="bg-white rounded-2xl shadow-lg p-8 border border-neutral-200 hover:shadow-xl transition-all duration-300">
+            <div class="text-center mb-8">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-neutral-900 mb-2">Supporto Enterprise</h3>
+              <p class="text-neutral-600 mb-4">Per grandi aziende 50+ dipendenti</p>
+              <div class="text-4xl font-bold text-purple-600 mb-2">€999</div>
+              <div class="text-sm text-neutral-500">/mese</div>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-purple-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Supporto dedicato 24/7</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-purple-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Intervento in 1 ora</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-purple-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Backup in tempo reale</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-purple-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Cybersecurity completa</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-purple-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Consulenza strategica</span>
+              </li>
+            </ul>
+            <a href="/contatti.html" class="btn-primary w-full text-center block">
+              Richiedi Preventivo
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+          <div class="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+            <h3 class="text-2xl font-bold text-neutral-900 mb-4">
+              Non trovi il pacchetto giusto?
+            </h3>
+            <p class="text-neutral-600 mb-6">
+              Creiamo una soluzione personalizzata per le tue esigenze specifiche
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/contatti.html" class="btn-primary btn-lg">
+                Consulenza Personalizzata
+              </a>
+              <a href="tel:+390398882041" class="btn-secondary btn-lg">
+                📞 Chiama Subito
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
     <!-- Footer -->
     <!-- Footer -->

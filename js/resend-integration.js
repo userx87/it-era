@@ -7,7 +7,8 @@
 class ITERAResendIntegration {
     constructor() {
         this.config = {
-            apiEndpoint: 'https://it-era-resend.bulltech.workers.dev/api/contact',
+            apiEndpoint: '/api/contact',
+            fallbackEndpoint: 'https://it-era-resend.bulltech.workers.dev/api/contact',
             timeout: 15000,
             retryAttempts: 3,
             retryDelay: 2000
@@ -205,6 +206,61 @@ class ITERAResendIntegration {
             isValid: errors.length === 0,
             errors: errors
         };
+    }
+
+    /**
+     * Invia i dati a Resend con fallback
+     */
+    async sendToResend(payload) {
+        try {
+            // Prova prima l'endpoint principale
+            const response = await fetch(this.config.apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(payload),
+                timeout: this.config.timeout
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                console.log('✅ Form inviato con successo:', result);
+                return { success: true, data: result };
+            } else {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+        } catch (error) {
+            console.warn('⚠️ Endpoint principale fallito, provo fallback:', error.message);
+
+            // Prova endpoint fallback se disponibile
+            if (this.config.fallbackEndpoint) {
+                try {
+                    const fallbackResponse = await fetch(this.config.fallbackEndpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(payload),
+                        timeout: this.config.timeout
+                    });
+
+                    if (fallbackResponse.ok) {
+                        const result = await fallbackResponse.json();
+                        console.log('✅ Form inviato via fallback:', result);
+                        return { success: true, data: result };
+                    }
+                } catch (fallbackError) {
+                    console.error('❌ Anche il fallback è fallito:', fallbackError);
+                }
+            }
+
+            return {
+                success: false,
+                error: 'Impossibile inviare il messaggio. Contattaci al 039 888 2041'
+            };
+        }
     }
 
     /**

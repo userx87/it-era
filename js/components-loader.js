@@ -172,7 +172,7 @@ class ITERAComponentLoader {
         }
         
         // Always load common components
-        componentsToLoad.push('chatbot', 'footer');
+        componentsToLoad.push('footer'); // chatbot disabled - using new modular system
         
         await this.loadComponents(componentsToLoad);
     }
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Initialize components after they are loaded
     setTimeout(() => {
         initializeMobileMenu();
-        initializeChatbot();
+        // initializeChatbot(); // Disabled - using new modular chat system
         componentLoader.updateNavigationState();
     }, 100);
     

@@ -144,4 +144,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+    <url>
+        <loc>https://it-era.it/blog/articoli/cloud-computing-varese.html</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

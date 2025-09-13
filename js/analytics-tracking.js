@@ -310,4 +310,14 @@ window.ITERAAnalytics = {
 };
 
 // Auto-initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initializeAnalytics);
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if advanced analytics is available
+    if (typeof AdvancedAnalytics !== 'undefined' || window.analytics) {
+        console.log('📊 Advanced Analytics System detected, using enhanced tracking');
+        return; // Advanced system will handle everything
+    }
+
+    // Fallback to basic analytics
+    initializeAnalytics();
+    console.log('📊 Using basic analytics system');
+});

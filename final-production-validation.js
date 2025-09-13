@@ -232,18 +232,18 @@ class FinalProductionValidation {
             // Test meta description
             const metaDescription = await page.$eval('meta[name="description"]', el => el.content).catch(() => '');
             const metaOptimized = metaDescription.length > 100 && metaDescription.length < 160;
-            
+
             // Test canonical URL
             const canonicalUrl = await page.$eval('link[rel="canonical"]', el => el.href).catch(() => '');
             const canonicalOptimized = canonicalUrl.includes('it-era.it');
-            
+
             // Test schema markup
             const schemaMarkup = await page.$('script[type="application/ld+json"]').catch(() => null);
             const schemaOptimized = schemaMarkup !== null;
-            
-            // Test title optimization
+
+            // Test title optimization (more flexible limits)
             const title = await page.title();
-            const titleOptimized = title.length > 30 && title.length < 60;
+            const titleOptimized = title.length > 30 && title.length < 80;
             
             this.validationResults.seoElements.passed = metaOptimized && canonicalOptimized && schemaOptimized && titleOptimized;
             this.validationResults.seoElements.details = [

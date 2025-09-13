@@ -1,20 +1,28 @@
 {
   "batchNumber": 42,
-  "pages": 5,
+  "pages": 10,
   "results": {
     "contentReview": {
       "agent": "Content Review Agent",
-      "timestamp": "2025-09-13T10:18:20.096Z",
-      "pagesAnalyzed": 5,
+      "timestamp": "2025-09-13T10:34:54.899Z",
+      "pagesAnalyzed": 10,
       "issues": {
-        "recupero-dati-personali-varese.html": [
+        "supporto-pc-domestico-brescia.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "recupero dati personali Varese | IT-ERA - Assistenza Professionale",
+            "current": "supporto PC domestico Brescia | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Brescia. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
           },
           {
             "type": "pricing_issues",
@@ -38,41 +46,35 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "sicurezza-informatica-consulenza-bergamo.html": [
+        "supporto-pc-domestico-como.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "sicurezza informatica consulenza Bergamo | IT-ERA - Assistenza Professionale",
+            "current": "supporto PC domestico Como | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
           },
           {
-            "type": "content_quality",
+            "type": "seo_issues",
             "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 263 words",
-            "recommendation": "Expand content to at least 500-800 words"
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Como. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€89\"",
+            "message": "Specific price found: \"€49\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€499\"",
-            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
-          },
-          {
-            "type": "pricing_issues",
-            "severity": "high",
-            "element": "specific_pricing",
-            "message": "Specific price found: \"€299\"",
+            "message": "Specific price found: \"€79\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
@@ -83,41 +85,35 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "sicurezza-informatica-consulenza-brescia.html": [
+        "supporto-pc-domestico-cremona.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "sicurezza informatica consulenza Brescia | IT-ERA - Assistenza Professionale",
+            "current": "supporto PC domestico Cremona | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
           },
           {
-            "type": "content_quality",
+            "type": "seo_issues",
             "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 263 words",
-            "recommendation": "Expand content to at least 500-800 words"
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Cremona. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€89\"",
+            "message": "Specific price found: \"€49\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€499\"",
-            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
-          },
-          {
-            "type": "pricing_issues",
-            "severity": "high",
-            "element": "specific_pricing",
-            "message": "Specific price found: \"€299\"",
+            "message": "Specific price found: \"€79\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
@@ -128,41 +124,35 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "sicurezza-informatica-consulenza-como.html": [
+        "supporto-pc-domestico-lecco.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "sicurezza informatica consulenza Como | IT-ERA - Assistenza Professionale",
+            "current": "supporto PC domestico Lecco | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
           },
           {
-            "type": "content_quality",
+            "type": "seo_issues",
             "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 263 words",
-            "recommendation": "Expand content to at least 500-800 words"
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Lecco. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€89\"",
+            "message": "Specific price found: \"€49\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€499\"",
-            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
-          },
-          {
-            "type": "pricing_issues",
-            "severity": "high",
-            "element": "specific_pricing",
-            "message": "Specific price found: \"€299\"",
+            "message": "Specific price found: \"€79\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
@@ -173,41 +163,230 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "sicurezza-informatica-consulenza-cremona.html": [
+        "supporto-pc-domestico-lodi.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "sicurezza informatica consulenza Cremona | IT-ERA - Assistenza Professionale",
+            "current": "supporto PC domestico Lodi | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
           },
           {
-            "type": "content_quality",
+            "type": "seo_issues",
             "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 263 words",
-            "recommendation": "Expand content to at least 500-800 words"
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Lodi. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€89\"",
+            "message": "Specific price found: \"€49\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€499\"",
+            "message": "Specific price found: \"€79\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-pc-domestico-mantova.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto PC domestico Mantova | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Mantova. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€49\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
             "type": "pricing_issues",
             "severity": "high",
             "element": "specific_pricing",
-            "message": "Specific price found: \"€299\"",
+            "message": "Specific price found: \"€79\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-pc-domestico-milano.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto PC domestico Milano | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Milano. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€49\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€79\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-pc-domestico-monza.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto PC domestico Monza | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Monza. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€49\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€79\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-pc-domestico-pavia.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto PC domestico Pavia | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Pavia. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€49\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€79\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-pc-domestico-sondrio.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto PC domestico Sondrio | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto PC domestico a Sondrio. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€49\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€79\"",
             "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
@@ -220,36 +399,40 @@
         ]
       },
       "recommendations": {
-        "recupero-dati-personali-varese.html": [],
-        "sicurezza-informatica-consulenza-bergamo.html": [],
-        "sicurezza-informatica-consulenza-brescia.html": [],
-        "sicurezza-informatica-consulenza-como.html": [],
-        "sicurezza-informatica-consulenza-cremona.html": []
+        "supporto-pc-domestico-brescia.html": [],
+        "supporto-pc-domestico-como.html": [],
+        "supporto-pc-domestico-cremona.html": [],
+        "supporto-pc-domestico-lecco.html": [],
+        "supporto-pc-domestico-lodi.html": [],
+        "supporto-pc-domestico-mantova.html": [],
+        "supporto-pc-domestico-milano.html": [],
+        "supporto-pc-domestico-monza.html": [],
+        "supporto-pc-domestico-pavia.html": [],
+        "supporto-pc-domestico-sondrio.html": []
       },
       "summary": {
-        "totalIssues": 28,
+        "totalIssues": 50,
         "issuesByType": {
-          "seo_issues": 5,
-          "pricing_issues": 14,
-          "grammar_issues": 5,
-          "content_quality": 4
+          "seo_issues": 20,
+          "pricing_issues": 20,
+          "grammar_issues": 10
         },
         "issuesBySeverity": {
-          "high": 18,
-          "medium": 5,
-          "low": 5
+          "high": 30,
+          "medium": 10,
+          "low": 10
         },
-        "pagesWithIssues": 5
+        "pagesWithIssues": 10
       }
     },
     "designEnhancement": {
       "agent": "Design Enhancement Agent",
-      "timestamp": "2025-09-13T10:18:20.140Z",
-      "pagesEnhanced": 5,
+      "timestamp": "2025-09-13T10:34:54.980Z",
+      "pagesEnhanced": 10,
       "enhancements": {
-        "recupero-dati-personali-varese.html": {
-          "filename": "recupero-dati-personali-varese.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-brescia.html": {
+          "filename": "supporto-pc-domestico-brescia.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "visual_hierarchy",
@@ -295,6 +478,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -308,13 +497,14 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "sicurezza-informatica-consulenza-bergamo.html": {
-          "filename": "sicurezza-informatica-consulenza-bergamo.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-como.html": {
+          "filename": "supporto-pc-domestico-como.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "visual_hierarchy",
@@ -360,6 +550,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -373,13 +569,14 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "sicurezza-informatica-consulenza-brescia.html": {
-          "filename": "sicurezza-informatica-consulenza-brescia.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-cremona.html": {
+          "filename": "supporto-pc-domestico-cremona.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "visual_hierarchy",
@@ -425,6 +622,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -438,13 +641,14 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "sicurezza-informatica-consulenza-como.html": {
-          "filename": "sicurezza-informatica-consulenza-como.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-lecco.html": {
+          "filename": "supporto-pc-domestico-lecco.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "visual_hierarchy",
@@ -490,6 +694,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -503,13 +713,14 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "sicurezza-informatica-consulenza-cremona.html": {
-          "filename": "sicurezza-informatica-consulenza-cremona.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-lodi.html": {
+          "filename": "supporto-pc-domestico-lodi.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "visual_hierarchy",
@@ -555,6 +766,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -568,6 +785,367 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-pc-domestico-mantova.html": {
+          "filename": "supporto-pc-domestico-mantova.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-pc-domestico-milano.html": {
+          "filename": "supporto-pc-domestico-milano.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-pc-domestico-monza.html": {
+          "filename": "supporto-pc-domestico-monza.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-pc-domestico-pavia.html": {
+          "filename": "supporto-pc-domestico-pavia.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-pc-domestico-sondrio.html": {
+          "filename": "supporto-pc-domestico-sondrio.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
@@ -577,14 +1155,14 @@
         "enhancedCSS": "\n/* IT-ERA Enhanced Design System */\n\n/* Typography Enhancements */\n.it-era-typography {\n    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n}\n\n.it-era-h1-enhanced {\n    font-size: 2.5rem;\n    font-weight: 700;\n    line-height: 1.2;\n    color: #111827;\n    margin-bottom: 2rem;\n    background: linear-gradient(135deg, #1e40af, #3b82f6);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n}\n\n/* Section Enhancements */\n.it-era-section-enhanced {\n    padding: 3rem 0;\n    position: relative;\n}\n\n.it-era-section-enhanced:not(:last-child)::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 80%;\n    height: 1px;\n    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);\n}\n\n/* Button Enhancements */\n.it-era-btn-enhanced {\n    background: linear-gradient(135deg, #1e40af, #3b82f6);\n    color: white;\n    border: none;\n    padding: 1rem 2rem;\n    border-radius: 8px;\n    font-weight: 600;\n    text-decoration: none;\n    display: inline-flex;\n    align-items: center;\n    gap: 0.5rem;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n}\n\n.it-era-btn-enhanced:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);\n    background: linear-gradient(135deg, #3b82f6, #1e40af);\n}\n\n/* Responsive Container */\n.it-era-container-responsive {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 1.5rem;\n}\n\n@media (max-width: 768px) {\n    .it-era-container-responsive {\n        padding: 0 1rem;\n    }\n}\n\n/* Responsive Grid */\n.it-era-grid-responsive {\n    display: grid;\n    gap: 2rem;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n@media (max-width: 768px) {\n    .it-era-grid-responsive {\n        grid-template-columns: 1fr;\n        gap: 1.5rem;\n    }\n}\n\n/* Brand Colors */\n.it-era-brand-colors {\n    --primary: #1e40af;\n    --secondary: #3b82f6;\n    --accent: #06b6d4;\n    --success: #10b981;\n    --warning: #f59e0b;\n    --danger: #ef4444;\n}\n\n/* Navigation Enhancement */\n.it-era-nav-enhanced {\n    background: rgba(255, 255, 255, 0.95);\n    backdrop-filter: blur(10px);\n    border-bottom: 1px solid #e5e7eb;\n    position: sticky;\n    top: 0;\n    z-index: 1000;\n}\n\n/* Icons Enhancement */\n.it-era-icons-enhanced .service-item::before {\n    content: '🔧';\n    font-size: 2rem;\n    margin-bottom: 1rem;\n    display: block;\n}\n\n/* Form Enhancement */\n.it-era-form-enhanced {\n    background: #f9fafb;\n    padding: 3rem;\n    border-radius: 12px;\n    border: 1px solid #e5e7eb;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n}\n\n.it-era-form-enhanced input,\n.it-era-form-enhanced textarea,\n.it-era-form-enhanced select {\n    width: 100%;\n    padding: 1rem;\n    border: 2px solid #d1d5db;\n    border-radius: 6px;\n    font-size: 1rem;\n    transition: border-color 0.3s ease;\n}\n\n.it-era-form-enhanced input:focus,\n.it-era-form-enhanced textarea:focus,\n.it-era-form-enhanced select:focus {\n    outline: none;\n    border-color: #1e40af;\n    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);\n}\n\n/* Mobile Optimizations */\n@media (max-width: 768px) {\n    .it-era-h1-enhanced {\n        font-size: 2rem;\n    }\n    \n    .it-era-section-enhanced {\n        padding: 2rem 0;\n    }\n    \n    .it-era-btn-enhanced {\n        width: 100%;\n        justify-content: center;\n    }\n}\n"
       },
       "summary": {
-        "totalEnhancements": 40,
+        "totalEnhancements": 90,
         "enhancementsByType": {
-          "visual_hierarchy": 15,
-          "responsive_design": 10,
-          "brand_consistency": 10,
-          "visual_elements": 5
+          "visual_hierarchy": 30,
+          "responsive_design": 20,
+          "brand_consistency": 20,
+          "visual_elements": 20
         },
-        "pagesEnhanced": 5,
+        "pagesEnhanced": 10,
         "cssClassesGenerated": [
           "it-era-h1-enhanced",
           "it-era-section-enhanced",
@@ -593,23 +1171,24 @@
           "it-era-grid-responsive",
           "it-era-brand-colors",
           "it-era-typography",
+          "it-era-icons-enhanced",
           "it-era-form-enhanced"
         ]
       }
     },
     "contentEnhancement": {
       "agent": "Content Enhancement Agent",
-      "timestamp": "2025-09-13T10:18:20.148Z",
-      "pagesEnhanced": 5,
+      "timestamp": "2025-09-13T10:34:54.994Z",
+      "pagesEnhanced": 10,
       "enhancements": {
-        "recupero-dati-personali-varese.html": {
-          "filename": "recupero-dati-personali-varese.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-brescia.html": {
+          "filename": "supporto-pc-domestico-brescia.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 377 to ~800 words",
+              "enhancement": "Expanded content from 477 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
             },
             {
@@ -645,13 +1224,13 @@
               "type": "service_details",
               "element": "service_details",
               "enhancement": "Added comprehensive service details section",
-              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
             },
             {
               "type": "benefits_addition",
               "element": "benefits",
               "enhancement": "Added benefits section highlighting key advantages",
-              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
             }
           ],
           "contentUpdates": [
@@ -692,42 +1271,36 @@
           "newSections": [
             {
               "title": "I Nostri Servizi",
-              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
               "position": "after_hero"
             },
             {
               "title": "Perché Scegliere IT-ERA",
-              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
               "position": "before_contact"
             }
           ]
         },
-        "sicurezza-informatica-consulenza-bergamo.html": {
-          "filename": "sicurezza-informatica-consulenza-bergamo.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-como.html": {
+          "filename": "supporto-pc-domestico-como.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 263 to ~800 words",
+              "enhancement": "Expanded content from 477 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€499\"\" with generic pricing text",
-              "replacement": "Contatta per preventivo personalizzato"
-            },
-            {
-              "type": "pricing_removal",
-              "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€299\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
@@ -751,13 +1324,13 @@
               "type": "service_details",
               "element": "service_details",
               "enhancement": "Added comprehensive service details section",
-              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
             },
             {
               "type": "benefits_addition",
               "element": "benefits",
               "enhancement": "Added benefits section highlighting key advantages",
-              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
             }
           ],
           "contentUpdates": [
@@ -769,19 +1342,13 @@
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€89",
+              "find": "€49",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€499",
-              "replace": "Contatta per preventivo personalizzato"
-            },
-            {
-              "selector": "body",
-              "action": "replace_text",
-              "find": "€299",
+              "find": "€79",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
@@ -804,42 +1371,36 @@
           "newSections": [
             {
               "title": "I Nostri Servizi",
-              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
               "position": "after_hero"
             },
             {
               "title": "Perché Scegliere IT-ERA",
-              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
               "position": "before_contact"
             }
           ]
         },
-        "sicurezza-informatica-consulenza-brescia.html": {
-          "filename": "sicurezza-informatica-consulenza-brescia.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-cremona.html": {
+          "filename": "supporto-pc-domestico-cremona.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 263 to ~800 words",
+              "enhancement": "Expanded content from 477 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€499\"\" with generic pricing text",
-              "replacement": "Contatta per preventivo personalizzato"
-            },
-            {
-              "type": "pricing_removal",
-              "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€299\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
@@ -863,13 +1424,13 @@
               "type": "service_details",
               "element": "service_details",
               "enhancement": "Added comprehensive service details section",
-              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
             },
             {
               "type": "benefits_addition",
               "element": "benefits",
               "enhancement": "Added benefits section highlighting key advantages",
-              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
             }
           ],
           "contentUpdates": [
@@ -881,19 +1442,13 @@
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€89",
+              "find": "€49",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€499",
-              "replace": "Contatta per preventivo personalizzato"
-            },
-            {
-              "selector": "body",
-              "action": "replace_text",
-              "find": "€299",
+              "find": "€79",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
@@ -916,42 +1471,36 @@
           "newSections": [
             {
               "title": "I Nostri Servizi",
-              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
               "position": "after_hero"
             },
             {
               "title": "Perché Scegliere IT-ERA",
-              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
               "position": "before_contact"
             }
           ]
         },
-        "sicurezza-informatica-consulenza-como.html": {
-          "filename": "sicurezza-informatica-consulenza-como.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-lecco.html": {
+          "filename": "supporto-pc-domestico-lecco.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 263 to ~800 words",
+              "enhancement": "Expanded content from 477 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€499\"\" with generic pricing text",
-              "replacement": "Contatta per preventivo personalizzato"
-            },
-            {
-              "type": "pricing_removal",
-              "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€299\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
@@ -975,13 +1524,13 @@
               "type": "service_details",
               "element": "service_details",
               "enhancement": "Added comprehensive service details section",
-              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
             },
             {
               "type": "benefits_addition",
               "element": "benefits",
               "enhancement": "Added benefits section highlighting key advantages",
-              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
             }
           ],
           "contentUpdates": [
@@ -993,19 +1542,13 @@
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€89",
+              "find": "€49",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€499",
-              "replace": "Contatta per preventivo personalizzato"
-            },
-            {
-              "selector": "body",
-              "action": "replace_text",
-              "find": "€299",
+              "find": "€79",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
@@ -1028,42 +1571,36 @@
           "newSections": [
             {
               "title": "I Nostri Servizi",
-              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
               "position": "after_hero"
             },
             {
               "title": "Perché Scegliere IT-ERA",
-              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
               "position": "before_contact"
             }
           ]
         },
-        "sicurezza-informatica-consulenza-cremona.html": {
-          "filename": "sicurezza-informatica-consulenza-cremona.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-lodi.html": {
+          "filename": "supporto-pc-domestico-lodi.html",
+          "category": "home-it-support",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 263 to ~800 words",
+              "enhancement": "Expanded content from 477 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
               "type": "pricing_removal",
               "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€499\"\" with generic pricing text",
-              "replacement": "Contatta per preventivo personalizzato"
-            },
-            {
-              "type": "pricing_removal",
-              "element": "pricing",
-              "enhancement": "Replaced \"Specific price found: \"€299\"\" with generic pricing text",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
               "replacement": "Contatta per preventivo personalizzato"
             },
             {
@@ -1087,13 +1624,13 @@
               "type": "service_details",
               "element": "service_details",
               "enhancement": "Added comprehensive service details section",
-              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
             },
             {
               "type": "benefits_addition",
               "element": "benefits",
               "enhancement": "Added benefits section highlighting key advantages",
-              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
             }
           ],
           "contentUpdates": [
@@ -1105,19 +1642,13 @@
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€89",
+              "find": "€49",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
               "selector": "body",
               "action": "replace_text",
-              "find": "€499",
-              "replace": "Contatta per preventivo personalizzato"
-            },
-            {
-              "selector": "body",
-              "action": "replace_text",
-              "find": "€299",
+              "find": "€79",
               "replace": "Contatta per preventivo personalizzato"
             },
             {
@@ -1140,12 +1671,512 @@
           "newSections": [
             {
               "title": "I Nostri Servizi",
-              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
               "position": "after_hero"
             },
             {
               "title": "Perché Scegliere IT-ERA",
-              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-pc-domestico-mantova.html": {
+          "filename": "supporto-pc-domestico-mantova.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 477 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€49",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€79",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-pc-domestico-milano.html": {
+          "filename": "supporto-pc-domestico-milano.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 477 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€49",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€79",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-pc-domestico-monza.html": {
+          "filename": "supporto-pc-domestico-monza.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 477 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€49",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€79",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-pc-domestico-pavia.html": {
+          "filename": "supporto-pc-domestico-pavia.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 477 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€49",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€79",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-pc-domestico-sondrio.html": {
+          "filename": "supporto-pc-domestico-sondrio.html",
+          "category": "home-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 477 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€49\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€79\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€49",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€79",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
               "position": "before_contact"
             }
           ]
@@ -1153,30 +2184,30 @@
       },
       "contentUpdates": {},
       "summary": {
-        "totalEnhancements": 34,
+        "totalEnhancements": 60,
         "enhancementsByType": {
-          "content_expansion": 5,
-          "pricing_removal": 14,
-          "cta_improvement": 5,
-          "service_details": 5,
-          "benefits_addition": 5
+          "content_expansion": 10,
+          "pricing_removal": 20,
+          "cta_improvement": 10,
+          "service_details": 10,
+          "benefits_addition": 10
         },
-        "pagesEnhanced": 5,
-        "contentAdded": 10
+        "pagesEnhanced": 10,
+        "contentAdded": 20
       }
     },
     "technicalImplementation": {
       "agent": "Technical Implementation Agent",
-      "timestamp": "2025-09-13T10:18:20.154Z",
-      "pagesImplemented": 5,
+      "timestamp": "2025-09-13T10:34:55.005Z",
+      "pagesImplemented": 10,
       "implementations": {
-        "recupero-dati-personali-varese.html": {
-          "filename": "recupero-dati-personali-varese.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-brescia.html": {
+          "filename": "supporto-pc-domestico-brescia.html",
+          "category": "home-it-support",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1185,6 +2216,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1199,24 +2231,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "sicurezza-informatica-consulenza-bergamo.html": {
-          "filename": "sicurezza-informatica-consulenza-bergamo.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-como.html": {
+          "filename": "supporto-pc-domestico-como.html",
+          "category": "home-it-support",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1225,6 +2250,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1239,24 +2265,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "sicurezza-informatica-consulenza-brescia.html": {
-          "filename": "sicurezza-informatica-consulenza-brescia.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-cremona.html": {
+          "filename": "supporto-pc-domestico-cremona.html",
+          "category": "home-it-support",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1265,6 +2284,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1279,24 +2299,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "sicurezza-informatica-consulenza-como.html": {
-          "filename": "sicurezza-informatica-consulenza-como.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-lecco.html": {
+          "filename": "supporto-pc-domestico-lecco.html",
+          "category": "home-it-support",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1305,6 +2318,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1319,24 +2333,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "sicurezza-informatica-consulenza-cremona.html": {
-          "filename": "sicurezza-informatica-consulenza-cremona.html",
-          "category": "specialized-services",
+        "supporto-pc-domestico-lodi.html": {
+          "filename": "supporto-pc-domestico-lodi.html",
+          "category": "home-it-support",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1345,6 +2352,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1359,34 +2367,201 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "supporto-pc-domestico-mantova.html": {
+          "filename": "supporto-pc-domestico-mantova.html",
+          "category": "home-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
             },
             {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
               ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "supporto-pc-domestico-milano.html": {
+          "filename": "supporto-pc-domestico-milano.html",
+          "category": "home-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "supporto-pc-domestico-monza.html": {
+          "filename": "supporto-pc-domestico-monza.html",
+          "category": "home-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "supporto-pc-domestico-pavia.html": {
+          "filename": "supporto-pc-domestico-pavia.html",
+          "category": "home-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "supporto-pc-domestico-sondrio.html": {
+          "filename": "supporto-pc-domestico-sondrio.html",
+          "category": "home-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
             }
           ],
           "modified": true
         }
       },
       "filesModified": [
-        "recupero-dati-personali-varese.html",
-        "sicurezza-informatica-consulenza-bergamo.html",
-        "sicurezza-informatica-consulenza-brescia.html",
-        "sicurezza-informatica-consulenza-como.html",
-        "sicurezza-informatica-consulenza-cremona.html"
+        "supporto-pc-domestico-brescia.html",
+        "supporto-pc-domestico-como.html",
+        "supporto-pc-domestico-cremona.html",
+        "supporto-pc-domestico-lecco.html",
+        "supporto-pc-domestico-lodi.html",
+        "supporto-pc-domestico-mantova.html",
+        "supporto-pc-domestico-milano.html",
+        "supporto-pc-domestico-monza.html",
+        "supporto-pc-domestico-pavia.html",
+        "supporto-pc-domestico-sondrio.html"
       ],
       "summary": {
-        "totalImplementations": 20,
+        "totalImplementations": 30,
         "implementationsByType": {
-          "css_updates": 5,
-          "html_modifications": 5,
-          "responsive_fixes": 5,
-          "javascript_integration": 5
+          "css_updates": 10,
+          "html_modifications": 10,
+          "responsive_fixes": 10
         },
-        "pagesModified": 5,
+        "pagesModified": 10,
         "filesCreated": [
           "css/it-era-enhanced.css"
         ]
@@ -1394,5 +2569,5 @@
     }
   },
   "errors": [],
-  "timestamp": "2025-09-13T10:18:20.096Z"
+  "timestamp": "2025-09-13T10:34:54.899Z"
 }

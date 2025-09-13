@@ -1,35 +1,20 @@
 {
   "batchNumber": 11,
-  "pages": 5,
+  "pages": 10,
   "results": {
     "contentReview": {
       "agent": "Content Review Agent",
-      "timestamp": "2025-09-13T10:17:15.810Z",
-      "pagesAnalyzed": 5,
+      "timestamp": "2025-09-13T10:33:49.241Z",
+      "pagesAnalyzed": 10,
       "issues": {
-        "riparazione-notebook-mantova.html": [
+        "sostituzione-hard-disk-sondrio.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "riparazione notebook Mantova | IT-ERA - Assistenza Professionale",
+            "current": "sostituzione hard disk Sondrio | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
-          },
-          {
-            "type": "seo_issues",
-            "severity": "high",
-            "element": "meta_description",
-            "message": "Meta description is missing or too short (< 120 characters)",
-            "current": "riparazione notebook a Mantova. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
-            "recommendation": "Add compelling meta description 150-160 characters long"
-          },
-          {
-            "type": "content_quality",
-            "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 270 words",
-            "recommendation": "Expand content to at least 500-800 words"
           },
           {
             "type": "pricing_issues",
@@ -53,13 +38,13 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "riparazione-notebook-milano.html": [
+        "sostituzione-hard-disk-varese.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "riparazione notebook Milano | IT-ERA - Assistenza Professionale",
+            "current": "sostituzione hard disk Varese | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
           },
           {
@@ -67,15 +52,8 @@
             "severity": "high",
             "element": "meta_description",
             "message": "Meta description is missing or too short (< 120 characters)",
-            "current": "riparazione notebook a Milano. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "current": "sostituzione hard disk a Varese. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
             "recommendation": "Add compelling meta description 150-160 characters long"
-          },
-          {
-            "type": "content_quality",
-            "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 270 words",
-            "recommendation": "Expand content to at least 500-800 words"
           },
           {
             "type": "pricing_issues",
@@ -99,29 +77,14 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "riparazione-notebook-monza.html": [
+        "sostituzione-schermo-laptop-bergamo.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "riparazione notebook Monza | IT-ERA - Assistenza Professionale",
+            "current": "sostituzione schermo laptop Bergamo | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
-          },
-          {
-            "type": "seo_issues",
-            "severity": "high",
-            "element": "meta_description",
-            "message": "Meta description is missing or too short (< 120 characters)",
-            "current": "riparazione notebook a Monza. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
-            "recommendation": "Add compelling meta description 150-160 characters long"
-          },
-          {
-            "type": "content_quality",
-            "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 270 words",
-            "recommendation": "Expand content to at least 500-800 words"
           },
           {
             "type": "pricing_issues",
@@ -145,29 +108,14 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "riparazione-notebook-pavia.html": [
+        "sostituzione-schermo-laptop-brescia.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "riparazione notebook Pavia | IT-ERA - Assistenza Professionale",
+            "current": "sostituzione schermo laptop Brescia | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
-          },
-          {
-            "type": "seo_issues",
-            "severity": "high",
-            "element": "meta_description",
-            "message": "Meta description is missing or too short (< 120 characters)",
-            "current": "riparazione notebook a Pavia. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
-            "recommendation": "Add compelling meta description 150-160 characters long"
-          },
-          {
-            "type": "content_quality",
-            "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 270 words",
-            "recommendation": "Expand content to at least 500-800 words"
           },
           {
             "type": "pricing_issues",
@@ -191,29 +139,169 @@
             "recommendation": "Review and fix grammar issues"
           }
         ],
-        "riparazione-notebook-sondrio.html": [
+        "sostituzione-schermo-laptop-como.html": [
           {
             "type": "seo_issues",
             "severity": "medium",
             "element": "title",
             "message": "Title tag is too long (> 60 characters)",
-            "current": "riparazione notebook Sondrio | IT-ERA - Assistenza Professionale",
+            "current": "sostituzione schermo laptop Como | IT-ERA - Assistenza Professionale",
             "recommendation": "Shorten title to 50-60 characters"
           },
           {
-            "type": "seo_issues",
+            "type": "pricing_issues",
             "severity": "high",
-            "element": "meta_description",
-            "message": "Meta description is missing or too short (< 120 characters)",
-            "current": "riparazione notebook a Sondrio. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
-            "recommendation": "Add compelling meta description 150-160 characters long"
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€89\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
           },
           {
-            "type": "content_quality",
+            "type": "pricing_issues",
             "severity": "high",
-            "element": "word_count",
-            "message": "Content is too short: 270 words",
-            "recommendation": "Expand content to at least 500-800 words"
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€149\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "sostituzione-schermo-laptop-cremona.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "sostituzione schermo laptop Cremona | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€89\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€149\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "sostituzione-schermo-laptop-lecco.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "sostituzione schermo laptop Lecco | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€89\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€149\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "sostituzione-schermo-laptop-lodi.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "sostituzione schermo laptop Lodi | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€89\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€149\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "sostituzione-schermo-laptop-mantova.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "sostituzione schermo laptop Mantova | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€89\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "pricing_issues",
+            "severity": "high",
+            "element": "specific_pricing",
+            "message": "Specific price found: \"€149\"",
+            "recommendation": "Replace with \"Contatta per preventivo personalizzato\""
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "sostituzione-schermo-laptop-milano.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "sostituzione schermo laptop Milano | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
           },
           {
             "type": "pricing_issues",
@@ -239,35 +327,39 @@
         ]
       },
       "recommendations": {
-        "riparazione-notebook-mantova.html": [],
-        "riparazione-notebook-milano.html": [],
-        "riparazione-notebook-monza.html": [],
-        "riparazione-notebook-pavia.html": [],
-        "riparazione-notebook-sondrio.html": []
+        "sostituzione-hard-disk-sondrio.html": [],
+        "sostituzione-hard-disk-varese.html": [],
+        "sostituzione-schermo-laptop-bergamo.html": [],
+        "sostituzione-schermo-laptop-brescia.html": [],
+        "sostituzione-schermo-laptop-como.html": [],
+        "sostituzione-schermo-laptop-cremona.html": [],
+        "sostituzione-schermo-laptop-lecco.html": [],
+        "sostituzione-schermo-laptop-lodi.html": [],
+        "sostituzione-schermo-laptop-mantova.html": [],
+        "sostituzione-schermo-laptop-milano.html": []
       },
       "summary": {
-        "totalIssues": 30,
+        "totalIssues": 41,
         "issuesByType": {
-          "seo_issues": 10,
-          "content_quality": 5,
-          "pricing_issues": 10,
-          "grammar_issues": 5
+          "seo_issues": 11,
+          "pricing_issues": 20,
+          "grammar_issues": 10
         },
         "issuesBySeverity": {
-          "high": 20,
-          "medium": 5,
-          "low": 5
+          "high": 21,
+          "medium": 10,
+          "low": 10
         },
-        "pagesWithIssues": 5
+        "pagesWithIssues": 10
       }
     },
     "designEnhancement": {
       "agent": "Design Enhancement Agent",
-      "timestamp": "2025-09-13T10:17:15.855Z",
-      "pagesEnhanced": 5,
+      "timestamp": "2025-09-13T10:33:49.314Z",
+      "pagesEnhanced": 10,
       "enhancements": {
-        "riparazione-notebook-mantova.html": {
-          "filename": "riparazione-notebook-mantova.html",
+        "sostituzione-hard-disk-sondrio.html": {
+          "filename": "sostituzione-hard-disk-sondrio.html",
           "category": "hardware-repair",
           "improvements": [
             {
@@ -314,6 +406,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -327,12 +425,13 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "riparazione-notebook-milano.html": {
-          "filename": "riparazione-notebook-milano.html",
+        "sostituzione-hard-disk-varese.html": {
+          "filename": "sostituzione-hard-disk-varese.html",
           "category": "hardware-repair",
           "improvements": [
             {
@@ -379,6 +478,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -392,12 +497,13 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "riparazione-notebook-monza.html": {
-          "filename": "riparazione-notebook-monza.html",
+        "sostituzione-schermo-laptop-bergamo.html": {
+          "filename": "sostituzione-schermo-laptop-bergamo.html",
           "category": "hardware-repair",
           "improvements": [
             {
@@ -444,6 +550,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -457,12 +569,13 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "riparazione-notebook-pavia.html": {
-          "filename": "riparazione-notebook-pavia.html",
+        "sostituzione-schermo-laptop-brescia.html": {
+          "filename": "sostituzione-schermo-laptop-brescia.html",
           "category": "hardware-repair",
           "improvements": [
             {
@@ -509,6 +622,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -522,12 +641,13 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
         },
-        "riparazione-notebook-sondrio.html": {
-          "filename": "riparazione-notebook-sondrio.html",
+        "sostituzione-schermo-laptop-como.html": {
+          "filename": "sostituzione-schermo-laptop-como.html",
           "category": "hardware-repair",
           "improvements": [
             {
@@ -574,6 +694,12 @@
             },
             {
               "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
               "element": "forms",
               "enhancement": "Enhanced form styling with better visual feedback",
               "cssClass": "it-era-form-enhanced"
@@ -587,6 +713,367 @@
             "it-era-grid-responsive",
             "it-era-brand-colors",
             "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "sostituzione-schermo-laptop-cremona.html": {
+          "filename": "sostituzione-schermo-laptop-cremona.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "sostituzione-schermo-laptop-lecco.html": {
+          "filename": "sostituzione-schermo-laptop-lecco.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "sostituzione-schermo-laptop-lodi.html": {
+          "filename": "sostituzione-schermo-laptop-lodi.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "sostituzione-schermo-laptop-mantova.html": {
+          "filename": "sostituzione-schermo-laptop-mantova.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "sostituzione-schermo-laptop-milano.html": {
+          "filename": "sostituzione-schermo-laptop-milano.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "icons",
+              "enhancement": "Added professional icons to service sections",
+              "cssClass": "it-era-icons-enhanced"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-icons-enhanced",
             "it-era-form-enhanced"
           ],
           "htmlUpdates": []
@@ -596,14 +1083,14 @@
         "enhancedCSS": "\n/* IT-ERA Enhanced Design System */\n\n/* Typography Enhancements */\n.it-era-typography {\n    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n}\n\n.it-era-h1-enhanced {\n    font-size: 2.5rem;\n    font-weight: 700;\n    line-height: 1.2;\n    color: #111827;\n    margin-bottom: 2rem;\n    background: linear-gradient(135deg, #1e40af, #3b82f6);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n}\n\n/* Section Enhancements */\n.it-era-section-enhanced {\n    padding: 3rem 0;\n    position: relative;\n}\n\n.it-era-section-enhanced:not(:last-child)::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 80%;\n    height: 1px;\n    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);\n}\n\n/* Button Enhancements */\n.it-era-btn-enhanced {\n    background: linear-gradient(135deg, #1e40af, #3b82f6);\n    color: white;\n    border: none;\n    padding: 1rem 2rem;\n    border-radius: 8px;\n    font-weight: 600;\n    text-decoration: none;\n    display: inline-flex;\n    align-items: center;\n    gap: 0.5rem;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n}\n\n.it-era-btn-enhanced:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);\n    background: linear-gradient(135deg, #3b82f6, #1e40af);\n}\n\n/* Responsive Container */\n.it-era-container-responsive {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 1.5rem;\n}\n\n@media (max-width: 768px) {\n    .it-era-container-responsive {\n        padding: 0 1rem;\n    }\n}\n\n/* Responsive Grid */\n.it-era-grid-responsive {\n    display: grid;\n    gap: 2rem;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n@media (max-width: 768px) {\n    .it-era-grid-responsive {\n        grid-template-columns: 1fr;\n        gap: 1.5rem;\n    }\n}\n\n/* Brand Colors */\n.it-era-brand-colors {\n    --primary: #1e40af;\n    --secondary: #3b82f6;\n    --accent: #06b6d4;\n    --success: #10b981;\n    --warning: #f59e0b;\n    --danger: #ef4444;\n}\n\n/* Navigation Enhancement */\n.it-era-nav-enhanced {\n    background: rgba(255, 255, 255, 0.95);\n    backdrop-filter: blur(10px);\n    border-bottom: 1px solid #e5e7eb;\n    position: sticky;\n    top: 0;\n    z-index: 1000;\n}\n\n/* Icons Enhancement */\n.it-era-icons-enhanced .service-item::before {\n    content: '🔧';\n    font-size: 2rem;\n    margin-bottom: 1rem;\n    display: block;\n}\n\n/* Form Enhancement */\n.it-era-form-enhanced {\n    background: #f9fafb;\n    padding: 3rem;\n    border-radius: 12px;\n    border: 1px solid #e5e7eb;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n}\n\n.it-era-form-enhanced input,\n.it-era-form-enhanced textarea,\n.it-era-form-enhanced select {\n    width: 100%;\n    padding: 1rem;\n    border: 2px solid #d1d5db;\n    border-radius: 6px;\n    font-size: 1rem;\n    transition: border-color 0.3s ease;\n}\n\n.it-era-form-enhanced input:focus,\n.it-era-form-enhanced textarea:focus,\n.it-era-form-enhanced select:focus {\n    outline: none;\n    border-color: #1e40af;\n    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);\n}\n\n/* Mobile Optimizations */\n@media (max-width: 768px) {\n    .it-era-h1-enhanced {\n        font-size: 2rem;\n    }\n    \n    .it-era-section-enhanced {\n        padding: 2rem 0;\n    }\n    \n    .it-era-btn-enhanced {\n        width: 100%;\n        justify-content: center;\n    }\n}\n"
       },
       "summary": {
-        "totalEnhancements": 40,
+        "totalEnhancements": 90,
         "enhancementsByType": {
-          "visual_hierarchy": 15,
-          "responsive_design": 10,
-          "brand_consistency": 10,
-          "visual_elements": 5
+          "visual_hierarchy": 30,
+          "responsive_design": 20,
+          "brand_consistency": 20,
+          "visual_elements": 20
         },
-        "pagesEnhanced": 5,
+        "pagesEnhanced": 10,
         "cssClassesGenerated": [
           "it-era-h1-enhanced",
           "it-era-section-enhanced",
@@ -612,23 +1099,24 @@
           "it-era-grid-responsive",
           "it-era-brand-colors",
           "it-era-typography",
+          "it-era-icons-enhanced",
           "it-era-form-enhanced"
         ]
       }
     },
     "contentEnhancement": {
       "agent": "Content Enhancement Agent",
-      "timestamp": "2025-09-13T10:17:15.863Z",
-      "pagesEnhanced": 5,
+      "timestamp": "2025-09-13T10:33:49.327Z",
+      "pagesEnhanced": 10,
       "enhancements": {
-        "riparazione-notebook-mantova.html": {
-          "filename": "riparazione-notebook-mantova.html",
+        "sostituzione-hard-disk-sondrio.html": {
+          "filename": "sostituzione-hard-disk-sondrio.html",
           "category": "hardware-repair",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 270 to ~800 words",
+              "enhancement": "Expanded content from 372 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
             },
             {
@@ -721,14 +1209,14 @@
             }
           ]
         },
-        "riparazione-notebook-milano.html": {
-          "filename": "riparazione-notebook-milano.html",
+        "sostituzione-hard-disk-varese.html": {
+          "filename": "sostituzione-hard-disk-varese.html",
           "category": "hardware-repair",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 270 to ~800 words",
+              "enhancement": "Expanded content from 372 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
             },
             {
@@ -821,14 +1309,14 @@
             }
           ]
         },
-        "riparazione-notebook-monza.html": {
-          "filename": "riparazione-notebook-monza.html",
+        "sostituzione-schermo-laptop-bergamo.html": {
+          "filename": "sostituzione-schermo-laptop-bergamo.html",
           "category": "hardware-repair",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 270 to ~800 words",
+              "enhancement": "Expanded content from 372 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
             },
             {
@@ -921,14 +1409,14 @@
             }
           ]
         },
-        "riparazione-notebook-pavia.html": {
-          "filename": "riparazione-notebook-pavia.html",
+        "sostituzione-schermo-laptop-brescia.html": {
+          "filename": "sostituzione-schermo-laptop-brescia.html",
           "category": "hardware-repair",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 270 to ~800 words",
+              "enhancement": "Expanded content from 372 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
             },
             {
@@ -1021,14 +1509,514 @@
             }
           ]
         },
-        "riparazione-notebook-sondrio.html": {
-          "filename": "riparazione-notebook-sondrio.html",
+        "sostituzione-schermo-laptop-como.html": {
+          "filename": "sostituzione-schermo-laptop-como.html",
           "category": "hardware-repair",
           "improvements": [
             {
               "type": "content_expansion",
               "element": "main_content",
-              "enhancement": "Expanded content from 270 to ~800 words",
+              "enhancement": "Expanded content from 372 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€149\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€89",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€149",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "sostituzione-schermo-laptop-cremona.html": {
+          "filename": "sostituzione-schermo-laptop-cremona.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 372 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€149\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€89",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€149",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "sostituzione-schermo-laptop-lecco.html": {
+          "filename": "sostituzione-schermo-laptop-lecco.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 372 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€149\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€89",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€149",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "sostituzione-schermo-laptop-lodi.html": {
+          "filename": "sostituzione-schermo-laptop-lodi.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 372 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€149\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€89",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€149",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "sostituzione-schermo-laptop-mantova.html": {
+          "filename": "sostituzione-schermo-laptop-mantova.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 372 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€89\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "pricing_removal",
+              "element": "pricing",
+              "enhancement": "Replaced \"Specific price found: \"€149\"\" with generic pricing text",
+              "replacement": "Contatta per preventivo personalizzato"
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€89",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": "body",
+              "action": "replace_text",
+              "find": "€149",
+              "replace": "Contatta per preventivo personalizzato"
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Riparazione computer desktop e laptop</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sostituzione componenti hardware</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Upgrade e potenziamento sistemi</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Recupero dati da dispositivi danneggiati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Manutenzione preventiva</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Diagnosi accurata e tempestiva</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riparazioni certificate e garantite</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Componenti originali di qualità</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Servizio rapido e professionale</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Preventivi trasparenti senza sorprese</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "sostituzione-schermo-laptop-milano.html": {
+          "filename": "sostituzione-schermo-laptop-milano.html",
+          "category": "hardware-repair",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 372 to ~800 words",
               "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Riparazione Hardware Professionale</h2>\n                    <p>Quando i tuoi dispositivi si guastano, ogni minuto conta. IT-ERA offre servizi di riparazione \n                    hardware rapidi e affidabili per minimizzare i tempi di inattività e ripristinare la tua produttività.</p>\n                    \n                    <h3>Diagnosi Accurata e Riparazione Certificata</h3>\n                    <p>Utilizziamo strumenti diagnostici avanzati per identificare rapidamente la causa del problema. \n                    Le nostre riparazioni sono eseguite con componenti originali e coperte da garanzia completa.</p>\n                </section>\n            "
             },
             {
@@ -1124,30 +2112,30 @@
       },
       "contentUpdates": {},
       "summary": {
-        "totalEnhancements": 30,
+        "totalEnhancements": 60,
         "enhancementsByType": {
-          "content_expansion": 5,
-          "pricing_removal": 10,
-          "cta_improvement": 5,
-          "service_details": 5,
-          "benefits_addition": 5
+          "content_expansion": 10,
+          "pricing_removal": 20,
+          "cta_improvement": 10,
+          "service_details": 10,
+          "benefits_addition": 10
         },
-        "pagesEnhanced": 5,
-        "contentAdded": 10
+        "pagesEnhanced": 10,
+        "contentAdded": 20
       }
     },
     "technicalImplementation": {
       "agent": "Technical Implementation Agent",
-      "timestamp": "2025-09-13T10:17:15.869Z",
-      "pagesImplemented": 5,
+      "timestamp": "2025-09-13T10:33:49.337Z",
+      "pagesImplemented": 10,
       "implementations": {
-        "riparazione-notebook-mantova.html": {
-          "filename": "riparazione-notebook-mantova.html",
+        "sostituzione-hard-disk-sondrio.html": {
+          "filename": "sostituzione-hard-disk-sondrio.html",
           "category": "hardware-repair",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1156,6 +2144,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1170,24 +2159,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "riparazione-notebook-milano.html": {
-          "filename": "riparazione-notebook-milano.html",
+        "sostituzione-hard-disk-varese.html": {
+          "filename": "sostituzione-hard-disk-varese.html",
           "category": "hardware-repair",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1196,6 +2178,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1210,24 +2193,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "riparazione-notebook-monza.html": {
-          "filename": "riparazione-notebook-monza.html",
+        "sostituzione-schermo-laptop-bergamo.html": {
+          "filename": "sostituzione-schermo-laptop-bergamo.html",
           "category": "hardware-repair",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1236,6 +2212,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1250,24 +2227,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "riparazione-notebook-pavia.html": {
-          "filename": "riparazione-notebook-pavia.html",
+        "sostituzione-schermo-laptop-brescia.html": {
+          "filename": "sostituzione-schermo-laptop-brescia.html",
           "category": "hardware-repair",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1276,6 +2246,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1290,24 +2261,17 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
-            },
-            {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
-              ]
             }
           ],
           "modified": true
         },
-        "riparazione-notebook-sondrio.html": {
-          "filename": "riparazione-notebook-sondrio.html",
+        "sostituzione-schermo-laptop-como.html": {
+          "filename": "sostituzione-schermo-laptop-como.html",
           "category": "hardware-repair",
           "changes": [
             {
               "type": "css_updates",
-              "description": "Applied 8 CSS enhancement classes",
+              "description": "Applied 9 CSS enhancement classes",
               "classes": [
                 "it-era-h1-enhanced",
                 "it-era-section-enhanced",
@@ -1316,6 +2280,7 @@
                 "it-era-grid-responsive",
                 "it-era-brand-colors",
                 "it-era-typography",
+                "it-era-icons-enhanced",
                 "it-era-form-enhanced"
               ]
             },
@@ -1330,34 +2295,201 @@
             {
               "type": "responsive_fixes",
               "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "sostituzione-schermo-laptop-cremona.html": {
+          "filename": "sostituzione-schermo-laptop-cremona.html",
+          "category": "hardware-repair",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
             },
             {
-              "type": "javascript_integration",
-              "description": "Added 1 missing JavaScript files",
-              "scripts": [
-                "/js/resend-config.js"
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
               ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "sostituzione-schermo-laptop-lecco.html": {
+          "filename": "sostituzione-schermo-laptop-lecco.html",
+          "category": "hardware-repair",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "sostituzione-schermo-laptop-lodi.html": {
+          "filename": "sostituzione-schermo-laptop-lodi.html",
+          "category": "hardware-repair",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "sostituzione-schermo-laptop-mantova.html": {
+          "filename": "sostituzione-schermo-laptop-mantova.html",
+          "category": "hardware-repair",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            }
+          ],
+          "modified": true
+        },
+        "sostituzione-schermo-laptop-milano.html": {
+          "filename": "sostituzione-schermo-laptop-milano.html",
+          "category": "hardware-repair",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 9 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-icons-enhanced",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
             }
           ],
           "modified": true
         }
       },
       "filesModified": [
-        "riparazione-notebook-mantova.html",
-        "riparazione-notebook-milano.html",
-        "riparazione-notebook-monza.html",
-        "riparazione-notebook-pavia.html",
-        "riparazione-notebook-sondrio.html"
+        "sostituzione-hard-disk-sondrio.html",
+        "sostituzione-hard-disk-varese.html",
+        "sostituzione-schermo-laptop-bergamo.html",
+        "sostituzione-schermo-laptop-brescia.html",
+        "sostituzione-schermo-laptop-como.html",
+        "sostituzione-schermo-laptop-cremona.html",
+        "sostituzione-schermo-laptop-lecco.html",
+        "sostituzione-schermo-laptop-lodi.html",
+        "sostituzione-schermo-laptop-mantova.html",
+        "sostituzione-schermo-laptop-milano.html"
       ],
       "summary": {
-        "totalImplementations": 20,
+        "totalImplementations": 30,
         "implementationsByType": {
-          "css_updates": 5,
-          "html_modifications": 5,
-          "responsive_fixes": 5,
-          "javascript_integration": 5
+          "css_updates": 10,
+          "html_modifications": 10,
+          "responsive_fixes": 10
         },
-        "pagesModified": 5,
+        "pagesModified": 10,
         "filesCreated": [
           "css/it-era-enhanced.css"
         ]
@@ -1365,5 +2497,5 @@
     }
   },
   "errors": [],
-  "timestamp": "2025-09-13T10:17:15.810Z"
+  "timestamp": "2025-09-13T10:33:49.241Z"
 }

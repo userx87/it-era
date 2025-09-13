@@ -1,0 +1,16 @@
+{
+  "keywordPages": true,
+  "categories": [
+    "business",
+    "home",
+    "hardware",
+    "assembly",
+    "specialized"
+  ],
+  "locations": [
+    "Milano",
+    "Bergamo",
+    "Monza",
+    "Brescia"
+  ]
+}

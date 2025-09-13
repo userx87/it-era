@@ -1,0 +1,5 @@
+
+# IT-ERA Keyword Pages
+Allow: /servizi-keyword/
+Allow: /js/resend-integration.js
+Allow: /js/pricing-manager.js

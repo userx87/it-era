@@ -1,0 +1,20 @@
+{
+  "categories": [
+    "business",
+    "home",
+    "hardware",
+    "assembly",
+    "specialized"
+  ],
+  "locations": [
+    "Milano",
+    "Bergamo",
+    "Monza",
+    "Brescia",
+    "Como",
+    "Varese"
+  ],
+  "currency": "€",
+  "vatIncluded": false,
+  "regionalModifiers": true
+}

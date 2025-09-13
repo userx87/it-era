@@ -1,0 +1,24 @@
+{
+  "newServicePages": 469,
+  "categories": [
+    "assistenza_aziendale",
+    "assistenza_privati",
+    "riparazione_hardware",
+    "assemblaggio_computer",
+    "servizi_specializzati"
+  ],
+  "locations": [
+    "Bergamo",
+    "Monza",
+    "Brescia",
+    "Como",
+    "Varese",
+    "Pavia",
+    "Cremona",
+    "Mantova",
+    "Lecco",
+    "Lodi",
+    "Milano",
+    "Sondrio"
+  ]
+}

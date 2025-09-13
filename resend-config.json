@@ -1,0 +1,13 @@
+{
+  "endpoint": "https://it-era-resend.bulltech.workers.dev/api/contact",
+  "timeout": 15000,
+  "retryAttempts": 3,
+  "formTypes": [
+    "business-quote-form",
+    "home-booking-form",
+    "hardware-repair-form",
+    "assembly-quote-form",
+    "specialized-service-form",
+    "emergency-form"
+  ]
+}

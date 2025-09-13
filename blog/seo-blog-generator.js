@@ -19,8 +19,8 @@ class SEOBlogGenerator {
             location: 'Milano, Lombardia'
         };
         this.seoRules = {
-            titleLength: { min: 30, max: 60 },
-            descriptionLength: { min: 120, max: 160 },
+            titleLength: { min: 30, max: 55 },
+            descriptionLength: { min: 120, max: 155 },
             contentLength: { min: 300, max: 500 },
             keywordDensity: { min: 1, max: 3 },
             headingStructure: ['h1', 'h2', 'h3']
@@ -260,18 +260,18 @@ class SEOBlogGenerator {
 
     generateDescription(keyword) {
         const descriptionTemplates = [
-            `Scopri tutto su ${keyword.keyword}. Guida completa con best practices, vantaggi e implementazione per aziende in Lombardia. Consulenza gratuita disponibile.`,
-            `${keyword.keyword}: soluzioni professionali per la tua azienda. Esperti IT con 15+ anni di esperienza. Consulenza gratuita e supporto 24/7 su Milano e Lombardia.`,
-            `Guida pratica su ${keyword.keyword}. Consigli degli esperti IT-ERA per ottimizzare la tua infrastruttura aziendale. Contattaci per una consulenza gratuita.`
+            `Scopri tutto su ${keyword.keyword}. Guida completa con best practices per aziende in Lombardia. Consulenza gratuita IT-ERA.`,
+            `${keyword.keyword}: soluzioni professionali per la tua azienda. Esperti IT con 15+ anni di esperienza. Milano e Lombardia.`,
+            `Guida pratica su ${keyword.keyword}. Consigli degli esperti IT-ERA per ottimizzare la tua infrastruttura aziendale.`
         ];
 
         const selectedDescription = descriptionTemplates[Math.floor(Math.random() * descriptionTemplates.length)];
-        
+
         // Ensure description length is within SEO limits
         if (selectedDescription.length > this.seoRules.descriptionLength.max) {
             return selectedDescription.substring(0, this.seoRules.descriptionLength.max - 3) + '...';
         }
-        
+
         return selectedDescription;
     }
 

@@ -5,8 +5,8 @@
 
 // Configurazione Resend
 window.RESEND_CONFIG = {
-    // SOSTITUIRE CON LA CHIAVE REALE DA RESEND.COM
-    apiKey: 're_123456789_YOUR_RESEND_API_KEY_HERE',
+    // Chiave API Resend.com reale
+    apiKey: 're_BhJiCJEe_JXYWoB3W4NcpoPtjA2qyvqYL',
     
     // Email settings
     fromEmail: 'noreply@it-era.it',

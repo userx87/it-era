@@ -1,7 +1,7 @@
 /**
  * IT-ERA RESEND.COM INTEGRATION MODULE
- * Modulo universale per l'invio di tutti i form tramite Resend.com
- * Endpoint: https://it-era-resend.bulltech.workers.dev/api/contact
+ * Modulo universale per l'invio di tutti i form tramite Resend.com API diretta
+ * API: https://api.resend.com/emails
  */
 
 class ITERAResendIntegration {
@@ -11,7 +11,7 @@ class ITERAResendIntegration {
 
         this.config = {
             resendApiUrl: externalConfig.apiUrl || 'https://api.resend.com/emails',
-            resendApiKey: externalConfig.apiKey || 're_123456789_YOUR_RESEND_API_KEY',
+            resendApiKey: externalConfig.apiKey || 're_BhJiCJEe_JXYWoB3W4NcpoPtjA2qyvqYL',
             fromEmail: externalConfig.fromEmail || 'noreply@it-era.it',
             toEmail: externalConfig.toEmail || 'info@it-era.it',
             fallbackEndpoint: `mailto:${externalConfig.fallbackEmail || 'info@it-era.it'}`,

@@ -97,11 +97,11 @@
                 apiUrl: integration.config.resendApiUrl,
                 fromEmail: integration.config.fromEmail,
                 toEmail: integration.config.toEmail,
-                hasApiKey: integration.config.resendApiKey !== 're_123456789_YOUR_RESEND_API_KEY'
+                hasApiKey: integration.config.resendApiKey.startsWith('re_') && integration.config.resendApiKey.length > 20
             });
             
             // Avviso se la chiave non è configurata
-            if (integration.config.resendApiKey === 're_123456789_YOUR_RESEND_API_KEY') {
+            if (!integration.config.resendApiKey.startsWith('re_') || integration.config.resendApiKey.length < 20) {
                 const warning = document.createElement('div');
                 warning.className = 'mb-6 p-4 bg-red-50 border border-red-200 rounded-lg';
                 warning.innerHTML = `

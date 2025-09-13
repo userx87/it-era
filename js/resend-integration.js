@@ -6,14 +6,16 @@
 
 class ITERAResendIntegration {
     constructor() {
+        // Usa configurazione esterna se disponibile
+        const externalConfig = window.RESEND_CONFIG || {};
+
         this.config = {
-            apiEndpoints: [
-                'https://it-era.netlify.app/.netlify/functions/contact',
-                'https://it-era-resend.bulltech.workers.dev/api/contact',
-                '/api/contact'
-            ],
-            fallbackEndpoint: 'mailto:info@it-era.it',
-            timeout: 15000,
+            resendApiUrl: externalConfig.apiUrl || 'https://api.resend.com/emails',
+            resendApiKey: externalConfig.apiKey || 're_123456789_YOUR_RESEND_API_KEY',
+            fromEmail: externalConfig.fromEmail || 'noreply@it-era.it',
+            toEmail: externalConfig.toEmail || 'info@it-era.it',
+            fallbackEndpoint: `mailto:${externalConfig.fallbackEmail || 'info@it-era.it'}`,
+            timeout: externalConfig.timeout || 15000,
             retryAttempts: 2,
             retryDelay: 1000
         };
@@ -213,50 +215,125 @@ class ITERAResendIntegration {
     }
 
     /**
-     * Invia i dati tramite Formspree con fallback
+     * Invia email direttamente tramite Resend API
      */
     async sendToResend(payload) {
         try {
-            // Prepara i dati per Formspree
-            const formData = new FormData();
-            formData.append('name', payload.full_name || payload.nome || 'Nome non fornito');
-            formData.append('email', payload.email || '');
-            formData.append('phone', payload.phone || payload.telefono || '');
-            formData.append('company', payload.company || payload.azienda || '');
-            formData.append('message', payload.message || payload.messaggio || payload.project_description || '');
-            formData.append('service_type', payload.service_type || payload.formType || 'Contatto generico');
-            formData.append('page', payload.pagina || document.title);
-            formData.append('url', window.location.href);
+            console.log('📤 Sending email via Resend API...');
 
-            // Invia tramite Formspree
-            const response = await fetch(this.config.apiEndpoint, {
+            // Prepara email per Resend
+            const emailData = {
+                from: this.config.fromEmail,
+                to: [this.config.toEmail],
+                subject: `Nuovo contatto IT-ERA: ${payload.full_name} - ${payload.service_type || 'Contatto generico'}`,
+                html: this.generateEmailHTML(payload)
+            };
+
+            // Invia tramite Resend API
+            const response = await fetch(this.config.resendApiUrl, {
                 method: 'POST',
-                body: formData,
                 headers: {
-                    'Accept': 'application/json'
-                }
+                    'Authorization': `Bearer ${this.config.resendApiKey}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(emailData),
+                signal: AbortSignal.timeout(this.config.timeout)
             });
 
-            if (response.ok) {
-                const result = await response.json();
-                console.log('✅ Form inviato con successo tramite Formspree:', result);
-                return { success: true, data: result };
-            } else {
-                const errorData = await response.json();
-                throw new Error(errorData.error || `HTTP ${response.status}`);
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(`Resend API Error ${response.status}: ${errorText}`);
             }
 
+            const result = await response.json();
+            console.log('✅ Email sent successfully via Resend:', result);
+
+            return {
+                success: true,
+                data: result,
+                message: 'Email inviata con successo!'
+            };
+
         } catch (error) {
-            console.error('❌ Errore invio form:', error);
+            console.error('❌ Resend API failed:', error);
 
             // Fallback: apri client email
             this.openEmailFallback(payload);
 
             return {
                 success: false,
-                error: 'Problema temporaneo. Abbiamo aperto il tuo client email come alternativa.'
+                error: 'Problema temporaneo. Abbiamo aperto il tuo client email come alternativa.',
+                fallback: true
             };
         }
+    }
+
+    /**
+     * Genera HTML per l'email
+     */
+    generateEmailHTML(data) {
+        return `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="utf-8">
+                <title>Nuovo contatto IT-ERA</title>
+                <style>
+                    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+                    .header { background: #1e40af; color: white; padding: 20px; text-align: center; }
+                    .content { padding: 20px; }
+                    .field { margin-bottom: 15px; }
+                    .label { font-weight: bold; color: #1e40af; }
+                    .footer { background: #f3f4f6; padding: 15px; text-align: center; font-size: 12px; color: #666; }
+                </style>
+            </head>
+            <body>
+                <div class="header">
+                    <h1>🔧 Nuovo Contatto IT-ERA</h1>
+                </div>
+
+                <div class="content">
+                    <div class="field">
+                        <span class="label">Nome:</span> ${data.full_name || data.nome || 'Non fornito'}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Email:</span> ${data.email || 'Non fornita'}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Telefono:</span> ${data.phone || data.telefono || 'Non fornito'}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Azienda:</span> ${data.company || data.azienda || 'Non fornita'}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Tipo servizio:</span> ${data.service_type || 'Non specificato'}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Messaggio:</span><br>
+                        ${(data.message || data.messaggio || data.project_description || 'Nessun messaggio').replace(/\n/g, '<br>')}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Pagina:</span> ${data.pagina || 'Non specificata'}
+                    </div>
+
+                    <div class="field">
+                        <span class="label">URL:</span> ${data.pageUrl || 'Non specificato'}
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>Ricevuto il: ${new Date().toLocaleString('it-IT')}</p>
+                    <p>Sistema automatico IT-ERA - Non rispondere a questa email</p>
+                </div>
+            </body>
+            </html>
+        `;
     }
 
     /**

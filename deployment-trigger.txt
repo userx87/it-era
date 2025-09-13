@@ -1,3 +1,4 @@
 Deployment trigger for GitHub Pages cache refresh
 Timestamp: 2025-09-11 - Conversion optimization deployment
 All optimizations committed and ready for deployment
+<!-- Cache bust: Sab 13 Set 2025 07:03:46 CEST -->

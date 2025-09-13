@@ -32,8 +32,8 @@
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "{{LOCATION_LAT}}",
-            "longitude": "{{LOCATION_LNG}}"
+            "latitude": "45.1564",
+            "longitude": "10.7914"
         },
         "openingHours": "Mo-Fr 08:00-18:00",
         "priceRange": "€€",
@@ -41,8 +41,8 @@
             "@type": "GeoCircle",
             "geoMidpoint": {
                 "@type": "GeoCoordinates",
-                "latitude": "{{LOCATION_LAT}}",
-                "longitude": "{{LOCATION_LNG}}"
+                "latitude": "45.1564",
+                "longitude": "10.7914"
             },
             "geoRadius": "50000"
         }
@@ -95,7 +95,7 @@
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                        Servizi assistenza_aziendale a Mantova
+                        Servizi Assistenza Aziendale a Mantova
                     </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                         Soluzioni complete per la gestione IT della tua azienda
@@ -103,25 +103,7 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {{#SERVICES}}
-                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                            <span class="text-2xl">{{ICON}}</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">{{NAME}}</h3>
-                        <p class="text-gray-600 mb-4">{{DESCRIPTION}}</p>
-                        <ul class="space-y-2">
-                            {{#FEATURES}}
-                            <li class="flex items-center text-sm text-gray-600">
-                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                {{FEATURE}}
-                            </li>
-                            {{/FEATURES}}
-                        </ul>
-                    </div>
-                    {{/SERVICES}}
+                    
                 </div>
             </div>
         </section>
@@ -135,17 +117,7 @@
                             Perché Scegliere IT-ERA per supporto tecnico uffici a Mantova?
                         </h2>
                         <div class="space-y-6">
-                            {{#BENEFITS}}
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                    <span class="text-xl">{{ICON}}</span>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-900 mb-2">{{TITLE}}</h3>
-                                    <p class="text-gray-600">{{DESCRIPTION}}</p>
-                                </div>
-                            </div>
-                            {{/BENEFITS}}
+                            
                         </div>
                     </div>
                     <div class="relative">
@@ -174,15 +146,7 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {{#PROCESS_STEPS}}
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                            {{STEP_NUMBER}}
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">{{TITLE}}</h3>
-                        <p class="text-gray-600">{{DESCRIPTION}}</p>
-                    </div>
-                    {{/PROCESS_STEPS}}
+                    
                 </div>
             </div>
         </section>
@@ -200,38 +164,7 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {{#PRICING_PLANS}}
-                    <div class="bg-white border-2 {{#POPULAR}}border-blue-500{{/POPULAR}}{{^POPULAR}}border-gray-200{{/POPULAR}} rounded-2xl p-8 relative">
-                        {{#POPULAR}}
-                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                            <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">
-                                Più Richiesto
-                            </span>
-                        </div>
-                        {{/POPULAR}}
-                        
-                        <div class="text-center mb-8">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">{{NAME}}</h3>
-                            <div class="text-4xl font-bold text-blue-600 mb-2">{{PRICE}}</div>
-                            <div class="text-gray-600">{{BILLING_PERIOD}}</div>
-                        </div>
-                        
-                        <ul class="space-y-4 mb-8">
-                            {{#FEATURES}}
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                {{FEATURE}}
-                            </li>
-                            {{/FEATURES}}
-                        </ul>
-                        
-                        <button class="w-full btn-primary {{#POPULAR}}bg-blue-600 hover:bg-blue-700{{/POPULAR}}{{^POPULAR}}bg-gray-600 hover:bg-gray-700{{/POPULAR}} text-white">
-                            Richiedi Preventivo
-                        </button>
-                    </div>
-                    {{/PRICING_PLANS}}
+                    
                 </div>
             </div>
         </section>
@@ -349,7 +282,7 @@
             // Track page view
             if (window.ITERAAnalytics) {
                 window.ITERAAnalytics.trackPageView('supporto tecnico uffici - Mantova');
-                window.ITERAAnalytics.trackServiceInterest('assistenza_aziendale', 'page_view');
+                window.ITERAAnalytics.trackServiceInterest('Assistenza Aziendale', 'page_view');
             }
             
             // Enhanced form tracking
@@ -363,7 +296,7 @@
                         window.ITERAAnalytics.trackConversion('business_quote_request', {
                             service: 'supporto tecnico uffici',
                             location: 'Mantova',
-                            category: 'assistenza_aziendale'
+                            category: 'Assistenza Aziendale'
                         });
                     }
                     

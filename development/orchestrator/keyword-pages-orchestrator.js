@@ -354,26 +354,61 @@ class KeywordPagesOrchestrator {
     }
 
     replacePlaceholders(template, spec) {
+        const locationCoords = this.getLocationCoordinates(spec.location);
+
         const replacements = {
-            '{{SEO_TITLE}}': spec.seo.title,
-            '{{SEO_DESCRIPTION}}': spec.seo.metaDescription,
-            '{{SEO_KEYWORDS}}': spec.seo.secondaryKeywords.join(', '),
-            '{{CANONICAL_URL}}': spec.seo.canonicalUrl,
-            '{{PRIMARY_KEYWORD}}': spec.keyword,
-            '{{LOCATION}}': spec.location,
-            '{{SERVICE_NAME}}': spec.keyword,
-            '{{SERVICE_CATEGORY}}': spec.category,
-            '{{LOCATION_SLUG}}': this.sparc.generateSlug(spec.location),
+            '{{SEO_TITLE}}': spec.seo?.title || `${spec.keyword} ${spec.location} - IT-ERA`,
+            '{{SEO_DESCRIPTION}}': spec.seo?.metaDescription || `${spec.keyword} professionale a ${spec.location}. Contatta IT-ERA per assistenza specializzata.`,
+            '{{SEO_KEYWORDS}}': spec.seo?.secondaryKeywords?.join(', ') || spec.keyword,
+            '{{CANONICAL_URL}}': spec.seo?.canonicalUrl || `https://it-era.it/${this.generateSlug(spec.keyword)}.html`,
+            '{{PRIMARY_KEYWORD}}': spec.keyword || 'Servizi IT',
+            '{{LOCATION}}': spec.location || 'Milano',
+            '{{SERVICE_NAME}}': spec.keyword || 'Servizi IT',
+            '{{SERVICE_CATEGORY}}': this.getCategoryDisplayName(spec.category),
+            '{{LOCATION_SLUG}}': this.generateSlug(spec.location),
+            '{{LOCATION_LAT}}': locationCoords.lat,
+            '{{LOCATION_LNG}}': locationCoords.lng,
             '{{MAIN_BENEFIT}}': this.generateMainBenefit(spec),
             '{{CLIENTS_COUNT}}': this.getClientsCount(spec.location),
+            '{{HOME_CLIENTS_COUNT}}': this.getHomeClientsCount(spec.location),
+            '{{REPAIRS_COUNT}}': this.getRepairsCount(spec.location),
+            '{{ASSEMBLIES_COUNT}}': this.getAssembliesCount(spec.location),
+            '{{PROJECTS_COUNT}}': this.getProjectsCount(spec.location),
             '{{RESPONSE_TIME}}': this.getResponseTime(spec.category)
         };
-        
+
         let result = template;
+
+        // Replace simple placeholders
         for (const [placeholder, value] of Object.entries(replacements)) {
-            result = result.replace(new RegExp(placeholder, 'g'), value);
+            result = result.replace(new RegExp(placeholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), value || '');
         }
-        
+
+        // Remove complex template structures that aren't implemented
+        result = result.replace(/\{\{#SERVICES\}\}[\s\S]*?\{\{\/SERVICES\}\}/g, '');
+        result = result.replace(/\{\{#FEATURES\}\}[\s\S]*?\{\{\/FEATURES\}\}/g, '');
+        result = result.replace(/\{\{#TESTIMONIALS\}\}[\s\S]*?\{\{\/TESTIMONIALS\}\}/g, '');
+        result = result.replace(/\{\{#BENEFITS\}\}[\s\S]*?\{\{\/BENEFITS\}\}/g, '');
+        result = result.replace(/\{\{#PROCESS_STEPS\}\}[\s\S]*?\{\{\/PROCESS_STEPS\}\}/g, '');
+        result = result.replace(/\{\{#PRICING_PLANS\}\}[\s\S]*?\{\{\/PRICING_PLANS\}\}/g, '');
+        result = result.replace(/\{\{#POPULAR\}\}[\s\S]*?\{\{\/POPULAR\}\}/g, '');
+        result = result.replace(/\{\{\^POPULAR\}\}[\s\S]*?\{\{\/POPULAR\}\}/g, '');
+        result = result.replace(/\{\{#FAQ\}\}[\s\S]*?\{\{\/FAQ\}\}/g, '');
+        result = result.replace(/\{\{#LOCATIONS\}\}[\s\S]*?\{\{\/LOCATIONS\}\}/g, '');
+
+        // Remove simple placeholders
+        result = result.replace(/\{\{ICON\}\}/g, '🔧');
+        result = result.replace(/\{\{NAME\}\}/g, 'Servizio IT');
+        result = result.replace(/\{\{DESCRIPTION\}\}/g, 'Servizio professionale IT-ERA');
+        result = result.replace(/\{\{FEATURE\}\}/g, 'Servizio incluso');
+        result = result.replace(/\{\{TITLE\}\}/g, 'Servizio Professionale');
+        result = result.replace(/\{\{STEP_NUMBER\}\}/g, '1');
+        result = result.replace(/\{\{QUESTION\}\}/g, 'Domanda frequente');
+        result = result.replace(/\{\{ANSWER\}\}/g, 'Risposta professionale del team IT-ERA');
+
+        // Remove any remaining placeholders
+        result = result.replace(/\{\{[^}]*\}\}/g, '');
+
         return result;
     }
 
@@ -408,8 +443,97 @@ class KeywordPagesOrchestrator {
             'assemblaggio_computer': '3-5 giorni',
             'servizi_specializzati': '< 24 ore'
         };
-        
+
         return times[category] || '< 24 ore';
+    }
+
+    getHomeClientsCount(location) {
+        const counts = {
+            'Milano': '300+',
+            'Bergamo': '150+',
+            'Monza': '120+',
+            'Brescia': '140+'
+        };
+
+        return counts[location] || '80+';
+    }
+
+    getRepairsCount(location) {
+        const counts = {
+            'Milano': '800+',
+            'Bergamo': '400+',
+            'Monza': '300+',
+            'Brescia': '350+'
+        };
+
+        return counts[location] || '200+';
+    }
+
+    getAssembliesCount(location) {
+        const counts = {
+            'Milano': '250+',
+            'Bergamo': '120+',
+            'Monza': '90+',
+            'Brescia': '110+'
+        };
+
+        return counts[location] || '60+';
+    }
+
+    getProjectsCount(location) {
+        const counts = {
+            'Milano': '150+',
+            'Bergamo': '80+',
+            'Monza': '60+',
+            'Brescia': '70+'
+        };
+
+        return counts[location] || '40+';
+    }
+
+    getCategoryDisplayName(category) {
+        const names = {
+            'assistenza_aziendale': 'Assistenza Aziendale',
+            'assistenza_privati': 'Assistenza Privati',
+            'riparazione_hardware': 'Riparazione Hardware',
+            'assemblaggio_computer': 'Assemblaggio Computer',
+            'servizi_specializzati': 'Servizi Specializzati'
+        };
+
+        return names[category] || 'Servizi IT';
+    }
+
+    generateSlug(text) {
+        return text.toLowerCase()
+            .replace(/[àáâãäå]/g, 'a')
+            .replace(/[èéêë]/g, 'e')
+            .replace(/[ìíîï]/g, 'i')
+            .replace(/[òóôõö]/g, 'o')
+            .replace(/[ùúûü]/g, 'u')
+            .replace(/[ç]/g, 'c')
+            .replace(/[ñ]/g, 'n')
+            .replace(/[^a-z0-9]/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '');
+    }
+
+    getLocationCoordinates(location) {
+        const coordinates = {
+            'Milano': { lat: '45.4642', lng: '9.1900' },
+            'Bergamo': { lat: '45.6983', lng: '9.6773' },
+            'Monza': { lat: '45.5845', lng: '9.2744' },
+            'Brescia': { lat: '45.5416', lng: '10.2118' },
+            'Como': { lat: '45.8081', lng: '9.0852' },
+            'Varese': { lat: '45.8206', lng: '8.8251' },
+            'Pavia': { lat: '45.1847', lng: '9.1582' },
+            'Cremona': { lat: '45.1335', lng: '10.0422' },
+            'Mantova': { lat: '45.1564', lng: '10.7914' },
+            'Lecco': { lat: '45.8566', lng: '9.3931' },
+            'Sondrio': { lat: '46.1712', lng: '9.8728' },
+            'Lodi': { lat: '45.3142', lng: '9.5034' }
+        };
+
+        return coordinates[location] || coordinates['Milano'];
     }
 
     generateFilename(spec) {

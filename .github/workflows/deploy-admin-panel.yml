@@ -23,6 +23,13 @@ on:
         - staging
         - production
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+  deployments: write
+
 jobs:
   build:
     runs-on: ubuntu-latest

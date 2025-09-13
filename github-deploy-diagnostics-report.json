@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-13T07:38:31.662Z",
+  "timestamp": "2025-09-13T07:40:00.702Z",
   "diagnostics": [
     "📍 Current branch: main",
     "✅ GitHub remote configured",
@@ -10,7 +10,7 @@
     "✅ deploy-website.yml exists and configured",
     "✅ deploy-admin-panel.yml exists and configured",
     "✅ package.json exists",
-    "ℹ️ Optional file vercel.json not found",
+    "✅ vercel.json exists",
     "✅ _headers exists",
     "✅ _redirects exists",
     "✅ CNAME exists",
@@ -25,24 +25,14 @@
     "🔗 Vercel: https://it-era.vercel.app",
     "   Status: Testing required (manual check)",
     "✅ Index file found: index.html",
-    "ℹ️ vercel.json not found (using defaults)"
+    "✅ vercel.json configured"
   ],
   "issues": [
     {
       "type": "warning",
       "message": "Uncommitted changes detected",
-      "details": "?? COMPLETE-SYSTEM-REPORT.md\n?? KEYWORD-PAGES-GENERATION-REPORT.md\n?? analytics-config.json\n?? analytics-keyword-pages-config.json\n?? development/orchestrator/\n?? development/sparc/\n?? development/subagents/\n?? development/templates/\n?? fix-github-deploy.sh\n?? github-deploy-diagnostics-report.json\n?? js/pricing-manager.js\n?? js/resend-integration.js\n?? navigation-config.json\n?? navigation-updates.json\n?? performance-report.json\n?? pricing-config.json\n?? resend-config.json\n?? robots-additions.txt\n?? robots-keyword-pages.txt\n?? scripts/\n?? servizi-keyword/\n?? sitemap-keyword-pages.xml\n?? start-complete-system.js\n?? start-keyword-pages-generation.js",
+      "details": "M .github/workflows/deploy-admin-panel.yml\n M package.json\n?? vercel.json",
       "fix": "Commit or stash changes before deploying"
-    },
-    {
-      "type": "error",
-      "message": "deploy-admin-panel.yml: Missing permissions configuration",
-      "fix": "Add permissions section for GitHub Pages deployment"
-    },
-    {
-      "type": "warning",
-      "message": "No deploy script in package.json",
-      "fix": "Add deploy script: \"deploy\": \"vercel --prod\""
     },
     {
       "type": "info",
@@ -57,8 +47,8 @@
   ],
   "summary": {
     "totalChecks": 25,
-    "totalIssues": 5,
-    "criticalIssues": 1,
-    "warnings": 3
+    "totalIssues": 3,
+    "criticalIssues": 0,
+    "warnings": 2
   }
 }

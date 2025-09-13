@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # IT-ERA GitHub Deploy Fix Script
-# Auto-generated on 2025-09-13T07:38:31.663Z
+# Auto-generated on 2025-09-13T07:40:00.703Z
 
 echo "🔧 IT-ERA GitHub Deploy Fix Script"
 echo "=================================="

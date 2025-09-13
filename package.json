@@ -4,7 +4,13 @@
   "description": "",
   "main": "test-homepage.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "echo \"Deploying to production...\" && git push origin main",
+    "deploy:staging": "echo \"Deploying to staging...\" && git push origin staging",
+    "build": "echo \"Building site...\" && node start-complete-system.js",
+    "generate-keywords": "node start-complete-system.js",
+    "diagnostics": "node scripts/github-deploy-diagnostics.js",
+    "fix-deploy": "./fix-github-deploy.sh"
   },
   "repository": {
     "type": "git",

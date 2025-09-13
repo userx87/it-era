@@ -48,9 +48,11 @@
     </script>
     
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/css/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/css/it-era-tailwind.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="/css/it-era-enhanced.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/it-era-enhanced.css">
     
     <style>
         /* Professional IT-ERA Styling */
@@ -131,7 +133,7 @@
         }
         
         /* CTA Buttons */
-        .btn-primary-custom {
+        .inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-primary-custom {
             background: linear-gradient(135deg, var(--accent-color), var(--success-color));
             border: none;
             padding: 15px 30px;
@@ -144,12 +146,12 @@
             gap: 10px;
         }
         
-        .btn-primary-custom:hover {
+        .inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-primary-custom:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
         
-        .btn-outline-custom {
+        .inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-outline-custom {
             border: 2px solid white;
             color: white;
             padding: 15px 30px;
@@ -162,7 +164,7 @@
             gap: 10px;
         }
         
-        .btn-outline-custom:hover {
+        .inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-outline-custom:hover {
             background: white;
             color: var(--primary-color);
         }
@@ -173,7 +175,7 @@
             background: var(--bg-light);
         }
         
-        .service-card {
+        .service-bg-white rounded-lg shadow-lg border border-gray-200 {
             background: white;
             border-radius: 12px;
             padding: 2rem;
@@ -183,7 +185,7 @@
             border: 1px solid var(--border-color);
         }
         
-        .service-card:hover {
+        .service-bg-white rounded-lg shadow-lg border border-gray-200:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
@@ -238,14 +240,14 @@
             background: var(--bg-light);
         }
         
-        .form-control {
+        .w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent {
             border: 2px solid var(--border-color);
             border-radius: 8px;
             padding: 12px 16px;
             transition: all 0.3s ease;
         }
         
-        .form-control:focus {
+        .w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
         }
@@ -261,8 +263,8 @@
                 gap: 1rem;
             }
             
-            .btn-primary-custom,
-            .btn-outline-custom {
+            .inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-primary-custom,
+            .inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-outline-custom {
                 width: 100%;
                 justify-content: center;
                 margin-bottom: 1rem;
@@ -270,36 +272,36 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-white it-era-typography it-era-brand-colors">
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-flex flex-wrap items-center">
+                <div class="lg:w-2/3">
                     <div class="hero-content">
                         <h1 class="hero-title">
                             Assistenza Informatica<br>
-                            <span class="text-warning">Professionale</span> a Bergamo
+                            <span class="text-yellow-300">Professionale</span> a Bergamo
                         </h1>
                         <p class="hero-subtitle">
-                            Supporto IT completo per la tua azienda. Riduci i tempi di inattività, 
+                            Supporto IT completo per la tua azienda. Riduci i tempi di inattività,
                             aumenta la produttività e proteggi i tuoi dati con il nostro team di esperti.
                         </p>
-                        
-                        <div class="d-flex flex-wrap gap-3 mb-4">
-                            <a href="tel:+390398882041" class="btn btn-primary-custom">
+
+                        <div class="flex flex-col sm:flex-flex flex-wrap gap-4 mb-8">
+                            <a href="tel:+390398882041" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-primary-custom">
                                 <i class="fas fa-phone"></i>
                                 Chiama Ora: 039 888 2041
                             </a>
-                            <a href="#contact-form" class="btn btn-outline-custom">
+                            <a href="#contact-form" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-outline-custom">
                                 <i class="fas fa-envelope"></i>
                                 Preventivo Gratuito
                             </a>
                         </div>
-                        
+
                         <div class="hero-stats">
                             <div class="stat-item">
                                 <span class="stat-number">200+</span>
@@ -316,7 +318,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="lg:w-1/3">
                     <div class="text-center">
                         <i class="fas fa-server" style="font-size: 8rem; opacity: 0.3;"></i>
                     </div>
@@ -327,44 +329,40 @@
 
     <!-- Services Section -->
     <section class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-5 fw-bold mb-3">I Nostri Servizi IT per Aziende</h2>
-                    <p class="lead text-muted">
-                        Soluzioni complete per gestire, proteggere e ottimizzare l'infrastruttura IT della tua azienda
-                    </p>
-                </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">I Nostri Servizi IT per Aziende</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Soluzioni complete per gestire, proteggere e ottimizzare l'infrastruttura IT della tua azienda
+                </p>
             </div>
 
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h4 class="mb-3">Supporto Tecnico 24/7</h4>
-                        <p class="text-muted mb-3">
-                            Assistenza immediata per risolvere problemi IT e mantenere operativa la tua azienda.
-                        </p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success me-2"></i>Assistenza remota e on-site</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Risoluzione problemi urgenti</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Monitoraggio proattivo</li>
-                        </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-bg-white rounded-lg shadow-lg border border-gray-200">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
                     </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Supporto Tecnico 24/7</h4>
+                    <p class="text-gray-600 mb-4">
+                        Assistenza immediata per risolvere problemi IT e mantenere operativa la tua azienda.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Assistenza remota e on-site</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Risoluzione problemi urgenti</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Monitoraggio proattivo</li>
+                    </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
+                <div class="lg:w-1/3 md:w-1/2">
+                    <div class="service-bg-white rounded-lg shadow-lg border border-gray-200">
                         <div class="service-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h4 class="mb-3">Sicurezza Informatica</h4>
-                        <p class="text-muted mb-3">
+                        <p class="text-gray-600 mb-3">
                             Proteggi i dati aziendali con soluzioni di sicurezza avanzate e backup automatici.
                         </p>
-                        <ul class="list-unstyled">
+                        <ul class="list-none">
                             <li><i class="fas fa-check text-success me-2"></i>Antivirus enterprise</li>
                             <li><i class="fas fa-check text-success me-2"></i>Firewall configurazione</li>
                             <li><i class="fas fa-check text-success me-2"></i>Backup automatici</li>
@@ -372,16 +370,16 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
+                <div class="lg:w-1/3 md:w-1/2">
+                    <div class="service-bg-white rounded-lg shadow-lg border border-gray-200">
                         <div class="service-icon">
                             <i class="fas fa-cloud"></i>
                         </div>
                         <h4 class="mb-3">Soluzioni Cloud</h4>
-                        <p class="text-muted mb-3">
+                        <p class="text-gray-600 mb-3">
                             Migrazione e gestione di infrastrutture cloud per maggiore flessibilità e scalabilità.
                         </p>
-                        <ul class="list-unstyled">
+                        <ul class="list-none">
                             <li><i class="fas fa-check text-success me-2"></i>Migrazione cloud</li>
                             <li><i class="fas fa-check text-success me-2"></i>Gestione server virtuali</li>
                             <li><i class="fas fa-check text-success me-2"></i>Backup cloud sicuri</li>
@@ -389,16 +387,16 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
+                <div class="lg:w-1/3 md:w-1/2">
+                    <div class="service-bg-white rounded-lg shadow-lg border border-gray-200">
                         <div class="service-icon">
                             <i class="fas fa-network-wired"></i>
                         </div>
                         <h4 class="mb-3">Gestione Reti</h4>
-                        <p class="text-muted mb-3">
+                        <p class="text-gray-600 mb-3">
                             Progettazione, installazione e manutenzione di reti aziendali performanti e sicure.
                         </p>
-                        <ul class="list-unstyled">
+                        <ul class="list-none">
                             <li><i class="fas fa-check text-success me-2"></i>Progettazione reti</li>
                             <li><i class="fas fa-check text-success me-2"></i>Installazione cablaggio</li>
                             <li><i class="fas fa-check text-success me-2"></i>Ottimizzazione performance</li>
@@ -406,16 +404,16 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
+                <div class="lg:w-1/3 md:w-1/2">
+                    <div class="service-bg-white rounded-lg shadow-lg border border-gray-200">
                         <div class="service-icon">
                             <i class="fas fa-users-cog"></i>
                         </div>
                         <h4 class="mb-3">Consulenza IT</h4>
-                        <p class="text-muted mb-3">
+                        <p class="text-gray-600 mb-3">
                             Strategia IT personalizzata per ottimizzare processi e investimenti tecnologici.
                         </p>
-                        <ul class="list-unstyled">
+                        <ul class="list-none">
                             <li><i class="fas fa-check text-success me-2"></i>Analisi infrastruttura</li>
                             <li><i class="fas fa-check text-success me-2"></i>Piano di sviluppo IT</li>
                             <li><i class="fas fa-check text-success me-2"></i>Formazione personale</li>
@@ -423,16 +421,16 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
+                <div class="lg:w-1/3 md:w-1/2">
+                    <div class="service-bg-white rounded-lg shadow-lg border border-gray-200">
                         <div class="service-icon">
                             <i class="fas fa-tools"></i>
                         </div>
                         <h4 class="mb-3">Manutenzione Hardware</h4>
-                        <p class="text-muted mb-3">
+                        <p class="text-gray-600 mb-3">
                             Manutenzione preventiva e riparazione di server, workstation e dispositivi aziendali.
                         </p>
-                        <ul class="list-unstyled">
+                        <ul class="list-none">
                             <li><i class="fas fa-check text-success me-2"></i>Manutenzione preventiva</li>
                             <li><i class="fas fa-check text-success me-2"></i>Riparazione hardware</li>
                             <li><i class="fas fa-check text-success me-2"></i>Upgrade componenti</li>
@@ -445,13 +443,13 @@
 
     <!-- Benefits Section -->
     <section class="benefits-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-wrap items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">
                         Perché Scegliere IT-ERA per la Tua Azienda a Bergamo
                     </h2>
-                    <p class="lead text-muted mb-4">
+                    <p class="text-xl text-gray-600 mb-4">
                         Con oltre 10 anni di esperienza nel settore IT, offriamo soluzioni personalizzate
                         che garantiscono continuità operativa e crescita del business.
                     </p>
@@ -462,7 +460,7 @@
                         </div>
                         <div>
                             <h5 class="mb-2">Risposta Rapida Garantita</h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-gray-600 mb-0">
                                 Intervento entro 2 ore per problemi critici, supporto remoto immediato per questioni urgenti.
                             </p>
                         </div>
@@ -474,7 +472,7 @@
                         </div>
                         <div>
                             <h5 class="mb-2">Tecnici Certificati</h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-gray-600 mb-0">
                                 Team di esperti con certificazioni Microsoft, Cisco, VMware per soluzioni professionali.
                             </p>
                         </div>
@@ -486,7 +484,7 @@
                         </div>
                         <div>
                             <h5 class="mb-2">Monitoraggio Proattivo</h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-gray-600 mb-0">
                                 Sistemi di monitoraggio 24/7 per prevenire problemi e ottimizzare le performance.
                             </p>
                         </div>
@@ -498,14 +496,14 @@
                         </div>
                         <div>
                             <h5 class="mb-2">Prezzi Trasparenti</h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-gray-600 mb-0">
                                 Preventivi dettagliati senza costi nascosti, piani di assistenza personalizzati.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="lg:w-1/2">
                     <div class="text-center">
                         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f8fafc'/%3E%3Ctext x='200' y='150' text-anchor='middle' font-family='Arial' font-size='16' fill='%236b7280'%3EIT Infrastructure%3C/text%3E%3C/svg%3E"
                              alt="IT Infrastructure" class="img-fluid rounded shadow">
@@ -517,36 +515,36 @@
 
     <!-- Contact Form Section -->
     <section class="contact-section" id="contact-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-5 fw-bold mb-3">Richiedi un Preventivo Gratuito</h2>
-                    <p class="lead text-muted">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-wrap">
+                <div class="lg:w-2/3 mx-auto text-center mb-5">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-3">Richiedi un Preventivo Gratuito</h2>
+                    <p class="text-xl text-gray-600">
                         Compila il form per ricevere una consulenza personalizzata e un preventivo dettagliato
                         per i servizi IT della tua azienda a Bergamo.
                     </p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card shadow-lg border-0">
-                        <div class="card-body p-5">
+            <div class="flex flex-wrap">
+                <div class="lg:w-2/3 mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg border border-gray-200 shadow-lg border-0">
+                        <div class="bg-white rounded-lg shadow-lg border border-gray-200-body p-8">
                             <form id="business-quote-form" data-resend="true">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="company_name" class="form-label fw-semibold">
+                                <div class="flex flex-wrap gap-3">
+                                    <div class="md:w-1/2">
+                                        <label for="company_name" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Nome Azienda *
                                         </label>
-                                        <input type="text" class="form-control" id="company_name"
+                                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="company_name"
                                                name="company_name" required>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <label for="industry" class="form-label fw-semibold">
+                                    <div class="md:w-1/2">
+                                        <label for="industry" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Settore di Attività
                                         </label>
-                                        <select class="form-select" id="industry" name="industry">
+                                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="industry" name="industry">
                                             <option value="">Seleziona settore</option>
                                             <option value="commercialisti">Commercialisti</option>
                                             <option value="studi-legali">Studi Legali</option>
@@ -558,35 +556,35 @@
                                         </select>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <label for="full_name" class="form-label fw-semibold">
+                                    <div class="md:w-1/2">
+                                        <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Nome e Cognome *
                                         </label>
-                                        <input type="text" class="form-control" id="full_name"
+                                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="full_name"
                                                name="full_name" required>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <label for="email" class="form-label fw-semibold">
+                                    <div class="md:w-1/2">
+                                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Email Aziendale *
                                         </label>
-                                        <input type="email" class="form-control" id="email"
+                                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="email"
                                                name="email" required>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <label for="phone" class="form-label fw-semibold">
+                                    <div class="md:w-1/2">
+                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Telefono *
                                         </label>
-                                        <input type="tel" class="form-control" id="phone"
+                                        <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="phone"
                                                name="phone" required>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <label for="employees" class="form-label fw-semibold">
+                                    <div class="md:w-1/2">
+                                        <label for="employees" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Numero Dipendenti
                                         </label>
-                                        <select class="form-select" id="employees" name="employees">
+                                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="employees" name="employees">
                                             <option value="">Seleziona</option>
                                             <option value="1-5">1-5 dipendenti</option>
                                             <option value="6-20">6-20 dipendenti</option>
@@ -595,31 +593,31 @@
                                         </select>
                                     </div>
 
-                                    <div class="col-12">
-                                        <label for="message" class="form-label fw-semibold">
+                                    <div class="w-full">
+                                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2 font-semibold">
                                             Descrivi le tue esigenze IT
                                         </label>
-                                        <textarea class="form-control" id="message" name="message"
+                                        <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" id="message" name="message"
                                                   rows="4" placeholder="Descrivi i servizi IT di cui hai bisogno, problemi attuali, obiettivi..."></textarea>
                                     </div>
 
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox"
+                                    <div class="w-full">
+                                        <div class="flex items-start">
+                                            <input class="flex items-start-input" type="checkbox"
                                                    id="privacy_consent" name="privacy_consent" required>
-                                            <label class="form-check-label" for="privacy_consent">
+                                            <label class="flex items-start-label" for="privacy_consent">
                                                 Accetto la <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
                                                 e autorizzo il trattamento dei miei dati per ricevere il preventivo.
                                             </label>
                                         </div>
                                     </div>
 
-                                    <div class="col-12 text-center">
-                                        <button type="submit" class="btn btn-primary-custom btn-lg">
+                                    <div class="w-full text-center">
+                                        <button type="submit" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-primary-custom inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-lg">
                                             <i class="fas fa-paper-plane me-2"></i>
                                             Invia Richiesta Preventivo
                                         </button>
-                                        <p class="text-muted mt-3 mb-0">
+                                        <p class="text-gray-600 mt-3 mb-0">
                                             <i class="fas fa-clock me-1"></i>
                                             Riceverai il preventivo entro 24 ore lavorative
                                         </p>
@@ -632,41 +630,41 @@
             </div>
 
             <!-- Contact Info -->
-            <div class="row mt-5">
-                <div class="col-lg-4 text-center">
+            <div class="flex flex-wrap mt-5">
+                <div class="lg:w-1/3 text-center">
                     <div class="mb-4">
                         <div class="service-icon mx-auto mb-3">
                             <i class="fas fa-phone"></i>
                         </div>
                         <h5>Chiamaci Ora</h5>
-                        <p class="text-muted mb-2">Supporto telefonico immediato</p>
-                        <a href="tel:+390398882041" class="fw-bold text-decoration-none">
+                        <p class="text-gray-600 mb-2">Supporto telefonico immediato</p>
+                        <a href="tel:+390398882041" class="font-bold text-decoration-none">
                             039 888 2041
                         </a>
                     </div>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="lg:w-1/3 text-center">
                     <div class="mb-4">
                         <div class="service-icon mx-auto mb-3">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h5>Scrivici</h5>
-                        <p class="text-muted mb-2">Risposta garantita in 4 ore</p>
-                        <a href="mailto:info@it-era.it" class="fw-bold text-decoration-none">
+                        <p class="text-gray-600 mb-2">Risposta garantita in 4 ore</p>
+                        <a href="mailto:info@it-era.it" class="font-bold text-decoration-none">
                             info@it-era.it
                         </a>
                     </div>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="lg:w-1/3 text-center">
                     <div class="mb-4">
                         <div class="service-icon mx-auto mb-3">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <h5>Zona di Servizio</h5>
-                        <p class="text-muted mb-2">Bergamo e provincia</p>
-                        <span class="fw-bold">Intervento on-site</span>
+                        <p class="text-gray-600 mb-2">Bergamo e provincia</p>
+                        <span class="font-bold">Intervento on-site</span>
                     </div>
                 </div>
             </div>
@@ -677,11 +675,10 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/resend-config.js"></script>
     <script src="/js/components-loader.js"></script>
     <script src="/js/resend-integration.js"></script>
-    <script src="/js/advanced-lead-capture.js"></script>
+    <script src="/js/advanced-text-xl-capture.js"></script>
     <script src="/js/analytics-tracking.js"></script>
 
     <script>
@@ -736,11 +733,11 @@
                                 if (result.success) {
                                     // Success feedback
                                     submitBtn.innerHTML = '<i class="fas fa-check me-2"></i>Richiesta Inviata!';
-                                    submitBtn.className = 'btn btn-success btn-lg';
+                                    submitBtn.className = 'inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-success inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-lg';
 
                                     // Show success message
                                     const successAlert = document.createElement('div');
-                                    successAlert.className = 'alert alert-success mt-3';
+                                    successAlert.className = 'p-4 rounded-lg p-4 rounded-lg-success mt-3';
                                     successAlert.innerHTML = `
                                         <h5><i class="fas fa-check-circle me-2"></i>Richiesta inviata con successo!</h5>
                                         <p class="mb-0">Riceverai il preventivo personalizzato entro 24 ore lavorative.</p>
@@ -751,7 +748,7 @@
                                     setTimeout(() => {
                                         form.reset();
                                         submitBtn.innerHTML = originalText;
-                                        submitBtn.className = 'btn btn-primary-custom btn-lg';
+                                        submitBtn.className = 'inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-primary-custom inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300-lg';
                                         submitBtn.disabled = false;
                                         successAlert.remove();
                                     }, 5000);
@@ -766,7 +763,7 @@
 
                                 // Show error message
                                 const errorAlert = document.createElement('div');
-                                errorAlert.className = 'alert alert-danger mt-3';
+                                errorAlert.className = 'p-4 rounded-lg p-4 rounded-lg-danger mt-3';
                                 errorAlert.innerHTML = `
                                     <h5><i class="fas fa-exclamation-triangle me-2"></i>Errore durante l'invio</h5>
                                     <p class="mb-0">Si è verificato un problema. Riprova o contattaci direttamente al 039 888 2041.</p>

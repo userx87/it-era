@@ -12,9 +12,9 @@ class ITERAResendIntegration {
         this.config = {
             resendApiUrl: externalConfig.apiUrl || 'https://api.resend.com/emails',
             resendApiKey: externalConfig.apiKey || 're_BhJiCJEe_JXYWoB3W4NcpoPtjA2qyvqYL',
-            fromEmail: externalConfig.fromEmail || 'noreply@it-era.it',
-            toEmail: externalConfig.toEmail || 'info@it-era.it',
-            fallbackEndpoint: `mailto:${externalConfig.fallbackEmail || 'info@it-era.it'}`,
+            fromEmail: externalConfig.fromEmail || 'info@it-era.it',
+            toEmail: externalConfig.toEmail || 'info@bulltech.it',
+            fallbackEndpoint: `mailto:${externalConfig.fallbackEmail || 'info@bulltech.it'}`,
             timeout: externalConfig.timeout || 15000,
             retryAttempts: 2,
             retryDelay: 1000
@@ -356,7 +356,7 @@ Inviato da: ${window.location.href}
 Data: ${new Date().toLocaleString('it-IT')}
         `);
 
-        const mailtoLink = `mailto:info@it-era.it?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:info@bulltech.it?subject=${subject}&body=${body}`;
         window.open(mailtoLink, '_blank');
     }
 
@@ -498,8 +498,8 @@ Data: ${new Date().toLocaleString('it-IT')}
                     <a href="tel:+390398882041" class="btn-primary bg-blue-600 hover:bg-blue-700 text-center">
                         📞 Chiama: 039 888 2041
                     </a>
-                    <a href="mailto:info@it-era.it" class="btn-secondary border-blue-600 text-blue-600 hover:bg-blue-50 text-center">
-                        ✉️ Email: info@it-era.it
+                    <a href="mailto:info@bulltech.it" class="btn-secondary border-blue-600 text-blue-600 hover:bg-blue-50 text-center">
+                        ✉️ Email: info@bulltech.it
                     </a>
                 </div>
             </div>

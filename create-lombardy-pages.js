@@ -10,7 +10,7 @@ const path = require('path');
 
 class LombardyPagesGenerator {
     constructor() {
-        this.templateFile = './servizi-keyword/assistenza-informatica-aziende-bergamo.html';
+        this.templateFile = './servizi-it/assistenza-informatica-aziende-bergamo.html';
         this.provinces = [
             {
                 name: 'Milano',
@@ -225,7 +225,7 @@ class LombardyPagesGenerator {
             );
             
             // Save the file
-            const fileName = `./servizi-keyword/assistenza-informatica-aziende-${province.code}.html`;
+            const fileName = `./servizi-it/assistenza-informatica-aziende-${province.code}.html`;
             fs.writeFileSync(fileName, content, 'utf8');
             
             console.log(`✅ ${province.name} page created: ${fileName}`);

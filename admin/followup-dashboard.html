@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-ERA Followup Dashboard - Sistema Completo</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        .priority-critical { border-left: 5px solid #dc2626; background: #fef2f2; }
+        .priority-high { border-left: 5px solid #ea580c; background: #fff7ed; }
+        .priority-medium { border-left: 5px solid #d97706; background: #fffbeb; }
+        .priority-low { border-left: 5px solid #65a30d; background: #f7fee7; }
+        
+        .call-notifications-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            max-width: 400px;
+        }
+        
+        .call-notification {
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .priority-badge {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .priority-badge.critical { background: #dc2626; }
+        .priority-badge.high { background: #ea580c; }
+        .priority-badge.medium { background: #d97706; }
+        .priority-badge.low { background: #65a30d; }
+        
+        .stats-card {
+            transition: transform 0.2s;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">IT-ERA Followup Dashboard</h1>
+                    <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                        Sistema Attivo
+                    </span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button onclick="refreshDashboard()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-sync-alt mr-2"></i>Aggiorna
+                    </button>
+                    <div class="text-sm text-gray-500">
+                        Ultimo aggiornamento: <span id="last-update">--:--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Stats Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <!-- Email Stats -->
+            <div class="stats-card bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-500">Email Sequences</p>
+                        <p class="text-2xl font-semibold text-gray-900" id="email-total">0</p>
+                        <p class="text-sm text-green-600" id="email-sent">0 inviate oggi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SMS Stats -->
+            <div class="stats-card bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-sms text-white"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-500">SMS Followup</p>
+                        <p class="text-2xl font-semibold text-gray-900" id="sms-total">0</p>
+                        <p class="text-sm text-green-600" id="sms-sent">0 inviati oggi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call Stats -->
+            <div class="stats-card bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-phone text-white"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-500">Chiamate Programmate</p>
+                        <p class="text-2xl font-semibold text-gray-900" id="calls-total">0</p>
+                        <p class="text-sm text-red-600" id="calls-pending">0 in attesa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conversion Stats -->
+            <div class="stats-card bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-500">Tasso Conversione</p>
+                        <p class="text-2xl font-semibold text-gray-900" id="conversion-rate">0%</p>
+                        <p class="text-sm text-purple-600" id="conversions-today">0 conversioni oggi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Sequences -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Email Sequences -->
+            <div class="bg-white rounded-lg shadow">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-900">
+                        <i class="fas fa-envelope text-blue-500 mr-2"></i>
+                        Sequenze Email Attive
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <div id="email-sequences" class="space-y-4">
+                        <!-- Email sequences will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SMS Followups -->
+            <div class="bg-white rounded-lg shadow">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-900">
+                        <i class="fas fa-sms text-green-500 mr-2"></i>
+                        SMS Programmati
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <div id="sms-followups" class="space-y-4">
+                        <!-- SMS followups will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call Management -->
+        <div class="bg-white rounded-lg shadow mb-8">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h3 class="text-lg font-medium text-gray-900">
+                    <i class="fas fa-phone text-orange-500 mr-2"></i>
+                    Gestione Chiamate
+                </h3>
+            </div>
+            <div class="p-6">
+                <!-- Priority Calls -->
+                <div class="mb-6">
+                    <h4 class="text-md font-medium text-gray-700 mb-4">Chiamate Prioritarie</h4>
+                    <div id="priority-calls" class="space-y-3">
+                        <!-- Priority calls will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Scheduled Calls -->
+                <div>
+                    <h4 class="text-md font-medium text-gray-700 mb-4">Chiamate Programmate</h4>
+                    <div id="scheduled-calls" class="space-y-3">
+                        <!-- Scheduled calls will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Analytics -->
+        <div class="bg-white rounded-lg shadow">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h3 class="text-lg font-medium text-gray-900">
+                    <i class="fas fa-chart-bar text-purple-500 mr-2"></i>
+                    Analytics Performance
+                </h3>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Email Performance -->
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600" id="email-open-rate">0%</div>
+                        <div class="text-sm text-gray-500">Tasso Apertura Email</div>
+                    </div>
+
+                    <!-- SMS Performance -->
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-600" id="sms-response-rate">0%</div>
+                        <div class="text-sm text-gray-500">Tasso Risposta SMS</div>
+                    </div>
+
+                    <!-- Call Performance -->
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-600" id="call-completion-rate">0%</div>
+                        <div class="text-sm text-gray-500">Chiamate Completate</div>
+                    </div>
+                </div>
+
+                <!-- Performance Chart Placeholder -->
+                <div class="mt-8">
+                    <canvas id="performance-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Call Notifications Container -->
+    <div id="call-notifications" class="call-notifications-container"></div>
+
+    <!-- Scripts -->
+    <script src="/js/secure-config.js"></script>
+    <script src="/js/followup-automation.js"></script>
+    <script src="/js/sms-followup.js"></script>
+    <script src="/js/call-followup.js"></script>
+    <script src="/js/email-templates.js"></script>
+
+    <script>
+        class FollowupDashboard {
+            constructor() {
+                this.refreshInterval = 30000; // 30 seconds
+                this.init();
+            }
+
+            init() {
+                this.updateLastRefresh();
+                this.loadDashboardData();
+                this.startAutoRefresh();
+                console.log('📊 Followup Dashboard initialized');
+            }
+
+            startAutoRefresh() {
+                setInterval(() => {
+                    this.loadDashboardData();
+                    this.updateLastRefresh();
+                }, this.refreshInterval);
+            }
+
+            updateLastRefresh() {
+                const now = new Date();
+                document.getElementById('last-update').textContent = 
+                    now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+            }
+
+            loadDashboardData() {
+                this.updateEmailStats();
+                this.updateSMSStats();
+                this.updateCallStats();
+                this.updateConversionStats();
+                this.loadActiveSequences();
+                this.loadScheduledCalls();
+                this.updatePerformanceMetrics();
+            }
+
+            updateEmailStats() {
+                if (window.ITERAFollowup) {
+                    const sequences = window.ITERAFollowup.getActiveSequences();
+                    const stats = this.calculateEmailStats(sequences);
+                    
+                    document.getElementById('email-total').textContent = stats.total;
+                    document.getElementById('email-sent').textContent = `${stats.sentToday} inviate oggi`;
+                }
+            }
+
+            updateSMSStats() {
+                if (window.ITERASMS) {
+                    const stats = window.ITERASMS.getSMSStats();
+                    
+                    document.getElementById('sms-total').textContent = stats.total;
+                    document.getElementById('sms-sent').textContent = `${stats.sent || 0} inviati oggi`;
+                }
+            }
+
+            updateCallStats() {
+                if (window.ITERACallFollowup) {
+                    const stats = window.ITERACallFollowup.getCallStats();
+                    
+                    document.getElementById('calls-total').textContent = stats.total;
+                    document.getElementById('calls-pending').textContent = `${stats.scheduled || 0} in attesa`;
+                }
+            }
+
+            updateConversionStats() {
+                // Mock conversion data - replace with real analytics
+                const conversionRate = Math.floor(Math.random() * 15) + 5; // 5-20%
+                const conversionsToday = Math.floor(Math.random() * 10) + 1;
+                
+                document.getElementById('conversion-rate').textContent = `${conversionRate}%`;
+                document.getElementById('conversions-today').textContent = `${conversionsToday} conversioni oggi`;
+            }
+
+            calculateEmailStats(sequences) {
+                let total = 0;
+                let sentToday = 0;
+                const today = new Date().toDateString();
+
+                sequences.forEach(([id, sequence]) => {
+                    total++;
+                    if (sequence.startTime && new Date(sequence.startTime).toDateString() === today) {
+                        sentToday += sequence.emailsSent || 0;
+                    }
+                });
+
+                return { total, sentToday };
+            }
+
+            loadActiveSequences() {
+                const container = document.getElementById('email-sequences');
+                container.innerHTML = '';
+
+                if (window.ITERAFollowup) {
+                    const sequences = window.ITERAFollowup.getActiveSequences();
+                    
+                    if (sequences.length === 0) {
+                        container.innerHTML = '<p class="text-gray-500 text-center">Nessuna sequenza attiva</p>';
+                        return;
+                    }
+
+                    sequences.slice(0, 5).forEach(([id, sequence]) => {
+                        const sequenceElement = this.createSequenceElement(id, sequence);
+                        container.appendChild(sequenceElement);
+                    });
+                }
+            }
+
+            createSequenceElement(id, sequence) {
+                const div = document.createElement('div');
+                div.className = 'border border-gray-200 rounded-lg p-4';
+                
+                const statusColor = sequence.status === 'active' ? 'green' : 'gray';
+                const progress = sequence.emailsSent || 0;
+                
+                div.innerHTML = `
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h4 class="font-medium text-gray-900">${sequence.data.name || sequence.data.email}</h4>
+                            <p class="text-sm text-gray-500">${sequence.type.replace(/_/g, ' ')}</p>
+                        </div>
+                        <span class="px-2 py-1 bg-${statusColor}-100 text-${statusColor}-800 rounded-full text-xs">
+                            ${sequence.status}
+                        </span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-sm text-gray-600">
+                            Email inviate: ${progress}
+                        </div>
+                        <div class="text-xs text-gray-400">
+                            ${new Date(sequence.startTime).toLocaleDateString('it-IT')}
+                        </div>
+                    </div>
+                `;
+                
+                return div;
+            }
+
+            loadScheduledCalls() {
+                this.loadPriorityCalls();
+                this.loadRegularCalls();
+            }
+
+            loadPriorityCalls() {
+                const container = document.getElementById('priority-calls');
+                container.innerHTML = '';
+
+                if (window.ITERACallFollowup) {
+                    const calls = window.ITERACallFollowup.getScheduledCalls();
+                    const priorityCalls = calls.filter(([id, call]) => 
+                        call.priority === 'CRITICAL' || call.priority === 'HIGH'
+                    );
+
+                    if (priorityCalls.length === 0) {
+                        container.innerHTML = '<p class="text-gray-500 text-center">Nessuna chiamata prioritaria</p>';
+                        return;
+                    }
+
+                    priorityCalls.forEach(([id, call]) => {
+                        const callElement = this.createCallElement(id, call, true);
+                        container.appendChild(callElement);
+                    });
+                }
+            }
+
+            loadRegularCalls() {
+                const container = document.getElementById('scheduled-calls');
+                container.innerHTML = '';
+
+                if (window.ITERACallFollowup) {
+                    const calls = window.ITERACallFollowup.getScheduledCalls();
+                    const regularCalls = calls.filter(([id, call]) => 
+                        call.priority === 'MEDIUM' || call.priority === 'LOW'
+                    ).slice(0, 5);
+
+                    if (regularCalls.length === 0) {
+                        container.innerHTML = '<p class="text-gray-500 text-center">Nessuna chiamata programmata</p>';
+                        return;
+                    }
+
+                    regularCalls.forEach(([id, call]) => {
+                        const callElement = this.createCallElement(id, call, false);
+                        container.appendChild(callElement);
+                    });
+                }
+            }
+
+            createCallElement(id, call, isPriority) {
+                const div = document.createElement('div');
+                div.className = `priority-${call.priority.toLowerCase()} border rounded-lg p-4`;
+                
+                const scheduledTime = new Date(call.scheduledTime);
+                const isOverdue = scheduledTime < new Date() && call.status === 'scheduled';
+                
+                div.innerHTML = `
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex-1">
+                            <div class="flex items-center mb-1">
+                                <span class="priority-badge ${call.priority.toLowerCase()}">${call.priority}</span>
+                                <span class="ml-2 text-sm font-medium text-gray-900">${call.type.replace(/_/g, ' ')}</span>
+                                ${isOverdue ? '<span class="ml-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded">SCADUTA</span>' : ''}
+                            </div>
+                            <p class="text-sm text-gray-600">${call.message}</p>
+                            <p class="text-xs text-gray-500 mt-1">
+                                Assegnata a: ${call.assignedTo.name} (${call.assignedTo.role})
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <div class="text-xs text-gray-500">
+                            Programmata: ${scheduledTime.toLocaleString('it-IT')}
+                        </div>
+                        <div class="flex space-x-2">
+                            <button onclick="window.ITERACallFollowup.markCallCompleted('${id}')" 
+                                    class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded hover:bg-green-200">
+                                ✅ Completata
+                            </button>
+                            <button onclick="window.ITERACallFollowup.snoozeCall('${id}', 30)" 
+                                    class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded hover:bg-yellow-200">
+                                ⏰ Snooze
+                            </button>
+                        </div>
+                    </div>
+                `;
+                
+                return div;
+            }
+
+            updatePerformanceMetrics() {
+                // Mock performance data - replace with real analytics
+                document.getElementById('email-open-rate').textContent = `${Math.floor(Math.random() * 30) + 20}%`;
+                document.getElementById('sms-response-rate').textContent = `${Math.floor(Math.random() * 40) + 30}%`;
+                document.getElementById('call-completion-rate').textContent = `${Math.floor(Math.random() * 20) + 70}%`;
+            }
+        }
+
+        // Global functions
+        function refreshDashboard() {
+            if (window.followupDashboard) {
+                window.followupDashboard.loadDashboardData();
+                window.followupDashboard.updateLastRefresh();
+            }
+        }
+
+        // Initialize dashboard when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            window.followupDashboard = new FollowupDashboard();
+        });
+    </script>
+</body>
+</html>

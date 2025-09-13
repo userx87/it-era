@@ -7,11 +7,15 @@
 class ITERAResendIntegration {
     constructor() {
         this.config = {
-            apiEndpoint: '/api/contact',
-            fallbackEndpoint: 'https://it-era-resend.bulltech.workers.dev/api/contact',
+            apiEndpoints: [
+                'https://it-era.netlify.app/.netlify/functions/contact',
+                'https://it-era-resend.bulltech.workers.dev/api/contact',
+                '/api/contact'
+            ],
+            fallbackEndpoint: 'mailto:info@it-era.it',
             timeout: 15000,
-            retryAttempts: 3,
-            retryDelay: 2000
+            retryAttempts: 2,
+            retryDelay: 1000
         };
         
         this.formTypes = {
@@ -209,58 +213,74 @@ class ITERAResendIntegration {
     }
 
     /**
-     * Invia i dati a Resend con fallback
+     * Invia i dati tramite Formspree con fallback
      */
     async sendToResend(payload) {
         try {
-            // Prova prima l'endpoint principale
+            // Prepara i dati per Formspree
+            const formData = new FormData();
+            formData.append('name', payload.full_name || payload.nome || 'Nome non fornito');
+            formData.append('email', payload.email || '');
+            formData.append('phone', payload.phone || payload.telefono || '');
+            formData.append('company', payload.company || payload.azienda || '');
+            formData.append('message', payload.message || payload.messaggio || payload.project_description || '');
+            formData.append('service_type', payload.service_type || payload.formType || 'Contatto generico');
+            formData.append('page', payload.pagina || document.title);
+            formData.append('url', window.location.href);
+
+            // Invia tramite Formspree
             const response = await fetch(this.config.apiEndpoint, {
                 method: 'POST',
+                body: formData,
                 headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(payload),
-                timeout: this.config.timeout
+                    'Accept': 'application/json'
+                }
             });
 
             if (response.ok) {
                 const result = await response.json();
-                console.log('✅ Form inviato con successo:', result);
+                console.log('✅ Form inviato con successo tramite Formspree:', result);
                 return { success: true, data: result };
             } else {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                const errorData = await response.json();
+                throw new Error(errorData.error || `HTTP ${response.status}`);
             }
 
         } catch (error) {
-            console.warn('⚠️ Endpoint principale fallito, provo fallback:', error.message);
+            console.error('❌ Errore invio form:', error);
 
-            // Prova endpoint fallback se disponibile
-            if (this.config.fallbackEndpoint) {
-                try {
-                    const fallbackResponse = await fetch(this.config.fallbackEndpoint, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(payload),
-                        timeout: this.config.timeout
-                    });
-
-                    if (fallbackResponse.ok) {
-                        const result = await fallbackResponse.json();
-                        console.log('✅ Form inviato via fallback:', result);
-                        return { success: true, data: result };
-                    }
-                } catch (fallbackError) {
-                    console.error('❌ Anche il fallback è fallito:', fallbackError);
-                }
-            }
+            // Fallback: apri client email
+            this.openEmailFallback(payload);
 
             return {
                 success: false,
-                error: 'Impossibile inviare il messaggio. Contattaci al 039 888 2041'
+                error: 'Problema temporaneo. Abbiamo aperto il tuo client email come alternativa.'
             };
         }
+    }
+
+    /**
+     * Fallback: apre client email con dati precompilati
+     */
+    openEmailFallback(payload) {
+        const subject = encodeURIComponent(`Contatto dal sito IT-ERA - ${payload.service_type || 'Richiesta informazioni'}`);
+        const body = encodeURIComponent(`
+Nome: ${payload.full_name || payload.nome || ''}
+Email: ${payload.email || ''}
+Telefono: ${payload.phone || payload.telefono || ''}
+Azienda: ${payload.company || payload.azienda || ''}
+Servizio: ${payload.service_type || 'Non specificato'}
+
+Messaggio:
+${payload.message || payload.messaggio || payload.project_description || ''}
+
+---
+Inviato da: ${window.location.href}
+Data: ${new Date().toLocaleString('it-IT')}
+        `);
+
+        const mailtoLink = `mailto:info@it-era.it?subject=${subject}&body=${body}`;
+        window.open(mailtoLink, '_blank');
     }
 
     /**
@@ -313,7 +333,7 @@ class ITERAResendIntegration {
             try {
                 console.log(`📤 Sending to Resend (attempt ${attempt}/${this.config.retryAttempts})`);
                 
-                const response = await fetch(this.config.apiEndpoint, {
+                const response = await fetch(this.config.apiEndpoints[0], {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

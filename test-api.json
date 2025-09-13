@@ -1,0 +1,6 @@
+{
+  "from": "noreply@it-era.it",
+  "to": ["info@it-era.it"],
+  "subject": "Test IT-ERA Resend API",
+  "html": "<h1>Test Completato</h1><p>Il sistema Resend.com funziona correttamente!</p>"
+}

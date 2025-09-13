@@ -1,0 +1,1213 @@
+{
+  "batchNumber": 3,
+  "pages": 5,
+  "results": {
+    "contentReview": {
+      "agent": "Content Review Agent",
+      "timestamp": "2025-09-13T10:16:59.243Z",
+      "pagesAnalyzed": 5,
+      "issues": {
+        "supporto-it-aziendale-bergamo.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto IT aziendale Bergamo | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto IT aziendale a Bergamo. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "content_quality",
+            "severity": "high",
+            "element": "word_count",
+            "message": "Content is too short: 178 words",
+            "recommendation": "Expand content to at least 500-800 words"
+          },
+          {
+            "type": "sparse_content",
+            "severity": "high",
+            "element": "sparse_sections",
+            "message": "5 out of 6 sections have sparse content",
+            "recommendation": "Expand content in sparse sections with relevant information"
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-it-aziendale-brescia.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto IT aziendale Brescia | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto IT aziendale a Brescia. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "content_quality",
+            "severity": "high",
+            "element": "word_count",
+            "message": "Content is too short: 178 words",
+            "recommendation": "Expand content to at least 500-800 words"
+          },
+          {
+            "type": "sparse_content",
+            "severity": "high",
+            "element": "sparse_sections",
+            "message": "5 out of 6 sections have sparse content",
+            "recommendation": "Expand content in sparse sections with relevant information"
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-it-aziendale-como.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto IT aziendale Como | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto IT aziendale a Como. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "content_quality",
+            "severity": "high",
+            "element": "word_count",
+            "message": "Content is too short: 178 words",
+            "recommendation": "Expand content to at least 500-800 words"
+          },
+          {
+            "type": "sparse_content",
+            "severity": "high",
+            "element": "sparse_sections",
+            "message": "5 out of 6 sections have sparse content",
+            "recommendation": "Expand content in sparse sections with relevant information"
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-it-aziendale-cremona.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto IT aziendale Cremona | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto IT aziendale a Cremona. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "content_quality",
+            "severity": "high",
+            "element": "word_count",
+            "message": "Content is too short: 178 words",
+            "recommendation": "Expand content to at least 500-800 words"
+          },
+          {
+            "type": "sparse_content",
+            "severity": "high",
+            "element": "sparse_sections",
+            "message": "5 out of 6 sections have sparse content",
+            "recommendation": "Expand content in sparse sections with relevant information"
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ],
+        "supporto-it-aziendale-lecco.html": [
+          {
+            "type": "seo_issues",
+            "severity": "medium",
+            "element": "title",
+            "message": "Title tag is too long (> 60 characters)",
+            "current": "supporto IT aziendale Lecco | IT-ERA - Assistenza Professionale",
+            "recommendation": "Shorten title to 50-60 characters"
+          },
+          {
+            "type": "seo_issues",
+            "severity": "high",
+            "element": "meta_description",
+            "message": "Meta description is missing or too short (< 120 characters)",
+            "current": "supporto IT aziendale a Lecco. Servizio professionale, preventivo gratuito. Contatta IT-ERA per assistenza immediata.",
+            "recommendation": "Add compelling meta description 150-160 characters long"
+          },
+          {
+            "type": "content_quality",
+            "severity": "high",
+            "element": "word_count",
+            "message": "Content is too short: 178 words",
+            "recommendation": "Expand content to at least 500-800 words"
+          },
+          {
+            "type": "sparse_content",
+            "severity": "high",
+            "element": "sparse_sections",
+            "message": "5 out of 6 sections have sparse content",
+            "recommendation": "Expand content in sparse sections with relevant information"
+          },
+          {
+            "type": "grammar_issues",
+            "severity": "low",
+            "element": "grammar",
+            "message": "Multiple consecutive spaces found",
+            "recommendation": "Review and fix grammar issues"
+          }
+        ]
+      },
+      "recommendations": {
+        "supporto-it-aziendale-bergamo.html": [],
+        "supporto-it-aziendale-brescia.html": [],
+        "supporto-it-aziendale-como.html": [],
+        "supporto-it-aziendale-cremona.html": [],
+        "supporto-it-aziendale-lecco.html": []
+      },
+      "summary": {
+        "totalIssues": 25,
+        "issuesByType": {
+          "seo_issues": 10,
+          "content_quality": 5,
+          "sparse_content": 5,
+          "grammar_issues": 5
+        },
+        "issuesBySeverity": {
+          "high": 15,
+          "medium": 5,
+          "low": 5
+        },
+        "pagesWithIssues": 5
+      }
+    },
+    "designEnhancement": {
+      "agent": "Design Enhancement Agent",
+      "timestamp": "2025-09-13T10:16:59.270Z",
+      "pagesEnhanced": 5,
+      "enhancements": {
+        "supporto-it-aziendale-bergamo.html": {
+          "filename": "supporto-it-aziendale-bergamo.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-it-aziendale-brescia.html": {
+          "filename": "supporto-it-aziendale-brescia.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-it-aziendale-como.html": {
+          "filename": "supporto-it-aziendale-como.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-it-aziendale-cremona.html": {
+          "filename": "supporto-it-aziendale-cremona.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        },
+        "supporto-it-aziendale-lecco.html": {
+          "filename": "supporto-it-aziendale-lecco.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "visual_hierarchy",
+              "element": "h1",
+              "enhancement": "Enhanced H1 styling with better typography and spacing",
+              "cssClass": "it-era-h1-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "sections",
+              "enhancement": "Improved section spacing and visual separation",
+              "cssClass": "it-era-section-enhanced"
+            },
+            {
+              "type": "visual_hierarchy",
+              "element": "buttons",
+              "enhancement": "Enhanced button styling with hover effects and better contrast",
+              "cssClass": "it-era-btn-enhanced"
+            },
+            {
+              "type": "responsive_design",
+              "element": "containers",
+              "enhancement": "Improved responsive container behavior",
+              "cssClass": "it-era-container-responsive"
+            },
+            {
+              "type": "responsive_design",
+              "element": "grids",
+              "enhancement": "Enhanced responsive grid behavior for mobile devices",
+              "cssClass": "it-era-grid-responsive"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "colors",
+              "enhancement": "Applied consistent IT-ERA brand colors throughout the page",
+              "cssClass": "it-era-brand-colors"
+            },
+            {
+              "type": "brand_consistency",
+              "element": "typography",
+              "enhancement": "Applied consistent typography with Inter font family",
+              "cssClass": "it-era-typography"
+            },
+            {
+              "type": "visual_elements",
+              "element": "forms",
+              "enhancement": "Enhanced form styling with better visual feedback",
+              "cssClass": "it-era-form-enhanced"
+            }
+          ],
+          "cssClasses": [
+            "it-era-h1-enhanced",
+            "it-era-section-enhanced",
+            "it-era-btn-enhanced",
+            "it-era-container-responsive",
+            "it-era-grid-responsive",
+            "it-era-brand-colors",
+            "it-era-typography",
+            "it-era-form-enhanced"
+          ],
+          "htmlUpdates": []
+        }
+      },
+      "cssUpdates": {
+        "enhancedCSS": "\n/* IT-ERA Enhanced Design System */\n\n/* Typography Enhancements */\n.it-era-typography {\n    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n}\n\n.it-era-h1-enhanced {\n    font-size: 2.5rem;\n    font-weight: 700;\n    line-height: 1.2;\n    color: #111827;\n    margin-bottom: 2rem;\n    background: linear-gradient(135deg, #1e40af, #3b82f6);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n}\n\n/* Section Enhancements */\n.it-era-section-enhanced {\n    padding: 3rem 0;\n    position: relative;\n}\n\n.it-era-section-enhanced:not(:last-child)::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 80%;\n    height: 1px;\n    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);\n}\n\n/* Button Enhancements */\n.it-era-btn-enhanced {\n    background: linear-gradient(135deg, #1e40af, #3b82f6);\n    color: white;\n    border: none;\n    padding: 1rem 2rem;\n    border-radius: 8px;\n    font-weight: 600;\n    text-decoration: none;\n    display: inline-flex;\n    align-items: center;\n    gap: 0.5rem;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n}\n\n.it-era-btn-enhanced:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);\n    background: linear-gradient(135deg, #3b82f6, #1e40af);\n}\n\n/* Responsive Container */\n.it-era-container-responsive {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 1.5rem;\n}\n\n@media (max-width: 768px) {\n    .it-era-container-responsive {\n        padding: 0 1rem;\n    }\n}\n\n/* Responsive Grid */\n.it-era-grid-responsive {\n    display: grid;\n    gap: 2rem;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n}\n\n@media (max-width: 768px) {\n    .it-era-grid-responsive {\n        grid-template-columns: 1fr;\n        gap: 1.5rem;\n    }\n}\n\n/* Brand Colors */\n.it-era-brand-colors {\n    --primary: #1e40af;\n    --secondary: #3b82f6;\n    --accent: #06b6d4;\n    --success: #10b981;\n    --warning: #f59e0b;\n    --danger: #ef4444;\n}\n\n/* Navigation Enhancement */\n.it-era-nav-enhanced {\n    background: rgba(255, 255, 255, 0.95);\n    backdrop-filter: blur(10px);\n    border-bottom: 1px solid #e5e7eb;\n    position: sticky;\n    top: 0;\n    z-index: 1000;\n}\n\n/* Icons Enhancement */\n.it-era-icons-enhanced .service-item::before {\n    content: '🔧';\n    font-size: 2rem;\n    margin-bottom: 1rem;\n    display: block;\n}\n\n/* Form Enhancement */\n.it-era-form-enhanced {\n    background: #f9fafb;\n    padding: 3rem;\n    border-radius: 12px;\n    border: 1px solid #e5e7eb;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n}\n\n.it-era-form-enhanced input,\n.it-era-form-enhanced textarea,\n.it-era-form-enhanced select {\n    width: 100%;\n    padding: 1rem;\n    border: 2px solid #d1d5db;\n    border-radius: 6px;\n    font-size: 1rem;\n    transition: border-color 0.3s ease;\n}\n\n.it-era-form-enhanced input:focus,\n.it-era-form-enhanced textarea:focus,\n.it-era-form-enhanced select:focus {\n    outline: none;\n    border-color: #1e40af;\n    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);\n}\n\n/* Mobile Optimizations */\n@media (max-width: 768px) {\n    .it-era-h1-enhanced {\n        font-size: 2rem;\n    }\n    \n    .it-era-section-enhanced {\n        padding: 2rem 0;\n    }\n    \n    .it-era-btn-enhanced {\n        width: 100%;\n        justify-content: center;\n    }\n}\n"
+      },
+      "summary": {
+        "totalEnhancements": 40,
+        "enhancementsByType": {
+          "visual_hierarchy": 15,
+          "responsive_design": 10,
+          "brand_consistency": 10,
+          "visual_elements": 5
+        },
+        "pagesEnhanced": 5,
+        "cssClassesGenerated": [
+          "it-era-h1-enhanced",
+          "it-era-section-enhanced",
+          "it-era-btn-enhanced",
+          "it-era-container-responsive",
+          "it-era-grid-responsive",
+          "it-era-brand-colors",
+          "it-era-typography",
+          "it-era-form-enhanced"
+        ]
+      }
+    },
+    "contentEnhancement": {
+      "agent": "Content Enhancement Agent",
+      "timestamp": "2025-09-13T10:16:59.275Z",
+      "pagesEnhanced": 5,
+      "enhancements": {
+        "supporto-it-aziendale-bergamo.html": {
+          "filename": "supporto-it-aziendale-bergamo.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 178 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-it-aziendale-brescia.html": {
+          "filename": "supporto-it-aziendale-brescia.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 178 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-it-aziendale-como.html": {
+          "filename": "supporto-it-aziendale-como.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 178 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-it-aziendale-cremona.html": {
+          "filename": "supporto-it-aziendale-cremona.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 178 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        },
+        "supporto-it-aziendale-lecco.html": {
+          "filename": "supporto-it-aziendale-lecco.html",
+          "category": "business-it-support",
+          "improvements": [
+            {
+              "type": "content_expansion",
+              "element": "main_content",
+              "enhancement": "Expanded content from 178 to ~800 words",
+              "newContent": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "type": "cta_improvement",
+              "element": "cta_buttons",
+              "enhancement": "Enhanced call-to-action buttons with better copy and styling",
+              "newCTAs": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            },
+            {
+              "type": "service_details",
+              "element": "service_details",
+              "enhancement": "Added comprehensive service details section",
+              "newSection": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        "
+            },
+            {
+              "type": "benefits_addition",
+              "element": "benefits",
+              "enhancement": "Added benefits section highlighting key advantages",
+              "newSection": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        "
+            }
+          ],
+          "contentUpdates": [
+            {
+              "selector": "main",
+              "action": "append",
+              "content": "\n                <section class=\"content-expansion\">\n                    <h2>Supporto IT Professionale per la Tua Azienda</h2>\n                    <p>Nel mondo digitale di oggi, un'infrastruttura IT affidabile è fondamentale per il successo aziendale. \n                    IT-ERA offre soluzioni complete di supporto informatico progettate per mantenere la tua azienda operativa \n                    e competitiva.</p>\n                    \n                    <h3>La Nostra Esperienza al Tuo Servizio</h3>\n                    <p>Con anni di esperienza nel settore IT, il nostro team di esperti comprende le sfide uniche che \n                    le aziende moderne affrontano. Offriamo supporto proattivo che previene i problemi prima che possano \n                    impattare la tua produttività.</p>\n                </section>\n            "
+            },
+            {
+              "selector": ".cta-section, .contact-section",
+              "action": "enhance_ctas",
+              "ctas": [
+                {
+                  "text": "📞 Richiedi Consulenza Gratuita",
+                  "class": "btn-primary btn-lg it-era-cta-enhanced",
+                  "action": "tel:+390398882041"
+                },
+                {
+                  "text": "✉️ Preventivo Personalizzato",
+                  "class": "btn-secondary btn-lg it-era-cta-enhanced",
+                  "action": "#contact-form"
+                }
+              ]
+            }
+          ],
+          "newSections": [
+            {
+              "title": "I Nostri Servizi",
+              "content": "\n            <div class=\"service-details-grid\">\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Assistenza tecnica remota e on-site</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Gestione infrastruttura IT aziendale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Implementazione soluzioni cloud</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Sicurezza informatica e protezione dati</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n                    <div class=\"service-item\">\n                        <div class=\"service-icon\">🔧</div>\n                        <h4>Formazione del personale</h4>\n                        <p>Servizio professionale con garanzia di qualità e supporto dedicato.</p>\n                    </div>\n                \n            </div>\n        ",
+              "position": "after_hero"
+            },
+            {
+              "title": "Perché Scegliere IT-ERA",
+              "content": "\n            <div class=\"benefits-grid\">\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Supporto tecnico professionale 24/7</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Riduzione dei tempi di inattività</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Sicurezza informatica avanzata</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Backup automatici e recupero dati</span>\n                    </div>\n                \n                    <div class=\"benefit-item\">\n                        <div class=\"benefit-icon\">✅</div>\n                        <span>Consulenza strategica IT personalizzata</span>\n                    </div>\n                \n            </div>\n        ",
+              "position": "before_contact"
+            }
+          ]
+        }
+      },
+      "contentUpdates": {},
+      "summary": {
+        "totalEnhancements": 20,
+        "enhancementsByType": {
+          "content_expansion": 5,
+          "cta_improvement": 5,
+          "service_details": 5,
+          "benefits_addition": 5
+        },
+        "pagesEnhanced": 5,
+        "contentAdded": 10
+      }
+    },
+    "technicalImplementation": {
+      "agent": "Technical Implementation Agent",
+      "timestamp": "2025-09-13T10:16:59.278Z",
+      "pagesImplemented": 5,
+      "implementations": {
+        "supporto-it-aziendale-bergamo.html": {
+          "filename": "supporto-it-aziendale-bergamo.html",
+          "category": "business-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 8 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            },
+            {
+              "type": "javascript_integration",
+              "description": "Added 1 missing JavaScript files",
+              "scripts": [
+                "/js/resend-config.js"
+              ]
+            }
+          ],
+          "modified": true
+        },
+        "supporto-it-aziendale-brescia.html": {
+          "filename": "supporto-it-aziendale-brescia.html",
+          "category": "business-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 8 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            },
+            {
+              "type": "javascript_integration",
+              "description": "Added 1 missing JavaScript files",
+              "scripts": [
+                "/js/resend-config.js"
+              ]
+            }
+          ],
+          "modified": true
+        },
+        "supporto-it-aziendale-como.html": {
+          "filename": "supporto-it-aziendale-como.html",
+          "category": "business-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 8 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            },
+            {
+              "type": "javascript_integration",
+              "description": "Added 1 missing JavaScript files",
+              "scripts": [
+                "/js/resend-config.js"
+              ]
+            }
+          ],
+          "modified": true
+        },
+        "supporto-it-aziendale-cremona.html": {
+          "filename": "supporto-it-aziendale-cremona.html",
+          "category": "business-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 8 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            },
+            {
+              "type": "javascript_integration",
+              "description": "Added 1 missing JavaScript files",
+              "scripts": [
+                "/js/resend-config.js"
+              ]
+            }
+          ],
+          "modified": true
+        },
+        "supporto-it-aziendale-lecco.html": {
+          "filename": "supporto-it-aziendale-lecco.html",
+          "category": "business-it-support",
+          "changes": [
+            {
+              "type": "css_updates",
+              "description": "Applied 8 CSS enhancement classes",
+              "classes": [
+                "it-era-h1-enhanced",
+                "it-era-section-enhanced",
+                "it-era-btn-enhanced",
+                "it-era-container-responsive",
+                "it-era-grid-responsive",
+                "it-era-brand-colors",
+                "it-era-typography",
+                "it-era-form-enhanced"
+              ]
+            },
+            {
+              "type": "html_modifications",
+              "description": "Added 2 new content sections",
+              "sections": [
+                "I Nostri Servizi",
+                "Perché Scegliere IT-ERA"
+              ]
+            },
+            {
+              "type": "responsive_fixes",
+              "description": "Applied responsive fixes to images and tables"
+            },
+            {
+              "type": "javascript_integration",
+              "description": "Added 1 missing JavaScript files",
+              "scripts": [
+                "/js/resend-config.js"
+              ]
+            }
+          ],
+          "modified": true
+        }
+      },
+      "filesModified": [
+        "supporto-it-aziendale-bergamo.html",
+        "supporto-it-aziendale-brescia.html",
+        "supporto-it-aziendale-como.html",
+        "supporto-it-aziendale-cremona.html",
+        "supporto-it-aziendale-lecco.html"
+      ],
+      "summary": {
+        "totalImplementations": 20,
+        "implementationsByType": {
+          "css_updates": 5,
+          "html_modifications": 5,
+          "responsive_fixes": 5,
+          "javascript_integration": 5
+        },
+        "pagesModified": 5,
+        "filesCreated": [
+          "css/it-era-enhanced.css"
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "timestamp": "2025-09-13T10:16:59.243Z"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "it-era-swarm-optimization",
+  "version": "1.0.0",
+  "description": "Multi-agent swarm system for IT-ERA keyword page optimization",
+  "main": "orchestrator.js",
+  "scripts": {
+    "start": "node orchestrator.js",
+    "test-batch": "node orchestrator.js --batch-size=10",
+    "analyze-only": "node agents/content-review-agent.js",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "seo",
+    "optimization",
+    "multi-agent",
+    "swarm",
+    "it-era"
+  ],
+  "author": "IT-ERA Swarm System",
+  "license": "MIT"
+}

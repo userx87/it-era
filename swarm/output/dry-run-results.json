@@ -1,0 +1,344 @@
+{
+  "agent": "Content Review Agent",
+  "timestamp": "2025-09-13T10:16:30.348Z",
+  "pagesAnalyzed": 10,
+  "issues": {
+    "assistenza-informatica-aziende-bergamo.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Bergamo | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-brescia.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Brescia | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-como.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Como | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-cremona.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Cremona | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-lecco.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Lecco | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-lodi.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Lodi | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-mantova.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Mantova | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-monza.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Monza | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-pavia.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Pavia | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ],
+    "assistenza-informatica-aziende-varese.html": [
+      {
+        "type": "seo_issues",
+        "severity": "medium",
+        "element": "title",
+        "message": "Title tag is too long (> 60 characters)",
+        "current": "assistenza informatica aziende Varese | IT-ERA - Assistenza Professionale",
+        "recommendation": "Shorten title to 50-60 characters"
+      },
+      {
+        "type": "content_quality",
+        "severity": "high",
+        "element": "word_count",
+        "message": "Content is too short: 178 words",
+        "recommendation": "Expand content to at least 500-800 words"
+      },
+      {
+        "type": "sparse_content",
+        "severity": "high",
+        "element": "sparse_sections",
+        "message": "5 out of 6 sections have sparse content",
+        "recommendation": "Expand content in sparse sections with relevant information"
+      },
+      {
+        "type": "grammar_issues",
+        "severity": "low",
+        "element": "grammar",
+        "message": "Multiple consecutive spaces found",
+        "recommendation": "Review and fix grammar issues"
+      }
+    ]
+  },
+  "recommendations": {
+    "assistenza-informatica-aziende-bergamo.html": [],
+    "assistenza-informatica-aziende-brescia.html": [],
+    "assistenza-informatica-aziende-como.html": [],
+    "assistenza-informatica-aziende-cremona.html": [],
+    "assistenza-informatica-aziende-lecco.html": [],
+    "assistenza-informatica-aziende-lodi.html": [],
+    "assistenza-informatica-aziende-mantova.html": [],
+    "assistenza-informatica-aziende-monza.html": [],
+    "assistenza-informatica-aziende-pavia.html": [],
+    "assistenza-informatica-aziende-varese.html": []
+  },
+  "summary": {
+    "totalIssues": 40,
+    "issuesByType": {
+      "seo_issues": 10,
+      "content_quality": 10,
+      "sparse_content": 10,
+      "grammar_issues": 10
+    },
+    "issuesBySeverity": {
+      "high": 20,
+      "medium": 10,
+      "low": 10
+    },
+    "pagesWithIssues": 10
+  }
+}

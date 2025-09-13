@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | IT-ERA</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/components-separated.css">
+    <link rel="stylesheet" href="../css/it-era-tailwind.css">
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Admin specific styles -->
+    <style>
+        .admin-sidebar {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .admin-content {
+            min-height: 100vh;
+            background-color: #f8fafc;
+        }
+        
+        .nav-item {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .nav-item.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left: 4px solid #fff;
+        }
+        
+        .admin-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .admin-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        .status-online { background-color: #10b981; }
+        .status-warning { background-color: #f59e0b; }
+        .status-error { background-color: #ef4444; }
+        
+        .loading-spinner {
+            border: 2px solid #f3f4f6;
+            border-top: 2px solid #3b82f6;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Authentication Check -->
+    <div id="auth-check" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Admin Access</h2>
+            <form id="auth-form">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700 mb-2">Username</label>
+                    <input type="text" id="username" name="username" required 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                    <input type="password" id="password" name="password" required 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+                    Access Dashboard
+                </button>
+            </form>
+            <div id="auth-error" class="mt-4 text-red-600 text-sm hidden"></div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" class="hidden">
+        <div class="flex">
+            <!-- Sidebar -->
+            <div class="admin-sidebar w-64 text-white">
+                <div class="p-6">
+                    <div class="flex items-center mb-8">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mr-3">
+                            <span class="text-blue-600 font-bold text-lg">IT</span>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold">IT-ERA Admin</h1>
+                            <p class="text-blue-200 text-sm">Dashboard</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Menu -->
+                    <nav class="space-y-2">
+                        <a href="#dashboard-overview" class="nav-item active flex items-center px-4 py-3 rounded-lg" data-section="dashboard-overview">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v6H8V5z"></path>
+                            </svg>
+                            Dashboard
+                        </a>
+                        
+                        <div class="pt-4">
+                            <h3 class="text-blue-200 text-xs uppercase tracking-wider font-semibold mb-2 px-4">Blog Management</h3>
+                            <a href="#blog-articles" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="blog-articles">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                Articles
+                            </a>
+                            <a href="#blog-create" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="blog-create">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                                Create Article
+                            </a>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <h3 class="text-blue-200 text-xs uppercase tracking-wider font-semibold mb-2 px-4">SEO Tools</h3>
+                            <a href="#seo-health" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="seo-health">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                                SEO Health
+                            </a>
+                            <a href="#keyword-analyzer" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="keyword-analyzer">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                                Keyword Analyzer
+                            </a>
+                            <a href="#page-speed" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="page-speed">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                                Page Speed
+                            </a>
+                            <a href="#broken-links" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="broken-links">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                                </svg>
+                                Broken Links
+                            </a>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <h3 class="text-blue-200 text-xs uppercase tracking-wider font-semibold mb-2 px-4">Sitemap Management</h3>
+                            <a href="#sitemap-generator" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="sitemap-generator">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                                </svg>
+                                Generate Sitemap
+                            </a>
+                            <a href="#sitemap-validator" class="nav-item flex items-center px-4 py-3 rounded-lg" data-section="sitemap-validator">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Validate Sitemap
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                
+                <!-- User Info -->
+                <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-blue-400">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-blue-800 font-semibold text-sm" id="user-initial">A</span>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium" id="user-name">Admin User</p>
+                            <p class="text-xs text-blue-200">Administrator</p>
+                        </div>
+                        <button id="logout-btn" class="text-blue-200 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="admin-content flex-1 p-8">
+                <!-- Dashboard Overview Section -->
+                <div id="dashboard-overview-content" class="content-section">
+                    <div class="mb-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-2">Dashboard Overview</h2>
+                        <p class="text-gray-600">Welcome to the IT-ERA admin dashboard. Monitor your website performance and manage content.</p>
+                    </div>
+                    
+                    <!-- Stats Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <div class="admin-card p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Total Articles</p>
+                                    <p class="text-2xl font-bold text-gray-900" id="total-articles">-</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-card p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">SEO Score</p>
+                                    <p class="text-2xl font-bold text-gray-900" id="seo-score">-</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-card p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Page Speed</p>
+                                    <p class="text-2xl font-bold text-gray-900" id="page-speed-score">-</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-card p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Broken Links</p>
+                                    <p class="text-2xl font-bold text-gray-900" id="broken-links-count">-</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Activity -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="admin-card p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Articles</h3>
+                            <div id="recent-articles" class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <div class="loading-spinner"></div>
+                                    <span class="text-gray-500">Loading articles...</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-card p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">System Status</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">Website Status</span>
+                                    <span class="flex items-center">
+                                        <span class="status-indicator status-online"></span>
+                                        <span class="text-green-600 font-medium">Online</span>
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">Blog System</span>
+                                    <span class="flex items-center">
+                                        <span class="status-indicator status-online"></span>
+                                        <span class="text-green-600 font-medium">Active</span>
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">SEO Tools</span>
+                                    <span class="flex items-center">
+                                        <span class="status-indicator status-online"></span>
+                                        <span class="text-green-600 font-medium">Ready</span>
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">Sitemap</span>
+                                    <span class="flex items-center">
+                                        <span class="status-indicator status-online"></span>
+                                        <span class="text-green-600 font-medium">Updated</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other content sections will be loaded dynamically -->
+                <div id="blog-articles-content" class="content-section hidden"></div>
+                <div id="blog-create-content" class="content-section hidden"></div>
+                <div id="seo-health-content" class="content-section hidden"></div>
+                <div id="keyword-analyzer-content" class="content-section hidden"></div>
+                <div id="page-speed-content" class="content-section hidden"></div>
+                <div id="broken-links-content" class="content-section hidden"></div>
+                <div id="sitemap-generator-content" class="content-section hidden"></div>
+                <div id="sitemap-validator-content" class="content-section hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div id="notification-container" class="fixed top-4 right-4 z-50"></div>
+
+    <!-- Scripts -->
+    <script src="js/admin-auth.js"></script>
+    <script src="js/admin-dashboard.js"></script>
+    <script src="js/admin-blog.js"></script>
+    <script src="js/admin-seo.js"></script>
+    <script src="js/admin-sitemap.js"></script>
+</body>
+</html>

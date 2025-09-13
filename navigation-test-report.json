@@ -1,0 +1,311 @@
+{
+  "timestamp": "2025-09-13T06:21:15.923Z",
+  "totalPages": 14,
+  "passedPages": 0,
+  "failedPages": 14,
+  "results": [
+    {
+      "page": "index.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/index.html",
+      "passed": false,
+      "issues": [
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Components loader system not detected"
+      ],
+      "checks": {
+        "headerLoaded": true,
+        "navigationLinks": true,
+        "mobileMenu": true,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": false
+      }
+    },
+    {
+      "page": "servizi.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/servizi.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "contatti.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/contatti.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "settori/commercialisti.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/settori/commercialisti.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "settori/pmi-startup.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/settori/pmi-startup.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "settori/studi-legali.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/settori/studi-legali.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "settori/industria-40.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/settori/industria-40.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "settori/retail-gdo.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/settori/retail-gdo.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": true,
+        "chatbotLoaded": true,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "settori/studi-medici/index.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/settori/studi-medici/index.html",
+      "passed": false,
+      "issues": [
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Footer component not found",
+        "Chatbot component not found",
+        "Components loader system not detected",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": true,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": false,
+        "chatbotLoaded": false,
+        "componentsSystem": false
+      }
+    },
+    {
+      "page": "landing/assistenza-emergenza.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/landing/assistenza-emergenza.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Footer component not found",
+        "Chatbot component not found",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": false,
+        "chatbotLoaded": false,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "landing/cloud-migration.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/landing/cloud-migration.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Footer component not found",
+        "Chatbot component not found",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": false,
+        "chatbotLoaded": false,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "landing/digitalizzazione-pmi.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/landing/digitalizzazione-pmi.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Footer component not found",
+        "Chatbot component not found",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": false,
+        "chatbotLoaded": false,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "landing/sicurezza-informatica.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/landing/sicurezza-informatica.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Footer component not found",
+        "Chatbot component not found",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": false,
+        "chatbotLoaded": false,
+        "componentsSystem": true
+      }
+    },
+    {
+      "page": "landing/software-commercialisti.html",
+      "url": "file:///Users/andreapanzeri/progetti/IT-ERA/landing/software-commercialisti.html",
+      "passed": false,
+      "issues": [
+        "Header component not found",
+        "Insufficient navigation links found: 0",
+        "Mobile menu components not found",
+        "Dropdown menu check failed: SyntaxError: Failed to execute 'querySelector' on 'Document': 'button:has-text(\"Settori\"), .group button' is not a valid selector.",
+        "Footer component not found",
+        "Chatbot component not found",
+        "Mobile menu button not visible on mobile viewport"
+      ],
+      "checks": {
+        "headerLoaded": false,
+        "navigationLinks": false,
+        "mobileMenu": false,
+        "dropdownMenu": false,
+        "footerLoaded": false,
+        "chatbotLoaded": false,
+        "componentsSystem": true
+      }
+    }
+  ]
+}

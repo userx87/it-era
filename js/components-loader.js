@@ -19,12 +19,15 @@ class ITERAComponentLoader {
     // Get base path for components
     getBasePath() {
         const currentPath = window.location.pathname;
-        
-        // If we're in a subdirectory, adjust the path
-        if (currentPath.includes('/servizi/') || currentPath.includes('/settori/')) {
-            return '../';
+
+        // Count directory depth to determine relative path
+        const pathParts = currentPath.split('/').filter(part => part && part !== 'index.html');
+        const depth = pathParts.length - 1; // Subtract 1 for the file itself
+
+        if (depth > 0) {
+            return '../'.repeat(depth);
         }
-        
+
         return './';
     }
     
@@ -220,7 +223,7 @@ componentLoader.registerComponent('footer', {
 componentLoader.registerComponent('chatbot', {
     selector: '#chatbot-placeholder',
     templatePath: 'components/chatbot.html',
-    jsPath: 'js/chatbot.js'
+    jsPath: 'js/smart-chatbot.js'
 });
 
 componentLoader.registerComponent('contact-form', {
@@ -260,8 +263,50 @@ function initializeMobileMenu() {
                 icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
             }
         });
-        
+
         console.log('📱 Mobile menu initialized');
+    }
+}
+
+// ============================================
+// CHATBOT FUNCTIONALITY
+// ============================================
+
+function initializeChatbot() {
+    const chatbotButton = document.getElementById('chatbot-button');
+    const chatbotPopup = document.getElementById('chatbot-popup');
+    const chatbotClose = document.getElementById('chatbot-close');
+
+    if (chatbotButton && chatbotPopup) {
+        chatbotButton.addEventListener('click', function() {
+            const isHidden = chatbotPopup.classList.contains('hidden');
+
+            if (isHidden) {
+                chatbotPopup.classList.remove('hidden');
+                setTimeout(() => {
+                    chatbotPopup.classList.remove('scale-95', 'opacity-0');
+                    chatbotPopup.classList.add('scale-100', 'opacity-100');
+                }, 10);
+            } else {
+                chatbotPopup.classList.add('scale-95', 'opacity-0');
+                chatbotPopup.classList.remove('scale-100', 'opacity-100');
+                setTimeout(() => {
+                    chatbotPopup.classList.add('hidden');
+                }, 300);
+            }
+        });
+
+        if (chatbotClose) {
+            chatbotClose.addEventListener('click', function() {
+                chatbotPopup.classList.add('scale-95', 'opacity-0');
+                chatbotPopup.classList.remove('scale-100', 'opacity-100');
+                setTimeout(() => {
+                    chatbotPopup.classList.add('hidden');
+                }, 300);
+            });
+        }
+
+        console.log('💬 Chatbot initialized');
     }
 }
 
@@ -276,9 +321,10 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Load components automatically
     await componentLoader.autoLoadComponents();
     
-    // Initialize mobile menu after header is loaded
+    // Initialize components after they are loaded
     setTimeout(() => {
         initializeMobileMenu();
+        initializeChatbot();
         componentLoader.updateNavigationState();
     }, 100);
     

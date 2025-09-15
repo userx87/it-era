@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reindirizzamento - Contatti IT-ERA</title>
+    <meta http-equiv="refresh" content="0; url=/contatti.html">
+    <link rel="canonical" href="https://it-era.it/contatti.html">
+    <script>
+        // Redirect immediato
+        window.location.replace('/contatti.html');
+    </script>
+</head>
+<body>
+    <p>Reindirizzamento alla pagina contatti...</p>
+    <p><a href="/contatti.html">Clicca qui se non vieni reindirizzato automaticamente</a></p>
+</body>
+</html>

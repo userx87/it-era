@@ -30,10 +30,8 @@ https://www.it-era.it/* https://it-era.it/:splat 301!
 /it-studi-medici-lombardia.html /settori/studi-medici.html 301
 
 # Contact redirects
-/contact https://it-era.it/contatti.html 301
-/telefono https://it-era.it/contatti.html 301
-/pages/contact /contatti.html 301
-/pages/contatto /contatti.html 301
+/contact /contatti.html 301
+/telefono /contatti.html 301
 
 # Legacy URL redirects (if any)
 /old-assistenza-it/* /assistenza-it-:city.html 301
@@ -51,11 +49,8 @@ https://www.it-era.it/* https://it-era.it/:splat 301!
 /assistenza-it-sondrio.html /servizi-it/assistenza-informatica-ufficio-sondrio.html 301
 /assistenza-it-varese.html /servizi-it/assistenza-informatica-ufficio-varese.html 301
 
-# Contact page redirects - fix common variations
-/pages/contatti/ /contatti.html 301
-/pages/contatti.html /contatti.html 301
-/contatti /contatti.html 301
-/pages/contatti /pages/contatti/ 301
+# Contact page redirects - struttura semplificata
+/contatti/ /contatti.html 301
 
 # API routes
 /api/* /.netlify/functions/:splat 200

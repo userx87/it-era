@@ -1,13 +1,9 @@
 # IT-ERA Redirects
 RewriteEngine On
 
-# Redirect /pages/contatti to /contatti.html
-RewriteRule ^pages/contatti/?$ /contatti.html [R=301,L]
-RewriteRule ^pages/contatti\.html$ /contatti.html [R=301,L]
-RewriteRule ^pages/contact/?$ /contatti.html [R=301,L]
-
-# Redirect other common variations
+# Redirect contatti variations to main page
 RewriteRule ^contatti/?$ /contatti.html [R=301,L]
+RewriteRule ^contact/?$ /contatti.html [R=301,L]
 
 # Redirect old service pages
 RewriteRule ^sicurezza-informatica-bergamo\.html$ /landing/sicurezza-informatica.html [R=301,L]

@@ -52,9 +52,10 @@ https://www.it-era.it/* https://it-era.it/:splat 301!
 /assistenza-it-varese.html /servizi-it/assistenza-informatica-ufficio-varese.html 301
 
 # Contact page redirects - fix common variations
-/pages/contatti /contatti.html 301
+/pages/contatti/ /contatti.html 301
 /pages/contatti.html /contatti.html 301
 /contatti /contatti.html 301
+/pages/contatti /pages/contatti/ 301
 
 # API routes
 /api/* /.netlify/functions/:splat 200

@@ -134,7 +134,7 @@ class ITERAResendIntegration {
             // Prepara payload per Resend
             const payload = this.preparePayload(data, formConfig, formId);
             
-            // Invia tramite Resend
+            // Invia tramite Resend con retry
             const result = await this.sendToResend(payload);
             
             if (result.success) {
@@ -403,45 +403,32 @@ Data: ${new Date().toLocaleString('it-IT')}
     /**
      * Invia i dati a Resend con retry logic
      */
-    async sendToResend(payload) {
+    async sendToResendWithRetry(payload) {
         let lastError;
-        
+
         for (let attempt = 1; attempt <= this.config.retryAttempts; attempt++) {
             try {
                 console.log(`📤 Sending to Resend (attempt ${attempt}/${this.config.retryAttempts})`);
-                
-                const response = await fetch(this.config.apiEndpoints[0], {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-Requested-With': 'XMLHttpRequest'
-                    },
-                    body: JSON.stringify(payload),
-                    signal: AbortSignal.timeout(this.config.timeout)
-                });
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+
+                // Usa il metodo principale sendToResend
+                const result = await this.sendToResend(payload);
+
+                if (result.success) {
+                    return result;
+                } else {
+                    throw new Error(result.error || 'Resend API failed');
                 }
-                
-                const result = await response.json();
-                console.log('✅ Resend response:', result);
-                
-                return {
-                    success: true,
-                    data: result
-                };
-                
+
             } catch (error) {
                 lastError = error;
                 console.warn(`⚠️ Attempt ${attempt} failed:`, error.message);
-                
+
                 if (attempt < this.config.retryAttempts) {
                     await this.delay(this.config.retryDelay * attempt);
                 }
             }
         }
-        
+
         return {
             success: false,
             error: lastError.message

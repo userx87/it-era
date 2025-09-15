@@ -1,0 +1,22 @@
+# IT-ERA Redirects
+RewriteEngine On
+
+# Redirect /pages/contatti to /contatti.html
+RewriteRule ^pages/contatti/?$ /contatti.html [R=301,L]
+RewriteRule ^pages/contatti\.html$ /contatti.html [R=301,L]
+RewriteRule ^pages/contact/?$ /contatti.html [R=301,L]
+
+# Redirect other common variations
+RewriteRule ^contatti/?$ /contatti.html [R=301,L]
+
+# Redirect old service pages
+RewriteRule ^sicurezza-informatica-bergamo\.html$ /landing/sicurezza-informatica.html [R=301,L]
+RewriteRule ^cloud-storage-milano\.html$ /landing/cloud-migration.html [R=301,L]
+
+# Province redirects
+RewriteRule ^assistenza-it-brescia\.html$ /servizi-it/assistenza-informatica-ufficio-brescia.html [R=301,L]
+RewriteRule ^assistenza-it-cremona\.html$ /servizi-it/assistenza-informatica-ufficio-cremona.html [R=301,L]
+RewriteRule ^assistenza-it-mantova\.html$ /servizi-it/assistenza-informatica-ufficio-mantova.html [R=301,L]
+RewriteRule ^assistenza-it-pavia\.html$ /servizi-it/assistenza-informatica-ufficio-pavia.html [R=301,L]
+RewriteRule ^assistenza-it-sondrio\.html$ /servizi-it/assistenza-informatica-ufficio-sondrio.html [R=301,L]
+RewriteRule ^assistenza-it-varese\.html$ /servizi-it/assistenza-informatica-ufficio-varese.html [R=301,L]

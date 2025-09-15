@@ -172,7 +172,8 @@ class ITERAComponentLoader {
         }
         
         // Always load common components
-        componentsToLoad.push('footer'); // chatbot disabled - using new modular system
+        componentsToLoad.push('footer');
+        componentsToLoad.push('chatbot'); // New unified chatbot system
         
         await this.loadComponents(componentsToLoad);
     }
@@ -221,9 +222,8 @@ componentLoader.registerComponent('footer', {
 });
 
 componentLoader.registerComponent('chatbot', {
-    selector: '#chatbot-placeholder',
-    templatePath: 'components/chatbot.html',
-    jsPath: 'js/smart-chatbot.js'
+    selector: 'body', // Chatbot si auto-inserisce
+    jsPath: 'js/itera-chatbot-system.js'
 });
 
 componentLoader.registerComponent('contact-form', {

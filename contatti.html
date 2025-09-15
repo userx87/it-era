@@ -3,493 +3,571 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti - IT-ERA | IT-ERA</title>
-    <meta name="description" content="Contatta IT-ERA per assistenza informatica professionale. Siamo presenti in tutta la Lombardia.">
-    <meta name="keywords" content="contatti, assistenza informatica, IT support, Lombardia">
+    <title>Contatti IT-ERA | Assistenza Informatica Lombardia - 039 888 2041</title>
+    <meta name="description" content="Contatta IT-ERA per assistenza informatica in Lombardia. Emergenze 24/7, consulenza gratuita, supporto tecnico specializzato. Chiama 039 888 2041.">
+    <meta name="keywords" content="contatti IT-ERA, assistenza informatica lombardia, emergenza computer, supporto tecnico, consulenza IT">
+    
     <!-- Open Graph -->
-    <meta property="og:title" content="Contatti - IT-ERA | IT-ERA">
-    <meta property="og:description" content="Contatta IT-ERA per assistenza informatica professionale. Siamo presenti in tutta la Lombardia.">
+    <meta property="og:title" content="Contatti IT-ERA | Assistenza Informatica Lombardia">
+    <meta property="og:description" content="Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita in tutta la Lombardia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://it-era.it/contatti.html">
-    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://it-era.it/contatti.html">
+    <meta property="og:image" content="https://it-era.it/images/og-contatti.jpg">
+    
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contatti - IT-ERA | IT-ERA">
-    <meta name="twitter:description" content="Contatta IT-ERA per assistenza informatica professionale. Siamo presenti in tutta la Lombardia.">
-    <meta name="twitter:image" content="/images/og-image.jpg">
+    <meta name="twitter:title" content="Contatti IT-ERA | Assistenza Informatica Lombardia">
+    <meta name="twitter:description" content="Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita.">
+    <meta name="twitter:image" content="https://it-era.it/images/og-contatti.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://it-era.it/contatti.html">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <!-- ============================================
-         ANALYTICS & TRACKING (HEAD SECTION)
-         ============================================ -->
-    
-    <!-- Google Tag Manager (Place immediately after opening <head> tag) -->
-    <!-- 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-    -->
-    
-    <!-- Google Analytics 4 (Alternative to GTM) -->
-    <!-- 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID', {
-        'page_title': 'IT-ERA Page',
-        'page_location': window.location.href,
-        'content_group1': 'Website'
-      });
-    </script>
-    -->
     
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="/css/it-era-design-system.css" rel="stylesheet">
-    <link href="/css/components-separated.css" rel="stylesheet">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/css/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/css/it-era-tailwind.css">
+    <link rel="stylesheet" href="/css/it-era-design-system.css">
+    <link rel="stylesheet" href="/css/it-era-enhanced.css">
+    <link rel="stylesheet" href="/css/components-separated.css">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
     <!-- Components Loader -->
     <script src="/js/components-loader.js"></script>
-
+    
     <!-- Analytics & Tracking -->
     <script src="/js/analytics-tracking.js"></script>
-
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Quali servizi IT offrite?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Offriamo assistenza tecnica completa, sicurezza informatica, cloud computing, backup e disaster recovery, consulenza IT e supporto Microsoft 365."
-                }
+        "@type": "ContactPage",
+        "name": "Contatti IT-ERA",
+        "description": "Contatta IT-ERA per assistenza informatica professionale in Lombardia",
+        "url": "https://it-era.it/contatti.html",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "IT-ERA",
+            "description": "Assistenza informatica professionale per aziende e privati",
+            "telephone": "+39-039-888-2041",
+            "email": "info@bulltech.it",
+            "url": "https://it-era.it",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bergamo",
+                "addressRegion": "Lombardia",
+                "addressCountry": "IT"
             },
-            {
-                "@type": "Question",
-                "name": "In quali zone operate?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Operiamo in tutta la Lombardia, con focus su Milano, Bergamo, Monza, Vimercate e provincia."
-                }
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "45.6983",
+                "longitude": "9.6773"
             },
-            {
-                "@type": "Question",
-                "name": "Offrite supporto 24/7?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sì, offriamo supporto IT 24/7 per emergenze e assistenza tecnica urgente."
-                }
+            "openingHours": [
+                "Mo-Fr 08:00-18:00",
+                "Sa 09:00-13:00"
+            ],
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "45.6983",
+                    "longitude": "9.6773"
+                },
+                "geoRadius": "100000"
             },
-            {
-                "@type": "Question",
-                "name": "Come posso richiedere un preventivo?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Puoi contattarci al 039 888 2041, via email a info@it-era.it o compilando il form di contatto sul nostro sito."
-                }
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Servizi IT Professionali",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Assistenza Informatica Emergenza",
+                            "description": "Supporto tecnico urgente 24/7"
+                        }
+                    }
+                ]
             }
-        ]
+        }
     }
     </script>
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    <link rel="stylesheet" href="/css/it-era-enhanced.css">
 </head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <!-- 
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    -->
-    
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+<body class="bg-white font-sans">
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
 
-    <!-- Header Component Placeholder -->
-    <div id="header-placeholder">
-        <!-- Header will be loaded dynamically by components-loader.js -->
-        <div class="h-20 bg-white border-b border-neutral-200 flex items-center justify-center">
-            <div class="flex items-center space-x-3">
-                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <span class="text-white font-bold text-sm">IT</span>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center">
+                <div class="bg-blue-800 bg-opacity-50 rounded-lg p-4 mb-6 inline-block">
+                    <span class="text-cyan-300 font-bold text-lg">📞 CONTATTI DIRETTI</span>
                 </div>
-                <div class="text-neutral-500">Loading navigation...</div>
+                
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6">
+                    Contatta <span class="text-cyan-300">IT-ERA</span>
+                </h1>
+                
+                <p class="text-xl lg:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                    Assistenza informatica professionale in tutta la Lombardia. 
+                    Emergenze 24/7, consulenza gratuita, supporto specializzato.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="tel:+390398882041" 
+                       class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-phone mr-3"></i>
+                        Emergenza: 039 888 2041
+                    </a>
+                    <a href="mailto:info@bulltech.it" 
+                       class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-all duration-300">
+                        <i class="fas fa-envelope mr-3"></i>
+                        info@bulltech.it
+                    </a>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-8 text-center justify-center">
+                    <div>
+                        <div class="text-3xl font-bold text-cyan-300">24/7</div>
+                        <div class="text-blue-100">Emergenze</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-cyan-300">15 min</div>
+                        <div class="text-blue-100">Tempo Risposta</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-cyan-300">100%</div>
+                        <div class="text-blue-100">Lombardia</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Main Content -->
-    <main id="main-content" role="main">
-        <div class="pt-20">
-            <!-- Hero Section -->
-            <section class="bg-gradient-to-br from-brand-50 to-white py-16">
-                <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-                        Contatta IT-ERA
-                    </h1>
-                    <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
-                        Siamo qui per aiutarti con le tue esigenze IT. Contattaci per una consulenza gratuita
-                        e scopri come possiamo far crescere la tua azienda.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:+390398882041" class="btn-primary">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                            </svg>
-                            Chiama Ora: 039 888 2041
-                        </a>
-                        <a href="mailto:info@it-era.it" class="btn-secondary">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            Invia Email
-                        </a>
-                    </div>
+    </section>
+
+    <!-- Emergency Contact Section -->
+    <section class="py-16 bg-red-50 border-l-8 border-red-500">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="bg-red-100 text-red-800 rounded-lg p-4 mb-6 inline-block">
+                    <span class="font-bold text-lg">🚨 EMERGENZA IT 24/7</span>
                 </div>
-            </section>
-
-            <!-- Contact Information & Form Section -->
-            <section class="py-20 bg-white">
-                <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                        <!-- Contact Information -->
-                        <div>
-                            <h2 class="text-3xl font-bold text-neutral-900 mb-8">
-                                Informazioni di Contatto
-                            </h2>
-
-                            <!-- Emergency Contact Card -->
-                            <div class="card p-8 mb-8 border-danger-200 bg-danger-50">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-3 h-3 bg-danger-500 rounded-full mr-3 animate-pulse"></div>
-                                    <h3 class="text-xl font-bold text-danger-800">Emergenza IT 24/7</h3>
-                                </div>
-                                <p class="text-danger-700 mb-4">
-                                    Problemi critici? Il nostro team è sempre disponibile per emergenze IT.
-                                </p>
-                                <a href="tel:+390398882041" class="inline-flex items-center text-danger-600 font-bold text-xl hover:text-danger-700 transition-colors">
-                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                    </svg>
-                                    039 888 2041
-                                </a>
-                            </div>
-
-                            <!-- Contact Details -->
-                            <div class="space-y-6">
-                                <div class="flex items-start">
-                                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                        <svg class="w-6 h-6 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-neutral-900 mb-1">Telefono</h4>
-                                        <a href="tel:+390398882041" class="text-brand-600 hover:text-brand-700 font-medium transition-colors">
-                                            039 888 2041
-                                        </a>
-                                        <p class="text-sm text-neutral-600 mt-1">Chiamata gratuita</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start">
-                                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-neutral-900 mb-1">Email</h4>
-                                        <a href="mailto:info@it-era.it" class="text-brand-600 hover:text-brand-700 font-medium transition-colors">
-                                            info@it-era.it
-                                        </a>
-                                        <p class="text-sm text-neutral-600 mt-1">Risposta in 24h</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start">
-                                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-neutral-900 mb-1">Sede Operativa</h4>
-                                        <p class="text-neutral-700">Vimercate, Lombardia</p>
-                                        <p class="text-sm text-neutral-600 mt-1">Servizio in tutta la regione</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start">
-                                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-neutral-900 mb-1">Orari di Lavoro</h4>
-                                        <p class="text-neutral-700">Lun-Ven: 9:00-18:00</p>
-                                        <p class="text-sm text-success-600 font-medium mt-1">Emergenze: 24/7</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Contact Form -->
-                        <div>
-                            <div class="card p-8">
-                                <h2 class="text-3xl font-bold text-neutral-900 mb-2">
-                                    Richiedi Informazioni
-                                </h2>
-                                <p class="text-neutral-600 mb-8">
-                                    Compila il form per ricevere una consulenza gratuita personalizzata.
-                                </p>
-
-                                <form class="space-y-6" aria-label="Form di contatto IT-ERA" data-resend="true" id="contact-form">
-                                    <div>
-                                        <label for="nome" class="label-it">Nome Completo *</label>
-                                        <input type="text" id="nome" name="nome" required aria-required="true"
-                                               aria-describedby="nome-help" class="input-it"
-                                               placeholder="Il tuo nome e cognome">
-                                        <div id="nome-help" class="sr-only">Inserisci il tuo nome completo</div>
-                                    </div>
-
-                                    <div>
-                                        <label for="email" class="label-it">Email *</label>
-                                        <input type="email" id="email" name="email" required aria-required="true"
-                                               aria-describedby="email-help" class="input-it"
-                                               placeholder="nome@azienda.it">
-                                        <div id="email-help" class="sr-only">Inserisci un indirizzo email valido</div>
-                                    </div>
-
-                                    <div>
-                                        <label for="telefono" class="label-it">Telefono</label>
-                                        <input type="tel" id="telefono" name="telefono"
-                                               aria-describedby="telefono-help" class="input-it"
-                                               placeholder="+39 123 456 7890">
-                                        <div id="telefono-help" class="sr-only">Inserisci il tuo numero di telefono (opzionale)</div>
-                                    </div>
-
-                                    <div>
-                                        <label for="azienda" class="label-it">Azienda</label>
-                                        <input type="text" id="azienda" name="azienda" class="input-it"
-                                               placeholder="Nome della tua azienda">
-                                    </div>
-
-                                    <div>
-                                        <label for="servizio" class="label-it">Servizio di Interesse</label>
-                                        <select id="servizio" name="servizio" class="input-it">
-                                            <option value="">Seleziona un servizio</option>
-                                            <option value="assistenza-tecnica">Assistenza Tecnica</option>
-                                            <option value="sicurezza-informatica">Sicurezza Informatica</option>
-                                            <option value="cloud-computing">Cloud Computing</option>
-                                            <option value="consulenza-it">Consulenza IT</option>
-                                            <option value="backup-recovery">Backup & Recovery</option>
-                                            <option value="altro">Altro</option>
-                                        </select>
-                                    </div>
-
-                                    <div>
-                                        <label for="messaggio" class="label-it">Messaggio *</label>
-                                        <textarea id="messaggio" name="messaggio" required aria-required="true"
-                                                  aria-describedby="messaggio-help" rows="4" class="textarea-it"
-                                                  placeholder="Descrivi la tua richiesta di assistenza IT..."></textarea>
-                                        <div id="messaggio-help" class="sr-only">Descrivi la tua richiesta di assistenza IT</div>
-                                    </div>
-
-                                    <div class="flex items-start">
-                                        <input type="checkbox" id="privacy" name="privacy" required
-                                               class="mt-1 mr-3 h-4 w-4 text-brand-600 focus:ring-brand-500 border-gray-300 rounded">
-                                        <label for="privacy" class="text-sm text-neutral-700">
-                                            Accetto la <a href="/privacy.html" class="text-brand-600 hover:text-brand-700 underline">Privacy Policy</a>
-                                            e autorizzo il trattamento dei miei dati personali. *
-                                        </label>
-                                    </div>
-
-                                    <button type="submit" aria-label="Invia il form di contatto a IT-ERA"
-                                            class="btn-primary w-full">
-                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-                                        </svg>
-                                        Invia Richiesta
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Hai un'emergenza informatica?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Computer non si accende, server down, virus, perdita dati? 
+                    Ti chiamiamo entro 15 minuti e arriviamo in 2 ore.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Phone Emergency -->
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center border-2 border-red-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-xl"></i>
                     </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Chiamata Immediata</h3>
+                    <p class="text-gray-600 mb-4">Supporto tecnico diretto</p>
+                    <a href="tel:+390398882041" class="text-2xl font-bold text-red-600 hover:text-red-700">039 888 2041</a>
+                    <p class="text-sm text-gray-500 mt-2">Attivo 24 ore su 24</p>
                 </div>
-            </section>
 
-            <!-- Trust Indicators Section -->
-            <section class="py-16 bg-neutral-50">
-                <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl font-bold text-neutral-900 mb-4">
-                            Perché Scegliere IT-ERA
-                        </h2>
-                        <p class="text-xl text-neutral-600">
-                            La fiducia di oltre 500 aziende in Lombardia
-                        </p>
+                <!-- WhatsApp Emergency -->
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center border-2 border-green-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-white text-xl"></i>
                     </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-success-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8 text-success-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Intervento in 2 Ore</h3>
-                            <p class="text-neutral-600">Risolviamo i tuoi problemi IT rapidamente</p>
-                        </div>
-
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Sicurezza Garantita</h3>
-                            <p class="text-neutral-600">Protezione completa dei tuoi dati aziendali</p>
-                        </div>
-
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-warning-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <svg class="w-8 h-8 text-warning-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-neutral-900 mb-2">Supporto 24/7</h3>
-                            <p class="text-neutral-600">Sempre disponibili per le tue emergenze</p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">WhatsApp Urgente</h3>
+                    <p class="text-gray-600 mb-4">Messaggio con foto problema</p>
+                    <a href="https://wa.me/390398882041" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
+                        Scrivi Ora
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">Risposta immediata</p>
                 </div>
-            </section>
+
+                <!-- Email Emergency -->
+                <div class="bg-white rounded-xl p-8 shadow-lg text-center border-2 border-blue-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Email Urgente</h3>
+                    <p class="text-gray-600 mb-4">Descrizione dettagliata</p>
+                    <a href="mailto:info@bulltech.it" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                        Invia Email
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">Risposta in 15 minuti</p>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Richiedi Consulenza Gratuita
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Compila il form per ricevere una consulenza personalizzata. 
+                    Ti contatteremo entro 2 ore per analizzare le tue esigenze.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+                <form id="contact-form" data-resend="true" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome *</label>
+                            <input type="text" id="full_name" name="full_name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefono *</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Azienda (opzionale)</label>
+                            <input type="text" id="company" name="company" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="service_type" class="block text-sm font-medium text-gray-700 mb-2">Tipo di Servizio</label>
+                        <select id="service_type" name="service_type" 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Seleziona un servizio...</option>
+                            <option value="emergenza">🚨 Emergenza Informatica</option>
+                            <option value="riparazione">🔧 Riparazione Computer</option>
+                            <option value="assistenza_ufficio">💼 Assistenza Ufficio</option>
+                            <option value="server">🖥️ Supporto Server</option>
+                            <option value="rete">🌐 Configurazione Rete</option>
+                            <option value="backup">🛡️ Backup e Sicurezza</option>
+                            <option value="consulenza">💡 Consulenza IT</option>
+                            <option value="altro">📋 Altro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Descrizione Problema/Esigenza *</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  placeholder="Descrivi il tuo problema o le tue esigenze informatiche..."
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="urgency" class="block text-sm font-medium text-gray-700 mb-2">Livello di Urgenza</label>
+                        <select id="urgency" name="urgency" 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="normale">📅 Normale (entro 48h)</option>
+                            <option value="alta">⚡ Alta (entro 24h)</option>
+                            <option value="critica">🚨 Critica (entro 2h)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-4 px-8 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Invia Richiesta di Consulenza
+                    </button>
+                    
+                    <p class="text-sm text-gray-600 text-center">
+                        <i class="fas fa-shield-alt mr-1"></i>
+                        I tuoi dati sono protetti e non verranno mai condivisi con terzi
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Information -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    I Nostri Uffici in Lombardia
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Siamo presenti in tutta la Lombardia con tecnici specializzati
+                    pronti ad intervenire rapidamente presso la tua sede.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bergamo HQ -->
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-building text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Sede Principale - Bergamo</h3>
+                    <div class="space-y-2 text-gray-600">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>Bergamo e Provincia</p>
+                        <p><i class="fas fa-phone mr-2 text-blue-500"></i>039 888 2041</p>
+                        <p><i class="fas fa-envelope mr-2 text-blue-500"></i>info@bulltech.it</p>
+                        <p><i class="fas fa-clock mr-2 text-blue-500"></i>Lun-Ven: 8:00-18:00</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Sede Principale</span>
+                    </div>
+                </div>
+
+                <!-- Milano -->
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-city text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Milano e Hinterland</h3>
+                    <div class="space-y-2 text-gray-600">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-green-500"></i>Milano, Monza, Brianza</p>
+                        <p><i class="fas fa-phone mr-2 text-green-500"></i>039 888 2041</p>
+                        <p><i class="fas fa-users mr-2 text-green-500"></i>Team dedicato</p>
+                        <p><i class="fas fa-clock mr-2 text-green-500"></i>Emergenze 24/7</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Copertura Estesa</span>
+                    </div>
+                </div>
+
+                <!-- Altre Province -->
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-map text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Tutta la Lombardia</h3>
+                    <div class="space-y-2 text-gray-600">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-purple-500"></i>Brescia, Como, Varese, Pavia</p>
+                        <p><i class="fas fa-phone mr-2 text-purple-500"></i>039 888 2041</p>
+                        <p><i class="fas fa-car mr-2 text-purple-500"></i>Interventi on-site</p>
+                        <p><i class="fas fa-clock mr-2 text-purple-500"></i>Tempi di arrivo: 1-3h</p>
+                    </div>
+                    <div class="mt-4">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">Servizio Completo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Domande Frequenti
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Le risposte alle domande più comuni sui nostri servizi
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                        Quanto tempo ci mettete ad arrivare per un'emergenza?
+                    </h3>
+                    <p class="text-gray-600">
+                        Per le emergenze critiche arriviamo entro 2 ore in tutta la Lombardia.
+                        Ti chiamiamo entro 15 minuti per confermare l'intervento e fornirti un ETA preciso.
+                    </p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                        Quanto costa una consulenza?
+                    </h3>
+                    <p class="text-gray-600">
+                        La prima consulenza è sempre gratuita. Ti forniamo un preventivo dettagliato
+                        prima di iniziare qualsiasi lavoro, senza sorprese.
+                    </p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                        Offrite garanzia sui vostri interventi?
+                    </h3>
+                    <p class="text-gray-600">
+                        Sì, tutti i nostri interventi sono coperti da garanzia di 6 mesi.
+                        Se il problema si ripresenta, interveniamo gratuitamente.
+                    </p>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                        Lavorate anche con le aziende?
+                    </h3>
+                    <p class="text-gray-600">
+                        Certamente! Offriamo servizi specializzati per aziende, uffici e studi professionali
+                        con contratti di assistenza personalizzati e SLA garantiti.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Placeholder -->
-    <div id="footer-placeholder">
-        <!-- Footer will be loaded dynamically -->
-        <footer class="bg-neutral-900 text-white py-8">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                <p class="text-neutral-400">Footer loading...</p>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Chatbot Placeholder -->
-    <div id="chatbot-placeholder">
-        <!-- Chatbot will be loaded dynamically -->
-    </div>
-    <!-- Modern JavaScript -->
-    <script>
-    // Modern IT-ERA Contact Page Interactions
-    document.addEventListener('DOMContentLoaded', function() {
-        // Mobile menu and chatbot functionality is handled by components-loader.js
-
-        // Contact form enhancement
-        const contactForm = document.querySelector('form[aria-label="Form di contatto IT-ERA"]');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-
-                // Get form data
-                const formData = new FormData(this);
-                const data = Object.fromEntries(formData);
-
-                // Basic validation
-                if (!data.nome || !data.email || !data.messaggio || !data.privacy) {
-                    alert('Per favore compila tutti i campi obbligatori e accetta la privacy policy.');
-                    return;
-                }
-
-                // Show loading state
-                const submitButton = this.querySelector('button[type="submit"]');
-                const originalText = submitButton.innerHTML;
-                submitButton.innerHTML = '<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Invio in corso...';
-                submitButton.disabled = true;
-
-                // Simulate form submission (replace with actual endpoint)
-                setTimeout(() => {
-                    alert('Grazie per averci contattato! Ti risponderemo entro 24 ore.');
-                    this.reset();
-                    submitButton.innerHTML = originalText;
-                    submitButton.disabled = false;
-
-                    // Track form submission
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'form_submit', {
-                            'event_category': 'contact',
-                            'event_label': 'contact_form'
-                        });
-                    }
-                }, 2000);
-            });
-        }
-
-        // Phone number click tracking
-        document.querySelectorAll('a[href^="tel:"]').forEach(function(phoneLink) {
-            phoneLink.addEventListener('click', function() {
-                const phoneNumber = this.getAttribute('href').replace('tel:', '');
-                console.log('📞 Phone call initiated:', phoneNumber);
-
-                // Track to analytics if available
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'phone_call', {
-                        'phone_number': phoneNumber,
-                        'page_location': window.location.href
-                    });
-                }
-            });
-        });
-
-        // Email click tracking
-        document.querySelectorAll('a[href^="mailto:"]').forEach(function(emailLink) {
-            emailLink.addEventListener('click', function() {
-                const email = this.getAttribute('href').replace('mailto:', '');
-                console.log('📧 Email initiated:', email);
-
-                // Track to analytics if available
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'email_click', {
-                        'email_address': email,
-                        'page_location': window.location.href
-                    });
-                }
-            });
-        });
-
-        console.log('📞 IT-ERA Contact Page loaded successfully!');
-    });
-    </script>
+    <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/secure-config.js"></script>
+    <script src="/js/ai-config.js"></script>
+    <script src="/js/chat-widget-loader.js"></script>
     <script src="/js/resend-config.js"></script>
-    <script src="/js/components-loader.js"></script>
     <script src="/js/resend-integration.js"></script>
+    <script src="/js/advanced-lead-capture.js"></script>
     <script src="/js/analytics-tracking.js"></script>
 
+    <!-- Followup Systems -->
+    <script src="/js/email-templates.js"></script>
+    <script src="/js/followup-automation.js"></script>
+    <script src="/js/sms-followup.js"></script>
+    <script src="/js/call-followup.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track contact page view
+            if (window.ITERAAnalytics) {
+                window.ITERAAnalytics.trackPageView('Contatti IT-ERA');
+                window.ITERAAnalytics.trackEvent('contact_page_view', {
+                    page: 'contatti',
+                    source: 'direct'
+                });
+            }
+
+            // Enhanced contact form handling
+            const form = document.getElementById('contact-form');
+            if (form && window.ITERAResendIntegration) {
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+
+                    // Track contact form submission
+                    if (window.ITERAAnalytics) {
+                        const formData = new FormData(form);
+                        window.ITERAAnalytics.trackConversion('contact_form_submission', {
+                            service_type: formData.get('service_type'),
+                            urgency: formData.get('urgency'),
+                            has_company: !!formData.get('company'),
+                            source: 'contact_page'
+                        });
+                    }
+
+                    // Show loading state
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Invio in corso...';
+                    submitBtn.disabled = true;
+
+                    try {
+                        const formData = new FormData(form);
+                        const integration = window.ITERAResendIntegration;
+
+                        const payload = {
+                            full_name: formData.get('full_name'),
+                            email: formData.get('email'),
+                            phone: formData.get('phone'),
+                            company: formData.get('company'),
+                            service_type: formData.get('service_type'),
+                            message: formData.get('message'),
+                            urgency: formData.get('urgency'),
+                            pageUrl: window.location.href,
+                            source: 'contact_page'
+                        };
+
+                        integration.sendToResend(payload)
+                            .then(result => {
+                                if (result.success) {
+                                    let successMessage = '✅ RICHIESTA INVIATA! Ti contatteremo presto.';
+
+                                    if (payload.urgency === 'critica') {
+                                        successMessage = '🚨 EMERGENZA RICEVUTA! Ti chiamiamo entro 15 minuti.';
+                                    } else if (payload.urgency === 'alta') {
+                                        successMessage = '⚡ RICHIESTA URGENTE RICEVUTA! Ti contatteremo entro 2 ore.';
+                                    }
+
+                                    integration.showSuccessMessage(successMessage);
+                                    form.reset();
+                                } else {
+                                    throw new Error(result.error || 'Errore durante l\'invio');
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Contact form submission error:', error);
+                                integration.showErrorMessage('Si è verificato un errore. Ti preghiamo di chiamare direttamente il 039 888 2041.');
+                            })
+                            .finally(() => {
+                                submitBtn.innerHTML = originalText;
+                                submitBtn.disabled = false;
+                            });
+
+                    } catch (error) {
+                        console.error('Contact form error:', error);
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+
+            // Track phone clicks
+            document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.ITERAAnalytics) {
+                        window.ITERAAnalytics.trackEvent('phone_click', {
+                            source: 'contact_page',
+                            phone: '039 888 2041'
+                        });
+                    }
+                });
+            });
+
+            // Track email clicks
+            document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.ITERAAnalytics) {
+                        window.ITERAAnalytics.trackEvent('email_click', {
+                            source: 'contact_page',
+                            email: 'info@bulltech.it'
+                        });
+                    }
+                });
+            });
+
+            // Track WhatsApp clicks
+            document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.ITERAAnalytics) {
+                        window.ITERAAnalytics.trackEvent('whatsapp_click', {
+                            source: 'contact_page'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -362,11 +362,249 @@ class ImplementationOrchestrator {
         return descriptions[taskConfig.id] || `Servizio professionale ${taskConfig.title.toLowerCase()} a Milano e provincia.`;
     }
     
+    // Genera titolo problema
+    generateProblemTitle(taskConfig) {
+        const titles = {
+            'emergenza-computer-milano': 'Il Tuo Computer Ha un Problema Urgente?',
+            'schermo-nero-computer-milano': 'Schermo Nero: Cosa Significa e Come Risolverlo',
+            'virus-computer-milano': 'Computer Infetto da Virus? Ecco Come Riconoscerlo',
+            'computer-lento-milano': 'Perché il Computer Va Lento? Cause e Soluzioni',
+            'formattazione-pc-milano': 'Quando È Necessaria la Formattazione del PC?'
+        };
+
+        return titles[taskConfig.id] || `Problemi con ${taskConfig.title}?`;
+    }
+
+    // Genera descrizione problema
+    generateProblemDescription(taskConfig) {
+        const descriptions = {
+            'emergenza-computer-milano': `
+                <p class="text-lg mb-4">
+                    Quando il computer smette di funzionare improvvisamente, ogni minuto conta.
+                    Che si tratti di un crash del sistema, problemi hardware o software corrotto,
+                    i nostri tecnici specializzati sono pronti ad intervenire immediatamente.
+                </p>
+                <p class="mb-4">
+                    <strong>Non aspettare che il problema peggiori.</strong> Un intervento tempestivo
+                    può spesso salvare i tuoi dati e ridurre significativamente i tempi di ripristino.
+                </p>
+            `,
+            'schermo-nero-computer-milano': `
+                <p class="text-lg mb-4">
+                    Lo schermo nero è uno dei problemi più comuni e preoccupanti. Può essere causato
+                    da problemi hardware (scheda video, RAM, alimentatore) o software (driver corrotti,
+                    sistema operativo danneggiato).
+                </p>
+                <p class="mb-4">
+                    <strong>Non perdere i tuoi dati importanti.</strong> La maggior parte dei problemi
+                    di schermo nero sono risolvibili senza perdita di dati se affrontati correttamente.
+                </p>
+            `,
+            'virus-computer-milano': `
+                <p class="text-lg mb-4">
+                    I virus e malware possono compromettere seriamente le prestazioni del computer
+                    e mettere a rischio i tuoi dati personali. Riconoscere i sintomi e agire rapidamente
+                    è fondamentale per limitare i danni.
+                </p>
+                <p class="mb-4">
+                    <strong>Protezione completa garantita.</strong> Utilizziamo strumenti professionali
+                    per rimuovere completamente ogni traccia di malware e proteggere il sistema.
+                </p>
+            `,
+            'computer-lento-milano': `
+                <p class="text-lg mb-4">
+                    Un computer lento può essere frustrante e ridurre significativamente la produttività.
+                    Le cause possono essere molteplici: troppi programmi in avvio, hard disk frammentato,
+                    virus, hardware obsoleto o problemi di sistema.
+                </p>
+                <p class="mb-4">
+                    <strong>Prestazioni come nuovo garantite.</strong> La nostra ottimizzazione completa
+                    può migliorare le prestazioni fino al 300%.
+                </p>
+            `,
+            'formattazione-pc-milano': `
+                <p class="text-lg mb-4">
+                    La formattazione è spesso la soluzione più efficace per computer gravemente compromessi
+                    da virus, errori di sistema ricorrenti o prestazioni drasticamente ridotte.
+                    È un processo delicato che richiede esperienza professionale.
+                </p>
+                <p class="mb-4">
+                    <strong>Backup e ripristino completo.</strong> Ci occupiamo di salvare tutti i tuoi
+                    dati importanti prima della formattazione e di reinstallare tutto il necessario.
+                </p>
+            `
+        };
+
+        return descriptions[taskConfig.id] || `<p>Problemi con ${taskConfig.title.toLowerCase()}? I nostri tecnici possono aiutarti.</p>`;
+    }
+
+    // Genera lista sintomi
+    generateSymptomsList(taskConfig) {
+        const symptoms = {
+            'emergenza-computer-milano': [
+                'Computer che non si accende',
+                'Schermata blu della morte (BSOD)',
+                'Riavvii continui e improvvisi',
+                'Errori critici di sistema',
+                'Perdita improvvisa di dati',
+                'Hardware che non risponde'
+            ],
+            'schermo-nero-computer-milano': [
+                'Schermo completamente nero all\'avvio',
+                'Cursore lampeggiante senza desktop',
+                'Ventole che girano ma nessuna immagine',
+                'Schermo nero dopo login Windows',
+                'Monitor che non riceve segnale',
+                'Schermo nero intermittente'
+            ],
+            'virus-computer-milano': [
+                'Computer molto più lento del normale',
+                'Pop-up pubblicitari continui',
+                'Homepage browser cambiata',
+                'File che scompaiono o si corrompono',
+                'Programmi che si aprono da soli',
+                'Antivirus disattivato automaticamente'
+            ],
+            'computer-lento-milano': [
+                'Avvio del sistema molto lento',
+                'Programmi che impiegano minuti ad aprirsi',
+                'Frequenti blocchi e freeze',
+                'Ventole sempre al massimo',
+                'Disco rigido sempre in attività',
+                'Memoria RAM sempre al limite'
+            ],
+            'formattazione-pc-milano': [
+                'Errori di sistema frequenti e gravi',
+                'Computer infetto da virus persistenti',
+                'Prestazioni drasticamente ridotte',
+                'Problemi di avvio ricorrenti',
+                'Sistema operativo corrotto',
+                'Necessità di "ripartire da zero"'
+            ]
+        };
+
+        const symptomList = symptoms[taskConfig.id] || ['Problemi generici del computer'];
+        return symptomList.map(symptom => `<li class="flex items-start gap-2"><span class="text-red-500 mt-1">•</span>${symptom}</li>`).join('');
+    }
+
+    // Genera step soluzione
+    generateSolutionSteps(taskConfig) {
+        const steps = {
+            'emergenza-computer-milano': [
+                {
+                    icon: '📞',
+                    title: 'Chiamata Immediata',
+                    description: 'Contattaci e descrivi il problema. Valutiamo la criticità e organizziamo l\'intervento.'
+                },
+                {
+                    icon: '🚗',
+                    title: 'Intervento Rapido',
+                    description: 'Arrivo del tecnico in meno di 30 minuti con tutta l\'attrezzatura necessaria.'
+                },
+                {
+                    icon: '🔧',
+                    title: 'Risoluzione Professionale',
+                    description: 'Diagnosi precisa e riparazione con strumenti professionali e ricambi originali.'
+                }
+            ],
+            'schermo-nero-computer-milano': [
+                {
+                    icon: '🔍',
+                    title: 'Diagnosi Accurata',
+                    description: 'Test completo di hardware e software per identificare la causa esatta.'
+                },
+                {
+                    icon: '🛠️',
+                    title: 'Riparazione Mirata',
+                    description: 'Intervento specifico su componenti difettosi o software corrotto.'
+                },
+                {
+                    icon: '✅',
+                    title: 'Test e Garanzia',
+                    description: 'Verifica completa del funzionamento e garanzia sulla riparazione.'
+                }
+            ],
+            'virus-computer-milano': [
+                {
+                    icon: '🔒',
+                    title: 'Scansione Profonda',
+                    description: 'Analisi completa con strumenti professionali per identificare ogni minaccia.'
+                },
+                {
+                    icon: '🧹',
+                    title: 'Rimozione Completa',
+                    description: 'Eliminazione di virus, malware, spyware e ogni traccia di infezione.'
+                },
+                {
+                    icon: '🛡️',
+                    title: 'Protezione Avanzata',
+                    description: 'Installazione e configurazione di protezioni per prevenire future infezioni.'
+                }
+            ],
+            'computer-lento-milano': [
+                {
+                    icon: '📊',
+                    title: 'Analisi Performance',
+                    description: 'Diagnosi completa per identificare i colli di bottiglia del sistema.'
+                },
+                {
+                    icon: '⚡',
+                    title: 'Ottimizzazione Sistema',
+                    description: 'Pulizia registro, deframmentazione, rimozione software inutile.'
+                },
+                {
+                    icon: '🚀',
+                    title: 'Upgrade Hardware',
+                    description: 'Consigli e installazione di componenti per massimizzare le prestazioni.'
+                }
+            ],
+            'formattazione-pc-milano': [
+                {
+                    icon: '💾',
+                    title: 'Backup Completo',
+                    description: 'Salvataggio sicuro di tutti i dati importanti prima della formattazione.'
+                },
+                {
+                    icon: '🔄',
+                    title: 'Installazione Sistema',
+                    description: 'Formattazione e installazione pulita del sistema operativo aggiornato.'
+                },
+                {
+                    icon: '📱',
+                    title: 'Ripristino Dati',
+                    description: 'Reinstallazione software e ripristino di tutti i dati salvati.'
+                }
+            ]
+        };
+
+        const stepList = steps[taskConfig.id] || [];
+        return stepList.map(step => `
+            <div class="card text-center">
+                <div class="text-4xl mb-4">${step.icon}</div>
+                <h3 class="card-title">${step.title}</h3>
+                <p class="card-description">${step.description}</p>
+            </div>
+        `).join('');
+    }
+
+    // Genera placeholder form
+    generateFormPlaceholder(taskConfig) {
+        const placeholders = {
+            'emergenza-computer-milano': 'Descrivi l\'emergenza: cosa è successo, quando è iniziato il problema, se hai perso dati importanti...',
+            'schermo-nero-computer-milano': 'Quando compare lo schermo nero? All\'avvio, dopo il login, durante l\'uso? Ci sono suoni o luci?',
+            'virus-computer-milano': 'Quali sintomi hai notato? Pop-up, lentezza, file modificati, programmi che si aprono da soli?',
+            'computer-lento-milano': 'Da quando il computer è lento? In quali situazioni è più evidente? Hai installato software di recente?',
+            'formattazione-pc-milano': 'Perché vuoi formattare? Hai problemi specifici? Hai già un backup dei dati importanti?'
+        };
+
+        return placeholders[taskConfig.id] || 'Descrivi il problema che stai riscontrando...';
+    }
+
     // Genera altri metodi helper...
     generateMetaDescription(taskConfig) {
         return `${taskConfig.title} ✓ Intervento rapido ✓ Tecnici certificati ✓ Preventivo gratuito ✓ Chiamaci: ${this.config.emergencyPhone}`;
     }
-    
+
     generateKeywords(taskConfig) {
         const baseKeywords = [taskConfig.keyword, 'assistenza informatica milano', 'riparazione computer milano', 'tecnico computer milano'];
         return baseKeywords.join(', ');

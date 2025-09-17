@@ -1,0 +1,588 @@
+{
+  "timestamp": "2025-09-17T09:45:52.027Z",
+  "summary": {
+    "phases": 4,
+    "totalTasks": 21,
+    "timeline": "12 months",
+    "estimatedROI": "206%"
+  },
+  "plan": {
+    "phases": [
+      {
+        "name": "Quick Wins",
+        "duration": "0-30 days",
+        "objective": "Capture immediate opportunities with low competition keywords",
+        "tasks": [
+          {
+            "id": "P1T1",
+            "name": "Create Landing Page: emergenza computer milano",
+            "description": "Create optimized landing page targeting \"emergenza computer milano\" (390 monthly searches, 28 difficulty)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "HIGH",
+            "timeline": "3-5 days",
+            "deliverables": [
+              "SEO-optimized landing page",
+              "Emergency contact integration",
+              "Local schema markup",
+              "Mobile-responsive design"
+            ],
+            "keywords": [
+              "emergenza computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 59,
+              "leads": 2,
+              "revenue": 263
+            }
+          },
+          {
+            "id": "P1T2",
+            "name": "Create Landing Page: schermo nero computer milano",
+            "description": "Create optimized landing page targeting \"schermo nero computer milano\" (140 monthly searches, 18 difficulty)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "HIGH",
+            "timeline": "3-5 days",
+            "deliverables": [
+              "SEO-optimized landing page",
+              "Emergency contact integration",
+              "Local schema markup",
+              "Mobile-responsive design"
+            ],
+            "keywords": [
+              "schermo nero computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 21,
+              "leads": 1,
+              "revenue": 95
+            }
+          },
+          {
+            "id": "P1T3",
+            "name": "Create Landing Page: virus computer milano",
+            "description": "Create optimized landing page targeting \"virus computer milano\" (150 monthly searches, 22 difficulty)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "HIGH",
+            "timeline": "3-5 days",
+            "deliverables": [
+              "SEO-optimized landing page",
+              "Emergency contact integration",
+              "Local schema markup",
+              "Mobile-responsive design"
+            ],
+            "keywords": [
+              "virus computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 23,
+              "leads": 1,
+              "revenue": 101
+            }
+          },
+          {
+            "id": "P1T4",
+            "name": "Create Landing Page: computer lento milano",
+            "description": "Create optimized landing page targeting \"computer lento milano\" (130 monthly searches, 20 difficulty)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "HIGH",
+            "timeline": "3-5 days",
+            "deliverables": [
+              "SEO-optimized landing page",
+              "Emergency contact integration",
+              "Local schema markup",
+              "Mobile-responsive design"
+            ],
+            "keywords": [
+              "computer lento milano"
+            ],
+            "expectedResults": {
+              "traffic": 20,
+              "leads": 1,
+              "revenue": 88
+            }
+          },
+          {
+            "id": "P1T5",
+            "name": "Create Landing Page: formattazione pc milano",
+            "description": "Create optimized landing page targeting \"formattazione pc milano\" (160 monthly searches, 25 difficulty)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "HIGH",
+            "timeline": "3-5 days",
+            "deliverables": [
+              "SEO-optimized landing page",
+              "Emergency contact integration",
+              "Local schema markup",
+              "Mobile-responsive design"
+            ],
+            "keywords": [
+              "formattazione pc milano"
+            ],
+            "expectedResults": {
+              "traffic": 24,
+              "leads": 1,
+              "revenue": 108
+            }
+          },
+          {
+            "id": "P1T6",
+            "name": "Emergency Services Optimization",
+            "description": "Optimize emergency computer repair services based on high-intent keywords",
+            "type": "optimization",
+            "priority": "CRITICAL",
+            "effort": "LOW",
+            "impact": "HIGH",
+            "timeline": "2-3 days",
+            "deliverables": [
+              "Emergency banner on all pages",
+              "Click-to-call optimization",
+              "24/7 availability messaging",
+              "Emergency form with priority handling"
+            ],
+            "keywords": [
+              "emergenza computer milano",
+              "computer non si accende milano"
+            ],
+            "expectedResults": {
+              "traffic": 200,
+              "leads": 15,
+              "revenue": 3000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Content Expansion",
+        "duration": "30-90 days",
+        "objective": "Fill content gaps and target medium-competition keywords",
+        "tasks": [
+          {
+            "id": "P2T1",
+            "name": "Content Gap: assistenza informatica milano",
+            "description": "Create Service Page for \"assistenza informatica milano\" (2400 searches, 14% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "service page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "assistenza informatica milano"
+            ],
+            "expectedResults": {
+              "traffic": 240,
+              "leads": 6,
+              "revenue": 900
+            }
+          },
+          {
+            "id": "P2T2",
+            "name": "Content Gap: riparazione computer milano",
+            "description": "Create Service Page for \"riparazione computer milano\" (1900 searches, 8% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "service page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "riparazione computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 190,
+              "leads": 5,
+              "revenue": 713
+            }
+          },
+          {
+            "id": "P2T3",
+            "name": "Content Gap: tecnico computer milano",
+            "description": "Create Service Page for \"tecnico computer milano\" (1600 searches, 33% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "informational page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "tecnico computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 160,
+              "leads": 4,
+              "revenue": 600
+            }
+          },
+          {
+            "id": "P2T4",
+            "name": "Content Gap: computer non si accende milano",
+            "description": "Create Emergency Landing Page for \"computer non si accende milano\" (880 searches, 26% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "emergency page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "computer non si accende milano"
+            ],
+            "expectedResults": {
+              "traffic": 88,
+              "leads": 2,
+              "revenue": 330
+            }
+          },
+          {
+            "id": "P2T5",
+            "name": "Content Gap: assistenza pc milano",
+            "description": "Create Service Page for \"assistenza pc milano\" (1400 searches, 38% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "service page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "assistenza pc milano"
+            ],
+            "expectedResults": {
+              "traffic": 140,
+              "leads": 4,
+              "revenue": 525
+            }
+          },
+          {
+            "id": "P2T6",
+            "name": "Content Gap: assistenza computer bergamo",
+            "description": "Create Service Page for \"assistenza computer bergamo\" (590 searches, 13% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "service page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "assistenza computer bergamo"
+            ],
+            "expectedResults": {
+              "traffic": 59,
+              "leads": 1,
+              "revenue": 221
+            }
+          },
+          {
+            "id": "P2T7",
+            "name": "Content Gap: riparazione pc bergamo",
+            "description": "Create Service Page for \"riparazione pc bergamo\" (480 searches, 7% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "service page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "riparazione pc bergamo"
+            ],
+            "expectedResults": {
+              "traffic": 48,
+              "leads": 1,
+              "revenue": 180
+            }
+          },
+          {
+            "id": "P2T8",
+            "name": "Content Gap: emergenza computer milano",
+            "description": "Create Emergency Landing Page for \"emergenza computer milano\" (390 searches, 19% competitor coverage)",
+            "type": "content-creation",
+            "priority": "HIGH",
+            "effort": "MEDIUM",
+            "impact": "MEDIUM",
+            "timeline": "5-7 days",
+            "deliverables": [
+              "emergency page",
+              "SEO optimization",
+              "Internal linking",
+              "Call-to-action optimization"
+            ],
+            "keywords": [
+              "emergenza computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 39,
+              "leads": 1,
+              "revenue": 146
+            }
+          }
+        ]
+      },
+      {
+        "name": "Market Domination",
+        "duration": "90-180 days",
+        "objective": "Target high-volume keywords and expand geographic coverage",
+        "tasks": [
+          {
+            "id": "P3T1",
+            "name": "High-Volume Target: assistenza informatica milano",
+            "description": "Comprehensive campaign for \"assistenza informatica milano\" (2400 searches, 65 difficulty)",
+            "type": "comprehensive-campaign",
+            "priority": "HIGH",
+            "effort": "HIGH",
+            "impact": "VERY_HIGH",
+            "timeline": "21-30 days",
+            "deliverables": [
+              "Main service page",
+              "Supporting blog content (5 articles)",
+              "Local landing pages (3 cities)",
+              "Video content",
+              "Case studies",
+              "Link building campaign"
+            ],
+            "keywords": [
+              "assistenza informatica milano"
+            ],
+            "expectedResults": {
+              "traffic": 600,
+              "leads": 24,
+              "revenue": 4800
+            }
+          },
+          {
+            "id": "P3T2",
+            "name": "High-Volume Target: tecnico computer milano",
+            "description": "Comprehensive campaign for \"tecnico computer milano\" (1600 searches, 52 difficulty)",
+            "type": "comprehensive-campaign",
+            "priority": "HIGH",
+            "effort": "HIGH",
+            "impact": "VERY_HIGH",
+            "timeline": "21-30 days",
+            "deliverables": [
+              "Main service page",
+              "Supporting blog content (5 articles)",
+              "Local landing pages (3 cities)",
+              "Video content",
+              "Case studies",
+              "Link building campaign"
+            ],
+            "keywords": [
+              "tecnico computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 400,
+              "leads": 16,
+              "revenue": 3200
+            }
+          },
+          {
+            "id": "P3T3",
+            "name": "High-Volume Target: riparazione computer milano",
+            "description": "Comprehensive campaign for \"riparazione computer milano\" (1900 searches, 58 difficulty)",
+            "type": "comprehensive-campaign",
+            "priority": "HIGH",
+            "effort": "HIGH",
+            "impact": "VERY_HIGH",
+            "timeline": "21-30 days",
+            "deliverables": [
+              "Main service page",
+              "Supporting blog content (5 articles)",
+              "Local landing pages (3 cities)",
+              "Video content",
+              "Case studies",
+              "Link building campaign"
+            ],
+            "keywords": [
+              "riparazione computer milano"
+            ],
+            "expectedResults": {
+              "traffic": 475,
+              "leads": 19,
+              "revenue": 3800
+            }
+          },
+          {
+            "id": "P3T4",
+            "name": "High-Volume Target: assistenza pc milano",
+            "description": "Comprehensive campaign for \"assistenza pc milano\" (1400 searches, 48 difficulty)",
+            "type": "comprehensive-campaign",
+            "priority": "HIGH",
+            "effort": "HIGH",
+            "impact": "VERY_HIGH",
+            "timeline": "21-30 days",
+            "deliverables": [
+              "Main service page",
+              "Supporting blog content (5 articles)",
+              "Local landing pages (3 cities)",
+              "Video content",
+              "Case studies",
+              "Link building campaign"
+            ],
+            "keywords": [
+              "assistenza pc milano"
+            ],
+            "expectedResults": {
+              "traffic": 350,
+              "leads": 14,
+              "revenue": 2800
+            }
+          },
+          {
+            "id": "P3T6",
+            "name": "Geographic Expansion: Bergamo & Brescia",
+            "description": "Expand service coverage to underserved markets in Bergamo and Brescia",
+            "type": "geographic-expansion",
+            "priority": "HIGH",
+            "effort": "HIGH",
+            "impact": "HIGH",
+            "timeline": "30-45 days",
+            "deliverables": [
+              "Location-specific landing pages (10 pages)",
+              "Local SEO optimization",
+              "Google My Business profiles",
+              "Local directory submissions",
+              "Geo-targeted advertising campaigns"
+            ],
+            "keywords": [
+              "assistenza computer bergamo",
+              "riparazione pc brescia"
+            ],
+            "expectedResults": {
+              "traffic": 800,
+              "leads": 40,
+              "revenue": 8000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Advanced Optimization",
+        "duration": "180-365 days",
+        "objective": "Advanced features, automation, and market leadership",
+        "tasks": [
+          {
+            "id": "P4T1",
+            "name": "Remote Assistance Platform",
+            "description": "Develop comprehensive remote IT assistance platform",
+            "type": "platform-development",
+            "priority": "HIGH",
+            "effort": "VERY_HIGH",
+            "impact": "VERY_HIGH",
+            "timeline": "60-90 days",
+            "deliverables": [
+              "Remote assistance software",
+              "Customer portal",
+              "Technician dashboard",
+              "Automated diagnostics",
+              "Integration with existing systems"
+            ],
+            "keywords": [
+              "assistenza computer remota",
+              "supporto it remoto"
+            ],
+            "expectedResults": {
+              "traffic": 1200,
+              "leads": 80,
+              "revenue": 20000
+            }
+          },
+          {
+            "id": "P4T2",
+            "name": "AI-Powered Diagnostic System",
+            "description": "Implement AI system for automated computer diagnostics",
+            "type": "technology-innovation",
+            "priority": "MEDIUM",
+            "effort": "VERY_HIGH",
+            "impact": "HIGH",
+            "timeline": "90-120 days",
+            "deliverables": [
+              "AI diagnostic engine",
+              "Customer self-service portal",
+              "Automated quote generation",
+              "Predictive maintenance alerts"
+            ],
+            "keywords": [
+              "diagnosi computer automatica",
+              "ai computer repair"
+            ],
+            "expectedResults": {
+              "traffic": 600,
+              "leads": 50,
+              "revenue": 15000
+            }
+          }
+        ]
+      }
+    ],
+    "tasks": [],
+    "timeline": {
+      "Month 1": [
+        "Phase 1: Quick Wins"
+      ],
+      "Month 2-3": [
+        "Phase 2: Content Expansion"
+      ],
+      "Month 4-6": [
+        "Phase 3: Market Domination"
+      ],
+      "Month 7-12": [
+        "Phase 4: Advanced Optimization"
+      ]
+    },
+    "priorities": {
+      "CRITICAL": 1,
+      "HIGH": 19,
+      "MEDIUM": 1,
+      "LOW": 0
+    },
+    "resources": {
+      "totalTasks": 21,
+      "estimatedHours": 420,
+      "teamSize": 3,
+      "estimatedCost": 31500,
+      "expectedRevenue": 64870,
+      "roi": 206
+    }
+  }
+}

@@ -1,0 +1,817 @@
+{
+  "timestamp": "2025-09-17T09:44:43.142Z",
+  "summary": {
+    "competitorsAnalyzed": 7,
+    "keywordsResearched": 20,
+    "contentGapsFound": 14,
+    "seoOpportunities": 9,
+    "marketInsights": 3
+  },
+  "results": {
+    "competitors": [
+      {
+        "url": "https://www.assistenzacomputermilano.it",
+        "domain": "assistenzacomputermilano.it",
+        "analysis": {
+          "pages": 45,
+          "services": 25,
+          "locations": 3,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": true,
+          "hasBlog": false,
+          "hasTestimonials": true,
+          "mobileOptimized": true,
+          "loadSpeed": 3956,
+          "seoScore": 85
+        },
+        "strengths": [
+          "Extensive content coverage",
+          "Comprehensive service offering",
+          "Emergency service availability",
+          "Strong SEO optimization"
+        ],
+        "weaknesses": [
+          "No blog/content marketing",
+          "Slow loading speed"
+        ],
+        "opportunities": []
+      },
+      {
+        "url": "https://www.riparazionepcmilano.com",
+        "domain": "riparazionepcmilano.com",
+        "analysis": {
+          "pages": 27,
+          "services": 18,
+          "locations": 4,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": false,
+          "hasBlog": false,
+          "hasTestimonials": false,
+          "mobileOptimized": true,
+          "loadSpeed": 1866,
+          "seoScore": 89
+        },
+        "strengths": [
+          "Comprehensive service offering",
+          "Emergency service availability",
+          "Strong SEO optimization",
+          "Fast loading speed"
+        ],
+        "weaknesses": [
+          "No online booking system",
+          "No blog/content marketing"
+        ],
+        "opportunities": [
+          "Online booking opportunity",
+          "Social proof opportunity"
+        ]
+      },
+      {
+        "url": "https://www.assistenzainformaticamilano.it",
+        "domain": "assistenzainformaticamilano.it",
+        "analysis": {
+          "pages": 22,
+          "services": 8,
+          "locations": 4,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": false,
+          "hasBlog": false,
+          "hasTestimonials": false,
+          "mobileOptimized": true,
+          "loadSpeed": 1878,
+          "seoScore": 74
+        },
+        "strengths": [
+          "Emergency service availability",
+          "Fast loading speed"
+        ],
+        "weaknesses": [
+          "Limited content coverage",
+          "No online booking system",
+          "No blog/content marketing"
+        ],
+        "opportunities": [
+          "Online booking opportunity",
+          "Social proof opportunity"
+        ]
+      },
+      {
+        "url": "https://www.tecnicocomputermilano.it",
+        "domain": "tecnicocomputermilano.it",
+        "analysis": {
+          "pages": 38,
+          "services": 8,
+          "locations": 5,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": false,
+          "hasBlog": true,
+          "hasTestimonials": false,
+          "mobileOptimized": false,
+          "loadSpeed": 2247,
+          "seoScore": 65
+        },
+        "strengths": [
+          "Emergency service availability"
+        ],
+        "weaknesses": [
+          "No online booking system",
+          "Poor SEO optimization"
+        ],
+        "opportunities": [
+          "Online booking opportunity",
+          "Social proof opportunity"
+        ]
+      },
+      {
+        "url": "https://www.supportoitmilano.com",
+        "domain": "supportoitmilano.com",
+        "analysis": {
+          "pages": 62,
+          "services": 14,
+          "locations": 3,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": false,
+          "hasBlog": false,
+          "hasTestimonials": true,
+          "mobileOptimized": true,
+          "loadSpeed": 1240,
+          "seoScore": 94
+        },
+        "strengths": [
+          "Extensive content coverage",
+          "Comprehensive service offering",
+          "Emergency service availability",
+          "Strong SEO optimization",
+          "Fast loading speed"
+        ],
+        "weaknesses": [
+          "No online booking system",
+          "No blog/content marketing"
+        ],
+        "opportunities": [
+          "Online booking opportunity"
+        ]
+      },
+      {
+        "url": "https://www.assistenzapcbergamo.it",
+        "domain": "assistenzapcbergamo.it",
+        "analysis": {
+          "pages": 36,
+          "services": 13,
+          "locations": 4,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": false,
+          "hasBlog": true,
+          "hasTestimonials": false,
+          "mobileOptimized": true,
+          "loadSpeed": 2844,
+          "seoScore": 64
+        },
+        "strengths": [
+          "Comprehensive service offering",
+          "Emergency service availability"
+        ],
+        "weaknesses": [
+          "No online booking system",
+          "Poor SEO optimization"
+        ],
+        "opportunities": [
+          "Online booking opportunity",
+          "Social proof opportunity"
+        ]
+      },
+      {
+        "url": "https://www.riparazionecomputerbrescia.it",
+        "domain": "riparazionecomputerbrescia.it",
+        "analysis": {
+          "pages": 68,
+          "services": 16,
+          "locations": 1,
+          "hasEmergencyService": true,
+          "hasOnlineBooking": false,
+          "hasBlog": true,
+          "hasTestimonials": true,
+          "mobileOptimized": false,
+          "loadSpeed": 3269,
+          "seoScore": 71
+        },
+        "strengths": [
+          "Extensive content coverage",
+          "Comprehensive service offering",
+          "Emergency service availability"
+        ],
+        "weaknesses": [
+          "No online booking system",
+          "Slow loading speed"
+        ],
+        "opportunities": [
+          "Online booking opportunity",
+          "Geographic expansion opportunity"
+        ]
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "assistenza informatica milano",
+        "volume": 2400,
+        "difficulty": 65,
+        "cpc": 3.5,
+        "intent": "commercial",
+        "opportunity": 194,
+        "competition": "HIGH",
+        "recommendations": [
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "computer non si accende milano",
+        "volume": 880,
+        "difficulty": 35,
+        "cpc": 4.2,
+        "intent": "problem-solving",
+        "opportunity": 190,
+        "competition": "MEDIUM",
+        "recommendations": [
+          "Create emergency landing page",
+          "Add prominent phone CTA",
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "emergenza computer milano",
+        "volume": 390,
+        "difficulty": 28,
+        "cpc": 6.5,
+        "intent": "urgent",
+        "opportunity": 181,
+        "competition": "LOW",
+        "recommendations": [
+          "Create emergency landing page",
+          "Add prominent phone CTA"
+        ]
+      },
+      {
+        "keyword": "tecnico computer milano",
+        "volume": 1600,
+        "difficulty": 52,
+        "cpc": 3.2,
+        "intent": "commercial",
+        "opportunity": 148,
+        "competition": "MEDIUM",
+        "recommendations": [
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "riparazione computer milano",
+        "volume": 1900,
+        "difficulty": 58,
+        "cpc": 2.8,
+        "intent": "commercial",
+        "opportunity": 138,
+        "competition": "MEDIUM",
+        "recommendations": [
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "assistenza pc milano",
+        "volume": 1400,
+        "difficulty": 48,
+        "cpc": 2.9,
+        "intent": "commercial",
+        "opportunity": 127,
+        "competition": "MEDIUM",
+        "recommendations": [
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "recupero dati milano",
+        "volume": 720,
+        "difficulty": 62,
+        "cpc": 5.8,
+        "intent": "commercial",
+        "opportunity": 101,
+        "competition": "HIGH",
+        "recommendations": [
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "schermo nero computer milano",
+        "volume": 140,
+        "difficulty": 18,
+        "cpc": 4.5,
+        "intent": "problem-solving",
+        "opportunity": 63,
+        "competition": "LOW",
+        "recommendations": [
+          "Create emergency landing page",
+          "Add prominent phone CTA"
+        ]
+      },
+      {
+        "keyword": "assistenza computer bergamo",
+        "volume": 590,
+        "difficulty": 42,
+        "cpc": 2.6,
+        "intent": "commercial",
+        "opportunity": 55,
+        "competition": "MEDIUM",
+        "recommendations": [
+          "Create dedicated service page",
+          "Optimize for local SEO"
+        ]
+      },
+      {
+        "keyword": "virus computer milano",
+        "volume": 150,
+        "difficulty": 22,
+        "cpc": 3.8,
+        "intent": "problem-solving",
+        "opportunity": 47,
+        "competition": "LOW",
+        "recommendations": [
+          "Create emergency landing page",
+          "Add prominent phone CTA"
+        ]
+      },
+      {
+        "keyword": "assistenza informatica brescia",
+        "volume": 450,
+        "difficulty": 40,
+        "cpc": 2.7,
+        "intent": "commercial",
+        "opportunity": 46,
+        "competition": "MEDIUM",
+        "recommendations": []
+      },
+      {
+        "keyword": "riparazione pc bergamo",
+        "volume": 480,
+        "difficulty": 38,
+        "cpc": 2.4,
+        "intent": "commercial",
+        "opportunity": 45,
+        "competition": "MEDIUM",
+        "recommendations": []
+      },
+      {
+        "keyword": "assistenza server milano",
+        "volume": 210,
+        "difficulty": 68,
+        "cpc": 8.9,
+        "intent": "commercial",
+        "opportunity": 41,
+        "competition": "HIGH",
+        "recommendations": []
+      },
+      {
+        "keyword": "consulenza informatica milano",
+        "volume": 260,
+        "difficulty": 55,
+        "cpc": 4.8,
+        "intent": "commercial",
+        "opportunity": 34,
+        "competition": "MEDIUM",
+        "recommendations": []
+      },
+      {
+        "keyword": "sicurezza informatica milano",
+        "volume": 170,
+        "difficulty": 72,
+        "cpc": 9.5,
+        "intent": "commercial",
+        "opportunity": 34,
+        "competition": "HIGH",
+        "recommendations": []
+      },
+      {
+        "keyword": "computer lento milano",
+        "volume": 130,
+        "difficulty": 20,
+        "cpc": 2.9,
+        "intent": "problem-solving",
+        "opportunity": 34,
+        "competition": "LOW",
+        "recommendations": [
+          "Create emergency landing page",
+          "Add prominent phone CTA"
+        ]
+      },
+      {
+        "keyword": "installazione software milano",
+        "volume": 320,
+        "difficulty": 45,
+        "cpc": 3.1,
+        "intent": "commercial",
+        "opportunity": 33,
+        "competition": "MEDIUM",
+        "recommendations": []
+      },
+      {
+        "keyword": "manutenzione pc milano",
+        "volume": 290,
+        "difficulty": 35,
+        "cpc": 2.5,
+        "intent": "commercial",
+        "opportunity": 31,
+        "competition": "MEDIUM",
+        "recommendations": []
+      },
+      {
+        "keyword": "backup dati milano",
+        "volume": 180,
+        "difficulty": 50,
+        "cpc": 4.2,
+        "intent": "commercial",
+        "opportunity": 23,
+        "competition": "MEDIUM",
+        "recommendations": []
+      },
+      {
+        "keyword": "formattazione pc milano",
+        "volume": 160,
+        "difficulty": 25,
+        "cpc": 2.1,
+        "intent": "commercial",
+        "opportunity": 20,
+        "competition": "LOW",
+        "recommendations": []
+      }
+    ],
+    "contentGaps": [
+      {
+        "type": "keyword",
+        "keyword": "assistenza informatica milano",
+        "volume": 2400,
+        "difficulty": 65,
+        "competitorCoverage": 14,
+        "opportunity": 3187,
+        "contentType": "Service Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "riparazione computer milano",
+        "volume": 1900,
+        "difficulty": 58,
+        "competitorCoverage": 8,
+        "opportunity": 3026,
+        "contentType": "Service Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "tecnico computer milano",
+        "volume": 1600,
+        "difficulty": 52,
+        "competitorCoverage": 33,
+        "opportunity": 2053,
+        "contentType": "Service Page",
+        "pageType": "informational",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "computer non si accende milano",
+        "volume": 880,
+        "difficulty": 35,
+        "competitorCoverage": 26,
+        "opportunity": 1862,
+        "contentType": "Emergency Landing Page",
+        "pageType": "emergency",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "assistenza pc milano",
+        "volume": 1400,
+        "difficulty": 48,
+        "competitorCoverage": 38,
+        "opportunity": 1807,
+        "contentType": "Service Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "assistenza computer bergamo",
+        "volume": 590,
+        "difficulty": 42,
+        "competitorCoverage": 13,
+        "opportunity": 1226,
+        "contentType": "Service Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "riparazione pc bergamo",
+        "volume": 480,
+        "difficulty": 38,
+        "competitorCoverage": 7,
+        "opportunity": 1180,
+        "contentType": "Service Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "emergenza computer milano",
+        "volume": 390,
+        "difficulty": 28,
+        "competitorCoverage": 19,
+        "opportunity": 1125,
+        "contentType": "Emergency Landing Page",
+        "pageType": "emergency",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "assistenza informatica brescia",
+        "volume": 450,
+        "difficulty": 40,
+        "competitorCoverage": 29,
+        "opportunity": 797,
+        "contentType": "Service Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "installazione software milano",
+        "volume": 320,
+        "difficulty": 45,
+        "competitorCoverage": 9,
+        "opportunity": 644,
+        "contentType": "Service Page",
+        "pageType": "informational",
+        "priority": "HIGH"
+      },
+      {
+        "type": "keyword",
+        "keyword": "recupero dati milano",
+        "volume": 720,
+        "difficulty": 62,
+        "competitorCoverage": 52,
+        "opportunity": 558,
+        "contentType": "Service Page",
+        "pageType": "informational",
+        "priority": "HIGH"
+      },
+      {
+        "type": "service",
+        "service": "Assistenza Computer Remota",
+        "opportunity": 85,
+        "reason": "Pochi competitor offrono servizio remoto",
+        "contentType": "Service Page + Landing Page",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "service",
+        "service": "Backup Automatico Cloud",
+        "opportunity": 78,
+        "reason": "Servizio ad alto valore, bassa competizione",
+        "contentType": "Service Page + Blog Series",
+        "pageType": "service",
+        "priority": "HIGH"
+      },
+      {
+        "type": "service",
+        "service": "Consulenza Cybersecurity PMI",
+        "opportunity": 72,
+        "reason": "Mercato in crescita, pochi specialisti",
+        "contentType": "Landing Page + Case Studies",
+        "pageType": "landing",
+        "priority": "MEDIUM"
+      }
+    ],
+    "seoOpportunities": [
+      {
+        "type": "low-competition-keyword",
+        "keyword": "emergenza computer milano",
+        "volume": 390,
+        "difficulty": 28,
+        "opportunity": "Quick ranking win",
+        "action": "Create optimized page",
+        "priority": "HIGH"
+      },
+      {
+        "type": "low-competition-keyword",
+        "keyword": "schermo nero computer milano",
+        "volume": 140,
+        "difficulty": 18,
+        "opportunity": "Quick ranking win",
+        "action": "Create optimized page",
+        "priority": "HIGH"
+      },
+      {
+        "type": "low-competition-keyword",
+        "keyword": "virus computer milano",
+        "volume": 150,
+        "difficulty": 22,
+        "opportunity": "Quick ranking win",
+        "action": "Create optimized page",
+        "priority": "HIGH"
+      },
+      {
+        "type": "low-competition-keyword",
+        "keyword": "computer lento milano",
+        "volume": 130,
+        "difficulty": 20,
+        "opportunity": "Quick ranking win",
+        "action": "Create optimized page",
+        "priority": "HIGH"
+      },
+      {
+        "type": "low-competition-keyword",
+        "keyword": "formattazione pc milano",
+        "volume": 160,
+        "difficulty": 25,
+        "opportunity": "Quick ranking win",
+        "action": "Create optimized page",
+        "priority": "HIGH"
+      },
+      {
+        "type": "long-tail",
+        "keyword": "computer non si accende milano centro",
+        "volume": 90,
+        "difficulty": 15,
+        "opportunity": "Hyper-local targeting",
+        "action": "Create location-specific page",
+        "priority": "MEDIUM"
+      },
+      {
+        "type": "long-tail",
+        "keyword": "riparazione computer domenica milano",
+        "volume": 70,
+        "difficulty": 12,
+        "opportunity": "Weekend service differentiation",
+        "action": "Highlight weekend availability",
+        "priority": "MEDIUM"
+      },
+      {
+        "type": "local-seo",
+        "opportunity": "Google My Business optimization",
+        "action": "Optimize GMB profiles for all locations",
+        "priority": "HIGH"
+      },
+      {
+        "type": "local-seo",
+        "opportunity": "Local directory listings",
+        "action": "Submit to local IT service directories",
+        "priority": "MEDIUM"
+      }
+    ],
+    "marketInsights": [
+      {
+        "type": "market-trend",
+        "insight": "Emergency IT services in high demand",
+        "data": "Keywords with \"emergenza\" show 40% higher CPC",
+        "opportunity": "Focus on emergency service marketing",
+        "priority": "HIGH"
+      },
+      {
+        "type": "market-trend",
+        "insight": "Remote assistance growing rapidly",
+        "data": "Remote support keywords up 60% YoY",
+        "opportunity": "Develop remote service capabilities",
+        "priority": "HIGH"
+      },
+      {
+        "type": "geographic",
+        "insight": "Bergamo and Brescia underserved",
+        "data": "Lower competition in secondary cities",
+        "opportunity": "Expand geographic targeting",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "category": "Content Strategy",
+      "priority": "HIGH",
+      "action": "Create missing content pages",
+      "opportunities": [
+        {
+          "type": "keyword",
+          "keyword": "assistenza informatica milano",
+          "volume": 2400,
+          "difficulty": 65,
+          "competitorCoverage": 14,
+          "opportunity": 3187,
+          "contentType": "Service Page",
+          "pageType": "service",
+          "priority": "HIGH"
+        },
+        {
+          "type": "keyword",
+          "keyword": "riparazione computer milano",
+          "volume": 1900,
+          "difficulty": 58,
+          "competitorCoverage": 8,
+          "opportunity": 3026,
+          "contentType": "Service Page",
+          "pageType": "service",
+          "priority": "HIGH"
+        },
+        {
+          "type": "keyword",
+          "keyword": "tecnico computer milano",
+          "volume": 1600,
+          "difficulty": 52,
+          "competitorCoverage": 33,
+          "opportunity": 2053,
+          "contentType": "Service Page",
+          "pageType": "informational",
+          "priority": "HIGH"
+        },
+        {
+          "type": "keyword",
+          "keyword": "computer non si accende milano",
+          "volume": 880,
+          "difficulty": 35,
+          "competitorCoverage": 26,
+          "opportunity": 1862,
+          "contentType": "Emergency Landing Page",
+          "pageType": "emergency",
+          "priority": "HIGH"
+        },
+        {
+          "type": "keyword",
+          "keyword": "assistenza pc milano",
+          "volume": 1400,
+          "difficulty": 48,
+          "competitorCoverage": 38,
+          "opportunity": 1807,
+          "contentType": "Service Page",
+          "pageType": "service",
+          "priority": "HIGH"
+        }
+      ]
+    },
+    {
+      "category": "SEO Optimization",
+      "priority": "HIGH",
+      "action": "Target high-volume keywords",
+      "opportunities": [
+        {
+          "type": "low-competition-keyword",
+          "keyword": "emergenza computer milano",
+          "volume": 390,
+          "difficulty": 28,
+          "opportunity": "Quick ranking win",
+          "action": "Create optimized page",
+          "priority": "HIGH"
+        },
+        {
+          "type": "low-competition-keyword",
+          "keyword": "schermo nero computer milano",
+          "volume": 140,
+          "difficulty": 18,
+          "opportunity": "Quick ranking win",
+          "action": "Create optimized page",
+          "priority": "HIGH"
+        },
+        {
+          "type": "low-competition-keyword",
+          "keyword": "virus computer milano",
+          "volume": 150,
+          "difficulty": 22,
+          "opportunity": "Quick ranking win",
+          "action": "Create optimized page",
+          "priority": "HIGH"
+        },
+        {
+          "type": "low-competition-keyword",
+          "keyword": "computer lento milano",
+          "volume": 130,
+          "difficulty": 20,
+          "opportunity": "Quick ranking win",
+          "action": "Create optimized page",
+          "priority": "HIGH"
+        },
+        {
+          "type": "low-competition-keyword",
+          "keyword": "formattazione pc milano",
+          "volume": 160,
+          "difficulty": 25,
+          "opportunity": "Quick ranking win",
+          "action": "Create optimized page",
+          "priority": "HIGH"
+        }
+      ]
+    }
+  ]
+}

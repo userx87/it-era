@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}} | IT-ERA - Assistenza Informatica Lombardia</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{PAGE_DESCRIPTION}}">
+    <meta name="keywords" content="{{PAGE_KEYWORDS}}">
+    <meta name="author" content="IT-ERA">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://it-era.it{{PAGE_URL}}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{PAGE_TITLE}} | IT-ERA">
+    <meta property="og:description" content="{{PAGE_DESCRIPTION}}">
+    <meta property="og:url" content="https://it-era.it{{PAGE_URL}}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://it-era.it/images/og-image.jpg">
+    <meta property="og:site_name" content="IT-ERA">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{PAGE_TITLE}} | IT-ERA">
+    <meta name="twitter:description" content="{{PAGE_DESCRIPTION}}">
+    <meta name="twitter:image" content="https://it-era.it/images/twitter-card.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/components/styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    {{ADDITIONAL_HEAD_CONTENT}}
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "IT-ERA",
+        "description": "Assistenza informatica professionale per aziende e privati in Lombardia",
+        "url": "https://it-era.it",
+        "telephone": "+39 039 888 2041",
+        "email": "info@it-era.it",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Milano",
+            "addressRegion": "Lombardia",
+            "addressCountry": "IT"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.4642",
+            "longitude": "9.1900"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-13:00",
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "45.4642",
+                "longitude": "9.1900"
+            },
+            "geoRadius": "50000"
+        },
+        "areaServed": ["Milano", "Bergamo", "Brescia", "Como", "Varese", "Monza", "Lombardia"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servizi IT",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Assistenza Informatica",
+                        "description": "Assistenza tecnica per computer, server e reti aziendali"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Riparazione Computer",
+                        "description": "Riparazione hardware e software per PC e notebook"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Recupero Dati",
+                        "description": "Recupero dati da hard disk, SSD e dispositivi danneggiati"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/itera.it",
+            "https://www.linkedin.com/company/it-era"
+        ]
+    }
+    </script>
+    
+    {{ADDITIONAL_HEAD_CONTENT}}
+</head>
+<body class="bg-neutral-50">
+    <!-- Emergency Banner -->
+    <div class="emergency-banner no-print">
+        <div class="container">
+            <a href="tel:+390398882041" class="flex items-center justify-center gap-2 hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span class="font-semibold">🚨 EMERGENZA IT? Chiama subito: 039 888 2041 - Intervento Rapido 24/7</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    {{NAVIGATION_MENU}}
+    
+    <!-- Main Content -->
+    <main>
+        {{PAGE_CONTENT}}
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white no-print">
+        <div class="container">
+            <div class="py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Company Info -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-600 rounded-xl flex items-center justify-center mr-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">IT-ERA</h3>
+                                <p class="text-neutral-400 text-sm">Assistenza IT Lombardia</p>
+                            </div>
+                        </div>
+                        <p class="text-neutral-300 mb-4">
+                            Assistenza informatica professionale per aziende e privati in tutta la Lombardia. 
+                            Interventi rapidi, soluzioni efficaci, supporto 24/7.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <a href="tel:+390398882041" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+                                📞 039 888 2041
+                            </a>
+                            <a href="mailto:info@it-era.it" class="text-neutral-300 hover:text-white transition-colors">
+                                info@it-era.it
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div>
+                        <h4 class="font-semibold mb-4">Servizi</h4>
+                        <ul class="space-y-2 text-neutral-300">
+                            <li><a href="/servizi-it/assistenza-informatica-aziende-milano.html" class="hover:text-white transition-colors">Assistenza Aziendale</a></li>
+                            <li><a href="/servizi-it/assistenza-informatica-privati-milano.html" class="hover:text-white transition-colors">Assistenza Privati</a></li>
+                            <li><a href="/servizi-it/riparazione-computer-milano.html" class="hover:text-white transition-colors">Riparazione PC</a></li>
+                            <li><a href="/servizi-it/recupero-dati-milano.html" class="hover:text-white transition-colors">Recupero Dati</a></li>
+                            <li><a href="/servizi-it/assistenza-computer-remota.html" class="hover:text-white transition-colors">🆕 Assistenza Remota</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Areas -->
+                    <div>
+                        <h4 class="font-semibold mb-4">Zone Servite</h4>
+                        <ul class="space-y-2 text-neutral-300">
+                            <li><a href="/zone/milano.html" class="hover:text-white transition-colors">Milano</a></li>
+                            <li><a href="/zone/bergamo.html" class="hover:text-white transition-colors">Bergamo</a></li>
+                            <li><a href="/zone/brescia.html" class="hover:text-white transition-colors">Brescia</a></li>
+                            <li><a href="/zone/como.html" class="hover:text-white transition-colors">Como</a></li>
+                            <li><a href="/zone/varese.html" class="hover:text-white transition-colors">Varese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-neutral-800 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-neutral-400 text-sm">
+                        © 2024 IT-ERA. Tutti i diritti riservati. | P.IVA: 12345678901
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="/privacy.html" class="text-neutral-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="/cookie.html" class="text-neutral-400 hover:text-white transition-colors">Cookie Policy</a>
+                        <a href="/termini.html" class="text-neutral-400 hover:text-white transition-colors">Termini di Servizio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Emergency contact tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track emergency calls
+            const emergencyLinks = document.querySelectorAll('a[href^="tel:+390398882041"]');
+            emergencyLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Analytics tracking
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'emergency_call', {
+                            'event_category': 'contact',
+                            'event_label': 'emergency_phone'
+                        });
+                    }
+                });
+            });
+            
+            // Form submission tracking
+            const forms = document.querySelectorAll('form[data-resend="true"]');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    // Analytics tracking
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'form_submit', {
+                            'event_category': 'lead',
+                            'event_label': 'contact_form'
+                        });
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    {{ADDITIONAL_SCRIPTS}}
+</body>
+</html>

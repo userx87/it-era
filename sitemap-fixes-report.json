@@ -1,0 +1,698 @@
+{
+  "timestamp": "2025-09-17T06:33:36.545Z",
+  "summary": {
+    "totalPagesAnalyzed": 568,
+    "pagesFixed": 30,
+    "pagesFailed": 0,
+    "successRate": 100
+  },
+  "fixedPages": [
+    {
+      "url": "https://it-era.it",
+      "fixes": [
+        "missingForm",
+        "missingResend"
+      ],
+      "fixFile": "fixes-index.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 20,
+        "uxDesign": 90,
+        "menuNavigation": 100,
+        "conversionOptimization": 100,
+        "overall": 78
+      },
+      "issues": [
+        "Form functionality problems",
+        "No contact form present",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/contatti.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-contatti.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 20,
+        "conversionOptimization": 100,
+        "overall": 72
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/contatti/index.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-contatti-index.html",
+      "originalScores": {
+        "linkValidity": 50,
+        "formFunctionality": 0,
+        "uxDesign": 20,
+        "menuNavigation": 10,
+        "conversionOptimization": 0,
+        "overall": 18
+      },
+      "issues": [
+        "Link validity issues",
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "Missing emergency contact",
+        "No contact form present",
+        "Missing Resend integration",
+        "Content too short"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-bergamo.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-computer-non-si-accende-bergamo.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-brescia.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-computer-non-si-accende-brescia.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-computer-non-si-accende-milano.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/hard-disk-non-funziona-bergamo.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-hard-disk-non-funziona-bergamo.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/hard-disk-non-funziona-brescia.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-hard-disk-non-funziona-brescia.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/hard-disk-non-funziona-milano.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-hard-disk-non-funziona-milano.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/schermo-nero-computer-bergamo.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-schermo-nero-computer-bergamo.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/landing/assistenza-emergenza.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-landing-assistenza-emergenza.html",
+      "originalScores": {
+        "linkValidity": 0,
+        "formFunctionality": 0,
+        "uxDesign": 0,
+        "menuNavigation": 0,
+        "conversionOptimization": 0,
+        "overall": 0
+      },
+      "issues": [
+        "Page not accessible, 404, or content too short"
+      ]
+    },
+    {
+      "url": "https://it-era.it/landing/cloud-migration.html",
+      "fixes": [
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-landing-cloud-migration.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 60,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 30,
+        "overall": 59
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "Missing emergency contact",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/landing/digitalizzazione-pmi.html",
+      "fixes": [
+        "missingResend",
+        "missingEmergencyContact",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-landing-digitalizzazione-pmi.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 60,
+        "uxDesign": 65,
+        "menuNavigation": 50,
+        "conversionOptimization": 40,
+        "overall": 67
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "Missing emergency contact",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/landing/sicurezza-informatica.html",
+      "fixes": [
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-landing-sicurezza-informatica.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 60,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 20,
+        "overall": 58
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "Missing emergency contact",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/landing/software-commercialisti.html",
+      "fixes": [
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-landing-software-commercialisti.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 70,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 20,
+        "overall": 60
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "Missing emergency contact",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/settori/commercialisti.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-settori-commercialisti.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 0,
+        "uxDesign": 65,
+        "menuNavigation": 40,
+        "conversionOptimization": 80,
+        "overall": 56
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "No contact form present",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/settori/industria-40.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-settori-industria-40.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 0,
+        "uxDesign": 65,
+        "menuNavigation": 40,
+        "conversionOptimization": 55,
+        "overall": 52
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "No contact form present",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/settori/pmi-startup.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-settori-pmi-startup.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 0,
+        "uxDesign": 65,
+        "menuNavigation": 40,
+        "conversionOptimization": 55,
+        "overall": 52
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "No contact form present",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/settori/retail-gdo.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-settori-retail-gdo.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 0,
+        "uxDesign": 65,
+        "menuNavigation": 40,
+        "conversionOptimization": 55,
+        "overall": 52
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "No contact form present",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/settori/studi-legali.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-settori-studi-legali.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 0,
+        "uxDesign": 65,
+        "menuNavigation": 40,
+        "conversionOptimization": 55,
+        "overall": 52
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "No contact form present",
+        "Missing Resend integration"
+      ]
+    },
+    {
+      "url": "https://it-era.it/settori/studi-medici/index.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "fixFile": "fixes-settori-studi-medici-index.html",
+      "originalScores": {
+        "linkValidity": 85,
+        "formFunctionality": 0,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 10,
+        "overall": 37
+      },
+      "issues": [
+        "Form functionality problems",
+        "UX design improvements needed",
+        "Navigation menu issues",
+        "Conversion optimization needed",
+        "Missing emergency contact",
+        "No contact form present",
+        "Missing Resend integration",
+        "Content too short"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/assemblaggio-pc-milano-milano.html",
+      "fixes": [
+        "missingMenu",
+        "missingCTA"
+      ],
+      "fixFile": "fixes-servizi-it-assemblaggio-pc-milano-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 55,
+        "overall": 72
+      },
+      "issues": [
+        "Navigation menu issues",
+        "Conversion optimization needed"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-assistenza-informatica-aziende-milano.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 75,
+        "overall": 67
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html",
+      "fixes": [
+        "missingMenu"
+      ],
+      "fixFile": "fixes-servizi-it-assistenza-informatica-privati-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 90,
+        "overall": 78
+      },
+      "issues": [
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/assistenza-notebook-privati-milano.html",
+      "fixes": [
+        "missingMenu"
+      ],
+      "fixFile": "fixes-servizi-it-assistenza-notebook-privati-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 90,
+        "overall": 78
+      },
+      "issues": [
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-si-spegne-da-solo-milano.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "fixFile": "fixes-servizi-it-computer-si-spegne-da-solo-milano.html",
+      "originalScores": {
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "uxDesign": 65,
+        "menuNavigation": 10,
+        "conversionOptimization": 100,
+        "overall": 71
+      },
+      "issues": [
+        "UX design improvements needed",
+        "Navigation menu issues"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-su-misura-milano.html",
+      "fixes": [
+        "missingMenu",
+        "missingCTA"
+      ],
+      "fixFile": "fixes-servizi-it-computer-su-misura-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 55,
+        "overall": 72
+      },
+      "issues": [
+        "Navigation menu issues",
+        "Conversion optimization needed"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-ufficio-assemblaggio-milano.html",
+      "fixes": [
+        "missingMenu",
+        "missingCTA"
+      ],
+      "fixFile": "fixes-servizi-it-computer-ufficio-assemblaggio-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 55,
+        "overall": 72
+      },
+      "issues": [
+        "Navigation menu issues",
+        "Conversion optimization needed"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/configurazione-computer-milano.html",
+      "fixes": [
+        "missingMenu",
+        "missingCTA"
+      ],
+      "fixFile": "fixes-servizi-it-configurazione-computer-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 55,
+        "overall": 72
+      },
+      "issues": [
+        "Navigation menu issues",
+        "Conversion optimization needed"
+      ]
+    },
+    {
+      "url": "https://it-era.it/servizi-it/configurazione-router-casa-milano.html",
+      "fixes": [
+        "missingMenu"
+      ],
+      "fixFile": "fixes-servizi-it-configurazione-router-casa-milano.html",
+      "originalScores": {
+        "linkValidity": 100,
+        "formFunctionality": 90,
+        "uxDesign": 75,
+        "menuNavigation": 10,
+        "conversionOptimization": 90,
+        "overall": 78
+      },
+      "issues": [
+        "Navigation menu issues"
+      ]
+    }
+  ],
+  "failedFixes": [],
+  "fixTypes": {
+    "missingForm": 9,
+    "missingResend": 13,
+    "missingEmergencyContact": 7,
+    "missingMenu": 28,
+    "missingCTA": 15,
+    "improveUX": 22
+  }
+}

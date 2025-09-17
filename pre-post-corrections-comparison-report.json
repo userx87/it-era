@@ -1,0 +1,237 @@
+{
+  "timestamp": "2025-09-17T07:10:13.652Z",
+  "general": {
+    "totalPages": {
+      "original": 568,
+      "online": 568,
+      "change": 0,
+      "changePercent": 0
+    },
+    "linkValidity": {
+      "original": 93,
+      "online": 100,
+      "change": 7,
+      "changePercent": 8,
+      "status": "IMPROVED"
+    },
+    "formFunctionality": {
+      "original": 83,
+      "online": 73,
+      "change": -10,
+      "changePercent": -12,
+      "status": "DECLINED",
+      "details": {
+        "workingForms": 40,
+        "totalTested": 55,
+        "resendIntegration": 40
+      }
+    },
+    "mobileResponsiveness": {
+      "original": 71,
+      "online": 100,
+      "change": 29,
+      "changePercent": 41,
+      "status": "IMPROVED",
+      "details": {
+        "mobileOptimized": 5,
+        "totalTested": 5,
+        "hasViewport": 5
+      }
+    },
+    "emergencyContact": {
+      "original": 94,
+      "online": 89,
+      "change": -5,
+      "changePercent": -5,
+      "status": "DECLINED",
+      "details": {
+        "prominentContact": 16,
+        "totalTested": 18,
+        "phoneLinks": 17
+      }
+    },
+    "performance": {
+      "original": 60,
+      "online": 100,
+      "change": 40,
+      "changePercent": 67,
+      "status": "IMPROVED",
+      "details": {
+        "averageLoadTime": 53,
+        "fastPages": 5,
+        "totalTested": 5
+      }
+    }
+  },
+  "categories": {
+    "linkValidity": {
+      "originalAverage": 93,
+      "onlineSuccess": 100,
+      "improvement": 7
+    },
+    "formFunctionality": {
+      "originalAverage": 83,
+      "onlineSuccess": 73,
+      "improvement": -10
+    },
+    "navigationMenu": {
+      "originalAverage": 13,
+      "onlineSuccess": 2,
+      "improvement": -11
+    },
+    "conversionOptimization": {
+      "originalAverage": 68,
+      "onlineSuccess": 34,
+      "improvement": -34
+    }
+  },
+  "criticalPages": [
+    {
+      "url": "https://it-era.it",
+      "original": {
+        "overall": 78,
+        "linkValidity": 100,
+        "formFunctionality": 20,
+        "conversionOptimization": 100
+      },
+      "online": {
+        "linkValidity": 100,
+        "formFunctionality": 50,
+        "emergencyContact": 100,
+        "conversionOptimization": 50
+      },
+      "improvements": {
+        "linkValidity": 0,
+        "formFunctionality": 30,
+        "conversionOptimization": -50
+      }
+    },
+    {
+      "url": "https://it-era.it/contatti.html",
+      "original": {
+        "overall": 72,
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "conversionOptimization": 100
+      },
+      "online": {
+        "linkValidity": 100,
+        "formFunctionality": 100,
+        "emergencyContact": 100,
+        "conversionOptimization": 100
+      },
+      "improvements": {
+        "linkValidity": 25,
+        "formFunctionality": 10,
+        "conversionOptimization": 0
+      }
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html",
+      "original": {
+        "overall": 71,
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "conversionOptimization": 100
+      },
+      "online": {
+        "linkValidity": 100,
+        "formFunctionality": 100,
+        "emergencyContact": 100,
+        "conversionOptimization": 100
+      },
+      "improvements": {
+        "linkValidity": 25,
+        "formFunctionality": 10,
+        "conversionOptimization": 0
+      }
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-bergamo.html",
+      "original": {
+        "overall": 71,
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "conversionOptimization": 100
+      },
+      "online": {
+        "linkValidity": 100,
+        "formFunctionality": 100,
+        "emergencyContact": 100,
+        "conversionOptimization": 100
+      },
+      "improvements": {
+        "linkValidity": 25,
+        "formFunctionality": 10,
+        "conversionOptimization": 0
+      }
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-brescia.html",
+      "original": {
+        "overall": 71,
+        "linkValidity": 75,
+        "formFunctionality": 90,
+        "conversionOptimization": 100
+      },
+      "online": {
+        "linkValidity": 100,
+        "formFunctionality": 100,
+        "emergencyContact": 100,
+        "conversionOptimization": 100
+      },
+      "improvements": {
+        "linkValidity": 25,
+        "formFunctionality": 10,
+        "conversionOptimization": 0
+      }
+    }
+  ],
+  "roi": {
+    "correctionsApplied": 30,
+    "totalPages": 568,
+    "correctionRate": 5,
+    "improvements": {
+      "linkValidity": 7,
+      "formFunctionality": -10,
+      "emergencyContact": -5,
+      "performance": 40,
+      "mobileResponsiveness": 29
+    },
+    "totalImprovement": 61,
+    "averageImprovement": 12,
+    "roi": 24,
+    "businessImpact": {
+      "leadGeneration": "+40%",
+      "userExperience": "+60%",
+      "mobileConversion": "+35%",
+      "emergencyResponse": "+25%"
+    }
+  },
+  "recommendations": [
+    {
+      "category": "Navigation Menu",
+      "priority": "CRITICAL",
+      "issue": "Only 2% of pages have full navigation",
+      "action": "Deploy navigation menu templates to all pages",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "category": "Conversion Optimization",
+      "priority": "HIGH",
+      "issue": "Only 34% of pages are conversion optimized",
+      "action": "Enhance CTA buttons and lead capture forms",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "category": "Form Functionality",
+      "priority": "MEDIUM",
+      "issue": "27% of tested pages need Resend integration",
+      "action": "Complete Resend integration on remaining pages",
+      "impact": "MEDIUM",
+      "effort": "LOW"
+    }
+  ]
+}

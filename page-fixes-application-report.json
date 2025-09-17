@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-09-17T07:22:03.972Z",
+  "summary": {
+    "totalFixesAttempted": 5,
+    "successfulApplications": 0,
+    "failedApplications": 5,
+    "successRate": 0
+  },
+  "appliedFixes": [],
+  "failedApplications": [
+    {
+      "url": "https://it-era.it/contatti.html",
+      "localPath": "./contatti.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "error": "fixData is not defined"
+    },
+    {
+      "url": "https://it-era.it/contatti/index.html",
+      "localPath": "./contatti/index.html",
+      "fixes": [
+        "missingForm",
+        "missingResend",
+        "missingEmergencyContact",
+        "missingMenu",
+        "missingCTA",
+        "improveUX"
+      ],
+      "error": "fixData is not defined"
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-bergamo.html",
+      "localPath": "./servizi-it/computer-non-si-accende-bergamo.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "error": "fixData is not defined"
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-brescia.html",
+      "localPath": "./servizi-it/computer-non-si-accende-brescia.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "error": "fixData is not defined"
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html",
+      "localPath": "./servizi-it/computer-non-si-accende-milano.html",
+      "fixes": [
+        "missingMenu",
+        "improveUX"
+      ],
+      "error": "fixData is not defined"
+    }
+  ]
+}

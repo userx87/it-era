@@ -1,0 +1,302 @@
+[
+  {
+    "name": "🟢 [MEDIUM] Validate: Contatti Old",
+    "description": "Validate page: https://it-era.it/contatti-old.html\nCategory: page\nPriority: MEDIUM\n\nSTEP 1 - Visual: [ ] Page content, navigation, CTA, footer, mobile responsive\nSTEP 2 - Code: [ ] Title page, meta description, schema WebPage, analytics tracking\nSTEP 3 - Contact/Resend: [ ] Contact form, Resend integration, inquiry handling\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟢 [MEDIUM] Validate: Contatti",
+    "description": "Validate page: https://it-era.it/contatti/index.html\nCategory: page\nPriority: MEDIUM\n\nSTEP 1 - Visual: [ ] Page content, navigation, CTA, footer, mobile responsive\nSTEP 2 - Code: [ ] Title page, meta description, schema WebPage, analytics tracking\nSTEP 3 - Contact/Resend: [ ] Contact form, Resend integration, inquiry handling\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assemblaggio Pc Milano Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/assemblaggio-pc-milano-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Aziende Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Privati Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Notebook Privati Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-notebook-privati-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Si Spegne Da Solo Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-si-spegne-da-solo-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Su Misura Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-su-misura-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Ufficio Assemblaggio Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-ufficio-assemblaggio-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Computer Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-computer-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Router Casa Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-router-casa-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Formazione Informatica Aziende Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/formazione-informatica-aziende-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-bergamo.html (Bergamo)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Bergamo, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-brescia.html (Brescia)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Brescia, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-milano.html (Milano)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Milano, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Installazione Software Aziendale Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/installazione-software-aziendale-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Installazione Software Privati Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/installazione-software-privati-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Migrazione Dati Server Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/migrazione-dati-server-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Ottimizzazione Performance Pc Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/ottimizzazione-performance-pc-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Pc Gaming Assemblaggio Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/pc-gaming-assemblaggio-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Pc Grafica Assemblaggio Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/pc-grafica-assemblaggio-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Recupero Dati Personali Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/recupero-dati-personali-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Alimentatore Pc Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-alimentatore-pc-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Notebook Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-notebook-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Pc Milano Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-pc-milano-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Scheda Madre Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-scheda-madre-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Tastiera Notebook Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-tastiera-notebook-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-bergamo.html (Bergamo)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Bergamo, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-brescia.html (Brescia)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Brescia, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-milano.html (Milano)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Milano, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Server Assemblaggio Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/server-assemblaggio-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Sicurezza Informatica Consulenza Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/sicurezza-informatica-consulenza-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Sostituzione Hard Disk Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/sostituzione-hard-disk-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Sostituzione Schermo Laptop Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/sostituzione-schermo-laptop-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Supporto Pc Domestico Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/supporto-pc-domestico-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Upgrade Ram Computer Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/upgrade-ram-computer-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Virus Removal Privati Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/virus-removal-privati-milano.html (Milano)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Milano, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Workstation Personalizzate Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/workstation-personalizzate-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Azienda Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-azienda-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Azienda Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-azienda-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Azienda Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-azienda-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Setup Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-setup-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Setup Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-setup-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Setup Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-setup-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-como.html (Como)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Como, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-monza-brianza.html (Monza brianza)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Monza brianza, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-varese.html (Varese)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Varese, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  }
+]

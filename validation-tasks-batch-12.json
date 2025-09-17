@@ -1,0 +1,14 @@
+[
+  {
+    "name": "⚪ [LOW] Validate: Test Form Simple",
+    "description": "Validate page: https://it-era.it/test-form-simple.html\nCategory: test\nPriority: LOW\n\nSTEP 1 - Visual: [ ] Test functionality, development features, debugging info\nSTEP 2 - Code: [ ] Title test, meta noindex, development tracking, error handling\nSTEP 3 - Contact/Resend: [ ] Test form submission, Resend test integration, validation\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "⚪ [LOW] Validate: Test Resend",
+    "description": "Validate page: https://it-era.it/test-resend.html\nCategory: test\nPriority: LOW\n\nSTEP 1 - Visual: [ ] Test functionality, development features, debugging info\nSTEP 2 - Code: [ ] Title test, meta noindex, development tracking, error handling\nSTEP 3 - Contact/Resend: [ ] Test form submission, Resend test integration, validation\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  }
+]

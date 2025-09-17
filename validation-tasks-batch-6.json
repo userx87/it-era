@@ -1,0 +1,302 @@
+[
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Lecco - Lecco",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-lecco.html (Lecco)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Lecco, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Lodi - Lodi",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-lodi.html (Lodi)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Lodi, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Sondrio - Sondrio",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-sondrio.html (Sondrio)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Sondrio, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Si Spegne Da Solo Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-si-spegne-da-solo-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Su Misura Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-su-misura-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Ufficio Assemblaggio Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-ufficio-assemblaggio-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Computer Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-computer-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Cremona - Cremona",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-cremona.html (Cremona)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Cremona, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Mantova - Mantova",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-mantova.html (Mantova)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Mantova, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Cremona - Cremona",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-cremona.html (Cremona)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Cremona, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Mantova - Mantova",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-mantova.html (Mantova)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Mantova, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Router Casa Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-router-casa-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Formazione Informatica Aziende Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/formazione-informatica-aziende-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Lecco - Lecco",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-lecco.html (Lecco)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Lecco, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Lodi - Lodi",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-lodi.html (Lodi)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Lodi, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Sondrio - Sondrio",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-sondrio.html (Sondrio)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Sondrio, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Installazione Software Aziendale Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/installazione-software-aziendale-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Installazione Software Privati Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/installazione-software-privati-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Migrazione Dati Server Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/migrazione-dati-server-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Ottimizzazione Performance Pc Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/ottimizzazione-performance-pc-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Pc Gaming Assemblaggio Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/pc-gaming-assemblaggio-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Pc Grafica Assemblaggio Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/pc-grafica-assemblaggio-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Recupero Dati Milano Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/recupero-dati-milano-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Recupero Dati Personali Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/recupero-dati-personali-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Alimentatore Pc Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-alimentatore-pc-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Notebook Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-notebook-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Pc Milano Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-pc-milano-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Scheda Madre Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-scheda-madre-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Tastiera Notebook Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-tastiera-notebook-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Lecco - Lecco",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-lecco.html (Lecco)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Lecco, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Lodi - Lodi",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-lodi.html (Lodi)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Lodi, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Sondrio - Sondrio",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-sondrio.html (Sondrio)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Sondrio, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Server Assemblaggio Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/server-assemblaggio-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Sicurezza Informatica Consulenza Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/sicurezza-informatica-consulenza-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Sostituzione Hard Disk Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/sostituzione-hard-disk-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Sostituzione Schermo Laptop Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/sostituzione-schermo-laptop-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Supporto Pc Domestico Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/supporto-pc-domestico-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Upgrade Ram Computer Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/upgrade-ram-computer-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Virus Removal Privati Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/virus-removal-privati-pavia.html (Pavia)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Pavia, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Workstation Personalizzate Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/workstation-personalizzate-pavia.html (Pavia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Pavia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Cremona - Cremona",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-cremona.html (Cremona)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Cremona, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Mantova - Mantova",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-mantova.html (Mantova)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Mantova, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Computer Casa Cremona - Cremona",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-computer-casa-cremona.html (Cremona)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Cremona, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Computer Casa Mantova - Mantova",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-computer-casa-mantova.html (Mantova)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Mantova, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Computer Cremona - Cremona",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-computer-cremona.html (Cremona)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Cremona, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Riparazione Computer Mantova - Mantova",
+    "description": "Validate page: https://it-era.it/servizi-it/riparazione-computer-mantova.html (Mantova)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Mantova, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Wifi Non Funziona Computer Cremona - Cremona",
+    "description": "Validate page: https://it-era.it/servizi-it/wifi-non-funziona-computer-cremona.html (Cremona)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Cremona, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Wifi Non Funziona Computer Mantova - Mantova",
+    "description": "Validate page: https://it-era.it/servizi-it/wifi-non-funziona-computer-mantova.html (Mantova)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Mantova, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Lecco - Lecco",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-lecco.html (Lecco)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Lecco, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Lodi - Lodi",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-lodi.html (Lodi)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Lodi, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  }
+]

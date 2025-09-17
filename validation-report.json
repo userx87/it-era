@@ -1,0 +1,209 @@
+{
+  "summary": {
+    "total": 10,
+    "passed": 4,
+    "warning": 2,
+    "failed": 4,
+    "errors": 0,
+    "successRate": 40
+  },
+  "averageScores": {
+    "visual": 64,
+    "code": 79,
+    "contact": 54,
+    "overall": 65
+  },
+  "results": [
+    {
+      "url": "https://it-era.it",
+      "status": "WARNING",
+      "scores": {
+        "visual": 100,
+        "code": 85,
+        "contact": 25,
+        "overall": 70
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": false,
+        "hasResend": false,
+        "hasEmergencyPhone": true,
+        "hasAnalytics": false,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/contatti.html",
+      "status": "PASSED",
+      "scores": {
+        "visual": 80,
+        "code": 100,
+        "contact": 100,
+        "overall": 93
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": true,
+        "hasResend": true,
+        "hasEmergencyPhone": true,
+        "hasAnalytics": true,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html",
+      "status": "PASSED",
+      "scores": {
+        "visual": 80,
+        "code": 100,
+        "contact": 100,
+        "overall": 93
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": true,
+        "hasResend": true,
+        "hasEmergencyPhone": true,
+        "hasAnalytics": true,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-bergamo.html",
+      "status": "PASSED",
+      "scores": {
+        "visual": 80,
+        "code": 100,
+        "contact": 100,
+        "overall": 93
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": true,
+        "hasResend": true,
+        "hasEmergencyPhone": true,
+        "hasAnalytics": true,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-brescia.html",
+      "status": "PASSED",
+      "scores": {
+        "visual": 80,
+        "code": 100,
+        "contact": 100,
+        "overall": 93
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": true,
+        "hasResend": true,
+        "hasEmergencyPhone": true,
+        "hasAnalytics": true,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/landing/assistenza-emergenza.html",
+      "status": "FAILED",
+      "error": "404 Not Found",
+      "scores": {
+        "visual": 0,
+        "code": 0,
+        "contact": 0,
+        "overall": 0
+      }
+    },
+    {
+      "url": "https://it-era.it/landing/cloud-migration.html",
+      "status": "FAILED",
+      "scores": {
+        "visual": 60,
+        "code": 100,
+        "contact": 45,
+        "overall": 68
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": true,
+        "hasResend": false,
+        "hasEmergencyPhone": false,
+        "hasAnalytics": false,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/landing/sicurezza-informatica.html",
+      "status": "FAILED",
+      "scores": {
+        "visual": 60,
+        "code": 100,
+        "contact": 45,
+        "overall": 68
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": true,
+        "hasResend": false,
+        "hasEmergencyPhone": false,
+        "hasAnalytics": false,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/settori/commercialisti.html",
+      "status": "WARNING",
+      "scores": {
+        "visual": 100,
+        "code": 100,
+        "contact": 25,
+        "overall": 75
+      },
+      "details": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasSchema": true,
+        "hasForm": false,
+        "hasResend": false,
+        "hasEmergencyPhone": true,
+        "hasAnalytics": true,
+        "isResponsive": true,
+        "hasOG": true
+      }
+    },
+    {
+      "url": "https://it-era.it/settori/studi-medici.html",
+      "status": "FAILED",
+      "error": "404 Not Found",
+      "scores": {
+        "visual": 0,
+        "code": 0,
+        "contact": 0,
+        "overall": 0
+      }
+    }
+  ],
+  "timestamp": "2025-09-17T06:01:53.688Z"
+}

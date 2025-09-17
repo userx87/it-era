@@ -1,0 +1,302 @@
+[
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-como.html (Como)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Como, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-monza-brianza.html (Monza brianza)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Monza brianza, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Hard Disk Non Funziona Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/hard-disk-non-funziona-varese.html (Varese)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Varese, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-como.html (Como)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Como, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-monza-brianza.html (Monza brianza)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Monza brianza, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Schermo Nero Computer Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/schermo-nero-computer-varese.html (Varese)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Varese, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-como.html (Como)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Como, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-monza-brianza.html (Monza brianza)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Monza brianza, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Ufficio Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-ufficio-varese.html (Varese)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Varese, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Azienda Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-azienda-como.html (Como)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Como, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Azienda Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-azienda-monza-brianza.html (Monza brianza)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Monza brianza, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Azienda Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-azienda-varese.html (Varese)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Varese, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Setup Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-setup-como.html (Como)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Como, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Backup Automatico Setup Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/backup-automatico-setup-varese.html (Varese)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Varese, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-como.html (Como)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Como, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Aziendale Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-aziendale-varese.html (Varese)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Varese, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-como.html (Como)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Como, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-monza-brianza.html (Monza brianza)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Monza brianza, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Rete Ufficio Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-rete-ufficio-varese.html (Varese)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Varese, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assemblaggio Pc Milano Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/assemblaggio-pc-milano-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Aziende Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-aziende-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Aziende Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-aziende-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Privati Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-privati-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Informatica Privati Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-informatica-privati-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Notebook Privati Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-notebook-privati-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Notebook Privati Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-notebook-privati-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Como - Como",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-como.html (Como)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Como, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Milano - Milano",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-milano.html (Milano)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Milano, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Monza Brianza - Monza brianza",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-monza-brianza.html (Monza brianza)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Monza brianza, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Assistenza Server Varese - Varese",
+    "description": "Validate page: https://it-era.it/servizi-it/assistenza-server-varese.html (Varese)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Varese, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🔴 [CRITICAL] Validate: Computer Non Si Accende Pavia - Pavia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-non-si-accende-pavia.html (Pavia)\nCategory: emergency\nPriority: CRITICAL\n\nSTEP 1 - Visual: [ ] Emergency banner, 039 888 2041 prominente, CTA styled, descrizione problema\nSTEP 2 - Code: [ ] Title emergenza+Pavia, meta urgenza, schema Service, emergency tracking\nSTEP 3 - Contact/Resend: [ ] Emergency form prioritario, Resend notification immediata, phone/WhatsApp links\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Si Spegne Da Solo Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-si-spegne-da-solo-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Si Spegne Da Solo Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-si-spegne-da-solo-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Su Misura Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-su-misura-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Su Misura Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-su-misura-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Ufficio Assemblaggio Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-ufficio-assemblaggio-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Computer Ufficio Assemblaggio Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/computer-ufficio-assemblaggio-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Computer Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-computer-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Computer Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-computer-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Router Casa Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-router-casa-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Configurazione Router Casa Brescia - Brescia",
+    "description": "Validate page: https://it-era.it/servizi-it/configurazione-router-casa-brescia.html (Brescia)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Brescia, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  },
+  {
+    "name": "🟡 [HIGH] Validate: Formazione Informatica Aziende Bergamo - Bergamo",
+    "description": "Validate page: https://it-era.it/servizi-it/formazione-informatica-aziende-bergamo.html (Bergamo)\nCategory: service-it\nPriority: HIGH\n\nSTEP 1 - Visual: [ ] Descrizione servizio dettagliata, pricing section, FAQ, related services\nSTEP 2 - Code: [ ] Title servizio+Bergamo, meta keywords, schema Service, tracking\nSTEP 3 - Contact/Resend: [ ] Form preventivo specifico, Resend lead capture, consultation CTA\n\nIssues Found: [To be determined]\nResolution: [To be determined]",
+    "parent_task_id": "5fbo3HzLtJ6U4rJhHb38Hu",
+    "state": "NOT_STARTED"
+  }
+]

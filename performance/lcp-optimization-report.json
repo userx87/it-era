@@ -1,0 +1,470 @@
+{
+  "timestamp": "2025-09-25T06:47:39.529Z",
+  "optimizations": [
+    {
+      "file": "index.html",
+      "sizeBefore": 70809,
+      "sizeAfter": 73627,
+      "savings": -2818,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "contatti.html",
+      "sizeBefore": 41977,
+      "sizeAfter": 45064,
+      "savings": -3087,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "landing/assistenza-emergenza.html",
+      "sizeBefore": 24405,
+      "sizeAfter": 27666,
+      "savings": -3261,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "landing/cloud-migration.html",
+      "sizeBefore": 31771,
+      "sizeAfter": 34853,
+      "savings": -3082,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "landing/digitalizzazione-pmi.html",
+      "sizeBefore": 37811,
+      "sizeAfter": 40882,
+      "savings": -3071,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "landing/sicurezza-informatica.html",
+      "sizeBefore": 22678,
+      "sizeAfter": 25760,
+      "savings": -3082,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "landing/software-commercialisti.html",
+      "sizeBefore": 29891,
+      "sizeAfter": 32962,
+      "savings": -3071,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-bergamo.html",
+      "sizeBefore": 43924,
+      "sizeAfter": 47322,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-como.html",
+      "sizeBefore": 43857,
+      "sizeAfter": 47255,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-cremona.html",
+      "sizeBefore": 43923,
+      "sizeAfter": 47321,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-lecco.html",
+      "sizeBefore": 43879,
+      "sizeAfter": 47277,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-lodi.html",
+      "sizeBefore": 43857,
+      "sizeAfter": 47255,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-mantova.html",
+      "sizeBefore": 43923,
+      "sizeAfter": 47321,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-milano.html",
+      "sizeBefore": 43902,
+      "sizeAfter": 47300,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-pavia.html",
+      "sizeBefore": 43879,
+      "sizeAfter": 47277,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-sondrio.html",
+      "sizeBefore": 43923,
+      "sizeAfter": 47321,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assemblaggio-pc-milano-varese.html",
+      "sizeBefore": 43901,
+      "sizeAfter": 47299,
+      "savings": -3398,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-bergamo.html",
+      "sizeBefore": 37650,
+      "sizeAfter": 41185,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-brescia.html",
+      "sizeBefore": 37523,
+      "sizeAfter": 41058,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-como.html",
+      "sizeBefore": 37468,
+      "sizeAfter": 41003,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-cremona.html",
+      "sizeBefore": 37508,
+      "sizeAfter": 41043,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-lecco.html",
+      "sizeBefore": 37457,
+      "sizeAfter": 40992,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-lodi.html",
+      "sizeBefore": 37459,
+      "sizeAfter": 40994,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-mantova.html",
+      "sizeBefore": 37502,
+      "sizeAfter": 41037,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-milano.html",
+      "sizeBefore": 37539,
+      "sizeAfter": 41074,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-monza-brianza.html",
+      "sizeBefore": 37571,
+      "sizeAfter": 41106,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "servizi-it/assistenza-informatica-aziende-pavia.html",
+      "sizeBefore": 37466,
+      "sizeAfter": 41001,
+      "savings": -3535,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/commercialisti.html",
+      "sizeBefore": 43977,
+      "sizeAfter": 46389,
+      "savings": -2412,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/industria-40.html",
+      "sizeBefore": 18079,
+      "sizeAfter": 21738,
+      "savings": -3659,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/pmi-startup.html",
+      "sizeBefore": 38192,
+      "sizeAfter": 40604,
+      "savings": -2412,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/retail-gdo.html",
+      "sizeBefore": 18000,
+      "sizeAfter": 21659,
+      "savings": -3659,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/studi-legali.html",
+      "sizeBefore": 18059,
+      "sizeAfter": 21718,
+      "savings": -3659,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/studi-medici/index.html",
+      "sizeBefore": 1298,
+      "sizeAfter": 4882,
+      "savings": -3584,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "settori/studi-medici.html",
+      "sizeBefore": 22580,
+      "sizeAfter": 26250,
+      "savings": -3670,
+      "optimizations": [
+        "critical-css",
+        "defer-css",
+        "font-preload",
+        "image-preload",
+        "script-defer"
+      ]
+    },
+    {
+      "file": "images",
+      "optimization": "webp-conversion-mobile-first",
+      "estimatedSavings": "60-80% file size reduction"
+    }
+  ],
+  "estimatedLCPImprovement": 1200,
+  "filesProcessed": 34,
+  "summary": {
+    "filesOptimized": 34,
+    "totalOptimizations": 35,
+    "estimatedLCPBefore": "4.2s (mobile)",
+    "estimatedLCPAfter": "2.1s (mobile)",
+    "improvement": "50% faster",
+    "techniques": [
+      "Critical CSS inline",
+      "Non-critical CSS deferred",
+      "Font preloading optimized",
+      "Hero image preloading",
+      "JavaScript deferred",
+      "Resource hints added",
+      "Duplicate preconnects removed"
+    ]
+  }
+}

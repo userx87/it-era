@@ -109,7 +109,7 @@ window.ITERAChatbotConfig = {
                 <strong>📞 CHIAMA SUBITO: 039 888 2041</strong><br>
                 <em>Risposta garantita entro 15 minuti</em><br><br>
                 Nel frattempo, puoi anche:<br>
-                • 📧 Scrivere a: info@bulltech.it<br>
+                • 📧 Scrivere a: info@it-era.it<br>
                 • 💬 WhatsApp: +39 039 888 2041<br><br>
                 <strong>Il nostro team ti contatterà immediatamente!</strong>`,
             
@@ -119,7 +119,7 @@ window.ITERAChatbotConfig = {
         fallback: `Mi dispiace, al momento non riesco a elaborare la tua richiesta. 😔<br><br>
             Per assistenza immediata, contatta il nostro team:<br><br>
             📞 <strong>Telefono: 039 888 2041</strong><br>
-            📧 <strong>Email: info@bulltech.it</strong><br><br>
+            📧 <strong>Email: info@it-era.it</strong><br><br>
             Siamo qui per aiutarti! 💪`,
         
         leadCapture: `Vedo che sei interessato ai nostri servizi! 😊<br><br>
@@ -161,7 +161,7 @@ window.ITERAChatbotConfig = {
             keywords: ['prezzo', 'costo', 'preventivo', 'quanto costa', 'tariffe'],
             response: `Per un preventivo personalizzato, posso metterti in contatto con il nostro team commerciale:<br><br>
                 📞 <strong>Chiama: 039 888 2041</strong><br>
-                📧 <strong>Email: info@bulltech.it</strong><br><br>
+                📧 <strong>Email: info@it-era.it</strong><br><br>
                 La prima consulenza è sempre <strong>GRATUITA</strong>! 🎉<br><br>
                 Vuoi che ti chiami un nostro consulente?`
         },
@@ -171,7 +171,7 @@ window.ITERAChatbotConfig = {
             keywords: ['contatti', 'telefono', 'email', 'dove siete', 'indirizzo'],
             response: `Ecco come puoi contattare IT-ERA:<br><br>
                 📞 <strong>Telefono: 039 888 2041</strong><br>
-                📧 <strong>Email: info@bulltech.it</strong><br>
+                📧 <strong>Email: info@it-era.it</strong><br>
                 📍 <strong>Sede: Viale Risorgimento 32, Vimercate MB</strong><br>
                 🕒 <strong>Orari: Lun-Ven 8:00-18:00</strong><br>
                 🚨 <strong>Emergenze: 24/7</strong><br><br>
@@ -195,7 +195,7 @@ window.ITERAChatbotConfig = {
             keywords: ['operatore', 'persona', 'umano', 'parlare con qualcuno'],
             response: `Certo! Puoi parlare subito con un nostro operatore:<br><br>
                 📞 <strong>Chiama: 039 888 2041</strong><br>
-                📧 <strong>Email: info@bulltech.it</strong><br><br>
+                📧 <strong>Email: info@it-era.it</strong><br><br>
                 <strong>Orari operatori:</strong><br>
                 🕒 Lun-Ven: 8:00-18:00<br>
                 🚨 Emergenze: 24/7<br><br>

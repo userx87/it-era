@@ -1,0 +1,140 @@
+{
+  "url": "http://localhost:8080/",
+  "pageName": "Homepage",
+  "timestamp": "2025-09-25T05:33:42.451Z",
+  "seoData": {
+    "title": {
+      "content": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+      "length": 58,
+      "exists": true
+    },
+    "metaDescription": {
+      "content": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+      "length": 124,
+      "exists": true
+    },
+    "metaKeywords": {
+      "content": "assistenza informatica, IT support, Lombardia, Milano, Bergamo, sicurezza informatica",
+      "exists": true
+    },
+    "canonical": {
+      "href": "",
+      "exists": false
+    },
+    "openGraph": {
+      "title": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+      "description": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+      "image": "/images/og-image.jpg",
+      "url": "http://it-era.it/",
+      "type": "website",
+      "siteName": ""
+    },
+    "twitterCard": {
+      "card": "summary_large_image",
+      "site": "",
+      "creator": "",
+      "title": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+      "description": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+      "image": "/images/og-image.jpg"
+    },
+    "headings": {
+      "h1": {
+        "count": 1,
+        "text": [
+          "Assistenza Informatica\n          per Aziende Milano\n          Supporto IT 24/7 Garantito"
+        ]
+      },
+      "h2": {
+        "count": 2,
+        "text": [
+          "I Nostri Servizi",
+          "Hai bisogno di\n          assistenza IT?"
+        ]
+      },
+      "h3": {
+        "count": 9,
+        "text": [
+          "500+",
+          "2h",
+          "99.8%",
+          "15+",
+          "Assistenza Tecnica",
+          "Sicurezza Informatica",
+          "Cloud Computing",
+          "IT-ERA",
+          "Assistenza IT-ERA"
+        ]
+      }
+    },
+    "images": {
+      "total": 1,
+      "withoutAlt": 0,
+      "withEmptyAlt": 0,
+      "withAlt": 1
+    },
+    "links": {
+      "total": 56,
+      "internal": 56,
+      "external": 0,
+      "withoutTitle": 3,
+      "nofollow": 0
+    },
+    "structuredData": {
+      "jsonLdCount": 3,
+      "schemas": [
+        {
+          "type": "LocalBusiness",
+          "context": "https://schema.org"
+        },
+        {
+          "type": "WebSite",
+          "context": "https://schema.org"
+        },
+        {
+          "type": "LocalBusiness",
+          "context": "https://schema.org"
+        }
+      ]
+    },
+    "viewport": {
+      "content": "width=device-width, initial-scale=1.0",
+      "exists": true
+    },
+    "language": {
+      "htmlLang": "it",
+      "hasLangAttribute": true
+    },
+    "content": {
+      "wordCount": 1119,
+      "characterCount": 22977,
+      "textContentRatio": 0.2201874425022999
+    }
+  },
+  "robotsCheck": {
+    "exists": true,
+    "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+    "hasUserAgent": true,
+    "hasDisallow": true,
+    "hasSitemap": true
+  },
+  "sitemapCheck": {
+    "exists": true,
+    "url": "http://localhost:8080/sitemap.xml",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+    "isXML": true,
+    "urlCount": 568
+  },
+  "performanceMetrics": {
+    "loadTime": 310.59999990463257,
+    "domContentLoadedTime": 304.90000009536743,
+    "resourceCount": 15
+  },
+  "seoScore": 95,
+  "recommendations": [
+    {
+      "category": "Medium",
+      "issue": "Missing canonical URL",
+      "recommendation": "Add canonical URL to prevent duplicate content issues"
+    }
+  ]
+}

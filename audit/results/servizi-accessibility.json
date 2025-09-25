@@ -1,0 +1,101 @@
+{
+  "url": "http://localhost:8080/servizi.html",
+  "pageName": "Servizi",
+  "timestamp": "2025-09-25T05:33:29.716Z",
+  "axeResults": {
+    "passes": 37,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "impact": "serious",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI",
+        "nodes": 2,
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
+      },
+      {
+        "id": "link-name",
+        "description": "Ensures links have discernible text",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/link-name?application=axeAPI",
+        "nodes": 2,
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a",
+          "ACT"
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "impact": "serious",
+        "help": "Elements must have sufficient color contrast",
+        "nodes": 27
+      },
+      {
+        "id": "identical-links-same-purpose",
+        "description": "Ensure that links with the same accessible name serve a similar purpose",
+        "impact": "minor",
+        "help": "Links with the same name must have a similar purpose",
+        "nodes": 1
+      }
+    ]
+  },
+  "manualChecks": {
+    "keyboardNavigation": {
+      "totalFocusableElements": 84,
+      "hasTabOrder": false
+    },
+    "images": {
+      "totalImages": 0,
+      "imagesWithoutAlt": 0,
+      "imagesWithEmptyAlt": 0
+    },
+    "forms": {
+      "totalInputs": 0,
+      "inputsWithoutLabels": 0
+    }
+  },
+  "wcagChecks": {
+    "colorContrast": {
+      "totalTextElements": 283,
+      "suspectedLowContrastElements": 0
+    },
+    "textResize": {
+      "originalFontSize": "16px",
+      "supportsZoom": true
+    },
+    "touchTargets": {
+      "totalInteractiveElements": 84,
+      "smallTouchTargets": 69
+    },
+    "pageTitle": {
+      "hasTitle": true,
+      "titleLength": 42,
+      "title": "Servizi IT Professionali - IT-ERA | IT-ERA"
+    },
+    "language": {
+      "hasLangAttribute": true,
+      "language": "it"
+    }
+  },
+  "summary": {
+    "totalViolations": 2,
+    "criticalViolations": 0,
+    "seriousViolations": 2,
+    "moderateViolations": 0,
+    "minorViolations": 0
+  }
+}

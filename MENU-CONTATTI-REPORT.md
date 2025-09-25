@@ -24,7 +24,7 @@
 ```html
 📞 EMERGENZA: 039 888 2041 (24/7)
 💬 WhatsApp: Messaggio immediato
-📧 Email: info@bulltech.it (15 min risposta)
+📧 Email: info@it-era.it (15 min risposta)
 ```
 
 **Features Emergenza:**
@@ -56,7 +56,7 @@
 **Sede Principale - Bergamo:**
 - 📍 Bergamo e Provincia
 - 📞 039 888 2041
-- 📧 info@bulltech.it
+- 📧 info@it-era.it
 - 🕒 Lun-Ven: 8:00-18:00
 
 **Milano e Hinterland:**

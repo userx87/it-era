@@ -7,8 +7,8 @@ class ITERAFollowupAutomation {
     constructor() {
         this.apiEndpoint = 'https://api.resend.com/emails';
         this.apiKey = window.ITERA_CONFIG?.resendApiKey;
-        this.fromEmail = 'info@bulltech.it';
-        this.replyTo = 'info@bulltech.it';
+        this.fromEmail = 'info@it-era.it';
+        this.replyTo = 'info@it-era.it';
         
         this.sequences = {
             emergency_repair: {

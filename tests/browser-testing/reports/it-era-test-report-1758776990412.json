@@ -1,0 +1,532 @@
+{
+  "timestamp": "2025-09-25T05:09:35.049Z",
+  "homepage": {
+    "title": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+    "url": "https://it-era.it/",
+    "loadTime": 1758776978730,
+    "status": "error",
+    "error": "this.page.waitForTimeout is not a function"
+  },
+  "navigation": {
+    "totalLinks": 14,
+    "links": [
+      {
+        "text": "IT-ERA",
+        "href": "https://it-era.it/",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Home",
+        "href": "https://it-era.it/",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Assistenza Aziendale",
+        "href": "https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Assistenza Privati",
+        "href": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "🚨 Emergenze",
+        "href": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Commercialisti",
+        "href": "https://it-era.it/settori/commercialisti.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Studi Legali",
+        "href": "https://it-era.it/settori/studi-legali.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Studi Medici",
+        "href": "https://it-era.it/settori/studi-medici.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "PMI & Startup",
+        "href": "https://it-era.it/settori/pmi-startup.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "text": "Contatti",
+        "href": "https://it-era.it/contatti.html",
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      }
+    ]
+  },
+  "forms": {
+    "totalForms": 0,
+    "tested": []
+  },
+  "interactive": {
+    "buttons": [
+      {
+        "index": 1,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "index": 2,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "index": 3,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "index": 4,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "index": 5,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "index": 6,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "index": 7,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      }
+    ]
+  },
+  "responsiveness": {
+    "viewports": [
+      {
+        "name": "Mobile",
+        "width": 375,
+        "height": 667,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "name": "Tablet",
+        "width": 768,
+        "height": 1024,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      },
+      {
+        "name": "Desktop",
+        "width": 1920,
+        "height": 1080,
+        "status": "error",
+        "error": "this.page.waitForTimeout is not a function"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/favicon.ico",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "homepage_error",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "navigation_error",
+      "link": "IT-ERA",
+      "href": "https://it-era.it/",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Home",
+      "href": "https://it-era.it/",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/components/service-cards.html",
+      "page": "https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ Error loading component HTML: JSHandle@error",
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Assistenza Aziendale",
+      "href": "https://it-era.it/servizi-it/assistenza-informatica-aziende-milano.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/components/service-cards.html",
+      "page": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ Error loading component HTML: JSHandle@error",
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/home-it-support-milano.jpg",
+      "page": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Assistenza Privati",
+      "href": "https://it-era.it/servizi-it/assistenza-informatica-privati-milano.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/components/service-cards.html",
+      "page": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ Error loading component HTML: JSHandle@error",
+      "url": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html"
+    },
+    {
+      "type": "navigation_error",
+      "link": "🚨 Emergenze",
+      "href": "https://it-era.it/servizi-it/computer-non-si-accende-milano.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Commercialisti",
+      "href": "https://it-era.it/settori/commercialisti.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Studi Legali",
+      "href": "https://it-era.it/settori/studi-legali.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/settori/studi-medici.html",
+      "page": "https://it-era.it/settori/studi-legali.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/settori/studi-medici.html"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Studi Medici",
+      "href": "https://it-era.it/settori/studi-medici.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "navigation_error",
+      "link": "PMI & Startup",
+      "href": "https://it-era.it/settori/pmi-startup.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ JavaScript error tracked: Uncaught TypeError: window.ITERAAnalytics.trackEvent is not a function",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ JavaScript error tracked: Uncaught TypeError: window.ITERAAnalytics.trackEvent is not a function",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/components/contact-form.html",
+      "page": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ Error loading component HTML: JSHandle@error",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/js/contact-form.js",
+      "page": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ Failed to load JavaScript: js/contact-form.js",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "console_error",
+      "message": "❌ Error loading component contact-form: ",
+      "url": "https://it-era.it/contatti.html"
+    },
+    {
+      "type": "navigation_error",
+      "link": "Contatti",
+      "href": "https://it-era.it/contatti.html",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "responsive_error",
+      "viewport": "Mobile",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "responsive_error",
+      "viewport": "Tablet",
+      "message": "this.page.waitForTimeout is not a function"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/images/logo-it-era.png",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "http_error",
+      "status": 404,
+      "url": "https://it-era.it/fonts/inter-var.woff2",
+      "page": "https://it-era.it/"
+    },
+    {
+      "type": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "url": "https://it-era.it/"
+    },
+    {
+      "type": "responsive_error",
+      "viewport": "Desktop",
+      "message": "this.page.waitForTimeout is not a function"
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "homepage_initial",
+      "description": "Initial homepage load",
+      "filename": "1_homepage_initial.png",
+      "timestamp": "2025-09-25T05:09:38.729Z"
+    }
+  ],
+  "summary": {
+    "totalTests": 5,
+    "passedTests": 4,
+    "failedTests": 1,
+    "totalIssues": 68,
+    "totalScreenshots": 1
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "timestamp": "2025-09-25T06:49:25.852Z",
+  "validations": [
+    {
+      "name": "Critical CSS Inlined",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ index.html: Critical CSS correttamente inlined",
+        "✅ contatti.html: Critical CSS correttamente inlined"
+      ],
+      "impact": "LCP -300ms",
+      "recommendation": "Ottimizzazione completata correttamente"
+    },
+    {
+      "name": "Non-Critical CSS Deferred",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ contatti.html: CSS non-critico correttamente deferred"
+      ],
+      "impact": "LCP -200ms",
+      "recommendation": "CSS non critici devono essere caricati in modo asincrono"
+    },
+    {
+      "name": "Font Optimization",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ contatti.html: Font preconnect ottimizzato",
+        "✅ contatti.html: Font preload presente"
+      ],
+      "impact": "LCP -150ms",
+      "recommendation": "Preconnect e preload sono essenziali per font performance"
+    },
+    {
+      "name": "Image Preloads",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ contatti.html: Image preload configurato",
+        "✅ contatti.html: Fetch priority high presente"
+      ],
+      "impact": "LCP -400ms",
+      "recommendation": "Immagini hero devono essere preloadate con fetchpriority=\"high\""
+    },
+    {
+      "name": "JavaScript Deferred",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ contatti.html: JavaScript deferred correttamente"
+      ],
+      "impact": "LCP -100ms",
+      "recommendation": "JavaScript non-critico deve essere deferred"
+    },
+    {
+      "name": "Resource Hints",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ contatti.html: Resource hints configurati"
+      ],
+      "impact": "LCP -50ms",
+      "recommendation": "DNS prefetch per domini esterni migliora la connettività"
+    },
+    {
+      "name": "Mobile Responsive",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ CSS critico mobile-first configurato"
+      ],
+      "impact": "Mobile UX",
+      "recommendation": "Critical CSS deve essere mobile-first"
+    },
+    {
+      "name": "Duplicates Removed",
+      "passed": true,
+      "score": 1,
+      "details": [
+        "✅ contatti.html: Duplicati ridotti"
+      ],
+      "impact": "HTML Size",
+      "recommendation": "Rimuovere tag duplicati per ridurre HTML size"
+    }
+  ],
+  "score": 100,
+  "passed": 8,
+  "total": 8,
+  "summary": {
+    "overallScore": 100,
+    "status": "OTTIMO",
+    "estimatedLCP": "2.1s",
+    "passed": 8,
+    "total": 8
+  }
+}

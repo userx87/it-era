@@ -104,7 +104,7 @@ Content-Length: 18,460 bytes (404 page) ✅
 
 ### 📞 **CONTATTI EMERGENZA**
 - ✅ **Telefono**: 039 888 2041 presente in tutti i punti critici
-- ✅ **Email**: info@bulltech.it configurata correttamente
+- ✅ **Email**: info@it-era.it configurata correttamente
 - ✅ **WhatsApp**: Link wa.me funzionante
 - ✅ **Form**: Resend integration attiva
 
@@ -211,7 +211,7 @@ Il sito IT-ERA è ora:
 
 **✅ Emergenza IT:**
 - **Telefono**: 039 888 2041
-- **Email**: info@bulltech.it
+- **Email**: info@it-era.it
 - **Form**: Resend integration attiva
 
 **🎉 SISTEMA PERFETTO E PRONTO PER MASSIMIZZARE LE CONVERSIONI! 🚀**

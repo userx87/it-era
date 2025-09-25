@@ -1,0 +1,69 @@
+<!-- TEMPLATE RESPONSIVE IMAGES FOR LCP OPTIMIZATION -->
+
+<!-- Hero Image Optimized for Mobile/Desktop -->
+<picture class="hero-image">
+  <!-- Mobile optimized -->
+  <source media="(max-width: 768px)"
+          srcset="/images/hero-mobile.webp 375w,
+                  /images/hero-mobile@2x.webp 750w"
+          sizes="100vw"
+          type="image/webp">
+
+  <!-- Desktop optimized -->
+  <source media="(min-width: 769px)"
+          srcset="/images/hero-desktop.webp 1200w,
+                  /images/hero-desktop@2x.webp 2400w"
+          sizes="100vw"
+          type="image/webp">
+
+  <!-- Fallback -->
+  <img src="/images/hero-desktop.jpg"
+       alt="IT-ERA Assistenza Informatica Lombardia"
+       loading="eager"
+       fetchpriority="high"
+       width="1920"
+       height="600"
+       decoding="async">
+</picture>
+
+<!-- Logo Optimized -->
+<img src="/images/logo-it-era.webp"
+     alt="IT-ERA Logo"
+     loading="eager"
+     fetchpriority="high"
+     width="120"
+     height="40"
+     decoding="async"
+     class="logo">
+
+<!-- Service Icons - Lazy loaded -->
+<img src="/images/icon-emergency.webp"
+     alt="Emergenza IT"
+     loading="lazy"
+     width="64"
+     height="64"
+     decoding="async">
+
+<!-- Background images con CSS -->
+<style>
+.hero-bg {
+    background-image:
+        url('/images/hero-mobile.webp');
+}
+
+@media (min-width: 769px) {
+    .hero-bg {
+        background-image:
+            url('/images/hero-desktop.webp');
+    }
+}
+
+/* Preload critical images */
+.hero-bg::before {
+    content: '';
+    display: none;
+    background-image:
+        url('/images/hero-mobile.webp'),
+        url('/images/hero-desktop.webp');
+}
+</style>

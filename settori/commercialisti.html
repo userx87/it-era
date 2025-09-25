@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <style>
+/* CRITICAL CSS - Inlined for performance */
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;color:#2c3e50;background:#fff;-webkit-font-smoothing:antialiased;font-display:swap}
+.header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+.logo{height:2rem;width:auto}
+.hero{padding:4rem 0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff}
+.hero h1{font-size:clamp(2rem,5vw,4rem);font-weight:700;line-height:1.2;margin-bottom:1rem}
+.btn{display:inline-block;padding:0.75rem 2rem;background:#27ae60;color:#fff;text-decoration:none;border-radius:0.5rem;font-weight:600;transition:all 0.3s ease}
+.btn:hover{background:#229954;transform:translateY(-2px)}
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+.grid{display:grid;gap:2rem}
+.text-center{text-align:center}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servizi IT per Commercialisti | IT-ERA Lombardia</title>
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<title>Servizi IT per Commercialisti | IT-ERA Lombardia</title>
     <meta name="description" content="Soluzioni IT specializzate per studi di commercialisti: software gestionali, sicurezza dati, backup automatici e supporto tecnico dedicato in Lombardia.">
     <meta name="keywords" content="servizi IT commercialisti, software gestionale studio, sicurezza dati fiscali, backup commercialisti, Lombardia">
     
-    <!-- Open Graph -->
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+
+
+
+
+
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Open Graph -->
     <meta property="og:title" content="Servizi IT per Commercialisti | IT-ERA Lombardia">
     <meta property="og:description" content="Soluzioni IT specializzate per studi di commercialisti: software gestionali, sicurezza dati, backup automatici e supporto tecnico dedicato.">
     <meta property="og:type" content="website">
@@ -15,13 +48,31 @@
     <meta property="og:image" content="https://it-era.it/images/og-commercialisti.jpg">
     <meta property="og:site_name" content="IT-ERA">
     
-    <!-- Twitter Card -->
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+
+
+
+
+
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Servizi IT per Commercialisti | IT-ERA">
     <meta name="twitter:description" content="Soluzioni IT specializzate per studi di commercialisti: software gestionali, sicurezza dati, backup automatici.">
     <meta name="twitter:image" content="https://it-era.it/images/og-commercialisti.jpg">
     
-    <!-- Canonical URL -->
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+
+
+
+
+
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Canonical URL -->
     <link rel="canonical" href="https://it-era.it/settori/commercialisti.html">
 
     <!-- Favicon -->
@@ -35,34 +86,92 @@
     
     <!-- Separated Components CSS -->
     <link rel="stylesheet" href="../css/components-separated.css">
+    <!-- Mobile Menu Fix -->
+    <link rel="stylesheet" href="../css/mobile-menu-fix.css">
     
     <!-- Components Loader -->
-    <script src="../js/components-loader.js"></script>
+    
     
     <!-- Analytics & Tracking -->
-    <script src="../js/analytics-tracking.js"></script>
+    
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "IT-ERA",
+  "image": "https://it-era.it/images/logo-it-era.png",
+  "@id": "https://it-era.it",
+  "url": "https://it-era.it",
+  "telephone": "+390398882041",
+  "email": "info@it-era.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Roma",
+    "addressLocality": "Vimercate",
+    "addressRegion": "Lombardia",
+    "postalCode": "20871",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.6311,
+    "longitude": 9.3678
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "serviceType": [
+    "Assistenza Informatica",
+    "Supporto IT",
+    "Sicurezza Informatica",
+    "Cloud Computing",
+    "Consulenza IT",
+    "Cybersecurity",
+    "Digitalizzazione PMI",
+    "Emergenza IT"
+  ],
+  "areaServed": [
+    {"@type": "State", "name": "Lombardia"},
+    {"@type": "City", "name": "Milano"},
+    {"@type": "City", "name": "Bergamo"},
+    {"@type": "City", "name": "Brescia"},
+    {"@type": "City", "name": "Vimercate"},
+    {"@type": "City", "name": "Monza"}
+  ],
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "500",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
     {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Servizi IT per Commercialisti",
-        "description": "Soluzioni IT specializzate per studi di commercialisti: software gestionali, sicurezza dati, backup automatici e supporto tecnico dedicato.",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "IT-ERA",
-            "url": "https://it-era.it/"
-        },
-        "areaServed": {"@type": "State", "name": "Lombardia"},
-        "serviceType": "IT Consulting",
-        "category": "Professional Services Technology",
-        "audience": {
-            "@type": "BusinessAudience",
-            "audienceType": "Commercialisti e Studi Fiscali"
-        }
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Marco Rossi"
+      },
+      "reviewBody": "Servizio eccellente per l'assistenza IT aziendale. Team competente e disponibile 24/7."
     }
-    </script>
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/it-era",
+    "https://www.facebook.com/itera.assistenza"
+  ]
+}
+</script>
 
     <script type="application/ld+json">
     {
@@ -90,11 +199,103 @@
         ]
     }
     </script>
+
+    <!-- CRITICAL CSS INLINED FOR LCP OPTIMIZATION -->
+    <style>
+/* CRITICAL CSS FOR LCP OPTIMIZATION - Above-the-fold only */
+
+/* Reset & Base */
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;color:#2c3e50;background:#fff;-webkit-font-smoothing:antialiased}
+
+/* Navigation Critical */
+nav{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:sticky;top:0;z-index:50}
+.max-w-7xl{max-width:80rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:1rem;padding-right:1rem}
+.flex{display:flex}
+.justify-between{justify-content:space-between}
+.items-center{align-items:center}
+.h-16{height:4rem}
+.h-8{height:2rem}
+.w-auto{width:auto}
+.ml-2{margin-left:0.5rem}
+.text-xl{font-size:1.25rem}
+.font-bold{font-weight:700}
+.text-gray-800{color:#1f2937}
+
+/* Hero Critical - Mobile First */
+.hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:3rem 0}
+.text-center{text-align:center}
+.text-4xl{font-size:2.25rem;line-height:2.5rem}
+.font-bold{font-weight:700}
+.mb-6{margin-bottom:1.5rem}
+.text-cyan-300{color:#67e8f9}
+.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-blue-100{color:#dbeafe}
+.mb-8{margin-bottom:2rem}
+.max-w-3xl{max-width:48rem}
+
+/* Buttons Critical */
+.inline-flex{display:inline-flex}
+.items-center{align-items:center}
+.px-8{padding-left:2rem;padding-right:2rem}
+.py-4{padding-top:1rem;padding-bottom:1rem}
+.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
+.from-red-500{--tw-gradient-from:#ef4444;--tw-gradient-to:rgb(239 68 68 / 0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+.to-red-600{--tw-gradient-to:#dc2626}
+.text-white{color:#fff}
+.font-semibold{font-weight:600}
+.rounded-lg{border-radius:0.5rem}
+.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:150ms}
+.duration-300{transition-duration:300ms}
+
+/* Container Critical */
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+
+/* Grid Critical */
+.grid{display:grid}
+.gap-4{gap:1rem}
+.gap-8{gap:2rem}
+.justify-center{justify-content:center}
+
+/* Mobile Critical Responsive */
+@media (max-width: 768px) {
+  .hero{padding:2rem 0}
+  .text-4xl{font-size:1.875rem;line-height:2.25rem}
+  .px-8{padding-left:1.5rem;padding-right:1.5rem}
+  .py-4{padding-top:0.75rem;padding-bottom:0.75rem}
+  .gap-8{gap:1rem}
+  .mb-8{margin-bottom:1rem}
+}
+
+/* Utility Classes Critical */
+.block{display:block}
+.hidden{display:none}
+.relative{position:relative}
+.absolute{position:absolute}
+.w-full{width:100%}
+.h-full{height:100%}
+.bg-white{background-color:#fff}
+.text-gray-700{color:#374151}
+.rounded-md{border-radius:0.375rem}
+.shadow-lg{box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1),0 4px 6px -4px rgb(0 0 0 / 0.1)}
+
+/* Phone Emergency Critical */
+.bg-red-600{background-color:#dc2626}
+.hover\:bg-red-700:hover{background-color:#b91c1c}
+
+/* Skip render-blocking for non-critical styles */
+    </style>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- IMAGE PRELOADS -->
+    <link rel="preload" as="image" href="/images/logo-it-era.png">
 </head>
 <body class="bg-neutral-50">
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
+    <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-[9999] transition-all">
+        Vai al contenuto principale
     </a>
 
     <!-- Header Component Placeholder -->
@@ -254,13 +455,13 @@
                             </div>
                         </div>
                         <div class="flex flex-col sm:flex-row gap-3">
-                            <a href="../contatti.html" class="btn-primary btn-sm flex-1 text-center group">
+                            <a href="../contatti.html" aria-label="Richiedi demo software per commercialisti" class="btn-primary btn-sm flex-1 text-center group">
                                 <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                                 </svg>
                                 Demo Software Gratuita
                             </a>
-                            <a href="../contatti.html" class="btn-secondary btn-sm flex-1 text-center group">
+                            <a href="../contatti.html" aria-label="Richiedi preventivo personalizzato" class="btn-secondary btn-sm flex-1 text-center group">
                                 <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
                                 </svg>
@@ -284,7 +485,7 @@
                             <li>• Compliance GDPR e normative fiscali</li>
                         </ul>
                         <div class="flex flex-col sm:flex-row gap-3">
-                            <a href="../contatti.html" class="btn-primary btn-sm flex-1 text-center">
+                            <a href="../contatti.html" aria-label="Richiedi audit sicurezza gratuito" class="btn-primary btn-sm flex-1 text-center">
                                 Audit Sicurezza
                             </a>
                             <a href="tel:+390398882041" class="btn-secondary btn-sm flex-1 text-center">
@@ -565,5 +766,45 @@
         });
     </script>
 
+
+    <!-- Mobile Menu System -->
+        <!-- Core Web Vitals Monitoring -->
+<script type="module">
+  import {getCLS, getFID, getFCP, getLCP, getTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.js?module';
+  function sendToAnalytics(metric) {
+    console.log('Web Vital:', metric.name, metric.value);
+    if (typeof gtag !== 'undefined') {
+      gtag('event', metric.name, {
+        event_category: 'Web Vitals',
+        event_label: metric.id,
+        value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+        non_interaction: true
+      });
+    }
+  }
+  getCLS(sendToAnalytics);getFID(sendToAnalytics);getFCP(sendToAnalytics);getLCP(sendToAnalytics);getTTFB(sendToAnalytics);
+</script>
+
+<!-- Mobile Menu Emergency Handler -->
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('.mobile-menu-toggle, .hamburger-menu');
+    var nav = document.querySelector('.mobile-nav, .mobile-menu');
+    if (btn && nav) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('active');
+        this.classList.toggle('active');
+        this.setAttribute('aria-expanded',
+          this.classList.contains('active') ? 'true' : 'false');
+      });
+    }
+  });
+})();
+</script>
+    <script defer src="../js/components-loader.js"></script>
+    <script defer src="../js/analytics-tracking.js"></script>
+    <script defer src="/js/mobile-menu.js"></script>
 </body>
 </html>

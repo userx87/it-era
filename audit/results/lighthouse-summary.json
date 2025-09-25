@@ -1,0 +1,180 @@
+{
+  "auditDate": "2025-09-25T05:36:03.736Z",
+  "totalPages": 2,
+  "results": {
+    "contatti": {
+      "mobile": {
+        "scores": {
+          "performance": 64,
+          "accessibility": 84,
+          "bestPractices": 93,
+          "seo": 100
+        },
+        "metrics": {
+          "lcp": 4812,
+          "fid": 162,
+          "cls": 0.113,
+          "fcp": 4812,
+          "si": 5860,
+          "tti": 6084,
+          "tbt": 112
+        },
+        "opportunities": [
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "savings": 4784,
+            "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/)."
+          },
+          {
+            "id": "unminified-javascript",
+            "title": "Minify JavaScript",
+            "savings": 450,
+            "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/)."
+          },
+          {
+            "id": "unused-css-rules",
+            "title": "Reduce unused CSS",
+            "savings": 150,
+            "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+          },
+          {
+            "id": "unminified-css",
+            "title": "Minify CSS",
+            "savings": 150,
+            "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/)."
+          }
+        ],
+        "url": "http://localhost:8080/contatti.html",
+        "device": "mobile",
+        "timestamp": "2025-09-25T05:34:16.718Z"
+      }
+    },
+    "homepage": {
+      "desktop": {
+        "scores": {
+          "performance": 96,
+          "accessibility": 94,
+          "bestPractices": 93,
+          "seo": 100
+        },
+        "metrics": {
+          "lcp": 913,
+          "fid": 16,
+          "cls": 0,
+          "fcp": 833,
+          "si": 1608,
+          "tti": 913,
+          "tbt": 0
+        },
+        "opportunities": [
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "savings": 585,
+            "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/)."
+          },
+          {
+            "id": "unminified-css",
+            "title": "Minify CSS",
+            "savings": 30,
+            "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/)."
+          }
+        ],
+        "url": "http://localhost:8080/",
+        "device": "desktop",
+        "timestamp": "2025-09-25T05:34:52.652Z"
+      },
+      "mobile": {
+        "scores": {
+          "performance": 83,
+          "accessibility": 94,
+          "bestPractices": 93,
+          "seo": 100
+        },
+        "metrics": {
+          "lcp": 3549,
+          "fid": 67,
+          "cls": 0.001,
+          "fcp": 3340,
+          "si": 3340,
+          "tti": 3668,
+          "tbt": 9
+        },
+        "opportunities": [
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "savings": 2272,
+            "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/)."
+          },
+          {
+            "id": "unused-javascript",
+            "title": "Reduce unused JavaScript",
+            "savings": 60,
+            "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+          }
+        ],
+        "url": "http://localhost:8080/",
+        "device": "mobile",
+        "timestamp": "2025-09-25T05:34:52.548Z"
+      }
+    }
+  },
+  "overallSummary": {
+    "desktop": {
+      "avgPerformance": 96,
+      "avgAccessibility": 94,
+      "avgBestPractices": 93,
+      "avgSEO": 100,
+      "avgLCP": 913,
+      "avgCLS": 0
+    },
+    "mobile": {
+      "avgPerformance": 74,
+      "avgAccessibility": 89,
+      "avgBestPractices": 93,
+      "avgSEO": 100,
+      "avgLCP": 4181,
+      "avgCLS": 0.057
+    }
+  },
+  "criticalIssues": [],
+  "topOpportunities": [
+    {
+      "id": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "totalSavings": 7641,
+      "count": 3,
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/)."
+    },
+    {
+      "id": "unminified-javascript",
+      "title": "Minify JavaScript",
+      "totalSavings": 450,
+      "count": 1,
+      "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/)."
+    },
+    {
+      "id": "unminified-css",
+      "title": "Minify CSS",
+      "totalSavings": 180,
+      "count": 2,
+      "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/)."
+    },
+    {
+      "id": "unused-css-rules",
+      "title": "Reduce unused CSS",
+      "totalSavings": 150,
+      "count": 1,
+      "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+    },
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "totalSavings": 60,
+      "count": 1,
+      "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+    }
+  ]
+}

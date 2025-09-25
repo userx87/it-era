@@ -26,5 +26,9 @@
   "homepage": "https://github.com/userx87/it-era#readme",
   "dependencies": {
     "puppeteer": "^24.20.0"
+  },
+  "devDependencies": {
+    "chrome-launcher": "^1.2.0",
+    "lighthouse": "^12.8.2"
   }
 }

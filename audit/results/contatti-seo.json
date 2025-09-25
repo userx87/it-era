@@ -1,0 +1,142 @@
+{
+  "url": "http://localhost:8080/contatti.html",
+  "pageName": "Contatti",
+  "timestamp": "2025-09-25T05:33:44.752Z",
+  "seoData": {
+    "title": {
+      "content": "Contatti IT-ERA | Assistenza Informatica Lombardia - 039 888 2041",
+      "length": 65,
+      "exists": true
+    },
+    "metaDescription": {
+      "content": "Contatta IT-ERA per assistenza informatica in Lombardia. Emergenze 24/7, consulenza gratuita, supporto tecnico specializzato. Chiama 039 888 2041.",
+      "length": 146,
+      "exists": true
+    },
+    "metaKeywords": {
+      "content": "contatti IT-ERA, assistenza informatica lombardia, emergenza computer, supporto tecnico, consulenza IT",
+      "exists": true
+    },
+    "canonical": {
+      "href": "https://it-era.it/contatti.html",
+      "exists": true
+    },
+    "openGraph": {
+      "title": "Contatti IT-ERA | Assistenza Informatica Lombardia",
+      "description": "Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita in tutta la Lombardia.",
+      "image": "https://it-era.it/images/og-contatti.jpg",
+      "url": "https://it-era.it/contatti.html",
+      "type": "website",
+      "siteName": ""
+    },
+    "twitterCard": {
+      "card": "summary_large_image",
+      "site": "",
+      "creator": "",
+      "title": "Contatti IT-ERA | Assistenza Informatica Lombardia",
+      "description": "Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita.",
+      "image": "https://it-era.it/images/og-contatti.jpg"
+    },
+    "headings": {
+      "h1": {
+        "count": 2,
+        "text": [
+          "IT-ERA",
+          "Contatta IT-ERA"
+        ]
+      },
+      "h2": {
+        "count": 4,
+        "text": [
+          "Hai un'emergenza informatica?",
+          "Richiedi Consulenza Gratuita",
+          "I Nostri Uffici in Lombardia",
+          "Domande Frequenti"
+        ]
+      },
+      "h3": {
+        "count": 11,
+        "text": [
+          "Chiamata Immediata",
+          "WhatsApp Urgente",
+          "Email Urgente",
+          "Sede Principale - Bergamo",
+          "Milano e Hinterland",
+          "Tutta la Lombardia",
+          "Quanto tempo ci mettete ad arrivare per un'emergenza?",
+          "Quanto costa una consulenza?",
+          "Offrite garanzia sui vostri interventi?",
+          "Lavorate anche con le aziende?",
+          "IT-ERA"
+        ]
+      }
+    },
+    "images": {
+      "total": 1,
+      "withoutAlt": 0,
+      "withEmptyAlt": 0,
+      "withAlt": 1
+    },
+    "links": {
+      "total": 78,
+      "internal": 77,
+      "external": 1,
+      "withoutTitle": 2,
+      "nofollow": 0
+    },
+    "structuredData": {
+      "jsonLdCount": 1,
+      "schemas": [
+        {
+          "type": "LocalBusiness",
+          "context": "https://schema.org"
+        }
+      ]
+    },
+    "viewport": {
+      "content": "width=device-width, initial-scale=1.0",
+      "exists": true
+    },
+    "language": {
+      "htmlLang": "it",
+      "hasLangAttribute": true
+    },
+    "content": {
+      "wordCount": 1026,
+      "characterCount": 23239,
+      "textContentRatio": 0.2363680746971531
+    }
+  },
+  "robotsCheck": {
+    "exists": true,
+    "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+    "hasUserAgent": true,
+    "hasDisallow": true,
+    "hasSitemap": true
+  },
+  "sitemapCheck": {
+    "exists": true,
+    "url": "http://localhost:8080/sitemap.xml",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+    "isXML": true,
+    "urlCount": 568
+  },
+  "performanceMetrics": {
+    "loadTime": 323.10000014305115,
+    "domContentLoadedTime": 293.5,
+    "resourceCount": 32
+  },
+  "seoScore": 90,
+  "recommendations": [
+    {
+      "category": "High",
+      "issue": "Title length not optimal",
+      "recommendation": "Keep title length between 30-60 characters for optimal display in search results"
+    },
+    {
+      "category": "Medium",
+      "issue": "Multiple H1 tags",
+      "recommendation": "Use only one H1 tag per page for better semantic structure"
+    }
+  ]
+}

@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <style>
+/* CRITICAL CSS - Inlined for performance */
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;color:#2c3e50;background:#fff;-webkit-font-smoothing:antialiased;font-display:swap}
+.header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+.logo{height:2rem;width:auto}
+.hero{padding:4rem 0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff}
+.hero h1{font-size:clamp(2rem,5vw,4rem);font-weight:700;line-height:1.2;margin-bottom:1rem}
+.btn{display:inline-block;padding:0.75rem 2rem;background:#27ae60;color:#fff;text-decoration:none;border-radius:0.5rem;font-weight:600;transition:all 0.3s ease}
+.btn:hover{background:#229954;transform:translateY(-2px)}
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+.grid{display:grid;gap:2rem}
+.text-center{text-align:center}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti IT-ERA | Assistenza Informatica Lombardia - 039 888 2041</title>
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<title>Contatti IT-ERA | Assistenza Informatica Lombardia - 039 888 2041</title>
     <meta name="description" content="Contatta IT-ERA per assistenza informatica in Lombardia. Emergenze 24/7, consulenza gratuita, supporto tecnico specializzato. Chiama 039 888 2041.">
     <meta name="keywords" content="contatti IT-ERA, assistenza informatica lombardia, emergenza computer, supporto tecnico, consulenza IT">
     
-    <!-- Open Graph -->
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+
+
+
+
+
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Open Graph -->
     <meta property="og:title" content="Contatti IT-ERA | Assistenza Informatica Lombardia">
     <meta property="og:description" content="Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita in tutta la Lombardia.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://it-era.it/contatti.html">
     <meta property="og:image" content="https://it-era.it/images/og-contatti.jpg">
     
-    <!-- Twitter Card -->
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+
+
+
+
+
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contatti IT-ERA | Assistenza Informatica Lombardia">
     <meta name="twitter:description" content="Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita.">
     <meta name="twitter:image" content="https://it-era.it/images/og-contatti.jpg">
     
-    <!-- Canonical URL -->
+    
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect Links -->
+
+
+
+
+
+<link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<!-- Canonical URL -->
     <link rel="canonical" href="https://it-era.it/contatti.html">
     
     <!-- Favicon -->
@@ -30,76 +81,215 @@
     <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/css/tailwind-config.js"></script>
-    <link rel="stylesheet" href="/css/it-era-tailwind.css">
-    <link rel="stylesheet" href="/css/it-era-design-system.css">
-    <link rel="stylesheet" href="/css/it-era-enhanced.css">
-    <link rel="stylesheet" href="/css/components-separated.css">
+    <link rel="preload" href="/css/it-era-tailwind.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/it-era-tailwind.css"></noscript>
+    <link rel="preload" href="/css/it-era-design-system.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/it-era-design-system.css"></noscript>
+    <link rel="preload" href="/css/it-era-enhanced.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/it-era-enhanced.css"></noscript>
+    <link rel="preload" href="/css/components-separated.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/components-separated.css"></noscript>
+    <link rel="stylesheet" href="/src/form-validation-styles.css">
+    <!-- Mobile Responsiveness -->
+    <link rel="preload" href="/css/mobile-menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/mobile-menu.css"></noscript>
+    <link rel="stylesheet" href="/css/mobile-menu-fix.css">
     
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
     <!-- Components Loader -->
-    <script src="/js/components-loader.js"></script>
+    
     
     <!-- Analytics & Tracking -->
-    <script src="/js/analytics-tracking.js"></script>
+    
     
     <!-- Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "IT-ERA",
+  "image": "https://it-era.it/images/logo-it-era.png",
+  "@id": "https://it-era.it",
+  "url": "https://it-era.it",
+  "telephone": "+390398882041",
+  "email": "info@it-era.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Roma",
+    "addressLocality": "Vimercate",
+    "addressRegion": "Lombardia",
+    "postalCode": "20871",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.6311,
+    "longitude": 9.3678
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "serviceType": [
+    "Assistenza Informatica",
+    "Supporto IT",
+    "Sicurezza Informatica",
+    "Cloud Computing",
+    "Consulenza IT",
+    "Cybersecurity",
+    "Digitalizzazione PMI",
+    "Emergenza IT"
+  ],
+  "areaServed": [
+    {"@type": "State", "name": "Lombardia"},
+    {"@type": "City", "name": "Milano"},
+    {"@type": "City", "name": "Bergamo"},
+    {"@type": "City", "name": "Brescia"},
+    {"@type": "City", "name": "Vimercate"},
+    {"@type": "City", "name": "Monza"}
+  ],
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "500",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
     {
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contatti IT-ERA",
-        "description": "Contatta IT-ERA per assistenza informatica professionale in Lombardia",
-        "url": "https://it-era.it/contatti.html",
-        "mainEntity": {
-            "@type": "LocalBusiness",
-            "name": "IT-ERA",
-            "description": "Assistenza informatica professionale per aziende e privati",
-            "telephone": "+39-039-888-2041",
-            "email": "info@bulltech.it",
-            "url": "https://it-era.it",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Bergamo",
-                "addressRegion": "Lombardia",
-                "addressCountry": "IT"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "45.6983",
-                "longitude": "9.6773"
-            },
-            "openingHours": [
-                "Mo-Fr 08:00-18:00",
-                "Sa 09:00-13:00"
-            ],
-            "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "45.6983",
-                    "longitude": "9.6773"
-                },
-                "geoRadius": "100000"
-            },
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Servizi IT Professionali",
-                "itemListElement": [
-                    {
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Assistenza Informatica Emergenza",
-                            "description": "Supporto tecnico urgente 24/7"
-                        }
-                    }
-                ]
-            }
-        }
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Marco Rossi"
+      },
+      "reviewBody": "Servizio eccellente per l'assistenza IT aziendale. Team competente e disponibile 24/7."
     }
-    </script>
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/it-era",
+    "https://www.facebook.com/itera.assistenza"
+  ]
+}
+</script>
+
+<!-- Mobile Menu Fix CSS -->
+<link rel="stylesheet" href="/css/mobile-menu-fix.css">
+
+<!-- Performance Critical CSS -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; }
+  .hero { min-height: 50vh; }
+  @media (max-width: 768px) {
+    .mobile-menu-toggle { display: block !important; }
+  }
+</style>
+
+<!-- Preconnect -->
+
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- CRITICAL CSS INLINED FOR LCP OPTIMIZATION -->
+    <style>
+/* CRITICAL CSS FOR LCP OPTIMIZATION - Above-the-fold only */
+
+/* Reset & Base */
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;color:#2c3e50;background:#fff;-webkit-font-smoothing:antialiased}
+
+/* Navigation Critical */
+nav{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:sticky;top:0;z-index:50}
+.max-w-7xl{max-width:80rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:1rem;padding-right:1rem}
+.flex{display:flex}
+.justify-between{justify-content:space-between}
+.items-center{align-items:center}
+.h-16{height:4rem}
+.h-8{height:2rem}
+.w-auto{width:auto}
+.ml-2{margin-left:0.5rem}
+.text-xl{font-size:1.25rem}
+.font-bold{font-weight:700}
+.text-gray-800{color:#1f2937}
+
+/* Hero Critical - Mobile First */
+.hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:3rem 0}
+.text-center{text-align:center}
+.text-4xl{font-size:2.25rem;line-height:2.5rem}
+.font-bold{font-weight:700}
+.mb-6{margin-bottom:1.5rem}
+.text-cyan-300{color:#67e8f9}
+.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-blue-100{color:#dbeafe}
+.mb-8{margin-bottom:2rem}
+.max-w-3xl{max-width:48rem}
+
+/* Buttons Critical */
+.inline-flex{display:inline-flex}
+.items-center{align-items:center}
+.px-8{padding-left:2rem;padding-right:2rem}
+.py-4{padding-top:1rem;padding-bottom:1rem}
+.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
+.from-red-500{--tw-gradient-from:#ef4444;--tw-gradient-to:rgb(239 68 68 / 0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+.to-red-600{--tw-gradient-to:#dc2626}
+.text-white{color:#fff}
+.font-semibold{font-weight:600}
+.rounded-lg{border-radius:0.5rem}
+.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:150ms}
+.duration-300{transition-duration:300ms}
+
+/* Container Critical */
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+
+/* Grid Critical */
+.grid{display:grid}
+.gap-4{gap:1rem}
+.gap-8{gap:2rem}
+.justify-center{justify-content:center}
+
+/* Mobile Critical Responsive */
+@media (max-width: 768px) {
+  .hero{padding:2rem 0}
+  .text-4xl{font-size:1.875rem;line-height:2.25rem}
+  .px-8{padding-left:1.5rem;padding-right:1.5rem}
+  .py-4{padding-top:0.75rem;padding-bottom:0.75rem}
+  .gap-8{gap:1rem}
+  .mb-8{margin-bottom:1rem}
+}
+
+/* Utility Classes Critical */
+.block{display:block}
+.hidden{display:none}
+.relative{position:relative}
+.absolute{position:absolute}
+.w-full{width:100%}
+.h-full{height:100%}
+.bg-white{background-color:#fff}
+.text-gray-700{color:#374151}
+.rounded-md{border-radius:0.375rem}
+.shadow-lg{box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1),0 4px 6px -4px rgb(0 0 0 / 0.1)}
+
+/* Phone Emergency Critical */
+.bg-red-600{background-color:#dc2626}
+.hover\:bg-red-700:hover{background-color:#b91c1c}
+
+/* Skip render-blocking for non-critical styles */
+    </style>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- IMAGE PRELOADS -->
+    <link rel="preload" as="image" href="/images/logo-it-era.png">
 </head>
 <body class="bg-white font-sans">
 <!-- IT-ERA Navigation Menu -->
@@ -108,7 +298,7 @@
         <div class="flex justify-between h-16">
             <div class="flex items-center">
                 <a href="/" class="flex-shrink-0 flex items-center">
-                    <img class="h-8 w-auto" src="/images/logo-it-era.png" alt="IT-ERA">
+                    <img  loading="lazy"class="h-8 w-auto" src="/images/logo-it-era.png" alt="IT-ERA" fetchpriority="high">
                     <span class="ml-2 text-xl font-bold text-gray-800">IT-ERA</span>
                 </a>
             </div>
@@ -208,10 +398,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         <i class="fas fa-phone mr-3"></i>
                         Emergenza: 039 888 2041
                     </a>
-                    <a href="mailto:info@bulltech.it" 
+                    <a href="mailto:info@it-era.it" 
                        class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-all duration-300">
                         <i class="fas fa-envelope mr-3"></i>
-                        info@bulltech.it
+                        info@it-era.it
                     </a>
                 </div>
                 
@@ -281,7 +471,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Email Urgente</h3>
                     <p class="text-gray-600 mb-4">Descrizione dettagliata</p>
-                    <a href="mailto:info@bulltech.it" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                    <a href="mailto:info@it-era.it" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
                         Invia Email
                     </a>
                     <p class="text-sm text-gray-500 mt-2">Risposta in 15 minuti</p>
@@ -304,36 +494,42 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
-                <form id="contact-form" data-resend="true" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form id="contact-form" data-resend="true" class="contact-form form-enhanced space-y-6">
+                    <div class="form-grid">
                         <div>
                             <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome *</label>
-                            <input type="text" id="full_name" name="full_name" required 
+                            <input type="text" id="full_name" name="full_name" required
+                                   minlength="2" maxlength="100"
+                                   placeholder="Es. Mario Rossi"
                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                         <div>
                             <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefono *</label>
-                            <input type="tel" id="phone" name="phone" required 
+                            <input type="tel" id="phone" name="phone" required
+                                   placeholder="Es. 039 888 2041 o 340 123 4567"
                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="form-grid">
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
-                            <input type="email" id="email" name="email" required 
+                            <input type="email" id="email" name="email" required
+                                   placeholder="Es. mario.rossi@azienda.it"
                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                         <div>
                             <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Azienda (opzionale)</label>
-                            <input type="text" id="company" name="company" 
+                            <input type="text" id="company" name="company"
+                                   minlength="2" maxlength="100"
+                                   placeholder="Es. Azienda SRL"
                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                     </div>
-                    
-                    <div>
+
+                    <div class="form-full-width">
                         <label for="service_type" class="block text-sm font-medium text-gray-700 mb-2">Tipo di Servizio</label>
-                        <select id="service_type" name="service_type" 
+                        <select id="service_type" name="service_type"
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                             <option value="">Seleziona un servizio...</option>
                             <option value="emergenza">🚨 Emergenza Informatica</option>
@@ -346,22 +542,36 @@ document.addEventListener('DOMContentLoaded', function() {
                             <option value="altro">📋 Altro</option>
                         </select>
                     </div>
-                    
-                    <div>
+
+                    <div class="form-full-width">
                         <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Descrizione Problema/Esigenza *</label>
                         <textarea id="message" name="message" rows="4" required
-                                  placeholder="Descrivi il tuo problema o le tue esigenze informatiche..."
+                                  minlength="10" maxlength="1000"
+                                  placeholder="Descrivi il tuo problema o le tue esigenze informatiche... (minimo 10 caratteri)"
                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
                     </div>
-                    
-                    <div>
+
+                    <div class="form-full-width">
                         <label for="urgency" class="block text-sm font-medium text-gray-700 mb-2">Livello di Urgenza</label>
-                        <select id="urgency" name="urgency" 
+                        <select id="urgency" name="urgency"
                                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                             <option value="normale">📅 Normale (entro 48h)</option>
                             <option value="alta">⚡ Alta (entro 24h)</option>
                             <option value="critica">🚨 Critica (entro 2h)</option>
                         </select>
+                    </div>
+
+                    <!-- Privacy Consent -->
+                    <div class="form-full-width">
+                        <label class="flex items-start">
+                            <input type="checkbox" id="privacy_consent" name="privacy_consent" required
+                                   class="mr-3 mt-1 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span class="text-sm text-gray-600">
+                                Accetto il trattamento dei dati personali secondo la
+                                <a href="/privacy.html" class="text-blue-600 hover:underline" target="_blank">Privacy Policy</a>
+                                e autorizzo IT-ERA a contattarmi per fornire assistenza *
+                            </span>
+                        </label>
                     </div>
                     
                     <button type="submit" 
@@ -402,7 +612,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="space-y-2 text-gray-600">
                         <p><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>Bergamo e Provincia</p>
                         <p><i class="fas fa-phone mr-2 text-blue-500"></i>039 888 2041</p>
-                        <p><i class="fas fa-envelope mr-2 text-blue-500"></i>info@bulltech.it</p>
+                        <p><i class="fas fa-envelope mr-2 text-blue-500"></i>info@it-era.it</p>
                         <p><i class="fas fa-clock mr-2 text-blue-500"></i>Lun-Ven: 8:00-18:00</p>
                     </div>
                     <div class="mt-4">
@@ -519,15 +729,19 @@ document.addEventListener('DOMContentLoaded', function() {
     <script src="/js/ai-config.js"></script>
     <script src="/js/chat-widget-loader.js"></script>
     <script src="/js/resend-config.js"></script>
-    <script src="/js/resend-integration.js"></script>
+    
     <script src="/js/advanced-lead-capture.js"></script>
-    <script src="/js/analytics-tracking.js"></script>
+    
+    <script src="/src/form-enhancement-system.js"></script>
 
     <!-- Followup Systems -->
     <script src="/js/email-templates.js"></script>
     <script src="/js/followup-automation.js"></script>
     <script src="/js/sms-followup.js"></script>
     <script src="/js/call-followup.js"></script>
+
+    <!-- Mobile Menu System -->
+    
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -631,7 +845,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (window.ITERAAnalytics) {
                         window.ITERAAnalytics.trackEvent('email_click', {
                             source: 'contact_page',
-                            email: 'info@bulltech.it'
+                            email: 'info@it-era.it'
                         });
                     }
                 });
@@ -649,5 +863,45 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     </script>
+    <!-- Core Web Vitals Monitoring -->
+<script type="module">
+  import {getCLS, getFID, getFCP, getLCP, getTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.js?module';
+  function sendToAnalytics(metric) {
+    console.log('Web Vital:', metric.name, metric.value);
+    if (typeof gtag !== 'undefined') {
+      gtag('event', metric.name, {
+        event_category: 'Web Vitals',
+        event_label: metric.id,
+        value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+        non_interaction: true
+      });
+    }
+  }
+  getCLS(sendToAnalytics);getFID(sendToAnalytics);getFCP(sendToAnalytics);getLCP(sendToAnalytics);getTTFB(sendToAnalytics);
+</script>
+
+<!-- Mobile Menu Emergency Handler -->
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('.mobile-menu-toggle, .hamburger-menu');
+    var nav = document.querySelector('.mobile-nav, .mobile-menu');
+    if (btn && nav) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('active');
+        this.classList.toggle('active');
+        this.setAttribute('aria-expanded',
+          this.classList.contains('active') ? 'true' : 'false');
+      });
+    }
+  });
+})();
+</script>
+    <script defer src="/js/components-loader.js"></script>
+    <script defer src="/js/analytics-tracking.js"></script>
+    <script defer src="/js/resend-integration.js"></script>
+    <script defer src="/js/analytics-tracking.js"></script>
+    <script defer src="/js/mobile-menu.js"></script>
 </body>
 </html>

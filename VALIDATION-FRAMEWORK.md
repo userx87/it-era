@@ -27,7 +27,7 @@ Ogni pagina del sito IT-ERA deve essere validata con **3 STEP OBBLIGATORI**:
 - Integrazione Resend.com attiva
 - Validation JavaScript funzionante
 - Emergency contact (039 888 2041) prominente
-- Email integration (info@bulltech.it)
+- Email integration (info@it-era.it)
 - Lead capture system attivo
 - Thank you messages configurati
 

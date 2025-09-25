@@ -1,0 +1,145 @@
+{
+  "url": "http://localhost:8080/fixes-landing-cloud-migration.html",
+  "pageName": "Cloud Migration",
+  "timestamp": "2025-09-25T05:33:52.931Z",
+  "seoData": {
+    "title": {
+      "content": "",
+      "length": 0,
+      "exists": false
+    },
+    "metaDescription": {
+      "content": "",
+      "length": 0,
+      "exists": false
+    },
+    "metaKeywords": {
+      "content": "",
+      "exists": false
+    },
+    "canonical": {
+      "href": "",
+      "exists": false
+    },
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "url": "",
+      "type": "",
+      "siteName": ""
+    },
+    "twitterCard": {
+      "card": "",
+      "site": "",
+      "creator": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "headings": {
+      "h1": {
+        "count": 0,
+        "text": []
+      },
+      "h2": {
+        "count": 0,
+        "text": []
+      },
+      "h3": {
+        "count": 2,
+        "text": [
+          "Assistenza Emergenza 24/7",
+          "Hai bisogno di assistenza IT?"
+        ]
+      }
+    },
+    "images": {
+      "total": 1,
+      "withoutAlt": 0,
+      "withEmptyAlt": 0,
+      "withAlt": 1
+    },
+    "links": {
+      "total": 21,
+      "internal": 19,
+      "external": 2,
+      "withoutTitle": 0,
+      "nofollow": 0
+    },
+    "structuredData": {
+      "jsonLdCount": 0,
+      "schemas": []
+    },
+    "viewport": {
+      "content": "",
+      "exists": false
+    },
+    "language": {
+      "htmlLang": "",
+      "hasLangAttribute": false
+    },
+    "content": {
+      "wordCount": 317,
+      "characterCount": 4300,
+      "textContentRatio": 0.33112582781456956
+    }
+  },
+  "robotsCheck": {
+    "exists": true,
+    "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+    "hasUserAgent": true,
+    "hasDisallow": true,
+    "hasSitemap": true
+  },
+  "sitemapCheck": {
+    "exists": true,
+    "url": "http://localhost:8080/sitemap.xml",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+    "isXML": true,
+    "urlCount": 568
+  },
+  "performanceMetrics": {
+    "loadTime": 8,
+    "domContentLoadedTime": 7.400000095367432,
+    "resourceCount": 2
+  },
+  "seoScore": 25,
+  "recommendations": [
+    {
+      "category": "Critical",
+      "issue": "Missing title tag",
+      "recommendation": "Add a unique, descriptive title tag to every page"
+    },
+    {
+      "category": "High",
+      "issue": "Missing meta description",
+      "recommendation": "Add a compelling meta description to improve click-through rates"
+    },
+    {
+      "category": "High",
+      "issue": "Missing H1 tag",
+      "recommendation": "Add a single, descriptive H1 tag to the page"
+    },
+    {
+      "category": "High",
+      "issue": "Missing viewport meta tag",
+      "recommendation": "Add viewport meta tag for mobile optimization"
+    },
+    {
+      "category": "Medium",
+      "issue": "Missing canonical URL",
+      "recommendation": "Add canonical URL to prevent duplicate content issues"
+    },
+    {
+      "category": "Medium",
+      "issue": "Missing language attribute",
+      "recommendation": "Add lang attribute to the HTML element"
+    },
+    {
+      "category": "Low",
+      "issue": "Missing Open Graph tags: title, description, image, url",
+      "recommendation": "Add Open Graph meta tags to improve social media sharing"
+    }
+  ]
+}

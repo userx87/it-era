@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 IT-ERA Form Validation System Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/form-validation-styles.css">
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                🧪 IT-ERA Form Validation System Test
+            </h1>
+            <p class="text-xl text-gray-600">
+                Comprehensive testing suite for form validation with user-friendly Italian messages
+            </p>
+        </header>
+
+        <!-- Test Results Panel -->
+        <div class="mb-8 p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">📊 Test Results</h2>
+            <div id="test-results" class="space-y-2">
+                <div class="text-gray-600">Loading validation system...</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Contact Form Test -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+                    <i class="fas fa-envelope text-blue-600 mr-2"></i>
+                    Contact Form Test
+                </h2>
+
+                <form id="test-contact-form" class="contact-form form-enhanced space-y-6">
+                    <div class="form-grid">
+                        <div>
+                            <label for="test_name" class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome *</label>
+                            <input type="text" id="test_name" name="full_name" required
+                                   minlength="2" maxlength="100"
+                                   placeholder="Es. Mario Rossi"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="test_phone" class="block text-sm font-medium text-gray-700 mb-2">Telefono *</label>
+                            <input type="tel" id="test_phone" name="phone" required
+                                   placeholder="Es. 039 888 2041"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div>
+                            <label for="test_email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="test_email" name="email" required
+                                   placeholder="Es. mario.rossi@azienda.it"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="test_company" class="block text-sm font-medium text-gray-700 mb-2">Azienda (opzionale)</label>
+                            <input type="text" id="test_company" name="company"
+                                   minlength="2" maxlength="100"
+                                   placeholder="Es. Azienda SRL"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <div class="form-full-width">
+                        <label for="test_message" class="block text-sm font-medium text-gray-700 mb-2">Messaggio *</label>
+                        <textarea id="test_message" name="message" rows="4" required
+                                  minlength="10" maxlength="1000"
+                                  placeholder="Descrivi il tuo problema... (minimo 10 caratteri)"
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+
+                    <div class="form-full-width">
+                        <label class="flex items-start">
+                            <input type="checkbox" id="test_privacy" name="privacy_consent" required
+                                   class="mr-3 mt-1 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span class="text-sm text-gray-600">
+                                Accetto il trattamento dei dati per il test *
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Test Invio
+                    </button>
+                </form>
+            </div>
+
+            <!-- Newsletter Form Test -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+                    <i class="fas fa-newspaper text-green-600 mr-2"></i>
+                    Newsletter Form Test
+                </h2>
+
+                <form id="test-newsletter-form" class="newsletter-form form-enhanced space-y-6">
+                    <div class="form-group">
+                        <label for="newsletter_test_email" class="block text-sm font-medium text-gray-700 mb-2">Email Newsletter *</label>
+                        <input type="email" id="newsletter_test_email" name="email" required
+                               placeholder="Il tuo indirizzo email..."
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="flex items-start">
+                            <input type="checkbox" id="newsletter_privacy" name="privacy_consent" required
+                                   class="mr-3 mt-1 rounded border-gray-300 text-green-600 focus:ring-green-500">
+                            <span class="text-sm text-gray-600">
+                                Accetto di ricevere comunicazioni newsletter *
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Test Iscrizione
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Validation Test Cases -->
+        <div class="mt-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+                <i class="fas fa-cogs text-purple-600 mr-2"></i>
+                Validation Test Cases
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Email Tests -->
+                <div class="p-4 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-gray-900 mb-3">📧 Email Validation</h3>
+                    <div class="space-y-2 text-sm">
+                        <button class="test-btn" data-test="email-valid">✅ Valid: test@it-era.it</button>
+                        <button class="test-btn" data-test="email-invalid-format">❌ Invalid: test@</button>
+                        <button class="test-btn" data-test="email-invalid-domain">❌ Invalid: test@.com</button>
+                        <button class="test-btn" data-test="email-missing">❌ Missing: (empty)</button>
+                    </div>
+                </div>
+
+                <!-- Phone Tests -->
+                <div class="p-4 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-gray-900 mb-3">📞 Phone Validation</h3>
+                    <div class="space-y-2 text-sm">
+                        <button class="test-btn" data-test="phone-valid">✅ Valid: 039 888 2041</button>
+                        <button class="test-btn" data-test="phone-valid-mobile">✅ Valid: 340 123 4567</button>
+                        <button class="test-btn" data-test="phone-invalid-short">❌ Invalid: 123</button>
+                        <button class="test-btn" data-test="phone-missing">❌ Missing: (empty)</button>
+                    </div>
+                </div>
+
+                <!-- Name Tests -->
+                <div class="p-4 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-gray-900 mb-3">👤 Name Validation</h3>
+                    <div class="space-y-2 text-sm">
+                        <button class="test-btn" data-test="name-valid">✅ Valid: Mario Rossi</button>
+                        <button class="test-btn" data-test="name-valid-accent">✅ Valid: José García</button>
+                        <button class="test-btn" data-test="name-invalid-short">❌ Invalid: M</button>
+                        <button class="test-btn" data-test="name-invalid-numbers">❌ Invalid: Mario123</button>
+                    </div>
+                </div>
+
+                <!-- Message Tests -->
+                <div class="p-4 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-gray-900 mb-3">💬 Message Validation</h3>
+                    <div class="space-y-2 text-sm">
+                        <button class="test-btn" data-test="message-valid">✅ Valid: Long message</button>
+                        <button class="test-btn" data-test="message-invalid-short">❌ Invalid: Short</button>
+                        <button class="test-btn" data-test="message-invalid-long">❌ Invalid: Too long</button>
+                        <button class="test-btn" data-test="message-missing">❌ Missing: (empty)</button>
+                    </div>
+                </div>
+
+                <!-- Real-time Tests -->
+                <div class="p-4 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-gray-900 mb-3">⚡ Real-time Validation</h3>
+                    <div class="space-y-2 text-sm">
+                        <button class="test-btn" data-test="realtime-email">📧 Test Email Typing</button>
+                        <button class="test-btn" data-test="realtime-phone">📞 Test Phone Typing</button>
+                        <button class="test-btn" data-test="realtime-clear">🧹 Clear All Fields</button>
+                        <button class="test-btn" data-test="realtime-fillvalid">✅ Fill Valid Data</button>
+                    </div>
+                </div>
+
+                <!-- Submit Tests -->
+                <div class="p-4 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-gray-900 mb-3">🚀 Submit Tests</h3>
+                    <div class="space-y-2 text-sm">
+                        <button class="test-btn" data-test="submit-empty">❌ Submit Empty Form</button>
+                        <button class="test-btn" data-test="submit-invalid">❌ Submit Invalid Data</button>
+                        <button class="test-btn" data-test="submit-valid">✅ Submit Valid Data</button>
+                        <button class="test-btn" data-test="submit-loading">🔄 Test Loading State</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="mt-8 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+                <i class="fas fa-tachometer-alt text-orange-600 mr-2"></i>
+                Performance Metrics
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                    <div id="validation-speed" class="text-3xl font-bold text-blue-600">-</div>
+                    <div class="text-sm text-gray-600">Validation Speed (ms)</div>
+                </div>
+                <div class="text-center p-4 bg-green-50 rounded-lg">
+                    <div id="forms-processed" class="text-3xl font-bold text-green-600">0</div>
+                    <div class="text-sm text-gray-600">Forms Processed</div>
+                </div>
+                <div class="text-center p-4 bg-purple-50 rounded-lg">
+                    <div id="errors-caught" class="text-3xl font-bold text-purple-600">0</div>
+                    <div class="text-sm text-gray-600">Errors Caught</div>
+                </div>
+                <div class="text-center p-4 bg-orange-50 rounded-lg">
+                    <div id="success-rate" class="text-3xl font-bold text-orange-600">-</div>
+                    <div class="text-sm text-gray-600">Success Rate (%)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/src/form-enhancement-system.js"></script>
+
+    <script>
+        // Test suite implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            const testResults = document.getElementById('test-results');
+            const metrics = {
+                formsProcessed: 0,
+                errorsCaught: 0,
+                validationTimes: [],
+                startTime: performance.now()
+            };
+
+            // Log test results
+            function logTest(message, type = 'info') {
+                const timestamp = new Date().toLocaleTimeString();
+                const colors = {
+                    success: 'text-green-600',
+                    error: 'text-red-600',
+                    info: 'text-blue-600',
+                    warning: 'text-yellow-600'
+                };
+
+                const resultDiv = document.createElement('div');
+                resultDiv.className = `${colors[type]} text-sm`;
+                resultDiv.innerHTML = `[${timestamp}] ${message}`;
+                testResults.appendChild(resultDiv);
+                testResults.scrollTop = testResults.scrollHeight;
+            }
+
+            // Update metrics display
+            function updateMetrics() {
+                document.getElementById('forms-processed').textContent = metrics.formsProcessed;
+                document.getElementById('errors-caught').textContent = metrics.errorsCaught;
+
+                const avgSpeed = metrics.validationTimes.length > 0
+                    ? Math.round(metrics.validationTimes.reduce((a, b) => a + b, 0) / metrics.validationTimes.length)
+                    : '-';
+                document.getElementById('validation-speed').textContent = avgSpeed;
+
+                const successRate = metrics.formsProcessed > 0
+                    ? Math.round(((metrics.formsProcessed - metrics.errorsCaught) / metrics.formsProcessed) * 100)
+                    : '-';
+                document.getElementById('success-rate').textContent = successRate;
+            }
+
+            // Test system initialization
+            setTimeout(() => {
+                if (window.ITERAFormValidation) {
+                    logTest('✅ IT-ERA Form Validation System loaded successfully!', 'success');
+                    logTest(`📋 Configuration: ${Object.keys(window.ITERAFormValidation.config.selectors).length} selectors`, 'info');
+                    logTest(`🎨 Styles: ${Object.keys(window.ITERAFormValidation.config.classes).length} CSS classes`, 'info');
+                    logTest(`🌍 Messages: Italian language support enabled`, 'info');
+                } else {
+                    logTest('❌ Form validation system failed to load!', 'error');
+                    metrics.errorsCaught++;
+                }
+                updateMetrics();
+            }, 500);
+
+            // Test button styles
+            const style = document.createElement('style');
+            style.textContent = `
+                .test-btn {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    padding: 0.5rem;
+                    font-size: 0.75rem;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 0.375rem;
+                    background: white;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                }
+                .test-btn:hover {
+                    background-color: #f3f4f6;
+                    border-color: #d1d5db;
+                }
+            `;
+            document.head.appendChild(style);
+
+            // Test button handlers
+            document.addEventListener('click', function(e) {
+                if (!e.target.classList.contains('test-btn')) return;
+
+                const testType = e.target.dataset.test;
+                const startTime = performance.now();
+
+                logTest(`🧪 Running test: ${testType}`, 'info');
+
+                try {
+                    runTest(testType);
+                    const endTime = performance.now();
+                    const duration = endTime - startTime;
+                    metrics.validationTimes.push(duration);
+                    metrics.formsProcessed++;
+                    logTest(`✅ Test completed in ${duration.toFixed(2)}ms`, 'success');
+                } catch (error) {
+                    logTest(`❌ Test failed: ${error.message}`, 'error');
+                    metrics.errorsCaught++;
+                }
+
+                updateMetrics();
+            });
+
+            // Test implementations
+            function runTest(testType) {
+                const contactForm = document.getElementById('test-contact-form');
+                const newsletterForm = document.getElementById('test-newsletter-form');
+
+                switch (testType) {
+                    case 'email-valid':
+                        setFieldValue('test_email', 'test@it-era.it');
+                        break;
+                    case 'email-invalid-format':
+                        setFieldValue('test_email', 'test@');
+                        break;
+                    case 'email-invalid-domain':
+                        setFieldValue('test_email', 'test@.com');
+                        break;
+                    case 'email-missing':
+                        setFieldValue('test_email', '');
+                        break;
+
+                    case 'phone-valid':
+                        setFieldValue('test_phone', '039 888 2041');
+                        break;
+                    case 'phone-valid-mobile':
+                        setFieldValue('test_phone', '340 123 4567');
+                        break;
+                    case 'phone-invalid-short':
+                        setFieldValue('test_phone', '123');
+                        break;
+                    case 'phone-missing':
+                        setFieldValue('test_phone', '');
+                        break;
+
+                    case 'name-valid':
+                        setFieldValue('test_name', 'Mario Rossi');
+                        break;
+                    case 'name-valid-accent':
+                        setFieldValue('test_name', 'José García');
+                        break;
+                    case 'name-invalid-short':
+                        setFieldValue('test_name', 'M');
+                        break;
+                    case 'name-invalid-numbers':
+                        setFieldValue('test_name', 'Mario123');
+                        break;
+
+                    case 'message-valid':
+                        setFieldValue('test_message', 'Questo è un messaggio valido per testare la validazione del form di contatto IT-ERA.');
+                        break;
+                    case 'message-invalid-short':
+                        setFieldValue('test_message', 'Short');
+                        break;
+                    case 'message-invalid-long':
+                        setFieldValue('test_message', 'x'.repeat(1001));
+                        break;
+                    case 'message-missing':
+                        setFieldValue('test_message', '');
+                        break;
+
+                    case 'realtime-clear':
+                        contactForm.reset();
+                        newsletterForm.reset();
+                        clearValidationClasses();
+                        break;
+                    case 'realtime-fillvalid':
+                        fillValidData();
+                        break;
+
+                    case 'submit-empty':
+                        contactForm.reset();
+                        simulateSubmit(contactForm);
+                        break;
+                    case 'submit-invalid':
+                        fillInvalidData();
+                        simulateSubmit(contactForm);
+                        break;
+                    case 'submit-valid':
+                        fillValidData();
+                        simulateSubmit(contactForm);
+                        break;
+
+                    default:
+                        throw new Error(`Unknown test type: ${testType}`);
+                }
+            }
+
+            function setFieldValue(fieldId, value) {
+                const field = document.getElementById(fieldId);
+                if (field) {
+                    field.value = value;
+                    field.dispatchEvent(new Event('input', { bubbles: true }));
+                    field.dispatchEvent(new Event('blur', { bubbles: true }));
+                }
+            }
+
+            function fillValidData() {
+                setFieldValue('test_name', 'Mario Rossi');
+                setFieldValue('test_email', 'mario.rossi@test.it');
+                setFieldValue('test_phone', '039 888 2041');
+                setFieldValue('test_company', 'Test Company SRL');
+                setFieldValue('test_message', 'Questo è un messaggio di test per verificare la validazione del form.');
+                document.getElementById('test_privacy').checked = true;
+            }
+
+            function fillInvalidData() {
+                setFieldValue('test_name', 'M');
+                setFieldValue('test_email', 'invalid-email');
+                setFieldValue('test_phone', '123');
+                setFieldValue('test_message', 'Short');
+                document.getElementById('test_privacy').checked = false;
+            }
+
+            function simulateSubmit(form) {
+                const submitEvent = new Event('submit', { bubbles: true, cancelable: true });
+                form.dispatchEvent(submitEvent);
+            }
+
+            function clearValidationClasses() {
+                document.querySelectorAll('.is-valid, .is-invalid').forEach(field => {
+                    field.classList.remove('is-valid', 'is-invalid');
+                });
+                document.querySelectorAll('.form-error-message').forEach(msg => {
+                    msg.remove();
+                });
+            }
+
+            // Initial status
+            logTest('🚀 IT-ERA Form Validation Test Suite initialized', 'info');
+            logTest('📝 Ready to test contact forms, newsletter forms, and validation rules', 'info');
+            logTest('Click any test button to run specific validation tests', 'info');
+        });
+    </script>
+</body>
+</html>

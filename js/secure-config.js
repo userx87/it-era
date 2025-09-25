@@ -16,7 +16,7 @@ class ITERASecureConfig {
             // Contatti (pubblici)
             contacts: {
                 phone: '039 888 2041',
-                email: 'info@bulltech.it',
+                email: 'info@it-era.it',
                 emergencyPhone: '039 888 2041'
             },
             
@@ -174,7 +174,7 @@ class ITERASecureConfig {
     async callResend(emailData) {
         const requestBody = {
             from: emailData.from || `info@it-era.it`,
-            to: emailData.to || ['info@bulltech.it'],
+            to: emailData.to || ['info@it-era.it'],
             subject: emailData.subject,
             html: emailData.html,
             ...emailData

@@ -1,5 +1,5 @@
 {
-  "endpoint": "https://it-era-resend.bulltech.workers.dev/api/contact",
+  "endpoint": "https://it-era-resend.it-era.workers.dev/api/contact",
   "timeout": 15000,
   "retryAttempts": 3,
   "formTypes": [

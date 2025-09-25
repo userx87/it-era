@@ -1,0 +1,120 @@
+{
+  "url": "http://localhost:8080/fixes-landing-digitalizzazione-pmi.html",
+  "pageName": "Digitalizzazione PMI",
+  "timestamp": "2025-09-25T05:33:31.783Z",
+  "axeResults": {
+    "passes": 8,
+    "violations": [
+      {
+        "id": "document-title",
+        "description": "Ensures each HTML document contains a non-empty <title> element",
+        "impact": "serious",
+        "help": "Documents must have <title> element to aid in navigation",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axeAPI",
+        "nodes": 1,
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242",
+          "ACT"
+        ]
+      },
+      {
+        "id": "html-has-lang",
+        "description": "Ensures every HTML document has a lang attribute",
+        "impact": "serious",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axeAPI",
+        "nodes": 1,
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "ACT"
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "description": "Ensures the document has a main landmark",
+        "impact": "moderate",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+        "nodes": 1,
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "impact": "moderate",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+        "nodes": 1,
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      },
+      {
+        "id": "region",
+        "description": "Ensures all page content is contained by landmarks",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+        "nodes": 2,
+        "tags": [
+          "cat.keyboard",
+          "best-practice"
+        ]
+      }
+    ],
+    "incomplete": []
+  },
+  "manualChecks": {
+    "keyboardNavigation": {
+      "totalFocusableElements": 5,
+      "hasTabOrder": false
+    },
+    "images": {
+      "totalImages": 0,
+      "imagesWithoutAlt": 0,
+      "imagesWithEmptyAlt": 0
+    },
+    "forms": {
+      "totalInputs": 0,
+      "inputsWithoutLabels": 0
+    }
+  },
+  "wcagChecks": {
+    "colorContrast": {
+      "totalTextElements": 18,
+      "suspectedLowContrastElements": 0
+    },
+    "textResize": {
+      "originalFontSize": "16px",
+      "supportsZoom": true
+    },
+    "touchTargets": {
+      "totalInteractiveElements": 5,
+      "smallTouchTargets": 5
+    },
+    "pageTitle": {
+      "hasTitle": false,
+      "titleLength": 0,
+      "title": ""
+    },
+    "language": {
+      "hasLangAttribute": false,
+      "language": null
+    }
+  },
+  "summary": {
+    "totalViolations": 5,
+    "criticalViolations": 0,
+    "seriousViolations": 2,
+    "moderateViolations": 3,
+    "minorViolations": 0
+  }
+}

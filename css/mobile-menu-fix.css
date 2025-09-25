@@ -1,0 +1,96 @@
+/* CRITICAL FIX - Mobile Menu Visibility */
+@media (max-width: 768px) {
+  /* Force hamburger menu visible */
+  .mobile-menu-toggle,
+  .hamburger-menu,
+  button[aria-label*="menu"],
+  #mobile-menu-button {
+    display: block !important;
+    visibility: visible !important;
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: white !important;
+    border: 2px solid #0066cc !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  }
+
+  /* Hide desktop navigation */
+  .desktop-nav,
+  nav.hidden-mobile,
+  .main-navigation,
+  .hidden.md\\:flex {
+    display: none !important;
+  }
+
+  /* Mobile nav panel */
+  .mobile-nav,
+  #mobile-menu {
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background: white !important;
+    z-index: 9998 !important;
+    padding: 80px 20px 20px !important;
+    overflow-y: auto !important;
+  }
+
+  .mobile-nav.active,
+  #mobile-menu:not(.hidden) {
+    display: block !important;
+  }
+
+  /* Hamburger icon */
+  .mobile-menu-toggle::before,
+  #mobile-menu-button::before {
+    content: "☰" !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+  }
+
+  .mobile-menu-toggle.active::before,
+  #mobile-menu-button.active::before {
+    content: "✕" !important;
+  }
+
+  /* Emergency inline hamburger for missing buttons */
+  body::after {
+    content: "☰";
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: white;
+    border: 2px solid #0066cc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 10000;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobile-menu-toggle,
+  #mobile-menu-button {
+    display: none !important;
+  }
+
+  body::after {
+    display: none !important;
+  }
+}

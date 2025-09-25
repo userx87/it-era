@@ -1,0 +1,32 @@
+{
+  "targets": {
+    "LCP": {
+      "target": "< 2.5s",
+      "description": "Largest Contentful Paint"
+    },
+    "FID": {
+      "target": "< 100ms",
+      "description": "First Input Delay"
+    },
+    "CLS": {
+      "target": "< 0.1",
+      "description": "Cumulative Layout Shift"
+    },
+    "FCP": {
+      "target": "< 1.8s",
+      "description": "First Contentful Paint"
+    },
+    "TTFB": {
+      "target": "< 600ms",
+      "description": "Time to First Byte"
+    }
+  },
+  "optimizations": [
+    "Lazy loading implemented for images",
+    "Preconnect links added for external resources",
+    "Font display swap enabled",
+    "Critical CSS extracted and inlined",
+    "LocalBusiness schema enhanced",
+    "Responsive images with srcset configured"
+  ]
+}

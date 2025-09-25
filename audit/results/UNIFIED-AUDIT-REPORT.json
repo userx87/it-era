@@ -1,0 +1,2465 @@
+{
+  "auditDate": "2025-09-25T05:33:57.991Z",
+  "summary": {
+    "overallScore": -31,
+    "pagesAudited": 8,
+    "totalIssues": 0,
+    "criticalIssues": 5,
+    "performanceGrade": "N/A",
+    "accessibilityGrade": "C",
+    "seoGrade": "F",
+    "mobileReadiness": "N/A"
+  },
+  "detailedAnalysis": {
+    "performance": {
+      "averageScores": {
+        "desktop": null,
+        "mobile": null
+      },
+      "topOpportunities": [],
+      "slowestPages": []
+    },
+    "accessibility": {
+      "totalViolations": 48,
+      "violationsByImpact": {
+        "critical": 5,
+        "serious": 16,
+        "moderate": 20,
+        "minor": 7
+      },
+      "commonIssues": [
+        "region",
+        "image-redundant-alt",
+        "landmark-one-main",
+        "button-name",
+        "document-title"
+      ]
+    },
+    "seo": {
+      "averageScore": 47.25,
+      "commonIssues": [
+        "Missing canonical URL",
+        "Missing title tag",
+        "Missing meta description",
+        "Missing H1 tag",
+        "Missing viewport meta tag"
+      ],
+      "missingElements": {
+        "titles": 5,
+        "descriptions": 5,
+        "canonical": 6,
+        "og": 5
+      }
+    }
+  },
+  "coreWebVitals": {
+    "desktop": null,
+    "mobile": null,
+    "mobile3g": null,
+    "recommendations": []
+  },
+  "accessibilityCompliance": {
+    "totalViolations": 48,
+    "criticalViolations": 5,
+    "complianceRate": 70
+  },
+  "seoOptimization": {
+    "averageScore": 47,
+    "criticalIssues": 5,
+    "optimizationLevel": "Needs Work"
+  },
+  "mobilePerformance": null,
+  "criticalIssues": [
+    {
+      "type": "Accessibility",
+      "severity": "Critical",
+      "page": "Contatti",
+      "description": "1 critical accessibility violations found",
+      "impact": "Legal compliance risk, users with disabilities cannot access content"
+    },
+    {
+      "type": "Accessibility",
+      "severity": "Critical",
+      "page": "Assistenza Emergenza",
+      "description": "1 critical accessibility violations found",
+      "impact": "Legal compliance risk, users with disabilities cannot access content"
+    },
+    {
+      "type": "Accessibility",
+      "severity": "Critical",
+      "page": "Cloud Migration",
+      "description": "1 critical accessibility violations found",
+      "impact": "Legal compliance risk, users with disabilities cannot access content"
+    },
+    {
+      "type": "Accessibility",
+      "severity": "Critical",
+      "page": "Sicurezza Informatica",
+      "description": "1 critical accessibility violations found",
+      "impact": "Legal compliance risk, users with disabilities cannot access content"
+    },
+    {
+      "type": "Accessibility",
+      "severity": "Critical",
+      "page": "Software Commercialisti",
+      "description": "1 critical accessibility violations found",
+      "impact": "Legal compliance risk, users with disabilities cannot access content"
+    },
+    {
+      "type": "SEO",
+      "severity": "Critical",
+      "page": "Digitalizzazione PMI",
+      "description": "Critical SEO issues: Missing title tag",
+      "impact": "Poor search engine visibility, loss of organic traffic"
+    },
+    {
+      "type": "SEO",
+      "severity": "Critical",
+      "page": "Assistenza Emergenza",
+      "description": "Critical SEO issues: Missing title tag",
+      "impact": "Poor search engine visibility, loss of organic traffic"
+    },
+    {
+      "type": "SEO",
+      "severity": "Critical",
+      "page": "Cloud Migration",
+      "description": "Critical SEO issues: Missing title tag",
+      "impact": "Poor search engine visibility, loss of organic traffic"
+    },
+    {
+      "type": "SEO",
+      "severity": "Critical",
+      "page": "Sicurezza Informatica",
+      "description": "Critical SEO issues: Missing title tag",
+      "impact": "Poor search engine visibility, loss of organic traffic"
+    },
+    {
+      "type": "SEO",
+      "severity": "Critical",
+      "page": "Software Commercialisti",
+      "description": "Critical SEO issues: Missing title tag",
+      "impact": "Poor search engine visibility, loss of organic traffic"
+    }
+  ],
+  "actionPlan": {
+    "immediate": [
+      {
+        "action": "Fix critical accessibility violations",
+        "description": "Add missing alt texts, fix color contrast, ensure keyboard navigation",
+        "pages": [
+          "Contatti",
+          "Assistenza Emergenza",
+          "Cloud Migration",
+          "Sicurezza Informatica",
+          "Software Commercialisti"
+        ],
+        "estimatedImpact": "High",
+        "effort": "Low"
+      }
+    ],
+    "shortTerm": [
+      {
+        "action": "Optimize SEO fundamentals",
+        "description": "Improve title tags, meta descriptions, add structured data",
+        "pages": "All pages",
+        "estimatedImpact": "Medium",
+        "effort": "Medium"
+      }
+    ],
+    "longTerm": [
+      {
+        "action": "Implement advanced performance optimizations",
+        "description": "Service workers, code splitting, CDN implementation, advanced caching",
+        "pages": "All pages",
+        "estimatedImpact": "Medium",
+        "effort": "High"
+      }
+    ]
+  },
+  "baselineComparison": {
+    "availableBaselines": [],
+    "comparison": null,
+    "note": "No previous baseline found. This audit will serve as the initial baseline."
+  },
+  "rawResults": {
+    "lighthouse": [],
+    "accessibility": [
+      {
+        "url": "http://localhost:8080/",
+        "pageName": "Homepage",
+        "timestamp": "2025-09-25T05:33:24.799Z",
+        "axeResults": {
+          "passes": 38,
+          "violations": [
+            {
+              "id": "heading-order",
+              "description": "Ensures the order of headings is semantically correct",
+              "impact": "moderate",
+              "help": "Heading levels should only increase by one",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/heading-order?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "image-redundant-alt",
+              "description": "Ensure image alternative is not repeated as text",
+              "impact": "minor",
+              "help": "Alternative text of images should not be repeated as text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "link-name",
+              "description": "Ensures links have discernible text",
+              "impact": "serious",
+              "help": "Links must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/link-name?application=axeAPI",
+              "nodes": 3,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "wcag244",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 3,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+              "impact": "serious",
+              "help": "Elements must have sufficient color contrast",
+              "nodes": 48
+            }
+          ]
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 64,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 1,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 0,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 281,
+            "suspectedLowContrastElements": 1
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 64,
+            "smallTouchTargets": 54
+          },
+          "pageTitle": {
+            "hasTitle": true,
+            "titleLength": 58,
+            "title": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA"
+          },
+          "language": {
+            "hasLangAttribute": true,
+            "language": "it"
+          }
+        },
+        "summary": {
+          "totalViolations": 4,
+          "criticalViolations": 0,
+          "seriousViolations": 1,
+          "moderateViolations": 2,
+          "minorViolations": 1
+        }
+      },
+      {
+        "url": "http://localhost:8080/contatti.html",
+        "pageName": "Contatti",
+        "timestamp": "2025-09-25T05:33:27.303Z",
+        "axeResults": {
+          "passes": 39,
+          "violations": [
+            {
+              "id": "button-name",
+              "description": "Ensures buttons have discernible text",
+              "impact": "critical",
+              "help": "Buttons must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "color-contrast",
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+              "impact": "serious",
+              "help": "Elements must have sufficient color contrast",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI",
+              "nodes": 3,
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+              ]
+            },
+            {
+              "id": "duplicate-id-active",
+              "description": "Ensures every id attribute value of active elements is unique",
+              "impact": "serious",
+              "help": "IDs of active elements must be unique",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+              ]
+            },
+            {
+              "id": "duplicate-id",
+              "description": "Ensures every id attribute value is unique",
+              "impact": "minor",
+              "help": "id attribute value must be unique",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+              ]
+            },
+            {
+              "id": "image-redundant-alt",
+              "description": "Ensure image alternative is not repeated as text",
+              "impact": "minor",
+              "help": "Alternative text of images should not be repeated as text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "help": "Document should have one main landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "landmark-unique",
+              "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+              "impact": "moderate",
+              "help": "Ensures landmarks are unique",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-unique?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "link-name",
+              "description": "Ensures links have discernible text",
+              "impact": "serious",
+              "help": "Links must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/link-name?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "wcag244",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 19,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+              "impact": "serious",
+              "help": "Elements must have sufficient color contrast",
+              "nodes": 22
+            }
+          ]
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 105,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 1,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 9,
+            "inputsWithoutLabels": 1
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 339,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 105,
+            "smallTouchTargets": 92
+          },
+          "pageTitle": {
+            "hasTitle": true,
+            "titleLength": 65,
+            "title": "Contatti IT-ERA | Assistenza Informatica Lombardia - 039 888 2041"
+          },
+          "language": {
+            "hasLangAttribute": true,
+            "language": "it"
+          }
+        },
+        "summary": {
+          "totalViolations": 9,
+          "criticalViolations": 1,
+          "seriousViolations": 3,
+          "moderateViolations": 3,
+          "minorViolations": 2
+        }
+      },
+      {
+        "url": "http://localhost:8080/servizi.html",
+        "pageName": "Servizi",
+        "timestamp": "2025-09-25T05:33:29.716Z",
+        "axeResults": {
+          "passes": 37,
+          "violations": [
+            {
+              "id": "color-contrast",
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+              "impact": "serious",
+              "help": "Elements must have sufficient color contrast",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+              ]
+            },
+            {
+              "id": "link-name",
+              "description": "Ensures links have discernible text",
+              "impact": "serious",
+              "help": "Links must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/link-name?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "wcag244",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            }
+          ],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+              "impact": "serious",
+              "help": "Elements must have sufficient color contrast",
+              "nodes": 27
+            },
+            {
+              "id": "identical-links-same-purpose",
+              "description": "Ensure that links with the same accessible name serve a similar purpose",
+              "impact": "minor",
+              "help": "Links with the same name must have a similar purpose",
+              "nodes": 1
+            }
+          ]
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 84,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 0,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 0,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 283,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 84,
+            "smallTouchTargets": 69
+          },
+          "pageTitle": {
+            "hasTitle": true,
+            "titleLength": 42,
+            "title": "Servizi IT Professionali - IT-ERA | IT-ERA"
+          },
+          "language": {
+            "hasLangAttribute": true,
+            "language": "it"
+          }
+        },
+        "summary": {
+          "totalViolations": 2,
+          "criticalViolations": 0,
+          "seriousViolations": 2,
+          "moderateViolations": 0,
+          "minorViolations": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-digitalizzazione-pmi.html",
+        "pageName": "Digitalizzazione PMI",
+        "timestamp": "2025-09-25T05:33:31.783Z",
+        "axeResults": {
+          "passes": 8,
+          "violations": [
+            {
+              "id": "document-title",
+              "description": "Ensures each HTML document contains a non-empty <title> element",
+              "impact": "serious",
+              "help": "Documents must have <title> element to aid in navigation",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242",
+                "ACT"
+              ]
+            },
+            {
+              "id": "html-has-lang",
+              "description": "Ensures every HTML document has a lang attribute",
+              "impact": "serious",
+              "help": "<html> element must have a lang attribute",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "help": "Document should have one main landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "page-has-heading-one",
+              "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+              "impact": "moderate",
+              "help": "Page should contain a level-one heading",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": []
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 5,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 0,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 0,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 18,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 5,
+            "smallTouchTargets": 5
+          },
+          "pageTitle": {
+            "hasTitle": false,
+            "titleLength": 0,
+            "title": ""
+          },
+          "language": {
+            "hasLangAttribute": false,
+            "language": null
+          }
+        },
+        "summary": {
+          "totalViolations": 5,
+          "criticalViolations": 0,
+          "seriousViolations": 2,
+          "moderateViolations": 3,
+          "minorViolations": 0
+        }
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-assistenza-emergenza.html",
+        "pageName": "Assistenza Emergenza",
+        "timestamp": "2025-09-25T05:33:33.935Z",
+        "axeResults": {
+          "passes": 19,
+          "violations": [
+            {
+              "id": "button-name",
+              "description": "Ensures buttons have discernible text",
+              "impact": "critical",
+              "help": "Buttons must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "document-title",
+              "description": "Ensures each HTML document contains a non-empty <title> element",
+              "impact": "serious",
+              "help": "Documents must have <title> element to aid in navigation",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242",
+                "ACT"
+              ]
+            },
+            {
+              "id": "html-has-lang",
+              "description": "Ensures every HTML document has a lang attribute",
+              "impact": "serious",
+              "help": "<html> element must have a lang attribute",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+              ]
+            },
+            {
+              "id": "image-redundant-alt",
+              "description": "Ensure image alternative is not repeated as text",
+              "impact": "minor",
+              "help": "Alternative text of images should not be repeated as text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "help": "Document should have one main landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "page-has-heading-one",
+              "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+              "impact": "moderate",
+              "help": "Page should contain a level-one heading",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 10,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": []
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 34,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 1,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 7,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 74,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 34,
+            "smallTouchTargets": 31
+          },
+          "pageTitle": {
+            "hasTitle": false,
+            "titleLength": 0,
+            "title": ""
+          },
+          "language": {
+            "hasLangAttribute": false,
+            "language": null
+          }
+        },
+        "summary": {
+          "totalViolations": 7,
+          "criticalViolations": 1,
+          "seriousViolations": 2,
+          "moderateViolations": 3,
+          "minorViolations": 1
+        }
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-cloud-migration.html",
+        "pageName": "Cloud Migration",
+        "timestamp": "2025-09-25T05:33:36.004Z",
+        "axeResults": {
+          "passes": 14,
+          "violations": [
+            {
+              "id": "button-name",
+              "description": "Ensures buttons have discernible text",
+              "impact": "critical",
+              "help": "Buttons must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "document-title",
+              "description": "Ensures each HTML document contains a non-empty <title> element",
+              "impact": "serious",
+              "help": "Documents must have <title> element to aid in navigation",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242",
+                "ACT"
+              ]
+            },
+            {
+              "id": "html-has-lang",
+              "description": "Ensures every HTML document has a lang attribute",
+              "impact": "serious",
+              "help": "<html> element must have a lang attribute",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+              ]
+            },
+            {
+              "id": "image-redundant-alt",
+              "description": "Ensure image alternative is not repeated as text",
+              "impact": "minor",
+              "help": "Alternative text of images should not be repeated as text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "help": "Document should have one main landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "page-has-heading-one",
+              "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+              "impact": "moderate",
+              "help": "Page should contain a level-one heading",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": []
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 24,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 1,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 0,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 49,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 24,
+            "smallTouchTargets": 22
+          },
+          "pageTitle": {
+            "hasTitle": false,
+            "titleLength": 0,
+            "title": ""
+          },
+          "language": {
+            "hasLangAttribute": false,
+            "language": null
+          }
+        },
+        "summary": {
+          "totalViolations": 7,
+          "criticalViolations": 1,
+          "seriousViolations": 2,
+          "moderateViolations": 3,
+          "minorViolations": 1
+        }
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-sicurezza-informatica.html",
+        "pageName": "Sicurezza Informatica",
+        "timestamp": "2025-09-25T05:33:38.090Z",
+        "axeResults": {
+          "passes": 14,
+          "violations": [
+            {
+              "id": "button-name",
+              "description": "Ensures buttons have discernible text",
+              "impact": "critical",
+              "help": "Buttons must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "document-title",
+              "description": "Ensures each HTML document contains a non-empty <title> element",
+              "impact": "serious",
+              "help": "Documents must have <title> element to aid in navigation",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242",
+                "ACT"
+              ]
+            },
+            {
+              "id": "html-has-lang",
+              "description": "Ensures every HTML document has a lang attribute",
+              "impact": "serious",
+              "help": "<html> element must have a lang attribute",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+              ]
+            },
+            {
+              "id": "image-redundant-alt",
+              "description": "Ensure image alternative is not repeated as text",
+              "impact": "minor",
+              "help": "Alternative text of images should not be repeated as text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "help": "Document should have one main landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "page-has-heading-one",
+              "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+              "impact": "moderate",
+              "help": "Page should contain a level-one heading",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": []
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 24,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 1,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 0,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 49,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 24,
+            "smallTouchTargets": 22
+          },
+          "pageTitle": {
+            "hasTitle": false,
+            "titleLength": 0,
+            "title": ""
+          },
+          "language": {
+            "hasLangAttribute": false,
+            "language": null
+          }
+        },
+        "summary": {
+          "totalViolations": 7,
+          "criticalViolations": 1,
+          "seriousViolations": 2,
+          "moderateViolations": 3,
+          "minorViolations": 1
+        }
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-software-commercialisti.html",
+        "pageName": "Software Commercialisti",
+        "timestamp": "2025-09-25T05:33:40.181Z",
+        "axeResults": {
+          "passes": 14,
+          "violations": [
+            {
+              "id": "button-name",
+              "description": "Ensures buttons have discernible text",
+              "impact": "critical",
+              "help": "Buttons must have discernible text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/button-name?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a",
+                "ACT"
+              ]
+            },
+            {
+              "id": "document-title",
+              "description": "Ensures each HTML document contains a non-empty <title> element",
+              "impact": "serious",
+              "help": "Documents must have <title> element to aid in navigation",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/document-title?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242",
+                "ACT"
+              ]
+            },
+            {
+              "id": "html-has-lang",
+              "description": "Ensures every HTML document has a lang attribute",
+              "impact": "serious",
+              "help": "<html> element must have a lang attribute",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/html-has-lang?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311",
+                "ACT"
+              ]
+            },
+            {
+              "id": "image-redundant-alt",
+              "description": "Ensure image alternative is not repeated as text",
+              "impact": "minor",
+              "help": "Alternative text of images should not be repeated as text",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "description": "Ensures the document has a main landmark",
+              "impact": "moderate",
+              "help": "Document should have one main landmark",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "page-has-heading-one",
+              "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+              "impact": "moderate",
+              "help": "Page should contain a level-one heading",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+              "nodes": 1,
+              "tags": [
+                "cat.semantics",
+                "best-practice"
+              ]
+            },
+            {
+              "id": "region",
+              "description": "Ensures all page content is contained by landmarks",
+              "impact": "moderate",
+              "help": "All page content should be contained by landmarks",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+              "nodes": 2,
+              "tags": [
+                "cat.keyboard",
+                "best-practice"
+              ]
+            }
+          ],
+          "incomplete": []
+        },
+        "manualChecks": {
+          "keyboardNavigation": {
+            "totalFocusableElements": 24,
+            "hasTabOrder": false
+          },
+          "images": {
+            "totalImages": 1,
+            "imagesWithoutAlt": 0,
+            "imagesWithEmptyAlt": 0
+          },
+          "forms": {
+            "totalInputs": 0,
+            "inputsWithoutLabels": 0
+          }
+        },
+        "wcagChecks": {
+          "colorContrast": {
+            "totalTextElements": 49,
+            "suspectedLowContrastElements": 0
+          },
+          "textResize": {
+            "originalFontSize": "16px",
+            "supportsZoom": true
+          },
+          "touchTargets": {
+            "totalInteractiveElements": 24,
+            "smallTouchTargets": 22
+          },
+          "pageTitle": {
+            "hasTitle": false,
+            "titleLength": 0,
+            "title": ""
+          },
+          "language": {
+            "hasLangAttribute": false,
+            "language": null
+          }
+        },
+        "summary": {
+          "totalViolations": 7,
+          "criticalViolations": 1,
+          "seriousViolations": 2,
+          "moderateViolations": 3,
+          "minorViolations": 1
+        }
+      }
+    ],
+    "seo": [
+      {
+        "url": "http://localhost:8080/",
+        "pageName": "Homepage",
+        "timestamp": "2025-09-25T05:33:42.451Z",
+        "seoData": {
+          "title": {
+            "content": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+            "length": 58,
+            "exists": true
+          },
+          "metaDescription": {
+            "content": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+            "length": 124,
+            "exists": true
+          },
+          "metaKeywords": {
+            "content": "assistenza informatica, IT support, Lombardia, Milano, Bergamo, sicurezza informatica",
+            "exists": true
+          },
+          "canonical": {
+            "href": "",
+            "exists": false
+          },
+          "openGraph": {
+            "title": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+            "description": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+            "image": "/images/og-image.jpg",
+            "url": "http://it-era.it/",
+            "type": "website",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "summary_large_image",
+            "site": "",
+            "creator": "",
+            "title": "IT-ERA - Assistenza IT Professionale in Lombardia | IT-ERA",
+            "description": "Assistenza informatica professionale per aziende in Lombardia. Supporto IT, sicurezza informatica, cloud e digitalizzazione.",
+            "image": "/images/og-image.jpg"
+          },
+          "headings": {
+            "h1": {
+              "count": 1,
+              "text": [
+                "Assistenza Informatica\n          per Aziende Milano\n          Supporto IT 24/7 Garantito"
+              ]
+            },
+            "h2": {
+              "count": 2,
+              "text": [
+                "I Nostri Servizi",
+                "Hai bisogno di\n          assistenza IT?"
+              ]
+            },
+            "h3": {
+              "count": 9,
+              "text": [
+                "500+",
+                "2h",
+                "99.8%",
+                "15+",
+                "Assistenza Tecnica",
+                "Sicurezza Informatica",
+                "Cloud Computing",
+                "IT-ERA",
+                "Assistenza IT-ERA"
+              ]
+            }
+          },
+          "images": {
+            "total": 1,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 1
+          },
+          "links": {
+            "total": 56,
+            "internal": 56,
+            "external": 0,
+            "withoutTitle": 3,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 3,
+            "schemas": [
+              {
+                "type": "LocalBusiness",
+                "context": "https://schema.org"
+              },
+              {
+                "type": "WebSite",
+                "context": "https://schema.org"
+              },
+              {
+                "type": "LocalBusiness",
+                "context": "https://schema.org"
+              }
+            ]
+          },
+          "viewport": {
+            "content": "width=device-width, initial-scale=1.0",
+            "exists": true
+          },
+          "language": {
+            "htmlLang": "it",
+            "hasLangAttribute": true
+          },
+          "content": {
+            "wordCount": 1119,
+            "characterCount": 22977,
+            "textContentRatio": 0.2201874425022999
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 310.59999990463257,
+          "domContentLoadedTime": 304.90000009536743,
+          "resourceCount": 15
+        },
+        "seoScore": 95,
+        "recommendations": [
+          {
+            "category": "Medium",
+            "issue": "Missing canonical URL",
+            "recommendation": "Add canonical URL to prevent duplicate content issues"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/contatti.html",
+        "pageName": "Contatti",
+        "timestamp": "2025-09-25T05:33:44.752Z",
+        "seoData": {
+          "title": {
+            "content": "Contatti IT-ERA | Assistenza Informatica Lombardia - 039 888 2041",
+            "length": 65,
+            "exists": true
+          },
+          "metaDescription": {
+            "content": "Contatta IT-ERA per assistenza informatica in Lombardia. Emergenze 24/7, consulenza gratuita, supporto tecnico specializzato. Chiama 039 888 2041.",
+            "length": 146,
+            "exists": true
+          },
+          "metaKeywords": {
+            "content": "contatti IT-ERA, assistenza informatica lombardia, emergenza computer, supporto tecnico, consulenza IT",
+            "exists": true
+          },
+          "canonical": {
+            "href": "https://it-era.it/contatti.html",
+            "exists": true
+          },
+          "openGraph": {
+            "title": "Contatti IT-ERA | Assistenza Informatica Lombardia",
+            "description": "Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita in tutta la Lombardia.",
+            "image": "https://it-era.it/images/og-contatti.jpg",
+            "url": "https://it-era.it/contatti.html",
+            "type": "website",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "summary_large_image",
+            "site": "",
+            "creator": "",
+            "title": "Contatti IT-ERA | Assistenza Informatica Lombardia",
+            "description": "Contatta IT-ERA per assistenza informatica professionale. Emergenze 24/7, consulenza gratuita.",
+            "image": "https://it-era.it/images/og-contatti.jpg"
+          },
+          "headings": {
+            "h1": {
+              "count": 2,
+              "text": [
+                "IT-ERA",
+                "Contatta IT-ERA"
+              ]
+            },
+            "h2": {
+              "count": 4,
+              "text": [
+                "Hai un'emergenza informatica?",
+                "Richiedi Consulenza Gratuita",
+                "I Nostri Uffici in Lombardia",
+                "Domande Frequenti"
+              ]
+            },
+            "h3": {
+              "count": 11,
+              "text": [
+                "Chiamata Immediata",
+                "WhatsApp Urgente",
+                "Email Urgente",
+                "Sede Principale - Bergamo",
+                "Milano e Hinterland",
+                "Tutta la Lombardia",
+                "Quanto tempo ci mettete ad arrivare per un'emergenza?",
+                "Quanto costa una consulenza?",
+                "Offrite garanzia sui vostri interventi?",
+                "Lavorate anche con le aziende?",
+                "IT-ERA"
+              ]
+            }
+          },
+          "images": {
+            "total": 1,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 1
+          },
+          "links": {
+            "total": 78,
+            "internal": 77,
+            "external": 1,
+            "withoutTitle": 2,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 1,
+            "schemas": [
+              {
+                "type": "LocalBusiness",
+                "context": "https://schema.org"
+              }
+            ]
+          },
+          "viewport": {
+            "content": "width=device-width, initial-scale=1.0",
+            "exists": true
+          },
+          "language": {
+            "htmlLang": "it",
+            "hasLangAttribute": true
+          },
+          "content": {
+            "wordCount": 1026,
+            "characterCount": 23239,
+            "textContentRatio": 0.2363680746971531
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 323.10000014305115,
+          "domContentLoadedTime": 293.5,
+          "resourceCount": 32
+        },
+        "seoScore": 90,
+        "recommendations": [
+          {
+            "category": "High",
+            "issue": "Title length not optimal",
+            "recommendation": "Keep title length between 30-60 characters for optimal display in search results"
+          },
+          {
+            "category": "Medium",
+            "issue": "Multiple H1 tags",
+            "recommendation": "Use only one H1 tag per page for better semantic structure"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/servizi.html",
+        "pageName": "Servizi",
+        "timestamp": "2025-09-25T05:33:46.965Z",
+        "seoData": {
+          "title": {
+            "content": "Servizi IT Professionali - IT-ERA | IT-ERA",
+            "length": 42,
+            "exists": true
+          },
+          "metaDescription": {
+            "content": "Servizi IT professionali per aziende in Lombardia: assistenza tecnica 24/7, sicurezza informatica, cloud computing e digitalizzazione. Consulenza gratuita e supporto specializzato.",
+            "length": 180,
+            "exists": true
+          },
+          "metaKeywords": {
+            "content": "servizi IT, assistenza tecnica, sicurezza informatica, cloud computing, digitalizzazione aziendale, Lombardia, Milano, supporto IT 24/7",
+            "exists": true
+          },
+          "canonical": {
+            "href": "https://it-era.it/servizi.html",
+            "exists": true
+          },
+          "openGraph": {
+            "title": "Servizi IT Professionali per Aziende | IT-ERA Lombardia",
+            "description": "Assistenza informatica completa per aziende: sicurezza IT, cloud computing, supporto tecnico 24/7. Consulenza gratuita in Lombardia.",
+            "image": "https://it-era.it/images/og-image.jpg",
+            "url": "https://it-era.it/servizi.html",
+            "type": "website",
+            "siteName": "IT-ERA"
+          },
+          "twitterCard": {
+            "card": "summary_large_image",
+            "site": "",
+            "creator": "",
+            "title": "Servizi IT Professionali per Aziende | IT-ERA",
+            "description": "Assistenza informatica completa: sicurezza IT, cloud computing, supporto 24/7. Consulenza gratuita in Lombardia.",
+            "image": "https://it-era.it/images/og-image.jpg"
+          },
+          "headings": {
+            "h1": {
+              "count": 2,
+              "text": [
+                "IT-ERA",
+                "Servizi IT Completi\n            per Aziende Milano"
+              ]
+            },
+            "h2": {
+              "count": 5,
+              "text": [
+                "Servizi IT Specializzati per Aziende",
+                "☁️ Cloud Computing",
+                "📞 VoIP e Telefonia",
+                "Servizi Più Richiesti a Milano",
+                "Pacchetti Servizi IT per Aziende"
+              ]
+            },
+            "h3": {
+              "count": 11,
+              "text": [
+                "Assistenza Informatica Aziende",
+                "Sicurezza Informatica Aziende",
+                "Assistenza Aziende",
+                "Riparazione PC",
+                "Assemblaggio PC",
+                "Recupero Dati",
+                "Supporto Base",
+                "Supporto Professional",
+                "Supporto Enterprise",
+                "Non trovi il pacchetto giusto?",
+                "IT-ERA"
+              ]
+            }
+          },
+          "images": {
+            "total": 0,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 0
+          },
+          "links": {
+            "total": 81,
+            "internal": 81,
+            "external": 0,
+            "withoutTitle": 2,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 2,
+            "schemas": [
+              {
+                "type": "Service",
+                "context": "https://schema.org"
+              },
+              {
+                "type": "BreadcrumbList",
+                "context": "https://schema.org"
+              }
+            ]
+          },
+          "viewport": {
+            "content": "width=device-width, initial-scale=1.0",
+            "exists": true
+          },
+          "language": {
+            "htmlLang": "it",
+            "hasLangAttribute": true
+          },
+          "content": {
+            "wordCount": 836,
+            "characterCount": 18017,
+            "textContentRatio": 0.216215243192646
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 247.60000014305115,
+          "domContentLoadedTime": 206.40000009536743,
+          "resourceCount": 19
+        },
+        "seoScore": 80,
+        "recommendations": [
+          {
+            "category": "Medium",
+            "issue": "Meta description length not optimal",
+            "recommendation": "Keep meta description length between 120-160 characters"
+          },
+          {
+            "category": "Medium",
+            "issue": "Multiple H1 tags",
+            "recommendation": "Use only one H1 tag per page for better semantic structure"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-digitalizzazione-pmi.html",
+        "pageName": "Digitalizzazione PMI",
+        "timestamp": "2025-09-25T05:33:48.950Z",
+        "seoData": {
+          "title": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaDescription": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaKeywords": {
+            "content": "",
+            "exists": false
+          },
+          "canonical": {
+            "href": "",
+            "exists": false
+          },
+          "openGraph": {
+            "title": "",
+            "description": "",
+            "image": "",
+            "url": "",
+            "type": "",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "",
+            "site": "",
+            "creator": "",
+            "title": "",
+            "description": "",
+            "image": ""
+          },
+          "headings": {
+            "h1": {
+              "count": 0,
+              "text": []
+            },
+            "h2": {
+              "count": 0,
+              "text": []
+            },
+            "h3": {
+              "count": 2,
+              "text": [
+                "Assistenza Emergenza 24/7",
+                "Hai bisogno di assistenza IT?"
+              ]
+            }
+          },
+          "images": {
+            "total": 0,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 0
+          },
+          "links": {
+            "total": 5,
+            "internal": 3,
+            "external": 2,
+            "withoutTitle": 0,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 0,
+            "schemas": []
+          },
+          "viewport": {
+            "content": "",
+            "exists": false
+          },
+          "language": {
+            "htmlLang": "",
+            "hasLangAttribute": false
+          },
+          "content": {
+            "wordCount": 270,
+            "characterCount": 2847,
+            "textContentRatio": 0.3896263856575886
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 18.90000009536743,
+          "domContentLoadedTime": 18.600000143051147,
+          "resourceCount": 1
+        },
+        "seoScore": 13,
+        "recommendations": [
+          {
+            "category": "Critical",
+            "issue": "Missing title tag",
+            "recommendation": "Add a unique, descriptive title tag to every page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing meta description",
+            "recommendation": "Add a compelling meta description to improve click-through rates"
+          },
+          {
+            "category": "High",
+            "issue": "Missing H1 tag",
+            "recommendation": "Add a single, descriptive H1 tag to the page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing viewport meta tag",
+            "recommendation": "Add viewport meta tag for mobile optimization"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing canonical URL",
+            "recommendation": "Add canonical URL to prevent duplicate content issues"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing language attribute",
+            "recommendation": "Add lang attribute to the HTML element"
+          },
+          {
+            "category": "Medium",
+            "issue": "Low content word count",
+            "recommendation": "Increase content length to at least 300 words for better SEO value"
+          },
+          {
+            "category": "Low",
+            "issue": "Missing Open Graph tags: title, description, image, url",
+            "recommendation": "Add Open Graph meta tags to improve social media sharing"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-assistenza-emergenza.html",
+        "pageName": "Assistenza Emergenza",
+        "timestamp": "2025-09-25T05:33:50.950Z",
+        "seoData": {
+          "title": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaDescription": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaKeywords": {
+            "content": "",
+            "exists": false
+          },
+          "canonical": {
+            "href": "",
+            "exists": false
+          },
+          "openGraph": {
+            "title": "",
+            "description": "",
+            "image": "",
+            "url": "",
+            "type": "",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "",
+            "site": "",
+            "creator": "",
+            "title": "",
+            "description": "",
+            "image": ""
+          },
+          "headings": {
+            "h1": {
+              "count": 0,
+              "text": []
+            },
+            "h2": {
+              "count": 0,
+              "text": []
+            },
+            "h3": {
+              "count": 3,
+              "text": [
+                "Richiedi Assistenza",
+                "Assistenza Emergenza 24/7",
+                "Hai bisogno di assistenza IT?"
+              ]
+            }
+          },
+          "images": {
+            "total": 1,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 1
+          },
+          "links": {
+            "total": 23,
+            "internal": 21,
+            "external": 2,
+            "withoutTitle": 0,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 0,
+            "schemas": []
+          },
+          "viewport": {
+            "content": "",
+            "exists": false
+          },
+          "language": {
+            "htmlLang": "",
+            "hasLangAttribute": false
+          },
+          "content": {
+            "wordCount": 556,
+            "characterCount": 8216,
+            "textContentRatio": 0.4664736274342815
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 37.89999985694885,
+          "domContentLoadedTime": 8.700000047683716,
+          "resourceCount": 2
+        },
+        "seoScore": 25,
+        "recommendations": [
+          {
+            "category": "Critical",
+            "issue": "Missing title tag",
+            "recommendation": "Add a unique, descriptive title tag to every page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing meta description",
+            "recommendation": "Add a compelling meta description to improve click-through rates"
+          },
+          {
+            "category": "High",
+            "issue": "Missing H1 tag",
+            "recommendation": "Add a single, descriptive H1 tag to the page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing viewport meta tag",
+            "recommendation": "Add viewport meta tag for mobile optimization"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing canonical URL",
+            "recommendation": "Add canonical URL to prevent duplicate content issues"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing language attribute",
+            "recommendation": "Add lang attribute to the HTML element"
+          },
+          {
+            "category": "Low",
+            "issue": "Missing Open Graph tags: title, description, image, url",
+            "recommendation": "Add Open Graph meta tags to improve social media sharing"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-cloud-migration.html",
+        "pageName": "Cloud Migration",
+        "timestamp": "2025-09-25T05:33:52.931Z",
+        "seoData": {
+          "title": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaDescription": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaKeywords": {
+            "content": "",
+            "exists": false
+          },
+          "canonical": {
+            "href": "",
+            "exists": false
+          },
+          "openGraph": {
+            "title": "",
+            "description": "",
+            "image": "",
+            "url": "",
+            "type": "",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "",
+            "site": "",
+            "creator": "",
+            "title": "",
+            "description": "",
+            "image": ""
+          },
+          "headings": {
+            "h1": {
+              "count": 0,
+              "text": []
+            },
+            "h2": {
+              "count": 0,
+              "text": []
+            },
+            "h3": {
+              "count": 2,
+              "text": [
+                "Assistenza Emergenza 24/7",
+                "Hai bisogno di assistenza IT?"
+              ]
+            }
+          },
+          "images": {
+            "total": 1,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 1
+          },
+          "links": {
+            "total": 21,
+            "internal": 19,
+            "external": 2,
+            "withoutTitle": 0,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 0,
+            "schemas": []
+          },
+          "viewport": {
+            "content": "",
+            "exists": false
+          },
+          "language": {
+            "htmlLang": "",
+            "hasLangAttribute": false
+          },
+          "content": {
+            "wordCount": 317,
+            "characterCount": 4300,
+            "textContentRatio": 0.33112582781456956
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 8,
+          "domContentLoadedTime": 7.400000095367432,
+          "resourceCount": 2
+        },
+        "seoScore": 25,
+        "recommendations": [
+          {
+            "category": "Critical",
+            "issue": "Missing title tag",
+            "recommendation": "Add a unique, descriptive title tag to every page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing meta description",
+            "recommendation": "Add a compelling meta description to improve click-through rates"
+          },
+          {
+            "category": "High",
+            "issue": "Missing H1 tag",
+            "recommendation": "Add a single, descriptive H1 tag to the page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing viewport meta tag",
+            "recommendation": "Add viewport meta tag for mobile optimization"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing canonical URL",
+            "recommendation": "Add canonical URL to prevent duplicate content issues"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing language attribute",
+            "recommendation": "Add lang attribute to the HTML element"
+          },
+          {
+            "category": "Low",
+            "issue": "Missing Open Graph tags: title, description, image, url",
+            "recommendation": "Add Open Graph meta tags to improve social media sharing"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-sicurezza-informatica.html",
+        "pageName": "Sicurezza Informatica",
+        "timestamp": "2025-09-25T05:33:54.917Z",
+        "seoData": {
+          "title": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaDescription": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaKeywords": {
+            "content": "",
+            "exists": false
+          },
+          "canonical": {
+            "href": "",
+            "exists": false
+          },
+          "openGraph": {
+            "title": "",
+            "description": "",
+            "image": "",
+            "url": "",
+            "type": "",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "",
+            "site": "",
+            "creator": "",
+            "title": "",
+            "description": "",
+            "image": ""
+          },
+          "headings": {
+            "h1": {
+              "count": 0,
+              "text": []
+            },
+            "h2": {
+              "count": 0,
+              "text": []
+            },
+            "h3": {
+              "count": 2,
+              "text": [
+                "Assistenza Emergenza 24/7",
+                "Hai bisogno di assistenza IT?"
+              ]
+            }
+          },
+          "images": {
+            "total": 1,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 1
+          },
+          "links": {
+            "total": 21,
+            "internal": 19,
+            "external": 2,
+            "withoutTitle": 0,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 0,
+            "schemas": []
+          },
+          "viewport": {
+            "content": "",
+            "exists": false
+          },
+          "language": {
+            "htmlLang": "",
+            "hasLangAttribute": false
+          },
+          "content": {
+            "wordCount": 317,
+            "characterCount": 4300,
+            "textContentRatio": 0.33112582781456956
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 16,
+          "domContentLoadedTime": 15.400000095367432,
+          "resourceCount": 2
+        },
+        "seoScore": 25,
+        "recommendations": [
+          {
+            "category": "Critical",
+            "issue": "Missing title tag",
+            "recommendation": "Add a unique, descriptive title tag to every page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing meta description",
+            "recommendation": "Add a compelling meta description to improve click-through rates"
+          },
+          {
+            "category": "High",
+            "issue": "Missing H1 tag",
+            "recommendation": "Add a single, descriptive H1 tag to the page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing viewport meta tag",
+            "recommendation": "Add viewport meta tag for mobile optimization"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing canonical URL",
+            "recommendation": "Add canonical URL to prevent duplicate content issues"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing language attribute",
+            "recommendation": "Add lang attribute to the HTML element"
+          },
+          {
+            "category": "Low",
+            "issue": "Missing Open Graph tags: title, description, image, url",
+            "recommendation": "Add Open Graph meta tags to improve social media sharing"
+          }
+        ]
+      },
+      {
+        "url": "http://localhost:8080/fixes-landing-software-commercialisti.html",
+        "pageName": "Software Commercialisti",
+        "timestamp": "2025-09-25T05:33:56.916Z",
+        "seoData": {
+          "title": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaDescription": {
+            "content": "",
+            "length": 0,
+            "exists": false
+          },
+          "metaKeywords": {
+            "content": "",
+            "exists": false
+          },
+          "canonical": {
+            "href": "",
+            "exists": false
+          },
+          "openGraph": {
+            "title": "",
+            "description": "",
+            "image": "",
+            "url": "",
+            "type": "",
+            "siteName": ""
+          },
+          "twitterCard": {
+            "card": "",
+            "site": "",
+            "creator": "",
+            "title": "",
+            "description": "",
+            "image": ""
+          },
+          "headings": {
+            "h1": {
+              "count": 0,
+              "text": []
+            },
+            "h2": {
+              "count": 0,
+              "text": []
+            },
+            "h3": {
+              "count": 2,
+              "text": [
+                "Assistenza Emergenza 24/7",
+                "Hai bisogno di assistenza IT?"
+              ]
+            }
+          },
+          "images": {
+            "total": 1,
+            "withoutAlt": 0,
+            "withEmptyAlt": 0,
+            "withAlt": 1
+          },
+          "links": {
+            "total": 21,
+            "internal": 19,
+            "external": 2,
+            "withoutTitle": 0,
+            "nofollow": 0
+          },
+          "structuredData": {
+            "jsonLdCount": 0,
+            "schemas": []
+          },
+          "viewport": {
+            "content": "",
+            "exists": false
+          },
+          "language": {
+            "htmlLang": "",
+            "hasLangAttribute": false
+          },
+          "content": {
+            "wordCount": 317,
+            "characterCount": 4300,
+            "textContentRatio": 0.33112582781456956
+          }
+        },
+        "robotsCheck": {
+          "exists": true,
+          "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+          "hasUserAgent": true,
+          "hasDisallow": true,
+          "hasSitemap": true
+        },
+        "sitemapCheck": {
+          "exists": true,
+          "url": "http://localhost:8080/sitemap.xml",
+          "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+          "isXML": true,
+          "urlCount": 568
+        },
+        "performanceMetrics": {
+          "loadTime": 7.900000095367432,
+          "domContentLoadedTime": 7.299999952316284,
+          "resourceCount": 2
+        },
+        "seoScore": 25,
+        "recommendations": [
+          {
+            "category": "Critical",
+            "issue": "Missing title tag",
+            "recommendation": "Add a unique, descriptive title tag to every page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing meta description",
+            "recommendation": "Add a compelling meta description to improve click-through rates"
+          },
+          {
+            "category": "High",
+            "issue": "Missing H1 tag",
+            "recommendation": "Add a single, descriptive H1 tag to the page"
+          },
+          {
+            "category": "High",
+            "issue": "Missing viewport meta tag",
+            "recommendation": "Add viewport meta tag for mobile optimization"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing canonical URL",
+            "recommendation": "Add canonical URL to prevent duplicate content issues"
+          },
+          {
+            "category": "Medium",
+            "issue": "Missing language attribute",
+            "recommendation": "Add lang attribute to the HTML element"
+          },
+          {
+            "category": "Low",
+            "issue": "Missing Open Graph tags: title, description, image, url",
+            "recommendation": "Add Open Graph meta tags to improve social media sharing"
+          }
+        ]
+      }
+    ]
+  }
+}

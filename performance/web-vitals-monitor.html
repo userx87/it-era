@@ -1,0 +1,26 @@
+
+<!-- Core Web Vitals Monitoring -->
+<script type="module">
+  import {getCLS, getFID, getFCP, getLCP, getTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.js?module';
+
+  function sendToAnalytics(metric) {
+    console.log('Web Vital:', metric.name, metric.value);
+
+    // Send to Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('event', metric.name, {
+        event_category: 'Web Vitals',
+        event_label: metric.id,
+        value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+        non_interaction: true
+      });
+    }
+  }
+
+  getCLS(sendToAnalytics);
+  getFID(sendToAnalytics);
+  getFCP(sendToAnalytics);
+  getLCP(sendToAnalytics);
+  getTTFB(sendToAnalytics);
+</script>
+        

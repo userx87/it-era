@@ -40,6 +40,24 @@
     <link href="/css/it-era-design-system.css" rel="stylesheet">
     <link href="/css/components-separated.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/it-era-enhanced.css">
+
+<!-- Mobile Menu Fix CSS -->
+<link rel="stylesheet" href="/css/mobile-menu-fix.css">
+
+<!-- Performance Critical CSS -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; }
+  .hero { min-height: 50vh; }
+  @media (max-width: 768px) {
+    .mobile-menu-toggle { display: block !important; }
+  }
+</style>
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
 </head>
 
 <body class="bg-white it-era-typography it-era-brand-colors">
@@ -392,7 +410,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img src="/images/home-it-support-brescia.jpg" alt="configurazione router casa Brescia" class="rounded-2xl shadow-2xl img-fluid">
+                        <img  loading="eager"src="/images/home-it-support-brescia.jpg" alt="configurazione router casa Brescia" class="rounded-2xl shadow-2xl img-fluid">
                         <div class="absolute -bottom-6 -right-6 bg-green-600 text-white p-6 rounded-2xl">
                             <div class="text-2xl font-bold">&lt; 4 ore</div>
                             <div class="text-sm">Tempo di Risposta</div>
@@ -722,4 +740,23 @@
 
 
 
-    <script src="/js/resend-config.js"></script></body></html>
+    <script src="/js/resend-config.js"></script>
+<!-- Mobile Menu Emergency Handler -->
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('.mobile-menu-toggle, .hamburger-menu');
+    var nav = document.querySelector('.mobile-nav, .mobile-menu');
+    if (btn && nav) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('active');
+        this.classList.toggle('active');
+        this.setAttribute('aria-expanded',
+          this.classList.contains('active') ? 'true' : 'false');
+      });
+    }
+  });
+})();
+</script>
+</body></html>

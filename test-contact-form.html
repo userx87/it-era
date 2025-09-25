@@ -6,6 +6,7 @@
     <title>Test Form Contatti IT-ERA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/form-validation-styles.css">
 </head>
 <body class="bg-gray-100 p-8">
     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
@@ -16,7 +17,7 @@
             <p class="text-blue-800">Questo form testa l'integrazione con Resend.com per IT-ERA</p>
         </div>
 
-        <form id="contact-form" data-resend="true" class="space-y-6">
+        <form id="contact-form" data-resend="true" class="contact-form form-enhanced space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome *</label>
@@ -100,7 +101,7 @@
             <ul class="text-sm text-yellow-800 space-y-1">
                 <li>• API Key: re_BhJiCJEe_JXYWoB3W4NcpoPtjA2qyvqYL ✅</li>
                 <li>• From: noreply@it-era.it</li>
-                <li>• To: info@bulltech.it</li>
+                <li>• To: info@it-era.it</li>
                 <li>• Endpoint: https://api.resend.com/emails</li>
                 <li>• Integration: ITERAResendIntegration class</li>
             </ul>
@@ -110,6 +111,7 @@
     <!-- Scripts -->
     <script src="/js/resend-config.js"></script>
     <script src="/js/resend-integration.js"></script>
+    <script src="/src/form-enhancement-system.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -191,5 +193,7 @@
             observer.observe(form, { childList: true, subtree: true });
         });
     </script>
-</body>
+
+    <!-- Mobile Menu System -->
+    <script src="/js/mobile-menu.js"></script></body>
 </html>

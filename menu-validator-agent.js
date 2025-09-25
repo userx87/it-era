@@ -250,7 +250,7 @@ class ITERAMenuValidator {
         }
         
         // Check email consistency
-        if (!contactContent.includes('info@bulltech.it') && !contactContent.includes('info@it-era.it')) {
+        if (!contactContent.includes('info@it-era.it') && !contactContent.includes('info@it-era.it')) {
             this.issues.push({
                 type: 'missing_email',
                 file: contactPath,

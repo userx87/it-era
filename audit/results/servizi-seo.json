@@ -1,0 +1,147 @@
+{
+  "url": "http://localhost:8080/servizi.html",
+  "pageName": "Servizi",
+  "timestamp": "2025-09-25T05:33:46.965Z",
+  "seoData": {
+    "title": {
+      "content": "Servizi IT Professionali - IT-ERA | IT-ERA",
+      "length": 42,
+      "exists": true
+    },
+    "metaDescription": {
+      "content": "Servizi IT professionali per aziende in Lombardia: assistenza tecnica 24/7, sicurezza informatica, cloud computing e digitalizzazione. Consulenza gratuita e supporto specializzato.",
+      "length": 180,
+      "exists": true
+    },
+    "metaKeywords": {
+      "content": "servizi IT, assistenza tecnica, sicurezza informatica, cloud computing, digitalizzazione aziendale, Lombardia, Milano, supporto IT 24/7",
+      "exists": true
+    },
+    "canonical": {
+      "href": "https://it-era.it/servizi.html",
+      "exists": true
+    },
+    "openGraph": {
+      "title": "Servizi IT Professionali per Aziende | IT-ERA Lombardia",
+      "description": "Assistenza informatica completa per aziende: sicurezza IT, cloud computing, supporto tecnico 24/7. Consulenza gratuita in Lombardia.",
+      "image": "https://it-era.it/images/og-image.jpg",
+      "url": "https://it-era.it/servizi.html",
+      "type": "website",
+      "siteName": "IT-ERA"
+    },
+    "twitterCard": {
+      "card": "summary_large_image",
+      "site": "",
+      "creator": "",
+      "title": "Servizi IT Professionali per Aziende | IT-ERA",
+      "description": "Assistenza informatica completa: sicurezza IT, cloud computing, supporto 24/7. Consulenza gratuita in Lombardia.",
+      "image": "https://it-era.it/images/og-image.jpg"
+    },
+    "headings": {
+      "h1": {
+        "count": 2,
+        "text": [
+          "IT-ERA",
+          "Servizi IT Completi\n            per Aziende Milano"
+        ]
+      },
+      "h2": {
+        "count": 5,
+        "text": [
+          "Servizi IT Specializzati per Aziende",
+          "☁️ Cloud Computing",
+          "📞 VoIP e Telefonia",
+          "Servizi Più Richiesti a Milano",
+          "Pacchetti Servizi IT per Aziende"
+        ]
+      },
+      "h3": {
+        "count": 11,
+        "text": [
+          "Assistenza Informatica Aziende",
+          "Sicurezza Informatica Aziende",
+          "Assistenza Aziende",
+          "Riparazione PC",
+          "Assemblaggio PC",
+          "Recupero Dati",
+          "Supporto Base",
+          "Supporto Professional",
+          "Supporto Enterprise",
+          "Non trovi il pacchetto giusto?",
+          "IT-ERA"
+        ]
+      }
+    },
+    "images": {
+      "total": 0,
+      "withoutAlt": 0,
+      "withEmptyAlt": 0,
+      "withAlt": 0
+    },
+    "links": {
+      "total": 81,
+      "internal": 81,
+      "external": 0,
+      "withoutTitle": 2,
+      "nofollow": 0
+    },
+    "structuredData": {
+      "jsonLdCount": 2,
+      "schemas": [
+        {
+          "type": "Service",
+          "context": "https://schema.org"
+        },
+        {
+          "type": "BreadcrumbList",
+          "context": "https://schema.org"
+        }
+      ]
+    },
+    "viewport": {
+      "content": "width=device-width, initial-scale=1.0",
+      "exists": true
+    },
+    "language": {
+      "htmlLang": "it",
+      "hasLangAttribute": true
+    },
+    "content": {
+      "wordCount": 836,
+      "characterCount": 18017,
+      "textContentRatio": 0.216215243192646
+    }
+  },
+  "robotsCheck": {
+    "exists": true,
+    "content": "# IT-ERA Robots.txt - Ottimizzato per SEO\nUser-agent: *\nAllow: /\n\n# Disallow admin and private areas\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\nDisallow: /node_modules/\nDisallow: /temp/\nDisallow: /cache/\nDisallow: /swarm/\n\n# Allow important resources\nAllow: /css/\nAllow: /js/\nAllow: /images/\nAllow: /downloads/\nAllow: /landing/\nAllow: /settori/\n\n# Crawl delay for respectful crawling\nCrawl-delay: 1\n\n# Sitemap location\nSitemap: https://it-era.it/sitemap.xml\n\n# Additional sitemaps (if needed)\n# Sitemap: https://it-era.it/sitemap-images.xml\n# Sitemap: https://it-era.it/sitemap-news.xml\nDisallow: /node_modules/\nDisallow: /*.js$\nDisallow: /*.json$\nDisallow: /*.md$\n",
+    "hasUserAgent": true,
+    "hasDisallow": true,
+    "hasSitemap": true
+  },
+  "sitemapCheck": {
+    "exists": true,
+    "url": "http://localhost:8080/sitemap.xml",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\">\n\n    <!-- Homepage -->\n    <url>\n        <loc>https://it-era.it</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>1.00</priority>\n    </url>\n\n    <!-- Contact Pages -->\n    <url>\n        <loc>https://it-era.it/contatti-old.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti.html</loc>\n        <lastmod>2025-09-17</lastmod>\n        <changefreq>weekly</changefreq>\n        <priority>0.80</priority>\n    </url>\n    <url>\n        <loc>https://it-era.it/contatti/index.html</loc>\n        <lastmod>2025-09-17</lastmod>\n   ",
+    "isXML": true,
+    "urlCount": 568
+  },
+  "performanceMetrics": {
+    "loadTime": 247.60000014305115,
+    "domContentLoadedTime": 206.40000009536743,
+    "resourceCount": 19
+  },
+  "seoScore": 80,
+  "recommendations": [
+    {
+      "category": "Medium",
+      "issue": "Meta description length not optimal",
+      "recommendation": "Keep meta description length between 120-160 characters"
+    },
+    {
+      "category": "Medium",
+      "issue": "Multiple H1 tags",
+      "recommendation": "Use only one H1 tag per page for better semantic structure"
+    }
+  ]
+}

@@ -178,7 +178,7 @@ class CompleteSystemOrchestrator {
         }
         
         // Verifica endpoint Resend
-        const endpoint = 'https://it-era-resend.bulltech.workers.dev/api/contact';
+        const endpoint = 'https://it-era-resend.it-era.workers.dev/api/contact';
         console.log(`🔗 Resend endpoint: ${endpoint}`);
         
         // Crea configurazione form types

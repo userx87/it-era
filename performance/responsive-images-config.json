@@ -1,0 +1,24 @@
+{
+  "logo": {
+    "src": "/images/logo-it-era.png",
+    "srcset": [
+      {
+        "width": 64,
+        "suffix": "-64w"
+      },
+      {
+        "width": 128,
+        "suffix": "-128w"
+      },
+      {
+        "width": 256,
+        "suffix": "-256w"
+      },
+      {
+        "width": 512,
+        "suffix": "-512w"
+      }
+    ],
+    "sizes": "(max-width: 640px) 128px, (max-width: 1024px) 256px, 512px"
+  }
+}

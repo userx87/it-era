@@ -1,6 +1,6 @@
 /**
  * Cloudflare Worker per IT-ERA - Integrazione Resend.com
- * Deploy su: https://it-era-resend.bulltech.workers.dev/
+ * Deploy su: https://it-era-resend.it-era.workers.dev/
  */
 
 // Configurazione Resend

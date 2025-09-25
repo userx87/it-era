@@ -1,0 +1,100 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "IT-ERA",
+  "image": "https://it-era.it/images/logo-it-era.png",
+  "@id": "https://it-era.it",
+  "url": "https://it-era.it",
+  "telephone": "+390398882041",
+  "email": "info@it-era.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Roma",
+    "addressLocality": "Vimercate",
+    "addressRegion": "Lombardia",
+    "postalCode": "20871",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.6311,
+    "longitude": 9.3678
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "serviceType": [
+    "Assistenza Informatica",
+    "Supporto IT",
+    "Sicurezza Informatica",
+    "Cloud Computing",
+    "Consulenza IT",
+    "Cybersecurity",
+    "Digitalizzazione PMI",
+    "Emergenza IT"
+  ],
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Lombardia"
+    },
+    {
+      "@type": "City",
+      "name": "Milano"
+    },
+    {
+      "@type": "City",
+      "name": "Bergamo"
+    },
+    {
+      "@type": "City",
+      "name": "Brescia"
+    },
+    {
+      "@type": "City",
+      "name": "Vimercate"
+    },
+    {
+      "@type": "City",
+      "name": "Monza"
+    }
+  ],
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "500",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Marco Rossi"
+      },
+      "reviewBody": "Servizio eccellente per l'assistenza IT aziendale. Team competente e disponibile 24/7."
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/it-era",
+    "https://www.facebook.com/itera.assistenza"
+  ]
+}

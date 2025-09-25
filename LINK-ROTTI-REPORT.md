@@ -31,7 +31,7 @@
 ```
 📞 Emergenza: 039 888 2041
 💬 WhatsApp: Messaggio immediato  
-📧 Email: info@bulltech.it
+📧 Email: info@it-era.it
 ```
 
 ---

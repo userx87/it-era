@@ -1,0 +1,63 @@
+<!-- Breadcrumb Navigation Component con Schema.org -->
+<nav aria-label="Percorso di navigazione" class="py-4 bg-neutral-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <ol class="flex items-center space-x-2 text-sm" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/" class="text-neutral-600 hover:text-blue-600 transition-colors">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="text-neutral-400" aria-hidden="true">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+        </svg>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/settori/" class="text-neutral-600 hover:text-blue-600 transition-colors">
+          <span itemprop="name">Settori</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="text-neutral-400" aria-hidden="true">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+        </svg>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="text-neutral-900 font-medium" aria-current="page">
+        <span itemprop="name">Commercialisti</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- CSS per Focus Visibility -->
+<style>
+.breadcrumb-nav a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.breadcrumb-nav {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+@media (max-width: 640px) {
+  .breadcrumb-nav ol {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .breadcrumb-nav .separator {
+    display: none;
+  }
+
+  .breadcrumb-nav li:not(:last-child)::after {
+    content: " → ";
+    margin: 0 0.5rem;
+    color: #9ca3af;
+  }
+}
+</style>

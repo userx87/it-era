@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form submission function
     async function submitForm(data, submitBtn, originalText, form) {
         try {
-            const response = await fetch('https://it-era-resend.bulltech.workers.dev/api/contact', {
+            const response = await fetch('https://it-era-resend.it-era.workers.dev/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

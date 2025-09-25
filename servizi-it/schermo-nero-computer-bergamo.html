@@ -75,6 +75,24 @@
     
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- Mobile Menu Fix CSS -->
+<link rel="stylesheet" href="/css/mobile-menu-fix.css">
+
+<!-- Performance Critical CSS -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; }
+  .hero { min-height: 50vh; }
+  @media (max-width: 768px) {
+    .mobile-menu-toggle { display: block !important; }
+  }
+</style>
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
 </head>
 <body class="bg-white font-sans">
     <!-- Header Placeholder -->
@@ -346,7 +364,7 @@
                     </div>
                     <h4 class="text-lg font-semibold mb-2">Email Urgente</h4>
                     <p class="text-gray-300 mb-2">Risposta in 15 minuti</p>
-                    <a href="mailto:info@bulltech.it" class="text-blue-400 font-bold hover:text-blue-300">info@bulltech.it</a>
+                    <a href="mailto:info@it-era.it" class="text-blue-400 font-bold hover:text-blue-300">info@it-era.it</a>
                 </div>
             </div>
         </div>
@@ -474,5 +492,24 @@
             });
         });
     </script>
+
+<!-- Mobile Menu Emergency Handler -->
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('.mobile-menu-toggle, .hamburger-menu');
+    var nav = document.querySelector('.mobile-nav, .mobile-menu');
+    if (btn && nav) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('active');
+        this.classList.toggle('active');
+        this.setAttribute('aria-expanded',
+          this.classList.contains('active') ? 'true' : 'false');
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>

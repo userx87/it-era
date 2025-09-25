@@ -55,6 +55,24 @@
     
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- Mobile Menu Fix CSS -->
+<link rel="stylesheet" href="/css/mobile-menu-fix.css">
+
+<!-- Performance Critical CSS -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; }
+  .hero { min-height: 50vh; }
+  @media (max-width: 768px) {
+    .mobile-menu-toggle { display: block !important; }
+  }
+</style>
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
 </head>
 <body class="bg-white font-sans">
     <!-- Header Placeholder -->
@@ -636,5 +654,26 @@
             });
         });
     </script>
+
+    <!-- Mobile Menu System -->
+    <script src="/js/mobile-menu.js"></script>
+<!-- Mobile Menu Emergency Handler -->
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.querySelector('.mobile-menu-toggle, .hamburger-menu');
+    var nav = document.querySelector('.mobile-nav, .mobile-menu');
+    if (btn && nav) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('active');
+        this.classList.toggle('active');
+        this.setAttribute('aria-expanded',
+          this.classList.contains('active') ? 'true' : 'false');
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>

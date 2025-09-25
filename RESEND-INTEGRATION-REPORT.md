@@ -16,7 +16,7 @@
 ```javascript
 API Key: re_BhJiCJEe_JXYWoB3W4NcpoPtjA2qyvqYL ✅
 From Email: noreply@it-era.it ✅
-To Email: info@bulltech.it ✅
+To Email: info@it-era.it ✅
 Endpoint: https://api.resend.com/emails ✅
 ```
 
@@ -287,7 +287,7 @@ Il sistema di contatti IT-ERA ora ha:
 ## 📞 CONTATTI EMERGENZA
 
 **Se dovessi avere problemi:**
-- **Email diretta**: info@bulltech.it
+- **Email diretta**: info@it-era.it
 - **Telefono**: 039 888 2041
 - **Test page**: https://it-era.it/test-contact-form.html
 - **Fallback**: Mailto client automatico

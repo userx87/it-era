@@ -24,3 +24,18 @@ build/
 .env
 .env.local
 .env.production
+
+# System files
+.swarm/
+.claude-flow/
+*.db-shm
+*.db-wal
+
+# Temporary cleanup directory
+da_cancellare/
+node_modules/
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*

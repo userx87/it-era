@@ -232,6 +232,6 @@ Il sistema URL IT-ERA ora ha:
 
 **URL Corretto**: https://it-era.it/contatti.html ✅
 **Telefono Emergenza**: 039 888 2041 ✅
-**Email**: info@bulltech.it ✅
+**Email**: info@it-era.it ✅
 
 **Il tuo sistema di contatti è ora perfetto e indistruttibile! 🚀**

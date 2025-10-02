@@ -1,0 +1,184 @@
+# IT-ERA Blog Content Strategy & Keywords
+
+## 🎯 Content Pillars
+
+### 1. Assistenza Informatica (30%)
+- Risoluzione problemi comuni IT
+- Guide troubleshooting
+- Best practices manutenzione
+- Case study clienti
+
+### 2. Cybersecurity (25%)
+- Protezione ransomware e malware
+- GDPR compliance
+- Sicurezza aziendale
+- Backup e disaster recovery
+
+### 3. Cloud & Digitalizzazione (20%)
+- Migrazione cloud Microsoft 365
+- Trasformazione digitale PMI
+- Automazione processi
+- Smart working
+
+### 4. Settori Specifici (15%)
+- IT per studi medici
+- Soluzioni studi legali
+- Software commercialisti
+- Retail e GDO
+
+### 5. News & Trends (10%)
+- Novità tecnologiche
+- Aggiornamenti sicurezza
+- Tendenze IT 2025
+- Eventi e webinar
+
+## 📝 Tono di Voce
+
+- Professionale ma accessibile
+- Tecnico senza essere intimidatorio
+- Focus su soluzioni pratiche
+- Localizzato per Lombardia
+- Enfasi su rapidità intervento (15 min)
+
+## 🔑 Keywords Primarie
+
+### HIGH PRIORITY (Volume > 500)
+1. assistenza informatica Milano - 1200/mo
+2. supporto IT aziende Lombardia - 800/mo
+3. cybersecurity aziende Milano - 600/mo
+4. migrazione cloud Microsoft 365 - 500/mo
+
+### MEDIUM PRIORITY (Volume 200-500)
+5. digitalizzazione PMI Lombardia - 400/mo
+6. backup aziendale automatico - 350/mo
+7. protezione ransomware aziende - 300/mo
+8. software gestionale PMI - 280/mo
+9. help desk aziendale Milano - 250/mo
+10. sicurezza informatica ufficio - 220/mo
+
+### LONG-TAIL OPPORTUNITIES (Volume < 200)
+11. come scegliere antivirus aziendale - 180/mo
+12. costi migrazione cloud azienda - 160/mo
+13. software commercialisti Milano - 150/mo
+14. gestione IT studi legali - 140/mo
+15. automazione processi aziendali - 130/mo
+16. assistenza computer Milano centro - 120/mo
+17. consulenza IT Bergamo - 100/mo
+18. supporto informatico Brescia - 90/mo
+19. cybersecurity Monza Brianza - 80/mo
+20. cloud computing Varese - 70/mo
+
+## 📅 Publishing Calendar
+
+### Frequenza
+- 1 articolo al giorno (automatico)
+- Focus keyword rotation
+- Mix content types
+
+### Template Articoli
+1. **How-To Guide** (40%)
+   - Problema comune
+   - Soluzione step-by-step
+   - Tips professionali
+
+2. **Comparison** (20%)
+   - Software/soluzioni a confronto
+   - Pro e contro
+   - Raccomandazioni
+
+3. **Case Study** (20%)
+   - Cliente anonimizzato
+   - Problema risolto
+   - Risultati ottenuti
+
+4. **News & Updates** (20%)
+   - Aggiornamenti sicurezza
+   - Nuove tecnologie
+   - Trend di settore
+
+## 🎯 Call-to-Action Standard
+
+### Emergenze
+"🚨 Problema IT urgente? Chiama subito 039 888 2041 - Intervento garantito in 15 minuti!"
+
+### Consulenza
+"💡 Vuoi ottimizzare la tua infrastruttura IT? Contattaci per una consulenza gratuita: info@bulltech.it"
+
+### Preventivo
+"📊 Richiedi un preventivo personalizzato senza impegno. Soluzioni IT su misura per la tua azienda."
+
+## 📍 Geo-Targeting
+
+### Città Primarie
+- Milano e provincia
+- Monza e Brianza
+- Bergamo
+- Brescia
+- Como
+- Varese
+
+### Keywords Locali
+- [servizio] + Milano
+- [servizio] + Lombardia
+- [servizio] + Milano centro
+- [servizio] + Brianza
+
+## 📊 Metriche Target
+
+### SEO Goals
+- Posizione 1-3: 10 keywords (3 mesi)
+- Posizione 4-10: 20 keywords (3 mesi)
+- Traffico organico: +50% (6 mesi)
+- CTR medio: >5%
+
+### Content Metrics
+- Lunghezza: 800-1500 parole
+- Tempo lettura: 3-5 minuti
+- Immagini: minimo 2-3
+- Internal links: 3-5
+- External links: 1-2 (autorevoli)
+
+## 🔄 Ottimizzazione Continua
+
+### A/B Testing
+- Titoli alternativi
+- Meta descriptions
+- CTA positioning
+- Image placement
+
+### Content Refresh
+- Aggiornamento trimestrale top performers
+- Rimozione contenuti obsoleti
+- Consolidamento pagine simili
+- Espansione contenuti sottili
+
+## 💼 Business Integration
+
+### Lead Generation
+- Form contatto in ogni articolo
+- Lead magnet (guide PDF)
+- Newsletter subscription
+- Webinar registration
+
+### Sales Enablement
+- Link a servizi correlati
+- Case study pertinenti
+- Testimonial clienti
+- Trust badges
+
+## 📈 Competitor Monitoring
+
+### Top Competitors
+1. [Competitor 1] - Focus enterprise
+2. [Competitor 2] - Focus PMI
+3. [Competitor 3] - Focus security
+
+### Content Gap Analysis
+- Identificare topic mancanti
+- Migliorare contenuti esistenti
+- Creare contenuti unici
+- Differenziazione value prop
+
+---
+*Ultimo aggiornamento: ${new Date().toISOString().split('T')[0]}*
+*Email: info@bulltech.it | Tel: 039 888 2041*

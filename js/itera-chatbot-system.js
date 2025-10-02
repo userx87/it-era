@@ -512,7 +512,7 @@ class ITERAChatbotSystem {
             <em>Risposta garantita entro 15 minuti</em><br><br>
 
             Nel frattempo, puoi anche:<br>
-            • 📧 Scrivere a: info@it-era.it<br>
+            • 📧 Scrivere a: info@bulltech.it<br>
             • 💬 WhatsApp: +39 039 888 2041<br><br>
 
             <strong>Il nostro team ti contatterà immediatamente!</strong>
@@ -620,7 +620,7 @@ class ITERAChatbotSystem {
         if (lowerMessage.includes('prezzo') || lowerMessage.includes('costo') || lowerMessage.includes('preventivo')) {
             return `Per un preventivo personalizzato, posso metterti in contatto con il nostro team commerciale:<br><br>
                 📞 <strong>Chiama: 039 888 2041</strong><br>
-                📧 <strong>Email: info@it-era.it</strong><br><br>
+                📧 <strong>Email: info@bulltech.it</strong><br><br>
                 La prima consulenza è sempre <strong>GRATUITA</strong>! 🎉<br><br>
                 Vuoi che ti chiami un nostro consulente?`;
         }
@@ -629,7 +629,7 @@ class ITERAChatbotSystem {
         if (lowerMessage.includes('contatti') || lowerMessage.includes('telefono') || lowerMessage.includes('email')) {
             return `Ecco come puoi contattare IT-ERA:<br><br>
                 📞 <strong>Telefono: 039 888 2041</strong><br>
-                📧 <strong>Email: info@it-era.it</strong><br>
+                📧 <strong>Email: info@bulltech.it</strong><br>
                 📍 <strong>Sede: Viale Risorgimento 32, Vimercate MB</strong><br>
                 🕒 <strong>Orari: Lun-Ven 8:00-18:00</strong><br>
                 🚨 <strong>Emergenze: 24/7</strong><br><br>
@@ -651,7 +651,7 @@ class ITERAChatbotSystem {
         return `Grazie per il tuo messaggio! 😊<br><br>
             Per una risposta più specifica, ti consiglio di:<br><br>
             📞 <strong>Chiamare: 039 888 2041</strong><br>
-            📧 <strong>Scrivere a: info@it-era.it</strong><br><br>
+            📧 <strong>Scrivere a: info@bulltech.it</strong><br><br>
             Il nostro team di esperti IT ti darà tutto il supporto di cui hai bisogno!<br><br>
             <em>Tempo di risposta garantito: 15 minuti</em> ⏱️`;
     }
@@ -727,7 +727,7 @@ class ITERAChatbotSystem {
         return `Mi dispiace, al momento non riesco a elaborare la tua richiesta. 😔<br><br>
             Per assistenza immediata, contatta il nostro team:<br><br>
             📞 <strong>Telefono: 039 888 2041</strong><br>
-            📧 <strong>Email: info@it-era.it</strong><br><br>
+            📧 <strong>Email: info@bulltech.it</strong><br><br>
             Siamo qui per aiutarti! 💪`;
     }
 
@@ -847,7 +847,7 @@ class ITERAChatbotSystem {
                     Si è verificato un errore. 😔<br><br>
                     Chiama direttamente:<br>
                     📞 <strong>039 888 2041</strong><br>
-                    📧 <strong>info@it-era.it</strong>
+                    📧 <strong>info@bulltech.it</strong>
                 `, 'bot', true);
             }
         }

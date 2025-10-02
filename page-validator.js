@@ -240,7 +240,7 @@ class ITERAPageValidator {
         }
         
         // Check email consistency
-        if (!content.includes('info@it-era.it')) {
+        if (!content.includes('info@bulltech.it')) {
             pageIssues.push({
                 type: 'email_consistency',
                 severity: 'medium',

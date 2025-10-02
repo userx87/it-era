@@ -5,7 +5,7 @@
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY || 're_BhJiCJEe_JXYWoB3W4NcpoPtjA2qyvqYL';
 const FROM_EMAIL = 'noreply@it-era.it';
-const TO_EMAIL = 'info@it-era.it';
+const TO_EMAIL = 'info@bulltech.it';
 
 exports.handler = async (event, context) => {
   // CORS headers

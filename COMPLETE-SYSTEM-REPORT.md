@@ -31,7 +31,7 @@
 
 ## Support
 - **Phone**: 039 888 2041
-- **Email**: info@it-era.it
+- **Email**: info@bulltech.it
 - **Documentation**: See generated files
 
 Generated on: 2025-09-13T09:06:44.251Z

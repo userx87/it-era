@@ -26,7 +26,7 @@ class ImplementationOrchestrator {
             baseUrl: 'https://it-era.it',
             emergencyPhone: '039 888 2041',
             emergencyPhoneLink: 'tel:+390398882041',
-            email: 'info@it-era.it',
+            email: 'info@bulltech.it',
             company: 'IT-ERA',
             tagline: 'Assistenza Informatica Lombardia'
         };

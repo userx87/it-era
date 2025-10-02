@@ -387,7 +387,7 @@ class SEOBlogGenerator {
     }
 
     async generateHTML(article) {
-        const template = await fs.readFile('blog/template-article.html', 'utf8');
+        const template = await fs.readFile('template-article.html', 'utf8');
         
         const replacements = {
             '{{ARTICLE_TITLE}}': article.title,

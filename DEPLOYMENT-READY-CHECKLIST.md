@@ -9,7 +9,7 @@
 - ✅ Mobile menu files creati (css/mobile-menu.css, js/mobile-menu.js)
 
 ### EMAIL & BRANDING
-- ✅ 100% standardizzazione info@it-era.it
+- ✅ 100% standardizzazione info@bulltech.it
 - ✅ Numero emergenza unificato: 039 888 2041
 - ✅ Bulltech completamente rimosso
 

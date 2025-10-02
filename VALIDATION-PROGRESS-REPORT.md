@@ -202,7 +202,7 @@ Il sistema di validazione IT-ERA è ora:
 
 **✅ Tutti i sistemi di contatto validati e funzionanti:**
 - **Phone**: 039 888 2041 ✅ Presente e prominente
-- **Email**: info@it-era.it ✅ Presente e funzionante
+- **Email**: info@bulltech.it ✅ Presente e funzionante
 - **Forms**: Contact forms ✅ Resend integration attiva
 - **Emergency**: Emergency contact ✅ Disponibile 24/7
 

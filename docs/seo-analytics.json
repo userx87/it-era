@@ -1,0 +1,627 @@
+[
+  {
+    "timestamp": "2025-10-02T05:15:25.199Z",
+    "executionTime": 1561,
+    "results": {
+      "updateSitemap": {
+        "success": true,
+        "data": {
+          "pagesCount": 580,
+          "lastUpdate": "2025-10-02T05:15:23.684Z"
+        }
+      },
+      "pingSearchEngines": {
+        "success": true,
+        "data": {
+          "google": "failed",
+          "bing": "failed"
+        }
+      },
+      "checkBrokenLinks": {
+        "success": true,
+        "data": {
+          "checked": 10,
+          "broken": 0,
+          "details": []
+        }
+      },
+      "analyzePageSpeed": {
+        "success": true,
+        "data": {
+          "/": {
+            "mobile": 84,
+            "desktop": 84
+          },
+          "/servizi.html": {
+            "mobile": 99,
+            "desktop": 98
+          },
+          "/contatti.html": {
+            "mobile": 70,
+            "desktop": 85
+          }
+        }
+      },
+      "updateMetaTags": {
+        "success": true,
+        "data": {
+          "totalRecommendations": 2,
+          "recommendations": [
+            {
+              "page": "All pages",
+              "recommendation": "Ensure unique meta descriptions",
+              "priority": "high"
+            },
+            {
+              "page": "Service pages",
+              "recommendation": "Add local schema markup",
+              "priority": "medium"
+            }
+          ]
+        }
+      },
+      "checkIndexStatus": {
+        "success": true,
+        "data": {
+          "totalPages": 580,
+          "estimatedIndexed": 493,
+          "lastCheck": "2025-10-02T05:15:23.683Z"
+        }
+      },
+      "generateSEOReport": {
+        "success": true,
+        "data": {
+          "date": "2025-10-02T05:15:23.665Z",
+          "domain": "https://it-era.it",
+          "metrics": {
+            "pages": 580,
+            "sitemapUpdated": true,
+            "searchEnginesPinged": true,
+            "brokenLinksChecked": true
+          },
+          "recommendations": [
+            "Continue daily blog posts",
+            "Update local business schema",
+            "Optimize Core Web Vitals",
+            "Add more internal linking"
+          ]
+        }
+      },
+      "optimizeImages": {
+        "success": true,
+        "data": {
+          "imagesAnalyzed": 50,
+          "optimizationPotential": "30%",
+          "recommendations": [
+            "Convert to WebP format",
+            "Add alt text to all images",
+            "Implement lazy loading"
+          ]
+        }
+      },
+      "updateSchemaMarkup": {
+        "success": true,
+        "data": {
+          "schemasUpdated": [
+            "Organization",
+            "LocalBusiness",
+            "Service"
+          ],
+          "validationStatus": "passed",
+          "lastUpdate": "2025-10-02T05:15:23.665Z"
+        }
+      },
+      "monitorCompetitors": {
+        "success": true,
+        "data": {
+          "monitored": 2,
+          "insights": [
+            "Competitor 1 updated service pages",
+            "Competitor 2 added new blog post"
+          ]
+        }
+      }
+    },
+    "successRate": 1
+  },
+  {
+    "timestamp": "2025-10-02T05:19:16.938Z",
+    "executionTime": 1381,
+    "results": {
+      "updateSitemap": {
+        "success": true,
+        "data": {
+          "pagesCount": 580,
+          "lastUpdate": "2025-10-02T05:19:15.593Z"
+        }
+      },
+      "pingSearchEngines": {
+        "success": true,
+        "data": {
+          "google": "failed",
+          "bing": "failed"
+        }
+      },
+      "checkBrokenLinks": {
+        "success": true,
+        "data": {
+          "checked": 10,
+          "broken": 0,
+          "details": []
+        }
+      },
+      "analyzePageSpeed": {
+        "success": true,
+        "data": {
+          "/": {
+            "mobile": 91,
+            "desktop": 87
+          },
+          "/servizi.html": {
+            "mobile": 98,
+            "desktop": 90
+          },
+          "/contatti.html": {
+            "mobile": 93,
+            "desktop": 99
+          }
+        }
+      },
+      "updateMetaTags": {
+        "success": true,
+        "data": {
+          "totalRecommendations": 2,
+          "recommendations": [
+            {
+              "page": "All pages",
+              "recommendation": "Ensure unique meta descriptions",
+              "priority": "high"
+            },
+            {
+              "page": "Service pages",
+              "recommendation": "Add local schema markup",
+              "priority": "medium"
+            }
+          ]
+        }
+      },
+      "checkIndexStatus": {
+        "success": true,
+        "data": {
+          "totalPages": 580,
+          "estimatedIndexed": 493,
+          "lastCheck": "2025-10-02T05:19:15.592Z"
+        }
+      },
+      "generateSEOReport": {
+        "success": true,
+        "data": {
+          "date": "2025-10-02T05:19:15.575Z",
+          "domain": "https://it-era.it",
+          "metrics": {
+            "pages": 580,
+            "sitemapUpdated": true,
+            "searchEnginesPinged": true,
+            "brokenLinksChecked": true
+          },
+          "recommendations": [
+            "Continue daily blog posts",
+            "Update local business schema",
+            "Optimize Core Web Vitals",
+            "Add more internal linking"
+          ]
+        }
+      },
+      "optimizeImages": {
+        "success": true,
+        "data": {
+          "imagesAnalyzed": 50,
+          "optimizationPotential": "30%",
+          "recommendations": [
+            "Convert to WebP format",
+            "Add alt text to all images",
+            "Implement lazy loading"
+          ]
+        }
+      },
+      "updateSchemaMarkup": {
+        "success": true,
+        "data": {
+          "schemasUpdated": [
+            "Organization",
+            "LocalBusiness",
+            "Service"
+          ],
+          "validationStatus": "passed",
+          "lastUpdate": "2025-10-02T05:19:15.575Z"
+        }
+      },
+      "monitorCompetitors": {
+        "success": true,
+        "data": {
+          "monitored": 2,
+          "insights": [
+            "Competitor 1 updated service pages",
+            "Competitor 2 added new blog post"
+          ]
+        }
+      }
+    },
+    "successRate": 1
+  },
+  {
+    "timestamp": "2025-10-02T05:23:27.518Z",
+    "executionTime": 390,
+    "results": {
+      "updateSitemap": {
+        "success": true,
+        "data": {
+          "pagesCount": 580,
+          "lastUpdate": "2025-10-02T05:23:27.168Z"
+        }
+      },
+      "pingSearchEngines": {
+        "success": true,
+        "data": {
+          "google": "failed",
+          "bing": "failed"
+        }
+      },
+      "checkBrokenLinks": {
+        "success": true,
+        "data": {
+          "checked": 10,
+          "broken": 0,
+          "details": []
+        }
+      },
+      "analyzePageSpeed": {
+        "success": true,
+        "data": {
+          "/": {
+            "mobile": 86,
+            "desktop": 92
+          },
+          "/servizi.html": {
+            "mobile": 75,
+            "desktop": 98
+          },
+          "/contatti.html": {
+            "mobile": 93,
+            "desktop": 97
+          }
+        }
+      },
+      "updateMetaTags": {
+        "success": true,
+        "data": {
+          "totalRecommendations": 2,
+          "recommendations": [
+            {
+              "page": "All pages",
+              "recommendation": "Ensure unique meta descriptions",
+              "priority": "high"
+            },
+            {
+              "page": "Service pages",
+              "recommendation": "Add local schema markup",
+              "priority": "medium"
+            }
+          ]
+        }
+      },
+      "checkIndexStatus": {
+        "success": true,
+        "data": {
+          "totalPages": 580,
+          "estimatedIndexed": 493,
+          "lastCheck": "2025-10-02T05:23:27.167Z"
+        }
+      },
+      "generateSEOReport": {
+        "success": true,
+        "data": {
+          "date": "2025-10-02T05:23:27.150Z",
+          "domain": "https://it-era.it",
+          "metrics": {
+            "pages": 580,
+            "sitemapUpdated": true,
+            "searchEnginesPinged": true,
+            "brokenLinksChecked": true
+          },
+          "recommendations": [
+            "Continue daily blog posts",
+            "Update local business schema",
+            "Optimize Core Web Vitals",
+            "Add more internal linking"
+          ]
+        }
+      },
+      "optimizeImages": {
+        "success": true,
+        "data": {
+          "imagesAnalyzed": 50,
+          "optimizationPotential": "30%",
+          "recommendations": [
+            "Convert to WebP format",
+            "Add alt text to all images",
+            "Implement lazy loading"
+          ]
+        }
+      },
+      "updateSchemaMarkup": {
+        "success": true,
+        "data": {
+          "schemasUpdated": [
+            "Organization",
+            "LocalBusiness",
+            "Service"
+          ],
+          "validationStatus": "passed",
+          "lastUpdate": "2025-10-02T05:23:27.150Z"
+        }
+      },
+      "monitorCompetitors": {
+        "success": true,
+        "data": {
+          "monitored": 2,
+          "insights": [
+            "Competitor 1 updated service pages",
+            "Competitor 2 added new blog post"
+          ]
+        }
+      }
+    },
+    "successRate": 1
+  },
+  {
+    "timestamp": "2025-10-02T05:25:26.692Z",
+    "executionTime": 243,
+    "results": {
+      "updateSitemap": {
+        "success": true,
+        "data": {
+          "pagesCount": 581,
+          "lastUpdate": "2025-10-02T05:25:26.487Z"
+        }
+      },
+      "pingSearchEngines": {
+        "success": true,
+        "data": {
+          "google": "failed",
+          "bing": "failed"
+        }
+      },
+      "checkBrokenLinks": {
+        "success": true,
+        "data": {
+          "checked": 10,
+          "broken": 0,
+          "details": []
+        }
+      },
+      "analyzePageSpeed": {
+        "success": true,
+        "data": {
+          "/": {
+            "mobile": 84,
+            "desktop": 81
+          },
+          "/servizi.html": {
+            "mobile": 87,
+            "desktop": 94
+          },
+          "/contatti.html": {
+            "mobile": 96,
+            "desktop": 93
+          }
+        }
+      },
+      "updateMetaTags": {
+        "success": true,
+        "data": {
+          "totalRecommendations": 2,
+          "recommendations": [
+            {
+              "page": "All pages",
+              "recommendation": "Ensure unique meta descriptions",
+              "priority": "high"
+            },
+            {
+              "page": "Service pages",
+              "recommendation": "Add local schema markup",
+              "priority": "medium"
+            }
+          ]
+        }
+      },
+      "checkIndexStatus": {
+        "success": true,
+        "data": {
+          "totalPages": 581,
+          "estimatedIndexed": 493,
+          "lastCheck": "2025-10-02T05:25:26.485Z"
+        }
+      },
+      "generateSEOReport": {
+        "success": true,
+        "data": {
+          "date": "2025-10-02T05:25:26.470Z",
+          "domain": "https://it-era.it",
+          "metrics": {
+            "pages": 581,
+            "sitemapUpdated": true,
+            "searchEnginesPinged": true,
+            "brokenLinksChecked": true
+          },
+          "recommendations": [
+            "Continue daily blog posts",
+            "Update local business schema",
+            "Optimize Core Web Vitals",
+            "Add more internal linking"
+          ]
+        }
+      },
+      "optimizeImages": {
+        "success": true,
+        "data": {
+          "imagesAnalyzed": 50,
+          "optimizationPotential": "30%",
+          "recommendations": [
+            "Convert to WebP format",
+            "Add alt text to all images",
+            "Implement lazy loading"
+          ]
+        }
+      },
+      "updateSchemaMarkup": {
+        "success": true,
+        "data": {
+          "schemasUpdated": [
+            "Organization",
+            "LocalBusiness",
+            "Service"
+          ],
+          "validationStatus": "passed",
+          "lastUpdate": "2025-10-02T05:25:26.470Z"
+        }
+      },
+      "monitorCompetitors": {
+        "success": true,
+        "data": {
+          "monitored": 2,
+          "insights": [
+            "Competitor 1 updated service pages",
+            "Competitor 2 added new blog post"
+          ]
+        }
+      }
+    },
+    "successRate": 1
+  },
+  {
+    "timestamp": "2025-10-02T05:33:12.307Z",
+    "executionTime": 1361,
+    "results": {
+      "updateSitemap": {
+        "success": true,
+        "data": {
+          "pagesCount": 581,
+          "lastUpdate": "2025-10-02T05:33:10.992Z"
+        }
+      },
+      "pingSearchEngines": {
+        "success": true,
+        "data": {
+          "google": "failed",
+          "bing": "failed"
+        }
+      },
+      "checkBrokenLinks": {
+        "success": true,
+        "data": {
+          "checked": 10,
+          "broken": 0,
+          "details": []
+        }
+      },
+      "analyzePageSpeed": {
+        "success": true,
+        "data": {
+          "/": {
+            "mobile": 71,
+            "desktop": 91
+          },
+          "/servizi.html": {
+            "mobile": 77,
+            "desktop": 81
+          },
+          "/contatti.html": {
+            "mobile": 73,
+            "desktop": 85
+          }
+        }
+      },
+      "updateMetaTags": {
+        "success": true,
+        "data": {
+          "totalRecommendations": 2,
+          "recommendations": [
+            {
+              "page": "All pages",
+              "recommendation": "Ensure unique meta descriptions",
+              "priority": "high"
+            },
+            {
+              "page": "Service pages",
+              "recommendation": "Add local schema markup",
+              "priority": "medium"
+            }
+          ]
+        }
+      },
+      "checkIndexStatus": {
+        "success": true,
+        "data": {
+          "totalPages": 581,
+          "estimatedIndexed": 493,
+          "lastCheck": "2025-10-02T05:33:10.991Z"
+        }
+      },
+      "generateSEOReport": {
+        "success": true,
+        "data": {
+          "date": "2025-10-02T05:33:10.972Z",
+          "domain": "https://it-era.it",
+          "metrics": {
+            "pages": 581,
+            "sitemapUpdated": true,
+            "searchEnginesPinged": true,
+            "brokenLinksChecked": true
+          },
+          "recommendations": [
+            "Continue daily blog posts",
+            "Update local business schema",
+            "Optimize Core Web Vitals",
+            "Add more internal linking"
+          ]
+        }
+      },
+      "optimizeImages": {
+        "success": true,
+        "data": {
+          "imagesAnalyzed": 50,
+          "optimizationPotential": "30%",
+          "recommendations": [
+            "Convert to WebP format",
+            "Add alt text to all images",
+            "Implement lazy loading"
+          ]
+        }
+      },
+      "updateSchemaMarkup": {
+        "success": true,
+        "data": {
+          "schemasUpdated": [
+            "Organization",
+            "LocalBusiness",
+            "Service"
+          ],
+          "validationStatus": "passed",
+          "lastUpdate": "2025-10-02T05:33:10.972Z"
+        }
+      },
+      "monitorCompetitors": {
+        "success": true,
+        "data": {
+          "monitored": 2,
+          "insights": [
+            "Competitor 1 updated service pages",
+            "Competitor 2 added new blog post"
+          ]
+        }
+      }
+    },
+    "successRate": 1
+  }
+]

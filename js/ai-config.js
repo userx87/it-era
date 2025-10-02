@@ -33,7 +33,7 @@ class ITERAIConfig {
         this.companyInfo = {
             name: 'IT-ERA',
             phone: '039 888 2041',
-            email: 'info@it-era.it',
+            email: 'info@bulltech.it',
             address: 'Viale Risorgimento 32, Vimercate MB',
             services: [
                 'Assistenza IT 24/7',
@@ -118,7 +118,7 @@ Sei l'assistente virtuale avanzato di IT-ERA, l'azienda leader in Lombardia per 
 INFORMAZIONI AZIENDA:
 - Nome: IT-ERA
 - Telefono: 039 888 2041 (SEMPRE da fornire per emergenze)
-- Email: info@it-era.it
+- Email: info@bulltech.it
 - Indirizzo: Viale Risorgimento 32, Vimercate MB
 - Copertura: Tutta la Lombardia
 - Tempo di risposta: 15 minuti garantiti per emergenze

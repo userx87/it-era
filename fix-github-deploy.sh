@@ -9,7 +9,7 @@ echo "=================================="
 # Fix Git configuration
 echo "📋 Checking Git configuration..."
 git config --global user.name "IT-ERA Deploy" 2>/dev/null || echo "Set Git user name: git config --global user.name 'Your Name'"
-git config --global user.email "info@it-era.it" 2>/dev/null || echo "Set Git email: git config --global user.email 'your-email@example.com'"
+git config --global user.email "info@bulltech.it" 2>/dev/null || echo "Set Git email: git config --global user.email 'your-email@example.com'"
 
 # Create missing directories
 echo "📁 Creating missing directories..."

@@ -240,7 +240,7 @@ Ho analizzato il contesto del tuo progetto IT-ERA. Per assistenza tecnica specia
 Per questa richiesta, il nostro team può aiutarti:
 
 📞 **039 888 2041** - Chiamata diretta
-📧 info@it-era.it
+📧 info@bulltech.it
 ⚡ Risposta garantita in 15 minuti
 
 Siamo specializzati in soluzioni IT per la Lombardia!`;

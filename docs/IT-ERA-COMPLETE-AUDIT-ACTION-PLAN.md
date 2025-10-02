@@ -49,10 +49,10 @@
 
 #### 1.2 Standardizzazione Email
 ```javascript
-// PROBLEMA: Mix tra info@it-era.it e info@it-era.it
+// PROBLEMA: Mix tra info@bulltech.it e info@bulltech.it
 // SOLUZIONE: Find & Replace in tutti i file HTML
-// Da: info@it-era.it
-// A: info@it-era.it
+// Da: info@bulltech.it
+// A: info@bulltech.it
 ```
 
 #### 1.3 Gitignore Update
@@ -192,7 +192,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
 
 ### Fase 1: IMMEDIATA (48h)
 - [ ] Implementare menu hamburger mobile
-- [ ] Standardizzare email a info@it-era.it
+- [ ] Standardizzare email a info@bulltech.it
 - [ ] Aggiornare .gitignore
 - [ ] Pulire file di test dalla root
 
@@ -234,7 +234,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
 ./da_cancellare/cleanup-script.sh
 
 # 2. Fix email globale
-find . -name "*.html" -exec sed -i 's/info@it-era.it/info@it-era.it/g' {} +
+find . -name "*.html" -exec sed -i 's/info@bulltech.it/info@bulltech.it/g' {} +
 
 # 3. Commit modifiche
 git add -A

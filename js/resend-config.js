@@ -10,14 +10,14 @@ window.RESEND_CONFIG = {
     
     // Email settings
     fromEmail: 'noreply@it-era.it',
-    toEmail: 'info@it-era.it',
+    toEmail: 'info@bulltech.it',
     
     // API settings
     apiUrl: 'https://api.resend.com/emails',
     timeout: 15000,
     
     // Fallback settings
-    fallbackEmail: 'info@it-era.it',
+    fallbackEmail: 'info@bulltech.it',
     fallbackPhone: '039 888 2041'
 };
 

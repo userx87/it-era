@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form - IT-ERA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        button:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .emergency-notice {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .emergency-notice.show {
+            display: block;
+        }
+        .status {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test Form IT-ERA</h1>
+        <p class="subtitle">Sistema di contatto Next.js + Resend API</p>
+
+        <div id="emergency-notice" class="emergency-notice">
+            ⚠️ Hai selezionato priorità EMERGENZA. Per assistenza immediata chiama: <strong>039 888 2041</strong>
+        </div>
+
+        <form class="contact-form" id="test-form">
+            <div class="form-group">
+                <label for="name">Nome e Cognome *</label>
+                <input type="text" id="name" name="name" required placeholder="Mario Rossi">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="mario@azienda.it">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" name="phone" placeholder="039 888 2041">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Azienda</label>
+                <input type="text" id="company" name="company" placeholder="Nome Azienda SRL">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Servizio richiesto</label>
+                <select id="service" name="service">
+                    <option value="">Seleziona un servizio</option>
+                    <option value="assistenza-it">Assistenza IT</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="cloud">Cloud & Backup</option>
+                    <option value="voip">VoIP & Centralino</option>
+                    <option value="software">Software Gestionali</option>
+                    <option value="consulenza">Consulenza IT</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="urgency">Priorità</label>
+                <select id="urgency" name="urgency" onchange="toggleEmergency(this.value)">
+                    <option value="low">Bassa - Solo informazioni</option>
+                    <option value="medium" selected>Media - Preventivo</option>
+                    <option value="high">Alta - Problema da risolvere</option>
+                    <option value="emergency">🚨 EMERGENZA - Intervento immediato</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Messaggio *</label>
+                <textarea id="message" name="message" required placeholder="Descrivi la tua richiesta..."></textarea>
+            </div>
+
+            <button type="submit">Invia Richiesta</button>
+        </form>
+
+        <div id="status-message" style="display:none;"></div>
+    </div>
+
+    <script>
+        function toggleEmergency(value) {
+            const notice = document.getElementById('emergency-notice');
+            if (value === 'emergency') {
+                notice.classList.add('show');
+            } else {
+                notice.classList.remove('show');
+            }
+        }
+
+        // Test immediato al caricamento
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✅ Pagina di test caricata');
+            console.log('📡 Form handler presente:', typeof window.ITERAContactForm !== 'undefined');
+
+            // Se il form handler non è presente, mostra errore
+            if (typeof window.ITERAContactForm === 'undefined') {
+                document.getElementById('status-message').innerHTML = `
+                    <div class="status error">
+                        ⚠️ Form handler non caricato. Verifica che lo script sia incluso.
+                    </div>
+                `;
+                document.getElementById('status-message').style.display = 'block';
+            } else {
+                console.log('✅ Form handler caricato correttamente');
+            }
+        });
+    </script>
+
+    <!-- IT-ERA Contact Form Handler -->
+    <script src="/js/contact-form-handler.js"></script>
+</body>
+</html>

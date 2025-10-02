@@ -172,7 +172,7 @@ class PageFixApplicator {
         "description": "${pageDescription}",
         "url": "${url}",
         "telephone": "+39 039 888 2041",
-        "email": "info@it-era.it",
+        "email": "info@bulltech.it",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Via Roma 123",
@@ -246,7 +246,7 @@ class PageFixApplicator {
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contatti</h3>
                     <p class="text-gray-300">📞 039 888 2041</p>
-                    <p class="text-gray-300">📧 info@it-era.it</p>
+                    <p class="text-gray-300">📧 info@bulltech.it</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Servizi</h3>

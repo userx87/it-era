@@ -278,7 +278,7 @@ curl https://it-era.vercel.app/assistenza-it-milano
 ### **🏢 Business Information:**
 - **Company:** IT-ERA
 - **Phone:** 039 888 2041
-- **Email:** info@it-era.it
+- **Email:** info@bulltech.it
 - **Location:** Vimercate, Lombardia, Italia
 - **Coverage:** All Lombardy region
 

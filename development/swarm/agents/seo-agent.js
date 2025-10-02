@@ -255,7 +255,7 @@ class SEOAgent extends BaseAgent {
                 title: 'Richiedi una Consulenza Gratuita',
                 content: 'Contattaci oggi stesso per una valutazione gratuita delle tue esigenze IT.',
                 phone: '039 888 2041',
-                email: 'info@it-era.it'
+                email: 'info@bulltech.it'
             }
         };
         

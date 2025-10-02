@@ -19,7 +19,7 @@
 - 534 file HTML processati
 
 ### 2. **EMAIL STANDARDIZATION** ✅
-- 100% migrato a info@it-era.it
+- 100% migrato a info@bulltech.it
 - Numero emergenza: 039 888 2041
 - Zero riferimenti bulltech.it
 
@@ -140,7 +140,7 @@ git add -A
 git commit -m "feat: major optimization - mobile menu, performance, accessibility, forms
 
 - Implemented mobile responsive menu system
-- Standardized email to info@it-era.it
+- Standardized email to info@bulltech.it
 - Optimized performance (Desktop 96/100)
 - Enhanced accessibility (WCAG 2.1)
 - Integrated Resend email system

@@ -405,7 +405,7 @@ class PageBuilderAgent extends BaseAgent {
                     <h3 class="font-semibold mb-4">Contatti</h3>
                     <ul class="space-y-2 text-sm text-neutral-400">
                         <li>📞 039 888 2041</li>
-                        <li>📧 info@it-era.it</li>
+                        <li>📧 info@bulltech.it</li>
                         <li>📍 Vimercate, Lombardia</li>
                     </ul>
                 </div>

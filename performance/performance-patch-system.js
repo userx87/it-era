@@ -61,7 +61,7 @@ class PerformancePatcher {
   "@id": "https://it-era.it",
   "url": "https://it-era.it",
   "telephone": "+390398882041",
-  "email": "info@it-era.it",
+  "email": "info@bulltech.it",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Via Roma",

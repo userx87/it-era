@@ -19,7 +19,7 @@ jobs:
             // Prepara email per Resend
             const emailData = {
               from: 'noreply@it-era.it',
-              to: ['info@it-era.it'],
+              to: ['info@bulltech.it'],
               subject: `Nuovo contatto IT-ERA: ${payload.full_name} - ${payload.service_type || 'Contatto generico'}`,
               html: `
                 <h2>🔧 Nuovo Contatto IT-ERA</h2>

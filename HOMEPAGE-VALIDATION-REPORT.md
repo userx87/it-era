@@ -21,7 +21,7 @@
 - ✅ **Phone Number**: 039 888 2041 present in schema markup
 - ✅ **Accessibility**: Phone number in LocalBusiness schema
 - ⚠️ **Visibility**: Emergency banner could be more prominent
-- ✅ **Contact Info**: Email info@it-era.it present
+- ✅ **Contact Info**: Email info@bulltech.it present
 
 ### 🎨 **DESIGN & LAYOUT**
 - ✅ **Professional Design**: Clean, modern layout
@@ -79,7 +79,7 @@
 - ✅ **URL**: Business URL specified
 - ✅ **Logo**: Logo URL provided
 - ✅ **Telephone**: "+39 039 888 2041" correctly formatted
-- ✅ **Email**: "info@it-era.it" specified
+- ✅ **Email**: "info@bulltech.it" specified
 - ✅ **Address**: Complete postal address for Vimercate
 - ✅ **Geo Coordinates**: Location data present
 - ✅ **Opening Hours**: Business hours specified
@@ -117,7 +117,7 @@
 
 ### 📞 **EMERGENCY CONTACT**
 - ✅ **Phone Links**: tel: links for 039 888 2041
-- ✅ **Email Links**: mailto: links for info@it-era.it
+- ✅ **Email Links**: mailto: links for info@bulltech.it
 - ✅ **WhatsApp**: WhatsApp integration available
 - ✅ **Multiple Channels**: Various contact methods provided
 
@@ -198,7 +198,7 @@ The IT-ERA homepage successfully passes all three validation steps with an overa
 
 ### 📞 **CONTACT VALIDATION CONFIRMED**
 - **Phone**: 039 888 2041 ✅ Present and functional
-- **Email**: info@it-era.it ✅ Present and functional  
+- **Email**: info@bulltech.it ✅ Present and functional  
 - **Forms**: Contact forms ✅ Present and Resend-ready
 - **Emergency**: Emergency contact ✅ Available 24/7
 

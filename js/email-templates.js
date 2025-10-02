@@ -72,7 +72,7 @@ const ITERAEmailTemplates = {
             
             <div style="background: #f3f4f6; padding: 20px; text-align: center; color: #6b7280; font-size: 14px;">
                 <p style="margin: 0;">IT-ERA - Assistenza Informatica Professionale</p>
-                <p style="margin: 5px 0 0 0;">📧 info@it-era.it | 📞 039 888 2041 | 🌐 it-era.it</p>
+                <p style="margin: 5px 0 0 0;">📧 info@bulltech.it | 📞 039 888 2041 | 🌐 it-era.it</p>
             </div>
         </div>`,
         text: `🚨 EMERGENZA RICEVUTA - Ti chiamiamo in 15 minuti!\n\nCiao {{NAME}},\n\nLa tua richiesta di emergenza è stata ricevuta alle {{CURRENT_TIME}}.\n\nIl nostro tecnico specializzato ti contatterà entro 15 minuti al numero {{PHONE}} per:\n- Confermare i dettagli del problema\n- Programmare l'intervento immediato\n- Fornirti il tempo esatto di arrivo\n\nPer emergenze immediate: 039 888 2041\n\nGrazie per aver scelto IT-ERA.\nIl Team Emergenze IT-ERA`
@@ -232,7 +232,7 @@ const ITERAEmailTemplates = {
                 
                 <div style="text-align: center; margin: 30px 0;">
                     <a href="tel:+390398882041" style="background: #1e40af; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-right: 10px;">📞 CHIAMACI ORA</a>
-                    <a href="mailto:info@it-era.it" style="background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">📧 SCRIVI EMAIL</a>
+                    <a href="mailto:info@bulltech.it" style="background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">📧 SCRIVI EMAIL</a>
                 </div>
                 
                 <p style="color: #6b7280; margin-top: 30px;">Siamo entusiasti di lavorare con {{COMPANY}} per ottimizzare la vostra infrastruttura IT.</p>
@@ -241,7 +241,7 @@ const ITERAEmailTemplates = {
             
             <div style="background: #f3f4f6; padding: 20px; text-align: center; color: #6b7280; font-size: 14px;">
                 <p style="margin: 0;">IT-ERA - Consulenza IT Professionale per Aziende</p>
-                <p style="margin: 5px 0 0 0;">📧 info@it-era.it | 📞 039 888 2041 | 🌐 it-era.it</p>
+                <p style="margin: 5px 0 0 0;">📧 info@bulltech.it | 📞 039 888 2041 | 🌐 it-era.it</p>
             </div>
         </div>`,
         text: `💼 RICHIESTA RICEVUTA - Preventivo entro 24h\n\nGentile {{NAME}},\n\nGrazie per aver richiesto una consulenza IT per {{COMPANY}}.\n\nProcesso:\n1. Analisi preliminare (entro 2 ore)\n2. Preventivo dettagliato (entro 24 ore)\n3. Presentazione personalizzata\n\nPerché IT-ERA:\n- Certificazioni Microsoft Partner, Cisco\n- 200+ aziende clienti\n- 99.9% uptime garantito\n- Supporto continuativo\n\nPer informazioni immediate: 039 888 2041\n\nIl Team Consulenza IT-ERA`
@@ -318,7 +318,7 @@ const ITERAEmailTemplates = {
                 <div style="text-align: center; margin: 30px 0;">
                     <a href="tel:+390398882041" style="background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin: 5px;">📞 DISCUTIAMO IL PREVENTIVO</a>
                     <br>
-                    <a href="mailto:info@it-era.it?subject=Preventivo {{COMPANY}} - Domande" style="background: #1e40af; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin: 5px;">❓ FAI DOMANDE VIA EMAIL</a>
+                    <a href="mailto:info@bulltech.it?subject=Preventivo {{COMPANY}} - Domande" style="background: #1e40af; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin: 5px;">❓ FAI DOMANDE VIA EMAIL</a>
                 </div>
                 
                 <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 25px 0;">

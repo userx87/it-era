@@ -398,7 +398,7 @@ console.log('Resend available:', !!window.ITERAResendIntegration);
 
 ### 📧 **Contatti Supporto**
 
-- **Email**: info@it-era.it
+- **Email**: info@bulltech.it
 - **Telefono**: 039 888 2041
 - **Emergenze**: 24/7 disponibile
 

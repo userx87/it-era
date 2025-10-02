@@ -191,7 +191,7 @@ Internal Links: Tutti funzionali
 - **External Resources:** 2 (Accettabile)
 
 #### **⚠️ MINOR ISSUES**
-1. **Email Inconsistency:** Mix tra info@it-era.it e info@it-era.it
+1. **Email Inconsistency:** Mix tra info@bulltech.it e info@bulltech.it
 2. **Resource Optimization:** Possibile consolidamento script
 3. **Cache Headers:** Verificare cache policies
 
@@ -204,7 +204,7 @@ Internal Links: Tutti funzionali
 | Problema | Impatto | Effort | Soluzione |
 |----------|---------|---------|-----------|
 | **No Mobile Menu** | Alto | Medio | Implementare hamburger menu responsive |
-| **Email Inconsistency** | Alto | Basso | Standardizzare su info@it-era.it |
+| **Email Inconsistency** | Alto | Basso | Standardizzare su info@bulltech.it |
 
 ### ⚠️ **PRIORITÀ ALTA (1-2 settimane)**
 
@@ -235,7 +235,7 @@ Internal Links: Tutti funzionali
 ## 🎯 9. ACTIONABLE RECOMMENDATIONS
 
 ### 🚀 **QUICK WINS (1 settimana)**
-1. ✅ Standardizzare email su info@it-era.it
+1. ✅ Standardizzare email su info@bulltech.it
 2. ✅ Aggiungere aria-labels ai buttons
 3. ✅ Implementare basic mobile menu CSS
 

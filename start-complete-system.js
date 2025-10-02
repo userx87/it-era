@@ -317,7 +317,7 @@ class CompleteSystemOrchestrator {
 
 ## Support
 - **Phone**: 039 888 2041
-- **Email**: info@it-era.it
+- **Email**: info@bulltech.it
 - **Documentation**: See generated files
 
 Generated on: ${new Date().toISOString()}
@@ -344,7 +344,7 @@ Generated on: ${new Date().toISOString()}
         console.log(`   4. Esegui il deploy con ./deploy-complete-system.sh`);
         console.log(`   5. Monitora analytics e performance`);
         
-        console.log(`\n📞 SUPPORTO: 039 888 2041 | info@it-era.it`);
+        console.log(`\n📞 SUPPORTO: 039 888 2041 | info@bulltech.it`);
     }
 
     // Utility methods

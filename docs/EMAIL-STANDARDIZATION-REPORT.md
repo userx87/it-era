@@ -9,7 +9,7 @@
 ### 📊 RISULTATI DELLA STANDARDIZZAZIONE
 
 **TOTALE FILE MODIFICATI**: 218 file
-**EMAIL STANDARDIZZATA**: info@bulltech.it → info@it-era.it
+**EMAIL STANDARDIZZATA**: info@bulltech.it → info@bulltech.it
 **DOMINI AGGIORNATI**: bulltech.workers.dev → it-era.workers.dev
 
 ---
@@ -51,7 +51,7 @@ Tutti i 117+ file HTML nelle directory:
 - https://it-era-resend.bulltech.workers.dev/
 
 **DOPO:**
-- info@it-era.it
+- info@bulltech.it
 - https://it-era-resend.it-era.workers.dev/
 
 ---
@@ -66,7 +66,7 @@ Tutti i 117+ file HTML nelle directory:
 2. **SOSTITUZIONE BATCH**
    ```bash
    # HTML files
-   sed -i '' 's/info@bulltech\.it/info@it-era.it/g' *.html
+   sed -i '' 's/info@bulltech\.it/info@bulltech.it/g' *.html
 
    # JavaScript files
    sed -i '' 's/bulltech\.workers\.dev/it-era.workers.dev/g' *.js
@@ -74,7 +74,7 @@ Tutti i 117+ file HTML nelle directory:
 
 3. **VERIFICA COMPLETEZZA**
    - 0 file residui contenenti "bulltech"
-   - 218 file verificati con "info@it-era.it"
+   - 218 file verificati con "info@bulltech.it"
 
 ---
 
@@ -152,7 +152,7 @@ Tutti i 117+ file HTML nelle directory:
 ---
 
 **STANDARDIZZAZIONE COMPLETATA** ✅
-**EMAIL UNIFICATA**: info@it-era.it
+**EMAIL UNIFICATA**: info@bulltech.it
 **BRAND CONSISTENCY**: 100%
 
 ---

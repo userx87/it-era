@@ -3823,7 +3823,7 @@
                 "width": 130,
                 "height": 48
               },
-              "snippet": "<a href=\"mailto:info@it-era.it\" class=\"inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hov…\">",
+              "snippet": "<a href=\"mailto:info@bulltech.it\" class=\"inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hov…\">",
               "nodeLabel": "Invia Email",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #3b82f6, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
             }

@@ -9,7 +9,7 @@
 - Schema markup JSON-LD
 - Alcuni elementi della pagina contatti
 **Impact**: CRITICO - Confusion del brand e potenziale perdita di comunicazioni
-**Action Required**: IMMEDIATA sostituzione con info@it-era.it
+**Action Required**: IMMEDIATA sostituzione con info@bulltech.it
 
 ### 2. HAMBURGER MENU NON FUNZIONALE SU MOBILE
 **Location**: Viewport mobile (375px)
@@ -49,8 +49,8 @@
 - Urgenza (select, default: normale)
 
 ### 🔍 EMAIL VERIFICATION
-- **Homepage**: ✅ Solo info@it-era.it presente
-- **Contatti**: ❌ MIXED - info@it-era.it E info@bulltech.it
+- **Homepage**: ✅ Solo info@bulltech.it presente
+- **Contatti**: ❌ MIXED - info@bulltech.it E info@bulltech.it
 - **Mailto Links**: Alcuni puntano ancora a bulltech.it
 - **Schema Markup**: Email bulltech.it nel JSON-LD
 

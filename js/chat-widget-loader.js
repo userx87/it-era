@@ -11,7 +11,7 @@ class ITERAChatWidgetLoader {
             // Configurazione sicura
             apiEndpoint: 'https://api.openai.com/v1/chat/completions',
             fallbackPhone: '039 888 2041',
-            fallbackEmail: 'info@it-era.it',
+            fallbackEmail: 'info@bulltech.it',
             
             // UI Configuration
             position: 'bottom-right',
@@ -678,7 +678,7 @@ class ITERAChatWidgetLoader {
             <p>Ti sto mettendo in contatto con un nostro tecnico specializzato.</p>
             <div class="quick-actions">
                 <button class="quick-btn" onclick="window.open('tel:+390398882041')">📞 Chiama: 039 888 2041</button>
-                <button class="quick-btn" onclick="window.open('mailto:info@it-era.it')">✉️ Email: info@it-era.it</button>
+                <button class="quick-btn" onclick="window.open('mailto:info@bulltech.it')">✉️ Email: info@bulltech.it</button>
             </div>
             <p><small>Tempo di risposta medio: 5 minuti</small></p>
         `;
@@ -726,7 +726,7 @@ class ITERAChatWidgetLoader {
     getFallbackResponse(message) {
         const responses = [
             `Grazie per il tuo messaggio! Un nostro tecnico ti risponderà al più presto. Per assistenza immediata chiama il <strong>039 888 2041</strong>.`,
-            `Ho ricevuto la tua richiesta. Per supporto tecnico urgente, contattaci al <strong>039 888 2041</strong> o scrivi a info@it-era.it.`,
+            `Ho ricevuto la tua richiesta. Per supporto tecnico urgente, contattaci al <strong>039 888 2041</strong> o scrivi a info@bulltech.it.`,
             `Messaggio ricevuto! Il nostro team IT è a tua disposizione al <strong>039 888 2041</strong> per qualsiasi emergenza.`
         ];
         
@@ -738,7 +738,7 @@ class ITERAChatWidgetLoader {
             <p>Si è verificato un problema tecnico. Ti preghiamo di contattarci direttamente:</p>
             <div class="quick-actions">
                 <button class="quick-btn" onclick="window.open('tel:+390398882041')">📞 039 888 2041</button>
-                <button class="quick-btn" onclick="window.open('mailto:info@it-era.it')">✉️ info@it-era.it</button>
+                <button class="quick-btn" onclick="window.open('mailto:info@bulltech.it')">✉️ info@bulltech.it</button>
             </div>
         `;
     }

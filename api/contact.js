@@ -69,7 +69,7 @@ export default async function handler(req, res) {
         // Qui dovrebbe esserci l'integrazione con Resend.com
         // Per ora simuliamo l'invio email
         const emailData = {
-            to: 'info@it-era.it',
+            to: 'info@bulltech.it',
             from: 'noreply@it-era.it',
             subject: `Nuovo contatto da ${full_name} - ${service_type || 'Contatto generico'}`,
             html: `

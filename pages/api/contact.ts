@@ -41,19 +41,18 @@ export default async function handler(
     }
 
     // Determine recipient based on urgency
-    // IMPORTANT: In test mode, Resend only allows sending to verified emails
-    // For production, change to: ['info@bulltech.it', 'emergenze@bulltech.it']
+    // Using it-era.it domain (already verified on Resend)
     const recipients = process.env.NODE_ENV === 'development'
       ? ['codeagent087@gmail.com'] // Verified test email
       : contactData.urgency === 'emergency'
-        ? ['info@bulltech.it', 'emergenze@bulltech.it']
-        : ['info@bulltech.it'];
+        ? ['info@it-era.it', 'emergenze@it-era.it']
+        : ['info@it-era.it'];
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: process.env.NODE_ENV === 'development'
         ? 'IT-ERA <onboarding@resend.dev>' // Test domain for development
-        : 'IT-ERA <noreply@it-era.it>', // Production domain (requires verification)
+        : 'IT-ERA <info@it-era.it>', // Production domain (VERIFIED ✅)
       to: recipients,
       reply_to: contactData.email,
       subject: `${contactData.urgency === 'emergency' ? '🚨 URGENTE' : 'Nuovo contatto'}: ${contactData.name} - ${contactData.service || 'Richiesta informazioni'}`,

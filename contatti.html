@@ -494,11 +494,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
-                <form id="contact-form" data-resend="true" class="contact-form form-enhanced space-y-6">
+                <form id="contact-form" data-resend="true" class="universal-contact-form contact-form form-enhanced space-y-6" data-service="Richiesta Contatto" data-urgency="medium">
                     <div class="form-grid">
                         <div>
                             <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome *</label>
-                            <input type="text" id="full_name" name="full_name" required
+                            <input type="text" id="full_name" name="name" required
                                    minlength="2" maxlength="100"
                                    placeholder="Es. Mario Rossi"
                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
@@ -904,7 +904,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <script defer src="/js/analytics-tracking.js"></script>
     <script defer src="/js/mobile-menu.js"></script>
 
-    <!-- IT-ERA Contact Form Handler -->
-    <script src="/js/contact-form-handler.js"></script>
+    <!-- Universal Contact Form Handler -->
+    <script src="/js/contact-form-universal.js"></script>
 </body>
 </html>

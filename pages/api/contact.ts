@@ -41,12 +41,13 @@ export default async function handler(
     }
 
     // Determine recipient based on urgency
-    // Using it-era.it domain (already verified on Resend)
+    // Send TO: info@bulltech.it (destination)
+    // Send FROM: it-era.it (verified domain on Resend)
     const recipients = process.env.NODE_ENV === 'development'
       ? ['codeagent087@gmail.com'] // Verified test email
       : contactData.urgency === 'emergency'
-        ? ['info@it-era.it', 'emergenze@it-era.it']
-        : ['info@it-era.it'];
+        ? ['info@bulltech.it', 'emergenze@bulltech.it']
+        : ['info@bulltech.it'];
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
